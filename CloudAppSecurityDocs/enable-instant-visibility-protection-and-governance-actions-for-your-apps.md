@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
-ms.openlocfilehash: c7e6f441932135ca20d4c6747c5e4ab7eb58331f
+ms.sourcegitcommit: 14de5a6b28c6593250a1a7827905fb0f8a6482b5
+ms.openlocfilehash: 3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c5
 
 
 ---
@@ -129,6 +129,6 @@ Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.micr
    
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
