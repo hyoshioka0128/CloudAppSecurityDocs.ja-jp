@@ -1,11 +1,28 @@
 # <a name='report-top'></a> Localization Bilingual Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/general-setup.md) | InSyncHandedBackSuccess | [Details](#5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f28)
 
 ## Item Details
+##### <a name='5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f28'></a> Source: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/general-setup.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/c8e3c52289ab062cc5bafa5b4972ab6a21e49a0c/CloudAppSecurityDocs/general-setup.md)
+* Handoff File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/b1c4e7f20f10f49d78241cb5164efcc9187f84e2/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Handoff Datetime: 2016-10-31 19:55:06
+* Handoff Reason: Include
+* Archive File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/e2bd6ebdb304892f28afe5b697a7af8733d87f05/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Archive Datetime: 2016-11-03 13:00:17
+* Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Handback Datetime: 2016-11-10 12:58:57
+* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-10 13:00:30
+* [Back to Top](#report-top)
+
 
 ## Error Details
 

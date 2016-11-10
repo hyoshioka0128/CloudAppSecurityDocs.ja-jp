@@ -643,8 +643,8 @@
 * Archive Datetime: 2016-11-03 13:00:17
 * Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
 * Handback Datetime: 2016-11-10 12:58:57
-* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b78b9caae5fbf8f9cad1b6fe260d1e473ec99446/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
-* Bilingual Datetime: 2016-11-10 08:34:33
+* Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Bilingual Datetime: 2016-11-10 13:00:30
 * [Back to Top](#report-top)
 
 ##### <a name='8b454edde557c408b644c9bff6f7bf6136ba981929'></a> Source: [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md)
