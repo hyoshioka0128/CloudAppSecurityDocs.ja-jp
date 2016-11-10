@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
+ms.sourcegitcommit: a413236b04726dddc69068e39967f6ad17218719
+ms.openlocfilehash: c7e6f441932135ca20d4c6747c5e4ab7eb58331f
 
 
 ---
@@ -24,11 +24,6 @@ ms.openlocfilehash: e74cd96f9bf8537f230dcb58715492bc6fccd2f0
 アプリのコネクタを使用するとアプリ プロバイダーの API を利用できるため、Cloud App Security による接続先アプリの表示および制御がしやすくなります。  
   
 Cloud App Security はクラウド プロバイダーが提供する API を利用しますが、各サービスには独自のフレームワークと API の制限事項があります。 Cloud App Security はサービスを利用して、API の使用を最適化し、最高のパフォーマンスを実現できるようになりました。 サービスが API に加えたさまざまな制限事項 (調整、API の制限、動的なタイムシフト API の期間など) を考慮して、Cloud App Security エンジンでは使用可能な機能が活用されます。 テナント内のすべてのファイルのスキャンなど、一部の処理には大量の API が必要となるため、長時間にわたって実行されます。 ポリシーによっては、数時間または数日間にわたって実行される場合があります。  
-  
-**ExpressRoute**  
-  
-Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。  
-パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。  
   
 ## <a name="how-it-works"></a>しくみ  
 Cloud App Security はシステム管理者権限で展開されているため、環境内のすべてのオブジェクトへのフル アクセスができます。  
@@ -71,10 +66,9 @@ Cloud App Security はシステム管理者権限で展開されているため�
      トークンを削除します。  
   
 次の表は、クラウド アプリごとの、アプリのコネクタによって使用できるようになる機能のリストです。  
-  
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
+
 ||**Office 365**|**Box**|**Okta**|**Google Apps**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|  
+|-|-|-|-|-|-|-|-|-|  
 |**アカウントの一覧表示**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**グループ**|✔|✔|✔|✔|✔|✔|✔|✔|  
 |**権限**|✔|✔|プロバイダーはサポートしていません|✔|✔|✔|✔||  
@@ -121,6 +115,12 @@ Cloud App Security はシステム管理者権限で展開されているため�
 |ServiceNow|Eureka 以降|管理者 +RestAPI のロール|  
 |Salesforce||管理者|  
   
+
+**ExpressRoute**  
+  
+Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。  
+パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。  
+  
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -129,6 +129,6 @@ Cloud App Security はシステム管理者権限で展開されているため�
    
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
