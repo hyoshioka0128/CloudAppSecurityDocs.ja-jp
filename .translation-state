@@ -1,6 +1,6 @@
 {
   "LastProcessedCommit": "148af9cec129391ac34c883598a8b29783239cb9",
-  "LastTranslatedCommit": "aaa960e7f848a77d134de699361e50b0807adcb7",
+  "LastTranslatedCommit": "82d53331f36309572283b4645b78002ed2992c75",
   "LastTansformerVersion": null,
   "Items": {
     "401801da8a4439b3dc0cf5c2f150c72e169a6d16": {
@@ -11840,14 +11840,14 @@
       "HandoffPriority": "ht",
       "HandoffException": null,
       "HandoffFailureTimes": 0,
-      "TargetFileCommit": null,
-      "TargetFilePath": null,
-      "HandbackFilePath": null,
-      "HandbackFileCommit": null,
-      "HandbackDateTime": "0001-01-01T00:00:00",
+      "TargetFileCommit": "82d53331f36309572283b4645b78002ed2992c75",
+      "TargetFilePath": "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md",
+      "HandbackFilePath": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.ja-jp.xlf",
+      "HandbackFileCommit": "06b3625d951a9eb28677d460559e1fe9832958ef",
+      "HandbackDateTime": "2016-11-10T02:41:22.1732481Z",
       "HandbackException": null,
       "HandbackFailureTimes": 0,
-      "UpdatedDateTime": "0001-01-01T00:00:00",
+      "UpdatedDateTime": "2016-11-10T02:41:22.1732481Z",
       "ArchiveFilePath": "ol-archive\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.cb5f69f35a41584708bb295f6c3c5c18850d95a6.ja-jp.xlf",
       "ArchiveFileCommit": "3c73adc543805fb926e6bf5e0e94fe28689ffa1a",
       "ArchiveFileDateTime": "2016-11-10T01:23:47.2502845Z",
