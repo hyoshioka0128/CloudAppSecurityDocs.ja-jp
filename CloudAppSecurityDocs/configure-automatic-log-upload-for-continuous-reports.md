@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 046cc96c15f76e4196c60f9864c835f4e6595dfa
 
 
 ---
@@ -37,8 +37,7 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
   
 ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ファイルのログ コレクターへの FTP 転送が完了した後で Cloud App Security にアップロードされ、Syslog については、ログ コレクターは 20 分ごとに受信したログをディスクに書き込んでから、Cloud App Security にファイルをアップロードします。  ログ コレクターの仮想マシンは Hyper-V (VHD 形式) と VMware ハイパーバイザー (OVF 形式) で使用でき、250 GB のディスク領域、2 つの CPU と 4 GB の RAM が必要になります。 
      
-  
-     The log collector VHD image can be downloaded and run on Azure servers.  
+ログ コレクター VHD イメージをダウンロードして、Azure サーバーで実行することができます。  
   
 2.  自動アップロードの設定ページに移動します。  
     Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから **[Cloud Discovery 設定]** をクリックし、次に **[ログを自動的にアップロード]** タブを選択します。  
@@ -81,8 +80,8 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
 1.  Hyper-V マネージャーを開きます。  
   
 2.  [**新規**] を選択してから [**仮想マシン**] を選択し、[**次へ**] をクリックします。  
-  
-             ![discovery hyperv virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ 
+![Hyper-V 仮想マシンの検出](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
   
 3.  仮想マシンに、たとえば CloudAppSecurityLogCollector01.という [**名前**] を付けてから [**次へ**] をクリックします。  
   
@@ -97,8 +96,7 @@ ms.openlocfilehash: 9672336d69f19875d160eb414bf3ca2c525692e1
 8.  [**Use an existing virtual hard disk (既存の仮想ハード ディスクを使用する)**] を選択し、ダウンロードした Zip ファイルに含まれる .**vhd** ファイルを選択します。  
   
 9.  **[次へ]** 、 **[完了]**の順にクリックします。  
-  
-             The machine will be added to your Hyper-V environment.  
+    マシンが Hyper-V 環境に追加されます。  
   
 9. [**仮想マシン**] の表でこのマシンをクリックしてから、[**スタート**] をクリックします。   
   
@@ -121,7 +119,6 @@ sudo network_config
 ```
 sudo collector_config <access token>
 ```
-
 3. たとえば、次に示すようなコンソールのドメインを入力します。
 
 ```
@@ -129,33 +126,29 @@ contoso.portal.cloudappsecurity.com
 ```
 
 これは、Cloud App Security ポータルへのログイン後に表示される URL から入手できます。 
- 
 
-4. たとえば、構成するログ コレクターに次のような名前を入力します。
-
-**CloudAppSecurityLogCollector01** または **NewYork** (上の図の場合)。
- 
-8.  次のように、ポータルからログ コレクターの構成をインポートします。  
+4. 構成するログ コレクターの名前をを入力します。たとえば、上図の場合、「**CloudAppSecurityLogCollector01**」または「**NewYork**」と入力します。
+5.  次のように、ポータルからログ コレクターの構成をインポートします。  
   
-      1.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにログインします。  
+      」を参照します。  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにログインします。  
   
-       2.  取得したアクセス トークンをコマンド **sudo collector_config \<access token>** で使用して、コレクターの構成ユーティリティを実行します。  
+      b.  取得したアクセス トークンをコマンド **sudo collector_config \<access token>** で使用して、コレクターの構成ユーティリティを実行します。  
   
-             たとえば、次に示すようなコンソールのドメインを入力します。  
+             Enter your console domain, for example:  
   
              **contoso.portal.cloudappsecurity.com ** 
   
-             たとえば、構成するログ コレクターに次のような名前を入力します。  
+             Enter the name of the log collector you want to configure, for example:  
   
              **CloudAppSecurityLogCollector01**  
   
-5.  ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。以下に例を示します。  
+6.  ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。以下に例を示します。  
   
      `London Zscaler - Destination path: 614`  
   
      `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
   
-6.  ガバナンス ログを使用すると、ログがポータルに定期的にアップロードされていることを確認できます。  
+7.  ガバナンス ログを使用すると、ログがポータルに定期的にアップロードされていることを確認できます。  
   
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 ログ コレクターは、1 時間あたり最大 50 GB の容量のログを処理できます。
@@ -166,7 +159,15 @@ contoso.portal.cloudappsecurity.com
 
 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 全体的に 1 時間あたり 50 GB を超える状況であったら、複数のログ コレクターにトラフィックを分割することをお勧めします。
 
+## <a name="see-also"></a>参照  
+[Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)   
+[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+    
+      
+  
 
-<!--HONumber=Oct16_HO4-->
+
+<!--HONumber=Oct16_HO5-->
 
 

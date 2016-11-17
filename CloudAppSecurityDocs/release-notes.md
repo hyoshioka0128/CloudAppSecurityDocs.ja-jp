@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,30 @@ ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
 
 
 ---
 
 # <a name="release-notes"></a>リリース ノート
+
+## <a name="cloud-app-security-release-83"></a>Cloud App Security リリース 83
+リリース日: 2016 年 10 月 30 日
+
+**新機能**
+-   [アクティビティ ログ](activity-filters.md)と[ファイル ログ](file-filters.md)のフィルター処理を簡略化するために、類似するフィルターが統合されました。 アクティビティ フィルターは、アクティビティ オブジェクト、IP アドレス、およびユーザーに使用します。 対象を厳密に検索するには、[コラボレーター] ファイル フィルターを使用します。
+-   アクティビティ ログ ドロワーの **[ソース]** で、**[View raw data]** (生データの表示) リンクをクリックすると、アクティビティ ログの生成用の生データをダウンロードし、アプリ イベントをより詳細に調べることができます。 
+-   Okta の別のログイン アクティビティのサポートが追加されました。 [プライベート プレビュー]
+-   Salesforce の別のログイン アクティビティのサポートが追加されました。 
+
+**機能強化**
+-   Cloud Discovery のスナップショットのレポート機能とトラブルシューティングの使いやすさが向上しました。
+-   複数アプリでのアラートをまとめたアラート リストの見やすさが向上しました。
+-   Cloud Discovery の継続的レポートを新規に作成する場合の使いやすさが向上しました。
+-   ガバナンス ログの使いやすさが向上しました。
+
+
 
 ## <a name="cloud-app-security-release-82"></a>Cloud App Security リリース 82
 リリース日: 2016 年 10 月 9 日
@@ -198,6 +215,6 @@ ms.openlocfilehash: 6f204a955d3186013691fe876e185286a55dd8af
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
