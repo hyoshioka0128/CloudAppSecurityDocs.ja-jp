@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/8/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
 
 
 ---
@@ -42,7 +42,7 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
 4.  このポリシーをトリガーするアクションまたはその他のメトリックを設定するには、**アクティビティ フィルター**を使用します。  
   
 5.  [**アクティビティ一致パラメーター**] で、1 つのアクティビティがフィルターに一致したらポリシー違反がトリガーされるか、または [**反復アクティビティ**] が指定された回数発生した場合のみに違反が検出されるかを選択します。  
-    [**反復アクティビティ**] を選択した場合、アラートをトリガーするアクティビティを設定します。このとき、アクティビティの回数、期間、および違反のカウント対象が特定アプリ内のユーザーなのか、またはすべてのアプリにおける同じユーザーなのかを設定します。  
+    **[反復アクティビティ]** を選択した場合、**[アプリごとのアクティビティに一致するグループ]** を設定できます。 これによって、たとえば Box からのダウンロードが 5 回行われた場合など、反復アクティビティが同じアプリで起きた場合にのみポリシー一致がトリガーされます。  
   
 6.  一致が検出された場合に実行する [**アクション**] を設定します。  
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: a88691fbe6c23fa537133c077402d8e9e1121047
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

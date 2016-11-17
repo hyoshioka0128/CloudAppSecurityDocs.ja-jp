@@ -14,8 +14,8 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 481ca3d68e5e7aea006eeff443ec521a374e6e11
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 132b4d296b26dd187418734b40d08ecb243692da
 
 
 ---
@@ -33,7 +33,7 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
 -   感度 - アラートによりポリシーがトリガーされるまでの回数を設定できます。  
   
 ### <a name="activity-filters"></a>アクティビティ フィルター  
-アクティビティ フィルターのリストは、「[Activity filters](activity-filters.md)」を参照してください。  
+アクティビティ フィルターのリストについては、「[アクティビティ](activity-filters.md)」を参照してください。  
   
 ### <a name="apply-to"></a>[適用先]  
 監視対象の使用状況にフィルターを適用する方法は 2 つあります。  
@@ -69,6 +69,6 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 

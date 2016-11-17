@@ -1,5 +1,5 @@
 # [Understand & Explore (調査と理解)](what-is-cloud-app-security.md)
-## [What is Cloud App Discover (Cloud App Discover とは)](what-is-cloud-app-security.md)
+## [CAS とは](what-is-cloud-app-security.md)
 ## [リリース ノート](release-notes.md)
 # [Get Started (概要)](getting-started-with-cloud-app-security.md)
 ## [General setup (一般的なセットアップ)](general-setup.md)
@@ -7,7 +7,6 @@
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)
-# [展開](deploy.md)
 ## [アプリの可視性、保護、およびガバナンス アクションをすぐに有効化](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box を Microsoft Cloud App Security に接続する](connect-box-to-microsoft-cloud-app-security.md)
 ### [Google Apps を Microsoft Cloud App Security に接続する](connect-google-apps-to-microsoft-cloud-app-security.md)
@@ -28,8 +27,8 @@
 # [使用](daily-activities-to-protect-your-cloud-environment.md)
 ## [調査](investigate.md)
 ### [組み込みレポートの参照](built-in-report-reference.md)
-### [ファイル フィルター](file-filters.md)
-### [アクティビティ フィルター](activity-filters.md)
+### [ファイル](file-filters.md)
+### [アクティビティ](activity-filters.md)
 ### [アラート](monitor-alerts.md)
 ## [制御](control.md)
 ## [ガバナンス アクション](governance-actions.md)
@@ -37,6 +36,6 @@
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
