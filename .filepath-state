@@ -29,9 +29,6 @@
   "046cc96c15f76e4196c60f9864c835f4e6595dfa": [
     "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
   ],
-  "9672336d69f19875d160eb414bf3ca2c525692e1": [
-    "CloudAppSecurityDocs\\configure-automatic-log-upload-for-continuous-reports.md"
-  ],
   "4b9ab028bb45f77513217dd3784cefc73e984962": [
     "CloudAppSecurityDocs\\connect-aws-to-microsoft-cloud-app-security.md"
   ],
@@ -50,9 +47,6 @@
   "2f07956782fb266eaa2eab1b0b0459c2d57f69fc": [
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
   ],
-  "25adba6d9c2586d3fed162673008cd4212e22401": [
-    "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md"
-  ],
   "3fd8ada1ce622da339368c64ecc8b1d319b9c333": [
     "CloudAppSecurityDocs\\connect-okta-to-microsoft-cloud-app-security.md"
   ],
@@ -66,9 +60,6 @@
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
   "03dc58139a6739f5cc4294c1913ed8b6a720a9d2": [
-    "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
-  ],
-  "104a023cb210ff8d23d2ce57f41c0f511446bc57": [
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md"
   ],
   "30ddba23a0c481cb434e9239950cce90c52efc4f": [
@@ -86,13 +77,7 @@
   "36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4": [
     "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
   ],
-  "10b4a9575951007dbee9003fd061fb5aaa2d3823": [
-    "CloudAppSecurityDocs\\control-cloud-apps-with-policies.md"
-  ],
   "650bf424d77f6cbcf11e24058ec54278cfd579f5": [
-    "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
-  ],
-  "669d1c1942e8c7e930cd2421e9b56821eff04d12": [
     "CloudAppSecurityDocs\\create-snapshot-cloud-discovery-reports.md"
   ],
   "d07f8cfebd5654036078d474656a6e73e24d93d0": [
@@ -891,9 +876,6 @@
     "CloudAppSecurityDocs\\release-notes.md"
   ],
   "d95ddaef15cbb11f005156f272578f49f012e16d": [
-    "CloudAppSecurityDocs\\release-notes.md"
-  ],
-  "6f204a955d3186013691fe876e185286a55dd8af": [
     "CloudAppSecurityDocs\\release-notes.md"
   ],
   "cfca549e1e16ca83972876626771a55d698530a2": [

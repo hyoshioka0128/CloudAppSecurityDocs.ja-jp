@@ -417,8 +417,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8374282Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\046cc96c15f76e4196c60f9864c835f4e6595dfa.79d16ada3677242a6db1b2ff3670fe9ba0edcbaa.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\release-notes.md.1f069c18b375aba54230de029917ca4432a29197.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\release-notes.md",
@@ -427,8 +427,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8218014Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\d95ddaef15cbb11f005156f272578f49f012e16d.8ec81c20d0c444a8f66f108847acfc32d1d52c6f.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md.7d30fcd0bfd3ca04774964af5ca7e28353c68677.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\connect-salesforce-to-microsoft-cloud-app-security.md",
@@ -437,8 +437,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8530565Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\03dc58139a6739f5cc4294c1913ed8b6a720a9d2.6683e767fa9bfb80acdf76e4dec33b8ee02d0b20.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\connect-salesforce-to-microsoft-cloud-app-security.9f17846790006e484c62d3662e820a3d84d414a3.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md.80fc7d31171d1b49b7a9a283ac6926614a25dd8f.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\connect-office-365-to-microsoft-cloud-app-security.md",
@@ -447,8 +447,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8530565Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\2f07956782fb266eaa2eab1b0b0459c2d57f69fc.0f07d9a6d7a5557eb7a63cbcd723f608fef5b21c.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\connect-office-365-to-microsoft-cloud-app-security.c08c98d3a8c623f7e01d4a5cdfb3e4571e76d449.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md.f96c8c706990e8fa11ab32ba95ccdfff6b1ddb4b.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md",
@@ -487,8 +487,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8374282Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\650bf424d77f6cbcf11e24058ec54278cfd579f5.16905bc8f82044f99a3fba3cd94e4549eae9814e.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\create-snapshot-cloud-discovery-reports.b2686f4704ad683496ba87d07125301223a2aae0.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md.2adf52a53577676c6d4b6dea37e98d2ae327989c.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\cloud-discovery-anomaly-detection-policy.md",
@@ -537,8 +537,8 @@
       "IsArchived": true,
       "ArchivedDateTime": "2016-11-03T13:00:17.8374282Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\36f249cbb900bdb516ea6909a0ed6c76b4ea3ab4.48f63309e6e8e2d4c5440d9aa7dba2517eb0f64f.xml",
-      "LocXliff": null,
-      "LocXliffCommit": null
+      "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\control-cloud-apps-with-policies.4e47ecb5fb670e52316f664550b4212a65f6248c.ja-jp.xlf",
+      "LocXliffCommit": "ca96d049a994e8bfca49f5590098e6b696bb6356"
     },
     "CloudAppSecurityDocs\\index.md.68546cb7eb6ddfacc9ad83632ac9fbec9e2cfa78.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\index.md",
