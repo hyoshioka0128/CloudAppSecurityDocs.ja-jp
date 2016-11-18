@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 10/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,22 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 1687dd8d98a2e44acbf3f8ad34f875cbbc0bcdd1
+ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
+ms.openlocfilehash: 95dab01c101b6e6171c7985b6571ddb6b4ff5923
 
 
 ---
 
 # <a name="files"></a>ファイル
 
+ファイル ログをフィルターして、特定のファイルを検索することができます。 ファイルをフィルターするには、まず基本的なフィルターを使うと便利です。
+
+ ![基本的なファイル ログ フィルター](media/file-log-filter-basic.png)
+
+さらに詳細にファイルを絞り込むには、[詳細] をクリックして、基本的なフィルターを拡張します。
+
+ ![詳細なファイル ログ フィルター](media/file-log-filter-advanced.png)
+ 
 ###  <a name="a-namefilefiltersa-file-filters"></a> ファイル フィルター 
  
 Cloud App Security は、20 を超えるメタデータ フィルター (アクセス レベルやファイルの種類など) に基づいてファイルの種類を監視できます。 
@@ -32,16 +40,14 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 > [!NOTE] 
 > ポリシー フィルターを使用する場合、[**が次を含む**] を選択すると、コンマ、ピリオド、スペース、アンダースコアで区切られた完全に一致する単語のみが検索されます。 たとえば、**malware** または **virus** を検索する場合、virus_malware_file.exe は検出されますが、malwarevirusfile.exe は検出されません。 **malware.exe** を検索すると、ファイル名に malware または exe のいずれかを含むすべてのファイルが検出されますが、**"malware.exe"** (二重引用符を含む) を検索すると、malware.exe がそのまま名前に含まれるファイルのみが検出されます。  [**が次と等しい**] を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
 
-   
-![policy_file タイプのフィルター](./media/policy_file-type-filters.png "policy_file type filters")  
-  
 -   アクセス レベル – アクセス レベルの共有です。Public、外部、内部、Private のレベルがあります。  外部ファイルの詳細については、[「General Setup」 (一般的なセットアップ) ページの 「Set up the portal」 (ポータルのセットアップ)](getting-started-with-cloud-app-security.md) セクションをご覧ください。内部ファイルは、「[一般的なセットアップ](General-setup.md)」で設定する内部ドメイン内のファイルです。 外部ファイルは、設定した内部ドメイン内ではない場所に保存されたファイルです。 共有ファイルは、非公開レベルの上に共有レベルがあるファイルです。これには、内部共有 (内部ドメイン内で共有されるファイル)、外部共有 (内部ドメインの一覧に含まれないドメインで共有されるファイル)、リンクによる公開 (リンクによって誰とでも共有できるファイル)、公開 (インターネットを検索することによって見つかるファイル) が含まれます。 
 
 > [!NOTE]
->  外部ユーザーによって接続されたストレージ アプリに共有されたファイルは、Cloud App Security によって次のように処理されます。     - **OneDrive:** OneDrive は、外部ユーザーが OneDrive に配置したすべてのファイルの所有者として、内部ユーザーを割り当てます。 これらのファイルは組織によって所有されるものと見なされるため、Cloud App Security はこれらのファイルをスキャンし、OneDrive 内の他のファイル同様にポリシーを適用します。
-     - **Google Drive:** Google Drive はこれらを外部ユーザーによって所有されているものと見なし、組織が所有していないファイルとデータに対する法的制限のため、Cloud App Security はこれらのファイルにアクセスできません。
-    - **Box:** Box は外部所有ファイルを非公開情報と見なすので、Box のグローバル管理者はファイルの内容を見ることができません。 このため、Cloud App Security はこれらのファイルにアクセスできません。 
-    - **Dropbox:** Dropbox は外部所有ファイルを非公開情報と見なすので、Box のグローバル管理者はファイルの内容を見ることができません。 このため、Cloud App Security はこれらのファイルにアクセスできません。
+>  接続済みのストレージ アプリに外部ユーザーが共有するファイルは、Cloud App Security によって次のように処理されます。
+> - **OneDrive:** OneDrive は、外部ユーザーが OneDrive に配置するすべてのファイルの所有者として、内部ユーザーを割り当てます。 これらのファイルは組織によって所有されるものと見なされるため、Cloud App Security はこれらのファイルをスキャンし、OneDrive 内の他のファイル同様にポリシーを適用します。
+> - **Google Drive:** Google Drive はこれらのファイルを外部ユーザーによって所有されているものと見なします。組織が所有していないファイルとデータに対する法的制限のため、Cloud App Security はこれらのファイルにアクセスできません。
+> - **Box:** Box は外部所有ファイルを非公開情報と見なすので、Box のグローバル管理者はファイルの内容を見ることができません。 このため、Cloud App Security はこれらのファイルにアクセスできません。 
+> - **Dropbox:** Dropbox は外部所有ファイルを非公開情報と見なすので、Dropbox のグローバル管理者はファイルの内容を見ることができません。 このため、Cloud App Security はこれらのファイルにアクセスできません。
 
 -   アプリ – これらのアプリ内のファイルのみが検索されます。  
   
@@ -57,21 +63,26 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 -   作成日時 – ファイルの作成日時です。 フィルターでは指定した日以前/以降、または日付の範囲を設定できます。  
   
--   最終更新日時 – ファイルの変更日時です。 フィルターでは、日付の前/後、日付範囲、および相対的に日にちを指定する言葉で指定できます。たとえば、過去 6 か月間に変更されていないすべてのファイルなどをフィルターできます。  
-  
 -   拡張子 – 特定のファイル拡張子、たとえば実行可能ファイル (exe) すべてを対象にできます。  
   
 -   ファイル ID – 特定のファイル ID を検索します。これは、特定の重要ファイルを、ファイルの所有者/場所/名前に頼らずに追跡するための高度な機能です。  
   
 -   ファイル名 – クラウド アプリケーションで定義されているファイル名または名前のサブ文字列です。たとえば、ファイル名にパスワードが含まれるすべてのファイルです。  
   
+-   ファイルのタグ - Azure Information Protection によって設定される特定のタグを持つファイルを検索します。 これには、Azure Information Protection との統合が必要です。
+
 -   ファイルの種類 – Cloud App Security は、サービスから受信した MIME タイプとファイルのスキャンの両方を基にして、実際のファイルの種類を判断します。 このスキャンは、データ スキャンに関連するファイルに対して行われることに注意してください (ドキュメント、画像、プレゼンテーション、スプレッドシート、テキスト、zip/アーカイブ ファイル)。 フィルターは、ファイル/フォルダーの種類ごとに行われます。たとえば、... であるすべてのフォルダー、または ... であるすべてのスプレッドシート ファイルなどです。
 
 
-     ![policy_file フィルターのごみ箱](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file フィルターのごみ箱](./media/policy_file-filters-trash.png "policy_file filters trash")  
+
   
 -   ごみ箱 – [ごみ箱] フォルダー内のファイルを除外するか、または含めます。 これらのファイルは引き続き共有できる場合があるため、危険性があります。  
   
+-   最終更新日時 – ファイルの変更日時です。 フィルターでは、日付の前/後、日付範囲、および相対的に日にちを指定する言葉で指定できます。たとえば、過去 6 か月間に変更されていないすべてのファイルなどをフィルターできます。  
+
+-   一致したポリシー - アクティブな Cloud App Security ポリシーと一致したファイルです。
+
 -   MIME の種類 – MIME の種類のファイルを確認します。自由書式のテキストを使用できます。  
   
 -   所有者 – 特定のファイル所有者を追加/除外します。たとえば、rogue_employee_#100 によって共有されているすべてのファイルを追跡できます。  
@@ -133,6 +144,6 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Oct16_HO5-->
 
 
