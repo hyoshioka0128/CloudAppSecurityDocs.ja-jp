@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: dbd7814886fc79f0b9cccd55570547b0b7736c32
-ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
+ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
+ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
     <section id="hero-content">
       <h1>Cloud App Security ドキュメント</h1>
       <h2>Cloud App Security をセットアップして使用することで、組織がクラウド アプリケーションのメリットを活用しながら、同時にアクティビティの可視性を向上させて管理性を維持し、重要な企業データの保護を強化できるようにする方法を説明します。 </h2>
-      <h3>Cloud App Security を初めて使用する場合 <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">製品サイトをご覧ください&rarr;</a></h3>
+      <h3>Cloud App Security を初めて使用する場合 <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">製品サイトをご覧ください&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備ができている場合</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">今すぐ購入</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">今すぐ購入</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -195,14 +195,14 @@ ms.openlocfilehash: 6e3913969e7c7ef949c149dc1d2e7a1befe0c85c
 
         <aside class="alert alert-social">
       <p>Cloud App Security の最新情報を入手する <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 
