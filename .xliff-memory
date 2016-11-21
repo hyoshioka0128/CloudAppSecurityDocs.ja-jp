@@ -98,7 +98,7 @@
       "ArchivedDateTime": "2016-10-29T00:52:00.0022897Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\4b9bf05e43966ff39dacc58a082c7b8eb3627eda.ccfd36fdab93f9f48a30498b3f25021c1037ca0c.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf",
-      "LocXliffCommit": "24852f8ffa6e9db43a22c4ca9dafb219007b823d"
+      "LocXliffCommit": "32c4e5a26a3d8abe744d8d5016665c871f198228"
     },
     "CloudAppSecurityDocs\\user-activity-policies.md.eeab2100a6121e7678c7b3e59affe12b8316db11.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\user-activity-policies.md",
@@ -298,7 +298,7 @@
       "ArchivedDateTime": "2016-10-29T00:51:59.9710297Z",
       "SkeletonFile": "ol-xliffcache\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\0f38f61be8a0db4a28d3c7df614807ace69bb38e.d93bdd0e49b5f7092f0d99d86cead487e676ea14.xml",
       "LocXliff": "ol-handback\\Microsoft\\CloudAppSecurityDocs-pr.ja-jp\\live\\ht\\connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf",
-      "LocXliffCommit": "24852f8ffa6e9db43a22c4ca9dafb219007b823d"
+      "LocXliffCommit": "32c4e5a26a3d8abe744d8d5016665c871f198228"
     },
     "CloudAppSecurityDocs\\cloud-discovery-policies.md.bcd1801838aaa5d6839c2247ff6e0104b1289a79.HT": {
       "SourceFilename": "CloudAppSecurityDocs\\cloud-discovery-policies.md",
