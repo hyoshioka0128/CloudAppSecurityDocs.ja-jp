@@ -441,14 +441,14 @@
 
 ##### <a name='0f38f61be8a0db4a28d3c7df614807ace69bb38e14'></a> Source: [CloudAppSecurityDocs\connect-google-apps-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [CloudAppSecurityDocs\connect-google-apps-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/700663d0f21cadb29db9f0d4fe40d269eee90d35/CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md)
+* Target File: [CloudAppSecurityDocs\connect-google-apps-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/924ce2e3ca4c03864a1f9737276398cc629294f7/CloudAppSecurityDocs/connect-google-apps-to-microsoft-cloud-app-security.md)
 * Handoff File: [connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/d6fecedb967f5bac81c7626fd3ec906b958ae2a6/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf)
 * Handoff Datetime: 2016-10-28 07:03:24
 * Handoff Reason: Include
 * Archive File: [connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/2e2e1a7c14e5c45c946215444431b70bff16e4d5/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf)
 * Archive Datetime: 2016-10-29 00:51:59
-* Handback File: [connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf)
-* Handback Datetime: 2016-11-10 02:02:17
+* Handback File: [connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/24852f8ffa6e9db43a22c4ca9dafb219007b823d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf)
+* Handback Datetime: 2016-11-21 13:18:50
 * Bilingual File: [connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/connect-google-apps-to-microsoft-cloud-app-security.7799cb4f4bb568bd1e5172a8e691865e184e4864.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:02:52
 * [Back to Top](#report-top)
@@ -2938,14 +2938,14 @@
 
 ##### <a name='4b9bf05e43966ff39dacc58a082c7b8eb3627eda203'></a> Source: [CloudAppSecurityDocs\working-with-cloud-discovery-data.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/working-with-cloud-discovery-data.md)
 * Status: InSyncHandedBackSuccess
-* Target File: [CloudAppSecurityDocs\working-with-cloud-discovery-data.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/700663d0f21cadb29db9f0d4fe40d269eee90d35/CloudAppSecurityDocs/working-with-cloud-discovery-data.md)
+* Target File: [CloudAppSecurityDocs\working-with-cloud-discovery-data.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/924ce2e3ca4c03864a1f9737276398cc629294f7/CloudAppSecurityDocs/working-with-cloud-discovery-data.md)
 * Handoff File: [working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/d6fecedb967f5bac81c7626fd3ec906b958ae2a6/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf)
 * Handoff Datetime: 2016-10-28 07:03:24
 * Handoff Reason: Include
 * Archive File: [working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/2e2e1a7c14e5c45c946215444431b70bff16e4d5/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf)
 * Archive Datetime: 2016-10-29 00:51:59
-* Handback File: [working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf)
-* Handback Datetime: 2016-11-10 02:02:17
+* Handback File: [working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/24852f8ffa6e9db43a22c4ca9dafb219007b823d/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf)
+* Handback Datetime: 2016-11-21 13:18:50
 * Bilingual File: [working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/working-with-cloud-discovery-data.678cd20d2833ae830d430cd09c77c6b4bd4cd274.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:02:52
 * [Back to Top](#report-top)
