@@ -140,7 +140,7 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
          ![google29](./media/google29.png "google29")  
   
-17. [**Enabled APIs**] (有効にされた API) の一覧で、[**Google Apps Marketplace SDK**] の横にある設定用の歯車アイコンをクリックし、[**設定**] タブを選択します。  
+17. **「Enabled APIs」** (有効にされた API) の一覧で、[**Google Apps Marketplace SDK**] の横にある設定用の歯車アイコンをクリックし、[**設定**] タブを選択します。  
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
   

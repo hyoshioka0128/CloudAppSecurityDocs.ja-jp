@@ -73,7 +73,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
   
 1.  ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
-2.  [**Manage continuous report**] (継続的レポートの管理) タブをクリックします。  
+2.  **「Manage continuous report」** (継続的レポートの管理) タブをクリックします。  
   
 3.  [**レポートの作成**] ボタンをクリックします。  
   
