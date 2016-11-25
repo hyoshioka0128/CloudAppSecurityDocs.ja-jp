@@ -7,10 +7,10 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 0
 [ Handoff Success Files ](#handoff-success-list)| 0
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 170
+[ Archive Success Files ](#archive-success-list)| 166
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
-[ In Sync Handback Files ](#insync-handback-success-list)| 18
+[ In Sync Handback Files ](#insync-handback-success-list)| 22
 [ Ignored Files ](#ignored-list)| 19
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
@@ -23,7 +23,6 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [CloudAppSecurityDocs\activity-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a0b71a03c932ea529000d7545faf8849d99fcb6d/CloudAppSecurityDocs/activity-filters.md) | ArchivedSuccess | [Details](#342d9fcc84f9fb4b250578b653578403a06605f14)
- [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/azip-integration.md) | ArchivedSuccess | [Details](#104dbdbc22d748e924f42c92ba2607e970f03b9e6)
  [CloudAppSecurityDocs\configure-automatic-log-upload-for-continuous-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/configure-automatic-log-upload-for-continuous-reports.md) | ArchivedSuccess | [Details](#2a079813677020b1181648394c818edd5f29478610)
  [CloudAppSecurityDocs\connect-aws-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/connect-aws-to-microsoft-cloud-app-security.md) | ArchivedSuccess | [Details](#d78f324cc8fba6c45a49c1260c157fb4f4feaab711)
  [CloudAppSecurityDocs\connect-box-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/connect-box-to-microsoft-cloud-app-security.md) | ArchivedSuccess | [Details](#1899e9ab0c1c3c3eb8a3ef1c6f69bdab88143ee612)
@@ -33,7 +32,6 @@
  [CloudAppSecurityDocs\connect-okta-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/connect-okta-to-microsoft-cloud-app-security.md) | ArchivedSuccess | [Details](#f5f355a42321e4467ce3ef487c48508522a286ab16)
  [CloudAppSecurityDocs\connect-salesforce-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/6637aaaa34c855cfd6070e9420428d19087e0aa7/CloudAppSecurityDocs/connect-salesforce-to-microsoft-cloud-app-security.md) | ArchivedSuccess | [Details](#9a076831c8d93e3af34541b3e881181d829bf34817)
  [CloudAppSecurityDocs\connect-servicenow-to-microsoft-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/connect-servicenow-to-microsoft-cloud-app-security.md) | ArchivedSuccess | [Details](#38f87fce6925b380c5b02e1c5ae4daa83d4d45a218)
- [CloudAppSecurityDocs\control.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2f158e2f3643629d215eb23281b17a58ee7f78fc/CloudAppSecurityDocs/control.md) | ArchivedSuccess | [Details](#5a051fc106661fc2266587ac5dbbb8bbdabd88bc21)
  [CloudAppSecurityDocs\control-cloud-apps-with-policies.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/6637aaaa34c855cfd6070e9420428d19087e0aa7/CloudAppSecurityDocs/control-cloud-apps-with-policies.md) | ArchivedSuccess | [Details](#df5d9b927e3cb51d2b8a2910329cfc4824c168b020)
  [CloudAppSecurityDocs\daily-activities-to-protect-your-cloud-environment.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/daily-activities-to-protect-your-cloud-environment.md) | ArchivedSuccess | [Details](#5defb9bde515be712bc64ce84be42b2120935ed823)
  [CloudAppSecurityDocs\data-protection-policies.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/3c342e019dfca316ee89f68de60886d848abdb17/CloudAppSecurityDocs/data-protection-policies.md) | ArchivedSuccess | [Details](#24498fd5935ab8919231c284ca41b00ffb27e76924)
@@ -42,7 +40,6 @@
  [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/3c342e019dfca316ee89f68de60886d848abdb17/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md) | ArchivedSuccess | [Details](#7137b7f362718f36a416d3c8e33040d208a9212629)
  [CloudAppSecurityDocs\governance-actions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/3c342e019dfca316ee89f68de60886d848abdb17/CloudAppSecurityDocs/governance-actions.md) | ArchivedSuccess | [Details](#d1b13f6c3cf3a466296285e53fddbc4faffbb35930)
  [CloudAppSecurityDocs\index.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/3c342e019dfca316ee89f68de60886d848abdb17/CloudAppSecurityDocs/index.md) | ArchivedSuccess | [Details](#8a0e20692fbfe0054f8c5816bfe29fd1ac73782033)
- [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/23ec0b7bef05146d3ff4a953225b56b52aa4959f/CloudAppSecurityDocs/investigate.md) | ArchivedSuccess | [Details](#fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e34)
  [CloudAppSecurityDocs\manage-app-permissions.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/manage-app-permissions.md) | ArchivedSuccess | [Details](#156be8b048c12e5db0a4b1118314c0b600ded24a35)
  [CloudAppSecurityDocs\media\access-from-o365.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/access-from-o365.png) | ArchivedSuccess | [Details](#53f98a5fdbf84c20c0efe94e935738a95f7d2e3b36)
  [CloudAppSecurityDocs\media\activity_policy.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e7efcbe212d8a5e7abc51bb101bbe036d39f3458/CloudAppSecurityDocs/media/activity_policy.png) | ArchivedSuccess | [Details](#629f4065348f5d082518eda592e0303bf8f05dca46)
@@ -189,7 +186,6 @@
  [CloudAppSecurityDocs\media\settings-icon.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/settings-icon.png) | ArchivedSuccess | [Details](#1651e6e67bf580c67b87ef9ab8bd55a60809a414191)
  [CloudAppSecurityDocs\media\snapshot-report-managment.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/media/snapshot-report-managment.png) | ArchivedSuccess | [Details](#06c05a99fdbea0c15f0774d280abfe8bc82c4a29192)
  [CloudAppSecurityDocs\media\timezone-language.png](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/a413236b04726dddc69068e39967f6ad17218719/CloudAppSecurityDocs/media/timezone-language.png) | ArchivedSuccess | [Details](#86ed4b6f29097f505b47aa6d51a9848567e785a3193)
- [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/release-notes.md) | ArchivedSuccess | [Details](#3161fd1c61779ba943d8269d2ec979050ee0ae1f196)
  [CloudAppSecurityDocs\TOC.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/3c342e019dfca316ee89f68de60886d848abdb17/CloudAppSecurityDocs/TOC.md) | ArchivedSuccess | [Details](#cb526fedc12519c05bfca8b411adb158d44c1887198)
  [CloudAppSecurityDocs\what-is-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/e41c04d25f12aa5207ef9ffbb6a22f4b894e92cb/CloudAppSecurityDocs/what-is-cloud-app-security.md) | ArchivedSuccess | [Details](#d3877fa17daaf9e838ca799f52b1b2fcbb0db5f4203)
 
@@ -201,15 +197,19 @@
  Source File | Status | Details 
  ----------- | ------ | ------- 
  [CloudAppSecurityDocs\anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/002e0b82296162ee13fa378c4641cc8f21547237/CloudAppSecurityDocs/anomaly-detection-policy.md) | InSyncHandedBackSuccess | [Details](#ca51d36a6d899124d3d4eb84ded1972ad9c8bab45)
+ [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/azip-integration.md) | InSyncHandedBackSuccess | [Details](#104dbdbc22d748e924f42c92ba2607e970f03b9e6)
  [CloudAppSecurityDocs\built-in-report-reference.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/built-in-report-reference.md) | InSyncHandedBackSuccess | [Details](#520017dab0301fe2a64c7b82d5e14c71efb2522f7)
  [CloudAppSecurityDocs\cloud-discovery-anomaly-detection-policy.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/cloud-discovery-anomaly-detection-policy.md) | InSyncHandedBackSuccess | [Details](#132b4d296b26dd187418734b40d08ecb243692da8)
  [CloudAppSecurityDocs\cloud-discovery-policies.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/cloud-discovery-policies.md) | InSyncHandedBackSuccess | [Details](#a43f96ec1d0f6047570677f07281b3e5ad42a40e9)
  [CloudAppSecurityDocs\content-inspection.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/content-inspection.md) | InSyncHandedBackSuccess | [Details](#ea1854d6bf32e01afe6183409b68ded32ee37dd119)
+ [CloudAppSecurityDocs\control.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2f158e2f3643629d215eb23281b17a58ee7f78fc/CloudAppSecurityDocs/control.md) | InSyncHandedBackSuccess | [Details](#5a051fc106661fc2266587ac5dbbb8bbdabd88bc21)
  [CloudAppSecurityDocs\create-snapshot-cloud-discovery-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/400741713d40422a3b1c7680663a572d18e9c692/CloudAppSecurityDocs/create-snapshot-cloud-discovery-reports.md) | InSyncHandedBackSuccess | [Details](#650bf424d77f6cbcf11e24058ec54278cfd579f522)
  [CloudAppSecurityDocs\enable-instant-visibility-protection-and-governance-actions-for-your-apps.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/14de5a6b28c6593250a1a7827905fb0f8a6482b5/CloudAppSecurityDocs/enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) | InSyncHandedBackSuccess | [Details](#3ea2fbe78b943513a1b6ce483bc50ed5d79ae7c526)
  [CloudAppSecurityDocs\includes\adallom_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/b4c45769356e70388027f4b93011e2dee12bfecf/CloudAppSecurityDocs/includes/adallom_md.md) | InSyncHandedBackSuccess | [Details](#1b95273f4f639ebd4bc1d0200fed97b9c1acb02d32)
  [CloudAppSecurityDocs\includes\adallom1_md.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/8841b5eca8285935ec4b4c6134bd7514a2dc6ac9/CloudAppSecurityDocs/includes/adallom1_md.md) | InSyncHandedBackSuccess | [Details](#2e7cec9538ebefe236d29dfaa1d2abcbbce98b9c31)
+ [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/23ec0b7bef05146d3ff4a953225b56b52aa4959f/CloudAppSecurityDocs/investigate.md) | InSyncHandedBackSuccess | [Details](#fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e34)
  [CloudAppSecurityDocs\monitor-alerts.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/monitor-alerts.md) | InSyncHandedBackSuccess | [Details](#af3585cbf123ba826efbdb79339c84a2dcb740c8195)
+ [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/release-notes.md) | InSyncHandedBackSuccess | [Details](#3161fd1c61779ba943d8269d2ec979050ee0ae1f196)
  [CloudAppSecurityDocs\set-up-cloud-discovery.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/set-up-cloud-discovery.md) | InSyncHandedBackSuccess | [Details](#cfca549e1e16ca83972876626771a55d698530a2197)
  [CloudAppSecurityDocs\troubleshooting.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/troubleshooting.md) | InSyncHandedBackSuccess | [Details](#7446c3eb17befdf473c8841a0d92524c029f67df201)
  [CloudAppSecurityDocs\troubleshooting-api-connectors-using-error-messages.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/ed4ea71b24767d3602d40894d1cbac7447bcd8a2/CloudAppSecurityDocs/troubleshooting-api-connectors-using-error-messages.md) | InSyncHandedBackSuccess | [Details](#61492a0126bff93c2a61d5d1317784ca96687df7199)
@@ -301,9 +301,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\activity-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/c4a865dfb00f3392bd8d3902f3c2701adca26f64/CloudAppSecurityDocs/activity-filters.md)
-* Current Handback File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-17 08:37:14
+* Current Target File: [CloudAppSecurityDocs\activity-filters.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/activity-filters.md)
+* Current Handback File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/activity-filters.35fa2d219e36862b231b46c7dfacda5de7ef660b.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-17 08:37:58
 * [Back to Top](#report-top)
@@ -323,18 +323,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='104dbdbc22d748e924f42c92ba2607e970f03b9e6'></a> Source: [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/azip-integration.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/azip-integration.md)
 * Handoff File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/0b374c490ef36d1746002f8330310ffc955f26e9/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf)
 * Handoff Datetime: 2016-11-16 20:43:50
 * Handoff Reason: Include
 * Archive File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/7f418e9d60430637cb56e0a511f78e913d14a3fc/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf)
 * Archive Datetime: 2016-11-17 01:25:58
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\azip-integration.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/c4a865dfb00f3392bd8d3902f3c2701adca26f64/CloudAppSecurityDocs/azip-integration.md)
-* Current Handback File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-17 08:37:14
+* Handback File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf)
+* Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/azip-integration.bb192bd1d331da60f814da44b801cf4714502352.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-17 08:37:58
 * [Back to Top](#report-top)
@@ -391,9 +388,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\configure-automatic-log-upload-for-continuous-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/86fa799c44a6053ddad1cf7fbdfccd7678e85403/CloudAppSecurityDocs/configure-automatic-log-upload-for-continuous-reports.md)
-* Current Handback File: [configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ca96d049a994e8bfca49f5590098e6b696bb6356/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-17 08:24:02
+* Current Target File: [CloudAppSecurityDocs\configure-automatic-log-upload-for-continuous-reports.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/configure-automatic-log-upload-for-continuous-reports.md)
+* Current Handback File: [configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ca96d049a994e8bfca49f5590098e6b696bb6356/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/configure-automatic-log-upload-for-continuous-reports.91b5b443228b3acaf7cd43a2f90ef1e554534454.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-17 08:24:37
 * [Back to Top](#report-top)
@@ -549,18 +546,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='5a051fc106661fc2266587ac5dbbb8bbdabd88bc21'></a> Source: [CloudAppSecurityDocs\control.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/2f158e2f3643629d215eb23281b17a58ee7f78fc/CloudAppSecurityDocs/control.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\control.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/control.md)
 * Handoff File: [control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/68cad9b91a99a883a980673727e6bc649de92df5/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf)
 * Handoff Datetime: 2016-11-15 21:02:49
 * Handoff Reason: Include
 * Archive File: [control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/7f418e9d60430637cb56e0a511f78e913d14a3fc/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf)
 * Archive Datetime: 2016-11-17 01:25:58
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\control.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/700663d0f21cadb29db9f0d4fe40d269eee90d35/CloudAppSecurityDocs/control.md)
-* Current Handback File: [control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 02:02:17
+* Handback File: [control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf)
+* Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/control.207bb840c36c3c6e248e75c23548d9a4a409b03f.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:02:52
 * [Back to Top](#report-top)
@@ -606,9 +600,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\daily-activities-to-protect-your-cloud-environment.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/700663d0f21cadb29db9f0d4fe40d269eee90d35/CloudAppSecurityDocs/daily-activities-to-protect-your-cloud-environment.md)
-* Current Handback File: [daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 02:02:17
+* Current Target File: [CloudAppSecurityDocs\daily-activities-to-protect-your-cloud-environment.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/daily-activities-to-protect-your-cloud-environment.md)
+* Current Handback File: [daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/daily-activities-to-protect-your-cloud-environment.5e15f04793bbcadad02048ae9b154526545f1024.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:02:52
 * [Back to Top](#report-top)
@@ -683,9 +677,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/c8e3c52289ab062cc5bafa5b4972ab6a21e49a0c/CloudAppSecurityDocs/general-setup.md)
-* Current Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 12:58:57
+* Current Target File: [CloudAppSecurityDocs\general-setup.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/general-setup.md)
+* Current Handback File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/8e4c36c884e555a38a1bb8c4850b7d1b53bf97dd/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/general-setup.8c0e330c3c16247d99408f1ffadf9002e1a7b5dd.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 13:00:30
 * [Back to Top](#report-top)
@@ -700,9 +694,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/700663d0f21cadb29db9f0d4fe40d269eee90d35/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md)
-* Current Handback File: [getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 02:02:17
+* Current Target File: [CloudAppSecurityDocs\getting-started-with-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/getting-started-with-cloud-app-security.md)
+* Current Handback File: [getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ce777d1570ea021e2025233f4bd88ccfe7e7adb4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/getting-started-with-cloud-app-security.595efa3f26c538d1c9171dffaf30d61a4aa5939b.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:02:52
 * [Back to Top](#report-top)
@@ -770,18 +764,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e34'></a> Source: [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/23ec0b7bef05146d3ff4a953225b56b52aa4959f/CloudAppSecurityDocs/investigate.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/investigate.md)
 * Handoff File: [investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/68cad9b91a99a883a980673727e6bc649de92df5/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf)
 * Handoff Datetime: 2016-11-15 21:02:49
 * Handoff Reason: Include
 * Archive File: [investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/7f418e9d60430637cb56e0a511f78e913d14a3fc/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf)
 * Archive Datetime: 2016-11-17 01:25:58
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\investigate.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/cb8174ef72e3e71611c1415114b50e161a7f71ce/CloudAppSecurityDocs/investigate.md)
-* Current Handback File: [investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b78b9caae5fbf8f9cad1b6fe260d1e473ec99446/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 08:33:35
+* Handback File: [investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf)
+* Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b78b9caae5fbf8f9cad1b6fe260d1e473ec99446/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/investigate.52cb9236b6eb01254d5743c7e2666eef6f5b6adc.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 08:34:33
 * [Back to Top](#report-top)
@@ -2871,18 +2862,15 @@
 * [Back to Top](#report-top)
 
 ##### <a name='3161fd1c61779ba943d8269d2ec979050ee0ae1f196'></a> Source: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr/blob/759692e7b270d87dc1becf88453d095f2382c411/CloudAppSecurityDocs/release-notes.md)
-* Status: ArchivedSuccess
-* Target File: 
+* Status: InSyncHandedBackSuccess
+* Target File: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/release-notes.md)
 * Handoff File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/0b374c490ef36d1746002f8330310ffc955f26e9/ol-handoff/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf)
 * Handoff Datetime: 2016-11-16 20:43:50
 * Handoff Reason: Include
 * Archive File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handoff/blob/7f418e9d60430637cb56e0a511f78e913d14a3fc/ol-archive/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf)
 * Archive Datetime: 2016-11-17 01:25:58
-* Handback File: 
-* Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\release-notes.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/86fa799c44a6053ddad1cf7fbdfccd7678e85403/CloudAppSecurityDocs/release-notes.md)
-* Current Handback File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ca96d049a994e8bfca49f5590098e6b696bb6356/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-17 08:24:02
+* Handback File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf)
+* Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/ca96d049a994e8bfca49f5590098e6b696bb6356/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/release-notes.17e301be5316791275be7a0b7d7c1a5ccef11655.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-17 08:24:37
 * [Back to Top](#report-top)
@@ -2911,9 +2899,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\TOC.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/c4a865dfb00f3392bd8d3902f3c2701adca26f64/CloudAppSecurityDocs/TOC.md)
-* Current Handback File: [TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-17 08:37:14
+* Current Target File: [CloudAppSecurityDocs\TOC.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/TOC.md)
+* Current Handback File: [TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/1add3b735332fd5e24d08caf038060fbabda8e1b/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/TOC.9254fd8b61e22108f63162b1fb6861b4ae9dd503.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-17 08:37:58
 * [Back to Top](#report-top)
@@ -2984,9 +2972,9 @@
 * Archive Datetime: 2016-11-24 01:30:17
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [CloudAppSecurityDocs\what-is-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/aaa960e7f848a77d134de699361e50b0807adcb7/CloudAppSecurityDocs/what-is-cloud-app-security.md)
-* Current Handback File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/e10ecabbe2af1c1966c85a1d2220748edd481fa4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf)
-* Current Handback Datetime: 2016-11-10 02:15:13
+* Current Target File: [CloudAppSecurityDocs\what-is-cloud-app-security.md](https://github.com/Microsoft/CloudAppSecurityDocs-pr.ja-jp/blob/ac8845e922f559046669780318c462bb16d5d3fe/CloudAppSecurityDocs/what-is-cloud-app-security.md)
+* Current Handback File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/b324e83534d312be223840aca64d70e387afc667/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf)
+* Current Handback Datetime: 2016-11-25 14:17:35
 * Bilingual File: [what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf](https://github.com/Microsoft/CloudAppSecurityDocs-pr.handback/blob/e10ecabbe2af1c1966c85a1d2220748edd481fa4/ol-handback/Microsoft/CloudAppSecurityDocs-pr.ja-jp/live/ht/what-is-cloud-app-security.15558b12c33b1fa7547b161b413c292a732924ca.ja-jp.xlf)
 * Bilingual Datetime: 2016-11-10 02:16:27
 * [Back to Top](#report-top)
