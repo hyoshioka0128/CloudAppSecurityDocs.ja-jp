@@ -5,22 +5,45 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/30/2016
+ms.date: 11/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: 4949ab4f-22c3-4371-b2dc-c8422a097dfe
+ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
+ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
+ms.openlocfilehash: 3161fd1c61779ba943d8269d2ec979050ee0ae1f
 
 
 ---
 
 # <a name="release-notes"></a>リリース ノート
+
+
+## <a name="cloud-app-security-release-84"></a>Cloud App Security リリース 84
+リリース日: 2016 年 11 月 13 日
+
+**新機能**
+-   Cloud App Security で、Microsoft Azure Information Protection Azure がサポートされるようになりました。これには、統合の強化と自動プロビジョニングも含まれます。 ファイルをフィルター処理し、タグのセキュリティ分類を使用してファイル ポリシーを設定した後、表示する分類ラベルを設定できます。 ラベルは、分類が組織内のユーザーまたは別のテナント (外部) のユーザーによって設定されたものかどうかも示します。 Azure Information Protection の分類ラベルに基づいてアクティビティ ポリシーを設定し、Office 365 で分類ラベルの自動スキャンを有効化することもできます。 このすばらしい新機能を活用する方法の詳細については、「[Azure Information Protection の統合](azip-integration.md)」を参照してください。
+ 
+**機能強化**
+-   Cloud App Security のアクティビティ ログでは、以下の点が強化されました。 
+   -    Security and Compliance Center からの Office 365 イベントが、Cloud App Security に統合され、**アクティビティ ログ**に表示されるようになりました。
+   -    Cloud App Security のすべてのアクティビティは、管理者アクティビティとして Cloud App Security アクティビティ ログに登録されます。
+-   ファイルに関連したアラートの調査に役立てるため、ファイル ポリシーによって生じる各アラートに、一致するファイル上で実行されたアクティビティのリストを表示できるようになりました。
+-   小さなテナントに対してより良いサポートを提供するため、異常検出エンジンでのあり得ない移動アルゴリズムが改善されました。 
+ 
+**細かな改善点**
+-   **アクティビティのエクスポート制限**が 10,000 に引き上げられました。 
+-   Cloud Discovery 手動ログのアップロード プロセスで**スナップショット レポート**を作成すると、ログの処理にかかる正確な予想時間を受け取れるようになりました。 
+-   ファイル ポリシーの**削除コラボレーター** ガバナンス アクションがグループで機能するようになりました。
+-   [**アプリの権限**] ページにも細かな改善が加えられています。 
+-   Office 365 に接続するアプリへのアクセス許可が付与されたユーザーが 10,000 を超えると、リストの読み込みが遅くなっていました。 これが修正されました。
+-   **アプリ カタログ**に Payment Card Industry (PCI) に関する属性が追加されました。
+
 
 ## <a name="cloud-app-security-release-83"></a>Cloud App Security リリース 83
 リリース日: 2016 年 10 月 30 日
@@ -215,6 +238,6 @@ ms.openlocfilehash: d95ddaef15cbb11f005156f272578f49f012e16d
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO3-->
 
 

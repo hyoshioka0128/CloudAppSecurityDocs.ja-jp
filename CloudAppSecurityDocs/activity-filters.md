@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2cb87afa3c5342e01cfd4049669ac4b3b7efa4fe
-ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
+ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
+ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 
 ---
@@ -86,6 +86,7 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
 アクティビティ ログで各アクティビティをクリックすると、そのアクティビティの詳細を表示できます。 アクティビティ ドロワーが開き、そこで、以下の追加アクションをファイルに対して実行できます。
 
 - 一致するポリシー: [一致するポリシー] リンクをクリックすると、そのアクティビティが合致するポリシーの一覧が表示されます。
+- 生データの表示: [View raw data] (生データの表示) をクリックすると、アプリから受信した実際のデータが表示されます。
 - ユーザー: ユーザーをクリックすると、そのアクティビティを実行したユーザーのユーザー ページが表示されます。 
 - デバイスの種類: [デバイスの種類] をクリックすると、生のユーザー エージェント データが表示されます。 
 - 場所: [場所] をクリックすると、Bing マップで場所が表示されます。
@@ -129,6 +130,6 @@ ms.openlocfilehash: 59e97ef0bd0a1f3ed388c3d21cfe6a70abf7936a
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

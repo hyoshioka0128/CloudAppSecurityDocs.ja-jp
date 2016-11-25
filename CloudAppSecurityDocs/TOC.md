@@ -30,12 +30,14 @@
 ### [ファイル](file-filters.md)
 ### [アクティビティ](activity-filters.md)
 ### [アラート](monitor-alerts.md)
+### [Azure Information Protection との統合](azip-integration.md)
 ## [制御](control.md)
-## [ガバナンス アクション](governance-actions.md)
+### [アプリのアクセス許可の管理](manage-app-permissions.md)
+## [ガバナンス ログ](governance-actions.md)
 # [トラブルシューティング](troubleshooting.md)
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 

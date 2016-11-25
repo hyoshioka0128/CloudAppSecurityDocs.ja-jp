@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 400741713d40422a3b1c7680663a572d18e9c692
-ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
+ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
+ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
 
 
 ---
@@ -37,11 +37,6 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
 -   Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者、コンプライアンス管理者、またはセキュリティ管理者である必要があります。 管理者ロールを割り当てられているユーザーは、企業がサブスクライブしているすべてのクラウド アプリに対して、Office 365 ポータル、Azure クラシック ポータル、または Windows PowerShell 用 Azure AD モジュールのいずれを使用して割り当てられている場合でも、同じ権限を持つことを理解しておくことが重要です。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。  
   
 -   Cloud App Security ポータルを実行するには、Internet Explorer 11、Microsoft Edge (最新版)、Google Chrome (最新版)、Mozilla Firefox (最新版)、Apple Safari (最新版) のいずれかを使用してください。  
-  
--   ExpressRoute  
-  
-     Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。  
-    パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。  
   
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ  
   
@@ -91,7 +86,7 @@ ms.openlocfilehash: 5c93d5c0f15c0ed6dfd44c0629b8413cdc980e3f
   
 ![管理者アクセスの管理](./media/manage-admin-access.png "manage admin access")  
   
-##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a> 管理設定のカスタマイズ  
+##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> 管理設定のカスタマイズ  
 Cloud App Security の管理者としての設定をセットアップする場合、ポータルのメニュー バーでユーザー名をクリックしてから [**ユーザー設定**] を選択し、次の項目を設定します。  
   
 1.  [**アカウント設定**] をクリックします。 ここでは、ユーザー自身がポータルの表示に使用する言語をカスタマイズできます。 ポータルの表示に既定の言語を使用するか、または自分用に別の言語を使用するかを設定できます。  
@@ -108,7 +103,7 @@ Cloud App Security の管理者としての設定をセットアップする場�
   
 3. 完了したら [**保存**] をクリックします。  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a> ニーズに応じたデータの管理  
+##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> ニーズに応じたデータの管理  
 物理的なオフィスの IP アドレスなど、既知の IP アドレスを簡単に識別するには、タグを適切に分類できるように IP アドレスの範囲を設定し、またログやアラートの表示や調査の方法をカスタマイズする必要があります。   
 IP アドレス範囲の各グループは、IP カテゴリのプリセットのリストに基づいて分類したり、独自に作成した IP タグを付与したりできます。 さらに、この設定を使用して、公開されている geo ロケーション情報を内部ネットワークの情報に基づいて上書きすることができます。  
   
@@ -152,7 +147,7 @@ IPv4 と IPv6 がサポートされています。
   
      ![newipaddress の範囲](./media/newipaddress-range.png "newipaddress range")  
   
-##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a> エクスペリエンスの個人設定  
+##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> エクスペリエンスの個人設定  
 メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
   
 ![メール設定メニュー](./media/mail-setting-menu.png "mail setting menu")  
@@ -161,7 +156,7 @@ IPv4 と IPv6 がサポートされています。
   
 1.  **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
   
-     **From display name (表示名から)**: 電子メール メッセージの[**From**] フィールドに表示する名前。  
+     **From display name (表示名から)**: 電子メール メッセージの [**From**] フィールドに表示する名前。  
   
      **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
@@ -241,9 +236,14 @@ IPv4 と IPv6 がサポートされています。
      次に、[**テスト メールの送信**] をクリックしてテスト メールを自分自身に送信し、作成したテンプレートの例を確認します。  
      電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールでは、メタデータ フィールド、テンプレート、電子メールの件名、電子メール本文のタイトルと内容を確認できます。  
   
-## <a name="single-signon"></a>シングル サインオン  
+## <a name="single-sign-on"></a>シングル サインオン  
 Cloud App Security は Azure Active Directory と組み合わせて認証、プロビジョニング、およびライセンス認証に関連するアクティビティを行います。 シングル サインオンの管理方法の詳細については、「[Azure Active Directory のフェデレーションの互換性リスト:シングル サインオンの実装に使用できるサードパーティ ID プロバイダー](https://msdn.microsoft.com/library/azure/jj679342.aspx)」をご覧ください。  
-  
+
+
+> [!NOTE] 
+> ExpressRoute を使用している場合は、Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。  
+    パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。  
+    
 ## <a name="see-also"></a>参照  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -252,6 +252,6 @@ Cloud App Security は Azure Active Directory と組み合わせて認証、プ�
   
 
 
-<!--HONumber=Oct16_HO5-->
+<!--HONumber=Nov16_HO2-->
 
 
