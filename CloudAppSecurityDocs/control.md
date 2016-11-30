@@ -26,7 +26,7 @@ ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-[**設定**] (歯車アイコン) ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
+[**設定**] \(歯車アイコン) ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
 
 ガバナンス アクションが失敗した場合は、[**再試行**] アイコン ![再試行アイコン](./media/retry-icon.png "retry icon") をクリックして再度適用できます。  
 
@@ -78,6 +78,6 @@ Premier サポートをご利用のお客様は、[Premier ポータル](https:/
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
