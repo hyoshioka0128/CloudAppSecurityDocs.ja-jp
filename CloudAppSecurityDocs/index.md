@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 23e30c53f65fd7a0357a7bb7f116727163e0800d
-ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -145,7 +145,7 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>ガバナンス ログ</h3>
+                    <h3>ガバナンス</h3>
                     <p>ガバナンス ログを使用して、Cloud App Security で実行するように設定された各タスク (手動と自動の両方) の状態レコードを取得します。</p>
                   </a>
                 </li>
@@ -196,13 +196,13 @@ ms.openlocfilehash: d35e70624ffa969c086ece8d67e209d7b168f674
         <aside class="alert alert-social">
       <p>Cloud App Security の最新情報を入手する <ol class="action-list">
         <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835382" target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 
