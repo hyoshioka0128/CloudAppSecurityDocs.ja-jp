@@ -1,11 +1,11 @@
 ---
-title: "Azure Inforamtion Protection の統合 |Microsoft Docs"
+title: "Azure Information Protection の統合 | Microsoft Docs"
 description: "この記事では、Cloud App Security で Azure Information Protection タグを使って、組織のクラウド アプリの使用をより強力に制御する方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/03/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,20 +14,21 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 104dbdbc22d748e924f42c92ba2607e970f03b9e
+ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
+ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
 
 
 ---
 
-# <a name="azure-information-protection-integration---private-preview"></a>Azure Information Protection の統合 - **プライベート プレビュー**
+# <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
-Cloud App Security では、Azure Information Protection ファイル ラベルに基づいてファイルの調査およびポリシーの設定を行い、クラウド内の機密データの視認性とコントロールを高めることができます。 そのためには、Cloud App Security でポリシーを設定し、コンテンツ検査を有効にしてファイルをスキャンします。 さらに、Cloud App Security プライベート プレビューでは、分類済みファイルに関連するアクティビティについてのアラートをトリガーすることができます。 Azure Information Protection の統合では、以下のことが可能です。
+Cloud App Security では、Azure Information Protection ファイル ラベルに基づいてファイルの調査およびポリシーの設定を行い、クラウド内の機密データの視認性とコントロールを高めることができます。 そのためには、Cloud App Security でポリシーを設定し、コンテンツ検査を有効にしてファイルをスキャンします。 また、分類されたファイルに関連するアクティビティでアラートをトリガーできます。 Azure Information Protection の統合では、以下のことが可能です。
 -   クラウド アプリケーション経由での機密データの公開を数値化する。
 -   接続されているクラウド アプリでの分類済みデータのアップロードに関するポリシー、およびアップロード違反に関するアラートを作成する。または、機密データを隔離するか、機密データの外部共有を禁止する。
 -   監査証跡を調査し、ポリシーに違反しているファイルを修復する。 
 
-> [!NOTE] 既定では、コンテンツ検査が有効になっていて、ファイルをスキャンするファイル ポリシーがある場合のみ、そのファイルのラベルがスキャンされます。 ファイル ポリシーのないすべてのファイルでラベルをスキャンするには、自動スキャンを有効にしてください。
+> [!NOTE] 
+> 既定では、コンテンツ検査が有効になっていて、ファイルをスキャンするファイル ポリシーがある場合のみ、そのファイルのラベルがスキャンされます。 ファイル ポリシーのないすべてのファイルでラベルをスキャンするには、自動スキャンを有効にしてください。
 
 ## <a name="terminology-overview"></a>用語の概要
 -   Azure Information Protection の分類ラベル - 組織内のファイルに追加された属性です。追加は、ポリシーに基づいて自動的に行うか、またはエンド ユーザーが手動で設定します。
@@ -62,6 +63,13 @@ Cloud App Security では、Azure Information Protection ファイル ラベル�
 また、タグ付けされたファイルすべてを検索することもできます。
 
 ![すべてのファイル タグ フィルター](./media/azip-file-tags-all-filter.png)
+
+## <a name="how-it-works"></a>しくみ
+Cloud App Security を Azure Information Protection と接続するとすぐに、次のように Cloud App Security でファイルがスキャンされます。
+1. テナントで使用されているすべての分類ラベル一覧を取得します。 一覧を最新の状態に保つために、この処理は 1 時間に 1 回実行されます。
+2. 分類ラベルのファイルをスキャンします。 この処理は 2 つの方法で実行できます。a. ファイル ポリシーの一部としてコンテンツがスキャンされるファイルは、分類ラベル用のスキャン キューにも追加されます。
+    b. ファイル ポリシーを設定することなく、すべてのファイルをスキャン キューに追加するには、自動スキャンを有効にします (下記を参照)。これですべての新規ファイルまたは変更されたファイルがスキャンされます。
+3. **[Ignore Azure Information Protection classification labels from other tenants]** (他のテナントからの Azure Information Protection 分類ラベルを無視する) チェック ボックスをオンにしていない場合、外部ラベルが特定のファイルにある場合にのみ、外部ラベルは分類ラベルの一覧に追加されます。
 
 ## <a name="enable-automatic-scan"></a>自動スキャンを有効にする
 Office 365 内の新しいファイルのファイル タグに対する自動スキャンを有効にするには、次の操作を行います。
@@ -119,6 +127,6 @@ Cloud App Security でファイル ポリシーを作成し、不適切に共有
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

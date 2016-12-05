@@ -1,5 +1,5 @@
 ---
-title: "Okta を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "Okta の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Okta アプリを接続する方法について説明します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 1e82f94cb8423bdaa3dcdc8d4a4f04179089546c
 
 
 ---
@@ -49,13 +49,13 @@ ms.openlocfilehash: 3fd8ada1ce622da339368c64ecc8b1d319b9c333
   
          ![Okta のトークン値](./media/okta-token-value.png "okta token value")  
   
-3.  Cloud App Security コンソールで **[調査]**、**[承認されたアプリ]** の順にクリックします。  
+3.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-4.  [Okta] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックして [**Okta**] を選択します。  
+4.  **[アプリ コネクター]** ページで、[+] ボタン、**[Okta]** の順にクリックします。  
   
      ![Okta を接続する](./media/connect-okta.png "connect okta")  
   
-5.  API ページの [**ドメイン**] フィールドに Okta ドメインを入力し、コピーしたトークンを [**トークン**] フィールドに貼り付けます。  
+5.  表示されたポップアップの **[ドメイン]** フィールドに Okta ドメインを入力し、トークンを **[トークン]** フィールドに貼り付けます。  
   
 6.  **[接続]** をクリックして、Okta のトークンを Cloud App Security で作成します。  
   
@@ -73,6 +73,6 @@ Okta を接続すると、接続までの 60 日間のイベントを受け取�
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

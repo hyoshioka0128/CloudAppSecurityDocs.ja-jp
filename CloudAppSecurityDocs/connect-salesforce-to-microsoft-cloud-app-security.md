@@ -1,5 +1,5 @@
 ---
-title: "Salesforce を Microsoft Cloud App Security に接続する| Microsoft Docs"
+title: "Salesforce の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Salesforce を接続する方法について説明します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
 
 
 ---
@@ -44,7 +44,7 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
          ![Salesforce のユーザーの管理のプロファイル](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
   
-    -   Cloud App Security のデプロイに使用しているプロファイルを選択して、**[編集]** をクリックします。  
+    -   Cloud App Security のデプロイに使用しているプロファイルを選択して、**[編集]** をクリックします。 これは、Cloud App Security サービス アカウントでアプリ コネクターをセットアップする場合に使用されるプロファイルです。  
   
          ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "salesforce edit profile")  
   
@@ -72,9 +72,9 @@ ms.openlocfilehash: 28ce67bd096d82e3775a281359fc100e2c214715
   
     5.  **[Save]**(保存) をクリックします。  
   
-4.  Cloud App Security コンソールで **[調査]**、**[承認されたアプリ]** の順にクリックします。  
+4.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-5.  [Box] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、[**アプリを接続**] ボタンをクリックして [**Salesforce**] を選択します。  
+5.  **[アプリ コネクター]** ページで、[+] ボタン、**[Salesforce]** の順にクリックします。  
   
      ![Salesforce を接続する](./media/connect-salesforce.png "connect salesforce")  
   
@@ -105,6 +105,6 @@ SalesForce に接続すると、SalesForce EventMonitoring ライセンスに応
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

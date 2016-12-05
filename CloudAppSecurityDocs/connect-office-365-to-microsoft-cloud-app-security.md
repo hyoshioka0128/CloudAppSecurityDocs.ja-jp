@@ -1,5 +1,5 @@
 ---
-title: "Office 365 を Microsoft Cloud App Security に接続する| Microsoft Docs"
+title: "Office 365 の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Office 365 を接続する方法について説明します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 759692e7b270d87dc1becf88453d095f2382c411
-ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
 >- Exchange メールボックスの監査ログは、Exchange Online のユーザー アクティビティがログに記録される前にユーザーのメールボックスごとに有効にする必要があります (「[Exchange メールボックスのアクティビティ](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)」を参照)。
 >- Office アプリが有効になっている場合、Office 365 の一部であるグループも特定の Office アプリで作成されます。たとえば、SharePoint が有効になっている場合、Office 365 グループは SharePoint で作成されます。
  
-1.  [Office 365] 行で、[**アプリ コネクタの状態**] 列の [**接続**] をクリックするか、[**アプリを接続**] ボタンをクリックして [**Office 365**] を選択します。  
+1.  **[接続]** アプリページで、[+] ボタン、**[Office 365]** の順にクリックします。  
 
 2.  Office 365 ポップアップで、[Office 365 に接続する] をクリックします。
 
@@ -58,6 +58,6 @@ ms.openlocfilehash: 31abf4ad6ee9326894592e1a98b3232bd4c03787
   
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

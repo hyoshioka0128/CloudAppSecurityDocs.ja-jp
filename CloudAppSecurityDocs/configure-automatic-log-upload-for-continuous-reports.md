@@ -14,8 +14,8 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
+ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
+ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
 ### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
   
 1.  自動アップロードの設定ページに移動します。  
-    Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから **[Cloud Discovery 設定]** をクリックし、次に **[ログを自動的にアップロード]** タブを選択します。  
+    Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから **[ログ コレクター]** をクリックします。  
   
 3.  ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。  
   
@@ -99,7 +99,7 @@ ms.openlocfilehash: c6103fffd99295eb37ad575680b4169cbbac42df
   
 8.  [**Use an existing virtual hard disk (既存の仮想ハード ディスクを使用する)**] を選択し、ダウンロードした Zip ファイルに含まれる .**vhd** ファイルを選択します。  
   
-9.  **[次へ]** 、 **[完了]**の順にクリックします。  
+9.  **[次へ]**、**[完了]**の順にクリックします。  
     マシンが Hyper-V 環境に追加されます。  
   
 9. [**仮想マシン**] の表でこのマシンをクリックしてから、[**スタート**] をクリックします。   
@@ -158,6 +158,6 @@ sudo network_config
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

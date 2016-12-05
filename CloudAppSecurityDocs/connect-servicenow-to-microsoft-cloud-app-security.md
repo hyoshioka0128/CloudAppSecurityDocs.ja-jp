@@ -1,5 +1,5 @@
 ---
-title: "ServiceNow を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "ServiceNow の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に ServiceNow アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
 
 
 ---
@@ -36,13 +36,13 @@ ms.openlocfilehash: 30ddba23a0c481cb434e9239950cce90c52efc4f
   
      ![ServiceNow アカウント](./media/servicenow-account.png "servicenow account")  
   
-4.  Cloud App Security のポータルで [**調査**]、[**承認されたアプリ**] の順にクリックします。  
+4.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-5.  [ServiceNow] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックして [**ServiceNow**] を選択します。  
+5.  **[アプリ コネクター]** ページで、[+] ボタン、**[ServiceNow]** の順にクリックします。  
   
      ![ServiceNow を接続する](./media/connect-servicenow.png "connect servicenow")  
   
-6.  ServiceNow の設定ページの [API] タブで、該当するボックスに ServiceNow ユーザー名、パスワード、およびインスタンス URL を追加します。  
+6.  ポップアップの該当するボックスに ServiceNow のユーザー名、パスワード、およびインスタンス URL を追加します。  
   
 7.  **[接続]**をクリックします。  
   
@@ -62,6 +62,6 @@ ServiceNow を接続すると、接続までの 60 日間のイベントを受�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

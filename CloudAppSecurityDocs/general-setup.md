@@ -1,11 +1,11 @@
 ---
-title: "一般的なセットアップ | Microsoft Docs"
-description: "このトピックでは、Cloud App Security を準備して稼働させるために最初に行う手順を説明します。"
+title: "ポータルのカスタマイズ | Microsoft Docs"
+description: "このトピックでは、ポータルをカスタマイズする最初の手順について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,39 +14,18 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2d39b26629579905ea30f3f769ca2a16121d51d1
-ms.openlocfilehash: b617a488dec97deb7c1e1d89cbaa62e496e18891
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
 
 
 ---
 
-# <a name="general-setup"></a>セットアップ全般
-以下では、[!INCLUDE[Adallom1](./includes/adallom1_md.md)] をクラウド環境でセットアップする手順を説明します。  
-  
-## <a name="prerequisites"></a>前提条件  
-  
--   製品を使用するには、企業が Cloud App Security のライセンスを所有している必要があります。 詳細については、[Cloud App Security の購入方法](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)および[ライセンス関連資料](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)を参照してください。  
-  
-     テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。  
-  
-> [!NOTE] 
-> Office 365 のライセンスは Cloud App Security には必要ありません。  
-  
--   Cloud App Security のライセンスを購入すると、ライセンス認証情報と Cloud App Security ポータルへのリンクが記載されたメールが送信されます。  
-  
--   Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者、コンプライアンス管理者、またはセキュリティ管理者である必要があります。 管理者ロールを割り当てられているユーザーは、企業がサブスクライブしているすべてのクラウド アプリに対して、Office 365 ポータル、Azure クラシック ポータル、または Windows PowerShell 用 Azure AD モジュールのいずれを使用して割り当てられている場合でも、同じ権限を持つことを理解しておくことが重要です。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。  
-  
--   Cloud App Security ポータルを実行するには、Internet Explorer 11、Microsoft Edge (最新版)、Google Chrome (最新版)、Mozilla Firefox (最新版)、Apple Safari (最新版) のいずれかを使用してください。  
+# <a name="customize-the-portal"></a>ポータルのカスタマイズ
+ここでは、Cloud App Security ポータルをカスタマイズする手順について説明します。
   
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ  
   
-1.  [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) にアクセスして Cloud App Security ポータルに移動します。  
-  
-     または、**Cloud App Security** から管理センター アイコン ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 admin centers icon") をクリックして、**Office 365 管理センター** からポータルにアクセスすることもできます。  
-  
-     ![O365 からのアクセス](./media/access-from-o365.png "Access from O365")  
-  
-2.  Cloud App Security ポータルのメニュー バーで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**全般設定**] を選択して、以下の構成を行います。  
+1.  Cloud App Security ポータルのメニュー バーで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**全般設定**] を選択して、以下の構成を行います。  
   
 3.  **組織の詳細**  
   
@@ -231,7 +210,7 @@ IPv4 と IPv6 がサポートされています。
   
     ```  
   
-3.  [**テンプレートのアップロード...**] をクリックして、作成したファイルを選択します。  
+3.  [**テンプレートのアップロード**] をクリックして、作成したファイルを選択します。  
   
      次に、[**テスト メールの送信**] をクリックしてテスト メールを自分自身に送信し、作成したテンプレートの例を確認します。  
      電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールでは、メタデータ フィールド、テンプレート、電子メールの件名、電子メール本文のタイトルと内容を確認できます。  
@@ -252,6 +231,6 @@ Cloud App Security は Azure Active Directory と組み合わせて認証、プ�
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 

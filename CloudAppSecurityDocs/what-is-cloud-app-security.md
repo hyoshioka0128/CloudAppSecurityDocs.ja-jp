@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 224c7039ecb7200ad951774ac5fb76202543a35c
-ms.openlocfilehash: 690e58cd598ee9a6dd329e19cd65129df160e009
+ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
+ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
 
 
 ---
@@ -34,7 +34,7 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 |-------|---|:---|
 |![[探索]](./media/discovery-icon.png)|[探索]|Cloud App Security でシャドウ IT を検出します。 クラウド環境内のアプリ、アクティビティ、ユーザー、データ、ファイルを検出して把握します。 クラウドに接続されているサードパーティ製アプリを検出します。|
 |![調査](./media/investigate-icon.png)|調査|クラウド フォレンジクス ツールを使用して、ネットワーク内の危険なアプリ、特定のユーザー、ファイルの詳細を調査します。 クラウドから収集されたデータのパターンを検索します。 クラウドを監視するレポートを生成します。|
-|![Control](./media/protect-icon.png)|Control|ポリシーとアラートを設定して、クラウドのネットワーク トラフィックを最大限に制御し、リスクを軽減します。 Cloud App Security を使用すると、承認された安全な代替クラウド アプリにユーザーを移行できます。|
+|![Control](./media/control-icon.png)|Control|ポリシーとアラートを設定して、クラウドのネットワーク トラフィックを最大限に制御し、リスクを軽減します。 Cloud App Security を使用すると、承認された安全な代替クラウド アプリにユーザーを移行できます。|
 |![保護](./media/protect-icon.png)|保護|Cloud App Security を使用すると、アプリケーションの承認または却下、データ損失防止の実施、アクセス許可と共有の制御、カスタムのレポートおよびアラートの生成を行うことができます。|
 
 
@@ -50,11 +50,11 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 ![Cloud App Security アーキテクチャ](./media/architecture.png)  
 
 > [!NOTE]  
-> Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。 お客様のデータは Cloud App Security データベースに保存されません。 データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
+> Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 お客様のデータは Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
 Cloud App Security は次のようにデータを保持しています。
 >- アクティビティ ログ: 180 日間
 >- 検出データ: 90 日間
->- アラート: 無制限
+>- アラート: 180 日間
 
 これらのソースからデータが収集されると、Cloud App Security はデータを使って高度な分析を実行します。 異常なアクティビティはすぐに通知され、クラウド環境の詳細が提供されます。 Cloud App Security でポリシーを構成し、クラウド環境内のすべてのデータを保護するために使用することができます。  
 
@@ -87,6 +87,6 @@ Premier サポートをご利用のお客様も、[Premier ポータル](https:/
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

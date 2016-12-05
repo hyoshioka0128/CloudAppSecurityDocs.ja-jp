@@ -1,5 +1,5 @@
 ---
-title: "Box を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "Box の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Box アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
 
 
 ---
@@ -45,13 +45,13 @@ ms.openlocfilehash: 849408f84e2a80022623c11f7951e921a95625b6
     > [!NOTE]  
     >  既存の Adallom ユーザーの方でコンソールの URL が Cloud App Security ではなく Adallom のものである場合、このアプリのシリアル番号には bwahmilhdlpbqy2ongkl119o3lrkoshc を使用します。  
   
-2.  Cloud App Security のポータルで [**調査**]、[**承認されたアプリ**] の順にクリックします。  
+2.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-3.  [Box] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックして [**Box**] を選択します。  
+3.  **[アプリ コネクター]** ページで、[+]、**[Box]** の順にクリックします。  
   
      ![Box を接続する](./media/connect-box.png "connect box")  
   
-4.  [**Box の設定**] ページの [**API**] タブで [**Follow this link (このリンクに移動)**] をクリックします。  
+4.  **[Box の設定]** ポップアップで、**[リンクに移動]** をクリックします。  
   
 5.  Box のログオン ページが開きます。 Cloud App Security がチームの Box アプリにアクセスできるように、資格情報を入力します。  
   
@@ -77,6 +77,6 @@ Box を接続すると、Cloud App Security がフル スキャンを実行し�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

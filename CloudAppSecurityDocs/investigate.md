@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 23ec0b7bef05146d3ff4a953225b56b52aa4959f
-ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
+ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
+ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 
 ---
@@ -37,17 +37,15 @@ ms.openlocfilehash: fbd75fadb63bbaecd1e0dbd12b9162c0d17ce50e
 |アプリケーション ダッシュボード: サード パーティ製アプリ|現在デプロイされているサード パーティ製アプリ (Google Apps など) へのドリルダウン、それらのアプリに対するポリシーの定義|  
 |ユーザー ダッシュボード|クラウドのユーザー プロファイルの完全な概要 (グループ、場所、最近のアクティビティ、関連するアラート、使用しているブラウザーなど)|  
 
-##  <a name="a-namesanctionappa-sanction-or-unsanction-apps"></a><a name="sanctionapp"></a> アプリケーションの承認または却下  
-クラウドを理解するための最初の手順は、アプリを承認することです。 アプリを承認したら、承認されていないアプリをフィルタリングして、同じ種類の承認されたアプリへの移行を開始できます。  
+##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> アプリに承認または非承認のタグを付ける  
+クラウドを把握するために重要な手順は、アプリに承認または非承認のタグを付けることです。 アプリを承認したら、承認されていないアプリをフィルタリングして、同じ種類の承認されたアプリへの移行を開始できます。  
 
--   Cloud App Security コンソールで、[**検出**]、[**ダッシュボードの検出**] の順に選択します。  
+-   Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。  
 
--   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット ![承認の 3 つのドット](./media/sanction-three-dots.png "Sanction three dots") を選択し、[**承認済みとしてマークを付ける**] を選択します。  
+-   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "Tag as sanctioned dots")] (Tag as sanctioned dots) を選択し、**[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。  
 
-     ![承認としてマーク](./media/mark-as-sanctioned.png "mark as sanctioned")  
+     ![承認済みとしてタグを付ける](./media/mark-as-sanctioned.png "tag as sanctioned")  
 
-> [!NOTE]  
->  Cloud App Security API の統合によって監視するアプリごとに Cloud App Security 専用の管理サービス アカウントを作成することをお勧めします。  
 
 ## <a name="use-the-investigation-tools"></a>調査ツールの使用  
 
@@ -160,6 +158,6 @@ Premier サポートをご利用のお客様は、[Premier ポータル](https:/
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

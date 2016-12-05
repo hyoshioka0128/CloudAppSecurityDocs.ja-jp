@@ -1,11 +1,11 @@
 ---
-title: "Google Apps を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "Google Apps の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Google アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/23/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
 
 
 ---
 
 # <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Google Apps を Microsoft Cloud App Security に接続する
-このセクションでは、コネクタ API を使用して Cloud App Security を既存の Google Apps に接続する方法を説明します。  
+このセクションでは、コネクタ API を使用して Cloud App Security を既存の Google Apps に接続する方法を説明します。
+
+  
   
 ## <a name="configure-google-apps"></a>Google Apps の設定  
   
@@ -218,13 +220,13 @@ ms.openlocfilehash: 0f38f61be8a0db4a28d3c7df614807ace69bb38e
   
 ## <a name="configure-cloud-app-security"></a>Cloud App Security の設定  
   
-1.  Cloud App Security のポータルで [**調査**]、[**承認されたアプリ**] の順にクリックします。  
+1.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-2.  [Google Apps] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックして [**Google Apps**] を選択します。  
+2.  **[接続アプリ]** ページで、[+]、**[Google Apps]** の順にクリックします。  
   
      ![Google Apps を接続する](./media/connect-google-apps.png "connect google apps")  
   
-3.  Google Apps の設定ページで、次を入力します。  
+3.  ポップアップで、以下のように入力します。  
   
      ![Cloud App Security での Google Apps 構成](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
   
@@ -264,6 +266,6 @@ Google Apps を接続すると、Cloud App Security がフル スキャンを実
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

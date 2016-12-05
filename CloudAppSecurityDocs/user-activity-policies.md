@@ -1,11 +1,11 @@
 ---
-title: "ユーザー アクティビティ ポリシー | Microsoft Docs"
-description: "このトピックでは、ユーザー アクティビティ ポリシーを作成および使用する手順について説明します。"
+title: "アクティビティ ポリシー | Microsoft Docs"
+description: "このトピックでは、アクティビティ ポリシーを作成および使用する手順について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/8/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,13 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
 
 
 ---
 
-# <a name="user-activity-policies"></a>ユーザー アクティビティ ポリシー
+# <a name="activity-policies"></a>アクティビティ ポリシー
 アクティビティ ポリシーでは、アプリ プロバイダーの API を利用してさまざまな自動プロセスを適用できます。 これらのポリシーでは、さまざまなユーザーが実行する特定のアクティビティを監視したり、予想外に実行率の高い特定種類のアクティビティを追跡したりできます。  
   
 アクティビティ検出ポリシーを設定すると、アラートの生成が開始されます。アラートは、ポリシーの作成後に発生するアクティビティに対してのみ生成されます。
@@ -107,7 +107,7 @@ ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
   
 7.  [**感度**] でアラートの受信頻度を選択します。  
   
-     感度値で、1週間あたり 1,000 ユーザーごとにトリガーされる平均アラート数が決まります。  
+     感度値で、1 週間あたり 1,000 ユーザーごとにトリガーされる平均アラート数が決まります。  
   
      ![異常検出 IP](./media/anomaly-detection-ips.png "anomaly detection IPs")  
   
@@ -133,6 +133,6 @@ ms.openlocfilehash: e66cc36b7ff2591c9eff2b7399e7aba7304fd960
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
