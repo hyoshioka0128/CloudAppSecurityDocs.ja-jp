@@ -14,8 +14,8 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 97f270813beae64bf0572ac9e806290e4c2fcd22
-ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
+ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
+ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 
 
 ---
@@ -68,7 +68,10 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 -   登録された ISP - アクティビティの実行元の ISP。   
 
--  ソース - アプリ コネクタなど、アクティビティが検出されたソースで検索します。 
+-  ソース - アクティビティが検出されたソースで検索します。 ソースは次のいずれかとなります。
+  - アプリ コネクタ - アプリの API コネクタから直接届くログ。
+  - アプリ コネクタ分析 - API コネクタによる情報スキャンに基づく Cloud App Security 拡張。
+  
 
 -   ユーザー - アクティビティを実行したユーザー。ドメイン、グループ、名前、または組織でフィルターできます。 [が設定されていない] 演算子を使用すると、特定のユーザーが存在しないアクティビティをフィルタリングできます。  
     -   ユーザー ドメイン - 特定のユーザー ドメインを検索します。
@@ -94,34 +97,9 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
 
 ![アクティビティ ドロワー](./media/activity-drawer.png "activity drawer")  
   
+使用できるガバナンス アクションの一覧については、「[Activity match parameters](governance-actions.md#activity-match-parameters)」(アクティビティ一致パラメーター) を参照してください。
 
 
-## <a name="activity-match-parameters"></a>アクティビティ一致パラメーター  
-ポリシーに一致したと判断されるアクティビティの反復回数を指定します。2 分以内にログイン操作を 10 回失敗した場合にアラートを生成するポリシーなどを設定できます。  
-既定の設定の**アクティビティ一致パラメーター**では、アクティビティ フィルターにアクティビティが一致するたびに毎回一致したと判断されます。   
-**反復アクティビティ**を使用すると、アクティビティの反復回数やアクティビティをカウントする時間範囲を指定できます。また、同一クラウド アプリで同一ユーザーがすべてのアクティビティを実行した場合のみというような指定もできます。  
-  
-### <a name="actions"></a>操作  
-通知  
-  
--   アラート – アラートはシステム内でトリガーし、重要度レベルに基づいて電子メールおよびテキスト メッセージによって伝達することができます。  
-  
--   ユーザーへの電子メール通知 – 電子メール メッセージはカスタマイズ可能で、違反しているすべてのファイル所有者に送信されます。  
-  
--   マネージャーへの CC – ユーザー統合ディレクトリに基づいて、電子メール通知をポリシー違反が検出されたユーザーのマネージャーに送信することもできます。  
-  
--   追加のユーザーに通知 - 通知を受信する電子メール アドレスのリストを指定します。  
-  
-アプリのガバナンス アクション  
-  
--   アプリごとに詳細に設定されたアクションを適用できます。指定されるアクションは、アプリの用語によって異なります。  
-  
--   ユーザーの停止 - ユーザーのアプリケーションの使用を停止します。  
-  
--   パスワードの取り消し - ユーザーのパスワードを取り消し、次回のログイン時に新しいパスワードの設定を強制できます。  
-  
-     ![アクティビティ ポリシー ref6](./media/activity-policy-ref6.png "activity policy ref6")  
-  
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
@@ -130,6 +108,6 @@ ms.openlocfilehash: 92507e352a88cd0c5ff4a7bc9f66b94defd864ff
   
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 
