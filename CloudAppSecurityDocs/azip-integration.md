@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: bf3b2c9fcd374ee9a980d123890b9c78f6fb9e07
+ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
+ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
 
 
 ---
@@ -72,9 +72,10 @@ Cloud App Security を Azure Information Protection と接続するとすぐに�
 3. **[Ignore Azure Information Protection classification labels from other tenants]** (他のテナントからの Azure Information Protection 分類ラベルを無視する) チェック ボックスをオンにしていない場合、外部ラベルが特定のファイルにある場合にのみ、外部ラベルは分類ラベルの一覧に追加されます。
 
 ## <a name="enable-automatic-scan"></a>自動スキャンを有効にする
-Office 365 内の新しいファイルのファイル タグに対する自動スキャンを有効にするには、次の操作を行います。
+自動スキャンを使用すると、ポリシーを作成しなくても、Office 365 ファイルの Azure Information Protection 分類ラベルを検索できます。 この機能は、Cloud App Security のスタンドアロン ライセンスを持っている場合に使用できます。
+新しいファイルのファイル タグに対する自動スキャンを有効にするには、次の操作を行います。
 
-1. Office 365 で、**[全般設定]** ページに移動します。
+1. Cloud App Security の **[General settings]** (全般設定) ページに移動します。
 2. [Azure security settings] (Azure セキュリティ設定) で、**[Automatically scan files for Azure Information Protection classification labels] (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする)** を選択します。 自動スキャンを有効にすると、ファイル ポリシーによるコンテンツ スキャンの対象ファイルだけでなく、Office 365 に追加されるすべての新しいファイルもスキャンされ、ファイル タグが確認されます。
 
 ![Azure Information Protection を有効にする](./media/enable-azip.png)
@@ -83,7 +84,7 @@ Office 365 内の新しいファイルのファイル タグに対する自動�
 ## <a name="internal-and-external-tags"></a>内部および外部のタグ
 既定では、Cloud App Security は、組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
 
-外部のラベルを無視するには、**[Azure security setting]** (Azure セキュリティ設定) で、**[Ignore Azure Information Protection classification labels from other tenants]** (他のテナントからの Azure Information Protection 分類ラベルを無視する) を選択します。
+外部の分類ラベルを無視するには、Cloud App Security ポータルの **[Azure security settings]** (Azure セキュリティ設定) の **[全般設定]** で、**[Ignore Azure Information Protection classification labels from other tenants]** (他のテナントからの Azure Information Protection 分類ラベルを無視する) を選択します。
  
 ![ラベルを無視する](./media/azip-ignore.png)
 
@@ -127,6 +128,6 @@ Cloud App Security でファイル ポリシーを作成し、不適切に共有
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO1-->
 
 
