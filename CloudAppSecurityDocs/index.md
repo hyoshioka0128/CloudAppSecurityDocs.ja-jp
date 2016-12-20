@@ -13,8 +13,8 @@ ms.technology: techgroup-identity
 ms.suite: ems
 ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
 translationtype: Human Translation
-ms.sourcegitcommit: 88cabd2002947a31592e3bf523ce2d7abf4d7a01
-ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
+ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
+ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
 
 
 ---
@@ -24,12 +24,12 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
     <section id="hero-content">
       <h1>Cloud App Security ドキュメント</h1>
       <h2>Cloud App Security をセットアップして使用することで、組織がクラウド アプリケーションのメリットを活用しながら、同時にアクティビティの可視性を向上させて管理性を維持し、重要な企業データの保護を強化できるようにする方法を説明します。 </h2>
-      <h3>Cloud App Security を初めて使用する場合 <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security" target="_blank">製品サイトをご覧ください&rarr;</a></h3>
+      <h3>Cloud App Security を初めて使用する場合 <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">製品サイトをご覧ください&rarr;</a></h3>
     </section>
     <aside class="alert section-border">
         <p>準備ができている場合</p>
         <ol class="action-list">
-            <li><a href="https://aka.ms/buycas" target="_blank" class="button-bordered button-translucent">今すぐ購入</a></li>
+            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">今すぐ購入</a></li>
         </ol>
     </aside>
     <section id="featured" class="container">
@@ -94,59 +94,21 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
-                  <a href="./getting-started-with-cloud-app-security.md">
-                    <h3>セットアップ全般</h3>
-                    <p>Cloud App Security の基本的な構成手順を実行します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
                   <a href="./set-up-cloud-discovery.md">
                     <h3>Cloud Discovery のセットアップ</h3>
                     <p>組織内のクラウド アプリの使用とシャドウ IT に関する詳細な情報を得るには、Cloud Discovery 機能を使用します。</p>
                   </a>
                 </li>
                 <li class="column-third">
-                  <a href="./configure-automatic-log-upload-for-continuous-reports.md">
-                    <h3>ログの自動アップロードを設定する</h3>
-                    <p>Cloud Discovery の継続的なレポートのために自動ログ アップロードを設定します。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./deploy.md">
-                <div class="title column-third">
-                  <span class="step-number">3</span>
-                  <p>展開</p>
-                </div>
-                <p class="description column-two-thirds">API 接続の拡張された可視性を有効にし、アプリ管理のためにポリシーを展開します。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
                   <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>API コネクタを有効にする</h3>
-                    <p>API コネクタを有効にして、Office 365、Google Apps、Box、Dropbox などのアプリに対する拡張された可視性を有効にします。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./connect-office-365-to-microsoft-cloud-app-security.md">
-                    <h3>Office 365 を Cloud App Security に接続する</h3>
-                    <p>アプリ コネクタ API を使用して Cloud App Security を既存の Microsoft Office 365 アカウントに接続します。</p>
+                    <h3>アプリを接続する</h3>
+                    <p>クラウド アプリを Cloud App Security に接続して、視認性と管理性を強化します。</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="./control-cloud-apps-with-policies.md">
                     <h3>ポリシーによるクラウド アプリの制御</h3>
-                    <p>組織のクラウドの使用を制御および管理するポリシーを設定します。</p>
+                    <p>ポリシーを設定して、組織内のクラウド アプリの使用を監視および制御します。</p>
                   </a>
                 </li>
               </ul>
@@ -183,7 +145,7 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
                 </li>
                 <li class="column-third">
                   <a href="./governance-actions.md">
-                    <h3>ガバナンス ログ</h3>
+                    <h3>ガバナンス</h3>
                     <p>ガバナンス ログを使用して、Cloud App Security で実行するように設定された各タスク (手動と自動の両方) の状態レコードを取得します。</p>
                   </a>
                 </li>
@@ -233,14 +195,14 @@ ms.openlocfilehash: b61ffbf820d94f41afb0f595700cf95ad6180445
 
         <aside class="alert alert-social">
       <p>Cloud App Security の最新情報を入手する <ol class="action-list">
-        <li><a href="https://www.cloudappsecurity.com" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031)  " target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
+        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
+        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
       </ol>
     </aside>
 </article>
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 

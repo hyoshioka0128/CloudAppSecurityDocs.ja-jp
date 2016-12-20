@@ -1,5 +1,5 @@
 ---
-title: "Cloud Discovery データでの作業 | Microsoft Docs"
+title: "Cloud Discovery のカスタマイズ | Microsoft Docs"
 description: "このトピックでは、アプリ リスク スコアの操作方法など、Cloud Discovery データの操作方法について説明します。"
 keywords: 
 author: rkarlin
@@ -14,13 +14,13 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9bf05e43966ff39dacc58a082c7b8eb3627eda
+ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
+ms.openlocfilehash: e2123c83a770ecbfb0466c6ef1a4f67e7c271ca2
 
 
 ---
 
-# <a name="working-with-cloud-discovery-data"></a>Cloud Discovery データでの作業
+# <a name="customize-cloud-discovery"></a>Cloud Discovery のカスタマイズ
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルターで絞り込むためのさまざまなオプションがあります。最も関心のある項目に基づき、特定のビューを生成できます。グラフィックスはわかりやすく、全体像がひとめでわかります。
@@ -73,7 +73,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
   
 1.  ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
-2.  [**Manage continuous report**] (継続的レポートの管理) タブをクリックします。  
+2.  **「Manage continuous report」** (継続的レポートの管理) タブをクリックします。  
   
 3.  [**レポートの作成**] ボタンをクリックします。  
   
@@ -115,7 +115,7 @@ Cloud Discovery データを削除するには:
   
 2.  [**データの削除**] タブをクリックします。  
   
-     操作を続行する前に、データを削除しても問題ないことを確認します。削除すると元に戻すことはできず、システム内の**すべて**のCloud Discovery データが削除されてしまうからです。  
+     操作を続行する前に、データを削除しても問題ないことを確認します。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
 3.  [**削除**] ボタンをクリックします。  
   
@@ -132,6 +132,6 @@ Cloud Discovery データを削除するには:
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

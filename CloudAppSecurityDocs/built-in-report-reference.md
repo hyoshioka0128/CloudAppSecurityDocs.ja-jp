@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 11/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,16 +14,16 @@ ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 520017dab0301fe2a64c7b82d5e14c71efb2522f
+ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
+ms.openlocfilehash: c7db3995c314dbc07cc1e0e2807476299d4446f7
 
 
 ---
 
-# <a name="builtin-report-reference"></a>組み込みレポートの参照
+# <a name="built-in-report-reference"></a>組み込みレポートの参照
 最初は、組み込みレポートを基礎的なテンプレートとして使用してカスタム レポートを作成することをお勧めします。 次の表は、監視に使用する組み込みレポートおよびイベントの種類のリストです。  
   
-## <a name="builtin-report-list"></a>組み込みレポートのリスト  
+## <a name="built-in-report-list"></a>組み込みレポートのリスト  
   
 |レポートの種類|組み込みレポートの名前|説明|  
 |-----------------|---------------------------|-----------------|  
@@ -57,6 +57,6 @@ ms.openlocfilehash: 520017dab0301fe2a64c7b82d5e14c71efb2522f
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

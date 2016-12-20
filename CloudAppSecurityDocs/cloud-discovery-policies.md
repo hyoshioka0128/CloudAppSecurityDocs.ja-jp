@@ -88,6 +88,6 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

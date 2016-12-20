@@ -1,5 +1,5 @@
 ---
-title: "AWS を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "AWS の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
 
 
 ---
@@ -96,13 +96,13 @@ ms.openlocfilehash: 4b9ab028bb45f77513217dd3784cefc73e984962
   
     3.  グローバル サービスを含むように設定するすべてのリージョンで手順 11 を繰り返し、それ以外のリージョンではこの設定を適用しないようにします。  
   
-11. Cloud App Security のポータルで [**調査**]、[**承認されたアプリ**] の順にクリックします。  
+11. Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-12. [AWS] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**AWS**] で [**アプリを接続**] ボタンをクリックします。  
+12. **[アプリ コネクター]** ページで、[+]、**[AWS]** の順にクリックします。  
   
      ![AWS を接続する](./media/connect-aws.png "connect AWS")  
   
-13. Amazon Web Services の設定ページで、csv ファイルから API ページのフィールドに**アクセス キー**と**秘密鍵**を貼り付けて、[**アクセス キーの更新**] をクリックします。  
+13. ポップアップで、csv ファイルから API ページのフィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[アクセス キーの更新]** をクリックします。  
   
 14. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
   
@@ -118,6 +118,6 @@ AWS を接続すると、接続までの 7 日間のイベントを受け取り�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 

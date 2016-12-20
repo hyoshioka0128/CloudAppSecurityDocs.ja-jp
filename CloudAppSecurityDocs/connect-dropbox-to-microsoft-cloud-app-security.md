@@ -1,5 +1,5 @@
 ---
-title: "Dropbox を Microsoft Cloud App Security に接続する | Microsoft Docs"
+title: "Dropbox の接続 | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Dropbox アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
@@ -14,8 +14,8 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 105003dfbd8afbb10cdb2058e2da180d4b49e294
+ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
+ms.openlocfilehash: a2b9a7e9cf254c52465922af4b0e3a0256e60c5d
 
 
 ---
@@ -28,13 +28,13 @@ Dropbox ではサインインしなくても共有リンクからファイルに
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Dropbox を Cloud App Security に接続する方法  
   
-1.  Cloud App Security コンソールで **[調査]**、**[承認されたアプリ]** の順にクリックします。  
+1.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-2.  [Dropbox] 行で、[**アプリ コネクタの状態**] 列の [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックしてから [**Dropbox**] をクリックします。  
+2.  **[アプリ コネクター]** ページで、[+] ボタン、**[Dropbox]** の順にクリックします。  
   
      ![Dropbox を接続する](./media/connect-dropbox.png "connect dropbox")  
   
-3.  Dropbox の設定ページの [API] タブで、管理者アカウントの電子メール アドレスを入力します。  
+3.  ポップアップで、管理者アカウントの電子メール アドレスを入力します。  
   
 4.  [**リンクを生成**] をクリックします。  
   
@@ -63,6 +63,6 @@ Dropbox を接続すると、接続までの 60 日間のイベントを受け�
   
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO5-->
 
 
