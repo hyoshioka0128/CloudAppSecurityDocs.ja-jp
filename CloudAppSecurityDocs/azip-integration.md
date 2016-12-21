@@ -76,7 +76,7 @@ Cloud App Security を Azure Information Protection と接続するとすぐに�
 新しいファイルのファイル タグに対する自動スキャンを有効にするには、次の操作を行います。
 
 1. Cloud App Security の **[General settings]** (全般設定) ページに移動します。
-2. Azure Information Protection で、**[Automatically scan files for Azure Information Protection classification labels] (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする)** を選択します。 自動スキャンを有効にすると、ファイル ポリシーによるコンテンツ スキャンの対象ファイルだけでなく、Office 365 に追加されるすべての新しいファイルもスキャンされ、ファイル タグが確認されます。
+2. Azure Information Protection で、**「Automatically scan files for Azure Information Protection classification labels」** (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする) を選択します。 自動スキャンを有効にすると、ファイル ポリシーによるコンテンツ スキャンの対象ファイルだけでなく、Office 365 に追加されるすべての新しいファイルもスキャンされ、ファイル タグが確認されます。
 
 ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
@@ -86,7 +86,7 @@ Cloud App Security を Azure Information Protection と接続するとすぐに�
 ## <a name="internal-and-external-tags"></a>内部および外部のタグ
 既定では、Cloud App Security は、組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
 
-外部の分類ラベルを無視するには、Cloud App Security ポータルの **[Azure security settings]** (Azure セキュリティ設定) の **[全般設定]** で、**[Ignore Azure Information Protection classification labels from other tenants]** (他のテナントからの Azure Information Protection 分類ラベルを無視する) を選択します。
+外部の分類ラベルを無視するには、Cloud App Security ポータルの **「Azure security settings」** (Azure セキュリティ設定) の **[全般設定]** で、**「Ignore Azure Information Protection classification labels from other tenants」** (他のテナントからの Azure Information Protection 分類ラベルを無視する) を選択します。
  
 ![ラベルを無視する](./media/azip-ignore.png)
 
