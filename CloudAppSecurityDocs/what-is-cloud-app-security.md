@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 480a94edbb36cc421b5ff64ea29268f0041326bc
-ms.openlocfilehash: dfc9ec25d2c7822d9239685375136c1dc0d1a3bc
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: 4875a1ae80dae101416c9b26932bc57edf755a84
 
 
 ---
@@ -30,13 +30,9 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security のフレームワーク  
 
-|       |   |   |
-|-------|---|:---|
-|![[探索]](./media/discovery-icon.png)|[探索]|Cloud App Security でシャドウ IT を検出します。 クラウド環境内のアプリ、アクティビティ、ユーザー、データ、ファイルを検出して把握します。 クラウドに接続されているサードパーティ製アプリを検出します。|
-|![調査](./media/investigate-icon.png)|調査|クラウド フォレンジクス ツールを使用して、ネットワーク内の危険なアプリ、特定のユーザー、ファイルの詳細を調査します。 クラウドから収集されたデータのパターンを検索します。 クラウドを監視するレポートを生成します。|
-|![Control](./media/control-icon.png)|Control|ポリシーとアラートを設定して、クラウドのネットワーク トラフィックを最大限に制御し、リスクを軽減します。 Cloud App Security を使用すると、承認された安全な代替クラウド アプリにユーザーを移行できます。|
-|![保護](./media/protect-icon.png)|保護|Cloud App Security を使用すると、アプリケーションの承認または却下、データ損失防止の実施、アクセス許可と共有の制御、カスタムのレポートおよびアラートの生成を行うことができます。|
 
+**Cloud Discovery** 組織内のクラウドの使用をすべて検出します。 シャドウ IT のレポートおよび制御: - ネットワーク内のすべてのクラウド アプリをすべてのデバイスから検出 - 特定のアプリ、ユーザー、ソース IP アドレスなどを詳しく調査 - アプリのブロック、却下、保護によってクラウドの使用を管理および制御 リスク評価: - 13,000 以上あるクラウド アプリのリスクについて理解する - 60 以上のセキュリティおよびコンプライアンスのリスク要因に基づく クラウドの危険な使用時のアラート: - 異常なユーザーの使用パターン、新しいアプリ、人気のアプリに対するアラートを受信する **Information Protection** クラウド内のデータの管理および制御。 クラウドの可視性の向上 - 共有レベルおよび機密性レベルを含めた可視性が向上 - 情報公開およびリスクの定量化 - データに対するサード パーティ アプリのアクセスをすべて検出 DLP ポリシーの適用と共有の制御 - 詳細な DLP ポリシーによりクラウド内のデータを管理 - 分類に Microsoft とサードパーティの DLP エンジンを活用 アラートと調査 - ポリシー違反の特定 - インシデントおよび関連アクティビティの調査 - 検疫およびアクセス許可の剥奪を含めた自動修復 **脅威保護** 異常な使用およびセキュリティ インシデントの検出。 ポリシーとアラートを設定して、クラウドのネットワーク トラフィックを最大限に制御し、リスクを軽減します。 Cloud App Security を使用すると、承認された安全な代替クラウド アプリにユーザーを移行できます。
+動作分析: - 初期状態で不審なアクティビティを検出 - 20 以上のリスク要因に基づく異常検出エンジン 高度な調査: - 高度なインシデント調査ツール - ユーザー、ファイル、アクティビティ、場所によるピボット - 調査結果に基づいて検出をカスタマイズ - 脅威インテリジェンス - Microsoft の先進的な脅威インテリジェンス フィードを活用 - Microsoft の顧客ベースによる膨大な兆候から得られた独自の洞察
 
 ## <a name="architecture"></a>アーキテクチャ  
 
@@ -50,7 +46,7 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 ![Cloud App Security アーキテクチャ](./media/architecture.png)  
 
 > [!NOTE]  
-> Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 お客様のデータは Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
+> Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 ファイルの内容は Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
 Cloud App Security は次のようにデータを保持しています。
 >- アクティビティ ログ: 180 日間
 >- 検出データ: 90 日間
@@ -87,6 +83,6 @@ Premier サポートをご利用のお客様も、[Premier ポータル](https:/
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

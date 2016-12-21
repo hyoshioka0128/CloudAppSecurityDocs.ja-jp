@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/29/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,14 +14,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 851617bc68618b177600523a4d4432b3e557f394
-ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
+ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
+ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
 
 
 ---
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
+まだログを取得していなく、ログがどのようなものかをサンプルで確認したい場合は、以下の手順に従ってサンプル ログ ファイルをダウンロードし、ログがどのように表示されるかを確認してください。
+
 
 スナップショット レポートを作成するには:
   
@@ -29,19 +31,22 @@ ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
   
 2.  Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
   
-     ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
+   ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
-      
 3.  [**レポート名**] と [**説明**] を入力します。
   
+     ![新しいスナップショット レポート](./media/new-snapshot-report.png) 
+
 4.  ログ ファイルのアップロード元にする [**データソース**] を選択します。  
   
+5. ダウンロードできるサンプルに従ってログが正しく書式設定されているかどうかを確認します。 [**View and verify**] (表示して確認) をクリックし、[**Download sample log**] (サンプル ログのダウンロード) をクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
+
+ ![ログの書式を確認する](./media/cloud-discovery-snapshot-verify.png)  
+
 5.  アップロードする**トラフィック ログを選択**します。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
 6.  [**作成**] をクリックします。  
-  
-     ![新しいスナップショット レポート](./media/new-snapshot-report.png) 
-  
+
 7.  アップロードが完了すると、ログが正常にアップロードされたことを通知するステータス メッセージが画面右上隅に表示されます。  
   
 8.  ログ ファイルのアップロード後、ファイルの解析および分析には多少時間がかかります。  
@@ -68,6 +73,6 @@ ms.openlocfilehash: abd134c9ff3b000170bce474e8ecebb71b762b98
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 86a5f7371b7a1d0fd16f68fd3060390b05601607
-ms.openlocfilehash: 3497225dfa98b487fd384a819cc51a51bd79a7cb
+ms.sourcegitcommit: 5fe0c3c04f290fb5a087e387560bf742a7192513
+ms.openlocfilehash: 0432ccf823234617bb4c8466f88ca8f385704928
 
 
 ---
@@ -76,10 +76,12 @@ Cloud App Security を Azure Information Protection と接続するとすぐに�
 新しいファイルのファイル タグに対する自動スキャンを有効にするには、次の操作を行います。
 
 1. Cloud App Security の **[General settings]** (全般設定) ページに移動します。
-2. [Azure security settings] (Azure セキュリティ設定) で、**[Automatically scan files for Azure Information Protection classification labels] (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする)** を選択します。 自動スキャンを有効にすると、ファイル ポリシーによるコンテンツ スキャンの対象ファイルだけでなく、Office 365 に追加されるすべての新しいファイルもスキャンされ、ファイル タグが確認されます。
+2. Azure Information Protection で、**[Automatically scan files for Azure Information Protection classification labels] (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする)** を選択します。 自動スキャンを有効にすると、ファイル ポリシーによるコンテンツ スキャンの対象ファイルだけでなく、Office 365 に追加されるすべての新しいファイルもスキャンされ、ファイル タグが確認されます。
 
 ![Azure Information Protection を有効にする](./media/enable-azip.png)
- 
+
+> [!NOTE] 
+> 自動スキャンは、再度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection 分類ラベルの既存のファイルをスキャンするには、フィルターなしの新しい**ファイル ポリシー**を作成し、**[コンテンツ検査]**オプションを選択して、ポリシーを保存します。
 
 ## <a name="internal-and-external-tags"></a>内部および外部のタグ
 既定では、Cloud App Security は、組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
@@ -128,6 +130,6 @@ Cloud App Security でファイル ポリシーを作成し、不適切に共有
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

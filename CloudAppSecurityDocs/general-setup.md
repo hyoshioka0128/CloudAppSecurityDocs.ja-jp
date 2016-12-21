@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
+ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
+ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
   
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ  
   
-1.  Cloud App Security ポータルのメニュー バーで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**全般設定**] を選択して、以下の構成を行います。  
+1.  Cloud App Security ポータルのメニュー バーで、設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[全般設定]** を選択して、以下の構成を行います。  
   
 3.  **組織の詳細**  
   
@@ -33,52 +33,52 @@ ms.openlocfilehash: 912d3c5065722469c436446ba67511ffc6e44d77
   
      **環境名** (テナント) を指定します。 これは、複数のテナントを管理する場合に特に重要です。  
   
-     **管理対象ドメイン** のリストを追加します。 管理対象ドメインは、Cloud App Security が内部ユーザーと外部ユーザー、およびファイルの共有の可否を判別する際に使用されます。 これは、レポートとアラートで使用されます。  
+4. システムから送信される電子メールや Web ページで表示する**ロゴ**を指定することもできます。 ロゴには、150 x 50 ピクセル以下のサイズで背景が透明色の png ファイルを使用する必要があります。  
+
+4.  **管理対象ドメイン** のリストを追加します。 管理対象ドメインは、Cloud App Security が内部ユーザーと外部ユーザー、およびファイルの共有の可否を判別する際に使用されます。 これは、レポートとアラートで使用されます。  
 > [!NOTE] 
-> 内部として構成されていないドメインのユーザーは、外部として指定され、アクティビティまたはファイルをスキャンされません。
-   
-システムから送信される電子メールや Web ページで表示する**ロゴ**を指定することもできます。 ロゴには、150 x 50 ピクセル以下のサイズで背景が透明色の png ファイルを使用する必要があります。  
+> - 内部として構成されていないドメインのユーザーは、外部として指定され、アクティビティまたはファイルをスキャンされません。
+> - Azure Information Protection の統合により統合を行う場合は、「[Azure Information Protection の統合](azip-integration.md)」で詳細を確認してください。 
   
 4.  **アクティビティ ログのメールのプライバシー設定**  
   
      Exchange Online で電子メール メッセージが検出された場合、プライバシーを保護するため、表示方法を設定することができます。 電子メール メッセージの表示方法は、**マスクされた件名**、**完全な件名**、または **ID のみ**のいずれかに設定できます。  
   
-     ![全般設定](./media/general-settings.png "general settings")  
+     ![全般設定](./media/general-settings.png "全般設定")  
   
 5.  **地域と言語の設定**  
   
      ポータルで使用する既定の**言語**を設定します。 特定の管理者の言語を変更するには、[**ユーザー設定**] > [**アカウント設定**] の順に移動します。  
   
-     ![タイム ゾーンの言語](./media/timezone-language.png "timezone language")  
+     ![タイム ゾーンの言語](./media/timezone-language.png "タイム ゾーンの言語")  
   
      [**マスター タイム ゾーン**] を設定します。 Cloud App Security は継続的にデータの分析および集計を行います。 既定では、Cloud App Security ポータルのタイム ゾーンは UTC に設定されています。 システム内の Cloud App Security がインシデントの日付を正確に記録するためには、マスター タイム ゾーンを設定することが重要です。 たとえば、アクティビティ グラフでは、データは日付に基づいて整理されます。この日付は、システムのタイム ゾーンに従います。既定のタイム ゾーンを変更しないと、データは UTC タイム ゾーンの 24 時間ごとの日付に従って整理され、実際のデータと何時間もずれる可能性があります。  
   
-     ![マスター タイム ゾーン](./media/master-time-zone.png "master time zone")  
+     ![マスター タイム ゾーン](./media/master-time-zone.png "マスター タイム ゾーン")  
   
 6.  ポータル設定は、この画面からいつでもバックアップできます。 [ポータル設定をエクスポート] をクリックすると、ポリシー規則やユーザー グループ、IP アドレス範囲などのポータル設定がすべて記述された json ファイルが作成されます。  
   
-     ![バックアップ コンソール](./media/backup-console.png "backup console")  
+     ![バックアップ コンソール](./media/backup-console.png "バックアップ コンソール")  
   
-7.  Cloud App Security に管理者を追加する場合は、設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから [**管理者アクセス権を管理します**] をクリックします。 Cloud App Security へのアクセス権を付与する管理者を追加し、[**閉じる**] をクリックします。  
+7.  Cloud App Security に管理者を追加する場合は、設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックしてから **[管理者アクセスの管理]** をクリックします。 Cloud App Security へのアクセス権を付与する管理者を追加し、[**閉じる**] をクリックします。  
 >[!NOTE]
 >適切なロール (グローバル、セキュリティ、コンプライアンス管理者) を持つ非招待ユーザーは、他のユーザーを Cloud App Security に招待できます。
   
-![管理者アクセスの管理](./media/manage-admin-access.png "manage admin access")  
+![管理者アクセスの管理](./media/manage-admin-access.png "管理者アクセスの管理")  
   
 ##  <a name="a-nameadminsettingsa-customize-your-admin-settings"></a><a name="Adminsettings"></a> 管理設定のカスタマイズ  
 Cloud App Security の管理者としての設定をセットアップする場合、ポータルのメニュー バーでユーザー名をクリックしてから [**ユーザー設定**] を選択し、次の項目を設定します。  
   
 1.  [**アカウント設定**] をクリックします。 ここでは、ユーザー自身がポータルの表示に使用する言語をカスタマイズできます。 ポータルの表示に既定の言語を使用するか、または自分用に別の言語を使用するかを設定できます。  
   
-     ![カスタム ユーザー設定](./media/custom-user-settings.png "custom user settings")  
+     ![カスタム ユーザー設定](./media/custom-user-settings.png "カスタム ユーザー設定")  
   
 2.  [**通知**] をクリックすると、システムから送信される電子メールやテキスト通知の受信設定を変更できます。  電子メールで受信するアラートや違反の重要度を設定できます。重要度はポリシーごとに設定できるため、違反がトリガーされると、この設定と違反が発生したポリシーで設定されている重要度に基づいて電子メール通知が送信されます。 電子メールは、Cloud App Security へのログインに使用される管理者のユーザー アカウントに関連付けられているエイリアスに送信されます。 電話番号を入力してアラートや通知が送信された場合に Cloud App Security からテキスト メッセージを受信できるようにし、テキスト メッセージで通知を受信する重要度レベルを設定します。  
   
 > [!NOTE] 
 > テキスト メッセージで送信されるアラートの最大数は、1 つの電話番号につき 1 日あたり 10 件です。 日は UTC タイム ゾーンに従って計算されることに注意してください。 
   
-  ![通知の設定](./media/notification-settings.png "notification settings")  
-  
+  ![通知設定](./media/notification-settings.png "通知設定")  
   
 3. 完了したら [**保存**] をクリックします。  
   
@@ -88,7 +88,7 @@ IP アドレス範囲の各グループは、IP カテゴリのプリセット�
   
 IPv4 と IPv6 がサポートされています。  
   
-メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**IP アドレス範囲**] を選択します。 [**+ IP アドレス範囲の追加**] をクリックし、次の項目を設定します。  
+メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[IP アドレス範囲]** を選択します。 [**+ IP アドレス範囲の追加**] をクリックし、次の項目を設定します。  
   
 > [!NOTE]  
 >  場所と登録された ISP は、既定値が上書きされます。   
@@ -124,12 +124,12 @@ IPv4 と IPv6 がサポートされています。
   
 7.  完了したら [**作成**] をクリックします。  
   
-     ![newipaddress の範囲](./media/newipaddress-range.png "newipaddress range")  
+     ![新しい IP アドレス範囲](./media/newipaddress-range.png "新しい IP アドレス範囲")  
   
 ##  <a name="a-nameadallommailsettingsa-personalize-your-experience"></a><a name="Adallom_mailsettings"></a> エクスペリエンスの個人設定  
-メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
+メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
   
-![メール設定メニュー](./media/mail-setting-menu.png "mail setting menu")  
+![[メールの設定] メニュー](./media/mail-setting-menu.png "[メールの設定] メニュー")  
   
 次を構成します。  
   
@@ -139,7 +139,7 @@ IPv4 と IPv6 がサポートされています。
   
      **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
-     ![メール設定の構成](./media/mail-settings-config.png "mail settings config")  
+     ![[メールの設定] の構成](./media/mail-settings-config.png "[メールの設定] の構成")  
   
 2.  HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
   
@@ -153,62 +153,63 @@ IPv4 と IPv6 がサポートされています。
   
          %%content%% - ポリシーにより設定されたエンド ユーザー向けコンテンツのプレースホルダー。  
   
-     電子メール テンプレートのサンプルを次に示します。  
-  
-    ```  
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-    <html>  
-    <head>  
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
-    </head>  
-    <body class="end-user">  
-    <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
-      <tr>  
-        <td align="center">  
-          <!--[if (gte mso 9)|(IE)]>  
-          <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
+     電子メール テンプレートのサンプルを次に示します。 
+
+
+           
+          <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+          <html>  
+          <head>  
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+          </head>  
+          <body class="end-user">  
+          <table border="0" cellpadding="20%" cellspacing="0" width="100%" id="background-table">  
             <tr>  
-              <td>  
-          <![endif]-->  
-          <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
-            <tr>  
-              <td align="right" id="header-table-cell">  
-                <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
-              </td>  
-            </tr>  
-            <tr>  
-              <td style="padding-top: 58px;" align="center" valign="top">  
-                <table width="100%" cellpadding="12">  
+              <td align="center">  
+                <!--[if (gte mso 9)|(IE)]>  
+                <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">  
                   <tr>  
-                    <td align="center" class="round-title">  
-                      %%title%%  
+                    <td>  
+                <![endif]-->  
+                <table bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 40px;" id="container-table">  
+                  <tr>  
+                    <td align="right" id="header-table-cell">  
+                      <img src="%%logo%%" alt="Microsoft Cloud App Security" id="org-logo" />  
                     </td>  
                   </tr>  
+                  <tr>  
+                    <td style="padding-top: 58px;" align="center" valign="top">  
+                      <table width="100%" cellpadding="12">  
+                        <tr>  
+                          <td align="center" class="round-title">  
+                            %%title%%  
+                          </td>  
+                        </tr>  
+                      </table>  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
+                        %%content%%  
+                    </td>  
+                  </tr>  
+                  <tr>  
+                    <td class="last-row"></td>  
+                  </tr>  
                 </table>  
+                <!--[if (gte mso 9)|(IE)]>  
+                </td>  
+                </tr>  
+                </table>  
+                  <![endif]-->  
               </td>  
-            </tr>  
-            <tr>  
-              <td style="padding: 0 40px 79px 40px;" class="content-table-cell" align="left" valign="top">  
-                  %%content%%  
-              </td>  
-            </tr>  
-            <tr>  
-              <td class="last-row"></td>  
-            </tr>  
+              </tr>  
           </table>  
-          <!--[if (gte mso 9)|(IE)]>  
-          </td>  
-          </tr>  
-          </table>  
-          <![endif]-->  
-        </td>  
-      </tr>  
-    </table>  
-    </body>  
-    </html>  
-  
-    ```  
+            </body>  
+          </html>  
+         
+
   
 3.  [**テンプレートのアップロード**] をクリックして、作成したファイルを選択します。  
   
@@ -231,6 +232,6 @@ Cloud App Security は Azure Active Directory と組み合わせて認証、プ�
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 12/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,12 +14,20 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
+ms.sourcegitcommit: 156dccf0c77bf7e46c0328ebf6bd1e0ad9609845
+ms.openlocfilehash: f1dc1e39309cfe06037a13da55d92935786bed81
 
 
 ---
 # <a name="activities"></a>アクティビティ
+Cloud App Security は、データ保護を提供するため、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 アクティビティに基づくポリシーを作成し、何に関して警告するか定義することができます。 特定のファイルで実行されるアクティビティを検索することもできます。 アクティビティの種類とアクティビティごとに得られる情報は、アプリと、アプリから提供されるデータの種類によって異なります。 
+
+たとえば、**[アクティビティ]** ログを使用すると、組織内で最新ではないオペレーティング システムやブラウザーを使用しているユーザーを見つけることができます。これを行うには Office 365、Google Apps、Box、Dropbox、Okta、Amazon Web Services、Salesforce を Cloud App Security に接続した後、**[アクティビティ ログ]** ページで高度なフィルターを使用して **[User agent tag]** (ユーザー エージェント タグ) を選択します。 次に、**[Outdated browser]** (古いブラウザー) または **[Outdated operating system]** (古いオペレーティング システム) を選択します。 組織の外部に共有されている **機密**ファイルがある場合は、**[New policy from search]** (検索からの新しいポリシー) をクリックすると、古いブラウザーやオペレーティング システムを検出するアクティビティ ポリシーが作成され、ユーザーに自動的に通知されます。
+
+ ![古いブラウザーのアクティビティの例](media/activity-outdated-example.png)
+
+ 
+
 アクティブ ログをフィルターして、特定のアクティビティを検索することができます。 アクティビティをフィルターするには、まず基本的なフィルターを使うと便利です。
 
  ![基本的なアクティビティ ログ フィルター](media/activity-log-filter-basic.png)
@@ -33,7 +41,8 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
   
 -   アクティビティ ID - ID を使用して特定のアクティビティのみを検索します。 このフィルターは、(SIEM エージェントを使用して) MCAS を SIEM に接続する場合や、MCAS ポータル内でアラートをさらに詳細に調査する場合にとても便利です。  
   
--   アクティビティ オブジェクト – ファイル、フォルダー、サイトの URL、ターゲット オブジェクト (ファイルまたはフォルダー) を検索します。
+-   アクティビティ オブジェクト - アクティビティが実行されたオブジェクトを検索します。 このフィルターは、ファイル、フォルダー、ユーザーまたはアプリのオブジェクトに適用されます。
+    - アクティビティのオブジェクト ID - オブジェクトの ID (ファイル、フォルダー、ユーザーまたはアプリの ID)。
     - ファイル、フォルダーまたはサイトの URL - 特定の文字列で始まるファイル、フォルダー、URL を選択することができます。
     - ターゲット オブジェクト (ファイルまたはフォルダー) - 特定のファイルやフォルダーを選択することができます。 
     
@@ -95,7 +104,7 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
 - 場所: [場所] をクリックすると、Bing マップで場所が表示されます。
 - IP アドレス カテゴリとタグ: IP タグをクリックすると、そのアクティビティで見つかった IP タグの一覧を表示されます。 このタグに一致するすべてのアクティビティでフィルター処理することができます。    
 
-![アクティビティ ドロワー](./media/activity-drawer.png "activity drawer")  
+![アクティビティ ドロワー](./media/activity-drawer.png "アクティビティ ドロワー")  
   
 使用できるガバナンス アクションの一覧については、「[Activity match parameters](governance-actions.md#activity-match-parameters)」(アクティビティ一致パラメーター) を参照してください。
 
@@ -108,6 +117,6 @@ ms.openlocfilehash: 40fd28f568aa9af32f9e2399435f48372ea62413
   
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
