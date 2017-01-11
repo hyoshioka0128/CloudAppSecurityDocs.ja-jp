@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,13 +14,50 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
+ms.sourcegitcommit: cc4f3db1307261c41786f7c4458b37ba9d7f620e
+ms.openlocfilehash: 2da187cd863af431c359b8079f6b30ebae0b615b
 
 
 ---
 
 # <a name="release-notes"></a>リリース ノート
+
+## <a name="cloud-app-security-release-87"></a>Cloud App Security リリース 87
+リリース日: 2016 年 12 月 25 日
+
+**新機能**
+-   ユーザーのプライバシーを保護した状態で、Cloud Discovery をご利用いただけるように、[データの匿名化](cloud-discovery-anonymizer.md)を順次適用しています。 データの匿名化は、ユーザー名情報を暗号化することによって実行されます。
+-   Cloud App Security から追加のアプライアンスへのブロック スクリプトのエクスポート機能を順次適用しています。 このスクリプトを使用すれば、未承認アプリへのトラフィックをブロックし、シャドウ IT を簡単に減らすことができます。 以下に対してこのオプションを使用できるようになりました。 
+    -   BlueCoat ProxySG
+    -   Cisco ASA
+    -   Fortinet
+    -   Juniper SRX
+    -   Palo Alto
+    -   Websense
+-   強制的にファイルが親から権限を継承するように指定できる新しいファイル ガバナンス アクションが追加されました。これにより、ファイルまたはフォルダーに設定されている固有の権限が削除されます。 このファイル ガバナンス アクションでは、ファイルまたはフォルダーの権限を親フォルダーから継承するように変更できます。 
+-   "外部" という新しいユーザー グループが追加されました。 これは、内部ドメインの一部ではないすべてのユーザーを含めるために Cloud App Security で事前構成済みの既定のユーザー グループです。 このユーザー グループをフィルターとして使用することができます。たとえば、外部ユーザーによって実行されるアクティビティを検索することができます。
+-   Cloud Discovery 機能で Sophos Cyberoam アプライアンスがサポートされるようになりました。
+ 
+**バグ修正**
+-   SPO および OD4B ファイルが、個人ではなく内部として、[ファイル] ページおよびファイル ポリシー レポートに表示されていました。 これは修正されました。
+ 
+
+
+## <a name="cloud-app-security-release-86"></a>Cloud App Security リリース 86
+リリース日: 2016 年 12 月 13 日
+
+**新機能**
+- すべての Cloud App Security スタンドアロン ライセンスで、全般設定から Azure Information Protection スキャンを有効にできるようになりました (ポリシーの作成は不要)。 
+ 
+**機能強化**
+- ファイル名のファイル フィルター時と、ファイルとポリシーの MIME 型フィルターで "or" を使用できるようになりました。 これにより、PII でポリシーを作成する際に「"passport" OR "driver"」などと入力できるようになり、ファイル名に "passport" または "driver" を含むファイルがすべて一致します。 
+- 既定では、DLP コンテンツ検査ポリシーの実行時に、違反と見なされたデータがマスクされます。 違反の最後の 4 文字のマスクを解除できるようになりました。 
+
+**細かな改善点**
+- ルールの転送およびメールボックスの委任権限の追加や削除が必要な、Office 365 (Exchange) 関連のイベントが新しくなりました。
+- 新しいイベントでは、Azure Active Directory の新しいアプリに対する同意の許可が監査されます。 
+
+
 
 
 ## <a name="cloud-app-security-release-85"></a>Cloud App Security リリース 85
@@ -258,6 +295,6 @@ ms.openlocfilehash: cbe341faf692772ac5461e038233e9b1a6b2694f
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 

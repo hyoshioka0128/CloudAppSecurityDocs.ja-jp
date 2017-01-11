@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 46ab0f13a8d0839f77525c334e75c840c9bfc73f
 
 
 ---
@@ -122,7 +122,9 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 -   アクティビティ フィルター - メタデータに基づいて、条件を非常に細かく作成できます。  
   
--   アクティビティ一致パラメーター - アクティビティが何回繰り返されるとポリシーに一致したと見なされるかのしきい値を設定できます。  
+-   アクティビティ一致パラメーター - アクティビティが何回繰り返されるとポリシーに一致したと見なされるかのしきい値を設定できます。  ポリシーと一致するために必要なアクティビティの反復回数を指定します。2 分以内にログイン試行が 10 回失敗した場合にアラートを生成するポリシーなどを設定できます。  既定では、**アクティビティ一致パラメーター**で、すべてのアクティビティ フィルターにアクティビティが一致するたびに毎回一致したと判断されます。   
+**反復アクティビティ**を使用すると、アクティビティの反復回数やアクティビティをカウントする時間範囲を指定できます。また、同一クラウド アプリで同一ユーザーがすべてのアクティビティを実行した場合のみというような指定もできます。  
+  
   
 -   アクション - 違反が検出された場合に自動的に適用される一連のガバナンス アクションをポリシーに設定します。  
 ## <a name="see-also"></a>参照  
@@ -133,6 +135,6 @@ ms.openlocfilehash: 68961bf66a0c0bb3b668e681502ccf10bc673197
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

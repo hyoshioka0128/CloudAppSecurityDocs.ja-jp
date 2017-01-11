@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/23/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
+ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
+ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
 
 
 ---
@@ -35,7 +35,8 @@ ms.openlocfilehash: b28eaa521980cb7ec8eee94f0168ca07286533e7
   
 3.  [**新しいプロジェクト**] 画面で次の操作を行います。  
   
-    1.  プロジェクトに「**Cloud App Security for Google**」という名前を付けます。  
+    1.  次のように、プロジェクトに名前を付けます。</br>
+    **Cloud App Security for Google** 
   
     2.  更新をサブスクライブするかどうかを選択します。  
   
@@ -266,6 +267,6 @@ Google Apps を接続すると、Cloud App Security がフル スキャンを実
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

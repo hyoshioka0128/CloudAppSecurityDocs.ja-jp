@@ -6,6 +6,7 @@
 ## [Cloud Discovery の展開](set-up-cloud-discovery.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
+### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
 ### [Cloud Discovery のカスタマイズ](working-with-cloud-discovery-data.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box の接続](connect-box-to-microsoft-cloud-app-security.md)
@@ -22,7 +23,6 @@
 ### [ファイル](file-filters.md)
 ### [アクティビティ](activity-filters.md)
 ### [アラート](monitor-alerts.md)
-### [Azure Information Protection との統合](azip-integration.md)
 ## [制御](control.md)
 ### [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 #### [Cloud Discovery ポリシー](cloud-discovery-policies.md)
@@ -34,11 +34,14 @@
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
 ### [アプリのアクセス許可の管理](manage-app-permissions.md)
 ## [管理](governance-actions.md)
+## 統合
+### [Azure Information Protection の統合](azip-integration.md)
+### [SIEM の統合](siem.md)
 # [トラブルシューティング](troubleshooting.md)
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

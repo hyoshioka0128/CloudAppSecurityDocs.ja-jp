@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/21/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 525a6c5274843f63c300e97d1dbd40ece6465edf
-ms.openlocfilehash: 3a6750f244d3d0cd8d691ffd768cf5183da78d32
+ms.sourcegitcommit: 49b64ea6cee1a33fd4005388d5b09cfbdcf59052
+ms.openlocfilehash: b5250ccb93dda950b417bbbe3fc2e64f0bab8320
 
 
 ---
@@ -82,7 +82,7 @@ Cloud App Security の管理者としての設定をセットアップする場�
   
 3. 完了したら [**保存**] をクリックします。  
   
-##  <a name="a-nameiptagsandrangesa-organize-the-data-according-to-your-needs"></a><a name="IPtagsandRanges"></a> ニーズに応じたデータの管理  
+##  <a name="a-nameiptagsandrangesa-set-ip-ranges"></a><a name="IPtagsandRanges"></a> IP 範囲の設定  
 物理的なオフィスの IP アドレスなど、既知の IP アドレスを簡単に識別するには、タグを適切に分類できるように IP アドレスの範囲を設定し、またログやアラートの表示や調査の方法をカスタマイズする必要があります。   
 IP アドレス範囲の各グループは、IP カテゴリのプリセットのリストに基づいて分類したり、独自に作成した IP タグを付与したりできます。 さらに、この設定を使用して、公開されている geo ロケーション情報を内部ネットワークの情報に基づいて上書きすることができます。  
   
@@ -104,9 +104,7 @@ IPv4 と IPv6 がサポートされています。
   
 4.  **登録された ISP**を入力します。 これでアクティビティのデータが上書きされます。  
   
-5.  これらの IP アドレスからアクティビティを**タグ付け**するには、タグを入力します。 ボックスに単語を入力するとタグが作成されます。 タグを構成した後でも、リストから IP 範囲を選択すると簡単に IP 範囲を追加できます。 各範囲には、IP タグを必要な数だけ追加できます。 IP タグは、ポリシーを作成するときに使用できます。  
-  
-     Cloud App Security に組み込まれている **IP タグ**は危険なアドレスに対して設定されていて、継続的に更新されます。 これらのタグには、匿名のプロキシ、サテライト プロバイダー、Tor 出口ノード、および Cloud App Security プロキシ ネットワークが含まれます。 これらの組み込み済みのタグは表示されません。  
+5.  これらの IP アドレスからアクティビティを**タグ付け**するには、タグを入力します。 ボックスに単語を入力するとタグが作成されます。 タグを構成した後でも、リストから IP 範囲を選択すると簡単に IP 範囲を追加できます。 各範囲には、IP タグを必要な数だけ追加できます。 IP タグは、ポリシーを作成するときに使用できます。  ユーザーが構成する IP タグに加え、Cloud App Security には構成できない組み込みタグがあります。 [[IP tags filter]](activity-filters.md) (IP タグ フィルター) でタグのリストを表示することができます。  
   
 6.  **IP カテゴリ**は、関心のある IP アドレスからアクティビティを簡単に認識するために使用されます。 カテゴリはポータルで使用できますが、匿名プロキシと Tor の 2 つの IP タグを含む [危険] カテゴリ以外について、それぞれのカテゴリにどの IP アドレスが含まれるかを決定するにはユーザー構成が必要です。  
   
@@ -232,6 +230,6 @@ Cloud App Security は Azure Active Directory と組み合わせて認証、プ�
   
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO4-->
 
 
