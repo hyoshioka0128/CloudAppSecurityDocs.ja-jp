@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 1/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 4cfad222fb78e0bfc106fab64f6cc22d3819c1c8
+ms.sourcegitcommit: a6133e3cf0521515088dfd9d301aed2df2c4b430
+ms.openlocfilehash: 199a3c9909093551e3eca5e524f6bf04ce03aa4e
 
 
 ---
@@ -77,13 +77,12 @@ Cloud App Security はシステム管理者権限で展開されているため�
 |**ユーザーの利用状況**|✔*|✔|✔|✔ - Google Unlimited が必要です|一部|Salesforce Shield でサポート|✔|適用できません|  
 |**管理者アクティビティ**|✔|✔|✔|✔|一部|✔|✔|✔|  
 |**定期的なファイル スキャン**|✔|✔|適用できません|✔|✔|✔|✔|近日中にご利用になれます|  
-|**ほぼリアルタイムのファイル スキャン**|近日中にご利用になれます|✔|適用できません|✔ - Google Unlimited が必要です|||近日中にご利用になれます||  
+|**ほぼリアルタイムのファイル スキャン**|✔|✔|適用できません|✔ - Google Unlimited が必要です|||近日中にご利用になれます||  
 |**コントロールの共有**|✔|✔|適用できません|✔|適用できません||✔||  
 |**検疫**|✔|✔|適用できません|近日中にご利用になれます|||近日中にご利用になれます||  
 |**アプリのアクセス許可の表示**|✔|プロバイダーはサポートしていません|適用できません|✔||✔|プロバイダーはサポートしていません||  
 |**アプリのアクセス許可の取り消し**|✔||適用できません|✔||✔|適用できません||  
   
-\* Office 365 アプリ コネクタには、Exchange Online の管理者アクティビティが含まれています。 Exchange Online のユーザー アクティビティを追加するには、Exchange Online コネクタを個別にデプロイする必要があります。  
   
 ## <a name="prerequisites"></a>前提条件  
 アプリによっては、次の IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。  
@@ -131,6 +130,6 @@ Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.micr
    
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 
