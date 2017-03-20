@@ -1,11 +1,11 @@
 ---
-title: "調査 | Microsoft Docs"
+title: "Cloud App Security でクラウド アプリの危険性および疑わしいアクティビティについて調べる | Microsoft ドキュメント"
 description: "このトピックでは、Cloud App Security を使用してアラート、問題、疑わしいアクティビティを調査するためのプロセスの概要を説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: fd3be51a8a81b688383b40a19582f5739c889580
-ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
-
-
+ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="investigate"></a>調査
-クラウド環境で Cloud App Security を実行したら、次に Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。  
+クラウド環境で Cloud App Security を実行したら、次に Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。
 
 このトピックでは、調査を実行して、クラウド環境内に対する理解を深める方法について説明します。  
 
@@ -34,17 +31,17 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 |アプリケーション ダッシュボード: 全般|場所ごとのアプリケーションの使用状況の概要、ユーザー数ごとの使用状況グラフ|  
 |アプリケーション ダッシュボード: 洞察|アプリに保存されているデータの分析 (ファイルの種類およびファイル共有レベルごとの内訳を表示)|  
 |アプリケーション ダッシュボード: ファイル|ファイルへのドリルダウン、所有者や共有レベルなどによるフィルタリング、ガバナンス アクションの実行 (検疫など)|  
-|アプリケーション ダッシュボード: サード パーティ製アプリ|現在デプロイされているサード パーティ製アプリ (Google Apps など) へのドリルダウン、それらのアプリに対するポリシーの定義|  
+|アプリケーション ダッシュボード: サード パーティ製アプリ|現在デプロイされているサード パーティ製アプリ (G Suite など) へのドリルダウン、それらのアプリに対するポリシーの定義|  
 |ユーザー ダッシュボード|クラウドのユーザー プロファイルの完全な概要 (グループ、場所、最近のアクティビティ、関連するアラート、使用しているブラウザーなど)|  
 
-##  <a name="a-namesanctionappa-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp"></a> アプリに承認または非承認のタグを付ける  
+##  <a name="sanctionapp"></a> アプリに承認または非承認のタグを付ける  
 クラウドを把握するために重要な手順は、アプリに承認または非承認のタグを付けることです。 アプリを承認したら、承認されていないアプリをフィルタリングして、同じ種類の承認されたアプリへの移行を開始できます。  
 
 -   Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。  
 
--   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "Tag as sanctioned dots")] (Tag as sanctioned dots) を選択し、**[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。  
+-   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある&3; つのドット ![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認済みとしてタグを付けるドット") を選択し、[**Mark as sanctioned**] (承認済みとしてマークを付ける) を選択します。  
 
-     ![承認済みとしてタグを付ける](./media/mark-as-sanctioned.png "tag as sanctioned")  
+     ![承認済みとしてタグを付ける](./media/mark-as-sanctioned.png "承認済みとしてタグを付ける")  
 
 
 ## <a name="use-the-investigation-tools"></a>調査ツールの使用  
@@ -85,7 +82,7 @@ ms.openlocfilehash: f1b32304a8218316f744defa4632b3e8a6af771d
 
 4.  [**調査**] に移動してアプリを選択します。 アプリのダッシュ ボードが開き、情報や洞察が提供されます。 上部のタブを使用して、以下を確認できます。  
 
-     ![アプリ ダッシュボード](./media/investigate-app.png "investigate app")  
+     ![アプリのダッシュ ボード](./media/investigate-app.png "アプリの調査")  
 
     -   ユーザーがアプリに接続するために使用しているデバイスの種類  
 
@@ -135,7 +132,7 @@ Cloud App Security をクラウド環境で実行したら、組み込みのレ�
 
 5.  [**アクティビティ フィルター**] で **+** を選択して、フィルターを追加します。 [**IP タグ**] までスクロール ダウンして、[**匿名**] および [**Tor**] を選択します。  
 
-     ![危険な IP のポリシーの例](./media/example-policy-risky-ips.png "example policy risky ips")  
+     ![危険な IP に対するポリシーの例](./media/example-policy-risky-ips.png "危険な IP に対するポリシーの例")  
 
 ポリシーを設定したところ、仮定に反してポリシー違反のアラートが表示されました。  
 
@@ -155,9 +152,3 @@ Cloud App Security をクラウド環境で実行したら、組み込みのレ�
 組織のクラウド アプリを制御する方法については、「[Control](control.md)」を参照してください。   
 テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。  
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

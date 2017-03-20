@@ -1,11 +1,11 @@
 ---
-title: "ファイル | Microsoft Docs"
+title: "Cloud App Security で使用可能なファイル データとフィルターを理解する | Microsoft ドキュメント"
 description: "このリファレンス トピックでは、Cloud App Security によって使用されるファイルとファイル フィルターの種類について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: d11339040da669b77069c286f6171f7b3a6161db
-ms.openlocfilehash: 3262d01aed03bbb462832f8ff2836152e6208e74
-
-
+ms.openlocfilehash: 81330b5333050bea2352f0907ac5c83d71af14bf
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
 # <a name="files"></a>ファイル
 
 
@@ -29,7 +26,7 @@ Cloud App Security は、データ保護を提供するため、接続してい�
 
  ![ファイル フィルター [機密]](media/file-filter-confidential.png)
 
-ここでは、**[ファイル]** ページのもう 1 つの使用例を示します。 過去 6 か月の間、変更されていないファイルを組織で誰も公開共有または外部共有していないことを確認するには、Cloud App Security にアプリを接続し、**[ファイル]** ページで、アクセス レベルが**[外部]**または**[公開]**であるファイルをフィルターし、**[最終変更]**日を 6 か月前に設定します。 古い公開ファイルを検出するファイル ポリシーを作成する場合は、**[検索に基づく新しいポリシー]** をクリックし、**[外部ユーザーの削除]** などの自動ガバナンス アクションを適用して、組織のデータ損失を防ぎます。
+ここでは、**[ファイル]** ページのもう&1; つの使用例を示します。 過去 6 か月の間、変更されていないファイルを組織で誰も公開共有または外部共有していないことを確認するには、Cloud App Security にアプリを接続し、**[ファイル]** ページで、アクセス レベルが**[外部]**または**[公開]**であるファイルをフィルターし、**[最終変更]**日を 6 か月前に設定します。 古い公開ファイルを検出するファイル ポリシーを作成する場合は、**[検索に基づく新しいポリシー]** をクリックし、**[外部ユーザーの削除]** などの自動ガバナンス アクションを適用して、組織のデータ損失を防ぎます。
 
  ![外部の古いファイルをフィルターする](media/file-example-stale-external.png)
 
@@ -41,7 +38,7 @@ Cloud App Security は、データ保護を提供するため、接続してい�
 
  ![詳細なファイル ログ フィルター](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> ファイル フィルター 
+###  <a name="Filefilters"></a> ファイル フィルター 
  
 Cloud App Security は、20 を超えるメタデータ フィルター (アクセス レベルやファイルの種類など) に基づいてファイルの種類を監視できます。 
  
@@ -84,7 +81,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 -   ファイル名 – クラウド アプリケーションで定義されているファイル名または名前のサブ文字列です。たとえば、ファイル名にパスワードが含まれるすべてのファイルです。   
   
--   ファイルのタグ - Azure Information Protection によって設定される特定のタグを持つファイルを検索します。 これには、Azure Information Protection との統合が必要です。
+-   分類ラベル - Azure Information Protection によって設定される特定のタグを持つファイルを検索します。 これには、Azure Information Protection との統合が必要です。
 
 -   ファイルの種類 – Cloud App Security は、サービスから受信した MIME タイプとファイルのスキャンの両方を基にして、実際のファイルの種類を判断します。 このスキャンは、データ スキャンに関連するファイルに対して行われることに注意してください (ドキュメント、画像、プレゼンテーション、スプレッドシート、テキスト、zip/アーカイブ ファイル)。 フィルターは、ファイル/フォルダーの種類ごとに行われます。たとえば、... であるすべてのフォルダー、または ... であるすべてのスプレッドシート ファイルなどです。
 
@@ -132,8 +129,3 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-

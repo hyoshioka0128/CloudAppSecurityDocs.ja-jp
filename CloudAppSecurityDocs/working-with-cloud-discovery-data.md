@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery のカスタマイズ | Microsoft Docs"
+title: "Cloud Discovery データを使用して危険な動作を検出する | Microsoft Docs"
 description: "このトピックでは、アプリ リスク スコアの操作方法など、Cloud Discovery データの操作方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 2/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 89f533e3b9c8397818e5aaa108dca168fda64db7
-ms.openlocfilehash: 0077b634d09cd9476d07c2de6a84d0c9396285da
-
-
+ms.openlocfilehash: 872c5839a3fbf54e4e4d07ef9ac0629aef29aaad
+ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
+translationtype: HT
 ---
-
-# <a name="customize-cloud-discovery"></a>Cloud Discovery のカスタマイズ
+# <a name="working-with-cloud-discovery"></a>Cloud Discovery での作業
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルターで絞り込むためのさまざまなオプションがあります。最も関心のある項目に基づき、特定のビューを生成できます。グラフィックスはわかりやすく、全体像がひとめでわかります。
@@ -42,7 +39,7 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
 
 
 ## <a name="customize-the-risk-score"></a>リスク スコアのカスタマイズ  
-Cloud Discovery は、環境全体で使用されるクラウド アプリの確実性や信頼性に関する重要データを提供します。 ポータル内では、検出された各アプリが合計スコアとともに表示されます。合計スコアは、企業による特定アプリの使用の成熟度を Cloud App Security が評価したものです。 指定したアプリの合計スコアは、Cloud App Security が信頼性を評価するときに参照する次の 3 つのサブカテゴリに関する 3 つのサブスコアの加重平均です。  
+Cloud Discovery は、環境全体で使用されるクラウド アプリの確実性や信頼性に関する重要データを提供します。 ポータル内では、検出された各アプリが合計スコアとともに表示されます。合計スコアは、企業による特定アプリの使用の成熟度を Cloud App Security が評価したものです。 指定したアプリの合計スコアは、Cloud App Security が信頼性を評価するときに参照する次の&3; つのサブカテゴリに関する&3; つのサブスコアの加重平均です。  
   
 -   **概要** - このカテゴリはアプリを作成した会社の基本情報を示し、その会社のドメイン、設立年、および人気度を含みます。 これらのフィールドは、最も基本的なレベルでの会社の安定性を把握するためのものです。  
   
@@ -133,8 +130,3 @@ Cloud Discovery データを削除するには:
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO4-->
-
-
