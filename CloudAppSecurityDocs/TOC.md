@@ -1,23 +1,27 @@
-# [Understand & Explore (調査と理解)](what-is-cloud-app-security.md)
+# 理解と調査
 ## [CAS とは](what-is-cloud-app-security.md)
 ## [リリース ノート](release-notes.md)
-# [展開](getting-started-with-cloud-app-security.md)
+# 展開
+## [はじめに](getting-started-with-cloud-app-security.md)
 ## [ポータルのカスタマイズ](general-setup.md)
+### [ユーザー グループ](user-groups.md)
+### [IP タグと IP 範囲](ip-tags.md)
 ## [Cloud Discovery の展開](set-up-cloud-discovery.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
-### [Cloud Discovery のカスタマイズ](working-with-cloud-discovery-data.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box の接続](connect-box-to-microsoft-cloud-app-security.md)
-### [Google Apps の接続](connect-google-apps-to-microsoft-cloud-app-security.md)
+### [G Suite の接続](connect-google-apps-to-microsoft-cloud-app-security.md)
 ### [Office 365 の接続](connect-office-365-to-microsoft-cloud-app-security.md)
 ### [AWS の接続](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Dropbox の接続](connect-dropbox-to-microsoft-cloud-app-security.md)
 ### [Okta の接続](connect-okta-to-microsoft-cloud-app-security.md)
 ### [ServiceNow の接続](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Salesforce の接続](connect-salesforce-to-microsoft-cloud-app-security.md)
-# [使用](daily-activities-to-protect-your-cloud-environment.md)
+# vmmblue_2
+## [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
+## [Cloud Discovery での作業](working-with-cloud-discovery-data.md)
 ## [調査](investigate.md)
 ### [組み込みレポートの参照](built-in-report-reference.md)
 ### [ファイル](file-filters.md)
@@ -28,20 +32,18 @@
 #### [Cloud Discovery ポリシー](cloud-discovery-policies.md)
 ##### [Cloud Discovery 異常検出ポリシー](cloud-discovery-anomaly-detection-policy.md)
 #### [アクティビティ ポリシー](user-activity-policies.md)
-##### [異常検出ポリシー](anomaly-detection-policy.md)
+#### [異常検出ポリシー](anomaly-detection-policy.md)
 #### [ファイル ポリシー](data-protection-policies.md)
 ##### [コンテンツ検査](content-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
+#### [ポリシー テンプレート リファレンス](policy-template-reference.md)
 ### [アプリのアクセス許可の管理](manage-app-permissions.md)
-## [管理](governance-actions.md)
+### [接続されているアプリの管理](governance-actions.md)
+### [検出されたアプリの管理](governance-discovery.md)
 ## 統合
 ### [Azure Information Protection の統合](azip-integration.md)
 ### [SIEM の統合](siem.md)
-# [トラブルシューティング](troubleshooting.md)
+# トラブルシューティング
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
-
-<!--HONumber=Jan17_HO1-->
-
-

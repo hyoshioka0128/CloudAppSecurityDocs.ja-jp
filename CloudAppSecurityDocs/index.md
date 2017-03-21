@@ -1,208 +1,139 @@
 ---
-asset_id: 0f64ab44-50c4-46b7-8071-533f31fe3627
-layout: HubPage
-title: Cloud App Security | Microsoft Docs
-description: "Cloud App Security のテクニカル ドキュメント"
-author: msmbaldwin
-manager: mbaldwin
-ms.date: 1/11/2017
-ms.topic: hubpage
-ms.prod: azure
-ms.service: cloud-app-security
-ms.technology: techgroup-identity
-ms.suite: ems
-ms.assetid: 0f64ab44-50c4-46b7-8071-533f31fe3627
-translationtype: Human Translation
-ms.sourcegitcommit: 4c2f6f240a579230c65899f36941dc627b2519e5
-ms.openlocfilehash: ed9c1bbdf3652cd8daff79ab41044e8f26429c8a
+layout: LandingPage
+description: "Cloud App Security の使用方法について説明します。"
+ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
+ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+translationtype: HT
+---
+# <a name="cloud-app-security-documentation"></a>Cloud App Security ドキュメント
 
+社外で共有する電子メール、ドキュメント、機密データを制御し、セキュリティの保護を容易にします。 保存先や共有するユーザーに関係なく、簡単な分類から埋め込みラベルや許可まで、Azure Information Protection で常にデータ保護を強化します。
+
+<ul class="panelContent cardsFTitle">
+    <li>
+        <a href="/cloud-app-security/what-is-cloud-app-security">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_whats-new.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Cloud App Security の詳細について学ぶ</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/investigate">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_investigate.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>クラウド環境で起きていることを調べる</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/set-up-cloud-discovery"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_setup.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Cloud Discovery のセットアップ</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cloud-app-security/control"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_cloud-security.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Cloud App Security でクラウド アプリの使用を制御する</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.microsoft.com/en-us/cloud-platform/cloud-app-security"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_learn-about.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Cloud App Security の詳細</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="https://support.microsoft.com/en-us/assistedsupportproducts"> 
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="/media/common/i_support.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Cloud App Security のサポートを受ける</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+</ul>
 
 ---
 
-# <a name="cloud-app-security-documentation"></a>Cloud App Security ドキュメント
-<article id="main">
-    <section id="hero-content">
-      <h1>Cloud App Security ドキュメント</h1>
-      <h2>Cloud App Security をセットアップして使用することで、組織がクラウド アプリケーションのメリットを活用しながら、同時にアクティビティの可視性を向上させて管理性を維持し、重要な企業データの保護を強化できるようにする方法を説明します。 </h2>
-      <h3>Cloud App Security を初めて使用する場合 <a href="https://go.microsoft.com/fwlink/?linkid=835379" target="_blank">製品サイトをご覧ください&rarr;</a></h3>
-    </section>
-    <aside class="alert section-border">
-        <p>準備ができている場合</p>
-        <ol class="action-list">
-            <li><a href="https://go.microsoft.com/fwlink/?linkid=835380" target="_blank" class="button-bordered button-translucent">今すぐ購入</a></li>
-        </ol>
-    </aside>
-    <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> おすすめコンテンツ</h2>
-      <div class="features row">
-        <ul class="column column-half">
-          <li><a href="./what-is-cloud-app-security.md">Cloud App Security とは</a></li>
-          <li><a href="./set-up-cloud-discovery.md">組織で使用されているクラウド アプリを検出する</a></li>
-        </ul>
-        <ul class="column column-half">
-          <li><a href="./investigate.md">クラウド環境で起きていることを調べる</a></li>
-          <li><a href="./control.md">Cloud App Security でクラウド アプリの使用を制御する</a></li>
-        </ul>
-      </div>
-    </section>
-    <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./what-is-cloud-app-security.md">
-                <div class="title column-third">
-                  <span class="step-number">1</span>
-                  <p>理解と調査</p>
+<h2>今すぐ購入</h2>
+<ul class="panelContent cardsW">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>サブスクリプション</h3>
+                        <p><a href="https://portal.office.com/Signup/Signup.aspx?OfferId=831aa0aa-1408-4d03-8799-e6e09273f5b2&ali=1#0">サブスクリプションを追加する</a></p>
+                    </div>
                 </div>
-                <p class="description column-two-thirds">Cloud App Security の概念と機能について説明します。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./what-is-cloud-app-security.md">
-                    <h3>Cloud App Security とは</h3>
-                    <p>Cloud App Security について説明します。Cloud App Security はクラウド ベースのソリューションであり、組織内のクラウド アプリの情報を収集して制御し、クラウド ネットワークを保護することができます。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./release-notes.md">
-                    <h3>リリース ノートを見る</h3>
-                    <p>Cloud App Security の最新の機能と修正の情報を確認してください。</p>
-                  </a>
-                </li>
-                
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-<div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./getting-started-with-cloud-app-security.md">
-                <div class="title column-third">
-                  <span class="step-number">2</span>
-                  <p>開始</p>
-                </div>
-                <p class="description column-two-thirds">組織への Cloud App Security の展開を開始します。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./set-up-cloud-discovery.md">
-                    <h3>Cloud Discovery のセットアップ</h3>
-                    <p>組織内のクラウド アプリの使用とシャドウ IT に関する詳細な情報を得るには、Cloud Discovery 機能を使用します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./enable-instant-visibility-protection-and-governance-actions-for-your-apps.md">
-                    <h3>アプリを接続する</h3>
-                    <p>クラウド アプリを Cloud App Security に接続して、視認性と管理性を強化します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./control-cloud-apps-with-policies.md">
-                    <h3>ポリシーによるクラウド アプリの制御</h3>
-                    <p>ポリシーを設定して、組織内のクラウド アプリの使用を監視および制御します。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-  <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./daily-activities-to-protect-your-cloud-environment.md">
-                <div class="title column-third">
-                  <span class="step-number">4</span>
-                  <p>vmmblue_2</p>
-                </div>
-                <p class="description column-two-thirds">組織のクラウド アプリの使用を調査および制御する日常的なアクティビティによって Cloud App Security を使用する方法を説明します。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./investigate.md">
-                    <h3>調査</h3>
-                    <p>Cloud App Security のツールを使用して環境で起きていることを詳しく理解することにより、組織でのクラウド アプリの使用を調査して把握します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./control.md">
-                    <h3>クラウド アプリの使用を制御する</h3>
-                    <p>ユーザーを移行し、ガバナンス アクションを適用し、自動修復を適用することにより、クラウド アプリの使用を制御します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./governance-actions.md">
-                    <h3>ガバナンス</h3>
-                    <p>ガバナンス ログを使用して、Cloud App Security で実行するように設定された各タスク (手動と自動の両方) の状態レコードを取得します。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>
-      <div id="journeys">
-      <section class="container">
-        <ul class="journeys-list">
-          <li class="journey-step">
-            <header class="journey-step-header row">
-              <a href="./troubleshooting-cloud-discovery.md">
-                <div class="title column-third">
-                  <span class="step-number">5</span>
-                  <p>トラブルシューティング</p>
-                </div>
-                <p class="description column-two-thirds">Cloud App Security のセットアップと操作上の問題をトラブルシューティングするには、ここで説明されている手順を使用します。</p>
-              </a>
-            </header>
-            <section class="journey-step-elements content">
-              <ul class="row">
-                <li class="column-third">
-                  <a href="./troubleshooting-cloud-discovery.md">
-                    <h3>トラブルシューティング</h3>
-                    <p>Cloud Discovery と API コネクタに関する問題をトラブルシューティングするには、これらのガイドを使用します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./troubleshooting-cloud-discovery.md">
-                    <h3>クラウド検出のトラブル シューティング</h3>
-                    <p>Cloud Discovery の展開と使用に関する一般的な問題の解決策を探すには、これらのガイドを使用します。</p>
-                  </a>
-                </li>
-                <li class="column-third">
-                  <a href="./troubleshooting-api-connectors-using-error-messages.md">
-                    <h3>API コネクタのトラブルシューティング</h3>
-                    <p>API コネクタのエラー メッセージの解決策を探すには、このガイドを使用します。</p>
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </li>
-       </section>
-    </div>  
-
-        <aside class="alert alert-social">
-      <p>Cloud App Security の最新情報を入手する <ol class="action-list">
-        <li><a href="https://go.microsoft.com/fwlink/?linkid=835381" target="_blank" class="button-bordered button-translucent">Cloud App Security の公式サイト</a></li>
-        <li><a href="http://support.microsoft.com/oas/default.aspx?prid=16031" target="_blank" class="button-bordered button-translucent">Cloud App Security のサポート</a></li>
-      </ol>
-    </aside>
-</article>
-
-
-
-<!--HONumber=Dec16_HO1-->
-
-
+            </div>
+        </div>
+    </li>    
+</ul>
