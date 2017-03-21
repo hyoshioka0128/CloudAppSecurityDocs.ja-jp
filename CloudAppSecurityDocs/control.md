@@ -1,11 +1,11 @@
 ---
-title: "制御 | Microsoft Docs"
+title: "管理アクションを使用してクラウド アプリの使用を制御する方法 | Microsoft ドキュメント"
 description: "この記事では、組織のクラウド アプリの使用を制御するため Cloud App Security で実施できるガバナンス アクションについて説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,19 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-[**設定**] \(歯車アイコン) ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
+[**設定**] 歯車 ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
 
-ガバナンス アクションが失敗した場合は、[**再試行**] アイコン ![再試行アイコン](./media/retry-icon.png "retry icon") をクリックして再度適用できます。  
+ガバナンス アクションが失敗した場合は、[**再試行**] アイコン ![再試行アイコン](./media/retry-icon.png "再試行アイコン") をクリックして再度適用できます。  
 
 ポリシー、違反、アプリの種類に応じて、さまざまなガバナンス アクションを使用できます。  
 
@@ -42,7 +39,7 @@ ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
 >   
 >  [**フィルター**] セクションの [**結果の編集とプレビュー**] ボタンを使用すると結果を確認できます。  
 
-![ファイル ポリシーの編集とプレビュー結果](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![ファイル ポリシーの編集と結果のプレビュー](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集と結果のプレビュー")  
 
 ## <a name="migration"></a>移行  
 Cloud App Security では、組織内のどのユーザーがどのアプリを使用しているかを把握できると共に、新しいアプリの導入を監視するツールを提供することで、移行のロールアウトをサポートします。 また、組織内でどのような種類のアプリを提供する必要があるかを理解できるように、すべてのユーザーが既に使用しているアプリを表示するツールが提供されます。  
@@ -56,7 +53,7 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 
     1.  **Cloud Discovery ダッシュボード**で [**Dropbox**] を選び、[**IP アドレス**] または [**ユーザー**] タブを選びます。  
 
-    2.  矢印 ![矢印アイコン](./media/arrow-icon.png "arrow icon") を選び、[**エクスポート**] を選択します。  
+    2.  矢印 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選び、[**エクスポート**] を選択します。  
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  
@@ -75,9 +72,3 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 クラウド アプリの使用を制御するポリシーを設定する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。   
 テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。   
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-
