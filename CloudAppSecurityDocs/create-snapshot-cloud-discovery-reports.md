@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery のスナップショット レポートを作成する | Microsoft Docs"
+title: "Cloud Discovery クラウド アプリの使用に関するスナップショット レポートの作成 | Microsoft ドキュメント"
 description: "この記事では、ログを手動でアップロードして Cloud Discovery アプリのスナップショット レポートを作成する方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2a2d4396a3960bd3124196b9c616f6a7765247ce
-ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
-
-
+ms.openlocfilehash: 189662f6122239a6db6533180265548297a5c795
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
 まだログを取得していなく、ログがどのようなものかをサンプルで確認したい場合は、以下の手順に従ってサンプル ログ ファイルをダウンロードし、ログがどのように表示されるかを確認してください。
@@ -71,8 +68,3 @@ ms.openlocfilehash: ce887ed4f8727b0c36f5e5e9a40b13b11dc78920
     
       
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

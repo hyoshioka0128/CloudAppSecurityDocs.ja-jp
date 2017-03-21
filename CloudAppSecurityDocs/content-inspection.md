@@ -1,11 +1,11 @@
 ---
-title: "コンテンツ検査 | Microsoft Docs"
+title: "Cloud App Security でコンテンツの検査を実施する方法 | Microsoft ドキュメント"
 description: "この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Cloud App Security が従うプロセスについて説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: a1ff57c60d8b35711330e8e4879fe1a48a7dee77
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>コンテンツ検査
 この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Cloud App Security が従うプロセスについて説明します。 
 
@@ -70,8 +67,3 @@ NRT スキャンが実行されるファイルと継続的にスキャンされ�
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

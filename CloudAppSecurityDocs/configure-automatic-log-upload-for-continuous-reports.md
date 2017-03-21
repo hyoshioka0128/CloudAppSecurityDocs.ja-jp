@@ -1,11 +1,11 @@
 ---
-title: "継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs"
+title: "Cloud App Security で継続的なレポートのために自動ログ アップロードを構成する | Microsoft ドキュメント"
 description: "このトピックでは、Cloud Discovery の自動レポートを作成するためにログをアップロードする方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/08/2016
+ms.date: 1/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 7901bb58f70949873fb3c423ae7951a67f7cd671
-ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
-
-
+ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ファイルのログ コレクターへの FTP 転送が完了した後で Cloud App Security にアップロードされ、Syslog については、ログ コレクターは 20 分ごとに受信したログをディスクに書き込んでから、Cloud App Security にファイルをアップロードします。
 
@@ -44,7 +41,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
   
-### <a name="step-1-web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
   
 1.  自動アップロードの設定ページに移動します。  
     Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから **[ログ コレクター]** をクリックします。  
@@ -59,7 +56,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
   
     d.  予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。  
   
-    e.  [**レシーバーの種類**] を [**FTP**] または [**Syslog**] のいずれかに設定します。  [**Syslog**] の場合、[**UDP**] または [**TCP**] を選択します。  
+    e.  [**レシーバーの種類**] を [**FTP**] または [**Syslog**] のいずれかに設定します。 [**Syslog**] の場合、[**UDP**] または [**TCP**] を選択します。  
   
     f.  ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。  
   
@@ -77,7 +74,7 @@ ms.openlocfilehash: 96575cfc6bc3d736b40503049816ccc191fbf3e8
   > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 4.  Hyper-V または VMWare をクリックして新しいログ コレクター仮想マシンを**ダウンロード**し、ポータルで受け取ったパスワードを使用してファイルを解凍します。  
   
-### <a name="step-2-on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>ステップ 2: 仮想マシンのオンプレミス展開とネットワークの構成   
+### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>ステップ 2: 仮想マシンのオンプレミス展開とネットワークの構成   
 
 > [!NOTE] 
 > 次の手順は、Hyper-V での展開について説明したものです。 VM のハイパーバイザーを展開する手順は若干異なります。  
@@ -114,7 +111,7 @@ sudo network_config
 
 この時点で、ログ コレクターはネットワークに接続されているため、Cloud App Security ポータルにアクセスできるようになります。  
 
-### <a name="step-3-on-premises-configuration-of-the-log-collection"></a>ステップ 3: ログ収集のオンプレミス構成 
+### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>ステップ 3: ログ収集のオンプレミス構成 
 初めてログ コレクターにログインし、ポータルからログ コレクターの構成をインポートする場合は、次のようにします。 
 
 1.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにログインします。 (コンソールに初めてログインする場合は、パスワードを変更してから再度ログインする必要があります。 ターミナル セッションを使用している場合は、ターミナル セッションの再起動が必要になることがあります。 )
@@ -156,8 +153,3 @@ sudo network_config
     
       
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
