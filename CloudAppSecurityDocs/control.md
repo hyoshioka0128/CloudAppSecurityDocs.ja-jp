@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 947e7e7cee59090a71085a4544bc20449399181a
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="control"></a>Control
@@ -64,7 +64,7 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 
 2.   [**カテゴリ**] から [**生産性**] によってアプリをフィルタリングします。  
 
-3.   使用中の各アプリについて、[**スコア**] をチェックして、アプリが安全であるかどうかを確認し、安全でない場合はその理由を確認します。  
+3.   使用中の各アプリについて、**[スコア]** をチェックして、アプリが安全であるかどうかを確認し、安全でない場合はその理由を確認します。  
 
 4.   組織全体のエンタープライズ ライセンスを購入しようと考えている場合は、[**ユーザー**] 列もチェックしてください。 この列では、決定を行う前に、現在最も多くのユーザーが使用しているアプリ、そのアプリの信頼性、そのアプリに備わっているセキュリティ機能を確認することができます。  
 

@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security リリース ノートとそのバージョン | Microsoft ドキュメント"
+title: "Cloud App Security リリース ノートとそのバージョン | Microsoft Docs"
 description: "このトピックは、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/5/2017
+ms.date: 3/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,35 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23870c7ba734acc3095f1dcd097f19954fee5e79
-ms.sourcegitcommit: 064afc7148de42c0e81763f96ec13fb2c92f02a9
+ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="release-notes"></a>リリース ノート
 
+## <a name="cloud-app-security-release-93"></a>Cloud App Security リリース 93
+リリース日: 2017 年 3 月 20 日
+
+**新機能:**
+-    Cloud App Security Anonymization により、カスタム暗号化キーを構成できるようになりました。 詳細については、[Cloud Discovery の匿名化](cloud-discovery-anonymizer.md)に関するページを参照してください。
+-    ユーザーとアカウント管理の制御を強化するために、**[アカウント]** ページの中から各ユーザーの横にある歯車アイコンをクリックすることで、各ユーザーとそのアカウントの Azure AD アカウント設定に直接アクセスできるようになりました。 これにより、高度なユーザー管理機能、MFA の構成、ユーザー サインインの詳細およびサインインをブロックする機能に簡単にアクセスできるようになりました。 
+-    Cloud App Security API を通じて、承認されていないアプリをブロックするスクリプトをエクスポートできるようになりました。 メニュー バーの疑問符をクリックして、Cloud App Security ポータルの API の詳細と、それに続く **API のドキュメント** を参照してください。
+-    ServiceNow 用 Cloud App Security アプリ コネクタは、ジュネーブ、ヘルシンキ、イスタンブールで導入されているのと同様に、OAuth トークンについてもサポートされるようになりました。 これにより、ServiceNow への API 接続がより堅牢になり、ユーザーのデプロイに依存することがなくなりました。 詳細については、「[ServiceNow を Microsoft Cloud App Security に接続する](connect-servicenow-to-microsoft-cloud-app-security.md)」を参照してください。 既存のお客様は、ServiceNow App コネクタのページで設定を更新できます。
+-    サード パーティ製の DLP を追加で構成した場合は、各コネクタの状態が独立して表示され、DLP のスキャン状態が見やすくなっています。
+-    Cloud App Security で、Office 365 監査ログでサポートされている Microsoft Teams アクティビティがサポートされるようになりました。 この機能は、徐々にロール アウトされていきます。
+-    Exchange Online の偽装イベントについては、代理、管理者、または代理管理者の中から、使用するアクセス許可レベル別にフィルター処理ができるようになりました。 **[アクティビティ オブジェクト]** > **[項目]** を検索することで、関心のある偽装レベルのイベントを **[アクティビティ ログ]** で検索して表示できるようになりました。
+-    [アプリの権限] タブのアプリ ドロワーで、各アプリの**発行元**が確認できるようになりました。 また、発行元をフィルターとして使用して、同一の発行元からアプリが追加された際に、そのアプリを調査することもできます。
+-    危険な IP アドレスが、一般的な**場所**のリスク要因として重み付けされるのではなく、独立したリスク要因として表示されるようになりました。 
+-    Azure Identity Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効であると表示されます。 無効になったラベルは表示されません。
+ 
+**その他の Salesforce サポート:**
+-    Cloud App Security で、Salesforce のユーザー停止、および停止の解除ができるようになりました。 これは、Salesforce Connector の **[アカウント]** タブで、特定のユーザーの行の末尾にある歯車アイコンをクリックして、**[一時停止]** または **[一時停止を解除]** を選択することで実行できます。また、ポリシーの一部のガバナンス アクションとして適用することもできます。 Cloud App Security で実行された一時停止のアクティビティおよび一時停止の解除のアクティビティはすべて、[ガバナンス ログ](governance-actions.md)でログに記録されます。 
+-    Salesforce コンテンツ共有の可視性が向上: パブリックに共有されているファイル、グループで共有されているファイル、Salesforce ドメイン全体で共有されているファイルを含め、どのファイルが誰に共有されたかを確認できるようになりました。 この可視性の向上は Salesforce アプリの中で新しいアプリおよび現在のアプリに遡及的にロール アウトされていきます。1 回目の更新が行われるまで時間がかかる場合があります。
+-    次の Salesforce イベントの対象範囲を広げ、**[ユーザーの管理]** アクティビティから分離しました。 
+    - アクセス許可の編集
+    - ユーザーの作成
+    - ロールの変更
+    - パスワードの再設定
 
 ## <a name="cloud-app-security-release-90-91-92"></a>Cloud App Security リリース 90、91、92
 2017 年 2 月のリリース
@@ -54,8 +77,8 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 2017 年 1 月 22 日のリリース
 
 **新機能**
--    Microsoft では、Cloud App Security で Office 365 セキュリティとコンプライアンス センターの DLP イベントを表示するための機能のロールアウトを開始します。 Office 365 セキュリティとコンプライアンス センターで DLP ポリシーを構成した場合、ポリシーの条件に一致するものが検出されると、Cloud App Security アクティビティ ログでそれを確認できます。 アクティビティ ログの情報には、ポリシーの条件との一致を引き起こしたファイルまたはメール、またはそれらがポリシーの条件に一致したことを示すアラートが含まれます。 "セキュリティ イベント" アクティビティを使用すると、Cloud App Security アクティビティ ログに含まれる Office 365 DLP ポリシーの条件との一致を確認することができます。 この機能を使用すると、次のことができます。
-    -    Office&365; DLP エンジンに由来するすべての DLP の条件との一致項目を確認します。
+-    Microsoft では、Cloud App Security で Office 365 セキュリティとコンプライアンス センターの DLP イベントを表示するための機能のロールアウトを開始します。 Office 365 セキュリティとコンプライアンス センターで DLP ポリシーを構成した場合、ポリシーの条件に一致するものが検出されると、Cloud App Security アクティビティ ログでそれを確認できます。 アクティビティ ログの情報には、ポリシーの条件との一致を引き起こしたファイルまたはメール、またはそれらがポリシーの条件に一致したことを示すアラートが含まれます。 **セキュリティ イベント** アクティビティを使用すると、Cloud App Security アクティビティ ログに含まれる Office 365 DLP ポリシーの条件との一致を確認することができます。 この機能を使用すると、次のことができます。
+    -    Office 365 DLP エンジンに由来するすべての DLP の条件との一致項目を確認します。
     -    特定のファイル、SharePoint サイト、またはポリシーについて、Office 365 DLP ポリシーの条件との一致を通知します。
     -    さまざまなコンテキストで DLP ポリシーの条件との一致を調査します (たとえば、DLP ポリシーの条件との一致をトリガーしたファイルにアクセスまたはファイルをダウンロードした外部のユーザー)。
  

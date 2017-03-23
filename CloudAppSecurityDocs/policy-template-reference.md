@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8565105b128f4109ceab7a93714cadf96defa4d
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 5a06dd9f53c4074b2842eee3f369611b5b6b274c
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="policy-templates"></a>ポリシー テンプレート
@@ -35,7 +35,7 @@ Cloud App Security に存在するすべてのポリシー テンプレートの
 |Cloud storage app compliance check (クラウド ストレージ アプリのコンプライアンス チェック)|SOC2、SSAE 16、ISAE 3402、PCI DSS に準拠しておらず、50 人を超えるユーザーに使用され、毎日の合計使用量が 50 MB を超える新しいクラウド ストレージ アプリが検出されたときにアラートを生成します。|
 |New risky app (リスクが高い新しいアプリ)|リスク スコアが 6 未満で、50 人を超えるユーザーに使用され、毎日の合計使用量が 50 MB を超える新しいアプリが検出されたときにアラートを生成します。|
 |Collaboration app compliance check (コラボレーション アプリのコンプライアンス チェック)|SOC2 および SSAE 16 に準拠しておらず、50 人を超えるユーザーに使用され、毎日の合計使用量が 50 MB を超える新しいコラボレーション アプリが検出されたときにアラートを生成します。|
-|Logon from a risky IP address (危険な IP アドレスからのログオン)|承認済みアプリに危険な IP アドレスのユーザーがログオンすると、アラートを生成します。 危険な IP アドレスのカテゴリには、既定で、匿名プロキシ、TOR、またはボットネットの IP アドレス タグを持つアドレスが含まれます。 IP アドレスの範囲設定ページで、このカテゴリに IP アドレスを追加することができます。|
+|危険な IP アドレスからのログオン|承認済みアプリに危険な IP アドレスのユーザーがログオンすると、アラートを生成します。 危険な IP アドレスのカテゴリには、既定で、匿名プロキシ、TOR、またはボットネットの IP アドレス タグを持つアドレスが含まれます。 IP アドレスの範囲設定ページで、このカテゴリに IP アドレスを追加することができます。|
 |Administrative activity from a non-administrative IP address (管理者以外の IP アドレスからの管理アクティビティ)|管理者が、特定の IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 危険な IP アドレスを追加するには、[設定] ページに移動し、IP アドレスの範囲を選択します。|
 |User logon from a non-categorized IP address (分類されていない IP アドレスからのユーザー ログオン)|特定の IP 範囲カテゴリに含まれていない IP アドレスからユーザーがログオンしたときにアラートを生成します。 IP アドレスを分類するには、[設定] ページに移動し、IP アドレスの範囲を選択します。|
 |File containing PII detected in the cloud (built-in DLP engine) (クラウド (組み込みの DLP エンジン) で検出された PII を含むファイル)|承認されたクラウド アプリで、組み込みのデータ損失防止 (DLP) エンジンによって個人を特定できる情報 (PII) を含むファイルが検出されたときにアラートを生成します。|

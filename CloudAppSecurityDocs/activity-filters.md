@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/6/2016
+ms.date: 3/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 548dceaedc5bc22a5ca6da0690702b411b2987fb
-ms.sourcegitcommit: 80d9396833957429cf4fe178f336ab2e1793069e
+ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="activities"></a>アクティビティ
@@ -42,11 +42,11 @@ Cloud App Security は、接続しているアプリのすべてのアクティ�
   
 -   アクティビティ ID - ID を使用して特定のアクティビティのみを検索します。 このフィルターは、(SIEM エージェントを使用して) Cloud App Security を SIEM に接続する場合や、Cloud App Security ポータル内でアラートをさらに詳細に調査する場合にとても便利です。  
   
--   アクティビティ オブジェクト - アクティビティが実行されたオブジェクトを検索します。 このフィルターは、ファイル、フォルダー、ユーザーまたはアプリのオブジェクトに適用されます。
+-   アクティビティ オブジェクト - アクティビティが実行されたオブジェクトを検索します。 このフィルターは、ファイル、フォルダー、ユーザーまたはアプリのオブジェクトに適用されます。 
     - アクティビティのオブジェクト ID - オブジェクトの ID (ファイル、フォルダー、ユーザーまたはアプリの ID)。
     - ファイル、フォルダーまたはサイトの URL - 特定の文字列で始まるファイル、フォルダー、URL を選択することができます。
     - ターゲット オブジェクト (ファイルまたはフォルダー) - 特定のファイルやフォルダーを選択することができます。 
-    - アイテム - アクティビティ オブジェクトの名前または ID で検索できます (例: ユーザー名、ファイル、パラメーター、サイト)。 
+    - アイテム - アクティビティ オブジェクトの名前または ID で検索できます (例: ユーザー名、ファイル、パラメーター、サイト)。 **[アクティビティ オブジェクト項目]** フィルターでは、特定の項目について **[次の値を含む]**、**[等しい]**、または **[次の値で始まる]** を選択して項目をフィルターできます。
     
 -   アクティビティの種類 - アプリ アクティビティを検索します。
 

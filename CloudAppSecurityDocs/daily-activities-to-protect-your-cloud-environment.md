@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 28068d41d44aa0b2f7a5e5950546a5e185d77eba
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 4e25d55664c667cceb9b93c214024b29f4fd21eb
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="daily-activities-to-protect-your-cloud-environment"></a>クラウド環境を保護するための日常的な作業
@@ -36,7 +36,7 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 ![Cloud App Security ダッシュボード](./media/dashboard.png "ダッシュボード")  
 
 ## <a name="handle-your-alerts"></a>アラートの処理  
-アラートは、クラウド環境をより深く理解するための最初のステップです。 確認した状況に基づいて新しいポリシーを作成できます。 たとえば、ある監理者がグリーンランドからサインインしていることが判明します。以前にグリーンランドからサインインしたことがある人は組織にいません。 その場所からのサインインに使用されている管理者アカウントを自動的に停止するポリシーを作成することができます。  
+アラートは、クラウド環境をより深く理解するための最初のステップです。 確認した状況に基づいて新しいポリシーを作成できます。 たとえば、ある管理者がグリーンランドからサインインしていることが判明したとします。しかし、これまでグリーンランドからサインインしたことがある人は組織にいません。 その場所からのサインインに使用されている管理者アカウントを自動的に停止するポリシーを作成することができます。  
 
 すべてのアラートを確認し、これに基づいてポリシーを修正することをお勧めします。 無害なイベントが既存のポリシーに違反していると判断される場合、ポリシーを調整して不要なアラートを受信する回数を減らします。  
 

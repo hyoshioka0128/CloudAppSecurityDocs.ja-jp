@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f90d44fba89e06e160c0161e1cec7b7f95d3e00c
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
@@ -70,7 +70,7 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 6.  [**指定の日付後に生じた疑わしいアクティビティに関してのみアラートを出す**] で、異常なアクティビティに対してアラートをトリガーする期間を選択します。  
   
-7.  [**アラート**] で、異常検出の感度を [低] から [高] の間で調整すると、アラートの受信頻度を設定できます。  
+7.  **[アラート]** で、異常検出の感度を [低] から [高] の間で調整すると、アラートの受信頻度を設定できます。  
 [**日次アラート制限**] を設定し、アラートの送信形式を電子メールまたはテキスト メッセージのいずれか、あるいはその両方に設定するかを選択してから、必要に応じて詳細情報を入力します。 [Save alert settings (アラート設定の保存)] をクリックして既定に設定すると、今後作成されるポリシーでも、電話番号や電子メール アドレスを含むこのようなアラート設定が既定値として保存されます。 [**組織の既定値を使う**] をクリックすると、組織の既定値に基づいてこれらの設定が行われます。  
   
 9. [**作成**] をクリックします。  

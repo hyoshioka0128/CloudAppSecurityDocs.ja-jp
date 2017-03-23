@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security でクラウド アプリの危険性および疑わしいアクティビティについて調べる | Microsoft ドキュメント"
+title: "Cloud App Security でクラウド アプリの危険性および疑わしいアクティビティについて調べる | Microsoft Docs"
 description: "このトピックでは、Cloud App Security を使用してアラート、問題、疑わしいアクティビティを調査するためのプロセスの概要を説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4bd7c44ec5ced6da82de3c7bf8f3aa1fd12a517
-ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
 translationtype: HT
 ---
 # <a name="investigate"></a>調査
@@ -79,6 +79,8 @@ translationtype: HT
     -   既に退職したものの、アプリへのアクセス許可が付与されたままで、そのアクセス許可を使用して情報を盗むことができるユーザーがいないか  
 
     -   特定のアプリへのユーザーのアクセス許可を取り消すか、特定のユーザーに多要素認証を実行するように求める必要がないか  
+    
+    -   ユーザーのアカウント行の末尾にある歯車アイコンをクリックして、実行するアクション (**[ユーザーの中断]** や **[ユーザーのコラボレーションを削除]** など) を選択して、ユーザーのアカウントをドリル ダウンすることもできます。 ユーザーが Azure Active Directory からインポートされている場合は、**[Azure AD アカウント設定]** をクリックして、グループ管理、MFA、ユーザーのサインインに関する詳細、およびサインインをブロックする機能など、高度なユーザー管理機能に簡単にアクセスすることもできます。
 
 4.  [**調査**] に移動してアプリを選択します。 アプリのダッシュ ボードが開き、情報や洞察が提供されます。 上部のタブを使用して、以下を確認できます。  
 
@@ -113,7 +115,7 @@ translationtype: HT
     -   組織のポリシーに準拠していないクラウド アプリが使用されていないか  
 
 ## <a name="use-reports-to-investigate-risk"></a>レポートを使用してリスクを調査する  
-クラウド環境を制御しようと考える場合、最初は検出されるアクティビティについて、ある程度、推測します。この時点では、クラウドについて十分に理解できていません。 このような推測に基づいてポリシーを作成します。
+クラウド環境を制御しようとする場合、最初は検出されると思われるものを元に、ある程度の推測をします。この時点では、クラウドについて十分に理解していないためです。 このような推測に基づいてポリシーを作成します。
 
 Cloud App Security をクラウド環境で実行したら、組み込みのレポート (とカスタム レポート) を使用して、クラウドで実際にどのようなアクティビティが発生しているかを確認できます。 この情報に基づいて、ポリシーを再調整して例外を含めることにより、最終的にはポリシーによって検出される誤検知をごく少数に抑えることができます。  
 
