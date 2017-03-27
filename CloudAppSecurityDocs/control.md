@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,37 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f72c13059ebcb320bed24430b06061b1cbb884cd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  
+
+## <a name="use-policies-to-assess-risk"></a>ポリシーを使用してリスクを評価  
+発生中のアラートを確認した後は、ポリシー センターに移動して、アラートをトリガーしないポリシー違反を確認します。  
+
+-   Cloud App Security ダッシュボードで [**制御**]、[**ポリシー**] の順にクリックします。  
+
+-   特定のポリシーを選択して、アラートをトリガーしていないポリシーの一致の 「**Violating now**」 (発生中の違反) リストを確認します。  
+
+-   違反を 1 つずつクリックし、それぞれの処理を決定します。 ガバナンス アクションの詳細については、以下の図を参照してください。  
+
+     コンプライアンス違反を発見するようにポリシーが設定されていて、クレジット カード番号のファイルが OneDrive に保存された場合、ポリシーに一致します。  
+
+     ![PCI との一致](./media/pci-matches.png "PCI との一致")  
+
+-   一致を選択して、ポリシーに違反しているファイルを参照します。  
+
+     ![PCI コンテンツとの一致](./media/pci-content-matches.png "PCI コンテンツとの一致")  
+
+     ファイル自体を選択すると、そのファイルに関する情報を取得できます。  
+
+     [**グループ作業者**] をクリックすると、そのファイルにアクセスできるユーザーが表示されます。  
+
+     [**一致**] をクリックすると、実際のクレジット カード番号が表示されます。  
+
+     ![コンテンツ一致 ccn](./media/content-matches-ccn.png "コンテンツ一致 ccn")  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
