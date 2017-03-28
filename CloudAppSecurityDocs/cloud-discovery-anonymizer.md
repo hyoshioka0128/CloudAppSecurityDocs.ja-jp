@@ -29,7 +29,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
 データの匿名化のしくみ:
 
-1.    データの匿名化を適用する方法は次の&3; つです。 
+1.    データの匿名化を適用する方法は次の 3 つです。 
     
     - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、**[Anonymize private information (個人情報の匿名化)]** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。
  ![スナップショット データの匿名化](./media/anonymize-log.png)
