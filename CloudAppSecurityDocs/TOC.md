@@ -35,7 +35,7 @@
 ##### [Cloud Discovery 異常検出ポリシー](cloud-discovery-anomaly-detection-policy.md)
 #### [アクティビティ ポリシー](user-activity-policies.md)
 #### [異常検出ポリシー](anomaly-detection-policy.md)
-##### [ファイル ポリシー](data-protection-policies.md)
+#### [ファイル ポリシー](data-protection-policies.md)
 ##### [コンテンツ検査](content-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
 #### [ポリシー テンプレート リファレンス](policy-template-reference.md)
