@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/20/2017
+ms.date: 3/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e72aa915989592fda28f489d2dab0ddbe988dc31
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
 translationtype: HT
 ---
 # <a name="release-notes"></a>リリース ノート
@@ -23,6 +23,7 @@ translationtype: HT
 リリース日: 2017 年 3 月 20 日
 
 **新機能:**
+-   インポートされたユーザー グループの追加または除外に対してポリシーを適用できるようになりました。 
 -    Cloud App Security Anonymization により、カスタム暗号化キーを構成できるようになりました。 詳細については、[Cloud Discovery の匿名化](cloud-discovery-anonymizer.md)に関するページを参照してください。
 -    ユーザーとアカウント管理の制御を強化するために、**[アカウント]** ページの中から各ユーザーの横にある歯車アイコンをクリックすることで、各ユーザーとそのアカウントの Azure AD アカウント設定に直接アクセスできるようになりました。 これにより、高度なユーザー管理機能、MFA の構成、ユーザー サインインの詳細およびサインインをブロックする機能に簡単にアクセスできるようになりました。 
 -    Cloud App Security API を通じて、承認されていないアプリをブロックするスクリプトをエクスポートできるようになりました。 メニュー バーの疑問符をクリックして、Cloud App Security ポータルの API の詳細と、それに続く **API のドキュメント** を参照してください。
@@ -205,7 +206,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 **機能強化**
 
 - アクティビティ **Change email** (電子メールを変更する) および **Change password** (パスワードを変更する) は、Salesforce の汎用的な **Manage users** (ユーザーを管理する) アクティビティから独立しました。
-- SMS の&1; 日あたりのアラート制限を明確にしました。 1 日 (UTC) あたり、1 つの電話番号について最大 10 個のメッセージが送信されます。
+- SMS の 1 日あたりのアラート制限を明確にしました。 1 日 (UTC) あたり、1 つの電話番号について最大 10 個のメッセージが送信されます。
 - Safe Harbor に代わる Privacy Shield の Cloud Discovery 属性に、新しい証明書が追加されました (米国のベンダーのみに関係します)。
 - API コネクタのエラー メッセージに問題の修復を容易にするトラブルシューティングが追加されました。
 - Office 365 サードパーティ製アプリのスキャンの更新頻度が向上しました。
@@ -255,7 +256,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されている新しい Cloud Discovery ダッシュボードを使用できるようになりました。 使用されているアプリの種類、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、組織の上位アプリ ユーザーがわかり、アプリの本社の場所の地図が提供されます。
 新しいダッシュボードには、データをフィルターで絞り込むためのさまざまなオプションがあります。最も関心のある項目に基づき、特定のビューを生成できます。グラフィックスはわかりやすく、全体像がひとめでわかります。
 
-- **新しい Cloud Discovery レポート**: Cloud Discovery の結果を見るため、スナップショット レポートと継続レポートの&2; 種類のレポートを生成できるようになりました。
+- **新しい Cloud Discovery レポート**: Cloud Discovery の結果を見るため、スナップショット レポートと継続レポートの 2 種類のレポートを生成できるようになりました。
 スナップショット レポートは、ファイアウォールやプロキシから手動でアップロードするトラフィック ログのセットに対するアドホックな可視性を提供します。 継続レポートには、Cloud App Security のログ コレクターを使用してネットワークから転送されるすべてのログの結果が表示されます。 これらの新しいレポートでは、すべてのデータの向上した可視性、Cloud App Security の機械学習異常検出エンジンによって識別される異常な使用の自動識別、堅牢で詳細なポリシー エンジンを使用して定義された異常な使用の識別が提供されます。 詳細については、「[Cloud Discovery セットアップ](set-up-cloud-discovery.md)」をご覧ください。
  
 **機能強化**
@@ -285,7 +286,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 **機能強化**
 - Cloud Discovery の [エクスポート] ボタン アイコンが使いやすくなりました。
 - アクティビティを調査するとき、ユーザー エージェントが解析されない場合、生データを参照できるようになりました。
-- 異常検出エンジンに&2; つの新しいリスク要因が追加されました。 
+- 異常検出エンジンに 2 つの新しいリスク要因が追加されました。 
     - Cloud App Security は、リスクの計算の一部として、ボットネットに関連付けられた IP アドレス タグと匿名 IP アドレスを使うようになりました。 
     - 高ダウンロード率に対して Office 365 のアクティビティが監視されるようになりました。 Office 365 のダウンロード率が、組織または特定ユーザーの通常のダウンロード率よりはるかに高い場合、異常検出アラートがトリガーされます。 
 - Cloud App Security は、Dropbox の新しい [Secure Sharing 機能](https://blogs.dropbox.com/dropbox/2016/06/new-dropbox-productivity-tools/) API と互換性を持つようになりました。 
@@ -352,7 +353,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 * ファイルがポリシーに一致すると、ファイルにアクセスするための URL は、ファイル ドロアーで提供されるようになりました。
 * アクティビティ ポリシーまたは異常検出ポリシーからアラートがトリガーされると、新しい詳細な通知がされ、一致に関する情報を提供します。 
 * アプリ コネクタが切断されると、自動化されたシステム アラートがトリガーされます。
-* アラート ページ内から&1; つのアラートまたはアラートの一括選択を破棄または解決できるようになりました。
+* アラート ページ内から 1 つのアラートまたはアラートの一括選択を破棄または解決できるようになりました。
 
 ## <a name="cloud-app-security-release-72"></a>Cloud App Security リリース 72
 リリース日: 2016 年 5 月 15 日
