@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4fc7ea83542a8fee5deb55b17337f3f9ccd3f3d0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: fceebaacf3cc2fc1df894f6d1078675ccf630264
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security とは
@@ -50,8 +50,8 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 Cloud App Security は、ISO、HIPAA、CSA STAR、EU モデル条項などの Microsoft コンプライアンスで公式に認められています。 認定の完全な一覧については、「Microsoft Compliance Offerings」(Microsoft コンプライアンスの提供内容) (https://go.microsoft.com/fwlink/?linkid=842039) に移動し、Cloud App Security を選択してください。  
 
 Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 ファイルの内容は Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。 データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
-Cloud App Security は次のようにデータを保持しています。 
- 
+Cloud App Security は次のようにデータを保持しています。
+
 - アクティビティ ログ: 180 日間 
 - 検出データ: 90 日間 
 - アラート: 180 日間 
