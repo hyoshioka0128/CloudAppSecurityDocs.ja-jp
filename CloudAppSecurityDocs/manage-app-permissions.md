@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5205f05b470ed61d09a70e5be066e02f4f02a9cf
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 4e4641af039ba2ad7b0f36b0322277081170be01
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="manage-app-permissions"></a>アプリのアクセス許可の管理
@@ -27,11 +27,7 @@ translationtype: HT
 
 [アプリの権限] タブにアクセスするには、次の操作を実行します。
 
-1. Cloud App Security ポータルで、**[調査]** をクリックし、**[接続アプリ]** で **[Office 365]** を選択します。 
-> [!Note]
-> [アプリのアクセス許可] を使用するには、まず Cloud App Security を Office 365 に接続する必要があります。
-
-2. 次に、[Office 365] ダッシュボードで、**[アプリのアクセス許可]** タブをクリックします。
+Cloud App Security ポータルで、**[調査]**、**[アプリのアクセス許可]** の順にクリックします。
 
 
  ![アプリのアクセス許可](./media/app-permissions.png)
@@ -85,7 +81,7 @@ translationtype: HT
 
 - アプリの状態: アプリの状態 ([承認済み]、[禁止されています]、[未定]) に基づいてアプリを表示します。
 
-- アクセス許可レベル: 選択した&1; つまたは複数のアクセス許可レベルに基づいてアプリを表示します。
+- アクセス許可レベル: 選択した 1 つまたは複数のアクセス許可レベルに基づいてアプリを表示します。
 
 - コミュニティの利用状況: [珍しい]、[一般的でない]、[共通] のいずれかのコミュニティの利用状況レベルに基づいてアプリを表示します。
 
@@ -99,7 +95,7 @@ translationtype: HT
 
 - アプリの状態: アプリの状態 ([承認済み]、[禁止されています]、[未定]) に基づいてアプリを表示します。
 
-- アクセス許可レベル: 選択した&1; つまたは複数のアクセス許可レベルに基づいてアプリを表示します。
+- アクセス許可レベル: 選択した 1 つまたは複数のアクセス許可レベルに基づいてアプリを表示します。
 
 - コミュニティの利用状況: [珍しい]、[一般的でない]、[共通] のいずれかのコミュニティの利用状況レベルに基づいてアプリを表示します。
 フィルターは自動的に適用され、アプリの一覧がそれに応じて更新されます。 

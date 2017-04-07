@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 81ee0b71e6e66d102edf41269197d955b16fbeb4
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
@@ -31,7 +31,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 
 ## <a name="how-it-works"></a>しくみ
 [Azure Information Protection](https://docs.microsoft.com/information-protection/) のファイル分類ラベルについてはよくご存知なのではないでしょうか。 Cloud App Security で Azure Information Protection 分類タグを表示することができます。 Cloud App Security を Azure Information Protection と統合するとすぐに、次のように Cloud App Security でファイルがスキャンされます。
-1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、この処理は&1; 時間に&1; 回実行されます。
+1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、この処理は 1 時間に 1 回実行されます。
 2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。 自動スキャン (下記参照) を有効にした場合は、新しいファイルまたは変更されたファイルがすべて、スキャン キューに追加されます。
     b. 分類ラベルを検索するようにファイル ポリシー (下記参照) を設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
 3. 前述のように、これらのスキャンは、Cloud App Security が最初に実行するスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 外部ラベルをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant (このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする)]** チェックボックスをオンにします (下記参照)。
@@ -53,7 +53,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
  ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
 > [!NOTE] 
-> 自動スキャンは、再度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも&1; つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、[**コンテンツ検査**] オプションを確認します。 次に、[**コンテンツ検査**] の [**プリセットの式と一致するファイルを含む**] をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これで、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
+> 自動スキャンは、再度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、[**コンテンツ検査**] オプションを確認します。 次に、[**コンテンツ検査**] の [**プリセットの式と一致するファイルを含む**] をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これで、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 ### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
 既定では、Cloud App Security は、組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
@@ -107,6 +107,32 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 詳細については、[ガバナンス アクション](governance-actions.md)に関するページを参照してください。
 
 [Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) で詳細を確認するとともに、Azure Information Protection の[クイック スタート チュートリアル](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)もご覧ください。
+
+
+## <a name="integration-with-azure-rights-management"></a>Azure Rights Management との統合
+
+Cloud App Security と Azure RMS を統合するには、組織は Azure Rights Management のライセンスを持ち、アクティブ化している必要があります。  これら 2 つの異なる手順については、「[Rights Management をアクティブにする](https://docs.microsoft.com/information-protection/deploy-use/activate-service)」を参照してください。
+
+Cloud App Security は現在、汎用的な保護レベルのみをサポートしています。 Office、PDF および画像ファイルのネイティブ保護は、今後のバージョンで提供されます。 
+
+この機能は現在、SharePoint Online と OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
+
+Cloud App Security がお使いの Office 365 サービスに接続されると、Cloud App Security RMS 統合機能を使用できるようになります。以下の手順で、Cloud App Security ポータルで直接、RMS でドキュメントを保護することができます。
+
+1. **[ファイル]** ページで、保護するファイルを選択して、ファイルの行の最後にある 3 つのドットをクリックし、**[保護]** を選択します。 
+![アプリの保護](./media/protect-app.png)
+2. ファイルの保護に使用する組織のテンプレートを選択し、**[保護]** をクリックします。 
+![保護テンプレート](./media/protect-template.png)
+3. テンプレートを選択して [保護] をクリックすると、Cloud App Security によってテンプレートが適用され、元のファイルを保護します。 保護されたファイルは、元のファイルと同じ名前になりますが、ファイル拡張子が新しく ".pfile" となります。
+> [!NOTE]
+>     ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS テンプレートを適用することをお勧めします。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
+
+4. 保護されたファイルにユーザーがアクセスする場合、RMS 共有アプリがユーザーのデバイスにインストールされている必要があります。 詳細については、「[Microsoft Rights Management 共有アプリケーションの技術的概要と保護の詳細](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)」を参照してください。
+
+5. この操作は、**ガバナンス ログ**で直前に行った保護操作の行の最後にある **[元に戻す]** ボタンをクリックすると、いつでも元に戻すことができます。 
+
+
+
 
  
 ## <a name="see-also"></a>参照  

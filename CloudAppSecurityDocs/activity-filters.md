@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2016
+ms.date: 4/2/2016
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ddfe457d8d287b23eaaca61981716a42037339
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: c8f22fc1c949a265b3a53cc4a534550be9601d10
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="activities"></a>アクティビティ
-Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 **アクティブ ログ**をフィルターして、特定のアクティビティを見つけることができます。 アクティビティに基づくポリシーを作成し、警告対象とアクションを定義することができます。 特定のファイルで実行されるアクティビティを検索することもできます。 アクティビティの種類とアクティビティごとに得られる情報は、アプリと、アプリから提供されるデータの種類によって異なります。 
+Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
+
+> [!NOTE] 
+> Cloud App Security によって監視されている Office 365 のアクティビティの完全な一覧は、「[Office 365 のセキュリティ センターとコンプライアンス センターで監査ログを検索する](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US#ID0EABAAA=Audited_activities)」を参照してください。
+
+**アクティブ ログ**をフィルターして、特定のアクティビティを見つけることができます。 アクティビティに基づくポリシーを作成し、警告対象とアクションを定義することができます。 特定のファイルで実行されるアクティビティを検索することもできます。 アクティビティの種類とアクティビティごとに得られる情報は、アプリと、アプリから提供されるデータの種類によって異なります。 
 
 たとえば、**[アクティビティ]** ログを使用すると、組織内で最新ではないオペレーティング システムやブラウザーを使用しているユーザーを見つけることができます。これを行うには、Cloud App Security にアプリを接続した後、**[アクティビティ ログ]** ページで高度なフィルターを使用して **[ユーザー エージェント タグ]** を選択します。 次に、**[Outdated browser]** (古いブラウザー) または **[Outdated operating system]** (古いオペレーティング システム) を選択します。
 
@@ -121,6 +126,9 @@ Cloud App Security は、接続しているアプリのすべてのアクティ�
 - デバイスの種類: [デバイスの種類] をクリックすると、生のユーザー エージェント データが表示されます。 
 - 場所: [場所] をクリックすると、Bing マップで場所が表示されます。
 - IP アドレス カテゴリとタグ: IP タグをクリックすると、そのアクティビティで見つかった IP タグの一覧を表示されます。 このタグに一致するすべてのアクティビティでフィルター処理することができます。    
+
+アクティビティ ドロワーのフィールドでは、その他のアクティビティへのコンテキスト リンクが提供されており、ドリルダウンしてドロワーから直接実行することができます。 たとえば、IP アドレス カテゴリの横にカーソルを移動すると、[フィルターを追加] アイコン ![add to filter](./media/add-to-filter-icon.png) を使用して、現在のページのフィルターに IP アドレスを即時に追加することができます。 歯車の [設定] アイコン ![settings icon](./media/contextual-settings-icon.png) を使用して、設定ページを直接ポップアップで開き、**[ユーザー グループ]** などのフィールドの構成を変更することもできます。
+
 
 ![アクティビティ ドロワー](./media/activity-drawer.png "アクティビティ ドロワー")  
   

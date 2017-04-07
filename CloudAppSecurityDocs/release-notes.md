@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2017
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,25 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d9095a39f5000e88bd0ad94ba0ca9f4a780f58e
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
 translationtype: HT
 ---
 # <a name="release-notes"></a>リリース ノート
+
+## <a name="cloud-app-security-release-94"></a>Cloud App Security リリース 94
+リリース日: 2017 年 4 月 2 日
+
+**新機能:**
+-    Cloud App Security は、Azure RMS と統合されました。 Cloud App Security ポータルから直接、Microsoft Rights Management を使用して Office 365 OneDrive および Sharepoint Online のファイルを保護できます。 これは **[ファイル]** ページから行います。 詳細については、[Azure Information Protection との統合](azip-integration.md)に関するページを参照してください。 その他のアプリケーションは今後のバージョンでサポートされるようになります。
+-    これまでは、ロボットやクローラーのアクティビティが自分のネットワーク上で発生しても、そうしたアクティビティはそのネットワークのユーザーによるものではないため、認識するのは非常に困難でした。 気づかぬうちに、ロボットやクローラーがお使いのコンピューターで悪意のあるツールを実行していることもありえます。 そこで Cloud App Security では、ロボットやクローラーがお使いのネットワークでアクティビティを実行していることがわかるツールを提供します。 新しいユーザー エージェント タグを使用して、アクティビティ ログのアクティビティをフィルター処理することができます。 ユーザー エージェント タグでは、ロボットによって実行されるすべてのアクティビティをフィルター処理することができ、それを使用して、この種のアクティビティが検出されるたびに通知するポリシーを作成することができます。 このリスクを伴うアクティビティが、異常検出アラートの埋め込みとして今後のリリースに追加されたら、お知らせします。 
+-    新しい統合されたアプリのアクセス許可ページでは、ユーザーがサード パーティのアプリに与えた権限をより簡単に調査することができます。 **[調査]** > **[アプリのアクセス許可]** とクリックすると、ユーザーによってサード パーティのアプリに与えられたアクセス許可のすべてを一覧表示することができます。接続されているアプリごとにアプリのアクセス許可のページが表示されており、さまざまなアプリと付与されたアクセス許可をわかりやすく見比べることができます。  詳細については、[アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
+-    テーブル ドロワーから直接データをフィルター処理して、調査を簡単にすることができます。
+**アクティビティ ログ**では、調査プロセスにおけるピボット操作をはるかに簡単にする新しいコンテキスト アクションで、**[ファイル]** テーブルと **[アプリのアクセス許可]** ページが強化されました。 構成ページへのクイック リンクと、シングル クリックでデータをコピーする機能も追加しました。 詳細については、[ファイルおよびアクティビティ ドロワーの作業](file-filters.md)に関する情報を参照してください。
+-    Microsoft Teams to Office 365 アクティビティ ログおよびアラートのロールアウトのサポートは完了しました。
+ 
+
+
 
 ## <a name="cloud-app-security-release-93"></a>Cloud App Security リリース 93
 リリース日: 2017 年 3 月 20 日
