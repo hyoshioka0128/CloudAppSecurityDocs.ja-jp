@@ -28,7 +28,7 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
    ![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)  
 
-2. タイトル バーで&3; つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。 
+2. タイトル バーで 3 つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。 
 
    ![ブロック スクリプトを生成する](./media/generate-block-script.png)  
 
