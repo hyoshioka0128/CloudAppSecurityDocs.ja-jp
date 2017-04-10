@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b78a120c64af1887e5768082e5c81776b509f5a6
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: b5807498a87c39b54ece698cd5bec10f05b29fe2
+ms.sourcegitcommit: f4fcea309a5ba8c99d1dea306abf5bf07649d6fb
 translationtype: HT
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
@@ -86,8 +86,11 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 ![Cloud App Security における Azure Information Protection タグ](./media/azip-tags-in-cas.png)
 
-> ![注] Azure Identity Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効として表示されます。 無効になったラベルは表示されません。
-> **ポリシー #1 - Box で外部共有されている機密データ:**
+> [!Note]
+> Azure Identity Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効であると表示されます。 無効になったラベルは表示されません。
+
+
+**ポリシー #1 - Box で外部共有されている機密データ:**
 
 1.    ファイル ポリシーを作成します。
 2.    ポリシーの名前、重要度、カテゴリを設定します。
