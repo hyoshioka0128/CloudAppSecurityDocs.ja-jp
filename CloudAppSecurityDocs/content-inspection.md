@@ -1,11 +1,11 @@
 ---
-title: "コンテンツ検査 | Microsoft Docs"
+title: "Cloud App Security でコンテンツの検査を実施する方法 | Microsoft ドキュメント"
 description: "この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Cloud App Security が従うプロセスについて説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 3/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 52f2245779568abbf41d47c4b45cdcced302529b
-ms.openlocfilehash: 19d5b0624233da2af64cf35bd2e7ef8ca118c638
-
-
+ms.openlocfilehash: f6ed28c8edd3f2897de8bad368db1da78527aea1
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
-
 # <a name="content-inspection"></a>コンテンツ検査
 この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Cloud App Security が従うプロセスについて説明します。 
 
@@ -45,7 +42,7 @@ NRT スキャンが実行されるファイルと継続的にスキャンされ�
 
 - 電子メール アドレス 
 - クレジット カード番号 
-  - すべてのクレジット カード会社 (Visa、MasterCard、American Express、Diners Club、Discover、JCB、Dankort、UnionPay) 
+  -    すべてのクレジット カード会社 (Visa、MasterCard、American Express、Diners Club、Discover、JCB、Dankort、UnionPay) 
   - 区切り記号 (スペース、ドット、またはダッシュ)
   - このスキャンには、Luhn 検証も含まれています。
 - SWIFT コード
@@ -63,6 +60,15 @@ NRT スキャンが実行されるファイルと継続的にスキャンされ�
 - パスポート カード
 - 社会保障番号
 
+## <a name="supported-languages"></a>サポートされている言語
+
+Cloud App Security コンテンツ検査のエンジンは、次のようになっています。
+-    すべての Unicode 文字をサポートします。
+-    1,000 を超えるファイルの種類を扱います。
+-    複数の言語、特に Unicode 文字セットを使用するファイルがサポートされています。 これらの言語をカバーするポリシーを定義するようにしてください。たとえば、キーワードを扱うなら、使用する言語のすべてについてキーワードを配置する必要があります。
+-    中国語 (GB2312) などの非 Unicode エンコードを使うテキスト ベースのファイルの種類では、Unicode の中国語キーワードは期待通りには動作しません。
+-    サード パーティ製のライブラリに依存しているファイルの種類では、文字列と単語のマッチングは常に期待通りに動作するとは限りません。 これがよく起きるのは、言語および文字のセットに Java 文字列を返すサードパーティ製のライブラリに依存したコンテンツ検査が行われるファイル (バイナリ ファイルなど) です。
+
 
 
 ## <a name="see-also"></a>参照  
@@ -70,8 +76,3 @@ NRT スキャンが実行されるファイルと継続的にスキャンされ�
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

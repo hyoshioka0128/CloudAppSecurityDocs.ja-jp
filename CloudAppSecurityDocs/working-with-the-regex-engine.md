@@ -1,11 +1,11 @@
 ---
-title: "RegEx エンジンの操作 | Microsoft Docs"
+title: "コンテンツ検査ポリシーに対する RegEx エンジンの使用 | Microsoft ドキュメント"
 description: "このトピックでは、Cloud App Security ポリシーのパターン マッチングに正規表現を使用する方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: 77468efb5d4cb62f560c11e624545fc8abe8c99e
-
-
+ms.openlocfilehash: 0b635a9d2f2e5befa53abea6b7d59876def0a115
+ms.sourcegitcommit: 3bacec2f1e5b7bd34175ab5975f7be74792007e4
+translationtype: HT
 ---
-
 # <a name="working-with-the-regex-engine"></a>RegEx エンジンの操作
  
 Cloud App Security のコンテンツ検査ポリシーでは、パターン マッチングに正規表現が使用されます。 コンテンツ検査は、ファイル ポリシーの一部として適用できます。 正規表現をテストするには、次の Web サイトを使用できます。  
@@ -67,8 +64,3 @@ Cloud App Security のコンテンツ検査ポリシーでは、パターン マ
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

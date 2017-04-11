@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 12/26/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76c705a38ffb0d61b9ad2eeaf3bdb939f5326589
-ms.openlocfilehash: e0a3f507ddf135eed01ed3acd71b7b5ec15e8e50
+ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
+ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
 
 
 ---
@@ -28,6 +28,10 @@ Cloud Discovery は、13,000 を超えるクラウド アプリの 50 以上の�
 3.  Cloud App Security のアナリスト チームによる継続的な分析 (保存時の暗号化などの属性)。
 4.  顧客ベースの変更要求 (クラウド アプリ カタログに対する顧客から送信されてくる変更要求に基づいたもの)。 すべての要求がマイクロソフトのクラウド アナリスト チームによって確認され、検出されたことに基づいて更新が行われます。
   
+## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
+
+Cloud Discovery データを匿名化することで、ユーザーのプライバシーを保護することができます。 データ ログが Cloud App Security ポータルにアップロードされると、ログはサニタイズされ、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 このように、すべてのクラウド アクティビティの匿名が維持されます。 詳細については、[Cloud Discovery の匿名化](cloud-discovery-anonymizer.md)に関するページを参照してください。
+
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットと継続的なリスク評価レポート 
 
 次の 2 種類のレポートを生成できます。 
@@ -50,7 +54,7 @@ Cloud Discovery は、13,000 を超えるクラウド アプリの 50 以上の�
 >[!NOTE]
 >継続的なレポート データは 1 日に 2 回分析されます。
  
-## <a name="using-traffic-logs-for-cloud-discovery"></a>Cloud Discovery のトラフィック ログを使用する
+## <a name="using-traffic-logs-for--cloud-discovery"></a>Cloud Discovery のトラフィック ログを使用する
 Cloud Discovery はトラフィック ログ内のデータを使用します。 ログが詳細であるほど、可視性は高まります。 Cloud Discovery では、次の属性の Web トラフィック データを必要とします。
 - トランザクションの日付
 - Source IP
@@ -86,6 +90,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto Firewall シリーズ
 - Sophos SG
+- Sophos Cyberoam
 - Squid (共通)
 - Squid (ネイティブ)
 - Websense - Web Security Solutions - 調査の詳細レポート (CSV)
@@ -119,8 +124,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 |Zscaler|**はい**|いいえ|**はい**|いいえ|**はい**|いいえ|
 
 
- 
-詳細については、このトピックの後半の「 
+## <a name="see-also"></a>関連項目
  
 [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 
@@ -131,6 +135,6 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO4-->
 
 
