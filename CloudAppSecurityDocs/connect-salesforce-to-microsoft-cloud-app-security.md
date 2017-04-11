@@ -14,8 +14,8 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
+ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
+ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
 
 
 ---
@@ -42,25 +42,25 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
     -   [**ユーザの管理**] から [**プロファイル**] ページに移動します。  
   
-         ![Salesforce のユーザーの管理のプロファイル](./media/salesforce-manageusers-profiles.png "salesforce manageusers profiles")  
+         ![Salesforce の [Manage Users] (ユーザーの管理) プロファイル](./media/salesforce-manageusers-profiles.png "Salesforce の [Manage Users] (ユーザーの管理) プロファイル")  
   
     -   Cloud App Security のデプロイに使用しているプロファイルを選択して、**[編集]** をクリックします。 これは、Cloud App Security サービス アカウントでアプリ コネクターをセットアップする場合に使用されるプロファイルです。  
   
-         ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "salesforce edit profile")  
+         ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")  
   
     -   [**API の有効化**] チェックボックスがオンになっていることを確認します。 オフになっている場合は、Salesforce に連絡してアカウントに追加する必要があります。  
   
-         ![Salesforce の API の有効化](./media/salesforce-api-enabled.png "salesforce api enabled")  
+         ![Salesforce の [API Enabled] (API 有効)](./media/salesforce-api-enabled.png "Salesforce の [API Enabled] (API 有効)")  
   
 3.  組織で [**Salesforce CRM Content**] を有効化している場合は、現在の管理者アカウントでも有効になっていることを確認します。  
   
     1.  Salesforce の設定ページに移動します。  
   
-         ![Salesforce の設定](./media/salesforce-setup.png "salesforce setup")  
+         ![Salesforce の [Setup] (セットアップ)](./media/salesforce-setup.png "Salesforce の [Setup] (セットアップ)")  
   
     2.  サイド メニューから **[ユーザーの管理]** を選択し、**[ユーザー]** をクリックします。  
   
-         ![Salesforce メニューのユーザー](./media/salesforce-menu-users.png "salesforce menu users")  
+         ![Salesforce メニューの [User] (ユーザー)](./media/salesforce-menu-users.png "Salesforce メニューの [User] (ユーザー)")  
   
     3.  専用の Cloud App Security ユーザーの現在の管理ユーザーを選択します。  
   
@@ -68,7 +68,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
          オフになっている場合は、[**編集**] をクリックしてチェックボックスをオンにします。  
   
-         ![Salesforce CRM Content ユーザー](./media/salesforce-crm-content-user.png "salesforce crm content user")  
+         ![[Salesforce CRM Content User] (Salesforce CRM Content ユーザー)](./media/salesforce-crm-content-user.png "[Salesforce CRM Content User] (Salesforce CRM Content ユーザー)")  
   
     5.  **[Save]**(保存) をクリックします。  
   
@@ -76,13 +76,13 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
   
 5.  **[アプリ コネクター]** ページで、[+] ボタン、**[Salesforce]** の順にクリックします。  
   
-     ![Salesforce を接続する](./media/connect-salesforce.png "connect salesforce")  
+     ![Salesforce への接続](./media/connect-salesforce.png "Salesforce への接続")  
   
 6.  Salesforce の設定ページの [API] タブで、インストールするインスタンスに応じて [**Follow this link (このリンクに移動)**] をクリックします。  
   
 7.  Salesforce のログオン ページが開きます。 Cloud App Security がチームの Salesforce アプリにアクセスできるように、資格情報を入力します。  
   
-     ![Salesforce のログオン](./media/salesforce-logon.png "salesforce logon")  
+     ![Salesforce へのログオン](./media/salesforce-logon.png "Salesforce へのログオン")  
   
 8.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、任意のチーム メンバーと同様に任意のアクティビティを実行することを許可するかどうかを確認するメッセージが Salesforce で表示されます。 続行するには、[**許可**] をクリックします。  
   
@@ -95,7 +95,7 @@ ms.openlocfilehash: af663e48d24a869b8a30b429accf8001a8584bb1
      テストには数分かかる場合があります。 成功の通知を受信したら、[**完了**] をクリックします。  
   
   
-SalesForce に接続すると、SalesForce EventMonitoring ライセンスに応じて、接続した時点からトリガー、接続までの 60 日間のログイン イベントとセットアップ監査証跡、30 日前または 1 日前の EventMonitoring などのイベントを受け取ります。
+Salesforce に接続すると、Salesforce EventMonitoring ライセンスに応じて、接続した時点からのトリガー、接続までの 60 日間のログイン イベントとセットアップ監査証跡、30 日前または 1 日前の EventMonitoring などのイベントを受け取ります。
   
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
@@ -105,6 +105,6 @@ SalesForce に接続すると、SalesForce EventMonitoring ライセンスに応
   
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "ファイル | Microsoft Docs"
+title: "Cloud App Security で使用可能なファイル データとフィルターを理解する | Microsoft ドキュメント"
 description: "このリファレンス トピックでは、Cloud App Security によって使用されるファイルとファイル フィルターの種類について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/27/2016
+ms.date: 4/2/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf862116fb4db1d4a50c25497d72634a97bb3a80
-ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
-
-
+ms.openlocfilehash: 8f5d78ec5a748dbf0ba3c2895c5f84c4d6cb0a87
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="files"></a>ファイル
 
-ファイル ログをフィルターして、特定のファイルを検索することができます。 ファイルをフィルターするには、まず基本的なフィルターを使うと便利です。
+
+Cloud App Security は、データ保護を提供するため、接続しているアプリのすべてのファイルを表示します。 アプリ コネクターを使用して Cloud App Security をアプリを接続すると、Cloud App Security は OneDrive や Salesforce などに格納されたすべてのファイルをスキャンします。 その後、Cloud App Security はファイルが変更されるたびに再スキャンを行います。変更はコンテンツ、メタデータ、共有アクセス許可に対して行うことができます。 スキャン時間は、アプリに格納されたファイルの数によって異なります。 **[ファイル]** ページでは、ファイルをフィルターしてクラウド アプリにどのような種類のデータが保存されているかを調べることもできます。 
+
+たとえば、**[ファイル]** ページでは、**機密**のラベルが付いた、外部で共有されているファイルをセキュリティで保護することができます。その場合、Cloud App Security にアプリを接続してから、Azure Information Protection と統合することができます。 次に、**[ファイル]** ページで **機密**のラベルが付いたファイルをフィルターします。 **[グループ作業者]** フィルターで自分のドメインを除外し、組織外で共有されている**機密**ファイルがあることがわかった場合は、不適切なアクセス レベルが適用されている**機密**ファイルを検出するファイル ポリシーを作成して、自動ガバナンス アクションを適用することができます。たとえば、**[Remove external collaborators]** (外部のグループ作業者を削除) や **[Send policy-match digest to file owner]** (ポリシー一致のダイジェストをファイル所有者へ送信) では、組織のデータ損失を防ぐことができます。
+
+ ![ファイル フィルター [機密]](media/file-filter-confidential.png)
+
+ここでは、**[ファイル]** ページのもう 1 つの使用例を示します。 過去 6 か月の間、変更されていないファイルを組織で誰も公開共有または外部共有していないことを確認するには、Cloud App Security にアプリを接続し、**[ファイル]** ページで、アクセス レベルが**[外部]**または**[公開]**であるファイルをフィルターし、**[最終変更]**日を 6 か月前に設定します。 古い公開ファイルを検出するファイル ポリシーを作成する場合は、**[検索に基づく新しいポリシー]** をクリックし、**[外部ユーザーの削除]** などの自動ガバナンス アクションを適用して、組織のデータ損失を防ぎます。
+
+ ![外部の古いファイルをフィルターする](media/file-example-stale-external.png)
+
+ファイルをフィルターするには、まず基本的なフィルターを使うと便利です。
 
  ![基本的なファイル ログ フィルター](media/file-log-filter-basic.png)
 
@@ -30,7 +38,7 @@ ms.openlocfilehash: 8fca376e5d414192bdb7c99a7741c97ebcaf3892
 
  ![詳細なファイル ログ フィルター](media/file-log-filter-advanced.png)
  
-###  <a name="a-namefilefiltersa-file-filters"></a><a name="Filefilters"></a> ファイル フィルター 
+###  <a name="Filefilters"></a> ファイル フィルター 
  
 Cloud App Security は、20 を超えるメタデータ フィルター (アクセス レベルやファイルの種類など) に基づいてファイルの種類を監視できます。 
  
@@ -38,7 +46,11 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 
 以下に示すのは、適用できるファイル フィルターの一覧です。 ほとんどのフィルターでは NOT をはじめとする複数値がサポートされているため、ポリシー作成時の強力なツールとなります。  
 > [!NOTE] 
-> ファイル ポリシー フィルターを使用する場合、**[が次を含む]** を選択すると、コンマ、ピリオド、スペース、アンダースコアで区切られた完全に一致する単語のみが検出されます。 引用符で単語を囲むと、AND のように機能します。たとえば、**"malware"** **"virus"** を検索すると、virus_malware_file.exe は検出されますが、malwarevirusfile.exe や malware.exe は検出されません。 単語間をスペースで区切ると、OR のように機能します。たとえば、**malware** **virus** を検索すると、名前に malware または virus が含まれているすべてのファイルが検出されるので、malware-virus.exe と virus.exe の両方が検出されます。   [**が次と等しい**] を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
+> ファイル ポリシー フィルターを使用する場合、**[が次を含む]** を選択すると、コンマ、ピリオド、スペース、アンダースコアで区切られた**完全に一致する単語**のみが検出されます。 
+> - 単語間をスペースで区切ると、OR のように機能します。たとえば、**malware** **virus** を検索すると、名前に malware または virus が含まれているすべてのファイルが検出されるので、malware-virus.exe と virus.exe の両方が検出されます。  
+> - 文字列を検索する場合は、単語を引用符で囲みます。 引用符で単語を囲むと、AND のように機能します。たとえば、**"malware"** **"virus"** を検索すると、virus_malware_file.exe は検出されますが、malwarevirusfile.exe や malware.exe は検出されません。 ただし、検索されるのは正確な文字列のみです。 **"malware virus"** を検索した場合、**"virus"** や **"virus_malware"** は検出されません。
+
+>[**が次と等しい**] を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
 
 -   アクセス レベル – アクセス レベルの共有です。Public、外部、内部、Private のレベルがあります。  外部ファイルの詳細については、[「General Setup」 (一般的なセットアップ) ページの 「Set up the portal」 (ポータルのセットアップ)](getting-started-with-cloud-app-security.md) セクションをご覧ください。内部ファイルは、「[一般的なセットアップ](General-setup.md)」で設定する内部ドメイン内のファイルです。 外部ファイルは、設定した内部ドメイン内ではない場所に保存されたファイルです。 共有ファイルは、非公開レベルの上に共有レベルがあるファイルです。これには、内部共有 (内部ドメイン内で共有されるファイル)、外部共有 (内部ドメインの一覧に含まれないドメインで共有されるファイル)、リンクによる公開 (リンクによって誰とでも共有できるファイル)、公開 (インターネットを検索することによって見つかるファイル) が含まれます。 
 
@@ -69,12 +81,12 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 -   ファイル名 – クラウド アプリケーションで定義されているファイル名または名前のサブ文字列です。たとえば、ファイル名にパスワードが含まれるすべてのファイルです。   
   
--   ファイルのタグ - Azure Information Protection によって設定される特定のタグを持つファイルを検索します。 これには、Azure Information Protection との統合が必要です。
+-   分類ラベル - Azure Information Protection によって設定される特定のタグを持つファイルを検索します。 これには、Azure Information Protection との統合が必要です。
 
 -   ファイルの種類 – Cloud App Security は、サービスから受信した MIME タイプとファイルのスキャンの両方を基にして、実際のファイルの種類を判断します。 このスキャンは、データ スキャンに関連するファイルに対して行われることに注意してください (ドキュメント、画像、プレゼンテーション、スプレッドシート、テキスト、zip/アーカイブ ファイル)。 フィルターは、ファイル/フォルダーの種類ごとに行われます。たとえば、... であるすべてのフォルダー、または ... であるすべてのスプレッドシート ファイルなどです。
 
 
- ![policy_file フィルターのごみ箱](./media/policy_file-filters-trash.png "policy_file filters trash")  
+ ![policy_file filters trash](./media/policy_file-filters-trash.png "policy_file filters trash")  
 
   
 -   ごみ箱 – [ごみ箱] フォルダー内のファイルを除外するか、または含めます。 これらのファイルは引き続き共有できる場合があるため、危険性があります。  
@@ -95,7 +107,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 特定ファイルに対してポリシーが実行されるように設定することもできます。その場合、[**適用先**] フィルターを [All files (すべてのファイル)]、[選択したフォルダー]、または [All files excluding selected folders (選択したフォルダーを除くすべてのファイル)] のいずれかに設定してから、関連するファイルまたはフォルダーを選択します。  
   
-![フィルターへの適用](./media/apply-to-filter.png "apply to filter")  
+![フィルターに適用](./media/apply-to-filter.png "フィルターに適用")  
   
 ## <a name="working-with-the-file-drawer"></a>ファイル ドロワーの使用
 
@@ -107,7 +119,10 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 - 一致するポリシー: [一致するポリシー] リンクをクリックすると、そのファイルが合致するポリシーの一覧が表示されます。
 - 分類ラベル: 分類ラベルをクリックすると、このファイルで見つかった Azure Information Protection の分類ラベルの一覧が表示されます。 このラベルに一致するすべてのファイルでフィルター処理することができます。    
 
-![ファイル ドロワー](./media/file-drawer.png "File drawer")  
+ファイル ドロワーのフィールドでは、その他のファイルへのコンテキスト リンクが提供されており、ドリルダウンしてドロワーから直接実行することができます。 たとえば、**[所有者]** フィールドの横にカーソルを移動すると、[フィルターを追加] アイコン ![add to filter](./media/add-to-filter-icon.png) を使用して、現在のページのフィルターに所有者を即時に追加することができます。 歯車の [設定] アイコン ![settings icon](./media/contextual-settings-icon.png) を使用して、設定ページを直接ポップアップで開き、**[分類ラベル]** などのフィールドの構成を変更することもできます。
+
+
+![ファイル ドロワー](./media/file-drawer.png "ファイル ドロワー")  
   
 使用できるガバナンス アクションの一覧については、「[ガバナンス ログ](governance-actions.md#file-governance-actions)」を参照してください。
 
@@ -117,8 +132,3 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

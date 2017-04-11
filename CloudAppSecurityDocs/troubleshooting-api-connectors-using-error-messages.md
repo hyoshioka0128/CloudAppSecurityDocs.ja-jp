@@ -1,11 +1,11 @@
 ---
-title: "エラー メッセージを使用したアプリ コネクタのトラブルシューティング | Microsoft Docs"
+title: "Cloud App Security のエラー メッセージを使用したアプリ コネクタのトラブルシューティング | Microsoft ドキュメント"
 description: "このトピックでは、API アプリ コネクタのエラー メッセージの一覧と各エラーの推奨される解決策について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/27/2016
+ms.date: 3/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 9565d8a51e4c06963861d9dfaef9595944bda1ff
-ms.openlocfilehash: 71e2a213ddf6f625037b11373e55aa270c3b1785
-
-
+ms.openlocfilehash: e9fa0b4d0527c6322da14cdf16cc8509ec37c1ed
+ms.sourcegitcommit: b840b945b270e616560f565bcc6590dd68ad5ebd
+translationtype: HT
 ---
-
-
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
 
 API アプリ コネクタを使用してクラウド アプリに接続しようとしたときに発生したアプリ コネクタ エラーは、アプリ コネクタ ダイアログで確認できます。
@@ -46,9 +42,9 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 |IgniteException|Office 365|ドメインまたはユーザーが有効ではありません|設定をリセットし、プロセスに従って Office 365 を Cloud App Security に接続し直してください。|
 |ContextManagerServiceException: com.adallom.adalib.httputils.exceptions.TokenRefreshException: {"error":"invalid_grant","error_description":"AADSTS70002: Error validating credentials. AADSTS70008: The provided authorization code or refresh token is expired. Send a new interactive authorization request for this user and resource.|Office 365|ドメインまたはユーザーが有効ではありません|設定をリセットし、プロセスに従って Office 365 を Cloud App Security に接続し直してください。|
 |HttpRequestFailure: Server returned: 400 Bad Request|Office 365|内部エラー。|数分後に [今すぐテストする] リンクをもう一度クリックしても動作しない場合は、プロセスに従って Office 365 を Cloud App Security に接続し直します。|
-|GoogleJsonResponseException: 401 Unauthorized|Google Apps|アクセスが拒否されました。 アクティビティ レコードの読み取り権限がありません。 Google Apps にログインするユーザーは、管理者である必要があります。|管理者アカウントを使用して、プロセスに従って Google Apps を Cloud App Security に接続し直します。|
-|GoogleJsonResponseException: 403 Forbidden|Google Apps|Google Apps API の実行に関する問題|Google Apps 用 Cloud App Security App Connector を展開した場合、次の点を確認してください。[無制限] をクリックした場合、Google Apps アカウントが実際に無制限であることを確認します。 それ以外の場合は、App Connector をもう一度実行し、無制限アカウントのオプションをオフにします。 セットアップ中に定義した範囲が正しいことを確認します。 これが新しい展開ではなく、このエラーが表示される場合は、その日の API 制限に達しており、Google Apps イベントが明日更新される可能性があります。|
-|TokenResponseException: 400 Bad Request|Google Apps|Google Apps への接続が完了していないか、期限切れです。|プロセスに従って Google Apps を Cloud App Security に接続し直してください。|
+|GoogleJsonResponseException: 401 Unauthorized|G Suite|アクセスが拒否されました。 アクティビティ レコードの読み取り権限がありません。 G Suite にログインするユーザーは、管理者である必要があります。|管理者アカウントを使用して、プロセスに従って G Suite を Cloud App Security に接続し直します。|
+|GoogleJsonResponseException: 403 Forbidden|G Suite|G Suite API を実行中に問題が発生する問題。|G Suite 用 Cloud App Security App Connector を展開した場合、次の点を確認してください。[無制限] をクリックした場合、G Suite アカウントが実際に無制限であることを確認します。 それ以外の場合は、App Connector をもう一度実行し、無制限アカウントのオプションをオフにします。 セットアップ中に定義した範囲が正しいことを確認します。 これが新しい展開ではなく、このエラーが表示される場合は、その日の API 制限に達しており、G Suite イベントが明日更新される可能性があります。|
+|TokenResponseException: 400 Bad Request|G Suite|G Suite への接続が完了していないか、期限切れです。|プロセスに従って G Suite を Cloud App Security に接続し直してください。|
 |RuntimeException: com.adallom.adalib.httputils.exceptions.HttpRequestFailure: Server returned: 403 Forbidden|ServiceNow|アクセス許可が正しくありません|管理者アカウントを使用して、プロセスに従って ServiceNow を Cloud App Security に接続し直します。|
 |HttpRequestFailure: Server returned: 401 Unauthorized|Exchange Online|ユーザーまたはパスワードが正しくありません|ユーザー名とパスワードが正しいことを確認し、プロセスに従って Exchange Online を Cloud App Security に接続し直してください。|
 |HttpRequestFailure: Server returned: 404 Not Found|Exchange Online|Exchange Online へのログインに使用しているユーザーが、Exchange Online にプライマリ メールボックスを持っていません (たとえば、Azure AD に存在しないユーザーや、Azure AD には存在しても Exchange Online ライセンスを持っていないユーザーがいます)。|新しい管理者アカウントを使用して、プロセスに従って Exchange Online を Cloud App Security に接続し直します。|
@@ -62,8 +58,3 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

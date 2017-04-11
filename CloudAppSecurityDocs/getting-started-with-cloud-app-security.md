@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/21/2016
+ms.date: 12/19/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -14,8 +14,8 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eceb326c4ab14852ecd284cfbaa0d2eb07149168
-ms.openlocfilehash: 57ba1ea49d009dd10797609885463948f359e11e
+ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
+ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
 
 
 ---
@@ -47,9 +47,9 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) にアクセスして Cloud App Security ポータルに移動します。  
   
-または、**Cloud App Security** から管理センター アイコン ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 admin centers icon") をクリックして、**Office 365 管理センター** からポータルにアクセスすることもできます。  
+または、**Cloud App Security** から管理センター アイコン ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 admin centers icon") をクリックして、**Office 365 管理センター**からポータルにアクセスすることもできます。  
   
-     ![Access from O365](./media/access-from-o365.png "Access from O365")  
+![O365 からのアクセス](./media/access-from-o365.png "Access from O365")  
   
 
 
@@ -167,6 +167,6 @@ Premier サポートをご利用のお客様も、[Premier ポータル](https:/
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO3-->
 
 

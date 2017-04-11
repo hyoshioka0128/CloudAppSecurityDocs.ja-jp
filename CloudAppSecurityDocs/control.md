@@ -1,11 +1,11 @@
 ---
-title: "制御 | Microsoft Docs"
+title: "管理アクションを使用してクラウド アプリの使用を制御する方法 | Microsoft ドキュメント"
 description: "この記事では、組織のクラウド アプリの使用を制御するため Cloud App Security で実施できるガバナンス アクションについて説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,44 @@ ms.technology:
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2f158e2f3643629d215eb23281b17a58ee7f78fc
-ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
-
-
+ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
+ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
+translationtype: HT
 ---
-
 # <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  
+
+## <a name="use-policies-to-assess-risk"></a>ポリシーを使用してリスクを評価  
+発生中のアラートを確認した後は、ポリシー センターに移動して、アラートをトリガーしないポリシー違反を確認します。  
+
+-   Cloud App Security ダッシュボードで [**制御**]、[**ポリシー**] の順にクリックします。  
+
+-   特定のポリシーを選択して、アラートをトリガーしていないポリシーの一致の 「**Violating now**」 (発生中の違反) リストを確認します。  
+
+-   違反を 1 つずつクリックし、それぞれの処理を決定します。 ガバナンス アクションの詳細については、以下の図を参照してください。  
+
+     コンプライアンス違反を発見するようにポリシーが設定されていて、クレジット カード番号のファイルが OneDrive に保存された場合、ポリシーに一致します。  
+
+     ![PCI との一致](./media/pci-matches.png "PCI との一致")  
+
+-   一致を選択して、ポリシーに違反しているファイルを参照します。  
+
+     ![PCI コンテンツとの一致](./media/pci-content-matches.png "PCI コンテンツとの一致")  
+
+     ファイル自体を選択すると、そのファイルに関する情報を取得できます。  
+
+     [**グループ作業者**] をクリックすると、そのファイルにアクセスできるユーザーが表示されます。  
+
+     [**一致**] をクリックすると、実際のクレジット カード番号が表示されます。  
+
+     ![コンテンツ一致 ccn](./media/content-matches-ccn.png "コンテンツ一致 ccn")  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-[**設定**] \(歯車アイコン) ![設定アイコン](./media/settings-icon.png "settings icon") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
+[**設定**] 歯車 ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、[**ガバナンス ログ**] をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
 
-ガバナンス アクションが失敗した場合は、[**再試行**] アイコン ![再試行アイコン](./media/retry-icon.png "retry icon") をクリックして再度適用できます。  
+ガバナンス アクションが失敗した場合は、[**再試行**] アイコン ![再試行アイコン](./media/retry-icon.png "再試行アイコン") をクリックして再度適用できます。  
 
 ポリシー、違反、アプリの種類に応じて、さまざまなガバナンス アクションを使用できます。  
 
@@ -42,7 +64,7 @@ ms.openlocfilehash: 5a051fc106661fc2266587ac5dbbb8bbdabd88bc
 >   
 >  [**フィルター**] セクションの [**結果の編集とプレビュー**] ボタンを使用すると結果を確認できます。  
 
-![ファイル ポリシーの編集とプレビュー結果](./media/file-policy-edit-and-preview-results.png "file policy edit and preview results")  
+![ファイル ポリシーの編集と結果のプレビュー](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集と結果のプレビュー")  
 
 ## <a name="migration"></a>移行  
 Cloud App Security では、組織内のどのユーザーがどのアプリを使用しているかを把握できると共に、新しいアプリの導入を監視するツールを提供することで、移行のロールアウトをサポートします。 また、組織内でどのような種類のアプリを提供する必要があるかを理解できるように、すべてのユーザーが既に使用しているアプリを表示するツールが提供されます。  
@@ -56,7 +78,7 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 
     1.  **Cloud Discovery ダッシュボード**で [**Dropbox**] を選び、[**IP アドレス**] または [**ユーザー**] タブを選びます。  
 
-    2.  矢印 ![矢印アイコン](./media/arrow-icon.png "arrow icon") を選び、[**エクスポート**] を選択します。  
+    2.  矢印 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選び、[**エクスポート**] を選択します。  
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  
@@ -67,7 +89,7 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 
 2.   [**カテゴリ**] から [**生産性**] によってアプリをフィルタリングします。  
 
-3.   使用中の各アプリについて、[**スコア**] をチェックして、アプリが安全であるかどうかを確認し、安全でない場合はその理由を確認します。  
+3.   使用中の各アプリについて、**[スコア]** をチェックして、アプリが安全であるかどうかを確認し、安全でない場合はその理由を確認します。  
 
 4.   組織全体のエンタープライズ ライセンスを購入しようと考えている場合は、[**ユーザー**] 列もチェックしてください。 この列では、決定を行う前に、現在最も多くのユーザーが使用しているアプリ、そのアプリの信頼性、そのアプリに備わっているセキュリティ機能を確認することができます。  
 
@@ -75,9 +97,3 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 クラウド アプリの使用を制御するポリシーを設定する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。   
 テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。   
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
-
-
-
-<!--HONumber=Nov16_HO5-->
-
-

@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery ポリシー | Microsoft Docs"
+title: "Cloud App Security で Cloud Discovery アプリに対するポリシーを作成する | Microsoft ドキュメント"
 description: "このトピックでは、Cloud Discovery ポリシーの使用に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: ed4ea71b24767d3602d40894d1cbac7447bcd8a2
-ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
-
-
+ms.openlocfilehash: 9d525cd9d4856c4c8c25323a656c686a4d9b944e
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
     
 ## <a name="creating-an-app-discovery-policy"></a>アプリの検出ポリシーの作成  
@@ -29,7 +26,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
   
 2.  [**ポリシーの作成**] をクリックしてから [**アプリの検出**] ポリシーを選択します。  
   
-     ![アプリ検出ポリシーのメニュー](./media/app-discovery-policy-menu.png "app discovery policy menu")  
+     ![アプリ検出ポリシーのメニュー](./media/app-discovery-policy-menu.png "アプリ検出ポリシーのメニュー")  
   
 3.  ポリシーの名前と説明を入力します。この場合、ポリシー テンプレートを使用することもできます。ポリシー テンプレートの詳細については、「[Control cloud apps with policies (ポリシーによるクラウド アプリの制御)](control-cloud-apps-with-policies.md)」を参照してください。  
   
@@ -52,7 +49,7 @@ ms.openlocfilehash: a43f96ec1d0f6047570677f07281b3e5ad42a40e
 検出された特定のアプリに対してアラートがトリガーされる最低レベルのしきい値。環境内で 100 人を超えるユーザーがそのアプリを使用した場合のみにトリガーする、およびそのサービスから一定量のデータがダウンロードされた場合のみにトリガーするなどです。   
 さらに、1 日に受信するアラート数を設定することもできます。  
   
-![アプリ検出ポリシーの例](./media/app-discovery-policy-example.png "app discovery policy example")  
+![アプリ検出ポリシーの例](./media/app-discovery-policy-example.png "アプリ検出ポリシーの例")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Cloud Discovery の異常検出  
 Cloud App Security では、Cloud Discovery 内のすべてのログを対象に異常が検索されます。 たとえば、これまでに Dropbox を使用したことのないユーザーが突然 600 GB のファイルを Dropbox にアップロードしたり、特定のアプリで通常よりもはるかに多くのトランザクションが発生していたりする場合などに通知します。 既定で異常検出ポリシーが有効になっているため、異常検出機能を利用するために新しいポリシーを設定する必要はありませんが、その既定ポリシーでアラート通知を受ける異常の種類を微調整することができます。  
@@ -61,7 +58,7 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 2.  [**ポリシーの作成**] をクリックしてから [**Cloud Discovery 異常検出ポリシー**] を選択します。  
   
-     ![Cloud Discovery 異常検出ポリシーのメニュー](./media/cloud-discovery-anomaly-detection-policy-menu.png "cloud discovery anomaly detection policy menu")  
+     ![Cloud Discovery 異常検出ポリシーのメニュー](./media/cloud-discovery-anomaly-detection-policy-menu.png "Cloud Discovery 異常検出ポリシーのメニュー")  
   
 3.  ポリシーの名前と説明を入力します。この場合、ポリシー テンプレートを使用することもできます。ポリシー テンプレートの詳細については、「[Control cloud apps with policies (ポリシーによるクラウド アプリの制御)](control-cloud-apps-with-policies.md)」を参照してください。  
   
@@ -73,12 +70,12 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 6.  [**指定の日付後に生じた疑わしいアクティビティに関してのみアラートを出す**] で、異常なアクティビティに対してアラートをトリガーする期間を選択します。  
   
-7.  [**アラート**] で、異常検出の感度を [低] から [高] の間で調整すると、アラートの受信頻度を設定できます。  
+7.  **[アラート]** で、異常検出の感度を [低] から [高] の間で調整すると、アラートの受信頻度を設定できます。  
 [**日次アラート制限**] を設定し、アラートの送信形式を電子メールまたはテキスト メッセージのいずれか、あるいはその両方に設定するかを選択してから、必要に応じて詳細情報を入力します。 [Save alert settings (アラート設定の保存)] をクリックして既定に設定すると、今後作成されるポリシーでも、電話番号や電子メール アドレスを含むこのようなアラート設定が既定値として保存されます。 [**組織の既定値を使う**] をクリックすると、組織の既定値に基づいてこれらの設定が行われます。  
   
 9. [**作成**] をクリックします。  
   
-![新しい異常検出ポリシー](./media/new-discovery-anomaly-policy.png "new discovery anomaly policy")  
+![新しい異常検出ポリシー](./media/new-discovery-anomaly-policy.png "新しい異常検出ポリシー")  
   
 ## <a name="see-also"></a>参照  
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   
@@ -86,8 +83,3 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
