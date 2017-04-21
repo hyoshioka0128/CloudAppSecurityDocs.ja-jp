@@ -1,11 +1,11 @@
 ---
-title: "Salesforce の接続 | Microsoft Docs"
+title: "Salesforce を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Salesforce を接続する方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,10 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 129181e4768f068a0e30f6ef3a2d3f7fc6d47024
-ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
-
-
+ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
-
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
   
@@ -48,7 +44,7 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
   
          ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")  
   
-    -   [**API の有効化**] チェックボックスがオンになっていることを確認します。 オフになっている場合は、Salesforce に連絡してアカウントに追加する必要があります。  
+    -   **[API の有効化]** チェックボックスがオンになっていることを確認します。 オフになっている場合は、Salesforce に連絡してアカウントに追加する必要があります。  
   
          ![Salesforce の [API Enabled] (API 有効)](./media/salesforce-api-enabled.png "Salesforce の [API Enabled] (API 有効)")  
   
@@ -64,9 +60,9 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
   
     3.  専用の Cloud App Security ユーザーの現在の管理ユーザーを選択します。  
   
-    4.  [**Salesforce CRM Content ユーザ**] チェックボックスがオンになっていることを確認します。  
+    4.  **[Salesforce CRM Content ユーザー]** チェックボックスがオンになっていることを確認します。  
   
-         オフになっている場合は、[**編集**] をクリックしてチェックボックスをオンにします。  
+         オフになっている場合は、**[編集]** をクリックしてチェックボックスをオンにします。  
   
          ![[Salesforce CRM Content User] (Salesforce CRM Content ユーザー)](./media/salesforce-crm-content-user.png "[Salesforce CRM Content User] (Salesforce CRM Content ユーザー)")  
   
@@ -95,16 +91,23 @@ ms.openlocfilehash: 0932c6bc696e7b050eae543fbea7d847dfa42b4b
      テストには数分かかる場合があります。 成功の通知を受信したら、[**完了**] をクリックします。  
   
   
-Salesforce に接続すると、Salesforce EventMonitoring ライセンスに応じて、接続した時点からのトリガー、接続までの 60 日間のログイン イベントとセットアップ監査証跡、30 日前または 1 日前の EventMonitoring などのイベントを受け取ります。
+Salesforce に接続すると、Salesforce EventMonitoring ライセンスに応じて、接続した時点からのトリガー、接続までの 60 日間のログイン イベントとセットアップ監査証跡、30 日前または 1 日前の EventMonitoring などのイベントを受け取ります。 Cloud App Security API は Salesforce から利用できる API と直接通信します。 Salesforce はそれが受け取る API 呼び出しの数を制限できるため、Cloud App Security はそれを考慮し、制限を順守します。 Salesforce API は、利用できる合計数や残りの数など、API カウンターのフィールドと共に各応答を送信します。 Cloud App Security はこれを百分率に計算し、利用できる API 呼び出しの 10% が常に残るようにします。 
+
+> [!NOTE]
+> Cloud App Security の調整は、Salesforce で呼び出した Cloud App Security の API に基づいてのみ計算されます。他のアプリケーションが Salesforce で呼び出した API は計算対象になりません。
+> API 呼び出しが制限されることで Cloud App Security にデータが取り込まれる速度が遅くなることがありますが、通常、一晩で追いつきます。
+
+
+Salesforce イベントは Cloud App Security により次のように処理されます。 
   
+- 15 分ごとにログイン イベント
+- 15 分ごとにセットアップ監査証跡
+- イベント ログ監視は 24 時間ごとに Salesforce によりエクスポートされます (12:00 UTC) 
+
+
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO2-->
-
-

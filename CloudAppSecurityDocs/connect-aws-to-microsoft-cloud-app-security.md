@@ -1,11 +1,11 @@
 ---
-title: "AWS の接続 | Microsoft Docs"
+title: "AWS を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,47 +13,40 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
-
-
+ms.openlocfilehash: 68d4c221626706ca641a5d3e1986da543771561a
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の Amazon Web Services アカウントに接続する方法を説明します。  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Amazon Web Services を Cloud App Security に接続する方法  
   
-1.  Amazon Web Services コンソールで [**ID およびアクセス管理**] をクリックします。  
+1.  [アマゾン ウェブ サービス コンソール](https://console.aws.amazon.com/)の **[Security, Identity & Compliance (セキュリティ、ID、コンプライアンス)]** で **[IAM]** をクリックします。  
   
-     ![AWS の ID およびアクセス](./media/aws-identity-and-access.png "aws identity and access")  
+     ![AWS の ID とアクセス](./media/aws-identity-and-access.png "AWS の ID とアクセス")  
   
-2.  [**ユーザー**] タブをクリックします。  
+2.  **[ユーザー]** タブをクリックし、**[ユーザーの追加]** をクリックします。  
   
-     ![AWS のユーザー](./media/aws-users.png "aws users")  
+     ![AWS ユーザー](./media/aws-users.png "AWS ユーザー")      
   
-3.  [**Create New Users (新しいユーザーを作成する)**] をクリックします。  
-  
-     ![AWS のユーザーの作成](./media/aws-create-user.png "AWS create user")  
-  
-4.  Cloud App Security の新規ユーザーを作成し、**[Generate an access key for each user]** (各ユーザーのアクセス キーを生成する) チェック ボックスがオンになっていることを確認します。  
-  
-5.  [**Download Credentials (資格情報をダウンロードする)**] をクリックします。  
-  
-     ![AWS の資格情報のダウンロード](./media/aws-dl-cred.png "aws dl cred")  
-  
-6.  **[アクセス許可]** タブで、**[Attach Policy]** (ポリシーのアタッチ) をクリックします。  
-  
-     ![AWS のユーザーへのポリシーのアタッチ](./media/aws-attach-user-policy.png "aws attach user policy")  
-  
-7.  **[ポリシーの確認]** 画面が開きます。
- 
-     ![ポリシーの確認](./media/aws-review-policy.png "aws review policy")  
-  
+4.  **[詳細]** 手順で Cloud App Security の新しいユーザー名を指定し、**[アクセスの種類]** で **[プログラムによるアクセス]** を選択し、**[Next Permissions (次のアクセス許可)]** をクリックします。  
 
-8. **[ポリシー名]** に「AdallomTrustPolicy」と入力します。 
-10. **[ポリシー ドキュメント]** で、以下をコピーして貼り付けます。  
+     ![AWS のユーザーの作成](./media/aws-create-user.png "AWS のユーザーの作成")
+
+5. **[アクセス許可]** 手順で、**[Attach existing policies directly (既存のポリシーを直接アタッチする)]** を選択し、**[ポリシーの作成]** をクリックします。
+
+   ![AWS のユーザーのアタッチ](./media/aws-attach-user-policy.png "AWS の既存のポリシーのアタッチ")
+
+6.  **[ポリシーの作成]** で **[Create Your Own Policy (独自のポリシーを作成する)]** を選択します。
+ 
+    ![AWS の独自のポリシーの作成](./media/aws-create-own-policy.png "AWS のポリシーの作成")
+ 
+7.  **[ポリシーの確認]** の **[ポリシー名]** に入力します。たとえば、「CloudAppSecurityPolicy」と入力します。
+
+    ![AWS のポリシーの確認](./media/aws-review-policy.png "AWS のポリシーの確認")
+
+8. **[ポリシー ドキュメント]** フィールドに次を貼り付け、**[ポリシーの作成]** をクリックします。
   
     ```     
     {  
@@ -61,8 +54,7 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
       "Statement" : [{  
           "Action" : [  
             "cloudtrail:DescribeTrails",  
-  
-           "cloudtrail:LookupEvents",  
+            "cloudtrail:LookupEvents",  
             "cloudtrail:GetTrailStatus",  
             "cloudwatch:Describe*",  
             "cloudwatch:Get*",  
@@ -78,37 +70,44 @@ ms.openlocfilehash: a56257b7c149c3ea054f200ef88df0ab41b7e25b
   
     ```  
   
-9. ダウンロードしたファイル (`credentials.csv`) で新しいユーザーの資格情報を検索します。 これは後でコピーする必要があります。  
+9. **[ユーザーの追加]** 画面に戻り、必要に応じて一覧を更新し、作成したユーザーを選択し、**[Next Review (次のレビュー)]** をクリックします。
+
+   ![AWS のユーザー ポリシーの確認](./media/aws-review-user.png "AWS のユーザーの確認")
+
+10. すべての詳細情報が正しい場合は、**[ユーザーの作成]** をクリックします。
+
+    ![AWS のユーザーのアクセス許可](./media/aws-user-permissions.png "AWS のユーザー アクセス許可の確認")
+
+11. 成功メッセージを受け取ったら、**[Download .csv (.csv のダウンロード)]** をクリックし、新しいユーザーの資格情報のコピーを保存します。これは後で必要になります。  
+
+    ![AWS の csv のダウンロード](./media/aws-download-csv.png "AWS の csv のダウンロード")
   
-10. AWS コンソールのメイン ページに戻り、右上隅のドロップダウン ウィンドウで主なリージョンを選択してからメイン メニューで [**CloudTrail**] をクリックします。  
+10. AWS コンソールで **[サービス]** をクリックし、**[管理ツール]** で **[CloudTrail]** をクリックします。  
   
-     ![AWS の CloudTrail](./media/aws-cloudtrail.png "aws cloudtrail")  
+     ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    1.  このリージョンで初めて CloudTrail を使用する場合、[**開始する**] ボタンをクリックし、適切な S3 バケットを選択してセットアップします。  
+    初めて CloudTrail を使用する場合、[**開始する**] ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
   
-         画面左上の [**構成**] タブをクリックします。 [**追加の構成**] で編集アイコンをクリックします。  
+       ![AWS の CloudTrail の有効化](./media/aws-turnon-cloudtrail.png "AWS の CloudTrail の有効化")
   
-         ![AWS の CloudTrail 構成](./media/aws-cloudtrail-config.png "aws cloudtrail config")  
-  
-    2.  [**Include global services (グローバル サービスを含む)**] を選択する画面で [**はい**] をクリックしてから [**保存**] をクリックします。 これは、選択したリージョンにのみ適用されます。  
-  
-         ![AWS のグローバル サービスを含む](./media/aws-include-global-svc.png "aws include global svc")  
-  
-    3.  グローバル サービスを含むように設定するすべてのリージョンで手順 11 を繰り返し、それ以外のリージョンではこの設定を適用しないようにします。  
+    **[Trails (証跡)]** に新しい CloudTrail 名前が表示されるはずです。
+    
+      ![AWS CloudTrail 一覧](./media/aws-cloudtrail-list.png "AWS CloudTrail 一覧")
   
 11. Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
 12. **[アプリ コネクター]** ページで、[+]、**[AWS]** の順にクリックします。  
   
-     ![AWS を接続する](./media/connect-aws.png "connect AWS")  
+     ![AWS の接続](./media/connect-aws.png "AWS の接続")  
   
-13. ポップアップで、csv ファイルから API ページのフィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[アクセス キーの更新]** をクリックします。  
+13. ポップアップで、csv ファイルから関連フィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[接続]** をクリックします。  
+   ![AWS 接続アプリ](./media/aws-connect-app.png "AWS connect app") 
   
 14. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
   
      テストには数分かかる場合があります。 完了したら、成功または失敗の通知が送信されます。 成功の通知を受信したら、[**完了**] をクリックします。  
   
-AWS を接続すると、接続までの 7 日間のイベントを受け取ります。
+AWS の接続後、CloudTrail を有効にした場合を除き、接続に先立つ 7 日間のイベントが届きます。CloudTrail を有効にした場合、CloudTrail を有効にした時点からのイベントが届きます。
   
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
@@ -116,8 +115,3 @@ AWS を接続すると、接続までの 7 日間のイベントを受け取り�
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

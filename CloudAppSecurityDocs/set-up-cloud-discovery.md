@@ -1,11 +1,11 @@
 ---
-title: "Cloud Discovery の展開 | Microsoft Docs"
+title: "Cloud App Security で Cloud Discovery を展開する | Microsoft Docs"
 description: "このトピックでは、Cloud Discovery を稼働するためのセットアップ手順について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 99ad61811b68b47ac62b4bac83b611e535d4a6be
-ms.openlocfilehash: 2070adb26a6b23cd0d699f3c4b9241819e24928d
-
-
+ms.openlocfilehash: 17da11ad5ca10eba14410e0a0458980b3f88d123
+ms.sourcegitcommit: 8c7c25bc727d9c471261da144d5c1d430c26af56
+translationtype: HT
 ---
-
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 Cloud Discovery は、13,000 を超えるクラウド アプリの 50 以上の属性がランクおよびスコア付けされた Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
 **クラウド アプリ カタログ**では、規制遵守の認定、業界標準、ベスト プラクティスに基づいて、クラウド アプリのリスクをランク付けします。 クラウド アプリ カタログを最新に保つために、次の 4 つの補完的なプロセスが実行されます。
-1.  データのクラウド アプリからの自動抽出 (SOC 2 に対する準拠などの属性)。
-2.  Cloud App Security のアルゴリズムを使用したデータの高度な自動抽出 (HTTP セキュリティ ヘッダーなどの属性)。
-3.  Cloud App Security のアナリスト チームによる継続的な分析 (保存時の暗号化などの属性)。
-4.  顧客ベースの変更要求 (クラウド アプリ カタログに対する顧客から送信されてくる変更要求に基づいたもの)。 すべての要求がマイクロソフトのクラウド アナリスト チームによって確認され、検出されたことに基づいて更新が行われます。
+1.    データのクラウド アプリからの自動抽出 (SOC 2 に対する準拠などの属性)。
+2.    Cloud App Security のアルゴリズムを使用したデータの高度な自動抽出 (HTTP セキュリティ ヘッダーなどの属性)。
+3.    Cloud App Security のアナリスト チームによる継続的な分析 (保存時の暗号化などの属性)。
+4.    顧客ベースの変更要求 (クラウド アプリ カタログに対する顧客から送信されてくる変更要求に基づいたもの)。 すべての要求がマイクロソフトのクラウド アナリスト チームによって確認され、検出されたことに基づいて更新が行われます。
   
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
 
@@ -84,7 +81,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Cisco ScanSafe
 - Cisco Merkai - URL ログ
 - Dell SonicWall
-- Fortiner Fortigate
+- Fortinet Fortigate
 - Juniper SRX
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
@@ -113,16 +110,17 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 |Cisco ScanSafe|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Dell SonicWall|**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
 |Fortigate|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
-|Juniper SRX|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
+|Juniper SRX|いいえ|**はい**|いいえ|**はい**\*|**はい**|**はい**|
 |McAfee SWG|**はい**|いいえ|いいえ|**はい**|**はい**|**はい**|
 |Meraki|**はい**|**はい**|いいえ|**はい**|いいえ|いいえ|
 |MS TMG|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
-|PAN|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+|Palo Alto Networks|**はい**|**はい**|**はい**|**はい**\*|**はい**|**はい**|
 |Sophos|**はい**|**はい**|**はい**|**はい**|**はい**|いいえ|
 |Websense: 調査の詳細レポート (CSV)|**はい**|いいえ|いいえ|**はい**|いいえ|いいえ|
 |Websense: インターネットのアクティビティ ログ (CEF)|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-|Zscaler|**はい**|いいえ|**はい**|いいえ|**はい**|いいえ|
+|Zscaler|**はい**|いいえ|**はい**|いいえ|**はい**|**はい**|
 
+\* Cloud Discovery は IPv6 をサポートしています。
 
 ## <a name="see-also"></a>関連項目
  
@@ -131,10 +129,3 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 
 [Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)
-  
-  
-
-
-<!--HONumber=Dec16_HO4-->
-
-
