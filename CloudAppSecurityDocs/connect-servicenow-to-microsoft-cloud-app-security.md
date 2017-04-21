@@ -1,11 +1,11 @@
 ---
-title: "ServiceNow の接続 | Microsoft Docs"
+title: "ServiceNow を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に ServiceNow アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,42 +13,57 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 7935006b6b28ed93601ca60adf3c1a408440eae7
-
-
+ms.openlocfilehash: 1f4fd428f762bcbe1fb2a26bf44268cf985fbd4f
+ms.sourcegitcommit: c79c405a1277c5fcebbc245fa12ff8feb53248d5
+translationtype: HT
 ---
-
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の ServiceNow アカウントに接続する方法を説明します。  
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security"></a>ServiceNow を Cloud App Security に接続する方法  
   
 > [!NOTE]  
->  Cloud App Security では、ServiceNow の Eureka および Fiji のバージョンがサポートされています。 ServiceNow を Cloud App Security に接続するには、管理者レベルのアクセス許可が必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  
+>  Cloud App Security では、Eureka、Fiji、Geneva、Helsinki、Istanbul バージョンの ServiceNow がサポートされています。 ServiceNow を Cloud App Security に接続するには、**管理者**ロールが必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  詳細については、「[ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)」を参照してください。
   
 1.  ServiceNow アカウントに管理者アカウントでログオンします。  
   
-2.  Cloud App Security 用の新しいサービス アカウントを作成し、その新しいアカウントに管理者のロールを与えます。  
+2.  **[Filter navigator (フィルター ナビゲーター)]** 検索バーに「**OAuth**」と入力し、**[アプリケーション レジストリ]** を選択します。
+
+3. **[アプリケーション レジストリ]** メニュー バーで、**[新規作成]** をクリックし、新しい OAuth プロファイルを作成します。
+
+   ![ServiceNow の新しい OAuth プロファイル](./media/servicenow-app-registry.png)
+
+4. **[What kind of OAuth application? (OAuth アプリケーションの種類は?)]** で **[Create an OAuth API endpoint for external clients (外部クライアントの OAuth API エンドポイントを作成する)]** をクリックします。
+
+   ![ServiceNow OAuth の種類](./media/servicenow-oauth-app-type.png)
+
+5. **[Application Registries New record (アプリケーション レジストリの新しいレコード)]** の次の項目に入力します。
+    
+    - **[名前]** フィールドに新しい OAuth プロファイルの名前を入力します。たとえば、「CloudAppSecurity」にします。 
+    
+    - **[クライアント ID]** は自動的に生成されます。 この ID をコピーします。接続を完了するには、これを Cloud App Security に貼り付ける必要があります。
+    
+    - **[クライアント シークレット]** フィールドに文字列を入力します。 空のまま残した場合、無作為のシークレットが自動的に生成されます。 後で使用するためにコピーし、保存します。 
+    
+    - **[Access Token Lifespan (アクセス トークン有効期間)]** を 3,600 以上に増やします。
+    
+    - [ **送信**] をクリックします。
+
+   ![ServiceNow プロファイル ID](./media/servicenow-profile-ids.png)
+
+6.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-3.  REST API のプラグインが有効になっていることを確認します。  
+7.  **[アプリ コネクター]** ページで、[+] ボタン、**[ServiceNow]** の順にクリックします。  
   
-     ![ServiceNow アカウント](./media/servicenow-account.png "servicenow account")  
+     ![ServiceNow を接続する](./media/connect-servicenow.png "ServiceNow を接続する")  
   
-4.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
+8.  ポップアップの該当するボックスに ServiceNow のユーザー名、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。  
   
-5.  **[アプリ コネクター]** ページで、[+] ボタン、**[ServiceNow]** の順にクリックします。  
+9.  **[接続]**をクリックします。  
   
-     ![ServiceNow を接続する](./media/connect-servicenow.png "connect servicenow")  
+     ![ServiceNow を CAS に接続する](./media/servicenow-portal-connect.png "ポータルで ServiceNow を接続する")  
   
-6.  ポップアップの該当するボックスに ServiceNow のユーザー名、パスワード、およびインスタンス URL を追加します。  
-  
-7.  **[接続]**をクリックします。  
-  
-     ![ServiceNow のパスワードの更新](./media/servicenow-update-password.png "servicenow update password")  
-  
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+10.  [**今すぐテスト**] をクリックし、正常に接続されたことを確認します。  
   
      テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
   
@@ -59,9 +74,3 @@ ServiceNow を接続すると、接続までの 60 日間のイベントを受�
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
-  
-
-
-<!--HONumber=Nov16_HO5-->
-
-

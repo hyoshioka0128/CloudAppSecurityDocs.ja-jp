@@ -1,11 +1,11 @@
 ---
-title: "Box の接続 | Microsoft Docs"
+title: "Box を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Box アプリを接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/15/2016
+ms.date: 3/19/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
-
-
+ms.openlocfilehash: 11716fb83acfb893dce29c7f4179788d40bef7a4
+ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+translationtype: HT
 ---
-
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Box アカウントに接続する方法を説明します。  
   
@@ -32,15 +29,15 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
     -   Box 管理コンソールで設定アイコンをクリックし、次に [**Business settings (ビジネスの設定)**] をクリックします。  
   
-         ![Box のビジネス設定](./media/box-business-settings.png "box business settings")  
+         ![Box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
   
     -   [**アプリ**] タブをクリックします。  
   
-         ![Box アプリ](./media/box-apps.png "box apps")  
+         ![Box アプリ](./media/box-apps.png "Box アプリ")  
   
     -   **[Unpublished Applications]** (未公開のアプリケーション) が選択されている場合は、**[Except for]** (次を除く) テキスト ボックスに Cloud App Security アプリのシリアル番号 `nduj1o3yavu30dii7e03c3n7p49cj2qh` を追加して **[保存]** をクリックします。  
   
-         ![Box の次を除くの設定](./media/box-settings-except-for.png "box settings except for")  
+         ![Box の [次を除く] 設定](./media/box-settings-except-for.png "Box の [次を除く] 設定")  
   
     > [!NOTE]  
     >  既存の Adallom ユーザーの方でコンソールの URL が Cloud App Security ではなく Adallom のものである場合、このアプリのシリアル番号には bwahmilhdlpbqy2ongkl119o3lrkoshc を使用します。  
@@ -49,7 +46,7 @@ ms.openlocfilehash: 4aa741a90e356d440598eb9302dbd49f3b445c6c
   
 3.  **[アプリ コネクター]** ページで、[+]、**[Box]** の順にクリックします。  
   
-     ![Box を接続する](./media/connect-box.png "connect box")  
+     ![Box の接続](./media/connect-box.png "Box の接続")  
   
 4.  **[Box の設定]** ポップアップで、**[リンクに移動]** をクリックします。  
   
@@ -75,8 +72,3 @@ Box を接続すると、Cloud App Security がフル スキャンを実行し�
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-

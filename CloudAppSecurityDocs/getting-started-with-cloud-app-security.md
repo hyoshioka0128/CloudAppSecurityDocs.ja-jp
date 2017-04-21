@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Docs
+title: "Cloud App Security を展開し、クラウド アプリの使用状況を詳細に表示し、管理する | Microsoft Docs"
 description: "このトピックでは、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。"
 keywords: 
 author: rkarlin
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: bf3e86ddb4c26758ce3cf6fbf4377a8550bbe78b
-ms.openlocfilehash: e9ee4724ee32d0d4592bc98dc8551b80caf1652d
-
-
+ms.openlocfilehash: 2c1b1506f4693304cc10f64b1db372dc710e026a
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="deploy-cloud-app-security"></a>Cloud App Security の展開
 Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
@@ -163,10 +160,4 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 ポリシーの設定については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。    
 テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。   
-Premier サポートをご利用のお客様も、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することができます。   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-
+Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。   

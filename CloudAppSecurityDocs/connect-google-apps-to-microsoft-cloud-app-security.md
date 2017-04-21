@@ -1,11 +1,11 @@
 ---
-title: "Google Apps の接続 | Microsoft Docs"
-description: "このトピックでは、API コネクタを使用して Cloud App Security に Google アプリを接続する方法に関する情報を提供します。"
+title: "G Suite を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
+description: "このトピックでは、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/19/2016
+ms.date: 3/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,50 +13,36 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 2997a79f2e0fd730302be2602b6aee6ec56999db
-ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
-
-
+ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
+ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+translationtype: HT
 ---
+# <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
+このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
 
-# <a name="connect-google-apps-to-microsoft-cloud-app-security"></a>Google Apps を Microsoft Cloud App Security に接続する
-このセクションでは、コネクタ API を使用して Cloud App Security を既存の Google Apps に接続する方法を説明します。
-
   
   
-## <a name="configure-google-apps"></a>Google Apps の設定  
+## <a name="configure-g-suite"></a>G Suite を構成する  
   
-1.  Google Apps の特権管理者として、[https://cloud.google.com/console/project](https://cloud.google.com/console/project) にログインします。  
+1.  G Suite の特権管理者として、[https://cloud.google.com/console/project](https://cloud.google.com/console/project) にログインします。  
   
-2.  [**Create an empty project (空のプロジェクトを作成)**] をクリックして新しいプロジェクトを開始します。  
+2.  **[プロジェクトの作成]** をクリックして新しいプロジェクトを開始します。  
   
      ![google1](./media/google1.png "google1")  
   
-3.  [**新しいプロジェクト**] 画面で次の操作を行います。  
+3.  **[新しいプロジェクト]** 画面で、プロジェクトに</br>「
+    **Cloud App Security for Google**」という名前を付け、**[作成]** をクリックします。  
+           ![google2](./media/google2.png "google2")  
   
-    1.  次のように、プロジェクトに名前を付けます。</br>
-    **Cloud App Security for Google** 
-  
-    2.  更新をサブスクライブするかどうかを選択します。  
-  
-    3.  サービスの条件を確認してから承認します。  
-  
-    4.  [**作成**] をクリックします。  
-  
-         ![google2](./media/google2.png "google2")  
-  
-4.  プロジェクトが作成されたら [**Enable and manage APIs (API を有効にして管理)**] をクリックします。  
+4.  プロジェクトが作成されたら、ツール バーで、Google Cloud Platform の隣にあるプロジェクトを選択し、**[API]** で **[Go to APIs overview (API 概要に進む)]** をクリックします。  
   
      ![google3](./media/google3.png "google3")  
   
-5.  [**Enabled APIs (有効化された API) **] タブをクリックし、リストされているすべての API を無効にします。  
+5.  **[API]** で、一覧に表示されているすべての API を無効にします。  
+      
+6.  **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
   
-     ![google5](./media/google5.png "google5")  
-  
-6.  **[Google APIs]** タブをクリックして、次の API を有効にします (このとき API が **[Popular APIs]** (よく使用される API) リストに表示されていない場合は、検索行を使用します)。  
-  
-     ![google8](./media/google8.png "google8")  
+     ![Google API](./media/google4.png "google4")  
   
     > [!NOTE]  
     >  ここでは [**資格情報**] の警告は無視します。  
@@ -65,19 +51,17 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
     -   監査 API  
   
-    -   ドライブ API  
+    -   Google ドライブ API  
   
     -   Google Apps Marketplace SDK  
   
     -   Gmail API  
-  
-         ![google11 警告](./media/google11-warning.png "google11 warning")  
-  
+            
 7.  5 つの **有効にされた API** が必要です:  
   
-     ![google15](./media/google15.png "google15")  
+     ![Google の有効にされた API](./media/google5.png "google5")  
   
-8.  [**資格情報**]、[**OAuth consent (OAuth の承認) **] の順にクリックします。  
+8.  **[資格情報]** をクリックします。**[OAuth consent (OAuth の承認)]** 画面が表示されます。  
   
     -   [**Product name shown to users (製品名をユーザーに表示する)**] で、「**Cloud App Security for Google**」と入力します。  
   
@@ -85,69 +69,65 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
     -   **[Save]**(保存) をクリックします。  
   
-     ![google16](./media/google16.png "google16")  
+     ![Google の製品名](./media/google6.png "google6")  
   
-9. [**資格情報**] タブで、[**サインイン情報の作成**] の隣にある矢印をクリックしてから [**サービス アカウントのキー**] を選択します。  
+9. **[API Credentials (API 資格情報)]** 画面で、**[サインイン情報の作成]** の隣にある矢印をクリックします。  
   
-     ![google17](./media/google17.png "google17")  
+     ![Google の資格情報](./media/google7.png "google7")  
+
+10. **[サービス アカウント キー]** を選択します。
+
+     ![Google サービス アカウント キー](./media/google8.png "google8")  
   
-10. [**サービス アカウント**] で、[**新しいサービス アカウント**] を選択して、たとえば「**Service account 1**」などの任意の名前を入力します。  
+11. **[Create service account key (サービス アカウント キー)]** で **[新しいサービス アカウント]** を選択し、名前を入力します。たとえば、「**Service account 1**」とします。**[ロール]** で **[プロジェクト]**、**[エディター]** の順に選択し、**[キーの種類]** で **[P12]** を選択し、**[作成]** をクリックします。  
   
-     ![google19](./media/google19.png "google19")  
+     ![Google のサービス アカウント キーの作成](./media/google9.png "google9")  
   
-     [**キーの種類**] で [**P12**] を選択してから [**作成**] をクリックします。  
+12.  P12 証明書ファイルがコンピューターに保存されます。 ポップアップが表示され、**秘密鍵のパスワード**が提示されます。後で使用するので必ず保存してください。  
+        
+12. [**資格情報**] 画面で、 一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
+       ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite credentials service account")  
   
-     P12 証明書ファイルがダウンロードされます。 後で使用できるように証明書を保存します。  
+13. 作成したサービス アカウントの右側にある 3 つの点をクリックし、[**編集**] を選択します。  
   
-     ![google20](./media/google20.png "google20")  
+     ![Google 編集](./media/google11.png "google edit")  
   
-11. [**資格情報**] タブで、 一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
+14. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
   
-     ![Google Apps の資格情報サービス アカウント](./media/google-apps-credentials-service-account.png "google apps credentials service account")  
+     ![Google のドメイン全体](./media/google12.png "google domain wide")  
   
-12. 作成したサービス アカウントの右側にある 3 つの点をクリックし、[**編集**] を選択します。  
+15. サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。  
   
-     ![google22](./media/google22.png "google22")  
+     ![Google のサービス アカウント ID](./media/google13.png "google13")  
   
-13. **[Enable Google Apps Domain-wide Delegation]** (Google Apps ドメイン全体の委任を有効にする) チェック ボックスを選択してから **[保存]** をクリックします。  
-  
-     ![google24](./media/google24.png "google24")  
-  
-14. サービスに割り当てられている**電子メール アドレス**をコピーしておきます。このアドレスは後で必要になります。  
-  
-     ![google25](./media/google25.png "google25")  
-  
-15. Google Cloud Platform の横にある 3 本の水平線アイコンをクリックして Google のメニューを開き、[**API マネージャー**] を選択します。  
-  
-     ![Google のメニュー](./media/google-menu.png "google menu")  
-  
-     [**Enabled APIs (有効にされた API)**] を選択します。  
-  
-     ![google27](./media/google27.png "google27")  
-  
-16. [**Drive API (ドライブ API) **] の隣にある設定用の歯車アイコンをクリックし、[**Drive UI Integration (UI 統合のドライブ)**] で次を入力します。  
-  
+16. Google Cloud Platform のタイトル バーの横にある 3 本の水平線アイコンをクリックして Google のメニューを開き、[**API マネージャー**] を選択します。**ダッシュボード**が表示されます。  
+    
+17. 下にスクロールして有効になっている API の一覧を表示し、**Google ドライブ API** の隣にある歯車の形をした設定アイコンをクリックします。   
+       ![Google ドライブ選択](./media/google14.png "google14")  
+
+18. 次の項目に入力します。
+
     -   **アプリケーション名**: Cloud App Security for Google。  
   
-    -   **簡単な説明と詳しい説明**: Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
+    -   **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
-    -   [**アプリケーション アイコン**] で、サイズが 128 x 128 と 32 × 32 のイメージをアップロードします。  
+    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) にアクセスし、Cloud App Security アイコンが入っている zip ファイルをダウンロードします。 [**アプリケーション アイコン**] で、サイズが 128 x 128 と 32 × 32 のイメージをドラッグ アンド ドロップします。  
   
-         イメージは [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) にあります。  
-  
-    -   [**URL を開く**] で次を入力します。  
+    -   **[Drive Integration (ドライブ統合)]** の **[URL を開く]** に次を入力します。  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
   
     -   [**変更を保存**] をクリックします。  
   
-         ![google29](./media/google29.png "google29")  
+         ![Google のドライブ構成](./media/google15.png "googledriveconfig")  
   
-17. **「Enabled APIs」** (有効にされた API) の一覧で、[**Google Apps Marketplace SDK**] の横にある設定用の歯車アイコンをクリックし、[**設定**] タブを選択します。  
+19. **[Enabled APIs (有効にされた API)]** 一覧で、**[Google Apps Marketplace SDK]** の横にある設定用の歯車アイコンをクリックします。 
+         ![Google Marketplace SDK 構成](./media/google16.png "googledriveconfig")  
+20. **[構成]** タブを選択します。  
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
   
-    -   **アプリケーション名**: Cloud App Security for Google。  
+    -   **[アプリケーション名]** は「**Cloud App Security for Google**」になっているはずです。
   
          [**アプリケーションの説明**] フィールドに、「Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況が把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます」と入力します。  
   
@@ -157,7 +137,7 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
          イメージは [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) にあります。  
   
-         ![google31](./media/google31.png "google31")  
+         ![Google Marketplace SDK 構成](./media/google17.png "google17")  
   
     -   次に [**Support URLs (サポートの URL)**] を入力します:  
   
@@ -165,98 +145,94 @@ ms.openlocfilehash: 7734badea1da58b839d23842b73e9be57fe43be3
   
         -   **プライバシー ポリシー URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
   
-    -   **[OAuth 2.0 スコープ]** で、次を入力します (1 行に 1 つ入力します。 確認するには Enter キーを押します):  
+    -   **[OAuth 2.0 スコープ]** で次をコピーし、貼り付けます。 一度に 1 つずつコピーする必要があります。1 つコピーしたら Enter を押してください。  
   
-        -   https://www.googleapis.com/auth/admin.reports.audit.readonly  
+           https://www.googleapis.com/auth/admin.reports.audit.readonly  
   
-        -   https://www.googleapis.com/auth/admin.reports.usage.readonly  
+           https://www.googleapis.com/auth/admin.reports.usage.readonly  
   
-        -   https://www.googleapis.com/auth/drive  
+           https://www.googleapis.com/auth/drive  
   
-        -   https://www.googleapis.com/auth/drive.appdata  
+           https://www.googleapis.com/auth/drive.appdata  
   
-        -   https://www.googleapis.com/auth/drive.apps.readonly  
+           https://www.googleapis.com/auth/drive.apps.readonly  
   
-        -   https://www.googleapis.com/auth/drive.file  
+           https://www.googleapis.com/auth/drive.file  
   
-        -   https://www.googleapis.com/auth/drive.metadata.readonly  
+           https://www.googleapis.com/auth/drive.metadata.readonly  
   
-        -   https://www.googleapis.com/auth/drive.readonly  
+           https://www.googleapis.com/auth/drive.readonly  
   
-        -   https://www.googleapis.com/auth/drive.scripts  
+           https://www.googleapis.com/auth/drive.scripts  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.readonly  
+           https://www.googleapis.com/auth/admin.directory.user.readonly  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.security  
+           https://www.googleapis.com/auth/admin.directory.user.security  
   
-        -   https://www.googleapis.com/auth/admin.directory.user.alias  
+           https://www.googleapis.com/auth/admin.directory.user.alias  
   
-        -   https://www.googleapis.com/auth/admin.directory.orgunit  
+           https://www.googleapis.com/auth/admin.directory.orgunit  
   
-        -   https://www.googleapis.com/auth/admin.directory.notifications  
+           https://www.googleapis.com/auth/admin.directory.notifications  
   
-        -   https://www.googleapis.com/auth/admin.directory.group.member  
+           https://www.googleapis.com/auth/admin.directory.group.member  
   
-        -   https://www.googleapis.com/auth/admin.directory.group  
+           https://www.googleapis.com/auth/admin.directory.group  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile.action  
+           https://www.googleapis.com/auth/admin.directory.device.mobile.action  
   
-        -   https://www.googleapis.com/auth/admin.directory.device.mobile  
+           https://www.googleapis.com/auth/admin.directory.device.mobile  
   
-        -   https://www.googleapis.com/auth/admin.directory.user  
+           https://www.googleapis.com/auth/admin.directory.user  
   
     -   [**変更を保存**] をクリックします。  
   
-18. コントロール リストから [**セキュリティ**] を選択します。 このオプションが表示されない場合は、ページ下部にある灰色のバーからその他のコントロールを選択してから [**セキュリティ**] をクリックします。  
-  
-     ![Google Apps のセキュリティ](./media/google-apps-security.png "google apps security")  
-  
+18. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
+       ![Google セキュリティ](./media/googlesecurity.png "google8")  
+ 
 19. [**API リファレンス**] を選択します。  
-  
-     ![Google の API リファレンス](./media/google-api-ref.png "google api ref")  
-  
+       ![Google API 有効化](./media/googleapi.png "google8")  
+      
 20. [**Enable API Access (API アクセスの有効化)**] を選択してから [**変更を保存**] をクリックします。  
   
-     ![Google の API アクセス](./media/google-api-access.png "google api access")  
+    ![Google API 参照](./media/googleapiref.png "google8")  
+
   
 ## <a name="configure-cloud-app-security"></a>Cloud App Security の設定  
   
 1.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-2.  **[接続アプリ]** ページで、[+]、**[Google Apps]** の順にクリックします。  
+2.  **[接続アプリ]** ページで、プラス記号をクリックし、**[G Suite]** を選択します。  
+       
   
-     ![Google Apps を接続する](./media/connect-google-apps.png "connect google apps")  
+3.  ポップアップで、次の項目に入力します。  
   
-3.  ポップアップで、以下のように入力します。  
+     ![Cloud App Security での G Suite 構成](./media/gsuite-config-cas.png "Cloud App Security での G Suite 構成")  
   
-     ![Cloud App Security での Google Apps 構成](./media/google-apps-configuration-in-cloud-app-security.png "Google Apps Configuration in Cloud App Security")  
+    1.  手順 16 でコピーした**サービス アカウントの電子メール アドレス**。  
   
-    1.  手順 14 でコピーした **Google サービス アカウントの電子メール アドレス**。  
+    2.  手順 21 でコピーした**プロジェクト番号 (アプリ ID)**。  
   
-    2.  手順 17 でコピーした **Google プロジェクト番号 (アプリ ID)**。  
+    3.  手順 12 で保存した**証明書** P12 をアップロードします。 保存しておいたパスワードがここで必要になります。  
   
-    3.  手順 10 で保存した **Google 証明書** P12 をアップロードします。  
+    4.  G Suite 管理者の**管理者アカウントの電子メール**を 1 つ入力します。  
   
-    4.  Google Apps 管理者の**管理者の電子メール**を 1 つ入力します。  
-  
-    5.  Google Apps Unlimited のアカウントがある場合は、このチェック ボックスをオンにします。 Cloud App Security で使用できる Google Apps Unlimited の機能の詳細については、「[Enable instant visibility, protection and governance actions for your apps](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)」 (アプリケーションの表示、保護、およびガバナンス アクションを短時間で有効にする) を参照してください。  
+    5.  G Suite Unlimited のアカウントがある場合、このチェック ボックスをオンにします。 Cloud App Security で使用できる G Suite Unlimited の機能の詳細については、[アプリの表示、保護、ガバナンスの操作をすぐに実行できるようにする](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)方法に関するページを参照してください。  
   
     6.  [**設定の保存**] をクリックします。  
   
-    7.  [**リンクに移動**] をクリックして Google Apps に接続します。 これで Google Apps が開き、Cloud App Security へのアクセス承認を求められます。  
-  
-         ![Google Apps の認証要求](./media/google-apps-authorization-request.png "Google Apps authorization request")  
-  
-    8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+    7.  **[リンクに移動]** をクリックし、G Suite に接続します。 これで G Suite が開き、Cloud App Security へのアクセス承認を求められます。  
+         
+    8.  [**今すぐテスト**] をクリックし、正常に接続されたことを確認します。  
   
          テストには数分かかる場合があります。  
   
-         接続成功の通知を受信したら、[**完了**] をクリックして [Google Apps] ページを閉じます。  
+         接続成功の通知を受信したら、**[完了]** をクリックして [G Suite] ページを閉じます。  
   
   
-Google Apps に接続すると、接続までの 60 日間のイベントを受け取ります。
+G Suite を接続すると、接続までの 60 日間のイベントを受け取ります。
   
-Google Apps を接続すると、Cloud App Security がフル スキャンを実行します。 所有するファイルとユーザーの数に応じて、フル スキャンの実行に時間がかかる場合があります。 ほぼリアルタイムにスキャンできるように、アクティビティの検出対象ファイルがスキャン キューの先頭に移動されます。たとえば、編集、更新、または共有対象のファイルはすぐにスキャンされ、通常のスキャン プロセスが到達するまで待ちません。 これは本質的に変更されないファイル (表示、プレビュー、印刷またはエクスポート対象のファイルなど) には適用されません。
+G Suite を接続すると、Cloud App Security がフル スキャンを実行します。 所有するファイルとユーザーの数に応じて、フル スキャンの実行に時間がかかる場合があります。 ほぼリアルタイムにスキャンできるように、アクティビティの検出対象ファイルがスキャン キューの先頭に移動されます。たとえば、編集、更新、または共有対象のファイルはすぐにスキャンされ、通常のスキャン プロセスが到達するまで待ちません。 これは本質的に変更されないファイル (表示、プレビュー、印刷またはエクスポート対象のファイルなど) には適用されません。
   
   
 ## <a name="see-also"></a>参照  
@@ -265,8 +241,3 @@ Google Apps を接続すると、Cloud App Security がフル スキャンを実
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Dec16_HO3-->
-
-
