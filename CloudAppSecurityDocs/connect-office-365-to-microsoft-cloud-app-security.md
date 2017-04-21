@@ -1,11 +1,11 @@
 ---
-title: "Office 365 の接続 | Microsoft Docs"
+title: "Office 365 を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
 description: "このトピックでは、API コネクタを使用して Cloud App Security に Office 365 を接続する方法について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/26/2016
+ms.date: 1/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,10 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-translationtype: Human Translation
-ms.sourcegitcommit: 6beb9041b338406fb5b16f4bd045dbdc4592c6d9
-ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
-
-
+ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
+ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+translationtype: HT
 ---
-
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Microsoft Office 365 アカウントに接続する手順について説明します。  
   
@@ -56,8 +53,3 @@ ms.openlocfilehash: e0ca79daddaaa2cdcbc51308653b3ec05da1b5e2
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
-
-
-<!--HONumber=Nov16_HO5-->
-
-
