@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72228b607c3006101f9f427b38de63b090cdb9a0
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
+ms.openlocfilehash: 3d74621d1c173c51a9a3d0e08f261290a6d24835
+ms.sourcegitcommit: 122268f3e7b0cadf1a6a495a50f388fe4adbcc2b
 translationtype: HT
 ---
 ## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
@@ -29,7 +29,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
 データの匿名化のしくみ:
 
-1.    データの匿名化を適用する方法は次の 3 つです。 
+1.  データの匿名化を適用する方法は次の 3 つです。 
     
     - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、**[Anonymize private information (個人情報の匿名化)]** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。
  ![スナップショット データの匿名化](./media/anonymize-log.png)
@@ -48,20 +48,20 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
   ![匿名化](./media/anonymizer1.png)
   
 
-2.    匿名化を選択すると、Cloud App Security はトラフィック ログを解析し、特定のデータ属性を抽出します。
-3.    Cloud App Security はユーザー名を暗号化されたユーザー名に置き換えます。
-4.    次に、クラウドの使用状況データを分析し、匿名化されたデータに基づいて Cloud Discovery レポートを生成します。
+2.  匿名化を選択すると、Cloud App Security はトラフィック ログを解析し、特定のデータ属性を抽出します。
+3.  Cloud App Security はユーザー名を暗号化されたユーザー名に置き換えます。
+4.  次に、クラウドの使用状況データを分析し、匿名化されたデータに基づいて Cloud Discovery レポートを生成します。
  ![Cloud Discovery ダッシュボードの匿名化](./media/anonymize-dashboard.png)
  
 
-5.    異常な使用量のアラート調査など、特定の調査のために、ポータルで特定のユーザー名を解決し、業務上の正当な理由を示すことができます。 このページは、既知のユーザー名の暗号化されたユーザー名を検索する際にも使用できます。 
+5.  異常な使用量のアラート調査など、特定の調査のために、ポータルで特定のユーザー名を解決し、業務上の正当な理由を示すことができます。 このページは、既知のユーザー名の暗号化されたユーザー名を検索する際にも使用できます。 
 
     1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
     2. **[匿名化]** タブの **「Anonymize and resolve usernames」** (ユーザー名の匿名化と解決) で、解決策を実行する正当な理由を入力します。
     3. **「Enter username to resolve」** (解決するユーザー名を入力してください) で、**「From anonymized」** (匿名化されたユーザー名を基にする) を選択して匿名化されたユーザー名を入力するか、**「To anonymized」** (匿名化されたユーザー名の実データを基にする) を選択して、解決する元のユーザー名を入力します。 **[解決]** をクリックします。 
 ![匿名化](./media/anonymizer.png)
 
-6.    アクションはポータルの**ガバナンス ログ**で監査されます。 
+6.  アクションはポータルの**ガバナンス ログ**で監査されます。 
 ![匿名化](./media/anonymize-gov-log.png)
 
 
