@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,18 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f6eb2a844d62848ad232a92609a02ddb6fcfe325
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
+ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ファイルのログ コレクターへの FTP 転送が完了した後で Cloud App Security にアップロードされ、Syslog については、ログ コレクターは 20 分ごとに受信したログをディスクに書き込んでから、Cloud App Security にファイルをアップロードします。
 
 自動ログ ファイル収集を設定する前に、ログが予期されるログの種類と一致していることを検証し、Cloud App Security で特定のファイルを解析できることを確認します。 
+
+>[!NOTE]
+>ログが元々の形式で転送されると仮定した場合、Cloud App Security は、SIEM サーバーからログ コレクターへのログの転送をサポートします。 ただし、ログ コレクターをファイアウォールまたはプロキシに直接統合することを強くお勧めします。
+
 
 ## <a name="technical-requirements"></a>技術要件
 - ハイパーバイザー: HyperV または VMware
@@ -74,7 +78,7 @@ translationtype: HT
   > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 4.  Hyper-V または VMWare をクリックして新しいログ コレクター仮想マシンを**ダウンロード**し、ポータルで受け取ったパスワードを使用してファイルを解凍します。  
   
-### <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>ステップ 2: 仮想マシンのオンプレミス展開とネットワークの構成   
+###    <a name="step-2--on-premises-deployment-of-the-virtual-machine-and-network-configuration"></a>ステップ 2: 仮想マシンのオンプレミス展開とネットワークの構成   
 
 > [!NOTE] 
 > 次の手順は、Hyper-V での展開について説明したものです。 VM のハイパーバイザーを展開する手順は若干異なります。  
