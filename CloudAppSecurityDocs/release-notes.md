@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9de7c7770e567ffc79c6af98582d46d86115babe
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: c6bffe24bc127b4435a7a334cdca001f6e5ad3c5
+ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
 translationtype: HT
 ---
 # <a name="release-notes"></a>リリース ノート
+
+
+## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security リリース 95 (展開中)
+リリース日: 2017 年 4 月 24 日
+
+**更新内容**
+- [**アカウント**] ページは更新され、リスクをより簡単に検知できるようになりました。 内部アカウントおよび外部アカウントのフィルター処理が簡単になり、ユーザーに管理者権限が割り当てられているかどうかがひとめでわかるようになり、各アカウントでアプリごとにアクションを簡単に実行できるようになりました (アクセス許可の削除、ユーザーのコラボレーションの削除、ユーザーの停止など)。 また、アカウントごとにインポートされた[ユーザー グループ](user-groups.md)が表示されます。 
+
+- Microsoft アカウント (Office 365 や Azure Active Directory) の場合、Cloud App Security は、さまざまなユーザー識別子 (プロキシ アドレス、エイリアス、SID、および単一アカウント下でのその他の識別子) をグループ別に分類します。 アカウントに関連するエイリアスはすべて、プライマリ電子メール アドレスの下に表示されます。 ユーザー識別子の一覧に基づき、アクターがユーザー識別子であるアクティビティの場合はアクターがプライマリ ユーザー名 UPN (ユーザー プリンシパル名) として表示されます。 UPN に基づいて、グループが割り当てられ、ポリシーが適用されます。 これにより、アクティビティの調査機能が強化され、関連するすべてのアクティビティが、同じセッションに融合され、異常の検出およびグループ ベースのポリシーの適用が行われます。 この機能は来月中に徐々に展開されます。
+
+- ブラウザー使用の組み込みレポートに、考えられるリスク要因としてロボット タグが追加されました。 これで、ブラウザーの使用が期限切れとしてタグ付けされることに加えて、ブラウザーの使用がロボットによって実行された日時を確認できます。 [組み込みレポート](built-in-report-reference.md) について詳細を説明します。
+
+- コンテンツ検査ファイル ポリシーを作成すると、一致件数が 50 件以上のファイルのみを含めるようにフィルターを設定できます。
+
+
 
 ## <a name="cloud-app-security-release-94"></a>Cloud App Security リリース 94
 リリース日: 2017 年 4 月 2 日

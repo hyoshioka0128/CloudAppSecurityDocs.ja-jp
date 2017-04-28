@@ -1,13 +1,14 @@
 ---
 layout: LandingPage
 description: "Cloud App Security の使用方法について説明します。"
-ms.openlocfilehash: a746de0da559ebe32f246fdb52601dc5f2309d42
-ms.sourcegitcommit: d52371ba06d72e742dd07d8a9c6db4c9ee5d5fa9
+ms.openlocfilehash: a181d0871c17e7f94b17d72182225652c9df2438
+ms.sourcegitcommit: ddfac1ff8a07ff34acfa1945400950b749bdcb4d
 translationtype: HT
 ---
 # <a name="cloud-app-security-documentation"></a>Cloud App Security ドキュメント
 
-社外で共有する電子メール、ドキュメント、機密データを制御し、セキュリティの保護を容易にします。 保存先や共有するユーザーに関係なく、簡単な分類から埋め込みラベルや許可まで、Azure Information Protection で常にデータ保護を強化します。
+Cloud App Security により、クラウド アプリにエンタープライズ レベルのセキュリティを提供します。
+従業員はクラウドの中で作業しています。 クラウド セキュリティの問題に対する専門的な可視性、包括的なコントロール、強化された保護などの、設置型システムのセキュリティをクラウド アプリケーション (承認済みおよび未承認の両方) に提供します。
 
 <ul class="panelContent cardsFTitle">
     <li>

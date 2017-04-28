@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/2/2017
+ms.date: 4/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7e735519caa7da514f06db13afc737cf6ef1806
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
+ms.openlocfilehash: 25fef8249688d9116001fd7147a00aedf9d72ca7
+ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
 translationtype: HT
 ---
 # <a name="controlling-and-protecting-your-files"></a>ファイルの制御と保護  
@@ -27,10 +27,10 @@ Cloud App Security は、20 を超えるメタデータ フィルター (アク�
 この使用ケースは、Office 365、G Suite、Box、Dropbox、Salesforce に適用されます。
 
 ### <a name="the-threat"></a>脅威の内容
-従業員は、機密データを含む企業ファイルを組織の外部に共有しています。 これは、監視されないデータのリークにつながります。 悪意はなく、会社のポリシーには違反していないかもしれませんが、それでも、何が共有されているか監視することは重要です。それによってネットワークがどのように使用され、どのようなデータが外部共有されているかを常に把握できるようになります。
+クラウド テクノロジによってもたらされる最大の利点の 1 つは、あらゆる情報を誰とでも共有できるということです。 しかし、大きな利点がある一方で、大きな責任も伴います、機密データが外部のユーザーと共有されないようにするために、機密データが入っているファイル、およびそのようなファイルを共有している相手を把握しておく必要があります。 クラウド アプリで提供されるツールで、クラウド アプリに保存されている内容またはアクセス権限を持つユーザーがわからないものを使用すると、データ漏えいの可能性に気づかないままになります。
 
 ### <a name="the-solution"></a>解決策
-Cloud App Security で下記のポリシーをデプロイし、Cloud App Security でガバナンス アクションをデプロイすることにより、ネットワークにおけるファイル共有の詳細を把握し、ガバナンス アクションを展開します。
+秘密度と共有レベルという 2 つのパラメーターを確認し、それらを比較検討することで、情報侵害の可能性を特定することができます。 Cloud App Security では、クラウド アプリで保存されたすべてのファイルをスキャンし、共有レベルごとに分類する処理を自動的に行います。 さらに、クラウド アプリで保存されたすべての機密データを検索できるように、Cloud App Security のファイル ポリシーを構成することができます。 機密性の高いファイルが外部のユーザーと共有されていることがわかったら、手動で修正アクションを実行することも、自動的に修正が行われるように Cloud App Security を設定することもできます。 そうすれば、クリック 1 つでデータ漏えいのリスクを排除できます。
 
 #### <a name="prerequisites"></a>前提条件
 
@@ -38,7 +38,7 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
 
 #### <a name="setting-up-monitoring"></a>監視の設定
 
-1.    ポリシーを作成してファイルを制御する
+1.    アプリの監視を開始するには、外部ユーザーと共有されているすべてのファイルをスキャンし、機密性の高いコンテンツを含んでいるものがないかを確認するポリシーを設定します。
 
     1. **[ポリシー]** ページで、[**[ファイル ポリシーの作成]**](data-protection-policies.md) をクリックします。 
     ![ファイル ポリシーの作成](./media/create-file-policy.png)
@@ -66,12 +66,12 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
 
 #### <a name="removing-the-risk"></a>リスクの排除
 
-ポリシーを検証し、想定通りに動作するよう微調整したら、次の操作を行います。 
+リスクを検証してポリシーを微調整したら、ポリシーと一致する可能性があった誤検知を排除します。 次に、以下の操作を行います。 
   1. 行の最後にある 3 つのドットをクリックし、関連するガバナンス アクション、たとえば **[Put user in quarantine]** (ユーザー検疫に配置) を選択すると、[ガバナンス アクション](governance-actions.md)を即時に実行できます。
 
  ![外部自動ガバナンス](./media/auto-gov-external.png)
 
-   2. 検証が完了したら、自動ガバナンス アクションを実行するように設定できます。 たとえば、SharePoint および OneDrive では **[外部ユーザーの削除]** または **[Put in user quarantine]** (ユーザー検疫に配置) 、G Suite および Box では **[外部ユーザーの削除]** と **[パブリック アクセスの削除]** ができます。
+   2. 検証が完了したら、自動ガバナンス アクションを実行するように設定できます。 たとえば、SharePoint および OneDrive では **[外部ユーザーの削除]** または **[Put in user quarantine]** (ユーザー検疫に配置)、G Suite および Box では **[外部ユーザーの削除]** と **[パブリック アクセスの削除]** ができます。
 
   ![自動ガバナンス アクションを適用](./media/apply-automatic-gov-actions.png)
 
@@ -81,21 +81,21 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
 
 この使用ケースでは、Cloud App Security と Azure Information Protection の統合を活用します。 組織全体で Azure Information Protection を実行していて、Azure Information Protection のラベルでファイルにラベル付けしてある場合は、Cloud App Security を使用してラベル付与後のファイルに対する動作を監視および制御できます。
 
-## <a name="the-threat"></a>脅威の内容
+### <a name="the-threat"></a>脅威の内容
 
 データを保護する必要があることは理解しており、すでに苦労して Azure Information Protection でファイルを分類しました。 しかし分類した後は、そのファイルがどこにあり、誰がそれを見ているか、どうやったらわかるのでしょうか。 
 
-## <a name="the-solution"></a>解決策
- Cloud App Security を使用して、分類されたこれらのファイルがクラウド内にあるときに監視できます。 これによって、**機密情報** (またはその他の機密性の高い分類) として分類したデータが不適切に共有されないことを確実にできます。以下のポリシーとガバナンス アクションを展開して、Cloud App Security に Azure Information Protection で分類したファイルを監視および管理させます。
+### <a name="the-solution"></a>解決策
+ Cloud App Security を使用して、分類されたこれらのファイルがクラウド内にあるときに監視できます。 これにより、**社外秘** (またはその他の機密性の高い分類) として分類したデータが不適切に共有されないようにすることができます。 Azure Information Protection で分類したファイルを Cloud App Security で監視および管理するには、次のポリシーと管理アクションを展開します。
 
-### <a name="prerequisites"></a>前提条件
+#### <a name="prerequisites"></a>前提条件
 
 - Cloud App Security に、少なくとも 1 つのクラウド アプリを[接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)します。
 - [Azure Information Protection の統合の手順](azip-integration.md)に従って、自動スキャンを有効にします。
 
-### <a name="setting-up-monitoring"></a>監視の設定
+#### <a name="setting-up-monitoring"></a>監視の設定
 
-1. ポリシーを作成してデータを制御する    
+1. 分類ラベルが付いていて公開共有されたすべてのファイルを監視します。    
     
     1. **[ポリシー]** ページで、[**[ファイル ポリシーの作成]**](data-protection-policies.md) をクリックします。 
 
@@ -116,7 +116,7 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
     3. 誤検知を見つけた場合は、チェック ボックスをオンにマークして、レポートおよびライブ一致から除外します。 フィードバック機能を使用して、Cloud App Security チームに機能改善要求を知らせることができます。 
 
 
-### <a name="validating-your-policy"></a>ポリシーの検証
+#### <a name="validating-your-policy"></a>ポリシーの検証
 
 1. 新しい Word 文書を作成し、Azure Information Protection のツール バーを使用して**社外秘**などの秘密度ラベルを設定します。 
 
@@ -129,11 +129,11 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
 
 #### <a name="removing-the-risk"></a>リスクの排除
 
-ポリシーを検証し、想定通りに動作するよう微調整したら、次の操作を行います。 
+リスクの検証およびポリシーの微調整を行って、ポリシーと一致する可能性があった誤検知を排除したら、次の操作を行います。 
 
 1. 行の最後にある 3 つのドットをクリックし、関連するガバナンス アクション、たとえば **[Put in user quarantine]** (ユーザー検疫に配置) を選択すると、[ガバナンス アクション](governance-actions.md)を即時に実行できます。
     
-2. 検証が完了したら、自動ガバナンス アクションを実行するように設定できます。 たとえば、SharePoint および OneDrive では **[Put in user quarantine]** (ユーザー検疫に配置) 、G Suite および Box では **[パブリック アクセスの削除]** ができます。
+2. 検証が完了したら、自動ガバナンス アクションを実行するように設定できます。 たとえば、SharePoint および OneDrive では **[Put in user quarantine]** (ユーザー検疫に配置)、G Suite および Box では **[パブリック アクセスの削除]** ができます。
  
  ![自動ガバナンス アクション - パブリック アクセスの削除](./media/gov-action-public-access.png)
 
