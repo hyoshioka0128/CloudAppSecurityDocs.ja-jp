@@ -9,6 +9,7 @@
 ## [Cloud Discovery の展開](set-up-cloud-discovery.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
+### [カスタム ログ パーサーの使用](custom-log-parser.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box の接続](connect-box-to-microsoft-cloud-app-security.md)
