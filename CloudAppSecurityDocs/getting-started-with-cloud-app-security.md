@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8b429866b6a50becacf918aed8de24c741010621
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 220cce1ff4a7197a14f2076262f168a815471894
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security の展開
 Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
@@ -98,7 +99,7 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 ポリシーは、傾向を監視したり、セキュリティ上の脅威を確認したり、カスタマイズされたレポートやアラートを生成することに利用できます。 ポリシーを使用すると、ガバナンス アクションの作成や、データ損失防止およびファイル共有コントロールの設定ができます。
 
 
-### <a name="step-4-personalize-your-experiencegeneral-setupmdadallommailsettings"></a>手順 4. [エクスペリエンスの個人設定を行います](general-setup.md#Adallom_mailsettings)。
+### <a name="step-4-personalize-your-experiencegeneral-setupmdmailsettings"></a>手順 4. [エクスペリエンスの個人設定を行います](general-setup.md#mailsettings)。
 推奨されるタスク: 組織の詳細情報を追加する
 
 **電子メールの設定を入力するには**

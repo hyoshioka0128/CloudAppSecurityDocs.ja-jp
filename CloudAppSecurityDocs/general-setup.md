@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b55da41080d70a41382a94b9ff527d50046c61b2
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: f05a39b834178406a6b4b010cd7a1c6096f8c37f
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
 # <a name="customize-the-portal"></a>ポータルのカスタマイズ
 ここでは、Cloud App Security ポータルをカスタマイズする手順について説明します。
@@ -89,7 +90,7 @@ API コネクタを使用してアプリを接続するとき、Cloud App Securi
 
 詳細については、「[ユーザー グループ](user-groups.md)」を参照してください。
 
-##  <a name="Adallom_mailsettings"></a> エクスペリエンスの個人設定  
+##  <a name="mailsettings"></a> エクスペリエンスの個人設定  
 メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
   
 ![[メールの設定] メニュー](./media/mail-setting-menu.png "[メールの設定] メニュー")  
