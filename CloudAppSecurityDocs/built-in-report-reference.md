@@ -13,12 +13,17 @@ ms.technology:
 ms.assetid: 588b3639-f748-45a6-bc4b-a6ee47c1865e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4191a3c73344eb631a989ba6942b7ac6a515940f
-ms.sourcegitcommit: fd3b6c04cec30f7c9300cc02d29d562d17bf43ea
-translationtype: HT
+ms.openlocfilehash: d159cb95c9f0468e8c658c13586d07f0f20049ef
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
 # <a name="built-in-report-reference"></a>組み込みレポートの参照
-最初は、組み込みレポートを基礎的なテンプレートとして使用してカスタム レポートを作成することをお勧めします。 次の表は、監視に使用する組み込みレポートおよびイベントの種類のリストです。  
+
+CAS には、すぐに利用できる組み込みレポート機能がそろっており、洞察を描画し、ユーザーのクラウドの使用方法を監視できます。 必要に応じて、各レポートでフィルターを使用してレポートをカスタマイズし、エクスポートすることもできます。
+
+
+次の表は、監視に使用する組み込みレポートおよびイベントの種類のリストです。  
   
 ## <a name="built-in-report-list"></a>組み込みレポートのリスト  
   
