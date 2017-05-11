@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 5/4/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ab0164181826368c2dae7836e9b8189bb907f790
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: 19b1f69d61488fca523d09fa0fe752029ee0f8c2
+ms.sourcegitcommit: 34cd68651b5a1be9bc460d7175bc2711efa103b2
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
-# <a name="siem-integration--public-preview-"></a>SIEM の統合 -パブリック プレビュー- 
+# <a name="siem-integration"></a>SIEM の統合
     
 Cloud App Security と SIEM サーバーを統合し、アラートとアクティビティを一元的に監査できるようになりました。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
@@ -126,6 +127,9 @@ Cloud App Security ポータルの SIEM エージェントの状態が **[接続
 |**データ サーバー接続エラー**| TCP 経由で Syslog サーバーを使用している場合、このエラーが発生することがあります。 SIEM エージェントが Syslog サーバーに接続できません。  このエラーが発生した場合、エージェントはエラーが修正されるまで新しいアクティビティを取得しないため、エラーが表示されなくなるまで修正手順に従ってください。|1.Syslog サーバーが正しく定義されていることを確認する: Cloud App Security UI で、上記の説明のとおり、SIEM エージェントを編集し、サーバー名を正しく記述したことを確認して、正しいポートを設定します。 </br>2.Syslog サーバーへの接続を確認する: ファイアウォールで通信がブロックされていないことを確認します。|
 |**SIEM エージェント エラー**|SIEM エージェントの接続が X 時間以上切断されている|Cloud App Security ポータルで SIEM 構成を変更していないことを確認します。 変更していない場合、Cloud App Security と SIEM エージェントを実行しているコンピューターとの間で接続の問題が発生している可能性があります。|
 |**SIEM エージェント通知エラー**|SIEM エージェント通知エラーが SIEM エージェントから受信されました。|これは、SIEM エージェントと SIEM サーバー間の接続に関するエラーを受信したことを示します。 SIEM サーバーまたは SIEM エージェントを実行しているコンピューターでファイアウォールがブロックしていないことを確認します。 SIEM サーバーの IP アドレスが変更されていないことも確認してください。|
+
+> [!NOTE]
+> この機能はパブリック プレビュー段階です。
 
 ## <a name="see-also"></a>参照  
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   

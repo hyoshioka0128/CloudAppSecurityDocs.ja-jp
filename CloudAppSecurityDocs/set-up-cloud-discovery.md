@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/7/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9c86d2ce7b45a8de88ebba84ff8608b67117080
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: d12fa44f42c5545464c7e8ba9da366a2302f73c1
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 Cloud Discovery は、13,000 を超えるクラウド アプリの 50 以上の属性がランクおよびスコア付けされた Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
@@ -74,15 +75,19 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 4.  ログ ファイルが有効で、送信トラフィック情報を含む。
  
 ## <a name="supported-firewalls-and-proxies"></a>サポートされているファイアウォールとプロキシ
+
+- Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access ログ (W3C)
 - Check Point
 - Cisco ASA Firewall (Cisco ASA Firewall では情報レベルを 6 に設定する必要があります)
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL ログ
+- Clavister NGFW (Syslog)
 - Dell SonicWall
 - Fortinet Fortigate
 - Juniper SRX
+- Juniper SSG
 - McAfee Secure Web Gateway
 - Microsoft Forefront Threat Management Gateway (W3C)
 - Palo Alto Firewall シリーズ
@@ -95,24 +100,26 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Zscaler
 
 
-ログがサポートされていない場合は、**データ ソース**に **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは確認され、Cloud App Security のクラウド アナリスト チームによって要求したログの種類が追加されるかどうかが通知されます。 
+ログがサポートされていない場合は、**データ ソース**に **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは確認され、Cloud App Security のクラウド アナリスト チームによって要求したログの種類が追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
 
 データ属性 (ベンダーのドキュメントに従う)
 
 |[データ ソース]|ターゲット アプリの URL|ターゲット アプリの IP|Username|配信元 IP|総トラフィック|アップロードされたバイト数|
 |----|----|----|-----|----|----|----|
+|Barracuda|**はい**|**はい**|**はい**|**はい**|いいえ|いいえ|
 |Blue Coat|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Checkpoint|いいえ|**はい**|いいえ|**はい**|いいえ|いいえ|
 |Cisco ASA|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
 |Cisco FWSM|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
 |Cisco IronPort WSA|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-|Cisco ScanSafe|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
+|Cisco Meraki|**はい**|**はい**|いいえ|**はい**|いいえ|いいえ||Cisco Scansafe|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
+|Clavister NGFW (Syslog)|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Dell SonicWall|**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
 |Fortigate|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
-|Juniper SRX|いいえ|**はい**|いいえ|**はい**\*|**はい**|**はい**|
+|Juniper SRX|いいえ|**はい**|いいえ|**はい**\**|**はい**|**はい**|
+|Juniper SSG|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
 |McAfee SWG|**はい**|いいえ|いいえ|**はい**|**はい**|**はい**|
-|Meraki|**はい**|**はい**|いいえ|**はい**|いいえ|いいえ|
 |MS TMG|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Palo Alto Networks|**はい**|**はい**|**はい**|**はい**\*|**はい**|**はい**|
 |Sophos|**はい**|**はい**|**はい**|**はい**|**はい**|いいえ|

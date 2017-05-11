@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/23/2017
+ms.date: 5/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,34 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e84ccc43212975cc40318a5b67ea60015fbde75
-ms.sourcegitcommit: 06809e22a767723a77a52b910aa41eca9728228b
-translationtype: HT
+ms.openlocfilehash: 4d65fec131538981f36660d2b5ec668fa11be86e
+ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
 ---
 # <a name="release-notes"></a>リリース ノート
+
+
+## <a name="cloud-app-security-release-96"></a>Cloud App Security リリース 96
+リリース日: 2017 年 5 月 8 日
+
+新機能:
+-    セキュリティ閲覧者アクセス許可の段階的なロールアウトが継続されます。これにより、Cloud App Security コンソール内で管理者に付与するアクセス許可を管理できます。 既定で、Azure Active Directory と Office 365 の全体管理者とセキュリティ管理者はいずれも、ポータル内でフル アクセス許可を持っています。また、Azure Active Directory と Office 365 のセキュリティ閲覧者はいずれも、Cloud App Security 内で読み取り専用アクセス権を持ちます。 詳細については、「[Managing admin access](manage-admins.md)」 (管理アクセス許可の管理) を参照してください。
+-    CSV ベースのログ用のユーザー定義ログ パーサーについて、Cloud Discovery サポートのロールアウトを完了しました。 Cloud App Security に付属するツールを使用して、どの列がどのデータに対応するかを示すことで、以前はサポートされていなかったアプライアンス用のパーサーを構成できます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+機能強化:
+-    Cloud Discovery で Juniper SSG アプライアンスがサポートされるようになりました。
+-    Cloud Discovery の Cisco ASA ログのサポートが改善され、可視性が強化されました。
+-    Cloud App Security ポータル テーブルで一括処理をより簡単に実行し、複数のレコードを選択できるようになりました。ページの長さが長くなり、一括処理が改善されました。
+-    Salesforce データに対して、**[ドメイン別の送信共有]** および **[共有ファイルの所有者]** 組み込みレポートを実行できるようになりました。
+-    追加の Salesforce アクティビティのロールアウトを開始しており、アクティビティ データから抽出した興味深い情報を追跡できるようにしています。 たとえば、アカウント、潜在顧客、案件、さまざまな興味深い Salesforce オブジェクトの表示と編集が含まれます。
+-    Exchange 用に新しいアクティビティが追加され、ユーザーのメールボックスまたはメールボックス フォルダーに付与されたアクセス許可を監視できるようになりました。 たとえば、次のようなアクティビティです。
+    -    受信者のアクセス許可を追加する
+    -    受信者のアクセス許可を削除する
+    -    メールボックス フォルダーのアクセス許可を追加する
+    -    メールボックス フォルダーのアクセス許可を削除する
+    -    メールボックス フォルダーのアクセス許可を設定する
+
+    たとえば、他のユーザーのメールボックスに対して **SendAs** アクセス許可が付与されたユーザーを監視し、その結果としてそのユーザー名で電子メールを送信できるようになりました。
 
 
 ## <a name="cloud-app-security-release-95-in-roll-out"></a>Cloud App Security リリース 95 (展開中)
