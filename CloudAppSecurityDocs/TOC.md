@@ -3,7 +3,10 @@
 ## [リリース ノート](release-notes.md)
 # 展開
 ## [はじめに](getting-started-with-cloud-app-security.md)
-## [ポータルのカスタマイズ](general-setup.md)
+## [基本設定](general-setup.md)
+### [管理者の管理](manage-admins.md)
+#### [管理者の設定](admin-settings.md)
+### [メールの設定](mail-settings.md)
 ### [ユーザー グループ](user-groups.md)
 ### [IP タグと IP 範囲](ip-tags.md)
 ## [Cloud Discovery の展開](set-up-cloud-discovery.md)
@@ -51,3 +54,4 @@
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
+## [SIEM 統合のトラブルシューティング](troubleshooting-siem.md)
