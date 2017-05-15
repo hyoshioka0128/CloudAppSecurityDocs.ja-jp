@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/7/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,10 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: acae7c7da7e9f800ff95a89ab422143bb84b699c
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.openlocfilehash: dc103be5e26752cdfa7dd605ba45f4a7c347b032
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="discover"></a>[探索]
 
@@ -73,7 +74,7 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
   
 5.  含めるデータ ソースを選択します (全部または一部)。  
   
-6.  データに適用するフィルターを設定します。[**組織単位**]、[**IP アドレス タグ**]、[**IP アドレスの範囲**] があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](general-setup.md#IPtagsandRanges)」を参照してください。  
+6.  データに適用するフィルターを設定します。[**組織単位**]、[**IP アドレス タグ**]、[**IP アドレスの範囲**] があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
   
     ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png) 
 
