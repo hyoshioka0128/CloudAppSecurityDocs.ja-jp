@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/30/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 948e5d12e66f70a9bef6a4a48ac75ce01ae63a99
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: 049ff6838e03e8d6d2fca49b4dd32c60a1a9db93
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="activities"></a>アクティビティ
 Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
@@ -73,8 +75,8 @@ Cloud App Security は、接続しているアプリのすべてのアクティ�
   
 -   IP アドレス - アクティビティの実行元の生 IP アドレス、カテゴリー、またはタグ。  
     - 生 IP アドレス - 特定のシーケンスに等しい/等しくない、または特定のシーケンスで始まる/始まらない生 IP アドレス上、もしくはその IP アドレスにより実行されたアクティビティを検索することができます。また、生 IP アドレスが設定されているかいないかも指定できます。 
-    - IP カテゴリ - アクティビティの実行元の IP アドレスのカテゴリ。管理者の IP アドレス範囲から実行されたすべてのアクティビティなどを指定できます。 カテゴリは、関連する IP アドレスを含むように構成する必要があります。ただし、構成済みで、匿名プロキシおよび Tor の 2 つの IP タグを含む "危険" カテゴリは除きます。 IP カテゴリの構成方法については、「[ニーズに応じたデータの管理](general-setup.md#IPtagsandRanges)」を参照してください。  
-    - IP タグ - 匿名のプロキシ IP アドレスから実行されたすべてのアクティビティなどの、アクティビティの実行元の IP アドレスのタグ。 Cloud App Security は、構成できない一連の組み込み IP タグを作成します。 さらに、ユーザーが独自の IP タグを構成することができます。 独自の IP タグの構成の詳細については、「[ニーズに応じたデータの管理](general-setup.md#IPtagsandRanges)」を参照してください。
+    - IP カテゴリ - アクティビティの実行元の IP アドレスのカテゴリ。管理者の IP アドレス範囲から実行されたすべてのアクティビティなどを指定できます。 カテゴリは、関連する IP アドレスを含むように構成する必要があります。ただし、構成済みで、匿名プロキシおよび Tor の 2 つの IP タグを含む "危険" カテゴリは除きます。 IP カテゴリの構成方法については、「[ニーズに応じたデータの管理](ip-tags.md)」を参照してください。  
+    - IP タグ - 匿名のプロキシ IP アドレスから実行されたすべてのアクティビティなどの、アクティビティの実行元の IP アドレスのタグ。 Cloud App Security は、構成できない一連の組み込み IP タグを作成します。 さらに、ユーザーが独自の IP タグを構成することができます。 独自の IP タグの構成の詳細については、「[ニーズに応じたデータの管理](ip-tags.md)」を参照してください。
    組み込み IP タグには次のようなものがあります。
     - Microsoft アプリ (このうち 14 個)
     - 匿名プロキシ
