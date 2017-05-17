@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,21 @@ ms.technology:
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5dfdcb0d420434a66b73098d546e4de4a36f60e
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 3be2a96cb9fe792917ce388ca52df9c03428f9fa
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Microsoft Office 365 アカウントに接続する手順について説明します。  
   
-  
+Cloud App Security は、従来の Office 365 専用プラットフォームと最新の Office 365 サービス (Office 365 の vNext リリース製品群と呼ばれています) に対応しています。  Cloud App Security は従来の Microsoft Business Productivity Online Standard Suite に対応していません。 
+
+> [!NOTE]
+> vNext サービス リリースは管理レベルで標準的な Office 365 サービスと多少異なる場合があります。
+
+ 
 
 ## <a name="how-to-connect-office-365-to-cloud-app-security"></a>Office 365 を Cloud App Security に接続する方法  
   
