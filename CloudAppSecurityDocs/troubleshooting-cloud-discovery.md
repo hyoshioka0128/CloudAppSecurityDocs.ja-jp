@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/23/2017
+ms.date: 5/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1cd697631f776c55fbedcec9a0ed34a3b68d8ac0
-ms.sourcegitcommit: 355226ee21981563066d637e7db0bff0d53c2da6
-translationtype: HT
+ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 ## <a name="log-parsing-errors"></a>ログ解析エラー
 
-ガバナンス ログを使用して Cloud Discovery ログの処理を追跡できます。 このガイドでは、表示される可能性がある各エラーに対する解決方法について説明します。
+ガバナンス ログを使用して Cloud Discovery ログの処理を追跡できます。 この記事では、表示される可能性がある各エラーに対する解決方法について説明します。
 
 ### <a name="governance-log-errors"></a>ガバナンス ログ エラー
 |エラー|説明|解決方法|
@@ -30,7 +32,7 @@ translationtype: HT
 |ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しません。|1.ログが破損していないことを確認します。 <br /> 2.ログと、アップロード ページに表示されるサンプル形式とを比較し、照合します。|
 |Transactions are more than 90 days old (トランザクションは 90 日より前のものです)|すべてのトランザクションは 90 日よりも前のものなので、無視されます。|最近のイベントが含まれる新しいログをエクスポートし、アップロードし直します。|
 |No transactions to cataloged cloud apps (カタログ化されたクラウド アプリに対するトランザクションがありません)|認識されているクラウド アプリに対するトランザクションがログに見つかりません。|ログに送信トラフィック情報が含まれていることを確認します。|
-|サポートされていないログの種類|**[データ ソース] = [その他 (サポートされていません)]** の場合、ログは解析されません。 代わりに、Cloud App Security テクニカル チームに送信され、レビューされます。|Cloud App Security テクニカル チームは、データ ソースごとに専用のパーサーを構築しています。 よく使用されているデータ ソースは、[既にサポートされています](set-up-cloud-discovery.md)。 サポートされないデータ ソースの各アップロードはレビューされ、新しいデータ ソース パーサーのパイプラインに追加されます。 新しいパーサーの通知は、Cloud App Security リリース ノートの一部として公開されます。|
+|サポートされていないログの種類|**[データ ソース] = [その他 (サポートされていません)]** の場合、ログは解析されません。 代わりに、Cloud App Security テクニカル チームに送信され、レビューされます。|Cloud App Security テクニカル チームは、データ ソースごとに専用のパーサーを構築しています。 よく使用されているデータ ソースは、[既にサポートされています](set-up-cloud-discovery.md)。 サポートされないデータ ソースの各アップロードはレビューされ、新しいデータ ソース パーサーのパイプラインに追加されます。 新しいパーサーの通知は、Cloud App Security [リリース ノート](release-notes.md)の一部として公開されます。|
 ## <a name="log-collector-errors"></a>ログ コレクターのエラー
 
 |問題|解決方法|

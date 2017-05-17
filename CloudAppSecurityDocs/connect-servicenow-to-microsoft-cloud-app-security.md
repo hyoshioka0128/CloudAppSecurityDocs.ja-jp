@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/25/2017
+ms.date: 5/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e21e146ffc5043b6e5a6861422818328c3a0857
-ms.sourcegitcommit: 847f0425de7686b1b4a2b242930a0069e793436a
-translationtype: HT
+ms.openlocfilehash: 18ae1b7bfd740303470504f3abd4021c8aa1deb9
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -62,7 +64,7 @@ translationtype: HT
   
      ![ServiceNow を接続する](./media/connect-servicenow.png "ServiceNow を接続する")  
   
-8.  ポップアップの該当するボックスに ServiceNow のユーザー名、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。  
+8.  ポップアップの該当するボックスに ServiceNow のユーザー ID、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。  
   
 9.  **[接続]**をクリックします。  
   
@@ -92,7 +94,7 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
 
     ![ServiceNow を接続する](./media/connect-servicenow.png "ServiceNow を接続する")   
 
-6.  ServiceNow の設定ページの [API] タブで、該当するボックスに ServiceNow ユーザー名、パスワード、およびインスタンス URL を追加します。   
+6.  ServiceNow の設定ページの [API] タブで、該当するボックスに ServiceNow ユーザー ID、パスワード、およびインスタンス URL を追加します。   
 
 7.  **[接続]**をクリックします。   
 

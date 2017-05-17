@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 57927618-cb66-4c7f-afd7-c96926460816
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cae50c83705d91513525c9b90e462e44e07b97ed
-ms.sourcegitcommit: 7e9ae94cb4f90fbccaa84f19bdebb4652a425e45
-translationtype: HT
+ms.openlocfilehash: a74df6095107943630e8bc39c0c702471325adfc
+ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/10/2017
 ---
 # <a name="controlling-and-protecting-your-files"></a>ファイルの制御と保護  
 
@@ -136,6 +138,10 @@ Cloud App Security に、少なくとも 1 つのクラウド アプリを[接�
 2. 検証が完了したら、自動ガバナンス アクションを実行するように設定できます。 たとえば、SharePoint および OneDrive では **[Put in user quarantine]** (ユーザー検疫に配置)、G Suite および Box では **[パブリック アクセスの削除]** ができます。
  
  ![自動ガバナンス アクション - パブリック アクセスの削除](./media/gov-action-public-access.png)
+
+
+Cloud App Security と Azure Information Protection の連動に関する詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」を参照してください。
+
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
