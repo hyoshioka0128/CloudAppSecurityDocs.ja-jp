@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2017
+ms.date: 5/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5880ea404d6830c5d8f12534c04f123d8c517946
-ms.sourcegitcommit: ea8207f412f31127beafd18a0bd028052fbadf90
+ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
+ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2017
+ms.lasthandoff: 05/15/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -25,12 +25,38 @@ Cloud App Security と SIEM サーバーを統合し、アラートとアクテ�
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 また、この機能を長期間無効にしてから再び有効にすると、過去 2 日間分とそれ以降のすべてのアラートとアクティビティが転送されます。
 
+## <a name="siem-integration-architecture"></a>SIEM 統合アーキテクチャ
+
+SIEM エージェントは組織のネットワークに展開されます。 展開と構成が行われると、Cloud App Security RESTful API を使用して構成を行ったデータの種類 (アラートとアクティビティ) がポーリングされます。
+ポーリングされるトラフィックはポート 443 の暗号化された HTTPS チャネルを通じて送信されます。
+
+SIEM エージェントは Cloud App Security からデータを取得すると、セットアップ中に指定したネットワーク構成 (TCP または UDP とカスタム ポート) を使用してローカル SIEM に Syslog メッセージを送信します。 
+
+![SIEM 統合アーキテクチャ](./media/siem-architecture.png)
+
+## <a name="sample-siem-logs"></a>SIEM ログのサンプル
+
+Cloud App Security から SIEM に提供されるログは CEF 形式の Syslog です。 次のサンプル ログでは、Cloud App Security によって通常 SIEM サーバーに送信されるイベントの種類を確認できます。 このサンプルでは、アラートがトリガーされた日時、**イベントの種類**、違反した**ポリシー**、イベントをトリガーした**ユーザー**、ユーザーが違反時に使用していた**アプリ**、アラートの送信元 **URL** などが確認できます。
+
+アクティビティ ログのサンプル: 
+  
+2017-05-12T13:15:32.131Z CEF:0|MCAS|SIEM_Agent|0.97.33|EVENT_CATEGORY_UPLOAD_FILE|**Upload file**|0|externalId=AVv8zNojeXPEqTlM-j6M start=1494594932131 end=1494594932131 msg=**Upload file: passwords.txt** **suser=admin@contoso.com** destination**ServiceName=Jive Software** dvc= requestClientApplication= cs1Label=**portalURL cs1=https://contoso.cloudappsecurity.com**/#/audits?activity.id\=eq(AVv8zNojeXPEqTlM-j6M,) cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=targetObjects cs3=test.txt c6a1Label="Device IPv6 Address" c6a1=
+
+
+
+アラート ログのサンプル: 
+
+2017-05-12T13:25:57.640Z CEF:0|MCAS|SIEM_Agent|0.97.33|ALERT_CABINET_EVENT_MATCH_AUDIT|asddsddas|3|externalId=5915b7e50d5d72daaf394da9 start=1494595557640 end=1494595557640 msg=**Activity policy 'log ins to Jive'** was triggered by 'admin@contoso.com' **suser=admin@contoso.com** destination**ServiceName=Jive Software** cn1Label=riskScore cn1= cs1Label=portal**URL cs1=https://contoso.cloudappsecurity.com**/#/alerts/5915b7e50d5d72daaf394da9 cs2Label=uniqueServiceAppIds cs2=APPID_JIVE cs3Label=relatedAudits cs3=AVv81ljWeXPEqTlM-j-j
+
+
+## <a name="how-to-integrate"></a>統合方法
+
 SIEM との統合は次の 3 つの手順で行われます。
 1. Cloud App Security ポータルでセットアップします。 
 2. JAR ファイルをダウンロードし、サーバーで実行します。
 3. SIEM エージェントが動作しているか検証します。
 
-## <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>前提条件
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
 - サーバーでは Java 8 を実行する必要があります。これより前のバージョンはサポートされていません。
