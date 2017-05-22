@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/20/2017
+ms.date: 5/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 053ca16b0bff19d4c8bdd75350ed9b0bed4ce3d8
-ms.sourcegitcommit: 3e0f91099a30e014badbf9e3cfb99b65337f239d
-translationtype: HT
+ms.openlocfilehash: a5f360181eb9a39bfe50660cfd733ecb51aa161d
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ファイルのログ コレクターへの FTP 転送が完了した後で Cloud App Security にアップロードされ、Syslog については、ログ コレクターは 20 分ごとに受信したログをディスクに書き込んでから、Cloud App Security にファイルをアップロードします。
@@ -32,8 +34,8 @@ translationtype: HT
 - CPU: 2
 - RAM: 4 GB 
 - ファイアウォールの設定: 
-- ログ コレクターが着信 FTP および Syslog トラフィックを受信できる
-- ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる
+    - ログ コレクターが着信 FTP および Syslog トラフィックを受信できる
+    - ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる
 
   
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
