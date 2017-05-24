@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ad09d594b73ecd24066db10a19caf39580ad040e
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: 292b4c6408aa526184aefb57ee594b72b3262ce7
+ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 05/16/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -73,7 +73,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 
    ![SIEM の全般設定](./media/siem1.png)
 
-5. **リモートの Syslog ホスト**の IP アドレスと **Syslog ポート番号**を入力します。 リモートの Syslog プロトコルとして TCP または UDP を選択します。
+5. **リモートの Syslog ホスト**の IP アドレスまたはホスト名と **Syslog ポート番号**を入力します。 リモートの Syslog プロトコルとして TCP または UDP を選択します。
 これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。
 **[次へ]**をクリックします。
   ![リモートの Syslog 設定](./media/siem2.png)
