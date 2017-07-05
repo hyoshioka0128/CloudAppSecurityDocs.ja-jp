@@ -14,8 +14,10 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 62463e7336c58eefb3c82bc0e24261ba31684d5c
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
 Cloud App Security を起動して実行したら、データ ストリーム構成し、ユーザーにアプリの使用を許可し、クラウド環境を監視するポリシーを設定する必要があります。 これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。  
