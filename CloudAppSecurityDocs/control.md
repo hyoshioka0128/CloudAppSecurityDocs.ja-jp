@@ -14,8 +14,10 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: b22b51e5d41f525240c0430c31760177bf62ca1f
-ms.sourcegitcommit: cda4a69f9ad9c6eb66fbdb98610f54d79585b84b
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  

@@ -14,10 +14,10 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 79e784c332045ebe300a34f5c6da918343a0df45
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -94,17 +94,17 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 **ポリシー #1 - Box で外部共有されている機密データ:**
 
-1.    ファイル ポリシーを作成します。
-2.    ポリシーの名前、重要度、カテゴリを設定します。
-3.    Box で外部共有されている機密データをすべて検索する、以下のフィルターを追加します。
+1.  ファイル ポリシーを作成します。
+2.  ポリシーの名前、重要度、カテゴリを設定します。
+3.  Box で外部共有されている機密データをすべて検索する、以下のフィルターを追加します。
 
 ![機密性ポリシー](./media/azip-confidentiality-policy.png) 
 
 **ポリシー #2 - SharePoint の Finance フォルダー以外にある最近変更された制限付きのデータ:**
 
-1.    ファイル ポリシーを作成します。
-2.    ポリシーの名前、重要度、カテゴリを設定します。
-3.    最近変更された制限付きデータをすべて検索する以下のフィルターを追加して、フォルダー選択オプションで Finance フォルダーを除外します。 
+1.  ファイル ポリシーを作成します。
+2.  ポリシーの名前、重要度、カテゴリを設定します。
+3.  最近変更された制限付きデータをすべて検索する以下のフィルターを追加して、フォルダー選択オプションで Finance フォルダーを除外します。 
  
 ![制限付きデータのポリシー](./media/azip-restricted-data-policy.png) 
 
@@ -130,7 +130,7 @@ Cloud App Security がお使いの Office 365 サービスに接続されると�
 ![保護テンプレート](./media/protect-template.png)
 3. テンプレートを選択して [保護] をクリックすると、Cloud App Security によってテンプレートが適用され、元のファイルを保護します。 保護されたファイルは、元のファイルと同じ名前になりますが、ファイル拡張子が新しく ".pfile" となります。
 > [!NOTE]
->     ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS テンプレートを適用することをお勧めします。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
+>   ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS テンプレートを適用することをお勧めします。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
 
 4. 保護されたファイルにユーザーがアクセスする場合、RMS 共有アプリがユーザーのデバイスにインストールされている必要があります。 詳細については、「[Microsoft Rights Management 共有アプリケーションの技術的概要と保護の詳細](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)」を参照してください。
 

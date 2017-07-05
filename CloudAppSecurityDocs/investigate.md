@@ -14,8 +14,10 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 8e552aea95318288d329597ec2a0749535e06a52
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="investigate"></a>調査
 クラウド環境で Cloud App Security を実行したら、次に Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。
