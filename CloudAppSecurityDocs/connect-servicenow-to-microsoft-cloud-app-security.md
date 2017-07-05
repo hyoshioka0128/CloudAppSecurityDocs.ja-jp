@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2b6658e14438e3504fde61605505abae8d65839
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: a70e561150ef8d00a3815eb4332868f4c1fbeece
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/16/2017
   
 8.  ポップアップの該当するボックスに ServiceNow のユーザー ID、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。 ServiceNow のユーザー ID を見つけるには、ServiceNow ポータルに移動します。**[ユーザー]** テーブルの自分の名前がユーザー ID の横に表示されています。
 
-![ServiceNow ユーザー ID](./media/servicenow-userid.png)
+    ![ServiceNow ユーザー ID](./media/servicenow-userid.png)
   
 9.  **[接続]**をクリックします。  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2017
+ms.date: 6/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d8ff332a58da395a8284dfd3416e54624b739ef
-ms.sourcegitcommit: f1ac8ccd470229078aaf1b58234a9a2095fa9550
+ms.openlocfilehash: c356900333b41a0aeecd8a19eea1b85305f45ba6
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2017
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="file-policies"></a>ファイル ポリシー  
 ファイル ポリシーでは、クラウド プロバイダーの API を利用して、さまざまな自動プロセスを適用できます。 ポリシーを設定することにより、継続的なコンプライアンスのスキャン、法的な電子情報開示タスク、一般公開された機密コンテンツの DLP、その他多数のユース ケースを実現できます。  
@@ -79,7 +79,7 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 7.  [**コンテンツ検査方法**] を選択します。 組み込み DLP では、ファイルを内容によってフィルタリングできます。 ファイルの内容をスキャンする場合は、次に [**組み込み DLP**] を選択します。 コンテンツ検査を有効にしたら、事前設定されている式を使用するか、他のカスタマイズされた式 (部分文字列または独自の[正規表現](working-with-the-regex-engine.md)) を検索できます。  
     また、正規表現を指定して、結果からファイルを除外することもできます。 これは、内部分類キーワード標準をポリシーから除外する場合に非常に便利です。  
     ファイルが違反と見なされる前に、一致する必要のあるコンテンツ違反の最小数を設定できます。 たとえば、最低 10 個のクレジット カード番号が検出されたファイルについてアラートを受け取る場合は、10 を選択します。  
-    選択された式とコンテンツが一致すると、違反テキストが "X" 文字に置き換えられます。 既定では、違反は完全にマスクされており、コンテキストの違反の前後の 40 文字が示されています。 式のコンテキスト内の数字は "#" 文字に置き換えられ、Cloud App Security 内に保存されることはありません。 [**Unmask the last 4 characters of a violation** ]\(違反の最後の 4 文字のマスクを解除する) オプションを選択すると、違反自体の最後の 4 文字のマスクを解除することができます。
+    選択された式とコンテンツが一致すると、違反テキストが "X" 文字に置き換えられます。 既定では、違反は完全にマスクされており、コンテキストの違反の前後の 40 文字が示されています。 式のコンテキスト内の数字は "#" 文字に置き換えられ、Cloud App Security 内に保存されることはありません。 [**Unmask the last 4 characters of a violation **]\(違反の最後の 4 文字のマスクを解除する) オプションを選択すると、違反自体の最後の 4 文字のマスクを解除することができます。
   
 8.  Cloud App Security で一致が検出された場合に実行する [**ガバナンス**] アクションを選択します。  
   

@@ -14,9 +14,10 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: 73da4104de24a7b2e6814f04b227140b0b57235f
-ms.sourcegitcommit: 945cb3c047ae1bfc05be20cc7798c43005b27c9b
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成し、Cloud App Security で明示的にサポートされていないファイアウォールやデバイスからでも、Cloud Discovery で使用することができます。 
@@ -26,7 +27,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 
  
 カスタム CSV パーサーを構成するには:
-1.    Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
+1.  Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
   
     ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      

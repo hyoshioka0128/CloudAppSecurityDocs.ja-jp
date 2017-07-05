@@ -14,8 +14,10 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.openlocfilehash: d6c1851b1903159d40c0daa256fbb28bdb1268bd
-ms.sourcegitcommit: 1a01ac2d5b4ff92e46e1bc4fd4318330f6ff41dd
-translationtype: HT
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="anomaly-detection-policy"></a>異常検出ポリシー
 この記事は、ポリシーに関する参照の詳細です。各ポリシーの種類、およびポリシーごとに設定できるフィールドについて詳しく説明します。  
@@ -64,7 +66,7 @@ Cloud App Security には、7 日間の初回学習期間があります。こ�
   
     -   [**適用先**] を [**選択されたアクティビティ**] に変更します。  
   
-    -   [**アクティビティ フィルター**] で、[**適用先**] を [**選択されたアクティビティ**] に設定して、 [**Activities matching all of the following (以下のすべてに一致するアクティビティ)** ] で [**管理者アクティビティ**] を [**True**] に設定します。  
+    -   [**アクティビティ フィルター**] で、[**適用先**] を [**選択されたアクティビティ**] に設定して、 [**Activities matching all of the following (以下のすべてに一致するアクティビティ) **] で [**管理者アクティビティ**] を [**True**] に設定します。  
   
     -   **+** アイコンをクリックして、[**IP tag does not equal (IP タグが等しくない)**] を選択してから先ほどの Office IP タグを選択します。  
   
