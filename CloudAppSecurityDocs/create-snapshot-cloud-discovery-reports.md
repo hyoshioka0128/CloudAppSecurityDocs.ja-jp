@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b694b6f117b0c5249520a43154675cdac70361b4
-ms.sourcegitcommit: cb8238610222953751ff714b346a0b4cf73ac40c
+ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
@@ -41,6 +41,11 @@ ms.lasthandoff: 05/16/2017
 5. ダウンロードできるサンプルに従ってログが正しく書式設定されているかどうかを確認します。 「**View and verify**」 (表示して確認) をクリックし、「**Download sample log**」 (サンプル ログのダウンロード) をクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 
  ![ログの書式を確認する](./media/cloud-discovery-snapshot-verify.png)  
+
+  > [!NOTE]
+  > FTP サンプル形式はスナップショットと自動アップロードでサポートされています。一方、syslog は自動アップロードでのみサポートされています。<br></br>
+サンプル ログのダウンロードを実行すると、サンプル FTP ログがダウンロードされます。
+
 
 5.  アップロードする**トラフィック ログを選択**します。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   

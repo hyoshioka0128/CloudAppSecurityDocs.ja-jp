@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 5/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 49c2c444b0ae378584f3ddbccccf7c8b34bb50d3
-ms.sourcegitcommit: 26ae7b0e1ee0ec3b2c7464a6424d4ebd1cd436ac
+ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 06/28/2017
 ---
 ##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
 メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
@@ -33,6 +33,9 @@ ms.lasthandoff: 05/10/2017
      **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
      ![[メールの設定] の構成](./media/mail-settings-config.png "[メールの設定] の構成")  
+
+  >[!NOTE]
+  >**[送信元メール アドレス]** フィールドを独自のドメインに変更する方法については、[こちら](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)の指示を参照してください。
   
 2.  [**メールのデザイン**] では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
   

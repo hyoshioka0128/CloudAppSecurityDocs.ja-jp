@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29a52d474fdc09052506e88c8b871e611c3a5b27
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
+ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/04/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -30,8 +32,8 @@ translationtype: HT
   
      ![google1](./media/google1.png "google1")  
   
-3.  **[新しいプロジェクト]** 画面で、プロジェクトに</br>「
-    **Cloud App Security for Google**」という名前を付け、**[作成]** をクリックします。  
+3.  **[新しいプロジェクト]** 画面で、プロジェクトに</br>
+    **Microsoft Cloud App Security** という名前を付け、**[作成]** をクリックします。  
            ![google2](./media/google2.png "google2")  
   
 4.  プロジェクトが作成されたら、ツール バーで、Google Cloud Platform の隣にあるプロジェクトを選択し、**[API]** で **[Go to APIs overview (API 概要に進む)]** をクリックします。  
@@ -63,7 +65,7 @@ translationtype: HT
   
 8.  **[資格情報]** をクリックします。**[OAuth consent (OAuth の承認)]** 画面が表示されます。  
   
-    -   [**Product name shown to users (製品名をユーザーに表示する)**] で、「**Cloud App Security for Google**」と入力します。  
+    -   [**Product name shown to users**]\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
   
     -   その他のすべてのフィールドは省略できます。  
   
@@ -79,22 +81,18 @@ translationtype: HT
 
      ![Google サービス アカウント キー](./media/google8.png "google8")  
   
-11. **[Create service account key (サービス アカウント キー)]** で **[新しいサービス アカウント]** を選択し、名前を入力します。たとえば、「**Service account 1**」とします。**[ロール]** で **[プロジェクト]**、**[エディター]** の順に選択し、**[キーの種類]** で **[P12]** を選択し、**[作成]** をクリックします。  
+11. **[Create service account key (サービス アカウント キー)]** で **[新しいサービス アカウント]** を選択し、名前を入力します。たとえば、「**Service account 1**」とします。**[ロール]** で **[プロジェクト]**、**[エディター]** の順に選択し、**[キーの種類]** で **[P12]** を選択し、**[作成]** をクリックします。 **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
   
      ![Google のサービス アカウント キーの作成](./media/google9.png "google9")  
   
-12.  P12 証明書ファイルがコンピューターに保存されます。 ポップアップが表示され、**秘密鍵のパスワード**が提示されます。後で使用するので必ず保存してください。  
+12.  P12 証明書ファイルがコンピューターに保存されます。  
         
-12. [**資格情報**] 画面で、 一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
+12. [**資格情報**] 画面で、一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
        ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite credentials service account")  
   
 13. 作成したサービス アカウントの右側にある 3 つの点をクリックし、[**編集**] を選択します。  
   
      ![Google 編集](./media/google11.png "google edit")  
-  
-14. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
-  
-     ![Google のドメイン全体](./media/google12.png "google domain wide")  
   
 15. サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。  
   
@@ -107,7 +105,7 @@ translationtype: HT
 
 18. 次の項目に入力します。
 
-    -   **アプリケーション名**: Cloud App Security for Google。  
+    -   **アプリケーション名**: Microsoft Cloud App Security。  
   
     -   **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
@@ -116,18 +114,16 @@ translationtype: HT
     -   **[Drive Integration (ドライブ統合)]** の **[URL を開く]** に次を入力します。  
   
          https://portal.cloudappsecurity.com/#/services/11770?tab=files  
-  
-    -   [**変更を保存**] をクリックします。  
-  
+     
          ![Google のドライブ構成](./media/google15.png "googledriveconfig")  
   
 19. **[Enabled APIs (有効にされた API)]** 一覧で、**[Google Apps Marketplace SDK]** の横にある設定用の歯車アイコンをクリックします。 
          ![Google Marketplace SDK 構成](./media/google16.png "googledriveconfig")  
-20. **[構成]** タブを選択します。  
+20. **[構成]** タブを選択します。 
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
   
-    -   **[アプリケーション名]** は「**Cloud App Security for Google**」になっているはずです。
+    -   **[アプリケーション名]** は **Microsoft Cloud App Security** になります。
   
          [**アプリケーションの説明**] フィールドに、「Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況が把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます」と入力します。  
   

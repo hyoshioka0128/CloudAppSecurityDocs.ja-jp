@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/10/2017
+ms.date: 7/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 35d965d753dae9013a42f89ded8a87c461baa330
-ms.sourcegitcommit: 50fac1cec86dfb8170ba9c63a8f58a4bf24e3c5b
+ms.openlocfilehash: 820c0964123b4501207cd9b56c8055dca5480868
+ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2017
+ms.lasthandoff: 07/03/2017
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 ## <a name="log-parsing-errors"></a>ログ解析エラー
@@ -33,6 +33,7 @@ ms.lasthandoff: 05/10/2017
 |Transactions are more than 90 days old (トランザクションは 90 日より前のものです)|すべてのトランザクションは 90 日よりも前のものなので、無視されます。|最近のイベントが含まれる新しいログをエクスポートし、アップロードし直します。|
 |No transactions to cataloged cloud apps (カタログ化されたクラウド アプリに対するトランザクションがありません)|認識されているクラウド アプリに対するトランザクションがログに見つかりません。|ログに送信トラフィック情報が含まれていることを確認します。|
 |サポートされていないログの種類|**[データ ソース] = [その他 (サポートされていません)]** の場合、ログは解析されません。 代わりに、Cloud App Security テクニカル チームに送信され、レビューされます。|Cloud App Security テクニカル チームは、データ ソースごとに専用のパーサーを構築しています。 よく使用されているデータ ソースは、[既にサポートされています](set-up-cloud-discovery.md)。 サポートされないデータ ソースの各アップロードはレビューされ、新しいデータ ソース パーサーのパイプラインに追加されます。 新しいパーサーの通知は、Cloud App Security [リリース ノート](release-notes.md)の一部として公開されます。|
+
 ## <a name="log-collector-errors"></a>ログ コレクターのエラー
 
 |問題|解決方法|
@@ -40,6 +41,16 @@ ms.lasthandoff: 05/10/2017
 |FTP でログ コレクターに接続できません|1.SSH の資格情報ではなく、FTP の資格情報を使用していることを確認します。 <br />2.使用している FTP クライアントが SFTP に設定されていないことを確認します。|
 |コレクター構成を更新できませんでした|1.最新のアクセス トークンを入力したことを確認します。 <br />2.ファイアウォールで、ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。|
 |コレクターに送信されたログがポータルに表示されません|1.ガバナンス ログに失敗した解析タスクがあるかどうかを確認します。  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2.ない場合は、ポータルでデータ ソースとログ コレクターの構成を確認します。 <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3.オンプレミス ログ コレクター コンピューターのローカル構成を確認します。  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4. ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。|
+|ログ コレクターの状態: 作成済み|ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
+|ログ コレクターの状態: 切断|リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。|アプライアンスのログ エクスポート設定をチェックし、正しく設定されていることを確認します。|
+
+
+
+## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー
+
+|問題|解決方法|
+|----|----|
+|Discovery データのアップロードと解析は成功しましたが、Cloud Discovery ダッシュボードの表示が空です|ダッシュボードは、ログに含まれていないデータでフィルターされているため、表示されるデータがない状態の可能性があります。 Cloud Discovery ダッシュボードのフィルターを変更して、別の種類のデータが結果に表示されるようにします。|
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   

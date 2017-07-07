@@ -13,6 +13,7 @@
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
+### [Cloud Discovery を強化する](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Box の接続](connect-box-to-microsoft-cloud-app-security.md)
@@ -25,7 +26,10 @@
 ### [Salesforce の接続](connect-salesforce-to-microsoft-cloud-app-security.md)
 # vmmblue_2
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
-## [検出](working-with-cloud-discovery-data.md)
+## シナリオ
+### [ランサムウェアから組織を保護する](use-case-ransomware.md)
+## [探索]
+### [検出されたアプリの処理](discovered-apps.md)
 ### [リスク スコアの操作](risk-score.md)
 ## [調査](investigate.md)
 ### [アクティビティ](activity-filters.md)
@@ -47,9 +51,11 @@
 #### [ポリシー テンプレート リファレンス](policy-template-reference.md)
 ### [接続されているアプリの管理](governance-actions.md)
 ### [検出されたアプリの管理](governance-discovery.md)
-## 統合
+## セキュリティ拡張機能を使用して統合する
 ### [Azure Information Protection の統合](azip-integration.md)
 ### [SIEM の統合](siem.md)
+### [外部 DLP 統合](icap-stunnel.md)
+### [API トークン](api-tokens.md)
 # トラブルシューティング
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
