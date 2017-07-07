@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/29/2017
+ms.date: 6/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3c8c8917606f3c34055eef0334f010d8aab7998
-ms.sourcegitcommit: 661f4ce41262e8462c90fd2a4f1232e2154d5113
-translationtype: HT
+ms.openlocfilehash: a80fec6fe57d643655df2e57ef980b6395d4dcfc
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 #  <a name="IPtagsandRanges"></a> IP の範囲とタグを使用する
 
@@ -29,7 +31,7 @@ IPv4 と IPv6 がサポートされています。
 - 古いオペレーティング システム
 - 管理対象デバイス
 - 匿名プロキシ
-- ボットネット
+- ボットネット (あるアクティビティがボットネットで実行された場合、リンクが届き、そのリンクからボットネットの詳細を確認できます)
 - Tor
 - 対応デバイス
 - 確認済みデバイス
@@ -37,7 +39,7 @@ IPv4 と IPv6 がサポートされています。
 
 検索の一部として上記の組み込みタグを使用するには、Cloud App Security API ドキュメントでその ID を参照してください。 
 
-
+組み込みの IP アドレス タグとカスタム IP タグの階層が考慮され、カスタム IP タグが組み込みの IP タグよりも優先されます。 たとえば、脅威インテリジェンスに基づいてある IP アドレスに **[危険]** のタグが付いているが、**[企業]** と識別されているカスタム IP タグがある場合、カスタム カテゴリおよびタグが優先されます。
 
 メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[IP アドレス範囲]** を選択します。 [**+ IP アドレス範囲の追加**] をクリックし、次の項目を設定します。  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 6/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e4363db83a65fbb656a844086cc08fab8cdecbd
-ms.sourcegitcommit: 0d4748ea2a71e6ee2b0fa1c0498d9219bfbda29a
-translationtype: HT
+ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
@@ -44,10 +46,14 @@ translationtype: HT
   
          ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")  
   
-    -   **[API の有効化]** チェックボックスがオンになっていることを確認します。 オフになっている場合は、Salesforce に連絡してアカウントに追加する必要があります。  
-  
-         ![Salesforce の [API Enabled] (API 有効)](./media/salesforce-api-enabled.png "Salesforce の [API Enabled] (API 有効)")  
-  
+    -   次のチェックボックスをオンにします。   
+        - **[API Enabled]\(API 有効化\)**
+        - **[View All Data]\(すべてのデータを表示する\)** 
+        - **[Manage Salesforce CRM Content]\(Salesforce CRM コンテンツを管理する\)**
+        - **[ユーザーを管理する]**
+        
+        オフになっている場合は、Salesforce に連絡してアカウントに追加する必要があります。  
+             
 3.  組織で [**Salesforce CRM Content**] を有効化している場合は、現在の管理者アカウントでも有効になっていることを確認します。  
   
     1.  Salesforce の設定ページに移動します。  

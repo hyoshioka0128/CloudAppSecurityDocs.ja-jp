@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f0793afc91b7bf29afe56bc5fa2218fb07dc6bf
-ms.sourcegitcommit: 25564029fb94c1e37e7072775c88a0456089224c
-translationtype: HT
+ms.openlocfilehash: 23eedf73a5b3eec883da5e64a9db98f6ec895098
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
 # <a name="manage-app-permissions"></a>アプリのアクセス許可の管理
 組織内のビジネス ユーザーがインストールするサード パーティ製の生産性アプリの多くでは、ユーザー情報とデータにアクセスし、Office 365、G Suite、Salesforce などの他のクラウド アプリにユーザーの代理としてサインインするためのアクセス許可が要求されます。  ユーザーは、こうしたアプリをインストールする場合、アプリへのアクセス許可の付与などの詳細を厳密に確認せずに、承認の操作を行いがちです。  IT 部門がこうしたアプリケーションのセキュリティ上のリスクと生産性のメリットとを比較検討するための十分な知識を持っていない場合、この問題はさらに重大になります。 サード パーティ製アプリのアクセス許可を承認することは、組織にとって潜在的なセキュリティ リスクになるため、ユーザーが付与するアプリのアクセス許可を監視することで、ユーザーとアプリケーションの保護に欠かせない可視性と制御が得られます。 Cloud App Security アプリのアクセス許可を使用すると、ユーザーがインストールしたどのアプリケーションが Office 365 データ、G Suite データおよび Salesforce データに対するアクセスを持っているか、アプリがどんなアクセス許可を持っているか、どのユーザーがこれらのアプリから Office 365、G Suite および Salesforce アカウントへのアクセスを付与したかがわかります。 アプリのアクセス許可は、ユーザーのアクセスを許可するアプリと、禁止するアプリを判断するのに役立ちます。
@@ -69,6 +71,14 @@ Cloud App Security ポータルで、**[調査]**、**[アプリのアクセス�
 3. [カスタム通知メッセージの入力] ボックスで、アプリのユーザーに送信するメッセージを入力し、通知電子メールの "返信先" アドレスを必要に応じて更新します。 
  **[アプリの禁止]** をクリックすると、メールが送信され、接続されたアプリ ユーザーのアプリ使用が禁止されます。
 
+## <a name="revoke-app-and-notify-user"></a>アプリを取り消し、ユーザーに通知する
+
+G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、禁止行為であることをユーザーに通知したりできます。 
+
+1. アプリのアクセス許可ページで、アプリの行の終わりにある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次の通知が届きます。*[You authorized the app Adallom Google Protector to access your G Suite account.This app conflicts with your organization's security policy.Reconsider giving or revoking the permissions you gave this app in your G Suite account.To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar]*\(あなたは Adallom Google Protector アプリにご自分の G Suite アカウントへのアクセスを許可しています。このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消す場合は、https://security.google.com/settings/security/permissions?hl=en&pli=1 にアクセスし、アプリを選択して、右メニューバーの 'アクセスの取り消し' をクリックします。\) 送信メッセージはカスタマイズできます。
+2. ユーザーのためにアプリを使用するアクセス許可を取り消すこともできます。テーブルのアプリの行の終わりにあるアイコンをクリックし、**[アプリの取り消し]** を選択します。 
+
+ ![アプリを取り消す](./media/revoke-app.png)
 
 ## <a name="query-app-permissions"></a>アプリのアクセス許可のクエリ
 

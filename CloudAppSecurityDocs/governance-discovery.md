@@ -13,16 +13,31 @@ ms.technology:
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ca4a10f64429c481f49c75740f651302b1c7d1ef
-ms.sourcegitcommit: 7493d88e4fe7c827f870b81e2090ffcc77f1408a
-translationtype: HT
+ms.openlocfilehash: cf14aaa243baaea8223cc6a271e7a237a0a1e287
+ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 06/28/2017
 ---
-# <a name="governing-discovered-apps"></a>検出されたアプリを管理する
-Cloud App Security では、既存のオンプレミスのセキュリティ アプライアンスを活用することで、承認されていないアプリへのアクセスをブロックすることができます。 専用のブロック スクリプトを生成して、アプライアンスにインポートします。
-このソリューションでは、組織のすべての Web トラフィックをプロキシにリダイレクトする必要はありません。
+## <a name="govern-discovered-apps"></a>検出されたアプリの管理
+
+お使いの環境で検出されたアプリの一覧を確認したら、次の方法で、望ましくないアプリの使用から環境を守ることができます。
+
+### <a name="sanctioningunsanctioning-an-app"></a>アプリの承認/非承認 
+
+特定の危険なアプリを非承認にすることができます。行の終わりにある 3 つの点をクリックし、**[Unsanction]**\(非承認\) を選択します。
+アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にした後、非承認にしたことをアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
+
+![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)  
+
+
+承認または非承認にするアプリが一覧になっている場合、チェックボックスを利用し、管理するすべてのアプリを選択し、アクションを選択できます。
 
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
+
+Cloud App Security では、既存のオンプレミスのセキュリティ アプライアンスを活用することで、承認されていないアプリへのアクセスをブロックすることができます。 専用のブロック スクリプトを生成して、アプライアンスにインポートします。
+このソリューションでは、組織のすべての Web トラフィックをプロキシにリダイレクトする必要はありません。
 
 1. Cloud Discovery ダッシュボードで、ブロックするすべてのアプリに **[承認されていない]** のタグを付けます。
 
