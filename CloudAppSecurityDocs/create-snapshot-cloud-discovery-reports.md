@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 7/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 746727ee96513e473911a286fb53ea8cec52c3cc
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: bce725777964ac46a21b03434d24ac725280d84d
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
@@ -36,7 +36,7 @@ ms.lasthandoff: 07/03/2017
   
      ![新しいスナップショット レポート](./media/new-snapshot-report.png) 
 
-4.  13ログ ファイルのアップロード元にする [**データソース**] を選択します。  
+4.  ログ ファイルのアップロード元にする [**データソース**] を選択します。  
   
 5. ダウンロードできるサンプルに従ってログが正しく書式設定されているかどうかを確認します。 「**View and verify**」 (表示して確認) をクリックし、「**Download sample log**」 (サンプル ログのダウンロード) をクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 

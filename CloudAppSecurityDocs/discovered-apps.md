@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 824dd288e821289b0d09569d461a498d87e30705
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
+ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/05/2017
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -59,7 +59,7 @@ Cloud Discovery によって提供されたデータを掘り下げたい場合�
 ![検出されたアプリ](./media/discovered-apps.png)  
 
 
-- **[アプリ タグ]**: アプリが承認された、非承認になった、またはタグなしのいずれであるかを選びます。 さらに、アプリ用のカスタム タグを作成し、それを使って特定のアプリの種類をフィルター処理することもできます。
+- **[アプリ タグ]**: アプリが承認された、非承認になった、またはタグなしのいずれであるかを選びます。 さらに、アプリ用のカスタム タグを作成し、それを使って特定のアプリの種類をフィルター処理することもできます。 
 - **[アプリとドメイン]**: 特定のアプリまたは特定のドメインで使われているアプリを検索することができます。 
 - **[カテゴリ]**: ページの左側にあるカテゴリ フィルターを使うと、アプリのカテゴリ (ソーシャル ネットワーク アプリ、クラウド ストレージ アプリなど) に従ってアプリの種類を検索することができます。1 つまたは複数のカテゴリを選択して、基本および詳細フィルターを適用できます。
 - **[コンプライアンス リスク要因]**: アプリが準拠している可能性がある特定の標準、認定、コンプライアンスを検索することができます (HIPAA、ISO 27001、SOC 2、PCI DSS など)。
@@ -70,7 +70,7 @@ Cloud Discovery によって提供されたデータを掘り下げたい場合�
 
 ## <a name="creating-and-managing-custom-app-tags"></a>カスタム アプリ タグの作成と管理
 
-カスタム アプリ タグを作成することができます。 これらのタグは、調査する特定の種類のアプリをより詳しく調べるためのフィルターとして使うことができます。 
+カスタム アプリ タグを作成することができます。 これらのタグは、調査する特定の種類のアプリをより詳しく調べるためのフィルターとして使うことができます。 たとえば、カスタム ウォッチ リスト、特定の事業単位への割り当て、“法務により承認済み” のようなカスタム承認などです。
 
 カスタム アプリ タグを作成するには
 
