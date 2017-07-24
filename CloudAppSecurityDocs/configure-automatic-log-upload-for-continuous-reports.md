@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 11d3a78803c2a22f7d08bdab9d70aec73124ff8b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/16/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
-ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ファイルのログ コレクターへの FTP 転送が完了した後で Cloud App Security にアップロードされます。Syslog の場合、ログ コレクターは受信したログをディスクに書き込み、ファイル サイズが 40 KB を超えると Cloud App Security にファイルをアップロードします。
-
-ログが Cloud App Security にアップロードされた後は、バックアップ ディレクトリに移動されます。このディレクトリには、常に最新の 20 個のログが保存されています。 新しいログが移動されると、古いログは削除されます。 ログ コレクターのディスク領域がいっぱいになると、空きディスク領域が増えるまで、ログ コレクターは新しいログを削除します。
-
-自動ログ ファイル収集を設定する前に、ログが予期されるログの種類と一致していることを検証し、Cloud App Security で特定のファイルを解析できることを確認します。 
-
->[!NOTE]
->ログが元々の形式で転送されると仮定した場合、Cloud App Security は、SIEM サーバーからログ コレクターへのログの転送をサポートします。 ただし、ログ コレクターをファイアウォールまたはプロキシに直接統合することを強くお勧めします。
-
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>仮想アプライアンスの継続的なレポートのために自動ログ アップロードを構成する
 
 ## <a name="technical-requirements"></a>技術要件
 - ハイパーバイザー: HyperV または VMware
@@ -70,7 +61,7 @@ ms.lasthandoff: 07/03/2017
   
 4.  画面上部の [**ログ コレクター**] タブに移動します。  
   
-    」を参照します。  [**ログ コレクターを追加**] をクリックします。  
+    a.  [**ログ コレクターを追加**] をクリックします。  
   
     b.  ログ コレクターに [**名前**] を付けます。  
   
@@ -98,7 +89,7 @@ ms.lasthandoff: 07/03/2017
   
 5.  [**起動メモリ**] を [**4096 MB**] に変更します。  
         
-6. この仮想マシンの [**Use Dynamic Memory (動的メモリを使用)**] をオンにしてから、[**次へ**] をクリックします。  
+6. この仮想マシンの [**Use Dynamic Memory (動的メモリを使用)** ]をオンにしてから、[**次へ**] をクリックします。  
   
 7.  可能であれば、ネットワークの [**接続**] を選択してから [**次へ**] をクリックします。  
   
@@ -144,7 +135,7 @@ sudo network_config
   
      `London Zscaler - Destination path: 614`  
   
-     `SF Blue Coat - Destination path: \\CloudAppSecurityCollector01\BlueCoat\`  
+     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\  
   
 ### <a name="step-5---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 5: Cloud App Security ポータルで正常に展開されたことを確認する
 

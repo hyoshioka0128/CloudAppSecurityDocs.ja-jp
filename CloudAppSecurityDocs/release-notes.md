@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4918b2765be87cb4090c6a55351f6fb0afe07339
-ms.sourcegitcommit: 83d3c800e268091a69e5dc2a229e6453d3243a62
+ms.openlocfilehash: 893f06d222c52e5e39231378062c3742b81f655f
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="release-notes"></a>リリース ノート
 
@@ -44,6 +44,10 @@ ms.lasthandoff: 07/04/2017
     - **カスタム ノート**: 環境全体で検出されたさまざまなアプリケーションをレビューして評価する際に、結論と洞察をメモに保存できるようになりました。
     - **カスタム リスク スコア**: アプリのリスク スコアを上書きできるようになりました。 たとえば、アプリのリスク スコアが 8 で、そのアプリが組織で却下されている場合、その組織に対してリスク スコアを 10 に変更することができます。 誰かがそのアプリをレビューしたときに変更の理由をクリアにするためのノートも追加できます。
 -   **新しいログ コレクターの展開モード:** 新しい展開モードがロールアウトされ、ログ コレクターで使用できるようになりました。 現在の仮想アプライアンス ベースの展開に加えて、新しい Docker (コンテナー) ベースのログ コレクターを、パッケージとしてオンプレミスと Azure の Windows および Ubuntu マシンにインストールできます。 Docker を使用する場合、ホスティング マシンはお客様が所有していて、このお客様が自由にパッチを適用したり監視したりできます。
+
+### <a name="announcements"></a>お知らせ 
+-   クラウド アプリ カタログでは、15,000 以上の検索可能なアプリをサポートしています。
+-   コンプライアンス: Cloud App Security は、公式に Azure による SOC1/2/3 認定を受けています。 認定の完全な一覧については、[コンプライアンスの提供内容](https://www.microsoft.com/trustcenter/compliance/complianceofferings)に関するページをご覧いただき、Cloud App Security でフィルターした結果を表示してください。
 
 ### <a name="other-improvements"></a>その他の機能強化: 
 -   **解析の向上:** Cloud Discovery のログ解析メカニズムで機能強化が行われました。 内部エラーが発生する可能性が大幅に低下しました。

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/23/2017
+ms.date: 7/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d50f77f5b19f9d965209639861a5672d2bcfc730
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
+ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/16/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
@@ -108,10 +108,10 @@ Salesforce イベントは Cloud App Security により次のように処理さ�
   
 - 15 分ごとにログイン イベント
 - 15 分ごとにセットアップ監査証跡
-- イベント ログ監視は 24 時間ごとに Salesforce によりエクスポートされます (12:00 UTC) 
+- Salesforce のログは、UTC 時刻で午前 12 時 00 分から 午後 11 時 59 分まで の、24 時間の利用状況を追跡します。 Salesforce のイベントは、リアルタイムでログ データを生成します。 ただしログ ファイルは、イベントが発生した翌日のピーク時以外に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントの後、少なくとも 1 日は利用できません。 Salesforce のイベントの詳細については、「[イベント監視の使用](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」をご覧ください。
 
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
