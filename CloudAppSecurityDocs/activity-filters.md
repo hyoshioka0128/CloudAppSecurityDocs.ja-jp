@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/3/2017
+ms.date: 7/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 104f44cb4dc890753551d23682a77b75bba510b1
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: 8899715f7da9433646e3b007ca971b191b602a3a
+ms.sourcegitcommit: cfbfd9103406c69505eb6273f9bb97bd57bb5a44
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/09/2017
 ---
 # <a name="activities"></a>アクティビティ
 Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
@@ -156,8 +156,9 @@ Cloud App Security は、接続しているアプリのすべてのアクティ�
     - **[ISP]**: 過去 30 日以内にユーザーが接続された ISP の数。
     - **[IP アドレス]**: 過去 30 日以内にユーザーが接続された IP アドレスの数。
 
+![Cloud App Security におけるユーザーの分析情報](./media/user-insights.png)
 
-## <a name="see-also"></a>参照  
+## <a name="see-also"></a>関連項目  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
