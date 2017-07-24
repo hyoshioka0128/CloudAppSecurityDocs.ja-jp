@@ -1,6 +1,6 @@
 # 理解と調査
 ## [CAS とは](what-is-cloud-app-security.md)
-## [リリース ノート](release-notes.md)
+## [新機能](release-notes.md)
 # 展開
 ## [はじめに](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
