@@ -1,7 +1,7 @@
-## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定
+## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース倫理規定
 
-このプロジェクトは、[Microsoft オープン ソース コード倫理規定](https://opensource.microsoft.com/codeofconduct/)を採用しています。
-詳細については、次を参照してください[倫理規定に関する FAQ](https://opensource.microsoft.com/codeofconduct/faq/)にお問い合わせいただくか、追加の質問またはコメントについて [opencode@microsoft.com](mailto:opencode@microsoft.com) までお問い合わせ下さい。
+このプロジェクトは [Microsoft オープン ソース論理規定](https://opensource.microsoft.com/codeofconduct/)を採用しています。
+詳細については[論理規定についてのよくある質問](https://opensource.microsoft.com/codeofconduct/faq/)をご覧ください。また、追加の質問やコメントがある場合は[opencode@microsoft.com](mailto:opencode@microsoft.com)にお問い合わせください。
 
 # <a name="docsmicrosoftcom-github-repository"></a>Docs.microsoft.com Github リポジトリ
 
