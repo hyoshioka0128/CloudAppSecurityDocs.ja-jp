@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 974c7dd6ec3dcd1244b2c8840c9084d68df8c56f
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: ef16afaa0990b86703f76fe817f86bcdd6ba38e6
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
@@ -38,11 +38,12 @@ ms.lasthandoff: 07/16/2017
   
     -   Salesforce アカウントにログインし、[**設定**] ページに移動します。  
   
-    -   [**ユーザの管理**] から [**プロファイル**] ページに移動します。  
+    -   **[Manage Users]\(ユーザーの管理\)** で、**[User Profiles]\(ユーザー プロファイル\)** ページに移動します。  
   
          ![Salesforce の [Manage Users] (ユーザーの管理) プロファイル](./media/salesforce-manageusers-profiles.png "Salesforce の [Manage Users] (ユーザーの管理) プロファイル")  
   
-    -   Cloud App Security のデプロイに使用しているプロファイルを選択して、**[編集]** をクリックします。 これは、Cloud App Security サービス アカウントでアプリ コネクターをセットアップする場合に使用されるプロファイルです。  
+    -   **[New]\(新規\)** をクリックして、新しいプロファイルを作成します。 
+    - Cloud App Security のデプロイ用に作成したプロファイルを選び、**[Edit]\(編集\)** をクリックします。 これは、Cloud App Security サービス アカウントでアプリ コネクターをセットアップする場合に使用されるプロファイルです。  
   
          ![Salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")  
   
@@ -108,10 +109,10 @@ Salesforce イベントは Cloud App Security により次のように処理さ�
   
 - 15 分ごとにログイン イベント
 - 15 分ごとにセットアップ監査証跡
-- Salesforce のログは、UTC 時刻で午前 12 時 00 分から 午後 11 時 59 分まで の、24 時間の利用状況を追跡します。 Salesforce のイベントは、リアルタイムでログ データを生成します。 ただしログ ファイルは、イベントが発生した翌日のピーク時以外に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントの後、少なくとも 1 日は利用できません。 Salesforce のイベントの詳細については、「[イベント監視の使用](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」をご覧ください。
+- Salesforce のログは、利用状況を 24 時間 (UTC 時刻の午前 00 時 00 分から 午後 11 時 59 分まで ) 追跡します。 Salesforce のイベントは、リアルタイムにログ データを生成します。 ただし、ログ ファイルは、イベントが発生した翌日の非ピーク時に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントが発生してから少なくとも 1 日は利用できません。 Salesforce のイベントについて詳しくは、「[Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」(イベント監視の使用) をご覧ください。
 
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

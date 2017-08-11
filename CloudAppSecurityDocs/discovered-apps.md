@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ced7bfb6581612610fab57529df3c87d36a97ae5
-ms.sourcegitcommit: dc386d21f9196c30460ca57e85a9a52077c44bf5
+ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -51,6 +51,9 @@ Cloud Discovery によって提供されたデータを掘り下げたい場合�
 ![検出されたアプリのフィルター](./media/discovered-app-filters.png)
 
 結果をフィルター処理した後は、すべてのアプリを 1 つのアクションで非承認にする一括操作チェック ボックスを使って、アプリを[非承認にしてブロックする](governance-discovery.md)ことができます。 アプリを非承認にした後は、ブロッキング スクリプトを使って、アプリが環境内で使われないようにブロックすることができます。
+
+さらに詳しく調べるには、検出されたアプリをサブドメイン レベルまで調査し、使用中の特定のインスタンスを識別できます。 
+
 
 ## <a name="discovered-app-filters"></a>検出されたアプリのフィルター
 

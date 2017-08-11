@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/9/2017
+ms.date: 7/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ac5720bf4dd571d56bf7c41631d2a0f866146a56
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: d5f618feb038083dd9140a1c53d301788f561a4e
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 08/03/2017
 ---
-# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>仮想アプライアンスの継続的なレポートのために自動ログ アップロードを構成する
+# <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する
 
 ## <a name="technical-requirements"></a>技術要件
 - ハイパーバイザー: HyperV または VMware
@@ -40,10 +40,10 @@ ms.lasthandoff: 07/16/2017
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
   
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
   
 1.  自動アップロードの設定ページに移動します。  
-    Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "settings icon") をクリックしてから **[ログ コレクター]** をクリックします。  
+    Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックしてから **[ログ コレクター]** をクリックします。  
   
 3.  ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。  
   
@@ -51,7 +51,7 @@ ms.lasthandoff: 07/16/2017
   
     b.  プロキシまたはファイアウォールの [**名前**] を付けます。  
   
-    c.  [**ソース**] リストからアプライアンスを選択します。  
+    c.  [**ソース**] リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
   
     d.  予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。  
   
@@ -61,7 +61,7 @@ ms.lasthandoff: 07/16/2017
   
 4.  画面上部の [**ログ コレクター**] タブに移動します。  
   
-    a.  [**ログ コレクターを追加**] をクリックします。  
+    」を参照します。  [**ログ コレクターを追加**] をクリックします。  
   
     b.  ログ コレクターに [**名前**] を付けます。  
   
@@ -81,7 +81,7 @@ ms.lasthandoff: 07/16/2017
 1.  Hyper-V マネージャーを開きます。  
   
 2.  [**新規**] を選択してから [**仮想マシン**] を選択し、[**次へ**] をクリックします。  
- ![Hyper-V 仮想マシンの検出](./media/discovery-hyperv-virtual-machine.png "discovery hyperv virtual machine")  
+ ![HyperV 仮想マシンの検出](./media/discovery-hyperv-virtual-machine.png "HyperV 仮想マシンの検出")  
   
 3.  仮想マシンに、たとえば CloudAppSecurityLogCollector01. という [**名前**] を付けてから [**次へ**] をクリックします。  
   
@@ -89,7 +89,7 @@ ms.lasthandoff: 07/16/2017
   
 5.  [**起動メモリ**] を [**4096 MB**] に変更します。  
         
-6. この仮想マシンの [**Use Dynamic Memory (動的メモリを使用)** ]をオンにしてから、[**次へ**] をクリックします。  
+6. この仮想マシンの [**Use Dynamic Memory (動的メモリを使用)**] をオンにしてから、[**次へ**] をクリックします。  
   
 7.  可能であれば、ネットワークの [**接続**] を選択してから [**次へ**] をクリックします。  
   
