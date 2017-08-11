@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 95c92a7767f369d323d226c4362288ce043f905d
-ms.sourcegitcommit: 38e3c6749e3c746ab73b8da96cd81219781a7998
+ms.openlocfilehash: 12ea0c3833c4ff4b2a3c5c7d4478f0603e471547
+ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/04/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -88,7 +88,7 @@ ms.lasthandoff: 07/04/2017
 12.  P12 証明書ファイルがコンピューターに保存されます。  
         
 12. [**資格情報**] 画面で、一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
-       ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite credentials service account")  
+       ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite の資格情報サービス アカウント")  
   
 13. 作成したサービス アカウントの右側にある 3 つの点をクリックし、[**編集**] を選択します。  
   
@@ -119,6 +119,9 @@ ms.lasthandoff: 07/04/2017
   
 19. **[Enabled APIs (有効にされた API)]** 一覧で、**[Google Apps Marketplace SDK]** の横にある設定用の歯車アイコンをクリックします。 
          ![Google Marketplace SDK 構成](./media/google16.png "googledriveconfig")  
+
+       >[!NOTE]
+       > 歯車アイコンが無効になっている場合は、**[Google Apps Marketplace SDK]** を代わりにクリックしてもかまいません。 
 20. **[構成]** タブを選択します。 
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
