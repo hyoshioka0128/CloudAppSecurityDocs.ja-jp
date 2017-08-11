@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 28317b70-1851-4610-b1d6-863bc5994bb6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 46377a8447ca7a7c0e98183b9d114c329d040e74
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 82e1ee0b5161dce88db815dc8eea06340bdbc532
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-the-cloud-app-security-proxy"></a>Cloud App Security プロキシの操作
 
@@ -42,7 +42,7 @@ Cloud App Security でアクセス制御を使用するには、既存の ID プ
 > [!NOTE]
 > -  ID プロバイダーの既存のポリシーを変更する必要はありません。
 
-### <a name="supported-apps-and-identity-providers"></a>サポートされているアプリと ID プロバイダー
+#### <a name="supported-apps-and-identity-providers"></a>サポートされているアプリと ID プロバイダー
 
 プロキシのアクセス制御は、SAML または WS-Federation プロトコルをサポートするすべての ID プロバイダーとアプリをサポートするように設計されています。 Cloud App Security チームは、アクセス制御機能を使用して、大手の ID プロバイダーと最先端アプリをテストしています。 ただし、ID プロバイダーとクラウド アプリは多数存在するため、ID プロバイダーとアプリのすべての組み合わせがテストされるわけではありません。 運用環境で展開する前に、サンドボックスまたはテスト環境で ID プロバイダーとアプリを使用してシングル サインオン プロセスをテストすることをお勧めします。
 
