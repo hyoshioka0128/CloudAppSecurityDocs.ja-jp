@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3f17a43fb231ec9175cbfb2485ea363f6285e167
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: dfa0e6d884fde67f901c9dcdec208a447f2c6cb9
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Windows Server 2016 で自動ログ コレクター Docker を設定および構成する
+
+> [!NOTE]
+> この機能はテナントに段階的にロールアウトされています。 プレビューに参加したい場合は、サポートにお問い合わせください。
 
 ## <a name="technical-requirements"></a>技術要件
 
@@ -45,7 +48,9 @@ ms.lasthandoff: 08/03/2017
 
 -   IT 部門によって割り当てられた仮想マシンの I/O パフォーマンス - ログ コレクターのディスクにログが書き込まれる速度が決まります。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 全体的に 1 時間あたり 50 GB を超える状況であったら、複数のログ コレクターにトラフィックを分割することをお勧めします。
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
+## <a name="set-up-and-configuration"></a>セットアップと構成  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
 1.  自動アップロードの設定ページに移動します。<br></br> Cloud App Security ポータルで、設定アイコン [設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
 
@@ -95,7 +100,7 @@ ms.lasthandoff: 08/03/2017
 
     ![Windows4](./media/windows4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
 >[!NOTE]
 >次の手順は、Windows Server での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
@@ -135,13 +140,13 @@ ms.lasthandoff: 08/03/2017
 "**Finished successfully!**" というメッセージが表示される必要があります。
   ![windows10](./media/windows10.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
 
 ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。以下に例を示します。
 
         BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
 
 **[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合、ログ コレクターの接続と解析が完了していない可能性があります。
 

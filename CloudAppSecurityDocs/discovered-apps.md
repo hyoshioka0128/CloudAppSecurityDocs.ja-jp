@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/5/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e0287543014e7bc1807d0ccceb302a75cbaa91b
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -52,8 +52,13 @@ Cloud Discovery によって提供されたデータを掘り下げたい場合�
 
 結果をフィルター処理した後は、すべてのアプリを 1 つのアクションで非承認にする一括操作チェック ボックスを使って、アプリを[非承認にしてブロックする](governance-discovery.md)ことができます。 アプリを非承認にした後は、ブロッキング スクリプトを使って、アプリが環境内で使われないようにブロックすることができます。
 
-さらに詳しく調べるには、検出されたアプリをサブドメイン レベルまで調査し、使用中の特定のインスタンスを識別できます。 
+Cloud Discovery を使うと、組織でのクラウドの使用状況をさらに詳しく調べることができ、検出されたサブドメインを調査することにより使われている特定のインスタンスを識別できます。
 
+たとえば、異なる SharePoint サイトを区別することができます。
+
+これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 サポートされているアプライアンスの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」をご覧ください。
+
+![サブドメインの情報](./media/discovery-domains.png)  
 
 ## <a name="discovered-app-filters"></a>検出されたアプリのフィルター
 
