@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1fab1835ec1ed1a4a245b87bd5324e15a28a646
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2290c594595e7754ef0e6e29d70734ff99a42b23
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
@@ -52,7 +52,7 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 ICAP サーバーを設定します。ポート番号を書き留め、**[モード]** を **[ブロック]** に設定します。 ブロック モードでは、分類判定を Cloud App Security に戻すように ICAP サーバーが設定されます。
 
-この方法については、外部 DLP 製品のマニュアルを参照してください。 たとえば、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」を参照してください。
+この方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B: Symantec 展開ガイド](#symantec)」をご覧ください。
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>手順 2: stunnel サーバーを設定する 
 
@@ -252,9 +252,9 @@ ForcePoint で、次の手順でアプライアンスを設定します。
     ![ICAP ブロック](./media/icap-blocking.png)
  
 
-## <a name="appendix-b-symantec-deployment-guide"></a>付録 B: Symantec 展開ガイド
+## 付録 B: Symantec 展開ガイド <a name="symantec"></a>
 
-サポートされている Symantec DLP のバージョンは、11 から 14.6 です。 前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを通して適用サーバーと同期します。 
+サポートされている Symantec DLP のバージョンは、11 以降です。 前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを通して適用サーバーと同期します。 
  
 ### <a name="detection-server-installation"></a>検出サーバーのインストール 
 Cloud App Security によって使われる検出サーバーは、Web サーバーの標準的な Network Prevent です。 いくつかの構成オプションを変更する必要があります。

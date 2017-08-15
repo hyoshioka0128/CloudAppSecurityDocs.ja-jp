@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e198a945682771eee27b97985607ee997ccd3e4
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 7fe91dbeba5b899ca7e19a2b8bf3458fa36f52fe
+ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
+
+> [!NOTE]
+> この機能はテナントに段階的にロールアウトされています。 プレビューに参加したい場合は、サポートにお問い合わせください。
 
 ## <a name="technical-requirements"></a>技術要件
 
@@ -45,7 +48,9 @@ ms.lasthandoff: 08/03/2017
 
 -   IT 部門によって割り当てられた仮想マシンの I/O パフォーマンス - ログ コレクターのディスクにログが書き込まれる速度が決まります。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 全体的に 1 時間あたり 50 GB を超える状況であったら、複数のログ コレクターにトラフィックを分割することをお勧めします。
 
-## <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
+## <a name="set-up-and-configuration"></a>セットアップと構成  
+
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
 1.  自動アップロードの設定ページに移動します。  <br></br>Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
 
@@ -93,7 +98,7 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu4](./media/ubuntu4.png)
 
-## <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
 > [!Note]
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
@@ -130,13 +135,13 @@ ms.lasthandoff: 08/03/2017
 
   ![ubuntu8](./media/ubuntu8.png)
 
-## <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
 ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。以下に例を示します。
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
-## <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
+### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
 
 **[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合、ログ コレクターの接続と解析が完了していない可能性があります。
 
@@ -146,7 +151,7 @@ ms.lasthandoff: 08/03/2017
 
 展開中に問題が発生した場合は、「[クラウド検出のトラブルシューティング](troubleshooting-cloud-discovery.md)」を参照してください。
 
-## <a name="optional---create-custom-continuous-reports"></a>省略可能 - カスタムの継続的レポートを作成する
+### <a name="optional---create-custom-continuous-reports"></a>省略可能 - カスタムの継続的レポートを作成する
 
 ログが Cloud App Security にアップロードされ、レポートが生成されていることを確認したら、カスタム レポートを作成できます。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できるようになりました。 たとえば、マーケティング部門のクラウドの使用状況を確認したい場合は、ユーザー グループのインポート機能を使用してマーケティング グループをインポートして、このグループにカスタム レポートを作成できます。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
