@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 75094bde-e135-47fb-b5c6-7e1168919771
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 245e44cdf56b15795f67340442babcb0f688ea9d
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: 2cabdaa94c36dcf7496cc1d1126e720871ee80b9
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="deploying-the-cloud-app-security-proxy"></a>Cloud App Security プロキシの展開
 
@@ -25,6 +25,10 @@ ms.lasthandoff: 08/03/2017
 > 運用環境でインストールする前に、サンドボックスまたはテスト環境でインストールを試してみることを強くお勧めします。
 
 Cloud App Security プロキシを展開して、アクセス制御とセッション制御の両方を有効にするには、以下に示す手順を実行する必要があります。
+
+プロキシの展開の一環として、制御対象のアプリと ID プロバイダーの両方の構成を変更する必要があります。 これには URL の変更が含まれるため、ID プロバイダーとアプリの両方がプロキシにログイン要求をリダイレクトします。 さらに、必要に応じて、証明書も同様に置き換えられます。
+
+これらの手順が完了すると、すべてのログイン イベントはプロキシを経由し、プロキシは、アプリへのアクセスを許可するか、拒否するか、あるいは監視モードでアクセスを許可するかを決定できます。 この段階で、プロキシはデバイスからのクライアント証明書を要求し、デバイスの状態を使用してポリシーを決定できることに注意してください。
 
 ## <a name="prerequisites"></a>前提条件
 
