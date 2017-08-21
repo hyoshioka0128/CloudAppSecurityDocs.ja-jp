@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/30/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,30 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 29df61beb80e931d9d4b0c90a3e89a2b9f496740
-ms.sourcegitcommit: c5a0d07af558239976ce144c14ae56c81642191b
+ms.openlocfilehash: c0fead3fc70636ad96c365ec89060006124024b5
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="whats-new-with-cloud-app-security"></a>Cloud App Security の新機能
+
+
+## <a name="cloud-app-security-release-103"></a>Cloud App Security リリース 103 
+リリース日: 2017 年 8 月 13 日
+
+- Office ファイルの .docm、.docx、.dotm、.dotx、.xlam、.xlsb、.xlsm、.xlsx、.xltx、.xps、.potm、.potx、.ppsx、.ppsm、.pptm、.pptx、.thmx、.vsdx、.vsdm、.vssx、.vssm、.vstx、.vstm に関して、Cloud App Security が (汎用的な保護に代わり) Azure Information Protection ネイティブ保護のサポート対象になりました。
+
+- Azure Active Directory のコンプライアンス管理者には、Cloud App Security のアクセス許可と同様のアクセス許可が自動的に与えられます。たとえば、アラートの読み取り専用アクセス、アラートの管理アクセス、ファイル ポリシーの作成許可と変更許可、ファイル ガバナンス アクションの許可が与えられ、また、[データ管理] であらゆる組み込みレポートを表示できます。 
+
+- DLP 違反コンテキストが 40 文字から 100 文字に拡張されました。違反のコンテキストをより良く理解できます。
+
+- Cloud Discovery のカスタム ログをアップロードすると、詳しいエラー メッセージが与えられます。ログ アップローダで発生したエラーを簡単に解決できます。
+
+- Cloud Discovery ブロック スクリプトが拡張され、Zscaler 形式対応になりました。
+
+- クラウド アプリ カタログの新しいリスク要因: アカウントの終了後にデータが保持されます。 クラウド アプリ内のアカウントを終了した後でデータが完全に削除されていることを確認できます。
+
 
 ## <a name="cloud-app-security-release-102"></a>Cloud App Security リリース 102 
 リリース日: 2017 年 7 月 30 日
