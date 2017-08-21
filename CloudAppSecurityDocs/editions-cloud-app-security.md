@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 68ca6a7a4bacb0e04fddea4c1df36350c0e4c6fb
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: 7dd8b94579255b7ccccf4df093d24c5a853f66a4
+ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/13/2017
 ---
 # <a name="what-are-the-differences-between-cloud-app-security-and-office-365-advanced-security-management-asm"></a>Cloud App Security と Office 365 の高度なセキュリティ管理 (ASM) の相違点
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/09/2017
 
 ## <a name="cloud-app-security"></a>Cloud App Security 
 
-Cloud App Security のスタンドアロン バージョンはクロス SaaS ソリューションであり、承認されていないアプリのシャドウ IT 検出を提供すると共に、承認されたアプリについては組織内のクラウド アプリケーション全体の情報保護、脅威検出、条件付きアクセスを提供します。 
+Microsoft Cloud App Security は包括的なクロス SaaS ソリューションです。高度な可視化、強力なデータ管理、高性能な脅威防御といった機能をクラウド アプリにもたらします。 このサービスを利用すると、使用されているクラウド アプリを見つけ出し、シャドウ IT を可視化できます。アプリを認可し、アプリのデータを管理し、保護できます。 
 
 ## <a name="office-365-advanced-security-management"></a>Office 365 の高度なセキュリティ管理
 
@@ -34,30 +34,27 @@ Cloud App Security のスタンドアロン バージョンはクロス SaaS ソ
 
 ## <a name="feature-support"></a>機能のサポート
 
-|領域|機能|Microsoft Cloud App Security|高度なセキュリティ管理|
+|機能|機能|Microsoft Cloud App Security|Office 365 の高度なセキュリティ管理|
 |----|----|----|----|
-|シャドウ IT の検出||||
-||検出されたアプリのサポート|15,000 以上および自動リスク評価|Office 365 と同様の 750 以上のアプリ|
-||ログのアップロード|手動および自動|手動|
+|Cloud Discovery|検出されたアプリ |15,000 を超えるクラウド アプリ  |Office 365 と同様の機能を持つ 750 を超えるクラウド アプリ|
+||検出分析の展開|ログの手動アップロードと自動アップロード|ログの手動アップロード|
 ||ユーザーのプライバシー保護のためのログの匿名化|はい|はい|
-||継続的なリスク評価: アプリのリスク スコアと新しいアプリ アラート|はい||
-||検出されたアプリのレポート|はい|はい|
-||アプリ検出の異常検出|はい||
-||すべてのアプリ カタログへのアクセス|はい||
-||アプリ、ユーザー、IP アドレスごとの詳細なレポート|はい||
-|情報の保護||||
-||DLP のサポート|クロス SaaS DLP およびデータ共有制御|Office 365 DLP によって提供され、ASM でインシデントの表示と報告が可能|
-||アプリのアクセス許可 - OAuth アプリを識別および制御|はい|はい|
+||すべてのクラウド アプリ カタログへのアクセス|はい||
+||クラウド アプリのリスク評価|はい||
+||アプリ、ユーザー、IP アドレス別のクラウド利用状況分析|はい||
+||継続的な分析とレポート|はい||
+||検出されたアプリの異常検出|はい||
+|情報の保護|データ損失防止 (DLP) サポート|クロス SaaS DLP およびデータ共有制御|既存の Office DLP を使用します (Office E3 以上で利用可能)|
+||アプリのアクセス許可とアクセスの取り消し機能|はい|はい|
 ||ポリシーの設定と適用|はい||
-||Azure Information Protection の統合|はい||
+||Azure Information Protection との統合 |はい||
 ||サード パーティの DLP ソリューションとの統合|はい||
-|脅威の検出||||
-||検出のカバレッジ|クロスアプリの包括的なアラート、脅威、違反ダッシュボード|Office 365 の異常検出およびセキュリティ警告|
+|脅威の検出|異常検出と行動分析|Office 365 を含むクロス SaaS アプリ用|Office 365 アプリ用 |
 ||手動および自動のアラート修復|はい|はい|
-||SIEM コネクタ|アラートとアクティビティ ログ|アラートのみ|
-||Microsoft インテリジェント セキュリティ グラフ拡張機能|はい|はい|
+||SIEM コネクタ|対応 クロス SaaS アプリのアラートとアクティビティ ログ。|対応 Office 365 アラートのみ。|
+||Microsoft インテリジェント セキュリティ グラフに統合|はい|はい|
 ||アクティビティ ポリシー|はい|はい|
-||異常検出|はい|はい|
+
 
 ## <a name="see-also"></a>参照  
 
