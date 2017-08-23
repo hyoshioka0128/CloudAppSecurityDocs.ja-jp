@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/2/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0856ac24e20c1ca2ed8cdde3787d931d451bb7
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security とは
 
@@ -80,6 +80,9 @@ Cloud App Security は、クラウド プロバイダーから提供される AP
 ### <a name="policy-control"></a>ポリシー コントロール  
 
 ポリシーを使用して、クラウドでのユーザーの動作を定義できます。 ポリシーを使用して、危険な動作、違反、またはクラウド環境内の疑わしいデータ ポイントやアクティビティを検出します。 必要に応じて、ポリシーを使用して修復プロセスを統合し、完全なリスクの軽減を実現することができます。 収集するクラウド環境の情報の種類や実行する修復アクションの種類ごとに、さまざまな種類のポリシーが関連付けられています。  
+
+## <a name="related-videos"></a>関連ビデオ
+- [セキュリティ コミュニティに参加する](https://channel9.msdn.com/Shows/Microsoft-Security/Join-the-Security-Community)
 
 ## <a name="see-also"></a>参照  
 
