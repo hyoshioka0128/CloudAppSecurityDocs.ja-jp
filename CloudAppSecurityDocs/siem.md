@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/23/2017
+ms.date: 8/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9a2c3a2db12a6a67bffb0ad1bc2493fdddfaf66f
-ms.sourcegitcommit: c6f917ed0fc2329a72b1e5cbb8ccd5e4832c8695
+ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
+ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
-Cloud App Security と SIEM サーバーを統合し、Office 365 のアラートとアクティビティを一元的に監視できるようになりました。 Office 365 では新しいアクティビティとイベントがサポートされるため、それらの表示が Cloud App Security にロールアウトされます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+Cloud App Security とご利用の SIEM サーバーを統合し、Office 365 のアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは Office 365 でサポートされているため、Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 また、この機能を長期間無効にしてから再び有効にすると、過去 2 日間分とそれ以降のすべてのアラートとアクティビティが転送されます。
 
@@ -100,7 +100,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
     2017-07-12T14:15:33.901Z CEF:0|MCAS|SIEM_Agent|0.102.17|EVENT_CATEGORY_UPLOAD_FILE|Upload file|0|externalId=1499868933901_72c21ebe-c206-4d8c-a41b-224035868d09 start=1499868933901 end=1499868933901 msg=Upload file: file response.txt suser=user1@test15-adallom.com destinationServiceName=Google Drive dvc=194.69.102.134 requestClientApplication=Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; rv:11.0) like Gecko cs1Label=portalURL cs1=https://cloud-app-security.com/#/audits?activity.id\=eq(1499868933901_72c21ebe-c206-4d8c-a41b-224035868d09,) cs2Label=uniqueServiceAppIds cs2=APPID_26069 cs3Label=targetObjects cs3=response.txt c6a1Label="Device IPv6 Address" c6a1=
     2017-07-12T18:53:16.519Z CEF:0|MCAS|SIEM_Agent|0.102.17|EVENT_CATEGORY_LOGIN|Log on|0|externalId=1499885596519_ed261269-9b07-4418-9ded-8cad464d677f start=1499885596519 end=1499885596519 msg=Log on suser=admin@contoso.com destinationServiceName=Office 365 dvc=13.82.149.151 requestClientApplication=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36 machine_id_149988543613557447 cs1Label=portalURL cs1=https://cloud-app-security.com/#/audits?activity.id\=eq(1499885596519_ed261269-9b07-4418-9ded-8cad464d677f,) cs2Label=uniqueServiceAppIds cs2=APPID_O365 cs3Label=targetObjects cs3=admin@contoso.com c6a1Label="Device IPv6 Address" c6a1=
 ```
-同様に、次はアラート ログ ファイルのサンプルです。
+アラートのログ ファイルの例を次に示します。
 ```
   2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660
   2017-07-16T09:36:26.550Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy|3|externalId=596b339b0c204203a33a51ae start=1500197786550 end=1500197786550 msg=Activity policy ''test-activity-policy'' was triggered by ''user@contoso.com'' suser=user@contoso.com destinationServiceName=Salesforce cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b339b0c204203a33a51ae cs2Label=uniqueServiceAppIds cs2=APPID_SALESFORCE cs3Label=relatedAudits cs3=1500197720691_b7f6317c-b8de-476a-bc8f-dfa570e00349
@@ -115,7 +115,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続がダウンしている状態が 2 時間を超える場合は **[接続エラー]**、12 時間を超える場合は **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
  
-   以下のように、接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
+   以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
 
 2. Syslog/SIEM サーバーで、Cloud App Security から送られたアクティビティとアラートが表示されていることを確認します。
 
@@ -136,13 +136,17 @@ SIEM エージェントを後で編集する必要がある場合は、テーブ
 ![SIEM - 削除](./media/siem-delete.png)
 
 > [!NOTE]
-> この機能はパブリック プレビューの状態にあります。
+> この機能はパブリック プレビュー段階です。
 
 ## <a name="high-availability-options"></a>高可用性オプション
 
-SIEM エージェントは、最大 2 日間のダウンタイムの復旧をサポートする、単一のエンドポイントです。 顧客のエンドポイントとしてロード バランサーを設けることで、高可用性をさらに高められます。
+SIEM エージェントは、最大 2 日間のダウンタイムの回復をサポートする単一のエンドポイントです。 高可用性の他の指標は、顧客のエンドポイントとしてロード バランサーを使用することで達成できます。
 
-## <a name="see-also"></a>関連項目  
+
+## <a name="related-videos"></a>関連ビデオ  
+[Cloud App Security の SIEM コネクタのインストール](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
+
+## <a name="see-also"></a>参照  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

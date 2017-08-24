@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 8/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b3d0aacdef885ba89638628b6d485ef81c3b26f3
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b5027699862a6cfe4b8dd8037f26d569b788a412
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="alerts"></a>アラート
 アラートを表示するには:
@@ -27,6 +27,11 @@ Cloud App Security ポータルで [アラート] をクリックします。
 
 ![[アラート] メニュー](./media/alert-menu.png)
 
+各アラートを処理するには、テーブルでアラートをクリックして、次のいずれかのオプションを選択します。
+- **アラートの解決**: 調査とアラートへの対応措置が終了したら、**[アラートの解決]** をクリックします。 どの操作が実行されたか、自分用に情報を残す目的でコメントを入力することも、アラートについて **Cloud App Security チームにフィードバックを送信**することもできます。 解決したアラートは、アラート テーブルに表示されなくなります。
+- アラートを解決して**開封済みにする**: オープンの状態のままで、アラートを開封済みとしてマークできます。
+- アラートの解決と**ポリシーの調整**: アラートに応じて、アラートに一致するポリシーを変更できます。
+- **破棄**: アラートを破棄できます。アラートはテーブルに表示されなくなりますが、解決済みとしては表示されません。 これは、アラートに特に問題がない場合や、誤検知の場合によく使用されます。
 
 次のアラートの種類が表示されます。 
 

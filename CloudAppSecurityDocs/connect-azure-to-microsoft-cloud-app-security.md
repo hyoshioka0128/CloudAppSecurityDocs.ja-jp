@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/8/2017
+ms.date: 8/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b418663d21653b1393999f50cc620a230d0b97dc
-ms.sourcegitcommit: b446a82c945de6452813aac7780f6a3a264495e1
+ms.openlocfilehash: d2c5dff92c790a9ad27c872ebbd09769eef9898d
+ms.sourcegitcommit: 27170447acfaeded585c264e425a46a485e7fb19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/20/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Azure を Microsoft Cloud App Security に接続する
 
@@ -41,7 +41,7 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>手順 2: イベント ハブへの接続文字列の取得
 
-1.  **[Event Hubs]** ブレードに移動します。
+1.  **[Event Hubs - プレビュー]** ブレードに移動します。
   
    ![[Event Hubs] ブレード](media/azure-event-hubs.png "Azure Event Hubs")
 
@@ -54,12 +54,12 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
     ![イベント ハブ エンティティ](media/azure-event-hubs-entities.png "Azure イベント ハブ エンティティ")
 
 4.  Azure Monitor によって作成された新しいイベント ハブを選択します。 **insights-operational-logs** という名前です。
-  
-    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
-  
   > [!NOTE]
   > Event Hub が作成されるまで数分かかることがあります。
 
+   ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
+  
+  
 5. **[共有アクセス ポリシー]**、**[追加]** の順にクリックして新しいアクセス ポリシーを作成します。このポリシーで Cloud App Security にイベント ハブからの読み取りのアクセス許可を与えます。
   
     ![共有アクセス ポリシー](media/azure-shared-access-policies.png "Azure 共有アクセス ポリシー")
@@ -90,15 +90,8 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
    > 使うコンシューマー グループを別に作成した場合は、その**コンシューマー グループ**名を使います。
   
 6.  **[接続]**をクリックします。
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+     これにより、接続のテストが行われます。これには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
-  
-
-
-
-
-
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
