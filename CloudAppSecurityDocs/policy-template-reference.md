@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 8/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 038d3c12a63f12d6b0b506de439a91e4d2d027f2
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 00534bda0a515099a486f731e0297b9fd6dec8e3
+ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 08/27/2017
 ---
 # <a name="policy-templates"></a>ポリシー テンプレート
 
@@ -49,7 +49,7 @@ Cloud App Security に存在するすべてのポリシー テンプレートの
 |脅威の検出|Administrative activity from a non-corporate IP address (企業以外の IP アドレスからの管理アクティビティ)|管理者が、企業 IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 最初に、[設定] ページに移動し**IP アドレス範囲**を設定することで、企業 IP アドレスを構成する必要があります。|
 |脅威の検出|General anomaly detection (一般的な異常検出)|承認済みのアプリのいずれかで異常なセッション (不可能な場所移動、ログオン パターン、非アクティブなアカウントなど) が検出されたときにアラートを生成します。|
 |脅威の検出|危険な IP アドレスからのログオン|承認済みアプリに危険な IP アドレスのユーザーがログオンすると、アラートを生成します。 危険な IP アドレスのカテゴリには、既定で、匿名プロキシ、TOR、またはボットネットの IP アドレス タグを持つアドレスが含まれます。 IP アドレスの範囲設定ページで、このカテゴリに IP アドレスを追加することができます。|
-|脅威の検出|Mass download by a single user (1 人のユーザーによる大量ダウンロード)|1 人のユーザーが 5 分以内に 30 回を超えるダウンロードを実行したときにアラートを生成します。|
+|脅威の検出|Mass download by a single user (1 人のユーザーによる大量ダウンロード)|1 人のユーザーが 5 分以内に 50 回を超えるダウンロードを実行したときにアラートを生成します。|
 |脅威の検出|Multiple failed user log on attempts to an app (複数回失敗したアプリに対するユーザー ログオン)|1 人のユーザーが 1 つのアプリにログオンを試み、5 分以内に失敗回数が 10 回を超えると、アラートを生成します。|
 |脅威の検出|ランサムウェア アクティビティの可能性|ランサムウェアに感染している可能性のあるクラウドにユーザーがファイルをアップロードしたときにアラートを生成します。|
 |脅威の検出|User logon from a non-categorized IP address (分類されていない IP アドレスからのユーザー ログオン)|特定の IP 範囲カテゴリに含まれていない IP アドレスからユーザーがログオンしたときにアラートを生成します。 IP アドレスを分類するには、[設定] ページに移動し、IP アドレスの範囲を選択します。|

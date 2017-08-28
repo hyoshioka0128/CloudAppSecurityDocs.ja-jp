@@ -5,6 +5,7 @@
 # 展開
 ## [はじめに](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
+### [ネットワーク要件](network-requirements.md)
 ### [管理者の管理](manage-admins.md)
 #### [管理者の設定](admin-settings.md)
 ### [メールの設定](mail-settings.md)
