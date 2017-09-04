@@ -33,6 +33,7 @@
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
 ## シナリオ
 ### [ランサムウェアから組織を保護する](use-case-ransomware.md)
+### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
 ### [リスク スコアの操作](risk-score.md)
