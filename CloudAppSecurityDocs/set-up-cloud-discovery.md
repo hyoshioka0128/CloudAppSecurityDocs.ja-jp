@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/13/2017
+ms.date: 9/03/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb3ad41fd9e7600d4825f4bf5100ed59663a4254
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
+ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 09/03/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上のリスク要因がランクおよびスコア付けされた Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
@@ -42,9 +42,10 @@ Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上の�
  
  
 >[!NOTE]
->継続的なレポート データは 1 日に 2 回分析されます。
+>- 継続的なレポート データは 1 日に 2 回分析されます。
+>- データはアップロードされる前に、ログ コレクターによって圧縮されます。 ログ コレクターの送信トラフィックは、ログ コレクターが受信するトラフィック ログのサイズの 10% となります。 
  
-## <a name="using-traffic-logs-for--cloud-discovery"></a>Cloud Discovery のトラフィック ログを使用する
+## <a name="using-traffic-logs-for-cloud-discovery"></a>Cloud Discovery のトラフィック ログを使用する
 Cloud Discovery はトラフィック ログ内のデータを使用します。 ログが詳細であるほど、可視性は高まります。 Cloud Discovery では、次の属性の Web トラフィック データを必要とします。
 - トランザクションの日付
 - Source IP
