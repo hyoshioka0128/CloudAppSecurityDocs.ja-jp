@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 9/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 291a9bf9a0c45a7ef2667b5a4266ebb582d3a23b
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="api-tokens"></a>API トークン
     
@@ -49,7 +49,11 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
   - 生成済みは、まだ使われていないトークンです。 
   - アクティブは、生成されて過去 7 日以内に使われたトークンです。 
   - 非アクティブは、使われたことはありますが、過去 7 日以内にアクティビティがなかったトークンです。
+5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が与えられます。 
 
+ ![Cloud App Security API トークン](./media/generate-api-token.png)
+
+ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
 
 ## <a name="api-token-management"></a>API トークンの管理
 
@@ -63,6 +67,14 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 > [!NOTE]
 > SIEM コネクタとログ コレクターも API トークンを使います。 これらのトークンは、ログ コレクターおよび SIEM エージェントのセクションから管理する必要があり、この表には表示されません。 
+
+
+## <a name="view-your-data-center"></a>データ センターを表示する
+
+接続先のデータ センターを確認するには、Cloud App Security ポータルでメニュー バーの **?** をクリックし、 **[バージョン情報]** を選択します。 
+
+Cloud App Security のバージョン画面で、データ センターを確認できます。
+
 
 ## <a name="see-also"></a>参照  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   

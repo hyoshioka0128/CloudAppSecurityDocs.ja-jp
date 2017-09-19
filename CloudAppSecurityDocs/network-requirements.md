@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/27/2017
+ms.date: 9/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,52 +13,64 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dac230e191c7c2d8159a2f373e6ef939fdd841a4
-ms.sourcegitcommit: c3fda43ef6fe0d15f0eb9ea23a6f245bad8c371b
+ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
+ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
 このトピックでは、Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
 
-
-## <a name="portal-access"></a>ポータル アクセス
-
-ポータル アクセスの場合、次の IP アドレスをファイアウォールのホワイトリストに追加し、Cloud App Security ポータルにアクセスできるようにする必要があります。  
-  
-104.42.231.28  
+接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。
 
 
-## <a name="app-connector-access"></a>アプリ コネクタへのアクセス
 
-Cloud App Security によってアクセスされるサードパーティー製アプリによっては、次の IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。  
-  
-104.209.35.177  
-13.91.98.185 40.118.211.172 13.93.216.68 13.91.61.249 13.93.233.42 13.64.196.27 13.64.198.97 13.64.199.41 13.64.198.19
+## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>ポータル アクセス, SIEM エージェント, 認証ゲートウェイ, ログ コレクター
+
+ポータルと認証ゲートウェイにアクセスするため、また、Cloud App Security を SIEM に接続できるように、さらに Cloud App Security ログ コレクターを実行できるようにするには、次の IP アドレスの**送信ポート 443** をファイアウォールのホワイト リストに追加する必要があります。  
+
+
+> [!div class="mx-tableFixed"]
+|データ センター|IP アドレス|  
+|----|----|
+|US1|13.91.91.243<br></br>52.183.75.62|
+|EU1|52.174.56.180<br></br>13.80.125.22|
+
+## <a name="app-connector-access-and-external-dlp-integration"></a>アプリ コネクタ アクセスと外部 DLP 統合
+
+サードパーティ製のアプリに接続し、外部 DLP ソリューションと統合するには、Cloud App Security を有効にして次の IP アドレスに接続します。
+
+
+> [!div class="mx-tableFixed"]
+|データ センター|IP アドレス|  
+|----|----|
+|US1|104.209.35.177<br></br>13.91.98.185<br></br>40.118.211.172<br></br>13.93.216.68<br></br>13.91.61.249<br></br>13.93.233.42<br></br>13.64.196.27<br></br>13.64.198.97<br></br>13.64.199.41<br></br>13.64.198.19|
+|EU1|13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
+
+### <a name="app-connector"></a>アプリ コネクタ
+Cloud App Security にアクセスされるサードパーティ製アプリによっては、Cloud App Security によるログ収集や、Cloud App Security コンソールのアクセスの提供を可能にするために上記の IP アドレスが利用されることがあります。 
 
 > [!NOTE]
 >Cloud App Security は上記の IP アドレスからガバナンス アクションとスキャンを実行するため、ベンダーからのアクティビティ ログにこの IP アドレスが表示される場合があります。 
   
 
-## <a name="siem-agent-and-log-collector"></a>SIEM エージェントおよびログ コレクター
+### <a name="dlp-integration"></a>DLP 統合
 
-Cloud App Security を有効にして SIEM に接続し、Cloud App Security のログ コレクターが実行されるようにするには、次を開く必要があります。
+Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、上記の IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
 
-- 送信ポート 443 から 104.42.231.28
-
-## <a name="external-dlp-integration"></a>外部 DLP 統合
-
-Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、Cloud App Security で使用される外部 IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
-
-1.  ソースのアドレス: 上記の API コネクタのサードパーティー製アプリについて記載したように、これらをホワイトリストに追加する必要があります
+1.  ソースのアドレス: 上記の API コネクタのサードパーティ製アプリについて記載したように、これらをホワイトリストに追加する必要があります
 2.  ソース TCP ポート: 動的
 3.  宛先アドレス: 外部 ICAP サーバーに接続されている stunnel の 1 つまたは 2 つの IP アドレス
 4.  宛先 TCP ポート: ネットワークに定義されている宛先 TCP ポート
 
 > [!NOTE] 
 > 既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。
+
+
+    
 
 
 
