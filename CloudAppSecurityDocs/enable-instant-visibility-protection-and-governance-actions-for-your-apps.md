@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/12/2017
+ms.date: 9/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ed4b87b3665509a4e842d985e02d414bfa532bf
-ms.sourcegitcommit: b39c171da0f2df49a9293b343b404d26574d78ef
+ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
+ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="connect-apps"></a>アプリを接続する 
 アプリのコネクタを使用するとアプリ プロバイダーの API を利用できるため、Cloud App Security による接続先アプリの表示および制御がしやすくなります。  
@@ -85,34 +85,8 @@ Cloud App Security はシステム管理者権限で展開されているため�
   
   
 ## <a name="prerequisites"></a>前提条件  
-アプリによっては、次の IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。  
-  
--   ログ収集の場合:  
-  
-    104.209.35.177  
-  
-    13.91.98.185
- 
-    40.118.211.172
 
-    13.93.216.68
-
-    13.91.61.249
-
-    13.93.233.42
-
-    13.64.196.27
-
-    13.64.198.97
-
-    13.64.199.41
-
-    13.64.198.19
-  
-  
--   コンソールへのアクセスの場合:  
-  
-     104.42.231.28  
+- アプリによっては、IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。 詳細については、「[ネットワーク要件](network-requirements.md)」を参照してください。
 
 - Cloud App Security API の統合によって接続するアプリごとに Cloud App Security 専用の管理サービス アカウントを作成することをお勧めします。  
   
@@ -123,7 +97,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
   
 |アプリ|ライセンスの種類|User|  
 |---------|------------------|----------|  
-|ボックス|Enterprise|管理者として Box に接続することを強くお勧めします。 共同管理者として接続すると、部分的なデータしか表示されません。 共同管理者として接続する場合は、すべての権限を選択してください。|  
+|ボックス|Enterprise|管理者として Box に接続することを強くお勧めします。共同管理者として接続すると、部分的なデータしか表示されません。 共同管理者として接続する場合は、すべての権限を選択してください。|  
 |G Suite|G Suite Unlimited が推奨される<br /><br /> G Suite Enterprise (最低必要)|スーパー管理者|  
 |Office 365||グローバル管理者|  
 |AWS||新しく作成されたユーザー|  
