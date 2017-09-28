@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d3fd3426cc32250a2c4104292ac418b38e1d4581
-ms.sourcegitcommit: ae4c8226f6037c5eb286eb27142d6bbb397609e9
+ms.openlocfilehash: f0b2463a034a99a8f0e4a605efea65f596afc1d9
+ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2017
+ms.lasthandoff: 09/19/2017
 ---
-## <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
+# <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
 
 Cloud Discovery データを匿名化することで、ユーザーのプライバシーを保護することができます。 データ ログが Cloud App Security ポータルにアップロードされると、ログはサニタイズされ、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 このように、すべてのクラウド アクティビティの匿名が維持されます。 必要に応じて、(セキュリティ違反や疑わしいユーザー アクティビティが発生した場合などに) 特定のセキュリティ調査を行うために、管理者は実際のユーザー名を解決することができます。 管理者は、特定のユーザーを疑う理由がある場合、既知のユーザー名の暗号化されたユーザー名を調べ、暗号化されたユーザー名を使用して調査を開始することもできます。 ユーザー名の各変換はポータルの**ガバナンス ログ**で監査されます。
 
@@ -33,7 +33,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
 1.  データの匿名化を適用する方法は次の 3 つです。 
     
-    - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、**[Anonymize private information]\(個人情報の匿名化\)** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。
+    - [新しいスナップショット レポートを作成](create-snapshot-cloud-discovery-reports.md)し、**[Anonymize private information (個人情報の匿名化)]** を選択して、特定のログ ファイルのデータを匿名化するように設定できます。
  ![スナップショット データの匿名化](./media/anonymize-log.png)
 
     - 新しいデータ ソースを追加するときに **「Anonymize private information」** (個人情報の匿名化) を選択し、[新しいデータ ソースの自動アップロード](configure-automatic-log-upload-for-continuous-reports.md)に関するページを参照してデータを匿名化するように設定できます。  
