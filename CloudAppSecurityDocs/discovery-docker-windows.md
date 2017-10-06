@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/6/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87bff98075e9ec170442f5611828c79bf7bd43b6
-ms.sourcegitcommit: ccee5664f5c49d5bae3748021d5b20dcf637d317
+ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Windows Server 2016 で自動ログ コレクター Docker を設定および構成する
 
@@ -39,6 +39,9 @@ ms.lasthandoff: 09/08/2017
     -   ログ コレクターが着信 FTP および Syslog トラフィックを受信できる。
 
     -   ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる。
+
+> [!NOTE]
+> ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)への送信トラフィックを開始できるようにします。
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 

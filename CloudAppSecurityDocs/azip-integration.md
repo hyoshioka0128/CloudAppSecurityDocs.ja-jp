@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 003c56d1d05c35adac55c568d72beab18243519f
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -36,7 +36,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、この処理は 1 時間に 1 回実行されます。
 2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。 自動スキャン (下記参照) を有効にした場合は、新しいファイルまたは変更されたファイルがすべて、スキャン キューに追加されます。
     b. 分類ラベルを検索するようにファイル ポリシー (下記参照) を設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
-3. 前述のように、これらのスキャンは、Cloud App Security が最初に実行するスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 外部ラベルをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant (このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする)]** チェックボックスをオンにします (下記参照)。
+3. 前述のように、これらのスキャンは、Cloud App Security が最初に実行するスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 これらをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant]\(このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする\)** チェックボックスをオンにします (下記参照)。
 4. Cloud App Security 上で Azure Information Protection を有効にすると、Office 365 に追加されたすべての新しいファイルについても分類ラベルがスキャンされます。
 
 ## <a name="how-to-integrate-azure-information-protection-with-cloud-app-security"></a>Azure Information Protection を Cloud App Security に統合する方法
@@ -55,10 +55,10 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
  ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
 > [!NOTE] 
-> 自動スキャンは、再度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、[**コンテンツ検査**] オプションを確認します。 次に、[**コンテンツ検査**] の [**プリセットの式と一致するファイルを含む**] をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これで、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
+> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、[**コンテンツ検査**] オプションを確認します。 次に、[**コンテンツ検査**] の [**プリセットの式と一致するファイルを含む**] をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 ### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
-既定では、Cloud App Security は、組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
+既定では、Cloud App Security は、自分の組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
 
 組織の部外者によって設定された分類ラベルを無視するには、Cloud App Security ポータルの [**Azure security settings (Azure セキュリティ設定)**] の [**全般設定**] で、[**Ignore Azure Information Protection classification labels from other tenants (他のテナントからの Azure Information Protection 分類ラベルを無視する)**] を選択します。
  
@@ -67,11 +67,11 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 ### <a name="control-file-exposure"></a>ファイルの公開を制限する
 - Azure Information Protection 分類ラベルでラベル付けしたドキュメントである場合:
 
-![AZIP のサンプル画面](./media/azip-screen.png)
+![Azure Information Protection 画面サンプル](./media/azip-screen.png)
 
-- Cloud App Security の [**ファイル**] ページで、分類ラベルにフィルターを適用することにより、該当するファイルを確認できるようになります。
+- Cloud App Security の **[ファイル]** ページで、分類ラベルにフィルターを適用するとこのファイルを確認できます。
 
-![AZIP と CAS の比較](./media/cas-compared-azip.png)
+![Cloud App Security と Azure Information Protection の比較](./media/cas-compared-azip.png)
 
 - それらのファイルとその分類ラベルの詳細情報については、ファイル ドロワーで取得できます。
 
@@ -89,7 +89,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 ![Cloud App Security における Azure Information Protection タグ](./media/azip-tags-in-cas.png)
 
 > [!Note]
-> Azure Identity Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効であると表示されます。 無効になったラベルは表示されません。
+> Azure Identity Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効と表示されます。 削除されたラベルは表示されません。
 
 
 **ポリシー #1 - Box で外部共有されている機密データ:**
@@ -126,18 +126,21 @@ Cloud App Security がお使いの Office 365 サービスに接続されると�
 
 1. **[ファイル]** ページで、保護するファイルを選択して、ファイルの行の最後にある 3 つのドットをクリックし、**[保護]** を選択します。 
 ![アプリの保護](./media/protect-app.png)
+>[!NOTE]
+>Azure Information Protection は、最大 50 MB までのサイズのファイルを保護します。 
+
 2. ファイルの保護に使用する組織の分類ラベルを選択し、**[保護]** をクリックします。 
 ![保護の分類ラベル](./media/protect-template.png)
 3. 分類ラベルを選択して [保護] をクリックすると、Cloud App Security によって分類ラベルが適用され、元のファイルが保護されます。 T
 > [!NOTE]
->   ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS 分類ラベルを適用することをお勧めします。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
+>   ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS 分類ラベルを適用することを推奨します。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
 
-4. 保護されたファイルにユーザーがアクセスする場合、RMS 共有アプリがユーザーのデバイスにインストールされている必要があります。 詳細については、「[Microsoft Rights Management 共有アプリケーションの技術的概要と保護の詳細](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)」を参照してください。
+4. 保護されたファイルにユーザーがアクセスする場合、RMS 共有アプリがユーザーのデバイスにインストールされている必要があります。 詳細については、「[Microsoft Rights Management 共有アプリケーションの技術的概要と保護の詳細](https://docs.microsoft.com/information-protection/rms-client/sharing-app-admin-guide-technical)」をご覧ください。
 
 5. この操作は、**ガバナンス ログ**で直前に行った保護操作の行の最後にある **[元に戻す]** ボタンをクリックすると、いつでも元に戻すことができます。 
 
 
-Cloud App Security と Azure Information Protection の連動のしくみに関する詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」を参照してください。
+Cloud App Security と Azure Information Protection の連動のしくみの詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」をご覧ください。
 
  
 ## <a name="related-videos"></a>関連ビデオ  

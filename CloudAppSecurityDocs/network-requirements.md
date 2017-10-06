@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82bdda2ab26fa1c954edb5186eeb37d909d65e64
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
@@ -69,7 +69,13 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 > [!NOTE] 
 > 既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。
 
+## <a name="email-server"></a>電子メール サーバー
 
+Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
+
+198.2.134.139 (mail1.cloudappsecurity.com)
+
+この IP アドレスを必ずお使いのスパム対策サービスにホワイトリスト登録し、通知が送信されるようにしてください。
     
 
 

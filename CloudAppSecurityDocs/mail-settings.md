@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 9/27/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce24e4c25ab4d8b85e4ddb6d6d574dd29b8c2003
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 ##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
 メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
+
+迷惑メール対策サービスにホワイトリスト登録すべき Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。 
   
 ![[メールの設定] メニュー](./media/mail-setting-menu.png "[メールの設定] メニュー")  
   

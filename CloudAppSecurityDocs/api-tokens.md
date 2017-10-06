@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/17/2017
+ms.date: 9/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a4d882791554344926b99320bf6d7fd4678af0b5
-ms.sourcegitcommit: d012fc1a099773bd9e9dc61906faab68dae0e996
+ms.openlocfilehash: d4e56bc0b09b27b600d1f397f89ba13e5ee15350
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="api-tokens"></a>API トークン
     
@@ -48,7 +48,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
   - 生成済みは、まだ使われていないトークンです。 
   - アクティブは、生成されて過去 7 日以内に使われたトークンです。 
-  - 非アクティブは、使われたことはありますが、過去 7 日以内にアクティビティがなかったトークンです。
+  - 非アクティブは、使われたことはあるが、過去 7 日以内にアクティビティがなかったトークンです。
 5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が与えられます。 
 
  ![Cloud App Security API トークン](./media/generate-api-token.png)
@@ -59,7 +59,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 [API トークン] ページには、生成されたすべての API トークンの表が含まれます。
 
-完全な権限を持つ管理者の場合は、このテナントに対して生成されたすべてのトークンが表示されます。 他のユーザーの場合は、自分で生成したトークンだけが表示されます。
+完全な権限を持つ管理者には、このテナントに対して生成されたすべてのトークンが表示されます。 他のユーザーには、自分で生成したトークンだけが表示されます。
 
 表では、トークンが生成された日時と最後に使われた日時に関する詳細がわかり、トークンを取り消すこともできます。 
 
