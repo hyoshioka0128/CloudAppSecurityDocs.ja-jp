@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7e2b6d0f02d49eaa4354f5344d0555fc3f503fb8
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: 7497a52a48a7cb3b943da847b85144d0ce78ca84
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Azure を Microsoft Cloud App Security に接続する
 
@@ -32,18 +32,18 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
 1.  Azure サブスクリプションの Azure アクティビティ ログをイベント ハブにストリーミングします。 https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs にある Azure ドキュメントの公式ガイドに従います。
 
  > [!NOTE]
- > Azure サブスクリプションを複数お持ちの場合は、各サブスクリプションでこの手順を繰り返しますが、イベント ハブは 1 つだけを使用し、全サブスクリプションで共有するようにします。
+ > 複数の Azure サブスクリプションをお持ちの場合は、1 つのイベント ハブを全サブスクリプションで共有して使用し、各サブスクリプションでこの手順を繰り返します。
 
  この手順を完了すると、新しいイベント ハブが選択した名前空間に作成されます。
  
  > [!NOTE]
- > アクティビティ ログのエクスポートを試みた後でエラーが発生する場合は、Azure で **[リソース プロバイダー]** ブレードに移動し、"microsoft.insights" が登録されていることを確認します。
+ > アクティビティ ログのエクスポートを試みた後でエラーが発生する場合は、Azure の左側にあるメニューで **[リソース プロバイダー]** に移動し、"microsoft.insights" が登録されていることを確認します。
 
 ### <a name="step-2-get-a-connection-string-to-your-event-hub"></a>手順 2: イベント ハブへの接続文字列の取得
 
-1.  **[Event Hubs - プレビュー]** ブレードに移動します。
+1.  左側のメニューで **[Event Hubs - Preview]\(Event Hubs - プレビュー\)** に移動します。
   
-   ![[Event Hubs] ブレード](media/azure-event-hubs.png "Azure Event Hubs")
+   ![Event Hubs メニュー](media/azure-event-hubs.png "Azure Event Hubs")
 
 2.  イベント ハブの名前空間を選択します。
   
@@ -55,7 +55,7 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
 
 4.  Azure Monitor によって作成された新しいイベント ハブを選択します。 **insights-operational-logs** という名前です。
   > [!NOTE]
-  > Event Hub が作成されるまで数分かかることがあります。
+  > イベント ハブが作成されるまで数分かかることがあります。
 
    ![Insights operational logs](media/azure-insight-operational-logs.png "Azure insight operational logs")
   
@@ -66,13 +66,13 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
 
 6.  新しいポリシーの名前を入力し、少なくとも **[リッスン] 要求**が含まれていることを確認します。 完了したら、**[作成]** をクリックします。
   
-    ![Azure の新しいポリシー](media/azure-new-policy.png "Azure の新しいポリシーの作成")
+    ![Azure の新しいポリシー](media/azure-new-policy.png "Azure の新しいポリシー")
 
-7.  **[設定]** から、**[共有アクセス ポリシー]**、先ほど作成したアクセス ポリシーの順にクリックします。   
+7.  **[設定]** から、**[共有アクセス ポリシー]**、作成したアクセス ポリシーの順にクリックします。   
   
-    ![Azure のポリシーの選択](media/azure-select-policy.png "Azure のポリシーの選択")
+    ![Azure ポリシー](media/azure-select-policy.png "Azure ポリシー")
 
-8. [ポリシー] ウィンドウで、**[接続文字列 – プライマリ キー]** または **[接続文字列 - セカンダリ キー]** の隣のボタンをクリックし、いずれかの接続文字列をコピーします。
+8. [ポリシー] ウィンドウで、**[Connection string- Primary Key]\(接続文字列 – プライマリ キー\)** または **[Connection String- Secondary Key]\(接続文字列 - セカンダリ キー\)** の隣のボタンをクリックし、いずれかの接続文字列をコピーします。
 
 ### <a name="step-3-add-azure-to-cloud-app-security"></a>手順 3: Cloud App Security への Azure の追加
  
@@ -89,8 +89,7 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
    >[!NOTE] 
    > 使うコンシューマー グループを別に作成した場合は、その**コンシューマー グループ**名を使います。
   
-6.  **[接続]**をクリックします。
-     これにより、接続のテストが行われます。これには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
+6.  **[接続]** をクリックして接続し、接続をテストします。 これには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
 
 
 > [!NOTE]

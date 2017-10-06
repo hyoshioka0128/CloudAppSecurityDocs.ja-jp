@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 9/25/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 02cf326722410041b112caf67dc7d33cf72fe375
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 56195253a603671d2f273616b652f5d821e80a51
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の Dropbox アカウントに接続する方法を説明します。  
@@ -29,7 +29,7 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
 1.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
   
-2.  **[アプリ コネクター]** ページで、[+] ボタン、**[Dropbox]** の順にクリックします。  
+2.  **[アプリ コネクタ]** ページで、[+] ボタン、**[Dropbox]** の順にクリックします。  
   
      ![Dropbox の接続](./media/connect-dropbox.png "Dropbox の接続")  
   
@@ -41,7 +41,7 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
      Dropbox のログオン ページが開きます。 Cloud App Security がチームの Dropbox インスタンスにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、任意のチーム メンバーと同様に任意のアクティビティを実行することを許可するかどうかを確認するメッセージが Dropbox で表示されます。 続行するには、[**許可**] をクリックします。  
+6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、[**許可**] をクリックします。  
   
 7.  Cloud App Security コンソールに戻ると、Dropbox が正常に接続されたことを通知するメッセージが届いています。  
   
@@ -52,7 +52,7 @@ Dropbox ではサインインしなくても共有リンクからファイルに
 Dropbox を接続すると、接続までの 60 日間のイベントを受け取ります。
 
 > [!NOTE] 
-> ファイルを追加する Dropbox のすべてのイベントは、Cloud App Security に接続された他のすべてのアプリに合わせるためにアップロード ファイルとして Cloud App Security に表示されます。 
+> ファイルを追加する Dropbox のすべてのイベントは、アップロード ファイルとして Cloud App Security に表示され、Cloud App Security に接続された他のすべてのアプリと並べられます。 
  
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   

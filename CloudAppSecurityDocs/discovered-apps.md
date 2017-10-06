@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2017
+ms.date: 9/26/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 683815d0db528ac65b0d547cd8e5ab09ea64321f
-ms.sourcegitcommit: f9851779aa15b11f559e56ac818f1333f027c000
+ms.openlocfilehash: d349488692f006908426fd8f33eb6ae654350958
+ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -130,6 +130,10 @@ Cloud Discovery を使うと、組織でのクラウドの使用状況をさら�
 6.  データに適用するフィルターを設定します。[**組織単位**]、[**IP アドレス タグ**]、[**IP アドレスの範囲**] があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
   
     ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png) 
+
+> [!NOTE]
+> すべてのカスタム レポートは、圧縮されていないデータで最大 1 GB までに制限されます。 1 GB を超えるデータがある場合は、最初の 1 GB のデータがレポートにエクスポートされます。
+
 
 ## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery データの削除  
 Cloud Discovery データを削除する理由はいくつかあります。 次の場合に削除することをお勧めします。  
