@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2017
+ms.date: 10/1/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,23 +13,23 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b16231a0456cce028e69add3d6a643a9698ea0f1
-ms.sourcegitcommit: 5688d3916a54deada225f7a83c34a7c501953960
+ms.openlocfilehash: bdde7b7c25244b2b11710d998754e5e115c40c9a
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/04/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security の展開
 Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
-組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 詳細については、「[Cloud App Security の購入方法](https://www.microsoft.com/en-us/cloud-platform/cloud-app-security)」の「ライセンス関連資料」セクションを参照してください。  
+組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
 
 >[!NOTE]
 >Cloud App Security を使用するのに、Office 365 ライセンスは不要です。  
 
 ## <a name="prerequisites"></a>前提条件  
   
--   製品を使用するには、企業が Cloud App Security のライセンスを所有している必要があります。 詳細については、[Cloud App Security の購入方法](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)および[ライセンス関連資料](https://www.microsoft.com/server-cloud/products/cloud-app-security/default.aspx)を参照してください。  
+-   製品を使用するには、企業が Cloud App Security のライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
   
      テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。  
   
