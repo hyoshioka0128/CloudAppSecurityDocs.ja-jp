@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 10/1/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bd396f4e4f7158dfe1500d85431ef0643e6816a3
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
+ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -83,6 +83,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 > [!NOTE]
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
+> - Windows で実行する場合は、コマンドを実行するスケジュールされたタスクを構成することをお勧めします。 これにより、サービスは常に稼動している状態になります。
 
 各変数の使用方法:
 - DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
