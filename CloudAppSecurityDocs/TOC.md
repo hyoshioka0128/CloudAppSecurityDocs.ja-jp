@@ -1,7 +1,9 @@
 # 理解と調査
-## [CAS とは](what-is-cloud-app-security.md)
+## [Cloud App Security とは](what-is-cloud-app-security.md)
 ## [新機能](release-notes.md)
-## [CAS エディション](editions-cloud-app-security.md)
+## 比較
+### [Office 365](editions-cloud-app-security-o365.md)
+### [Azure AD](editions-cloud-app-security-aad.md)
 # 展開
 ## [はじめに](getting-started-with-cloud-app-security.md)
 ## [基本設定](general-setup.md)
