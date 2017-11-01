@@ -31,10 +31,13 @@
 ### [Okta の接続](connect-okta-to-microsoft-cloud-app-security.md)
 ### [ServiceNow の接続](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Salesforce の接続](connect-salesforce-to-microsoft-cloud-app-security.md)
+## [プロキシによるアプリの保護](proxy-intro-aad.md)
+### [Azure AD アプリでプロキシを展開する](proxy-deployment-aad.md)
 # vmmblue_2
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
 ## シナリオ
 ### [ランサムウェアから組織を保護する](use-case-ransomware.md)
+### [機密情報のダウンロードのブロック](use-case-proxy-block-session-aad.md)
 ### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
@@ -56,6 +59,7 @@
 #### [ファイル ポリシー](data-protection-policies.md)
 ##### [コンテンツ検査](content-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
+#### [セッション ポリシー](session-policy-aad.md)
 #### [ポリシー テンプレート リファレンス](policy-template-reference.md)
 ### [接続されているアプリの管理](governance-actions.md)
 ### [検出されたアプリの管理](governance-discovery.md)
