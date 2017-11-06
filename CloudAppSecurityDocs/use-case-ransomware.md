@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/21/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9359935410495345820bb509984d8533cb6fa070
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 66fbed4fd298b73e53245d2cc50ebdd4b0bb3486
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>ランサムウェアから組織を保護する
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 06/28/2017
        ![テンプレート ランサムウェア](./media/ransomware-template.png)
     3. このテンプレートは、カスタマイズしなくても、ランサムウェア攻撃の典型的なアクティビティと、既知のランサムウェアに関連付けられているファイルとフォルダーを検索できるように設計されています。 必要に応じて、ポリシーと一致したときに受信するアラートの種類 (電子メールとテキスト メッセージ) を設定できます。
         ![テンプレート ランサムウェア](./media/ransomware-template-fields.png)
-    4. [**作成**] をクリックします。 
+    4. **[作成]** をクリックします。 
    
      
 2. 一致を調査する

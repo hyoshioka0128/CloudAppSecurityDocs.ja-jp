@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/31/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 83a89f9d916a1a95394993e9d95fb7988ec85a4b
-ms.sourcegitcommit: 4cf65f627f2d370ee4a4decae1acbb9658874056
+ms.openlocfilehash: e1c38d54a503f84a68a60812c1a6558ff7f92a4b
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/13/2017
+ms.lasthandoff: 11/06/2017
 ---
 ## <a name="managing-admin-access"></a>管理アクセス許可の管理
 
@@ -55,7 +55,7 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
 
    ![管理者アクセスの管理](./media/manage-admin-access.png "管理者アクセスの管理")  
 
-4. [ **閉じる**] をクリックします。  
+4. **[ 閉じる]** をクリックします。  
 
    >[!NOTE]
     >全体管理者かセキュリティ管理者だけが Cloud App Security へのアクセスを他のユーザーに与えることができます。
@@ -69,7 +69,7 @@ Azure Active Directory または Office 365 の管理者のアクセス許可を
 Cloud App Security に管理者を追加するには:
 1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、**[管理者アクセス権を管理します]** をクリックします。 
 
-2. Cloud App Security へのアクセス権を付与する管理者を追加し、アクセス レベルを選択し、[**閉じる**] をクリックします。
+2. Cloud App Security へのアクセス権を付与する管理者を追加し、アクセス レベルを選択し、**[閉じる]** をクリックします。
 
 
 
