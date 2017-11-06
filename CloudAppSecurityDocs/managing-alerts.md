@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c4134370302fe8d35e6a3e2232d6ff8a65ad96f6
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 ## <a name="manage-your-alerts"></a>アラートの管理  
 アラートは、クラウド環境をより深く理解するための最初のステップです。 確認した状況に基づいて新しいポリシーを作成できます。 たとえば、ある管理者がグリーンランドからサインインしていることが判明したとします。しかし、これまでグリーンランドからサインインしたことがある人は組織にいません。 その場所からのサインインに使用されている管理者アカウントを自動的に停止するポリシーを作成することができます。  
 
 すべてのアラートを確認し、これに基づいてポリシーを修正することをお勧めします。 無害なイベントが既存のポリシーに違反していると判断される場合、ポリシーを調整して不要なアラートを受信する回数を減らします。  
 
-1.   [**アラートを開く**] を選択して [**すべてのアラートを表示**] をクリックします。  
+1.   **[アラートを開く]** を選択して **[すべてのアラートを表示]** をクリックします。  
 
      ダッシュボードのこのセクションでは、不審なアクティビティや作成済みのポリシーの違反がすべて表示されます。 これはクラウド環境で定義されているセキュリティ体制の保護に活用できます。  
 

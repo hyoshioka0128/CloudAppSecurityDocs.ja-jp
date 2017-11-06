@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/19/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e888fe124b72704309183be7c2516367f2a14a0d
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+ms.openlocfilehash: 2b0cf50d1cf7d5b1c8fce48a38ed522f9d141acd
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Okta を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の Okta アカウントに接続する方法を説明します。  
@@ -30,13 +30,13 @@ ms.lasthandoff: 06/28/2017
   
      Okta アカウントが検証済みであることを確認します。  
   
-2.  Okta コンソールで [**管理者**] をクリックします。  
+2.  Okta コンソールで **[管理者]** をクリックします。  
   
-    -   [**セキュリティ**]、[**API**] の順にクリックします。  
+    -   **[セキュリティ]**、**[API]** の順にクリックします。  
   
          ![Okta API](./media/okta-api.png "Okta API")  
   
-    -   [**トークンを作成します**] をクリックします。  
+    -   **[トークンを作成します]** をクリックします。  
   
          ![Okta のトークンの作成](./media/okta-createtoken.jpg "Okta のトークンの作成")  
   
@@ -44,7 +44,7 @@ ms.lasthandoff: 06/28/2017
   
          ![Okta のトークン ポップアップ](./media/okta-token-popup.png "Okta のトークン ポップアップ")  
   
-    -   [**Token created successfully (トークンは正常に作成されました)**] ポップアップで、[**Token value (トークン値)**] をコピーします。  
+    -   **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、**[Token value (トークン値)]** をコピーします。  
   
          ![Okta のトークン値](./media/okta-token-value.png "Okta のトークン値")  
   
@@ -58,9 +58,9 @@ ms.lasthandoff: 06/28/2017
   
 6.  **[接続]** をクリックして、Okta のトークンを Cloud App Security で作成します。  
   
-7.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+7.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
 Okta を接続すると、接続までの 60 日間のイベントを受け取ります。
   

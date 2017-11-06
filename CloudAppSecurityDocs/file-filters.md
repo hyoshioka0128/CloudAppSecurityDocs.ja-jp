@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: deabe5b6ccb46ad766ba8e4c206abaf021cd5b72
-ms.sourcegitcommit: a0290ac2a662994f7771975ef6c20d0b47e9edd8
+ms.openlocfilehash: f3f70a92b1670cc30ee134a380ef72889c742e58
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="files"></a>ファイル
 
@@ -52,7 +52,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 > - 単語間をスペースで区切ると、OR のように機能します。たとえば、**malware** **virus** を検索すると、名前に malware または virus が含まれているすべてのファイルが検出されるので、malware-virus.exe と virus.exe の両方が検出されます。  
 > - 文字列を検索する場合は、単語を引用符で囲みます。 引用符で単語を囲むと、AND のように機能します。たとえば、**"malware"** **"virus"** を検索すると、virus_malware_file.exe は検出されますが、malwarevirusfile.exe や malware.exe は検出されません。 ただし、検索されるのは正確な文字列のみです。 **"malware virus"** を検索した場合、**"virus"** や **"virus_malware"** は検出されません。
 
->[**が次と等しい**] を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
+>**[が次と等しい]** を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
 
 -   アクセス レベル – アクセス レベルの共有です。Public、外部、内部、Private のレベルがあります。  外部ファイルの詳細については、[「General Setup」 (一般的なセットアップ) ページの 「Set up the portal」 (ポータルのセットアップ)](getting-started-with-cloud-app-security.md) セクションをご覧ください。内部ファイルは、「[一般的なセットアップ](General-setup.md)」で設定する内部ドメイン内のファイルです。 外部ファイルは、設定した内部ドメイン内ではない場所に保存されたファイルです。 共有ファイルは、非公開レベルの上に共有レベルがあるファイルです。これには、内部共有 (内部ドメイン内で共有されるファイル)、外部共有 (内部ドメインの一覧に含まれないドメインで共有されるファイル)、リンクによる公開 (リンクによって誰とでも共有できるファイル)、公開 (インターネットを検索することによって見つかるファイル) が含まれます。 
 
@@ -112,7 +112,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 -   検疫済み – サービスによって検疫されたファイルです。たとえば、検疫されたすべてのファイルを表示できます。  
   
-特定ファイルに対してポリシーが実行されるように設定することもできます。その場合、[**適用先**] フィルターを [All files (すべてのファイル)]、[選択したフォルダー]、または [All files excluding selected folders (選択したフォルダーを除くすべてのファイル)] のいずれかに設定してから、関連するファイルまたはフォルダーを選択します。  
+特定ファイルに対してポリシーが実行されるように設定することもできます。その場合、**適用先** フィルターを All files (すべてのファイル)、選択したフォルダー、または All files excluding selected folders (選択したフォルダーを除くすべてのファイル) のいずれかに設定してから、関連するファイルまたはフォルダーを選択します。  
   
 ![フィルターに適用](./media/apply-to-filter.png "フィルターに適用")  
   

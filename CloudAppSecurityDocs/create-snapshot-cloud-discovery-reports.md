@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/19/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9aec263f470dae7db5e3b6edb415addf4e619d8a
-ms.sourcegitcommit: 1c4e2d6a8488ef01bea52f5c600f606c84724857
+ms.openlocfilehash: bb91b554eeb376d12516648407e436f0d76a40b9
+ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
@@ -28,15 +28,15 @@ ms.lasthandoff: 09/19/2017
   
 1.  組織のユーザーがインターネット アクセスに使用するファイアウォールとプロキシからログ ファイルを収集します。 組織内のすべてのユーザー アクティビティを示す、トラフィック ピーク時のログを収集するようにしてください。  
   
-2.  Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
+2.  Cloud App Security ポータルで **[探索]** をクリックし、**[新しいスナップショット レポートの作成]** をクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
-3.  [**レポート名**] と [**説明**] を入力します。
+3.  **[レポート名]** と **[説明]** を入力します。
   
      ![新しいスナップショット レポート](./media/new-snapshot-report.png) 
 
-4.  ログ ファイルのアップロード元にする [**データソース**] を選択します。  
+4.  ログ ファイルのアップロード元にする **[データソース]** を選択します。  
   
 5. ダウンロードできるサンプルに従ってログが正しく書式設定されているかどうかを確認します。 「**View and verify**」 (表示して確認) をクリックし、「**Download sample log**」 (サンプル ログのダウンロード) をクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 09/19/2017
 
 5.  アップロードする**トラフィック ログを選択**します。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
-6.  [**作成**] をクリックします。  
+6.  **[作成]** をクリックします。  
 
 7.  アップロードが完了すると、ログが正常にアップロードされたことを通知するステータス メッセージが画面右上隅に表示されます。  
   
@@ -59,10 +59,10 @@ ms.lasthandoff: 09/19/2017
 9. ポータル上部のステータス バーに、ログ ファイルの処理状態を知らせる通知バナーが表示されます。  
 ![ログ ファイル メニュー バーの処理](./media/processing-log-file-menu-bar.png) 
    
-10. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定歯車アイコンの [**Cloud Discovery の設定**] を選択することで、レポートを表示できます。   
+10. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定歯車アイコンの **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
-11. [**スナップショット レポートの管理**] を選択し、スナップショット レポートを選択します。
+11. **[スナップショット レポートの管理]** を選択し、スナップショット レポートを選択します。
  
 ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 
