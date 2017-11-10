@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 11/6/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 308c06b3-f58b-4a21-86f6-8f87823a893a
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 062ada4cc621eff89bf2968dd230f33fc84000d6
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: cd118d67089fbda869c223129b7edc574af1cb28
+ms.sourcegitcommit: 4f87ebd072c54232692483dcf07ccc2ac5daf445
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/06/2017
 ---
 # <a name="set-up-and-configure-the-automatic-log-collector-docker-on-windows-server-2016"></a>Windows Server 2016 で自動ログ コレクター Docker を設定および構成する
 
@@ -40,6 +40,8 @@ ms.lasthandoff: 09/28/2017
 
     -   ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる。
 
+    - ログ コレクターがポート 80 と 443 で Azure Blob Storage (https://adaprodconsole.blob.core.windows.net/) への送信トラフィックを開始できる。
+
 > [!NOTE]
 > ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)への送信トラフィックを開始できるようにします。
 
@@ -61,13 +63,13 @@ ms.lasthandoff: 09/28/2017
 
     ![Windows 1](./media/windows1.png)
 
-    」を参照します。 [**データ ソースの追加**] をクリックします。
+    」を参照します。 **[データ ソースの追加]** をクリックします。
 
-    b. プロキシまたはファイアウォールの [**名前**] を付けます。
+    b. プロキシまたはファイアウォールの **[名前]** を付けます。
 
-    c. [**ソース**] リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+    c. **[ソース]** リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
-    d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
+    d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
     e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
 
@@ -76,11 +78,11 @@ ms.lasthandoff: 09/28/2017
 
     f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
 
-3.  画面上部の [**ログ コレクター**] タブに移動します。
+3.  画面上部の **[ログ コレクター]** タブに移動します。
 
-    」を参照します。 [**ログ コレクターを追加**] をクリックします。
+    」を参照します。 **[ログ コレクターを追加]** をクリックします。
 
-    b. ログ コレクターに [**名前**] を付けます。
+    b. ログ コレクターに **[名前]** を付けます。
 
     c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。
 
@@ -93,15 +95,11 @@ ms.lasthandoff: 09/28/2017
 
     > -   Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 
-4.  展開の詳細が表示されます。
-
-    ![Windows3](./media/windows3.png)
-
-5.  ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン [クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
+4.  展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン [クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
 
 6.  予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
 
-    ![Windows4](./media/windows4.png)
+   ![ログ コレクターを作成する](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
@@ -126,17 +124,10 @@ ms.lasthandoff: 09/28/2017
 
 7.  ポータルで生成された実行コマンドを使って、コレクター イメージを展開します。
 
-    ![windows8](./media/windows8.png)
+   ![ログ コレクターを作成する](./media/windows7.png)
 
-    >[!NOTE]
-    >プロキシを構成する必要がある場合は、プロキシ IP アドレスとポートを追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。  
- `   docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e
-    "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e
-    "TOKEN=41f8f442c9a30519a058dd3bb9a19c79eb67f34a8816270dc4a384493988863a" -e
-    "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt
-    apparmor:unconfined --cap-add=SYS_ADMIN -dt microsoft/caslogcollector starter`
-
-    ![windows9](./media/windows9.png)
+   プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。  
+ `(echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
 9.  次のコマンドを実行して、コレクターが正しく動作していることを確認します。`docker logs <collector_name>`
 
