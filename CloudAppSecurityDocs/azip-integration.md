@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
-ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
+ms.openlocfilehash: 64fd889e309be254d5aa99320e040129a5de8e1d
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -61,6 +61,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 ### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
 既定では、Cloud App Security は、自分の組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
+
 
 組織の部外者によって設定された分類ラベルを無視するには、Cloud App Security ポータルの **[Azure security settings (Azure セキュリティ設定)]** の **[全般設定]** で、**[Ignore Azure Information Protection classification labels from other tenants (他のテナントからの Azure Information Protection 分類ラベルを無視する)]** を選択します。
  
@@ -118,7 +119,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 ## <a name="integration-with-azure-rights-management"></a>Azure Rights Management との統合
 
-Cloud App Security と Azure RMS を統合するには、組織は Azure Rights Management のライセンスを持ち、アクティブ化している必要があります。  これら 2 つの異なる手順については、「[Rights Management をアクティブにする](https://docs.microsoft.com/information-protection/deploy-use/activate-service)」を参照してください。
+Cloud App Security と Azure RMS を統合するには、組織は Azure Rights Management のライセンスを持ち、アクティブ化している必要があります。 これら 2 つの異なる手順については、「[Rights Management をアクティブにする](https://docs.microsoft.com/information-protection/deploy-use/activate-service)」を参照してください。
 
 現在のところ、Cloud App Security は Office ファイル (2016 以降) のネイティブ保護に対応しています。 PDF ファイルと画像ファイルには、今後のバージョンで対応する予定です。 
 
@@ -133,7 +134,7 @@ Cloud App Security がお使いの Office 365 サービスに接続されると�
 
 2. ファイルの保護に使用する組織の分類ラベルを選択し、**[保護]** をクリックします。 
 ![保護の分類ラベル](./media/protect-template.png)
-3. 分類ラベルを選択して [保護] をクリックすると、Cloud App Security によって分類ラベルが適用され、元のファイルが保護されます。 T
+3. 分類ラベルを選択して [保護] をクリックすると、Cloud App Security によって分類ラベルが適用され、元のファイルが保護されます。
 > [!NOTE]
 >   ファイルの元の所有者を含む組織内の全ユーザーがこうしたファイルにアクセスできるように、ファイルには会社全体での RMS 分類ラベルを適用することを推奨します。 ファイルが保護されている場合は、ファイルの所有者、ファイルの共有ポリシー、およびアクセス権を既に持っているユーザーの一覧は変わりません。
 
