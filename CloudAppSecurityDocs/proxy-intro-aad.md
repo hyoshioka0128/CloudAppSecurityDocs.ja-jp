@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 764428c87317d5b4ab706b5a9d4b3c83147628b3
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6174cfe5fc0c5ba1bbde2b1f68234f727c7db223
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシでアプリを保護する
 
 > [!NOTE]
-> Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。
+> これはプレビュー機能です。
+
 
 現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Cloud App Security プロキシは包括的な統合エクスペリエンスでこれらの機能を提供します。
 
@@ -79,6 +80,7 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 
 > [!NOTE]
 > Office 365 アプリケーションは SAML を構成されないため、現在はサポートされていません。
+
 
 ## <a name="see-also"></a>参照  
 [Cloud App Security プロキシの展開](proxy-deployment-aad.md)   

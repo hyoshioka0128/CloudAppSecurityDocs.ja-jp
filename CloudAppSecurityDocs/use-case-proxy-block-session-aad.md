@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,14 @@ ms.technology:
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c84cadea48fb131c4602cbaa5377827236764690
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 5d49c04f6ddfda778bc3775805a42383a41f88c4
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシを使用する機密情報のダウンロードのブロック
 
-> [!NOTE]
-> Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。
 
 現在の IT 管理者は板挟みになっています。従業員が生産性を高められるようにする必要があります。 これは、従業員が任意のデバイスからいつでも作業できるようにアプリへのアクセスを許可することを意味します。 その一方で、会社の資産を守らなければなりません。それには所有財産や特権アクセス情報などが含まれます。 従業員にクラウド アプリへのアクセスを許可しつつ、データを保護するにはどうすればよいでしょうか。 **このユース ケースを使用すれば、管理されていないデバイスや社外ネットワークの場所からエンタープライズ クラウド アプリの機密データにアクセスできるユーザーによるダウンロードをブロックできます。**
 
@@ -127,7 +125,9 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 
 4. ポリシー レポートでは、セッション制御のプロキシにリダイレクトされたログインと、監視対象セッションからダウンロードまたはブロックされたファイルを確認することができます。
 
-  
+
+
+
 ## <a name="see-also"></a>参照  
 [セッション ポリシーを作成する](session-policy-aad.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97ebb7db49fcf5ed524a05943557d616487294f8
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="session-policies"></a>セッション ポリシー 
 
 > [!NOTE]
-> Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。
+> これはプレビュー機能です。
 
 Cloud App Security のセッション ポリシーを使うと、セッション レベルでのリアルタイム監視が可能になり、クラウド アプリの詳細な情報を把握し、ユーザー セッションに設定したポリシーに応じて異なるアクションを実行できます。 セッション制御では、アクセスを完全に許可またはブロックするのではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
 
@@ -159,7 +159,7 @@ Cloud App Security プロキシのセッション ポリシーで実行する **
 
 Cloud App Security プロキシのセッション ポリシーで実行する **[アクション]** として **[保護]** が設定されていると、プロキシはポリシーのファイル フィルターに従って、ファイルのラベル付けとその後の保護を適用します。 ラベルは Azure の Azure Information Protection コンソールで構成され、Cloud App Security ポリシーのオプションとしてラベルが表示されるためには、ラベル内で **[保護]** が選ばれている必要があります。 ラベルが選ばれていて、Cloud App Security ポリシーの条件 (ラベル) に一致するファイルがダウンロードされると、アクセス許可がある対応する保護が、ダウンロード時にファイルに適用されます。 元のファイルはクラウド アプリ内にそのまま残っていますが、ダウンロードされるファイルは保護されています。 ファイルにアクセスしようとするユーザーは、適用された保護によって決定されるアクセス許可要件を満たす必要があります。  
  
-  
+ 
 ## <a name="see-also"></a>参照  
 [Azure AD のプロキシ機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

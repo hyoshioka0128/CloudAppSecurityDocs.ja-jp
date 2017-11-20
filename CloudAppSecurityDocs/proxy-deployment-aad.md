@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d76d9026352d237b26f2945570e2f349bd372bb4
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
+ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Azure AD アプリのプロキシをデプロイする
 
 > [!NOTE]
-> Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。
+> これはプレビュー機能です。
 
 Cloud App Security プロキシによって制御されるように Azure AD アプリを構成するには、以下の手順に従います。
 
@@ -100,6 +100,8 @@ Cloud App Security プロキシによって制御されるように Azure AD ア
 
 
 これで、プロキシ アプリを制御するための[セッション ポリシー](session-policy-aad.md)を作成できるようになりました。
+
+
 
 ## <a name="see-also"></a>参照  
 [Cloud App Security プロキシの操作](proxy-intro-aad.md)   
