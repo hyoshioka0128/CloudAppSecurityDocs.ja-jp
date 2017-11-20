@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 10/9/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b22d1ad368b05b5cee7d7459f199ce1ff2769cc4
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e7b4fbb7ed71e1a49de93447c3c00dbff43f2894
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -30,6 +30,8 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 
 > [!NOTE] 
 > この機能を有効にするには、Cloud App Security ライセンスと、Azure Information Protection の Premium P1 または P2 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
+> Cloud App Security は Azure Information Protection でスコープされたポリシーをサポートしていません。
+
 
 ## <a name="how-it-works"></a>しくみ
 [Azure Information Protection](https://docs.microsoft.com/information-protection/) のファイル分類ラベルについてはよくご存知なのではないでしょうか。 Cloud App Security で Azure Information Protection 分類タグを表示することができます。 Cloud App Security を Azure Information Protection と統合するとすぐに、次のように Cloud App Security でファイルがスキャンされます。
@@ -47,7 +49,7 @@ Cloud App Security に Azure Information Protection を統合する上で必要�
 
 Cloud App Security で、分類ラベルを対象にしたコンテンツ検査を有効にしてファイルをスキャンするには、次の手順に従います。
 
-1. Cloud App Security の設定歯車で、[**全般設定**] ページを選択します。
+1. Cloud App Security の設定歯車で、**[全般設定]** ページを選択します。
 2. Azure Information Protection で、**「Automatically scan files for Azure Information Protection classification labels」** (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする) を選択します。 
 
 Azure Information Protection を有効にすると、Cloud App Security 内で分類ラベルのあるファイルを表示し、ラベルごとにフィルターを適用できるようになります。
@@ -55,12 +57,12 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
  ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
 > [!NOTE] 
-> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、[**コンテンツ検査**] オプションを確認します。 次に、[**コンテンツ検査**] の [**プリセットの式と一致するファイルを含む**] をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
+> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、**[コンテンツ検査]** オプションを確認します。 次に、**[コンテンツ検査]** の **[プリセットの式と一致するファイルを含む]** をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 ### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
 既定では、Cloud App Security は、自分の組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
 
-組織の部外者によって設定された分類ラベルを無視するには、Cloud App Security ポータルの [**Azure security settings (Azure セキュリティ設定)**] の [**全般設定**] で、[**Ignore Azure Information Protection classification labels from other tenants (他のテナントからの Azure Information Protection 分類ラベルを無視する)**] を選択します。
+組織の部外者によって設定された分類ラベルを無視するには、Cloud App Security ポータルの **[Azure security settings (Azure セキュリティ設定)]** の **[全般設定]** で、**[Ignore Azure Information Protection classification labels from other tenants (他のテナントからの Azure Information Protection 分類ラベルを無視する)]** を選択します。
  
 ![ラベルを無視する](./media/azip-ignore.png)
 
@@ -75,7 +77,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 - それらのファイルとその分類ラベルの詳細情報については、ファイル ドロワーで取得できます。
 
-- [**ファイル**] ページで該当ファイルをクリックすると、ファイルに分類ラベルが使用されているかどうかを確認できます。
+- **[ファイル]** ページで該当ファイルをクリックすると、ファイルに分類ラベルが使用されているかどうかを確認できます。
 
 ![ファイル ドロワー](./media/azip-file-drawer.png)
 

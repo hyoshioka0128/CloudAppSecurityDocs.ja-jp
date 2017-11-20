@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/1/2017
+ms.date: 11/5/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f13b48876c91f88143ecb9bb846a654fe9fa34f8
-ms.sourcegitcommit: 55f06262640332e5c02c5fa1c6db74789dbdd552
+ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
+ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/03/2017
+ms.lasthandoff: 11/05/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -82,8 +82,10 @@ SIEM との統合は次の 3 つの手順で行われます。
       java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 > [!NOTE]
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
-> - 角かっこ [] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
-> - Windows で実行する場合は、コマンドを実行するスケジュールされたタスクを構成することをお勧めします。 これにより、サービスは常に稼動している状態になります。
+> - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
+> - サーバーの起動時に JAR を実行することをお勧めします。
+>   - Windows: スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、**[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
+>   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
 - DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
@@ -142,10 +144,6 @@ SIEM エージェントを後で編集する必要がある場合は、テーブ
 ## <a name="high-availability-options"></a>高可用性オプション
 
 SIEM エージェントは、最大 2 日間のダウンタイムの回復をサポートする単一のエンドポイントです。 高可用性の他の指標は、顧客のエンドポイントとしてロード バランサーを使用することで達成できます。
-
-
-## <a name="related-videos"></a>関連ビデオ  
-[Cloud App Security の SIEM コネクタのインストール](https://channel9.msdn.com/Shows/Microsoft-Security/Install-the-SIEM-Connector-for-Cloud-App-Security)  
 
 ## <a name="see-also"></a>参照  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   

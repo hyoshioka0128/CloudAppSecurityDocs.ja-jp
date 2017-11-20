@@ -1,11 +1,11 @@
 ---
-title: "Cloud App Security で Cloud Discovery を展開する | Microsoft Docs"
+title: "Microsoft Cloud App Security で Cloud Discovery をデプロイする | Microsoft Docs"
 description: "このトピックでは、Cloud Discovery を稼働するためのセットアップ手順について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/03/2017
+ms.date: 10/29/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be08317610ec1f32c78be9c942c64bba7bbdcd0f
-ms.sourcegitcommit: de133f251ceab10d9c2306dd76e75a68db206743
+ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
+ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/03/2017
+ms.lasthandoff: 10/29/2017
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上のリスク要因がランクおよびスコア付けされた Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
@@ -75,6 +75,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Blue Coat Proxy SG - Access ログ (W3C)
 - Check Point
 - Cisco ASA Firewall (Cisco ASA Firewall では情報レベルを 6 に設定する必要があります)
+- Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
 - Cisco Meraki - URL ログ
@@ -108,6 +109,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 |Blue Coat|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Checkpoint|いいえ|**はい**|いいえ|**はい**|いいえ|いいえ|
 |Cisco ASA|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
+|Cisco ASA with FirePOWER|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Cisco FWSM|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
 |Cisco IronPort WSA|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Cisco Meraki|**はい**|**はい**|いいえ|**はい**|いいえ|いいえ||Cisco Scansafe|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|

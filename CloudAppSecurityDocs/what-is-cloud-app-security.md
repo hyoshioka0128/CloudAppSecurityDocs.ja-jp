@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f3bb5b1618f9bc872f1171f73c2dc529b3679aec
-ms.sourcegitcommit: 9111960557afb30ea2d6c155afd4885a7ca1b278
+ms.openlocfilehash: 2d085cb1df45748ec869766f7c6824dc427b61fe
+ms.sourcegitcommit: 991e957c70d49e3fbf77828c2d2064fa363da667
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="what-is-cloud-app-security"></a>Cloud App Security とは
 
@@ -43,9 +43,10 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 -   Cloud Discovery を使用して、クラウド環境と組織で使用しているクラウド アプリをマップおよび特定する。
 -   クラウド内のアプリを承認および却下する。  
 -   プロバイダーの API を活用する簡単にデプロイ可能なアプリ コネクタを使用して、接続したアプリを把握および統制する。  
+-   プロキシ保護を使用して、クラウド アプリ内で実行されるアクセスとアクティビティをリアルタイムで把握し、制御する。
 -   ポリシーを設定し、継続的に調整できるようにすることで、継続的に制御する。  
 
-![Cloud App Security アーキテクチャの図](./media/architecture.png)  
+![Cloud App Security アーキテクチャの図](./media/proxy-architecture.png)  
 
 ### <a name="data-retention--compliance"></a>データ保持期間およびコンプライアンス
 
@@ -58,7 +59,7 @@ Cloud App Security は次のようにデータを保持しています。
 - 検出データ: 90 日間 
 - アラート: 180 日間 
 
-これらのソースからデータが収集されると、Cloud App Security はデータを使って高度な分析を実行します。 異常なアクティビティはすぐに通知され、クラウド環境の詳細が提供されます。 Cloud App Security でポリシーを構成し、クラウド環境内のすべてのデータを保護するために使用することができます。  
+これらのソースからデータが収集されると、Cloud App Security は高度なヒューリスティック異常検出エンジンを実行してユーザーの環境をプロファイルし、得られたベースラインに関する異常なアクティビティについてユーザーに警告し、クラウド環境を詳細に可視化できるようにします。 Cloud App Security でポリシーを構成し、クラウド環境内のすべてのデータを保護するために使用することができます。  
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 
@@ -76,6 +77,13 @@ Cloud App Security では、*クラウド アプリ カタログ*を使用して
 アプリを接続して保護を拡張するにはめ、アプリの管理者がアプリにアクセスする Cloud App Security を認証します。 すると、Cloud App Security はアクティビティ ログに対してアプリを照会し、データ、アカウント、およびクラウド コンテンツをスキャンします。 Cloud App Security は、ポリシーを適用して脅威を検出し、問題を解決するためのガバナンス アクションを提供します。  
 
 Cloud App Security は、クラウド プロバイダーから提供される API を使用します。 各アプリには、独自のフレームワークと API の制限事項があります。 Cloud App Security では、各アプリ プロバイダーと連携して、API の使用を最適化すると共に、最適なパフォーマンスを確保しています。 アプリが API に課すさまざまな制限事項 (調整、API の制限、動的なタイムシフト API の期間など) を考慮して、Cloud App Security エンジンでは使用可能な機能が活用されます。 テナント内のすべてのファイルのスキャンなど、一部の処理には大量の API が必要となるため、長時間にわたって実行されます。 ポリシーによっては、数時間または数日間にわたって実行される場合があります。  
+
+### <a name="proxy-protection"></a>プロキシによる保護
+Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 プロキシでは、次のようにして組織を保護することができます。 
+-   データのダウンロードをブロックして、事前にデータ リークを防ぐ
+-   暗号化によって保護されるように、クラウドでのデータの格納とクラウドからのデータのダウンロードを強制するルールを設定する
+-   非管理対象デバイスでの実行内容を監視できるように、保護されていないエンドポイントを把握する
+-   会社以外のネットワークまたは危険な IP アドレスからのアクセスを制御する
 
 ### <a name="policy-control"></a>ポリシー コントロール  
 

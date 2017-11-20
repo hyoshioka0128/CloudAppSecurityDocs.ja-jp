@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 10/30/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,30 +13,52 @@ ms.technology:
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a43adb2dfbfce0164384bd9fccb87d602e9eb7b7
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: f67e363f9b6cdb866124960037ecb81e07756d8a
+ms.sourcegitcommit: 9eb5c9c43629329a081f970b480956975e424ecb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/30/2017
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
 このトピックでは、Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
 
-接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。
 
+## <a name="view-your-data-center"></a>データ センターを表示する
 
+以下の要件の一部は、接続しているデータ センターに依存します。 
 
-## <a name="portal-access-siem-agent-authentication-gateway-and-log-collector"></a>ポータル アクセス, SIEM エージェント, 認証ゲートウェイ, ログ コレクター
+接続しているデータ センターを確認するには:
 
-ポータルと認証ゲートウェイにアクセスするため、また、Cloud App Security を SIEM に接続できるように、さらに Cloud App Security ログ コレクターを実行できるようにするには、次の IP アドレスの**送信ポート 443** をファイアウォールのホワイト リストに追加する必要があります。  
+1. Cloud App Security ポータルで、メニュー バーの **[?]** をクリックして、 **[バージョン情報]** を選択します。 
+
+    ![[バージョン情報] をクリックします。](./media/about-menu.png)
+
+2. Cloud App Security のバージョン画面で、リージョンとデータ センターを確認できます。
+
+    ![データ センターを表示する](./media/data-center.png)
+
+## <a name="portal-access"></a>ポータル アクセス
+
+Cloud App Security ポータルにアクセスするには、ファイアウォールのホワイトリストに対する次の IP アドレスに**発信ポート 443** を追加します。  
 
 
 > [!div class="mx-tableFixed"]
 |データ センター|IP アドレス|  
 |----|----|
-|US1|13.91.91.243<br></br>52.183.75.62|
-|EU1|52.174.56.180<br></br>13.80.125.22|
+|US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|
+|EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|
+
+## <a name="siem-agent-connection"></a>SIEM エージェントの接続
+
+Cloud App Security が SIEM に接続できるようにするには、ファイアウォールのホワイトリストに対する次の IP アドレスに**発信ポート 443** を追加します。  
+
+
+> [!div class="mx-tableFixed"]
+|データ センター|IP アドレス|  
+|----|----|
+|US1|13.91.91.243|
+|EU1|52.174.56.180|
 
 ## <a name="app-connector-access-and-external-dlp-integration"></a>アプリ コネクタ アクセスと外部 DLP 統合
 
@@ -77,10 +99,20 @@ Cloud App Security 専用の電子メールの IP アドレスは次のとおり
 
 この IP アドレスを必ずお使いのスパム対策サービスにホワイトリスト登録し、通知が送信されるようにしてください。
     
+## <a name="log-collector"></a>ログ コレクター 
+
+Cloud Discovery 機能がログ コレクターを使って組織内のシャドウ IT を検出できるようにするには、以下を開始する必要があります。
+
+- ログ コレクターが着信 FTP および Syslog トラフィックを受信できる。
+- ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる。
+- ログ コレクターがポート 80 と 443 で Azure Blob Storage (https://adaprodconsole.blob.core.windows.net/) への送信トラフィックを開始できる。
+
+> [!NOTE]
+> ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで Microsoft Azure データセンターのポート 443 上の IP 範囲への送信トラフィックを開始できるようにします。
 
 
 
-  
+
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   

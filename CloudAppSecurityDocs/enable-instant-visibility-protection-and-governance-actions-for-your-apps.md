@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/18/2017
+ms.date: 10/9/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ee63f826e3ab23f20f7a0d3f3ccf37d63e16345
-ms.sourcegitcommit: 60fea672ed205ae9cbe622646b2681c69cf8ac7a
+ms.openlocfilehash: 437504a73f9b3ae4a8a21b379356934b76d2430b
+ms.sourcegitcommit: 4daaec64c5a773cd092d94ee17ca05dfbd9e92c5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="connect-apps"></a>アプリを接続する 
 アプリのコネクタを使用するとアプリ プロバイダーの API を利用できるため、Cloud App Security による接続先アプリの表示および制御がしやすくなります。  
@@ -119,4 +119,6 @@ Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.micr
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
 
+## <a name="check-out-this-video"></a>このビデオをご覧ください。
+[Microsoft Cloud App Security – REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
    
