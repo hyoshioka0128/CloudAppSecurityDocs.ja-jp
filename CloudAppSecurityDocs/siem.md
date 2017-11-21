@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/5/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6abf7cbaf3f13bd84255846f3d2430a67a0db523
-ms.sourcegitcommit: 2b8965381d94a5bb6349d8e25e1dc29b092a88b0
+ms.openlocfilehash: 3a1799636f58eb9c53cce3975ebc80aba3799d4e
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -34,7 +34,9 @@ SIEM エージェントは Cloud App Security からデータを取得すると�
 
 ![SIEM 統合アーキテクチャ](./media/siem-architecture.png)
 
+## <a name="supported-siems"></a>サポートされる SIEM
 
+Cloud App Security は現在、HP archsight と汎用 CEF をサポートしています。
 
 ## <a name="how-to-integrate"></a>統合方法
 
@@ -63,6 +65,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 5. **リモートの Syslog ホスト**の IP アドレスまたはホスト名と **Syslog ポート番号**を入力します。 リモートの Syslog プロトコルとして TCP または UDP を選択します。
 これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。
 **[次へ]**をクリックします。
+
   ![リモートの Syslog 設定](./media/siem2.png)
 
 6. SIEM サーバーにエクスポートするデータの種類を選択します。**アラート**と**アクティビティ**があります。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。
@@ -74,12 +77,13 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: JAR ファイルをダウンロードし、サーバーで実行する
 
-1. [Microsoft Download Center から .zip ファイルをダウンロード](https://go.microsoft.com/fwlink/?linkid=838596)し、解凍します。
+1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596) で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意した後、.zip ファイルをダウンロードして解凍します。
 
 2. zip ファイルから .jar ファイルを抽出し、サーバーで実行します。
  ファイルを実行したら、次のように実行します。
     
-      java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+        java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
+
 > [!NOTE]
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。

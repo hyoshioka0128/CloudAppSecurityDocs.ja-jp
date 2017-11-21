@@ -1,6 +1,6 @@
 ---
 title: "継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs"
-description: "このトピックでは、オンプレミス サーバーで Ubuntu の Docker を使って、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。"
+description: "このトピックでは、Azure で Ubuntu の Docker を使って Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
@@ -10,10 +10,10 @@ ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
 ms.technology: 
-ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
+ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 660857c34b6a8ff7dccffc581901e52061df937f
+ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
 ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
@@ -97,42 +97,56 @@ ms.lasthandoff: 11/14/2017
 
    ![ログ コレクターを作成する](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
+### <a name="step-2--deployment-of-your-machine-in-azure"></a>ステップ 2 – Azure でのマシンの展開
 
-> [!Note]
+> [!NOTE]
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
-1.  Ubuntu コンピューターでターミナルを開きます。
 
-2.  コマンド `sudo -i` を使ってルート権限に変更します。
-
-3. ネットワークのプロキシをバイパスするには、次の 2 つのコマンドを実行します。
-        
-        export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
-        export https_proxy='<IP>:<PORT>'
-
-3.  [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
-
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh`
-
-     > [!NOTE] 
-     > このコマンドでプロキシ証明書の検証に失敗した場合、最初に `curl -k` を使用してコマンドを実行します。
+1.  Azure 環境内で新しい Ubuntu マシンを作成します。 
+2.  マシンが起動したら、次の手順でポートを開きます。
+    1.  マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
+    2.  **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
+    3.  **[受信セキュリティ規則]** に移動して **[追加]** をクリックします。
+      
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    ![ubuntu5](./media/ubuntu5.png)
+    4. 次の規則を追加します (**詳細設定**モード)。
 
-4.  コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 これを行うには、ポータルで生成された実行コマンドをコピーします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
+    |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
+    |----|----|----|----|----|
+    |caslogcollector_ftp|21|TCP|Any|Any|
+    |caslogcollector_ftp_passive|20000-20099|TCP|Any|Any|
+    |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
+    |caslogcollector_syslogs_tcp|514-600|UDP|Any|Any|
+      
+      ![Ubuntu Azure の規則](./media/ubuntu-azure-rules.png)
 
-            sudo (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+3.  マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
 
-   ![ログ コレクターを作成する](./media/windows7.png)
+4.  `sudo -i` を使ってルート権限に変更します。
 
-5.  次のコマンドを実行して、コレクターが正しく動作していることを確認します。`docker logs \<collector_name\>`
+5.  [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
+        
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
 
-"**Finished successfully!**" というメッセージが表示される必要があります。
+6. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
 
-  ![ubuntu8](./media/ubuntu8.png)
+      ![Ubuntu Azure](./media/ubuntu-azure.png)
+
+7. ログ コレクターを展開するコマンドを実行します。
+
+      ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
+
+>[!NOTE]
+>プロキシを構成する場合、プロキシ IP アドレスとポートを追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。 
+
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+
+         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+
+8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!**” という結果を受け取ります。
+
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e8cba61d9046c341675a736c718bbcd0ad34e2c
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 
-## <a name="cloud-app-security-releases-109"></a>Cloud App Security リリース 109
+## <a name="cloud-app-security-release-110"></a>Cloud App Security リリース 110
+リリース日: 2017 年 11 月 12 日
+ 
+-   一般提供開始: ログ コレクターの新しい展開モードのロールアウトが開始されました。 現在の仮想アプライアンス ベースの展開に加えて、新しい Docker (コンテナー) ベースのログ コレクターを、オンプレミスでも Azure でも、パッケージとして [Ubuntu マシン](discovery-docker.md)にインストールできます。 Docker を使用する場合、ホスティング マシンはお客様が所有していて、このお客様が自由にパッチを適用したり監視したりできます。
+-   隅にある新しい青い疑問符を使用して、ポータルのページ内から docs.microsoft.com の関連する Cloud App Security のドキュメント ページにアクセスできるようになりました。 各リンクは状況依存のリンクで、現在のページに基づいて必要な情報にアクセスできます。
+-   Cloud App Security ポータルのすべてのページからフィードバックを送信できるようになりました。 これにより、Cloud App Security チームに対して直接バグを報告したり、新機能をリクエストしたり、チームと体験を共有したりできます。
+-   Cloud Discovery 機能が改善され、サブドメインを認識して、組織のクラウド使用状況を詳しく調査できるようになりました。 詳しくは、「[検出されたアプリの処理](discovered-apps.md)」をご覧ください。
+
+## <a name="cloud-app-security-release-109"></a>Cloud App Security リリース 109
 リリース日: 2017 年 10 月 29 日 
 
 - Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。 Microsoft Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 たとえば、次のように入力します。

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 11/12/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f0f6f0de46e8833b4f4ffb6bd31c7c46eeacac9a
-ms.sourcegitcommit: 13148ac82e496e8d4e0d10851e5d6e4f231229e4
+ms.openlocfilehash: f05fd8f548067c7e9ceb32c93e739072d682d15c
+ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/24/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 
@@ -36,9 +36,7 @@ ms.lasthandoff: 09/24/2017
 
 ログ コレクターでは、次の 2 つの展開モードがサポートされます。
 
--   **コンテナー** (*プレビュー*): オンプレミスと Azure のいずれかで、[Windows](discovery-docker-windows.md) および [Ubuntu](discovery-docker-ubuntu.md) 上の Docker イメージとして実行します。 
-
-
+-   **コンテナー**: [オンプレミス Ubuntu](discovery-docker-ubuntu.md)、または[Azure の Ubuntu](discovery-docker-ubuntu-azure.md) で Docker イメージとして実行します。 
 
 -   **仮想アプライアンス**: [Hyper-V または VMware ハイパーバイザー上のイメージとして実行します](configure-automatic-log-upload-for-continuous-reports.md)
 
