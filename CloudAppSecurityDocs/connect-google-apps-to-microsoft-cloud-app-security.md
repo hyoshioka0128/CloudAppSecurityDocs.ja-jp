@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 11/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59337a573abce3fb057d7d8056034daa54737c4a
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
+ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -114,7 +114,7 @@ ms.lasthandoff: 10/22/2017
   
     -   **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
-    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://us.portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) にアクセスし、Cloud App Security アイコンが入っている zip ファイルをダウンロードします。 **[アプリケーション アイコン]** で、サイズが 128 x 128 と 32 × 32 のイメージをドラッグ アンド ドロップします。  
+    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンを含む zip ファイルをダウンロードします。 **[アプリケーション アイコン]** で、サイズが 128 x 128 と 32 × 32 のイメージをドラッグ アンド ドロップします。  
   
     -   下にスクロールして **[Drive Integration]**/(ドライブ統合/)セクションを表示し、**[Open URL]**/(URL を開く/) に次の URL を入力します。  
   
@@ -136,7 +136,7 @@ ms.lasthandoff: 10/22/2017
   
     -   **[アプリケーション アイコン]** で、4 つの必須イメージを設定します。  
   
-         イメージは [https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip](https://portal.cloudappsecurity.com/cas/static/files/MSLogos.zip) にあります。  
+         イメージは、[https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644) から探すことができます。  
   
     -   次に **[Support URLs (サポートの URL)]** を入力します:  
   
