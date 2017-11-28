@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b75fbd49bb55160b66ad028cbd68ef5eb61c5d9f
-ms.sourcegitcommit: ab552b8e663033f4758b6a600f6d620a80c1c7e0
+ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
+ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
@@ -32,16 +32,7 @@ ms.lasthandoff: 11/14/2017
 
 -   RAM: 4 GB
 
--   ファイアウォールの設定:
-
-    -   ログ コレクターが着信 FTP および Syslog トラフィックを受信できる。
-
-    -   ログ コレクターがポート 443 でポータル (portal.contoso.cloudappsecurity.com など) への発信トラフィックを開始できる
-
-    - ログ コレクターがポート 80 と 443 で Azure Blob Storage (https://adaprodconsole.blob.core.windows.net/) への送信トラフィックを開始できる。
-
-> [!NOTE]
-> ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)への送信トラフィックを開始できるようにします。
+-   [ネットワーク要件](network-requirements#log-collector)で説明されているとおりにファイアウォールを設定する
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 
@@ -118,7 +109,7 @@ ms.lasthandoff: 11/14/2017
     |caslogcollector_ftp|21|TCP|Any|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|Any|Any|
     |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
-    |caslogcollector_syslogs_tcp|514-600|UDP|Any|Any|
+    |caslogcollector_syslogs_udp|514-600|UDP|Any|Any|
       
       ![Ubuntu Azure の規則](./media/ubuntu-azure-rules.png)
 
@@ -128,7 +119,7 @@ ms.lasthandoff: 11/14/2017
 
 5.  [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; sudo /tmp/MCASInstallDocker.sh
+        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
 6. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
 
@@ -138,12 +129,12 @@ ms.lasthandoff: 11/14/2017
 
       ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
 
->[!NOTE]
->プロキシを構成する場合、プロキシ IP アドレスとポートを追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。 
+     >[!NOTE]
+     >プロキシを構成する場合、プロキシ IP アドレスとポートを追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。 
 
-        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | sudo docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+        (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
-         ![Ubuntu proxy](./media/ubuntu-proxy.png)
+     ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
 
 8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!**” という結果を受け取ります。
 
