@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/12/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 057de59d0688b28ca9f9265ff7b4010ae9b3c3aa
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c5c8f7a8a6203f23be30ea160d8867163d8f360b
+ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/22/2017
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する
 
@@ -29,12 +29,8 @@ ms.lasthandoff: 11/13/2017
 - ディスク領域: 250 GB
 - CPU: 2
 - RAM: 4 GB 
-- ファイアウォールの設定: 
-    - ログ コレクターが着信 FTP および Syslog トラフィックを受信できる
-    - ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる
+- [ネットワーク要件](network-requirements#log-collector)で説明されているとおりにファイアウォールを設定する
 
-> [!NOTE]
-> ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653&751be11f-ede8-5a0c-058c-2ee190a24fa6=True)への送信トラフィックを開始できるようにします。
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 ログ コレクターは、1 時間あたり最大 50 GB の容量のログを処理できます。
