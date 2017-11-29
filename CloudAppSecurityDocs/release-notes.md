@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f8b50bd5b3524a782888dcd73f0f6690a2b13a89
-ms.sourcegitcommit: 7e0d28b1ac39f7e44e258ab2a0d9563b8fd2aba6
+ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-111"></a>Cloud App Security リリース 111
+リリース日: 2017 年 11 月 26 日
+
+-   検出ポリシーで、アプリ タグが条件アクションやガバナンス アクションとしてサポートされるようになりました。 これにより、**人気上昇中アプリ**などの新たに検出されたアプリを、カスタム タグで自動的にタグ化できるようになります。 アプリ タグをフィルターとして使用することもできます。たとえば、“1 日で 'ウォッチリスト' 内のあるアプリのユーザーが 100 名を超えた場合に通知する” などです。
+
+-   **時間**フィルターがさらにユーザー フレンドリになりました。
+
+-   コンテンツ検査により、コンテンツ、メタデータ、ファイル名の区別が可能となり、そのなかから検査対象を選択できるようになります。
+
+-   G スイートの新しいガバナンス アクションが追加されました。 共有ファイルへの**パブリック アクセスを減らす**ことができるようになりました。 これにより、一般に公開されているファイルを共有リンクでのみ使用されるように設定できます。
+
+-   他のアプリケーションに対するすべての OKTA ログオン アクティビティが、OKTA からのアクティビティとして Cloud App Security に表示されるようになりました。 ログインが実行された対象アプリケーションに基づいて、アクティビティの**アクティビティ オブジェクト** フィールドに表示、フィルターできます。
 
 
 ## <a name="cloud-app-security-release-110"></a>Cloud App Security リリース 110
