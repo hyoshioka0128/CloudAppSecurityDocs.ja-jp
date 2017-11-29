@@ -18,10 +18,7 @@
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
 #### [Ubuntu オンプレミス上の Docker](discovery-docker-ubuntu.md)
 #### [Azure での Ubuntu 上の Docker](discovery-docker-ubuntu-azure.md)
-##### Docker の構成の変更
-###### [証明書ファイルのカスタマイズ](discovery-docker-custom-cert.md)
-###### [FTP のパスワードの変更](discovery-docker-change-ftp.md)
-#### [仮想アプライアンスの使用](configure-automatic-log-upload-for-continuous-reports.md)
+#### [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
 ### [Cloud Discovery を強化する](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
@@ -76,3 +73,5 @@
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
 ## [SIEM 統合のトラブルシューティング](troubleshooting-siem.md)
+## [Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
+## [ポリシーのトラブルシューティング](troubleshoot-policies.md)
