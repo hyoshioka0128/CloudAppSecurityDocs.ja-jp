@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 11/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 76066e4747630b1aa7cb5c3301c8053c8254a8a0
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
+ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 ガバナンスによって、アプリ全体におけるユーザーの作業をリアルタイムで制御できるようになります。 接続されているアプリの場合、ファイルまたはアクティビティにガバナンス アクションを適用できます。
@@ -52,6 +52,8 @@ ms.lasthandoff: 11/06/2017
         -   非公開にする – 所有者のみがファイルにアクセスでき、すべての共有が削除されます。  
   
         -   コラボレーターの削除 – ファイルから特定のコラボレーターを削除します。  
+
+        - パブリック アクセスの削減 - 一般に公開されているファイルを共有リンクでのみ使用されるように設定できます。
   
     -   検疫  
   
@@ -141,6 +143,7 @@ Cloud App Security ポータルで実行できるすべてのアクションを�
 |ファイル|ファイル|保護|組織のテンプレートを適用して、Azure Information Protection でファイルを保護します。|Office 365 (SharePoint および OneDrive)|
 |ファイル|ファイル|自分の読み取りアクセス許可を取り消す|自分でファイルの読み取りアクセス許可を取り消します。自分にアクセス許可を付与して、ファイルの違反の有無を確認した後に便利です。|G Suite|
 |[ファイル]、[ファイル ポリシー]|ファイル|ファイル所有権の移転|所有者を変更します (特定の所有者を選択したポリシー内)。|G Suite|
+|[ファイル]、[ファイル ポリシー]|ファイル|パブリック アクセスの削減|これにより、一般に公開されているファイルを共有リンクでのみ使用されるように設定できます。|G Suite|
 |[ファイル]、[ファイル ポリシー]|ファイル|コラボレーターの削除|ファイルから特定のコラボレーターを削除します。|G Suite、Box、One Drive、SharePoint|
 |[ファイル]、[ファイル ポリシー]|ファイル|プライベートにする|ファイルをプライベートにします。コラボレーターやパブリック リンクはなくなり、他のユーザーと共有されることはありません。|G Suite、One Drive、SharePoint|
 |[ファイル]、[ファイル ポリシー]|ファイル|外部ユーザーを削除|すべての外部コラボレーター ([設定] で内部として設定されたドメインの外部) を削除します。|G Suite、Box |
