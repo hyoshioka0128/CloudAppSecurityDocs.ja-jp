@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 139d848936def3e97d8270027a3e288196e96f90
-ms.sourcegitcommit: f23705ee51c6cb0113191aef9545e7ec3111f75d
+ms.openlocfilehash: 2f17135950b24bf6132ae09a132e557f42dcff14
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
 
 ## <a name="technical-requirements"></a>技術要件
 
--   OS: Ubuntu 14.04 以降
+-   OS: Ubuntu 14.04 以降 (Ubuntu 17.10 をサポートする Docker の安定バージョンはありません)
 
 -   ディスク領域: 250 GB
 
@@ -111,7 +111,7 @@ ms.lasthandoff: 11/22/2017
     |caslogcollector_syslogs_tcp|601-700|TCP|Any|Any|
     |caslogcollector_syslogs_udp|514-600|UDP|Any|Any|
       
-      ![Ubuntu Azure の規則](./media/ubuntu-azure-rules.png)
+      ![Ubuntu Azure の規則](./media/inbound-rule.png)
 
 3.  マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
 
@@ -121,23 +121,21 @@ ms.lasthandoff: 11/22/2017
         
         curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-6. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
-
-      ![Ubuntu Azure](./media/ubuntu-azure.png)
-
-7. ログ コレクターを展開するコマンドを実行します。
-
       ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
 
-     >[!NOTE]
-     >プロキシを構成する場合、プロキシ IP アドレスとポートを追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。 
+6. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
 
+      ![Ubuntu Azure](./media/windows7.png)
+
+7. ログ コレクターを展開するコマンドを実行します。
+     
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
 
 8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!**” という結果を受け取ります。
 
+   ![ubuntu8](./media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
@@ -166,7 +164,7 @@ ms.lasthandoff: 11/22/2017
 ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>参照
-[Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)  
+[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
 
