@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 298358657f775ec3a53a52112ee05af5db13ca16
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: 908050cfc46ebeec5f201d562dca9c37b963c0eb
+ms.sourcegitcommit: f4ec7f2cb81c9d83bb7f406ddcca91ab07790a98
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/28/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
-Cloud App Security とご利用の SIEM サーバーを統合し、Office 365 のアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは Office 365 でサポートされているため、Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 また、この機能を長期間無効にしてから再び有効にすると、過去 2 日間分とそれ以降のすべてのアラートとアクティビティが転送されます。
 

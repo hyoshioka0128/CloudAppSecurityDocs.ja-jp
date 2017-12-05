@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/11/2017
+ms.date: 29/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64f37fe71c89a4a9f57542255d7d044164d7d3f3
-ms.sourcegitcommit: 4d84f9d15256b05c785a1886338651b86622070c
+ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
+ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
 
 ## <a name="technical-requirements"></a>技術要件
 
--   OS: Ubuntu 14.04 以降
+-   OS: Ubuntu 14.04 以降 (Ubuntu 17.10 をサポートする Docker の安定バージョンはありません)
 
 -   ディスク領域: 250 GB
 
@@ -153,7 +153,7 @@ ms.lasthandoff: 11/22/2017
 ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>参照
-[Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)  
+[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)  
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください](http://support.microsoft.com/oas/default.aspx?prid=16031)  
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
 
