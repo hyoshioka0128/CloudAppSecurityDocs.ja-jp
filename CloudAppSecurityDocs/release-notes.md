@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,22 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c40d24a20e6a05a0cec29cd99f66d7937f10e73d
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/10/2017
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-112"></a>Cloud App Security リリース 112
+リリース日: 2017 年 12 月 10 日
+
+-   アクティビティ ログでユーザー名または IP アドレスをクリックすると、関連する分析情報ドロワーにアクセスできるようになりました。 
+-   アクティビティを調査する際、時計のアイコンをクリックすると、分析情報ドロワー内の同一期間内のすべてのアクティビティを簡単に表示できるようになりました。これにより、表示しているアクティビティの 48 時間以内に実施されたすべてのアクティビティを確認できるようになります。
+-   Juniper SRX の Cloud Discovery ログ パーサーで機能強化が行われました。
+-   プロキシによって監視されるアクティビティについて、**アクティビティ オブジェクト**が拡張され、DLP スキャン関連の情報が含まれるようになりました。また、一致するポリシーが拡張され、(存在する場合) DLP 違反が含まれるようになりました。
+
 
 ## <a name="cloud-app-security-release-111"></a>Cloud App Security リリース 111
 リリース日: 2017 年 11 月 26 日
@@ -72,7 +81,7 @@ ms.lasthandoff: 11/27/2017
 ## <a name="cloud-app-security-release-104"></a>Cloud App Security リリース 104 
 リリース日: 2017 年 8 月 27 日
 
--   [IP アドレスの範囲の API](https://portal.cloudappsecurity.com/api-docs/) を使用してスクリプトを作成することで、IP 範囲を一括で追加できるようになりました。 
+-   **IP アドレスの範囲 API** を使用してスクリプトを作成することで、複数の IP 範囲を一括で追加できるようになりました。この API は、Cloud App Security ポータルのメニュー バーで、疑問符、**API ドキュメント**の順にクリックすると見つかります。 
 -   Cloud Discovery は、合計トランザクションとブロックされたトランザクションの両方を提示することで、ブロックされたトランザクションがわかりやすくなりました。
 -   クラウド アプリケーションが **ISO 27017** で認証されているかどうかをフィルターできるようになりました。 この新しいクラウド アプリ カタログのリスク要因によって、パブリック クラウド コンピューティング環境のユーザー情報の処理および保護のために一般的に受け入れられているコントロールとガイドラインを確立するこの認証がアプリケーション プロバイダーに含まれているかが決定されます。
 - GDPR 準拠の準備に役立つように、クラウド アプリ カタログにあるクラウド アプリの GDPR 適合状況ステートメントを集めました。 まだアプリ リスクのスコアには影響しませんが、アプリ発行元の GDPR 適合状況ページのリンクを使用できます (提供されている場合)。 この内容について Microsoft は未検証であり、その有効性について責任を追いません。

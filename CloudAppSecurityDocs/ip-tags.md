@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2b82ea305209555d48d3b47489a28f19249b29c3
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 758605fddf97c0f35cbc0c3029d20e536fc9dee1
+ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/10/2017
 ---
 #  <a name="IPtagsandRanges"></a> IP の範囲とタグを使用する
 
@@ -40,7 +40,7 @@ IPv4 と IPv6 がサポートされています。
 検索の一部として上記の組み込みタグを使用するには、Cloud App Security API ドキュメントでその ID を参照してください。 
 
 > [!NOTE]
-> [IP アドレスの範囲の API](https://portal.cloudappsecurity.com/api-docs/) を使用してスクリプトを作成することで、IP 範囲を一括で追加することができます
+> **IP アドレスの範囲 API** を使用してスクリプトを作成することで、複数の IP 範囲を一括で追加できます。この API は、Cloud App Security ポータルのメニュー バーで、疑問符、**API ドキュメント**の順にクリックすると見つかります。
 
 
 組み込みの IP アドレス タグとカスタム IP タグの階層が考慮され、カスタム IP タグが組み込みの IP タグよりも優先されます。 たとえば、脅威インテリジェンスに基づいてある IP アドレスに **[危険]** のタグが付いているが、**[企業]** と識別されているカスタム IP タグがある場合、カスタム カテゴリおよびタグが優先されます。
