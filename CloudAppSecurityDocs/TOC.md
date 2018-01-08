@@ -41,9 +41,11 @@
 ### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
+#### [検出されたアプリのフィルターとクエリ](discovered-app-queries.md)
 ### [リスク スコアの操作](risk-score.md)
 ## [調査](investigate.md)
 ### [アクティビティ](activity-filters.md)
+#### [アクティビティ フィルターとクエリ](activity-filters-queries.md)
 ### [ファイル](file-filters.md)
 ### [アカウント](accounts.md)
 ### [組み込みレポートの参照](built-in-report-reference.md)
@@ -69,6 +71,7 @@
 ### [外部 DLP 統合](icap-stunnel.md)
 ### [API トークン](api-tokens.md)
 # トラブルシューティング
+## [サービスの状態のトラブルシューティング](troubleshooting-status.md)
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
