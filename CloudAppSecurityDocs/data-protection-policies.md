@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb64a080a1b74b89be98410fefba5f9821704645
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: ebf5f375cdb0df5f844452beea8259a190d3c0c1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="file-policies"></a>ファイル ポリシー  
 ファイル ポリシーでは、クラウド プロバイダーの API を利用して、さまざまな自動プロセスを適用できます。 ポリシーを設定することにより、継続的なコンプライアンスのスキャン、法的な電子情報開示タスク、一般公開された機密コンテンツの DLP、その他多数のユース ケースを実現できます。  
