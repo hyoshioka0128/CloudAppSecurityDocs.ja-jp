@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2acabcc195b8496f0a9bda812cc11b289911b81a
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: beaf31d7c365f62fb9c9dc7b79b0d89f31ee694d
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -130,57 +130,25 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
 
 
-##### <a name="activity-logs"></a>アクティビティ ログ
+|適用対象|CEF フィールド名|[説明]|
+|----|-----|----|
+|アクティビティ/アラート|start| アクティビティまたはアラートのタイムスタンプ|
+|アクティビティ/アラート|end|アクティビティまたはアラートのタイムスタンプ|
+|アクティビティ/アラート|rt|アクティビティまたはアラートのタイムスタンプ|
+|アクティビティ/アラート|msg |ポータルで表示されるアクティビティまたはアラートの説明|
+|アクティビティ/アラート|suser| アクティビティまたはアラートの対象ユーザー|
+|アクティビティ/アラート|destinationServiceName| Office 365、SharePoint、Box などのアプリから発生するアクティビティまたはアラート。|
+|アクティビティ/アラート|cs<X>Label|各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味がわかる (例: targetObjects)。|
+|アクティビティ/アラート|cs<X>|ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。|
+|アクティビティ|EVENT_CATEGORY_* |アクティビティの高レベルのカテゴリ|
+|アクティビティ|<ACTION> |ポータルに表示されるアクティビティの種類|
+|アクティビティ|externalId| イベント ID|
+|アクティビティ|dvc| クライアント デバイスの IP|
+|アクティビティ|requestClientApplication|クライアント デバイスのユーザー エージェント|
+|アラート|<alert type>|たとえば、“ALERT_CABINET_EVENT_MATCH_AUDIT”|
+|アラート|<name>|一致するポリシー名|
+|アラート|externalId|アラート ID|
 
--   EVENT_CATEGORY_* - アクティビティの高レベルのカテゴリ
-
--   <ACTION> - ポータルに表示されるアクティビティの種類
-
--   externalId – イベント ID
-
--   start - アクティビティのタイムスタンプ
-
--   end - アクティビティのタイムスタンプ
-
--   rt - アクティビティのタイムスタンプ
-
--   msg – ポータルで表示されるイベントの説明
-
--   suser – アクティビティのユーザー
-
--   destinationServiceName – Office 365、Sharepoint、Box などのアプリから発生するアクティビティ。
-
--   dvc – クライアント デバイスの IP
-
--   requestClientApplication – クライアント デバイスのユーザー エージェント
-
--   cs<X>Label – 各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味が分かる (例: targetObjects)。
-
--   cs<X> - ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。
-
-##### <a name="alerts"></a>アラート
-
--   <alert type> - たとえば、“ALERT_CABINET_EVENT_MATCH_AUDIT”
-
--   <name> - 一致するポリシー名
-
--   externalId – アラート ID
-
--   start- アラートのタイムスタンプ
-
--   end – アラートのタイムスタンプ
-
--   rt – アラートのタイムスタンプ
-
--   msg – ポータルで表示されるアラートの説明
-
--   suser – アラートの対象ユーザー
-
--   destinationServiceName – Office 365、Sharepoint、Box などのアプリから発生するアラート
-
--   cs<X>Label – 各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味が分かる (例: targetObjects)。
-
--   cs<X> - ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。
 
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する

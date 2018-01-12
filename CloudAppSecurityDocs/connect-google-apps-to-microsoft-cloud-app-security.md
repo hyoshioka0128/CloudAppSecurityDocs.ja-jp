@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/14/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,14 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d813ecc39da6c26b81f459a278aa7eb42ca72f9
-ms.sourcegitcommit: fbeb299e8c41fc57b50d491b1becbf488fdd3642
+ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
-
   
   
 ## <a name="configure-g-suite"></a>G Suite を構成する  
@@ -44,9 +43,9 @@ ms.lasthandoff: 11/14/2017
   
      ![google3](./media/google3.png "google3")  
   
-5.  **[API]** で、一覧に表示されているすべての API を無効にします。  
+6.  **[API]** で、一覧に表示されているすべての API を無効にします。  
       
-6.  **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
+7.  **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
      
     -   管理 SDK  
   
@@ -63,11 +62,11 @@ ms.lasthandoff: 11/14/2017
    > [!NOTE]  
    >  ここでは **[資格情報]** の警告は無視します。  
 
-7.  5 つの **有効にされた API** が必要です:  
+8.  5 つの **有効にされた API** が必要です:  
   
      ![Google の有効にされた API](./media/google5.png "google5")  
   
-8.  **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
+9.  **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
   
     -   **[Product name shown to users]**\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
   
@@ -77,38 +76,38 @@ ms.lasthandoff: 11/14/2017
   
      ![Google の製品名](./media/google6.png "google6")  
   
-9. **[Credentials]**/(認証情報/) タブで、**[Create credentials]**/(認証情報の作成/) の隣にある矢印をクリックします。  
+10. **[Credentials]**/(認証情報/) タブで、**[Create credentials]**/(認証情報の作成/) の隣にある矢印をクリックします。  
   
      ![Google の資格情報](./media/google7.png "google7")  
 
-10. **[サービス アカウント キー]** を選択します。
+11. **[サービス アカウント キー]** を選択します。
 
      ![Google サービス アカウント キー](./media/google8.png "google8")  
   
-11. **[Create service account key]\(サービス アカウント キーの作成\)** で、**[New service account]\(新しいサービス アカウント\)** を選択して、「**Service account 1**」などの任意の名前を入力します。 **[ロール]** で、**[プロジェクト]**、**[エディター]** と選択します。 **[キーの種類]** で **[P12]** を選択してから **[作成]** をクリックします。 P12 証明書ファイルがコンピューターに保存されます。
+12. **[Create service account key]\(サービス アカウント キーの作成\)** で、**[New service account]\(新しいサービス アカウント\)** を選択して、「**Service account 1**」などの任意の名前を入力します。 **[ロール]** で、**[プロジェクト]**、**[エディター]** と選択します。 **[キーの種類]** で **[P12]** を選択してから **[作成]** をクリックします。 P12 証明書ファイルがコンピューターに保存されます。
  
      ![Google でのサービス アカウント キーの作成](./media/google9.png "google9")  
   
-12.  サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。    
+13.  サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。    
         
-12. **[資格情報]** 画面で、一番右にある **[Manage service accounts (サービス アカウントの管理)]** をクリックします。  
+14. **[資格情報]** 画面で、一番右にある **[Manage service accounts (サービス アカウントの管理)]** をクリックします。  
      
     ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite の資格情報サービス アカウント")  
   
-13. 作成したサービス アカウントの右側にある 3 つの点をクリックし、**[編集]** を選択します。  
+15. 作成したサービス アカウントの右側にある 3 つの点をクリックし、**[編集]** を選択します。  
   
      ![Google 編集](./media/google11.png "google edit")  
   
-15. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
+16. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
   
      ![Google のサービス アカウント ID](./media/google12.png "google12")  
   
-16. タイトルバーで Google Cloud Platform の横にある 3 本の水平線をクリックして Google のメニューを開きます。 **[Google Cloud Platform]** をクリックし、左側のメニューの **[APIs and services**]/(API とサービス/) タブをクリックします。  
+17. タイトルバーで Google Cloud Platform の横にある 3 本の水平線をクリックして Google のメニューを開きます。 **[Google Cloud Platform]** をクリックし、左側のメニューの **[APIs and services**]/(API とサービス/) タブをクリックします。  
     
-17. 開いているダッシュボードで、下にスクロールして有効になっている API の一覧を表示し、**[Google ドライブ API]** をクリックします。   
+18. 開いているダッシュボードで、下にスクロールして有効になっている API の一覧を表示し、**[Google ドライブ API]** をクリックします。   
        ![Google ドライブを選択](./media/google14.png "google14")  
 
-18. **[Drive UI 統合]**/(Drive UI 統合/) タブをクリックし、次の情報を入力します。
+19. **[Drive UI 統合]**/(Drive UI 統合/) タブをクリックし、次の情報を入力します。
 
     -   **アプリケーション名**: Microsoft Cloud App Security。  
   
@@ -122,9 +121,11 @@ ms.lasthandoff: 11/14/2017
     
        ![Google ドライブの編集](./media/google15.png "google15")  
 
-19. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[Google Apps Marketplace SDK]** をクリックします。 
+20. **[変更を保存]** をクリックします。
+
+20. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[Google Apps Marketplace SDK]** をクリックします。 
       
-20. **[構成]** タブを選択します。 
+21. **[構成]** タブを選択します。 
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
   
@@ -136,7 +137,7 @@ ms.lasthandoff: 11/14/2017
   
     -   **[アプリケーション アイコン]** で、4 つの必須イメージを設定します。  
   
-         イメージは、[https://go.microsoft.com/fwlink/?linkid=856644](https://go.microsoft.com/fwlink/?linkid=856644) から探すことができます。  
+         イメージは、[https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) から探すことができます。  
   
     -   次に **[Support URLs (サポートの URL)]** を入力します:  
   
@@ -186,14 +187,14 @@ ms.lasthandoff: 11/14/2017
   
     -   **[変更を保存]** をクリックします。  
   
-18. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
+22. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
    
       ![Google セキュリティ](./media/googlesec.png "Google セキュリティ")  
  
-19. **[API リファレンス]** を選択します。  
+23. **[API リファレンス]** を選択します。  
        ![Google API 有効化](./media/googleapi.png "google api")  
       
-20. **[Enable API Access (API アクセスの有効化)]** を選択してから **[変更を保存]** をクリックします。  
+24. **[Enable API Access (API アクセスの有効化)]** を選択してから **[変更を保存]** をクリックします。  
   
     ![Google API 参照](./media/googleapiref.png "google8")  
 
@@ -209,7 +210,7 @@ ms.lasthandoff: 11/14/2017
   
      ![Cloud App Security での G Suite 構成](./media/gsuite-config-cas.png "Cloud App Security での G Suite 構成")  
   
-    1.  手順 16 でコピーした**サービス アカウントの電子メール アドレス**。  
+    1.  手順 13 でコピーした**サービス アカウント ID**。  
   
     2.  手順 21 でコピーした**プロジェクト番号 (アプリ ID)**。  
   

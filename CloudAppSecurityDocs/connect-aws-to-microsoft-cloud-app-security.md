@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/25/2017
+ms.date: 12/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb0703442d3568556dc54df5e1bd7901906ca9b3
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: ed30e0b0e3d49db23e404ef87454e48361996443
+ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/31/2017
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の Amazon Web Services アカウントに接続する方法を説明します。  
@@ -36,20 +36,12 @@ ms.lasthandoff: 09/28/2017
 
      ![AWS でのユーザー作成](./media/aws-create-user.png "AWS でのユーザー作成")
 
-5. **[アクセス許可]** 手順で、**[Attach existing policies directly (既存のポリシーを直接アタッチする)]** を選択し、**[ポリシーの作成]** をクリックします。
+5. [JSON] タブをクリックします。
 
-   ![AWS でユーザーをアタッチ ](./media/aws-attach-user-policy.png "AWS でユーザー ポリシーをアタッチ")
+     ![AWS JSON](./media/aws-json.png "AWS JSON タブ")
 
-6.  **[ポリシーの作成]** で **[Create Your Own Policy (独自のポリシーを作成する)]** を選択します。
- 
-    ![AWS で独自のポリシーを作成](./media/aws-create-own-policy.png "AWS でポリシーを作成")
- 
-7.  **[ポリシーの確認]** の **[ポリシー名]** に入力します。たとえば、「CloudAppSecurityPolicy」と入力します。
+6. 与えられた領域に次のスクリプトを貼り付けます。
 
-    ![AWS でポリシーを確認](./media/aws-review-policy.png "AWS でポリシーを確認")
-
-8. **[Policy Document]\(ポリシー ドキュメント\)** フィールドに次のスクリプトを貼り付け、**[ポリシーの作成]** をクリックします。
-  
     ```     
     {  
       "Version" : "2012-10-17",  
@@ -71,7 +63,15 @@ ms.lasthandoff: 09/28/2017
      }  
   
     ```  
-  
+
+     ![AWS コード](./media/aws-code.png "AWS コード")
+    
+6. **[ポリシーの確認]** をクリックします。
+
+7. **名前**を付け、**[ポリシーの作成]** をクリックします。
+
+     ![AWS 名のポリシー](./media/aws-create-policy.png "AWS 名のポリシー")
+
 9. **[ユーザーの追加]** 画面に戻り、必要に応じて一覧を更新し、作成したユーザーを選択して、**[Next Review]\(次のレビューへ\)** をクリックします。
 
    ![AWS でユーザー ポリシーを確認](./media/aws-review-user.png "AWS 内のユーザーを確認")
@@ -88,7 +88,7 @@ ms.lasthandoff: 09/28/2017
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    初めて CloudTrail を使用する場合、[**開始する**] ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
+    初めて CloudTrail を使用する場合、**[開始する]** ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
   
        ![AWS で CloudTrail の有効化](./media/aws-turnon-cloudtrail.png "AWS で CloudTrail の有効化")
   
@@ -105,9 +105,9 @@ ms.lasthandoff: 09/28/2017
 13. ポップアップで、csv ファイルから関連フィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[接続]** をクリックします。  
    ![AWS アプリに接続](./media/aws-connect-app.png "AWS アプリに接続") 
   
-14. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+14. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受信します。 成功の通知を受信したら、[**完了**] をクリックします。  
+     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受信します。 成功の通知を受信したら、**[完了]** をクリックします。  
   
 AWS を接続すると、接続までの 7 日間のイベントを受け取ります。 CloudTrail を有効にしただけであれば、CloudTrail を有効にした時点からイベントを受け取ります。
   
