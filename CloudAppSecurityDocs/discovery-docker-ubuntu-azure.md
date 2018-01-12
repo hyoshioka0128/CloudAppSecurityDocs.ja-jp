@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce0a16c3f02c4a39b36766c532ea4e50868c3425
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 161fbf275bfea2ceafbb36e56b1ba91fcd564543
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
@@ -72,7 +72,10 @@ ms.lasthandoff: 12/10/2017
 
     b. ログ コレクターに **[名前]** を付けます。
 
-    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。
+    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
+
+     > [!NOTE]
+     > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
     d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
 
@@ -111,8 +114,7 @@ ms.lasthandoff: 12/10/2017
     |caslogcollector_syslogs_tcp|601-700|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
     |caslogcollector_syslogs_udp|514-600|UDP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
       
-    
-      ![Ubuntu Azure の規則](./media/inbound-rule.png)
+     ![Ubuntu Azure の規則](./media/inbound-rule.png)
 
 3.  マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
 

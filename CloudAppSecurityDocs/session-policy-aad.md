@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology:
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c955e20b4abd506f5e44659fbdd921bb54def131
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: 62694b685bb82074d74c72b4ec60f4e0e7436fd1
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="session-policies"></a>セッション ポリシー 
 
 > [!NOTE]
 > これはプレビュー機能です。
 
-Cloud App Security のセッション ポリシーを使うと、セッション レベルでのリアルタイム監視が可能になり、クラウド アプリの詳細な情報を把握し、ユーザー セッションに設定したポリシーに応じて異なるアクションを実行できます。 セッション制御では、アクセスを完全に許可またはブロックするのではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
+Cloud App Security のセッション ポリシーを使うと、セッション レベルでのリアルタイム監視が可能になり、クラウド アプリの詳細な情報を把握し、ユーザー セッションに設定したポリシーに応じて異なるアクションを実行できます。 セッション制御では、[アクセスを完全に許可またはブロックする](access-policy-aad.md)のではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
 
 たとえば、デバイスが管理されていない場合やセッションが特定の場所から行われている場合に、アプリにアクセスすることをユーザーに許可しながら、機密ファイルのダウンロードを制限したり、特定のドキュメントがダウンロード時に保護されることを要求したりすることができます。 セッション ポリシーでは、このようなユーザー セッション制御を設定できます。 
 
@@ -34,6 +34,8 @@ Cloud App Security のセッション ポリシーを使うと、セッション
 - 関連するアプリを[プロキシと共にデプロイする](proxy-deployment-aad.md)必要があります
 - 以下で説明するように、Cloud App Security プロキシにユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
 
+> [!NOTE]
+> - セッション ポリシーは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセス ポリシーを作成する
 

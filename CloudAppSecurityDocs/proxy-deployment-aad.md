@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2017
+ms.date: 12/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3717d7358b3b869dca918fcaa60a2b2b465df367
-ms.sourcegitcommit: eb4e70b6fa15cfff01932a711cecee38f67bc058
+ms.openlocfilehash: a784b9e935bfa3396a64edb12202b50be17a7319
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="deploy-proxy-for-azure-ad-apps"></a>Azure AD アプリのプロキシをデプロイする
 
@@ -78,7 +78,7 @@ Cloud App Security プロキシによって制御されるように Azure AD ア
 
         ![デバイスの識別](./media/device-identification.png)
  
-       証明書がアップロードされたら、**[デバイス タグ]** の [次の値と等しい] または [次の値に等しくない]、**[有効なクライアント証明書]** に基づいて、セッション ポリシーを作成できます。
+       証明書がアップロードされたら、**[デバイス タグ]** の [次の値と等しい] または [次の値に等しくない]、**[有効なクライアント証明書]** に基づいて、アクセス ポリシーとセッション ポリシーを作成できます。
  
       > [!NOTE]
       >証明書がユーザーから要求されるのは、セッションが有効なクライアント証明書フィルターを使用するポリシーと一致する場合だけです。 
@@ -99,7 +99,7 @@ Cloud App Security プロキシによって制御されるように Azure AD ア
  ![テストのユーザー エージェント タグ](./media/domain-joined.png)
 
 
-これで、プロキシ アプリを制御するための[セッション ポリシー](session-policy-aad.md)を作成できるようになりました。
+これで、プロキシ アプリを制御するための[アクセス ポリシー](access-policy-aad.md)と[セッション ポリシー](session-policy-aad.md)を作成できるようになりました。
 
 
 

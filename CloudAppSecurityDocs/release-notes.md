@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2017
+ms.date: 1/7/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,29 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e3426172efe25f641af4757a1bc77d6aec3624d2
-ms.sourcegitcommit: 2e89f41bc2581859a24d55b700dcd89e70e730a5
+ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
+ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2017
+ms.lasthandoff: 01/07/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-114"></a>Cloud App Security リリース 114
+2018 年 1 月 7 日のリリース
+
+- バージョン 114 より、カスタム クエリを作成し、アクティビティ ログのページと検出されたアプリのページで保存する機能を徐々にロールアウトします。 カスタム クエリを使用すると、詳しい調査のために再使用できるフィルター テンプレートを作成できます。 また、**クエリ候補**機能が追加されました。調査テンプレートとして直接利用し、アクティビティや検出されたアプリにフィルター処理を適用できます。 **クエリ候補**には、権限借用アクティビティ、管理者アクティビティ、危険な非準拠クラウド ストレージ アプリ、暗号化の弱いエンタープライズ アプリ、セキュリティ上の問題など、リスクを特定するためのカスタム フィルターが含まれます。 **クエリ候補**をテンプレートとして利用して自分に合うように変更し、新しいクエリとして保存できます。 詳細については、「[アクティビティ フィルターとクエリ](activity-filters-queries.md)」と「[検出されたアプリのフィルターとクエリ](discovered-app-queries.md)」を参照してください。
+ 
+- [status.cloudappsecurity.com](https://status.cloudappsecurity.com) にアクセスするか、ポータル内から直接、**[ヘルプ]**、**[システム ステータス]** の順にクリックすることで、Cloud App Security サービスの現在の状態を確認できます。 
+ 
+
+## <a name="cloud-app-security-release-113"></a>Cloud App Security リリース 113
+2017 年 12 月 25 日のリリース
+
+-   Cloud App Security で Azure Information Protection との緊密な統合が可能になったことをお知らせいたします。 このパブリック プレビュー機能を使用すると、クラウド アプリのファイルをスキャンし、分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 この機能は、Box、SharePoint、OneDrive で使用できます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
+
+-   Cloud Discovery ログ パーサーは汎用形式の LEEF、CEF、WC3 対応になりました。
+
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security リリース 112
 リリース日: 2017 年 12 月 10 日

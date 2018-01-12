@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 12/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c09c0204028f3c6be91950be4780646cbc0ac077
-ms.sourcegitcommit: 48cc077576b04dfc1cc75af9fafbdc60ed7992c9
+ms.openlocfilehash: b1155fa6ade88636f2dac575bfaa84db0f7bdd8b
+ms.sourcegitcommit: e547c4c91d8de9d4da376e4d4eebbe18c503b7ca
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 12/18/2017
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
@@ -62,8 +62,9 @@ ms.lasthandoff: 11/29/2017
     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
     e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
-    >[!NOTE]
-    >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
+    
+     >[!NOTE]
+     >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
 
     f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
 
@@ -73,15 +74,18 @@ ms.lasthandoff: 11/29/2017
 
     b. ログ コレクターに **[名前]** を付けます。
 
-    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。
+    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
+       
+       > [!NOTE]
+       > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
     d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
 
     ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
-    >- Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
+     >  [!NOTE]
+     > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
+     > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 
 4.  展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン ![クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
 
@@ -91,7 +95,7 @@ ms.lasthandoff: 11/29/2017
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
-> [!Note]
+> [!NOTE]
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
 1.  Ubuntu コンピューターでターミナルを開きます。
@@ -153,7 +157,10 @@ ms.lasthandoff: 11/29/2017
 ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ## <a name="see-also"></a>参照
-[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)  
+
+[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
+
 [テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
 

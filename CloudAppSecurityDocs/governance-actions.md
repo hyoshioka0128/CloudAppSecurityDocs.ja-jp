@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/26/2017
+ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0de0f106ce5505edcc437b1d94084759eac2838
-ms.sourcegitcommit: 473d96a6383a6e4d01ef03ed31f2e773cea82cab
+ms.openlocfilehash: 167593985fcf88e87cce4e524dd0d91d06de0cbf
+ms.sourcegitcommit: 3d943dbb0e0850af0dc390a78d8feca2f3fde61b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 12/20/2017
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 ガバナンスによって、アプリ全体におけるユーザーの作業をリアルタイムで制御できるようになります。 接続されているアプリの場合、ファイルまたはアクティビティにガバナンス アクションを適用できます。
@@ -136,6 +136,8 @@ Cloud App Security ポータルで実行できるすべてのアクションを�
 |[ファイル ポリシー]、[アクティビティ ポリシー]|ファイル、アクティビティ|ユーザーに通知|ユーザーにメールを送信して、ユーザーの操作内容やユーザー自身がポリシーに違反したファイルを通知します。 カスタムの通知を追加して、違反の内容をユーザーに通知することができます。|すべて|
 |[ファイル ポリシー] と [ファイル]|ファイル|編集者が共有できないようにする|Google ドライブでは、ファイルにおける既定の編集者のアクセス許可も共有できます。 ガバナンス アクションは、このオプションを制限し、所有者のファイル共有を制限します。|G Suite|
 |[ファイル ポリシー] と [ファイル]|ファイル|[管理者検疫に配置](use-case-admin-quarantine.md)|ファイルからアクセス許可を削除し、ファイルを管理者用フォルダー内の検疫フォルダーに移動します。これにより、管理者がファイルを確認し、削除できるようになります。|Office 365 SharePoint、OneDrive for Business、Box|
+|[ファイル ポリシー] と [ファイル]|ファイル|分類ラベルの適用|ポリシーに設定されている条件に基づき、Azure Information Protection 分類ラベルをファイルに自動的に適用します。|ボックス、One Drive、SharePoint|
+|[ファイル ポリシー] と [ファイル]|ファイル|分類ラベルの削除|ポリシーに設定されている条件に基づき、Azure Information Protection 分類ラベルをファイルから自動的に削除します。|ボックス、One Drive、SharePoint|
 |[ファイル ポリシー]、[アクティビティ ポリシー]、[アラート]|アプリ|Require users to sign in again \(ユーザーのサインインを必須にする\)|不審なユーザー アクティビティのアラートと危険な状態のアカウントを素早く効果的に修復するために、ユーザーが Office 365 と Azure AD のすべてのアプリに再度ログインすることを必須にすることができます。 新しいガバナンスは、ポリシー設定と、[ユーザーの停止] オプションの横にあるアラート ページで確認できます。|Office 365、Azure AD|
 |ファイル|ファイル|ユーザー検疫からの復元|検疫済みからユーザーを元に戻します。|ボックス|
 |ファイル|ファイル|自分に読み取りアクセス許可を付与|ファイルにアクセスし、違反があるかどうかを確認できるように、自分にファイルの読み取りアクセス許可を付与します。|G Suite|

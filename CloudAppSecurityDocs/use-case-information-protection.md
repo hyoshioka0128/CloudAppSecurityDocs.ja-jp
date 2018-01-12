@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2017
+ms.date: 12/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e6c7365be26dc379bcf0269812931387972bc8f
-ms.sourcegitcommit: 3bc510959e66a29d474cbef412deac0daefa8a24
+ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
+ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/25/2017
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 分類ラベルを自動的に適用する  
 
@@ -45,12 +45,12 @@ Cloud App Security と Microsoft Azure Information Protection を併用して、
 
 ## <a name="prerequisites"></a>前提条件
 
-- テナントに対する Cloud App Security と Azure Information Protection の有効化
+- テナントに対する [Cloud App Security と Azure Information Protection の有効化](azip-integration.md)。
 - Cloud App Security に [Box を接続します](connect-box-to-microsoft-cloud-app-security.md)。
 
 ## <a name="setting-up-data-protection"></a>データ保護のセットアップ
 
-Box アカウントに格納されているファイルでクレジット カード番号を見つけるポリシーをセットアップしてみましょう。
+Box アカウントに保存されているファイルでクレジット カード番号を探すポリシーを設定しましょう。番号が見つかると、Azure Information Protection ラベルが自動的に適用され、そのラベルを持つすべてのファイルに対して行われる操作が制御されます。
 
 1. Box に格納されているすべての機密データを暗号化するポリシーを設定して、Box に格納するデータの保護を開始します。
 
