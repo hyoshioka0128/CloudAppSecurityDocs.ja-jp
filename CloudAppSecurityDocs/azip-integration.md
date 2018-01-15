@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/25/2017
+ms.date: 1/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4bc6716b469962e1196b76ab7d55652d2081af51
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: ec5fbb7ee06a8b57374fb5f36efeecea4413191e
+ms.sourcegitcommit: 09eabb9b69a01790476641d6e672d125ea057fbd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/11/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -51,7 +51,7 @@ Cloud App Security の外で、保護されてラベルが付けられたファ�
 ## <a name="how-it-works"></a>しくみ
 [Azure Information Protection](https://docs.microsoft.com/information-protection/) のファイル分類ラベルについてはよくご存知なのではないでしょうか。 Cloud App Security で Azure Information Protection 分類タグを表示することができます。 Cloud App Security を Azure Information Protection と統合するとすぐに、次のように Cloud App Security でファイルがスキャンされます。
 1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、この処理は 1 時間に 1 回実行されます。
-2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。 自動スキャン (下記参照) を有効にした場合は、新しいファイルまたは変更されたファイルがすべて、スキャン キューに追加されます。
+2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。 自動スキャンを有効にした場合 (以下参照)、すべての新しいファイルや変更されたファイルはスキャン キューに追加され、すべての既存のファイルおよびリポジトリはスキャン、分類、保護されます。
     b. 分類ラベルを検索するようにファイル ポリシー (下記参照) を設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
 3. 前述のように、これらのスキャンは、Cloud App Security が最初に実行するスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 これらをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant]\(このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする\)** チェックボックスをオンにします (下記参照)。
 4. Cloud App Security 上で Azure Information Protection を有効にすると、Office 365 に追加されたすべての新しいファイルについても分類ラベルがスキャンされます。
