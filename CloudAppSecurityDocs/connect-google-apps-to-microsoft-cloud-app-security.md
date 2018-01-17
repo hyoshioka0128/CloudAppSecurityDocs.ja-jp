@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/31/2017
+ms.date: 1/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a76b9eac65a82ece148eaaf05dead1c920d0fb62
-ms.sourcegitcommit: 2544faf07c6373ac5505bbdf4ebd5d184daf68db
+ms.openlocfilehash: 1742fbaae18fe4624bf057e54b9e11d2d68c5335
+ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/31/2017
+ms.lasthandoff: 01/15/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -25,7 +25,7 @@ ms.lasthandoff: 12/31/2017
   
 ## <a name="configure-g-suite"></a>G Suite を構成する  
   
-1.  G Suite の特権管理者として、[https://cloud.google.com/console/project](https://cloud.google.com/console/project) にログインします。  
+1.  G Suite の特権管理者として、<a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> にログインします。  
   
 2.  **[プロジェクトの作成]** をクリックして新しいプロジェクトを開始します。  
   
@@ -113,7 +113,7 @@ ms.lasthandoff: 12/31/2017
   
     -   **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
-    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンを含む zip ファイルをダウンロードします。 **[アプリケーション アイコン]** で、サイズが 128 x 128 と 32 × 32 のイメージをドラッグ アンド ドロップします。  
+    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンを含む zip ファイルをダウンロードします。 次に、**[Application icon]\(アプリケーション アイコン\)** で 128x128 のイメージの横にある **[Select]\(選択\)** をクリックし、ポップアップ画面にドラッグします。 32x32 のイメージの横にある **[Select]\(選択\)** をクリックして、ポップアップ画面にドラッグします。  
   
     -   下にスクロールして **[Drive Integration]**/(ドライブ統合/)セクションを表示し、**[Open URL]**/(URL を開く/) に次の URL を入力します。  
   
@@ -184,7 +184,8 @@ ms.lasthandoff: 12/31/2017
            https://www.googleapis.com/auth/admin.directory.device.mobile  
   
            https://www.googleapis.com/auth/admin.directory.user  
-  
+
+    -   G Suite で可視性のメッセージが表示されたら、**[My domain]\(独自ドメイン\)** (パブリックではありません) を選択します。 
     -   **[変更を保存]** をクリックします。  
   
 22. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
