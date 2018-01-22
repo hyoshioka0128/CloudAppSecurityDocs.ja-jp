@@ -1,11 +1,11 @@
 ---
-title: "Microsoft Cloud App Security と Azure AD の検出機能の相違点 | Microsoft Docs"
+title: "Microsoft Cloud App Security と Azure AD の検出機能の相違点 | Microsoft ドキュメント"
 description: "このトピックでは、Microsoft Cloud App Security と Azure AD の検出機能の相違点について説明します。"
 keywords: 
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c6bd0be8e8c3c7efea38fca7d20248826d628102
-ms.sourcegitcommit: 8dd7c155538ec9b95be3902c7ece95f6d0edde25
+ms.openlocfilehash: 5f4fd69cc11e5e7a3659b342c7c043f2a1eff5ae
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/22/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="what-are-the-differences-discovery-capabilities-in-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory と Microsoft Cloud App Security の検出機能の相違点
 
@@ -47,6 +47,6 @@ Microsoft Cloud App Security と Azure AD の検出機能の比較を次に示�
 ## <a name="see-also"></a>参照  
 
 基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。    
-テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。   
+
 Premier サポートをご利用のお客様も、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することができます。   
 

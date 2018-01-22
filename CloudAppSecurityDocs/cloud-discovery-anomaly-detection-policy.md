@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 07f4f1028a0601582e88988b6656bfdfaf2c3c5b
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常検出ポリシー
 この記事は、ポリシーに関する参照の詳細です。各ポリシーの種類、およびポリシーごとに設定できるフィールドについて詳しく説明します。  
@@ -60,13 +60,13 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
 
     - **[Use your organization's default settings]** (組織の既定の設定を使用) オプションを選択することもできます。その場合、組織の既定の設定に基づいて、**[日次アラート制限]**、電子メール、およびテキスト メッセージの設定が入力されます。 既定値を設定するには、**[アラートの構成]** 設定を入力し、**[次のアラート設定を組織の既定として保存する]** をクリックします。
 
-6. [**作成**] をクリックします。
+6. **[作成]** をクリックします。
 
 7. 他のポリシーと同じように、**[ポリシー]** ページの行の末尾にある 3 つの点をクリックし、ポリシーを**編集**、**無効**および**有効**にすることができます。 既定では、ポリシーを作成すると、そのポリシーが有効になります。
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

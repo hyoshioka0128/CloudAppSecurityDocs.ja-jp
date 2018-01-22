@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7ffb49e882856b144fff028c7b10167b5c55356f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="investigate"></a>調査
 クラウド環境で Cloud App Security を実行したら、次に Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。
@@ -27,7 +27,7 @@ ms.lasthandoff: 11/06/2017
 ## <a name="dashboards"></a>ダッシュボード  
 クラウド環境内のアプリを調査するために、以下のダッシュボードを使用できます。  
 
-|ダッシュボード|説明|  
+|ダッシュボード|[説明]|  
 |---------------|-----------------|  
 |メイン ダッシュボード|クラウドの状態 (ユーザー、ファイル、アクティビティ) の概要および必要なアクション (アラート、アクティビティの違反、コンテンツの違反)|  
 |アプリケーション ダッシュボード: 全般|場所ごとのアプリケーションの使用状況の概要、ユーザー数ごとの使用状況グラフ|  
@@ -152,7 +152,7 @@ Cloud App Security をクラウド環境で実行したら、組み込みのレ�
 
      許可されるイベントで、再発する可能性がある場合は、ポリシーを変更することにより、今後この種類のイベントが違反と見なされることがなくなります。  
 
-## <a name="see-also"></a>関連項目  
+## <a name="see-also"></a>「  
 組織のクラウド アプリを制御する方法については、「[Control](control.md)」を参照してください。   
-テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。  
+
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  

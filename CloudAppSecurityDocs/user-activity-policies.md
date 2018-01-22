@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abda59dfdde956447ea314f09ab00815ae717a38
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 0e771330feb92833e77c0699d33851d7d52d82ef
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 アクティビティ ポリシーでは、アプリ プロバイダーの API を利用してさまざまな自動プロセスを適用できます。 これらのポリシーでは、さまざまなユーザーが実行する特定のアクティビティを監視したり、予想外に実行率の高い特定種類のアクティビティを追跡したりできます。  
@@ -77,7 +77,7 @@ ms.lasthandoff: 11/06/2017
 -   アクション - 違反が検出された場合に自動的に適用される一連のガバナンス アクションをポリシーに設定します。  
 ## <a name="see-also"></a>参照  
 [データ保護ポリシー](data-protection-policies.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

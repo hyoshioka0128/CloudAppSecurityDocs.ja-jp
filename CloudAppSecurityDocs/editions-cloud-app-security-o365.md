@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/22/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc4a82602aabb8b493edefd1cb1456b81fff9d13
-ms.sourcegitcommit: 6e4eac42e553fd288da7de9c67eb79f11a420245
+ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/22/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security と Office 365 Cloud App Security の違い
 
@@ -38,7 +38,7 @@ Office 365 Cloud App Security は Microsoft Cloud App Security のサブセッ�
 |----|----|----|----|
 |Cloud Discovery|検出されたアプリ |15,000 を超えるクラウド アプリ  |Office 365 と同様の機能を持つ 750 を超えるクラウド アプリ|
 ||検出分析の展開|ログの手動アップロードと自動アップロード|ログの手動アップロード|
-||ユーザーのプライバシー保護のためのログの匿名化|はい|いいえ|
+||ユーザーのプライバシー保護のためのログの匿名化|はい||
 ||すべてのクラウド アプリ カタログへのアクセス|はい||
 ||クラウド アプリのリスク評価|はい||
 ||アプリ、ユーザー、IP アドレス別のクラウド利用状況分析|はい||
@@ -60,6 +60,6 @@ Office 365 Cloud App Security は Microsoft Cloud App Security のサブセッ�
 ## <a name="see-also"></a>参照  
 
 基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。    
-テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031) ページをご利用ください。   
+
 Premier サポートをご利用のお客様も、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することができます。   
 

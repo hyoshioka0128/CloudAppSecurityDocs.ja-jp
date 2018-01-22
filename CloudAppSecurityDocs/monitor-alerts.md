@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d2d677ef91a22a4489c4709a84742410d991899
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: d160d0dd0ac1103fb84788c632f3569c5109a1a6
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="alerts"></a>アラート
 アラートを表示するには:
@@ -37,7 +37,7 @@ Cloud App Security ポータルで [アラート] をクリックします。
 
 ## <a name="built-in-alerts"></a>組み込みアラート
 
-|アラート名|アラート ID|説明|
+|アラート名|アラート ID|[説明]|
 |----|----|----|
 |新しい場所|ALERT_GEOLOCATION_NEW_COUNTRY|スキャン開始以降に新しい場所が検出されました (6 か月)。 これは、組織全体で国ごとに 1 回のみ表示されます。 |
 |新しい管理ユーザー|ALERT_ADMIN_USER|特定のアプリに対して新しい管理者が検出されました。これは、あるアプリケーションの管理者が別のアプリケーションの管理者になった可能性があります。 このアラートは特定の管理者の種類に関するものなので、管理者の種類が変わるたびに表示されます。 ユーザーが管理者権限が失ってから再び権限を得ると、このアラートが表示されます。|
@@ -47,7 +47,7 @@ Cloud App Security ポータルで [アラート] をクリックします。
 
 ## <a name="custom-alerts"></a>カスタム アラート
 
-|アラート名|アラート ID|説明|
+|アラート名|アラート ID|[説明]|
 |----|----|----|
 |不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 新しい場所からか)。これらの条件がすべて計算され、以下のリスク要因に基づいてリスク スコアが提供されます。 <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
 |不審なクラウド使用アラート|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery の異常検出は、通常の動作のパターンを検出し、普通ではない方法で使用されたユーザーまたはアプリを発見します。 |
@@ -60,7 +60,7 @@ Cloud App Security ポータルで [アラート] をクリックします。
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
