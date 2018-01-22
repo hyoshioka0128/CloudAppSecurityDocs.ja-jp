@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/27/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b48266e4cddbb61c13df5f361d50bc4931e77258
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 ##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
-メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして [**メールの設定**] を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
+メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして **[メールの設定]** を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
 
 迷惑メール対策サービスにホワイトリスト登録すべき Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。 
   
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/28/2017
   
 1.  **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
   
-     **From display name (表示名から)**: 電子メール メッセージの [**From**] フィールドに表示する名前。  
+     **From display name (表示名から)**: 電子メール メッセージの **[From]** フィールドに表示する名前。  
   
      **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
@@ -39,7 +39,7 @@ ms.lasthandoff: 09/28/2017
   >[!NOTE]
   >**[送信元メール アドレス]** フィールドを独自のドメインに変更する方法については、[こちら](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)の指示を参照してください。
   
-2.  [**メールのデザイン**] では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
+2.  **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
   
     -   すべてのテンプレートの CSS は、テンプレート内でインラインである必要があります。  
   
@@ -51,9 +51,9 @@ ms.lasthandoff: 09/28/2017
 
          %%content%% - ポリシーにより設定されたエンド ユーザー向けコンテンツのプレースホルダー。  
      
-3.  [**テンプレートのアップロード**] をクリックして、作成したファイルを選択します。 
+3.  **[テンプレートのアップロード]** をクリックして、作成したファイルを選択します。 
 
-4. 次に、[**テスト メールの送信**] をクリックしてテスト メールを自分自身に送信し、作成したテンプレートの例を確認します。 電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールでは、メタデータ フィールド、テンプレート、電子メールの件名、電子メール本文のタイトルと内容を確認できます。  電子メール テンプレートのサンプルを次に示します。 
+4. 次に、**[テスト メールの送信]** をクリックしてテスト メールを自分自身に送信し、作成したテンプレートの例を確認します。 電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールでは、メタデータ フィールド、テンプレート、電子メールの件名、電子メール本文のタイトルと内容を確認できます。  電子メール テンプレートのサンプルを次に示します。 
 
 
 
@@ -119,7 +119,7 @@ ms.lasthandoff: 09/28/2017
     
 ## <a name="see-also"></a>参照  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

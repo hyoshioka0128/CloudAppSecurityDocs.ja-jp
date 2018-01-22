@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4e0732cce649b7d6c2767325e3c232c36b523fec
-ms.sourcegitcommit: c4b40afff6a66b101fadfc1bd221c10186bad71a
+ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-apps"></a>アプリを接続する 
 アプリのコネクタを使用するとアプリ プロバイダーの API を利用できるため、Cloud App Security による接続先アプリの表示および制御がしやすくなります。  
@@ -115,7 +115,7 @@ Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.micr
   
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
 

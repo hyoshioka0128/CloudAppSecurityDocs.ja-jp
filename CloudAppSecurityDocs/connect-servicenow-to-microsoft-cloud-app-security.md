@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5d6482e08bff4ea98d5bc1bc30a20cf3b2477903
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -54,7 +54,7 @@ ms.lasthandoff: 11/06/2017
     
     - **[Access Token Lifespan (アクセス トークン有効期間)]** を 3,600 以上に増やします。
     
-    - **[ 送信]** をクリックします。
+    - **[送信]** をクリックします。
 
    ![ServiceNow プロファイル ID](./media/servicenow-profile-ids.png)
 
@@ -110,6 +110,6 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
 
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   

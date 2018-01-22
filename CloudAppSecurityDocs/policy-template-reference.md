@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology:
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d9ffe832652885548ddeb49fd782d2a104c7523f
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="policy-templates"></a>ポリシー テンプレート
 
 Cloud App Security に存在するすべてのポリシー テンプレートの一覧を次に示します。 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。
 
-|リスク カテゴリ|テンプレート名|説明|
+|リスク カテゴリ|テンプレート名|[説明]|
 |-----|----|----|
 |Cloud Discovery|Anomalous behavior in discovered users (検出されたユーザーの異常な動作)|検出されたユーザーとアプリで異常な動作 (他のユーザーと比較して大量のアップロード データ、ユーザーの履歴と比較して大量のユーザー トランザクションなど) が検出されたときにアラートを生成します。|
 |Cloud Discovery|Anomalous behavior of discovered IP addresses (検出された IP アドレスの異常な動作)|検出された IP アドレスとアプリで異常な動作が検出されたときにアラートを生成します。たとえば、他の IP アドレスに比べて大量のデータがアップロードされている場合や、IP アドレスの履歴に比べてアプリ トランザクションが大きい場合などです。|
@@ -62,6 +62,6 @@ Cloud App Security に存在するすべてのポリシー テンプレートの
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   

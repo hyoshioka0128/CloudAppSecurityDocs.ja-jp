@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e69481693e961c759f6d3bfd09f2e70a345576f
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="activities"></a>アクティビティ
 Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
@@ -113,7 +113,7 @@ IP アドレスの洞察を表示するには:
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6ef94215cbb07dd35e9353e3a63b9e575905b16b
-ms.sourcegitcommit: c0c0612cdf6805c8e92d7929be0f12f33660b2d2
+ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/25/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 分類ラベルを自動的に適用する  
 
@@ -91,7 +91,7 @@ Box アカウントに保存されているファイルでクレジット カー
 
  ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

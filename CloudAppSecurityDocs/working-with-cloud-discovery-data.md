@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/26/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 63631cef50738096e98414a1a9dfe7a1218fc475
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: 912d3118f8662e5d21234fe102d3415106b7fd69
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="discover"></a>[探索]
 
@@ -45,11 +45,11 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
   
 除外を作成するには:  
   
-1.  ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1.  ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
-2.  [**エンティティの除外**] タブをクリックします。  
+2.  **[エンティティの除外]** タブをクリックします。  
   
-3.  [**除外されたユーザー**] または [**除外された IP アドレスを**] タブのいずれかを選択して、[**ユーザーの追加**] ボタンまたは [**IP アドレスの追加**] ボタンをクリックします。  
+3.  **[除外されたユーザー]** または **[除外された IP アドレスを]** タブのいずれかを選択して、**[ユーザーの追加]** ボタンまたは **[IP アドレスの追加]** ボタンをクリックします。  
   
 4.  ユーザーのエイリアスまたは IP アドレスを追加します。 ユーザーまたは IP アドレスを除外した理由についての情報を追加することをお勧めします。  
   
@@ -64,17 +64,17 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
   
 新しい継続的レポートを作成するには:  
   
-1.  ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1.  ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
 2.  **「Manage continuous report」** (継続的レポートの管理) タブをクリックします。  
   
-3.  [**レポートの作成**] ボタンをクリックします。  
+3.  **[レポートの作成]** ボタンをクリックします。  
   
 4.  レポート名を入力します。  
   
 5.  含めるデータ ソースを選択します (全部または一部)。  
   
-6.  データに適用するフィルターを設定します。[**組織単位**]、[**IP アドレス タグ**]、[**IP アドレスの範囲**] があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
+6.  データに適用するフィルターを設定します。**[組織単位]**、**[IP アドレス タグ]**、**[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
   
     ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png) 
 
@@ -93,13 +93,13 @@ Cloud Discovery データを削除する理由はいくつかあります。 次
   
 Cloud Discovery データを削除するには:  
   
-1.  ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1.  ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
-2.  [**データの削除**] タブをクリックします。  
+2.  **[データの削除]** タブをクリックします。  
   
      操作を続行する前に、データを削除しても問題ないことを確認します。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
-3.  [**削除**] ボタンをクリックします。  
+3.  **[削除]** ボタンをクリックします。  
   
      ![データを削除する](./media/delete-data.png "delete data")  
   
@@ -111,7 +111,7 @@ Cloud Discovery データを削除するには:
  
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   

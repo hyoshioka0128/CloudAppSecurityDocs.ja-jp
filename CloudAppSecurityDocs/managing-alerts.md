@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1ca10f668634a45894d0b4d6bc1528d31f024e35
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/16/2018
 ---
 ## <a name="manage-your-alerts"></a>アラートの管理  
 アラートは、クラウド環境をより深く理解するための最初のステップです。 確認した状況に基づいて新しいポリシーを作成できます。 たとえば、ある管理者がグリーンランドからサインインしていることが判明したとします。しかし、これまでグリーンランドからサインインしたことがある人は組織にいません。 その場所からのサインインに使用されている管理者アカウントを自動的に停止するポリシーを作成することができます。  
@@ -65,7 +65,7 @@ ms.lasthandoff: 11/06/2017
 
 次の表は、トリガーされるアラートの種類と推奨される解決方法の一覧です。  
 
-|アラートの種類|説明|推奨される解決方法|  
+|アラートの種類|[説明]|推奨される解決方法|  
 |----------------|-----------------|----------------------------|  
 |アクティビティ ポリシー違反|この種類のアラートは、作成されたポリシーによるものです。|この種類のアラートが大量に発生する場合は、ポリシー センターで操作して発生数を減らすことをお勧めします。<br /><br /> フィルターを追加してより細かく制御し、不要なエンティティを除外するようにポリシーを調整します。<br /><br /> ポリシーが正確でアラートが正当なものであり、違反が発生しないようにすぐに変更したい場合は、ポリシーに自動修復を追加することを検討します。|  
 |ファイル ポリシー違反|この種類のアラートは、作成されたポリシーによるものです。| この種類のアラートが大量に発生する場合は、ポリシー センターで操作して発生数を減らすことをお勧めします。<br /><br /> フィルターを追加してより細かく制御し、不要なエンティティを除外するようにポリシーを調整します。<br /><br /> ポリシーが正確でアラートが正当なものであり、違反が発生しないようにすぐに変更したい場合は、ポリシーに自動修復を追加することを検討します。|  
@@ -82,5 +82,5 @@ ms.lasthandoff: 11/06/2017
 
 ## <a name="next-steps"></a>次の手順  
 アラートの調査の詳細については、「[調査](investigate.md)」を参照してください。  
-テクニカル サポートが必要な場合は、[Cloud App Security のサポート](http://support.microsoft.com/oas/default.aspx?prid=16031)  ページをご利用ください。  
+
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  

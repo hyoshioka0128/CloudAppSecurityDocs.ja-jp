@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 29/11/2017
+ms.date: 1/15/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e40eae71a84f3e2cc0ca2814c4a8f16b25a6b380
-ms.sourcegitcommit: f4ec7f2cb81c9d83bb7f406ddcca91ab07790a98
+ms.openlocfilehash: b994661f0f875db100a0aa2eb293b88e637b89cb
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="troubleshooting-the-cloud-app-security-cloud-discovery-docker"></a>Cloud App Security の Cloud Discovery の Docker のトラブルシューティング
 
@@ -59,6 +59,6 @@ ms.lasthandoff: 11/28/2017
 
 ## <a name="see-also"></a>参照
 [Cloud Discovery の展開](set-up-cloud-discovery.md)
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください](http://support.microsoft.com/oas/default.aspx?prid=16031)  
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
 

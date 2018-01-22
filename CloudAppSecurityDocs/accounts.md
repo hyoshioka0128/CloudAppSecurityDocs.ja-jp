@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/24/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e6b47d61464e2a8b7fb95d8a7fdad9873d09d0b
-ms.sourcegitcommit: 8759541301241e03784c5ac87b56986f22bd0561
+ms.openlocfilehash: e710418938af85a8a16a866dcbae43ac612f090a
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="accounts"></a>[アカウント]
 Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントを Cloud App Security が検出すると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
@@ -46,7 +46,7 @@ Cloud App Security は、接続されたアプリのアカウントを表示し�
   
 - **アカウント名**: アカウント名は、ユーザーのプライマリ エイリアスです。ただし、他の Microsoft アカウント (Office 365 や Azure Active Directory) からの他の識別子 (プロキシ アドレス、エイリアス、SID など) もサポートされており、プライマリ エイリアスの下に統合されます。
 
-- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、[**設定**] で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイ ![アカウント管理アイコン](./media/accounts-admin-icon.png) が加わります。
+- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、**[設定]** で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイ ![アカウント管理アイコン](./media/accounts-admin-icon.png) が加わります。
 
 - **アプリ**: 組織内のアカウントで使用されている API 接続アプリをフィルター処理することができます。
 
@@ -61,7 +61,7 @@ Cloud App Security は、接続されたアプリのアカウントを表示し�
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
