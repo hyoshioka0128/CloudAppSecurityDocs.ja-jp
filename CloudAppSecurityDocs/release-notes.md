@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/7/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 183b62579184fb1dfba96efb16b4ffc241c4e0bc
-ms.sourcegitcommit: 06517c2828ecfd1f4f4ab3e31c02d80e27388a4e
+ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2018
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-115"></a>Cloud App Security リリース 115
+2018 年 1 月 21 日のリリース
+
+-   このリリースでは、ファイル ポリシーで特定のフォルダーを選択するときのエクスペリエンスが向上しました。 複数のフォルダーを表示、選択して、簡単にポリシーに追加できるようになりました。 
+-   **[検出されたアプリ]** ページに次の変更が加えられました。 
+   - タグの一括追加機能により、(承認されたタグと承認されていないタグに加え) カスタム タグを適用できるようになりました。 
+   - **IP アドレス レポートの生成**時、エクスポートされたレポートに、トラフィックの送信元が承認されたアプリか、承認されていないアプリかの情報が表示されるようになりました。 
+-   ポータルの **[アプリを接続]** ページから、Microsoft Cloud App Security チームの新しい API App コネクタを直接要求できるようになりました。 
+
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security リリース 114
 2018 年 1 月 7 日のリリース
@@ -34,7 +44,7 @@ ms.lasthandoff: 01/07/2018
 
 -   Cloud App Security で Azure Information Protection との緊密な統合が可能になったことをお知らせいたします。 このパブリック プレビュー機能を使用すると、クラウド アプリのファイルをスキャンし、分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 この機能は、Box、SharePoint、OneDrive で使用できます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
 
--   Cloud Discovery ログ パーサーは汎用形式の LEEF、CEF、WC3 対応になりました。
+-   Cloud Discovery ログ パーサーは汎用形式の LEEF、CEF、W3C 対応になりました。
 
 
 ## <a name="cloud-app-security-release-112"></a>Cloud App Security リリース 112
@@ -629,7 +639,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 * ポリシーに違反したときに送信されるようにアラートを設定した場合、警告する必要のある最低限のセキュリティ レベルを設定できます。 これに組織の既定の設定を使用するように選択し、組織の既定値として特定のアラート設定を設定できます。
 
 ## <a name="see-also"></a>参照  
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
   
