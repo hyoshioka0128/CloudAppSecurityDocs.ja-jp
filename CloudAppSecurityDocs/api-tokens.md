@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/9/2017
+ms.date: 1/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e8e86368429fac280b5555d85a0de3ec1789effa
-ms.sourcegitcommit: 2fe9475d428855a6dab6fa2edd0ccd56d66f87ec
+ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
+ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="api-tokens"></a>API トークン
     
@@ -74,7 +74,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 ## <a name="see-also"></a>参照  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
-[テクニカル サポートが必要な場合は、Cloud App Security のサポート ページをご利用ください。](http://support.microsoft.com/oas/default.aspx?prid=16031)   
+
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
 
 ## <a name="check-out-this-video"></a>このビデオをご覧ください。

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6277f0789780a2ae4fe9a4978af970f7ad961503
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: eeda929ecc4bc029f0fd292f4276ba55f202d314
+ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 01/21/2018
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
@@ -254,7 +254,9 @@ ForcePoint で、次の手順でアプライアンスを設定します。
 
 ## 付録 B: Symantec 展開ガイド <a name="symantec"></a>
 
-サポートされている Symantec DLP のバージョンは、11 以降です。 前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを通して適用サーバーと同期します。 
+サポートされている Symantec DLP のバージョンは、11 以降です。 
+
+前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを通して適用サーバーと同期します。 
  
 ### <a name="detection-server-installation"></a>検出サーバーのインストール 
 Cloud App Security によって使われる検出サーバーは、Web サーバーの標準的な Network Prevent です。 いくつかの構成オプションを変更する必要があります。
@@ -279,7 +281,10 @@ Cloud App Security によって使われる検出サーバーは、Web サーバ
 
 
 ### <a name="policy-configuration"></a>ポリシーの構成
-Cloud App Security は Symantec DLP に含まれるすべての検出ルール タイプをシームレスにサポートするので、既存のルールを変更する必要はありません。 ただし、完全な統合を可能にするために既存と新規のすべてのポリシーに適用する必要がある構成の変更があります。 特定の応答ルールに加えて、すべてのポリシーでこの変更を行います。 構成の変更を Vontu に追加します。
+Cloud App Security は Symantec DLP に含まれるすべての検出ルール タイプをシームレスにサポートするので、既存のルールを変更する必要はありません。 ただし、完全な統合を可能にするために既存と新規のすべてのポリシーに適用する必要がある構成の変更があります。 特定の応答ルールに加えて、すべてのポリシーでこの変更を行います。 
+
+構成の変更を Vontu に追加します。
+
 1.  **[Manage]\(管理\)** > **[Policies]\(ポリシー\)** > **[Response Rules]\(応答ルール\)** に移動し、**[Add Response Rule]\(応答ルールの追加\)** をクリックします。
     
     ![応答ルールを追加する](./media/icap-add-response-rule.png)
@@ -293,13 +298,22 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
     ![http をブロック](./media/icap-block-http.png)
 
 作成したルールをすべての既存ポリシーに追加します。
+
 1. [Policy]\(ポリシー\) で **[Response]\(応答\)** タブに移動します。
+
 2. **[Response rule]\(応答ルール\)** ドロップダウンから、上で作成した応答ブロック ルールを選びます。
+
 3. ポリシーを保存します。
    
     ![トライアル モードを無効にする](./media/icap-add-policy.png)
 
 既存のすべてのポリシーにこのルールを追加する必要があります。
 
+>[!NOTE]
+> Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に http://misc/filename から始まる URL で表示されます。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
 
 
+## <a name="see-also"></a>参照  
+[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
+
+[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
