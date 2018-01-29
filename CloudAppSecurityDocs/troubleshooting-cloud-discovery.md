@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ae08c4e39fa01b1007dc0e14d8235558d2180372
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0e3ed6adf784f1252e02c4abe847a7b3741d11ca
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 ## <a name="log-parsing-errors"></a>ログ解析エラー
@@ -28,7 +28,6 @@ ms.lasthandoff: 01/16/2018
 |エラー|説明|解決方法|
 |----|----|----|
 |サポートされていないファイルの種類|アップロードしたファイルが有効なログ ファイルではありません (画像ファイルなど)。|ファイアウォールまたはプロキシから直接エクスポートされた **text**、**zip**、または **gzip** ファイルをアップロードします。|
-|内部エラー。|内部リソース エラーが検出されました|**[再試行]** をクリックして作業を再実行します。|
 |ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しません。|1.ログが破損していないことを確認します。 <br /> 2.ログと、アップロード ページに表示されるサンプル形式とを比較し、照合します。|
 |Transactions are more than 90 days old (トランザクションは 90 日より前のものです)|すべてのトランザクションは 90 日よりも前のものなので、無視されます。|最近のイベントが含まれる新しいログをエクスポートし、アップロードし直します。|
 |No transactions to cataloged cloud apps (カタログ化されたクラウド アプリに対するトランザクションがありません)|認識されているクラウド アプリに対するトランザクションがログに見つかりません。|ログに送信トラフィック情報が含まれていることを確認します。|
