@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,15 +13,15 @@ ms.technology:
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dad7bc9194fd8c064e57ef0466f2fdb40f08d154
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dc032e1e5b560a8f6550a091c6694d0f63ff5822
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 #  <a name="IPtagsandRanges"></a> IP の範囲とタグを使用する
 
-物理的なオフィスの IP アドレスなど、既知の IP アドレスを簡単に識別するには、タグを適切に分類できるように IP アドレスの範囲を設定し、またログやアラートの表示や調査の方法をカスタマイズする必要があります。   
+物理的なオフィスの IP アドレスなど、既知の IP アドレスを簡単に識別するには、タグを適切に分類できるように IP アドレスの範囲を設定し、またログやアラートの表示や調査の方法をカスタマイズする必要があります。 <br></br>  
 IP アドレス範囲の各グループは、IP カテゴリのプリセットのリストに基づいて分類したり、独自に作成した IP タグを付与したりできます。 さらに、この設定を使用して、公開されている geo ロケーション情報を内部ネットワークの情報に基づいて上書きすることができます。  
   
 IPv4 と IPv6 がサポートされています。  
@@ -45,11 +45,11 @@ IPv4 と IPv6 がサポートされています。
 
 組み込みの IP アドレス タグとカスタム IP タグの階層が考慮され、カスタム IP タグが組み込みの IP タグよりも優先されます。 たとえば、脅威インテリジェンスに基づいてある IP アドレスに **[危険]** のタグが付いているが、**[企業]** と識別されているカスタム IP タグがある場合、カスタム カテゴリおよびタグが優先されます。
 
-メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[IP アドレス範囲]** を選択します。 **[+ IP アドレス範囲の追加]** をクリックし、次の項目を設定します。  
+メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[IP アドレス範囲]** を選択します。 **[+ IP アドレス範囲の追加]** をクリックし、次のフィールドを設定します。  
   
 > [!NOTE]  
->  場所と登録された ISP は、既定値が上書きされます。   
-> しかし、IP タグのデータは上書きされず、アクティビティに追加されます。  
+> - 場所と登録された ISP は、既定値が上書きされます。   
+> - しかし、IP タグのデータは上書きされず、アクティビティに追加されます。  
   
 1.  IP 範囲の**名前を指定**します。 この名前はアクティビティ ログでは表示されず、IP 範囲の管理にのみ使用されます。  
   
