@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 1/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fb7f64198ad2b7cbdcf8f9ff25e38611255f1fcf
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 9988a610e9768173f0c89458974997647cabceaa
+ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 01/24/2018
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -44,13 +44,13 @@ ms.lasthandoff: 01/16/2018
 
    ![ServiceNow OAuth の種類](./media/servicenow-oauth-app-type.png)
 
-5. **[Application Registries New record (アプリケーション レジストリの新しいレコード)]** の次の項目に入力します。
+5. **[Application Registries New record (アプリケーション レジストリの新しいレコード)]** の次のフィールドに入力します。
     
     - **[名前]** フィールドに新しい OAuth プロファイルの名前を入力します。たとえば、「CloudAppSecurity」にします。 
     
     - **[クライアント ID]** は自動的に生成されます。 この ID をコピーします。接続を完了するには、これを Cloud App Security に貼り付ける必要があります。
     
-    - **[クライアント シークレット]** フィールドに文字列を入力します。 空のまま残した場合、無作為のシークレットが自動的に生成されます。 後で使用するためにコピーし、保存します。 
+    - **[クライアント シークレット]** フィールドに文字列を入力します。 空のままにすると、無作為のシークレットが自動的に生成されます。 後で使用するためにコピーし、保存します。 
     
     - **[Access Token Lifespan (アクセス トークン有効期間)]** を 3,600 以上に増やします。
     
@@ -104,7 +104,7 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
 
 8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。   
   
-   テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。   
+   テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。    
  ServiceNow を接続すると、接続までの 60 日間のイベントを受け取ります。 
 
 
