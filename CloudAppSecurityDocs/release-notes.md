@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/21/2018
+ms.date: 2/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,13 +13,26 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e47525f2a84b2c0515cb87010ce20681b9519a3b
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-116"></a>Cloud App Security リリース 116
+2018 年 2 月 4 日のリリース
+
+- 段階的なロールアウト: Cloud App Security は SaaS アプリ全体でユーザーとユーザー アカウントを関連付けるようになります。 これにより、関連するさまざまな SaaS アプリすべてで、使用したアプリやアカウントに関係なく、ユーザーのすべてのアクティビティを簡単に調査できます。  
+
+-   段階的なロールアウト: Cloud App Security は接続された同一アプリの複数のインスタンスをサポートするようになります。 たとえば、Salesforce の複数のインスタンスがある場合 (営業用とマーケティング用など)、その両方を Cloud App Security に接続し、詳細にポリシーを作成して調査し、同じコンソールから管理することができます。 
+
+- Cloud App Security の調査機能が強化されました。 **[アラート]** ページ内から**アクティビティ ログ**にドリルダウンし、アラートから直接実行できる追加アクションを表示できるようになりました。
+
+- Cloud Discovery パーサーが、2 つの追加のチェックポイント形式、XML と KPC をサポートするようになりました。
+
+
 
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security リリース 115
 2018 年 1 月 21 日のリリース
@@ -27,7 +40,7 @@ ms.lasthandoff: 01/21/2018
 -   このリリースでは、ファイル ポリシーで特定のフォルダーを選択するときのエクスペリエンスが向上しました。 複数のフォルダーを表示、選択して、簡単にポリシーに追加できるようになりました。 
 -   **[検出されたアプリ]** ページに次の変更が加えられました。 
    - タグの一括追加機能により、(承認されたタグと承認されていないタグに加え) カスタム タグを適用できるようになりました。 
-   - **IP アドレス レポートの生成**時、エクスポートされたレポートに、トラフィックの送信元が承認されたアプリか、承認されていないアプリかの情報が表示されるようになりました。 
+   - **IP アドレス レポートの生成**または**ユーザー レポートの生成**時、エクスポートされたレポートに、トラフィックの送信元が承認されたアプリか、承認されていないアプリかについての情報が表示されるようになりました。 
 -   ポータルの **[アプリを接続]** ページから、Microsoft Cloud App Security チームの新しい API App コネクタを直接要求できるようになりました。 
 
 
