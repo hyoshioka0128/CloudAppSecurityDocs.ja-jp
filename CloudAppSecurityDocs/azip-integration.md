@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/28/2018
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2d7c8a4ed07ddfdfd6893d9a1b4020fb88cb8e04
-ms.sourcegitcommit: 4fdf9ae2e2b189d4efa6a6588898c8d46d0dda70
+ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
+ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -35,6 +35,8 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 
 
 ## <a name="prerequisites"></a>前提条件
+
+- Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
 Cloud App Security では現在、次の種類のファイルに Azure Information Protection 分類ラベルを適用できます。
 
@@ -91,7 +93,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
  ![アプリの保護](./media/protect-app.png)
   
   >[!NOTE]
-  >Cloud App Security で Azure Information Protection によってファイルが保護される場合にサポートされるファイルの最大サイズは 50 MB です。 
+  > Cloud App Security は、最大 50 MB のファイルに Azure Information Protection を適用できます。  
 
 2. ファイルに適用する組織の分類ラベルを選択し、**[適用]** をクリックします。 
 ![保護の分類ラベル](./media/protect-template.png)
