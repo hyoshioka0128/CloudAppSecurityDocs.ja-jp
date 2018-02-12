@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 950ccd90c2efa777bc8f43abf87a2638f7316de1
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシでアプリを保護する
 
@@ -84,8 +84,36 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 > - このプロキシは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 > - Office 365 アプリケーションは SAML を構成されないため、現在はサポートされていません。
 
-さらに、セッション制御はすべてのアプリで自動的に使用できません。 Cloud App Security チームは、セッション制御で多くの一般的なアプリをテストしました。 他のアプリでは、ユーザーがオンボーディング プロセスを行うことが必要な場合があります。
-クライアントに関しては、セッション制御はすべての主要なプラットフォーム上のすべてのブラウザーで使用可能です。 ただし、モバイル アプリとデスクトップ アプリはセッション制御でサポートされていません。 
+セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリは現在サポートされていません)。 Azure AD とネイティブで統合すると、次の機能を備えたアプリを含む、 Azure AD での SAML シングル サインオンで構成されているすべてのアプリをサポートできます。
+
+-   Salesforce
+
+-   ボックス
+
+-   G Suite
+
+-   Workday
+
+-   Slack
+
+-   Workplace by Facebook
+
+-   ServiceNow
+
+-   JIRA/Confluence
+
+-   AWS
+
+-   Workiva
+
+-   CornerStone on Demand
+
+-   DocuSign
+
+-   HighQ 
+
+セッション制御には、その他のアプリが継続的に搭載されます。 ここに記載されていない特定のアプリに関心がある場合は、[アプリの詳細を送っていただき](mailto:casfeedback@microsoft.com)、ユース ケースとして関心があれば、そのアプリが搭載されます。
+
 
 
 

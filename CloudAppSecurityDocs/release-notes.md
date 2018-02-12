@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 05f3249c17b4ef16246ec5bafa83023a247bce01
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -28,9 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 -   段階的なロールアウト: Cloud App Security は接続された同一アプリの複数のインスタンスをサポートするようになります。 たとえば、Salesforce の複数のインスタンスがある場合 (営業用とマーケティング用など)、その両方を Cloud App Security に接続し、詳細にポリシーを作成して調査し、同じコンソールから管理することができます。 
 
-- Cloud App Security の調査機能が強化されました。 **[アラート]** ページ内から**アクティビティ ログ**にドリルダウンし、アラートから直接実行できる追加アクションを表示できるようになりました。
-
-- Cloud Discovery パーサーが、2 つの追加のチェックポイント形式、XML と KPC をサポートするようになりました。
+oul - Cloud Discovery パーサーが、2 つの追加のチェックポイント形式、XML と KPC をサポートするようになりました。
 
 
 

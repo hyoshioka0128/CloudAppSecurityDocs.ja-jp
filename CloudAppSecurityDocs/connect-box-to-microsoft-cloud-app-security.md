@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bceda231435dad7b669a38d06611fc551c38c08
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Box アカウントに接続する方法を説明します。  
@@ -37,7 +37,7 @@ ms.lasthandoff: 01/16/2018
   
          ![Box アプリ](./media/box-apps.png "Box アプリ")  
   
-    -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、**[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。<br></br>US1 データ センター: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>EU1 データ センター: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>**[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
+    -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、**[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。<br></br>US1 データ センター: `nduj1o3yavu30dii7e03c3n7p49cj2qh` <br></br>US2 データ センター: `w0ouf1apiii9z8o0r6kpr4nu1pvyec75`<br></br>EU1 データ センター: `me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`<br></br>**[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
   
          ![Box の [次を除く] 設定](./media/box-settings-except-for.png "Box の [次を除く] 設定")  
   
