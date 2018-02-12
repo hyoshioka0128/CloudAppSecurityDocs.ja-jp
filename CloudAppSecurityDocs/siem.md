@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4f5e69282dc52802d8b6ff764c956eb7c1d82693
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
+ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="siem-integration"></a>SIEM の統合
     
@@ -74,6 +74,10 @@ SIEM との統合は次の 3 つの手順で行われます。
   ![データの種類の設定](./media/siem3.png)
 
 7. トークンをコピーし、保存して後で使用できるようにします。 [完了] をクリックし、ウィザードから SIEM ページに戻り、テーブルで追加した SIEM エージェントを確認できます。 後で接続されるまで **[作成済み]** と表示されます。
+
+> [!NOTE]
+> 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
+
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: JAR ファイルをダウンロードし、サーバーで実行する
 
