@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/4/2018
+ms.date: 2/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,24 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3463402d2878d08ffcada968e2f1e958eea26038
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: ae784655539e62358aabf7094f7b6b1634e6386d
+ms.sourcegitcommit: e1868428958901c51091b23fa032a989b3059b4b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/12/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security リリース 116
 2018 年 2 月 4 日のリリース
 
+- Cloud App Security の異常検出ポリシーが拡張され、ありえない移動、疑わしい IP アドレスからのアクティビティ、複数回のログイン試行の失敗など、新しい**シナリオ ベースの検出**が追加されました。 新しいポリシーは自動的に有効になり、設定不要の脅威検出機能がクラウド環境全体で利用できます。 また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 詳細については、「[行動分析と異常検出を瞬時に取得する](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)」を参照してください。
+
 - 段階的なロールアウト: Cloud App Security は SaaS アプリ全体でユーザーとユーザー アカウントを関連付けるようになります。 これにより、関連するさまざまな SaaS アプリすべてで、使用したアプリやアカウントに関係なく、ユーザーのすべてのアクティビティを簡単に調査できます。  
 
 -   段階的なロールアウト: Cloud App Security は接続された同一アプリの複数のインスタンスをサポートするようになります。 たとえば、Salesforce の複数のインスタンスがある場合 (営業用とマーケティング用など)、その両方を Cloud App Security に接続し、詳細にポリシーを作成して調査し、同じコンソールから管理することができます。 
 
-oul - Cloud Discovery パーサーが、2 つの追加のチェックポイント形式、XML と KPC をサポートするようになりました。
+- Cloud Discovery パーサーが、2 つの追加のチェックポイント形式、XML と KPC をサポートするようになりました。
 
 
 
