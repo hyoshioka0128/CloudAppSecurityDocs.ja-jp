@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 2/21/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9682c7badb19365ea74ffc78a7a2a38152f84669
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: 048b2e594190ad19d20fcba57767b6fcf6ebd2fd
+ms.sourcegitcommit: 4f9a4884672633927ce649e51df3b10c547787af
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/21/2018
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -34,7 +34,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 > この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P2 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
 
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
@@ -45,7 +45,7 @@ Cloud App Security では現在、次の種類のファイルに Azure Informati
 - PowerPoint: potm、potx、ppsx、ppsm、pptm、pptx
 - PDF ファイルと画像ファイルには、今後のバージョンで対応する予定です。 
 
-この機能は現在、Box、SharePoint Online、OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
+この機能は現在、Box、G Suite、SharePoint Online、OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
 
 Cloud App Security の外で、保護されてラベルが付けられたファイルは、現在 Cloud App Security ではスキャンしたり変更したりすることができません。 Cloud App Security の外で (保護なしで) ラベルが付けられたファイルはスキャンできます。Cloud App Security は、Cloud App Security ポリシーに定義されているように、(保護ありまたは保護なしで) 別のラベルを適用できます。
 
@@ -116,6 +116,9 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 3.  関連アプリのガバナンス アクションの下で**分類ラベルを適用**し、ラベルの種類を選択します。
 
    ![ラベルを適用する](./media/aip-gov-action.png)
+
+> [!NOTE]
+> ファイル ポリシーを介して、Azure Information Protection のラベルを自動的に適用する機能は強力です。 お客様が多数のファイルに誤ってラベルを適用することを防ぐための安全策として、アプリごと、テナントごとに 1 日に実行できる**ラベルの適用**操作は 100 回に制限されています。 1 日の上限に達すると、ラベルの適用操作は一時的に停止し、翌日 (UTC 12 時 00分 を過ぎてから) に自動的に再開します。 テナントの上限を引き上げるには、[Cloud App Security のサポートにお問い合わせください](mailto:cascoresupport@microsoft.com)。
 
 ### <a name="control-file-exposure"></a>ファイルの公開を制限する
 
