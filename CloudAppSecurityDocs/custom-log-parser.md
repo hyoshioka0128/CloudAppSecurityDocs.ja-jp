@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/6/2017
+ms.date: 2/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8463285f9462296188bc015b455fad824b3660cb
-ms.sourcegitcommit: b729e881851cdd8dc3f105ddbf6b4b907b8588dd
+ms.openlocfilehash: 859cba7daf575b41b33380eeec33288a17e64d91
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成し、Cloud App Security で明示的にサポートされていないファイアウォールやデバイスからでも、Cloud Discovery で使用することができます。 
@@ -79,7 +79,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 
 
 
-## <a name="see-also"></a>関連項目
+## <a name="see-also"></a>「
  
 [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 
