@@ -1,5 +1,6 @@
 # 理解と調査
 ## [Cloud App Security とは](what-is-cloud-app-security.md)
+## [Cloud App Security コンプライアンス、信頼、データのセキュリティとプライバシー](cas-compliance-trust.md)
 ## [新機能](release-notes.md)
 ## 比較
 ### [Office 365](editions-cloud-app-security-o365.md)
@@ -16,7 +17,7 @@
 ## [Cloud Discovery の展開](set-up-cloud-discovery.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
-#### [Ubuntu オンプレミス上の Docker](discovery-docker-ubuntu.md)
+#### [Ubuntu および RHEL オンプレミス上の Docker](discovery-docker-ubuntu.md)
 #### [Azure での Ubuntu 上の Docker](discovery-docker-ubuntu-azure.md)
 #### [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
@@ -61,6 +62,7 @@
 #### [ファイル ポリシー](data-protection-policies.md)
 ##### [コンテンツ検査](content-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
+#### [アクセス ポリシー](access-policy-aad.md)
 #### [セッション ポリシー](session-policy-aad.md)
 #### [ポリシー テンプレート リファレンス](policy-template-reference.md)
 ### [接続されているアプリの管理](governance-actions.md)
