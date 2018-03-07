@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54dd79b76386eda64e06936801849089c5f7d438
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 2b9239b43d2f104f6e54c519ba089346c7672456
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 このセクションでは、App Connector API を使用して Cloud App Security を既存の Box アカウントに接続する方法を説明します。  
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/09/2018
   
 1.  アプリケーションへのアクセス許可を制限する場合は、この手順を実行します。 それ以外の場合は手順 2 に進みます。  
   
-    -   Box 管理コンソールで設定アイコンをクリックし、次に **[Business settings (ビジネスの設定)]** をクリックします。  
+    -   Box 管理コンソールで設定アイコンをクリックし、次に **[Business settings]\(ビジネス設定\)** または **[エンタープライズ設定]** をクリックします。  
   
          ![Box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
   

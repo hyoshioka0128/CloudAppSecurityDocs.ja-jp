@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: af4552c9ffac66fae14b3fc5f84860e2d3761f88
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/05/2018
 ---
 ## <a name="managing-admin-access"></a>管理アクセス許可の管理
 
@@ -43,7 +43,7 @@ Cloud App Security はロール ベースのアクセス制御に対応してい
 
 Azure Active Directory 管理者ロールにユーザーを追加せずに、Cloud App Security に管理者を追加することもできます。次の手順を実行します。
 
-1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、**[管理者アクセス権を管理します]** をクリックします。 
+1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[管理者の管理]** をクリックします。 
 
 2. Cloud App Security へのアクセス権を付与する管理者を追加します。
   

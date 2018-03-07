@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 2/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd4c2cc8a4382a5e3a50903499d098d1e90dce53
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: ec381d45d9124220fd227f91d4e4c4673f127014
+ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターを使用する前に、手動でログをアップロードし、Cloud App Security でログ解析することが重要です。
@@ -62,7 +62,7 @@ ms.lasthandoff: 01/16/2018
 10. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定歯車アイコンの **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
-11. **[スナップショット レポートの管理]** を選択し、スナップショット レポートを選択します。
+11. **[スナップショット レポート]** を選択し、スナップショット レポートを選択します。
  
 ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 
