@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/20/2018
+ms.date: 3/3/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,22 +13,36 @@ ms.technology:
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a8b6d36419d1553dcc5f3257a3dee22944f60d41
-ms.sourcegitcommit: 79cdf84f6fd60a57b771a7fd4e5a37d4cc8d9aed
+ms.openlocfilehash: c2e6d6b3b31c93d69f366b93a7426f62518b948c
+ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+
+## <a name="cloud-app-security-release-118"></a>Cloud App Security リリース 118
+2018 年 3 月 4 日のリリース
+
+- Microsoft Cloud App Security のシャドウ IT 検出と監視の機能をユーザー独自のカスタム アプリで実行できるようになりました。 Cloud Discovery にカスタム アプリを追加する新しい機能を使用すると、アプリの使用状況を監視し、使用パターンの変化に関してアラートを受け取ることができます。 詳細については、[カスタム アプリの保護](cloud-discovery-custom-apps.md)に関する記事を参照してください。 この機能は、徐々にロール アウトされていきます。
+
+- Cloud App Security ポータルの **[設定]** ページが再設計されました。 新しい設計では、すべての設定ページの統合、検索機能と強化されたデザインを提供します。 
+
+- Cloud Discovery では、Barracuda F シリーズ ファイアウォールおよび Barracuda F シリーズ ファイアウォール Web ログ ストリーミングがサポートされました。
+
+- ユーザーと IP アドレスのページの検索機能でオートコンプリートが有効になり、探しているものを見つけやすくなりました。
+
+- 除外するエンティティと除外する IP アドレスの設定ページで、一括操作を実行できるようになりました。 これにより、複数のユーザーやグループまたは IP アドレスを選択して、組織内の Cloud Discovery の一部としての監視対象から、より簡単に除外できるようになります。 
 
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security リリース 117
 2018 年 2 月 20 日のリリース
 
--   Cloud App Security と Azure Information Protection との緊密な統合により、G Suite のファイルを保護できるようになりました。 このパブリック プレビュー機能を使用すると、G Suite のファイルをスキャンして分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
+-   Cloud App Security と Azure Information Protection との統合が深まり、G Suite 内のファイルを保護できるようになりました。 このパブリック プレビュー機能を使用すると、G Suite のファイルをスキャンし、分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
 
--   Cloud Discovery で i-FILTER がサポートされるようになりました。
+-   Cloud Discovery で [Digital Arts i-FILTER](http://www.daj.jp/en/products/if/) がサポートされました。
 
--   SIEM エージェント テーブルで、管理を容易にするための詳細情報を確認できるようになりました。
+-   SIEM エージェント テーブルには、管理を簡単にする詳細が含まれています。
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security リリース 116
 2018 年 2 月 4 日のリリース
@@ -102,7 +116,7 @@ ms.lasthandoff: 02/20/2018
 ## <a name="cloud-app-security-release-109"></a>Cloud App Security リリース 109
 リリース日: 2017 年 10 月 29 日 
 
-- Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。 Microsoft Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 次に例を示します。
+- Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。 Microsoft Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 たとえば、次のように入力します。
     -   データのダウンロードをブロックして、事前にデータ リークを防ぎます。
     -   暗号化によって保護されるように、クラウドでのデータの格納とクラウドからのデータのダウンロードを強制するルールを設定します。
     -   管理されていないデバイスでの実行内容を監視できるように、保護されていないエンドポイントを把握できます。
@@ -191,9 +205,9 @@ ms.lasthandoff: 02/20/2018
     - **カスタム リスク スコア**: アプリのリスク スコアを上書きできるようになりました。 たとえば、アプリのリスク スコアが 8 で、そのアプリが組織で却下されている場合、その組織に対してリスク スコアを 10 に変更することができます。 誰かがそのアプリをレビューしたときに変更の理由をクリアにするためのノートも追加できます。
 -   **新しいログ コレクターの展開モード:** 新しい展開モードがロールアウトされ、ログ コレクターで使用できるようになりました。 現在の仮想アプライアンス ベースの展開に加えて、新しい Docker (コンテナー) ベースのログ コレクターを、パッケージとしてオンプレミスと Azure の Windows および Ubuntu マシンにインストールできます。 Docker を使用する場合、ホスティング マシンはお客様が所有していて、このお客様が自由にパッチを適用したり監視したりできます。
 
-### <a name="announcements"></a>お知らせ 
--   クラウド アプリ カタログでは、15,000 以上の検索可能なアプリをサポートしています。
--   コンプライアンス: Cloud App Security は、公式に Azure による SOC1/2/3 認定を受けています。 認定の完全な一覧については、[コンプライアンスの提供内容](https://www.microsoft.com/trustcenter/compliance/complianceofferings)に関するページをご覧いただき、Cloud App Security でフィルターした結果を表示してください。
+### <a name="announcements"></a>お知らせ: 
+-   クラウド アプリ カタログは、15,000 以上の探索可能なアプリをサポートしています。
+-   コンプライアンス: Cloud App Security は Azure によって SOC1/2/3 を正式に認定されています。 認定の完全な一覧については、「[Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)」(コンプライアンスの提供内容) を参照し、Cloud App Security で結果をフィルターしてください。
 
 ### <a name="other-improvements"></a>その他の機能強化: 
 -   **解析の向上:** Cloud Discovery のログ解析メカニズムで機能強化が行われました。 内部エラーが発生する可能性が大幅に低下しました。
