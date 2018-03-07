@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/31/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5b3647abff4edfb5dbc2c1d38ce322011da901a
-ms.sourcegitcommit: bfe898e82c195981cc2fdaa899b0f8ab48957a00
+ms.openlocfilehash: ff8f123a1bab8831071865422f8afa34e20e416b
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="basic-setup"></a>基本的なセットアップ
 ここでは、Cloud App Security ポータルをカスタマイズする手順について説明します。
@@ -32,10 +32,8 @@ ms.lasthandoff: 02/05/2018
   
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ  
   
-1.  Cloud App Security ポータルのメニュー バーで、設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[全般設定]** を選択して、以下の構成を行います。  
-     
-     ![全般設定](./media/general-settings.png "全般設定")  
-  
+1.  Cloud App Security ポータルのメニュー バーで、設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[設定]** を選択して組織の詳細を構成します。     
+
 3.  **[組織の詳細]** に自社の**組織の表示名**を指定することは重要です。 これは、システムから送信される電子メールや Web ページに表示されます。  
   
 4. **環境名** (テナント) を指定します。 これは、複数のテナントを管理する場合に特に重要です。  

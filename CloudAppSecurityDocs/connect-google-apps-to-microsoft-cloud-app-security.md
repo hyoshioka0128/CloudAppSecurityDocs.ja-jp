@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4b673fa732e553319483f11af5c95e33148bb05f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -62,7 +62,9 @@ ms.lasthandoff: 01/21/2018
    > [!NOTE]  
    >  ここでは **[資格情報]** の警告は無視します。  
 
-8.  5 つの **有効にされた API** が必要です:  
+8. 各 API に対して [有効] をクリックします。
+     ![Google API を有効にする](./media/google-api.png "google-api")  
+1. 5 つの**有効化された API** が必要です。その他の API は無効にしてください。
   
      ![Google の有効にされた API](./media/google5.png "google5")  
   
@@ -72,7 +74,7 @@ ms.lasthandoff: 01/21/2018
   
     -   その他のすべてのフィールドは省略できます。  
   
-    -   **[Save]**(保存) をクリックします。  
+    -   **[保存]** をクリックします。  
   
      ![Google の製品名](./media/google6.png "google6")  
   
@@ -187,7 +189,7 @@ ms.lasthandoff: 01/21/2018
 
     -   **[Visibility]\(可視性\)** で **[My domain]\(独自ドメイン\)** (パブリックではありません) を選択します。 
     -   **[変更を保存]** をクリックします。  
-  
+        ![google の可視性](./media/google-visibility.png "google の可視性")  
 22. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
    
       ![Google セキュリティ](./media/googlesec.png "Google セキュリティ")  
@@ -219,7 +221,7 @@ ms.lasthandoff: 01/21/2018
   
     4.  G Suite 管理者の**管理者アカウントの電子メール**を 1 つ入力します。  
   
-    5.  G Suite Unlimited のアカウントがある場合、このチェック ボックスをオンにします。 Cloud App Security で使用できる G Suite Unlimited の機能の詳細については、[アプリの表示、保護、ガバナンスの操作をすぐに実行できるようにする](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)方法に関するページをご覧ください。  
+    5.  G Suite Business または Enterprise のアカウントがある場合、このチェック ボックスをオンにします。 Cloud App Security で使用できる G Suite Business または Enterprise の機能の詳細については、[アプリの表示、保護、ガバナンスの操作をすぐに実行できるようにする](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)方法に関するページをご覧ください。  
   
     6.  **[設定の保存]** をクリックします。  
   

@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2017
+ms.date: 3/5/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0fa9125b611574d4f4fafb18c8bc649de82b1ad6
-ms.sourcegitcommit: 1c9ed4923cb6b761aebd13a6caa3a6605412419a
+ms.openlocfilehash: f8dabfd6a7e5d246c1c36dd29e023e294a266f5d
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2017
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上のリスク要因がランクおよびスコア付けされた Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
@@ -69,7 +69,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
  
 
 
-## <a name="supported-firewalls-and-proxies"></a>サポートされているファイアウォールとプロキシ
+## サポートされているファイアウォールとプロキシ <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access ログ (W3C)
@@ -81,6 +81,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Cisco Meraki - URL ログ
 - Clavister NGFW (Syslog)
 - Dell SonicWall
+- Digital Arts i-FILTER
 - Fortinet Fortigate
 - Juniper SRX
 - Juniper SSG
@@ -108,19 +109,20 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 |Barracuda|**はい**|**はい**|**はい**|**はい**|いいえ|いいえ|
 |Blue Coat|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Checkpoint|いいえ|**はい**|いいえ|**はい**|いいえ|いいえ|
-|Cisco ASA|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
+|Cisco ASA (Syslog)|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
 |Cisco ASA with FirePOWER|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Cisco FWSM|いいえ|**はい**|いいえ|**はい**|**はい**|いいえ|
 |Cisco IronPort WSA|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Cisco Meraki|**はい**|**はい**|いいえ|**はい**|いいえ|いいえ||Cisco Scansafe|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
 |Clavister NGFW (Syslog)|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Dell SonicWall|**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
+|Digital Arts i-FILTER|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Fortigate|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
 |Juniper SRX|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
-|Juniper SSG|いいえ|**はい**|いいえ|**はい**|**はい**|**はい**|
+|Juniper SSG|いいえ|**はい**|**はい**|**はい**|**はい**|**はい**|
 |McAfee SWG|**はい**|いいえ|いいえ|**はい**|**はい**|**はい**|
 |MS TMG|**はい**|いいえ|**はい**|**はい**|**はい**|**はい**|
-|Palo Alto Networks|**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+|Palo Alto Networks|いいえ|**はい**|**はい**|**はい**|**はい**|**はい**|
 |Sophos|**はい**|**はい**|**はい**|**はい**|**はい**|いいえ|
 |Squid (共通)|**はい**|いいえ|**はい**|**はい**|いいえ|**はい**|
 |Squid (ネイティブ)|**はい**|いいえ|**はい**|**はい**|いいえ|**はい**|

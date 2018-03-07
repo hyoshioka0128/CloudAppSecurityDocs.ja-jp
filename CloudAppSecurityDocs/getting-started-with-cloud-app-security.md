@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4526b93a0d95f4bd1cc0a97867ba585002408130
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="deploy-cloud-app-security"></a>Cloud App Security の展開
 Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
@@ -60,14 +60,14 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 ### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 1. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
 必須のタスク: トラフィック ログをアップロードする **継続的な Cloud Discovery レポートを作成するには**
 
- 1. **[設定]** > **[Cloud Discovery settings]** \(Cloud Discovery の設定) の順に選択します。
- 2. **[Upload log automatically]** \(ログを自動的にアップロード) を選択します。
+ 1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+ 2. **[ログの自動アップロード]** を選択します。
  3. **[データ ソース]** タブでソースを追加します。
  4. **[ログ コレクター]** タブでログ コレクターを構成します。
  
 **Cloud Discovery のスナップショット レポートを作成するには**
 
- 1. **[検出]** > **[新しいスナップショット レポートの作成]** に移動し、次に示す手順に従います。
+ 1. **[検出]** > **[スナップショット レポート]** に移動し、次に示す手順に従います。
 
 **Cloud Discovery レポートを構成する必要がある理由。**
 社内のシャドウ IT 対策を把握することは不可欠です。
@@ -77,8 +77,8 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 ### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 2. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
 必須のタスク: アプリを接続する
 
-1. **[設定]** > **[アプリ コネクタ]** の順に進みます。
-2. **[アプリを接続]** を選び、アプリを選択します。
+1. 設定の歯車アイコンから **[アプリ コネクタ]** を選択します。
+2. アプリを追加するプラス記号をクリックし、アプリを選択します。
 3. 構成手順に従ってアプリを接続します。
 
 **アプリを接続する必要がある理由。**
@@ -105,7 +105,7 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 **電子メールの設定を入力するには**
 
-1. **[設定]** > **[メールの設定]** の順に選択します。
+1. 設定の歯車アイコンから **[メールの設定]** を選択します。
 2. **[メール送信者の ID]** でメール アドレスと表示名を入力します。
 3. **[メールのデザイン]** で企業のメール テンプレートをアップロードします。
 
@@ -117,8 +117,9 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 **スコアのメトリックをカスタマイズするには**
 
-1. **[設定]** > **[Cloud Discovery settings]** \(Cloud Discovery の設定) の順に選択します。
-2. **[Score metric configuration]** \(スコア メトリックの構成) で各種のリスクの値の重要度を構成します。
+1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+2. **[Score metris]\(スコア メトリック\)** で各種のリスクの値の重要度を構成します。
 3. **[保存]** を選択します。
 
 検出されたアプリに付与されたリスク スコアは、企業のニーズと優先順位に従って正確に構成されます。
@@ -132,8 +133,9 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 **IP アドレスのタグを作成するには**
 
-1. **[設定]** > **[IP アドレス タグ]** の順に選択します。
-2. **[IP アドレス範囲の追加]** \(+) を選択します。
+1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+1. 設定の歯車アイコンから **[IP アドレスの範囲]** を選択します。
+2. IP アドレスの範囲を追加するプラス記号をクリックします。
 3. IP アドレス範囲の**詳細**や**場所**、**タグ**、**カテゴリ**を入力します。
 4. **[作成]** を選択します。
 
@@ -141,8 +143,8 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 **継続的レポートを作成するには**
 
-1. **[設定]** > **[Cloud Discovery settings]** \(Cloud Discovery の設定) の順に選択します。
-2. **[継続的レポートの管理]** で **[レポートの作成]** を選びます。
+1. 設定の歯車アイコンから、**[Cloud Discovery 設定**] を選択します。
+2. **[継続的レポート]** で **[レポートの作成]** を選びます。
 3. 以下の構成手順に従います。
 4. **[作成]** を選択します。
 
@@ -150,7 +152,7 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 **ドメインを追加するには**
 
-1. **[設定]** > **[全般設定]** の順に選択します。
+1. 設定の歯車アイコンから **[設定]** を選択します。
 2. **[組織の詳細]** で企業の内部ドメインを追加します。
 3. **[保存]** を選択します。
 

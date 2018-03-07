@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 3/5/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 276af05cd289496c277a5ab0709e7fca3453d469
+ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -52,6 +52,13 @@ Cloud Discovery によって提供されたデータを掘り下げたい場合�
 
 結果をフィルター処理した後は、すべてのアプリを 1 つのアクションで非承認にする一括操作チェック ボックスを使って、アプリを[非承認にしてブロックする](governance-discovery.md)ことができます。 アプリを非承認にした後は、ブロッキング スクリプトを使って、アプリが環境内で使われないようにブロックすることができます。
 
+Cloud Discovery を使うと、組織でのクラウドの使用状況をさらに詳しく調べることができ、検出されたサブドメインを調査することにより使われている特定のインスタンスを識別できます。
+     
+たとえば、異なる SharePoint サイトを区別することができます。
+
+これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 サポートされているアプライアンスの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery#supported-firewalls-and-proxies)」をご覧ください。
+
+ ![サブドメインの情報](./media/discovery-domains.png) 
 
 ## <a name="exclude-entities"></a>エンティティの除外  
 特に不要かつ興味対象ではないシステム ユーザーまたは IP アドレス、あるいは関連性の低いアプリケーションがある場合は、分析対象の Cloud Discovery データからこれらのデータを除外することができます。 たとえば、127.0.0.1 またはローカル ホストから送信されたすべての情報を除外するとします。  
@@ -122,7 +129,7 @@ Cloud Discovery データを削除するには:
 
 
 
-## <a name="see-also"></a>「
+## <a name="see-also"></a>関連項目
  
 [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 
