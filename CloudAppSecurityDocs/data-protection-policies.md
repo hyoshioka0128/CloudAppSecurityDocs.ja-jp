@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7b8fad0013cc645d380a0c967049937a479b344d
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 63024ea9395c6f765928076a8d6eb9861fa35238
+ms.sourcegitcommit: 2f1ccff60194573325afa01f1634eea373c829b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="file-policies"></a>ファイル ポリシー  
 ファイル ポリシーでは、クラウド プロバイダーの API を利用して、さまざまな自動プロセスを適用できます。 ポリシーを設定することにより、継続的なコンプライアンスのスキャン、法的な電子情報開示タスク、一般公開された機密コンテンツの DLP、その他多数のユース ケースを実現できます。  <br></br>
@@ -105,8 +105,7 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 -   Extensions  
    
     -  コンテンツ検査はサードパーティ エンジン経由で実行でき、DLP またはマルウェア対策機能が向上します。  
-  
-    -  [ガバナンス アクション](governance-actions.md)はサードパーティ エンジン経由で実行でき、カスタム暗号化コントロールまたはその他の種類のファイル処理 (たとえばカスタムのウォーター マーキング) を実行できます。  
+
   
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
