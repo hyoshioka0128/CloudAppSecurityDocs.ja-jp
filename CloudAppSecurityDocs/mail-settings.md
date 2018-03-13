@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,26 +13,24 @@ ms.technology:
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 50bf7a8bb69e20b1f4f8e54b22dfad47d2a81690
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
-メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックして **[メールの設定]** を選択し、Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定できます。  
 
-迷惑メール対策サービスにホワイトリスト登録すべき Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。 
+Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定するには、次の手順に従います。 迷惑メール対策サービスにホワイトリスト登録すべき Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。 
+
+
+1. メニュー バーで設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")を選択し、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
+
+2. **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
+   
+   **From display name (表示名から)**: 電子メール メッセージの **[From]** フィールドに表示する名前。  
   
-![[メールの設定] メニュー](./media/mail-setting-menu.png "[メールの設定] メニュー")  
-  
-次を構成します。  
-  
-1.  **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
-  
-     **From display name (表示名から)**: 電子メール メッセージの **[From]** フィールドに表示する名前。  
-  
-     **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
+   **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
      ![[メールの設定] の構成](./media/mail-settings-config.png "[メールの設定] の構成")  
 
@@ -41,7 +39,7 @@ ms.lasthandoff: 01/16/2018
   
 2.  **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
   
-    -   すべてのテンプレートの CSS は、テンプレート内でインラインである必要があります。  
+    -   すべてのテンプレートの CSS ファイルは、テンプレート内でインラインである必要があります。  
   
     -   テンプレートには編集不可能なプレースホルダーが 3 つ含まれます。  
   
