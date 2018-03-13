@@ -5,7 +5,7 @@ keywords:
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/3/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology:
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc5f5896a8a4abb69efff6deab94f7e55108eeff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
+ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/08/2018
 ---
 ##  <a name="Adminsettings"></a> 管理設定のカスタマイズ  
 Cloud App Security の管理者としての設定をセットアップする場合、ポータルのメニュー バーでユーザー名をクリックしてから **[ユーザー設定]** を選択し、次の項目を設定します。  
   
-1.  **[アカウント設定]** をクリックします。 ここでは、ユーザー自身がポータルの表示に使用する言語をカスタマイズできます。 ポータルの表示に既定の言語を使用するか、または自分用に別の言語を使用するかを設定できます。  
+1.  **[アカウント設定]** をクリックします。 ここで、Cloud App Security ポータルにアクセスするためのパスワードを設定または更新できます。  
   
      ![カスタム ユーザー設定](./media/custom-user-settings.png "カスタム ユーザー設定")  
   
