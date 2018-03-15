@@ -43,6 +43,7 @@
 ### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
+#### [Cloud Discovery にカスタム アプリを追加する](cloud-discovery-custom-apps.md)
 #### [検出されたアプリのフィルターとクエリ](discovered-app-queries.md)
 ### [リスク スコアの操作](risk-score.md)
 ## [調査](investigate.md)
