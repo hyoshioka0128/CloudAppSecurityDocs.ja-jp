@@ -41,6 +41,7 @@
 ### [ランサムウェアから組織を保護する](use-case-ransomware.md)
 ### [機密情報のダウンロードのブロック](use-case-proxy-block-session-aad.md)
 ### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
+### [Azure Information Protection ラベルを自動的に適用する](use-case-information-protection.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
 #### [Cloud Discovery にカスタム アプリを追加する](cloud-discovery-custom-apps.md)
