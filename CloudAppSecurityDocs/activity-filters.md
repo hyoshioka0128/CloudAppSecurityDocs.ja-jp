@@ -1,23 +1,23 @@
 ---
-title: "クラウド アプリのアクティビティの表示 | Microsoft ドキュメント"
-description: "このトピックでは、アクティビティ ポリシーに適用できるアクティビティ、フィルター、一致パラメーターの一覧を提供します。"
-keywords: 
+title: クラウド アプリのアクティビティの表示 | Microsoft ドキュメント
+description: このトピックでは、アクティビティ ポリシーに適用できるアクティビティ、フィルター、一致パラメーターの一覧を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b2880e9cb1569f018f0e9234e2ff75ec872f5470
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: b628b06e5e5c26ec153d7a4b1a9ef9483c15618a
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="activities"></a>アクティビティ
 Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続した後、Cloud App Security は発生したすべてのアクティビティをスキャンします (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
@@ -30,11 +30,6 @@ Cloud App Security は、接続しているアプリのすべてのアクティ�
 たとえば、**[アクティビティ]** ログを使用すると、組織内で最新ではないオペレーティング システムやブラウザーを使用しているユーザーを見つけることができます。これを行うには、Cloud App Security にアプリを接続した後、**[アクティビティ ログ]** ページで高度なフィルターを使用して **[ユーザー エージェント タグ]** を選択します。 次に、**[Outdated browser]** (古いブラウザー) または **[Outdated operating system]** (古いオペレーティング システム) を選択します。
 
  ![古いブラウザーのアクティビティの例](media/activity-example-outdated.png)
-
-組織外でアクセスされている**機密**ファイルがあるかどうかを確認する場合は、**[アクティビティ オブジェクト]** フィルターを設定し、**分類ラベル**を検索して**機密**ラベルを選択します。 **IP アドレス** フィルターを設定して**分類**を検索し、職場の IP アドレスを除外します (IP カテゴリは **[設定]** メニューで構成できます)。 **[検索に基づく新しいポリシー]** をクリックし、定義したフィルターに基づいてアクティビティ ポリシーを作成して、自動でユーザーに通知することができます。
-
- ![機密ファイルの外部アクティビティの例](media/activity-example-ip.png)
-
  
 アクティビティをフィルターするには、まず基本的なフィルターを使うと便利です。
 
