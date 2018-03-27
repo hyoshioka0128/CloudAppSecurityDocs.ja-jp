@@ -1,23 +1,23 @@
 ---
-title: "Azure Information Protection 分類ラベルを自動的に適用する | Microsoft Docs"
-description: "このトピックでは、Microsoft Cloud App Security で Azure Information Protection 分類ラベルを自動的に適用するプロセスについて説明します。"
-keywords: 
+title: Azure Information Protection 分類ラベルを自動的に適用する | Microsoft Docs
+description: このトピックでは、Microsoft Cloud App Security で Azure Information Protection 分類ラベルを自動的に適用するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 3/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9addebb97bc57b14c5c666b73a0d0d8e21a23ff
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 分類ラベルを自動的に適用する  
 
@@ -86,8 +86,8 @@ Box アカウントに保存されているファイルでクレジット カー
 4. この一致をクリックして、保護されたファイルを確認することができます。 一致自体は、機密データを保護するようにマスクされます。 
 
 >[!NOTE]
->Cloud App Security は、現時点で Box、SharePoint、OneDrive for Business での Azure Information Protection ラベルの自動適用をサポートしています。
-
+> - Cloud App Security は、現時点で Box、SharePoint、OneDrive for Business での Azure Information Protection ラベルの自動適用をサポートしています。
+> - Cloud App Security を使用してドキュメントがラベル付けされると、視覚的なマーキングはすぐには適用されず、ドキュメントが Office アプリで開かれ、最初に保存されたときに適用されます。 詳細については、「[Azure Information Protection 用の視覚的なマーキングのラベルを構成する方法](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)」を参照してください。
 
  ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   

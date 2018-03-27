@@ -1,30 +1,30 @@
 ---
-title: "継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs"
-description: "このトピックでは、オンプレミス サーバーで Ubuntu の Docker を使って、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。"
-keywords: 
+title: 継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs
+description: このトピックでは、オンプレミス サーバーで Ubuntu の Docker を使って、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2018
+ms.date: 3/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 13110a717b907decd2bafc938a01548f16d7bd76
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
+ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
 
 ## <a name="technical-requirements"></a>技術要件
 
--   OS: Ubuntu 14.04 以降 (Ubuntu 17.10 をサポートする Docker の安定バージョンはありません)
+-   OS: Ubuntu 14.04 以降 (Ubuntu 17.10 をサポートする Docker の安定バージョンはありません) または RHEL 7.2 以降 
 
 -   ディスク領域: 250 GB
 
