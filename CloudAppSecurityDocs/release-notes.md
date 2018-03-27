@@ -1,26 +1,31 @@
 ---
-title: "Cloud App Security の新機能 | Microsoft Docs"
-description: "このトピックは、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。"
-keywords: 
+title: Cloud App Security の新機能 | Microsoft Docs
+description: このトピックは、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 08a798bb20830afcbdb498c2ac72787873f72fab
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
+## <a name="cloud-app-security-release-119"></a>Cloud App Security リリース 119
+2018 年 3 月 18 日のリリース
+
+-   IP アドレス範囲のページに、Cloud App Security で検出される組み込みの IP アドレスが含まれています。 これには、Azure や Office 365 のような特定済みのクラウド サービスの IP アドレスだけでなく、脅威インテリジェンスのフィードの IP アドレスも含まれています。脅威インテリジェンスのフィードは IP アドレスが既知の危険な IP アドレスに関する情報によって自動的に拡充されます。 
+-   Cloud App Security がファイルに対するガバナンス アクションを実行しようとして、ファイルのロックが原因で失敗した場合、ガバナンス アクションが自動的に再試行されるようになりました。 
 
 ## <a name="cloud-app-security-release-118"></a>Cloud App Security リリース 118
 2018 年 3 月 4 日のリリース

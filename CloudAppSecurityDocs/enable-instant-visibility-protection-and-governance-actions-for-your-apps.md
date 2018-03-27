@@ -1,29 +1,33 @@
 ---
-title: "アプリを Cloud App Security に接続して使用状況を詳細に表示し、管理する | Microsoft Docs"
-description: "このトピックでは、API コネクタを使用して、アプリを組織のクラウド内のアプリに接続するプロセスについて説明します。"
-keywords: 
+title: アプリを Cloud App Security に接続して使用状況を詳細に表示し、管理する | Microsoft Docs
+description: このトピックでは、API コネクタを使用して、アプリを組織のクラウド内のアプリに接続するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/15/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b1bc4f7455736f57cf4bb43d8c7d7d020e749f7c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c14ba598a593dd8711151eb58e0eab75d0ea8791
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="connect-apps"></a>アプリを接続する 
 アプリのコネクタを使用するとアプリ プロバイダーの API を利用できるため、Cloud App Security による接続先アプリの表示および制御がしやすくなります。  
   
 Cloud App Security はクラウド プロバイダーが提供する API を利用しますが、各サービスには独自のフレームワークと API の制限事項があります。 Cloud App Security はサービスを利用して、API の使用を最適化し、最高のパフォーマンスを実現できるようになりました。 サービスが API に加えたさまざまな制限事項 (調整、API の制限、動的なタイムシフト API の期間など) を考慮して、Cloud App Security エンジンでは使用可能な機能が活用されます。 テナント内のすべてのファイルのスキャンなど、一部の処理には大量の API が必要となるため、長時間にわたって実行されます。 ポリシーによっては、数時間または数日間にわたって実行される場合があります。  
   
+## <a name="multi-instance-support"></a>複数インスタンスのサポート
+
+Cloud App Security は接続された同一アプリの複数のインスタンスをサポートします。 たとえば、Salesforce の複数のインスタンスがある場合 (営業用とマーケティング用など)、その両方を Cloud App Security に接続し、詳細にポリシーを作成して調査し、同じコンソールから管理することができます。 このサポートは API 接続アプリにのみ適用され、クラウドで検出されたアプリやプロキシ接続されたアプリには適用されません。
+
 ## <a name="how-it-works"></a>しくみ  
 Cloud App Security はシステム管理者権限で展開されているため、環境内のすべてのオブジェクトへのフル アクセスができます。  
   

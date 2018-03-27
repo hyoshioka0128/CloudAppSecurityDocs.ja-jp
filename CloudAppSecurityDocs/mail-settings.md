@@ -1,23 +1,23 @@
 ---
-title: "電子メールの通知の基本設定 |Microsoft Docs"
-description: "この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。"
-keywords: 
+title: 電子メールの通知の基本設定 |Microsoft Docs
+description: この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 3/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: de4e7025f046f15e0aa36f2cf45d17a3502a0644
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 1c15a5ca97ecf130d8202975d6ddcba1e1d69d0e
+ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 ##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
 
@@ -29,7 +29,9 @@ Cloud App Security から管理者に送信されるアラート要求の電子�
 2. **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
    
    **From display name (表示名から)**: 電子メール メッセージの **[From]** フィールドに表示する名前。  
-  
+   > [!NOTE]
+   > [rfc822 プロトコル](http://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名には Unicode 文字のみがサポートされています。
+
    **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
   
      ![[メールの設定] の構成](./media/mail-settings-config.png "[メールの設定] の構成")  

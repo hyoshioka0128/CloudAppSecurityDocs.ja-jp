@@ -1,23 +1,23 @@
 ---
-title: "IP の範囲とタグの設定 | Microsoft Docs"
-description: "このトピックでは、IP タグと IP カテゴリの使用方法について説明します。"
-keywords: 
+title: IP の範囲とタグの設定 | Microsoft Docs
+description: このトピックでは、IP タグと IP カテゴリの使用方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 3/18/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d05b1151383526ff37821c7d15abbd9b0f4f4f41
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: f066e17f8b4f2e54a65abb5c58095c0917e4e985
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 #  <a name="IPtagsandRanges"></a> IP の範囲とタグを使用する
 
@@ -26,16 +26,7 @@ IP アドレス範囲の各グループは、IP カテゴリのプリセット�
   
 IPv4 と IPv6 がサポートされています。  
   
-次の IP アドレスについては、Cloud App Security には組み込みタグが事前構成されています。 
-- ネイティブ クライアント
-- 古いオペレーティング システム
-- 管理対象デバイス
-- 匿名プロキシ
-- ボットネット (あるアクティビティがボットネットで実行された場合、リンクが届き、そのリンクからボットネットの詳細を確認できます)
-- Tor
-- 対応デバイス
-- 確認済みデバイス
-- 偽装
+Cloud App Security には、Azure や Office 365 などの一般的なクラウド プロバイダー向けの組み込み IP 範囲が事前に構成されています。 さらに、匿名プロキシ、ボットネット、Tor を含む Microsoft 脅威インテリジェンスに基づいた組み込みのタグ付けも含まれています。 IP アドレス範囲のページのドロップダウンで、完全な一覧を表示できます。
 
 検索の一部として上記の組み込みタグを使用するには、Cloud App Security API ドキュメントでその ID を参照してください。 
 

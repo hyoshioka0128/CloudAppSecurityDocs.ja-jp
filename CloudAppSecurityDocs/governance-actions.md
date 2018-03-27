@@ -1,27 +1,31 @@
 ---
-title: "ガバナンス アクションを適用して接続されているアプリを制御する方法 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。"
-keywords: 
+title: ガバナンス アクションを適用して接続されているアプリを制御する方法 | Microsoft Docs
+description: このトピックでは、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 3/7/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a010bdab8d58ca3454ab3a47d181fe999e3bee54
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 8339081e7600faf417a35ff4a4318b60d84eece1
+ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/19/2018
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 ガバナンスによって、アプリ全体におけるユーザーの作業をリアルタイムで制御できるようになります。 接続されているアプリの場合、ファイルまたはアクティビティにガバナンス アクションを適用できます。
 ガバナンス アクションは、ユーザーの作業を接続されたアプリ全体においてリアルタイムで制御するために、Cloud App Security からファイルまたはアクティビティに対して直接実行できる統合アクションです。 
+
+> [!NOTE]
+> Cloud App Security がファイルに対するガバナンス アクションを実行しようとして、ファイルのロックが原因で失敗した場合、ガバナンス アクションは自動的に再試行されます。 
+
 
 ### <a name="file-governance-actions"></a>ファイル ガバナンス アクション  
 
