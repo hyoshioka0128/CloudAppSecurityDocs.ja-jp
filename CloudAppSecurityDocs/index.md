@@ -1,11 +1,11 @@
 ---
 layout: LandingPage
-description: "Cloud App Security の使用方法について説明します。"
-ms.openlocfilehash: d499b8abe9aa775dbd0c248cf117040c322111de
-ms.sourcegitcommit: 2f4474084c7e07ac4853945ab5aa1ea78950675d
+description: Cloud App Security の使用方法について説明します。
+ms.openlocfilehash: 681344fdb313421429484427b7e5899d418cf8a8
+ms.sourcegitcommit: 3c66f12aa31ba211235787ee6f233138ea5f8a75
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 04/08/2018
 ---
 # <a name="cloud-app-security-documentation"></a>Cloud App Security ドキュメント
 
@@ -138,5 +138,4 @@ Cloud App Security により、クラウド アプリにエンタープライズ
                 </div>
             </div>
         </div>
-    </li>    
-</ul>
+    </li><br/></ul>
