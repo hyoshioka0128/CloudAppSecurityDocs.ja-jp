@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/7/2018
+ms.date: 4/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,21 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887745913039d7e94930bdf8b30000bdfeea90ff
-ms.sourcegitcommit: a074880eed43cf6e5ae95807640e99655b24d9be
+ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-120"></a>Cloud App Security リリース 120
+リリース日: 2018 年 4 月 8 日
+
+-   Office 365 と Azure AD では、内部アプリケーションを Office 365 と Azure AD アプリケーション (内部も外部も) によって実行されたユーザー アカウント アクティビティとして検出する機能を段階的にロールアウトしています。 これにより、アプリケーションが予期しない、承認されていないアクティビティを実行した場合にアラートを発するポリシーを作成できるようになります。 
+-   アプリのアクセス許可の一覧を CSV にエクスポートするときには、コンプライアンスと調査のプロセスを支援するために、公開元、アクセス許可のレベル、コミュニティの使用などの追加フィールドが含まれます。
+-   ServiceNow に接続したアプリが、内部サービスのアクティビティが “ゲスト” によって実行されたものとして登録されず、偽陽性のアラートをトリガーしないように改善されました。 このようなアクティビティはそれ以外のすべての接続アプリと同様に N/A と表示されます。
+
 
 ## <a name="cloud-app-security-release-119"></a>Cloud App Security リリース 119
 2018 年 3 月 18 日のリリース
@@ -64,11 +72,11 @@ ms.lasthandoff: 03/19/2018
 ## <a name="cloud-app-security-release-115"></a>Cloud App Security リリース 115
 2018 年 1 月 21 日のリリース
 
--   このリリースでは、ファイル ポリシーで特定のフォルダーを選択するときのエクスペリエンスが向上しました。 複数のフォルダーを表示、選択して、簡単にポリシーに追加できるようになりました。 
--   **[検出されたアプリ]** ページに次の変更が加えられました。 
-   - タグの一括追加機能により、(承認されたタグと承認されていないタグに加え) カスタム タグを適用できるようになりました。 
-   - **IP アドレス レポートの生成**または**ユーザー レポートの生成**時、エクスポートされたレポートに、トラフィックの送信元が承認されたアプリか、承認されていないアプリかについての情報が表示されるようになりました。 
--   ポータルの **[アプリを接続]** ページから、Microsoft Cloud App Security チームの新しい API App コネクタを直接要求できるようになりました。 
+- このリリースでは、ファイル ポリシーで特定のフォルダーを選択するときのエクスペリエンスが向上しました。 複数のフォルダーを表示、選択して、簡単にポリシーに追加できるようになりました。 
+- **[検出されたアプリ]** ページに次の変更が加えられました。 
+  - タグの一括追加機能により、(承認されたタグと承認されていないタグに加え) カスタム タグを適用できるようになりました。 
+  - **IP アドレス レポートの生成**または**ユーザー レポートの生成**時、エクスポートされたレポートに、トラフィックの送信元が承認されたアプリか、承認されていないアプリかについての情報が表示されるようになりました。 
+- ポータルの **[アプリを接続]** ページから、Microsoft Cloud App Security チームの新しい API App コネクタを直接要求できるようになりました。 
 
 
 ## <a name="cloud-app-security-release-114"></a>Cloud App Security リリース 114

@@ -1,23 +1,23 @@
 ---
-title: "Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。"
-keywords: 
+title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼 | Microsoft Docs
+description: このトピックでは、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/11/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: efa135ed66891e4af5f685405b742fb9f1d5667e
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 0f16ff050ca5a3e73077a907dbf11cf3e9cf2b03
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security のコンプライアンス、信頼、データ セキュリティ、プライバシー
 
@@ -40,19 +40,19 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 |----|----|----|
 |![csa のロゴ](./media/csastar-attest.png)|CSA STAR Attestation|Azure と Intune には独立した監査に基づき、Cloud Security Alliance STAR Attestation が授与されています。|
 |![csa のロゴ](./media/csastar.png)|CSA STAR Certification|Azure、Intune、Power BI には、Cloud Security Alliance STAR Certification のゴールド レベルが授与されています。|
-|![EU model clauses のロゴ](./media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/trustcenter/compliance/eu-model-clauses)|Microsoft は、EU Standard Contractual Clauses (EU 標準契約条項) をお客様に提供し、個人データの転送を保証しています。|
+|![EU model clauses のロゴ](./media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft は、EU Standard Contractual Clauses (EU 標準契約条項) をお客様に提供し、個人データの転送を保証しています。|
 |![privacy shield のロゴ](./media/privacy_shield.png)|EU-U.S.Privacy Shield|Microsoft は EU から米国に転送される個人データの保護に関するこの枠組みに準拠しています。|
 |![FISC のロゴ](./media/logo_fisc.png)|FISC|Microsoft は日本の金融情報システム センターによる安全対策基準第 8 版の要件を満たしています。|
-|![HIPAA のロゴ](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/trustcenter/compliance/hipaa)|Microsoft は Health Insurance Portability & Accountability Act Business Associate Agreements (BAA) を提供しています。|
+|![HIPAA のロゴ](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft は Health Insurance Portability & Accountability Act Business Associate Agreements (BAA) を提供しています。|
 |![iso 9001 のロゴ](./media/iso-9001.png)|ISO 9001|Microsoft はこれらの品質管理標準の実施に関する認証を取得しています。|
-|![iso 27001 のロゴ](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/trustcenter/compliance/iso-iec-27001)|Microsoft is ceMicrosoft はこれらの情報セキュリティ管理標準の実施に関する認証を取得しています。|
-|![iso 27018 のロゴ](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/trustcenter/compliance/iso-iec-27018)|Microsoft は、クラウド プライバシーに関するこの実施基準を順守した初めてのクラウド プロバイダーです。|
+|![iso 27001 のロゴ](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft is ceMicrosoft はこれらの情報セキュリティ管理標準の実施に関する認証を取得しています。|
+|![iso 27018 のロゴ](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft は、クラウド プライバシーに関するこの実施基準を順守した初めてのクラウド プロバイダーです。|
 |![PCI のロゴ](./media/pci-logo.png)|PCI DSS|Azure は、Payment Card Industry Data Security Standards レベル 1 バージョン 3.1 に準拠しています。|
-|![SOC のロゴ](./media/soc-logo.png)|[SOC 1 Type 2 および SOC 2 Type 2 レポート](https://www.microsoft.com/trustcenter/compliance/soc)|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
+|![SOC のロゴ](./media/soc-logo.png)|[SOC 1 Type 2 および SOC 2 Type 2 レポート](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
 |![SOC のロゴ](./media/soc-logo.png)|SOC 3|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
 |![g-cloud のロゴ](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service が Microsoft クラウド サービスの分類を Government Cloud v6 に更新しました。|
 
-詳細については、「Microsoft Compliance Offerings」(Microsoft コンプライアンス認証) (https://go.microsoft.com/fwlink/?linkid=842039) に移動し、Cloud App Security を選択してください。  
+詳細については、「[Microsoft Compliance Offerings](https://go.microsoft.com/fwlink/?linkid=842039)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
 
 ## <a name="privacy"></a>プライバシー
 
@@ -66,7 +66,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 -   Cloud App Security では、お客様がサブスクライブしたサービスを提供する目的でのみお客様のデータを使用します。
 
--   政府から Microsoft に、お客様のデータへのアクセスを求める働きかけがあった場合、Microsoft は、可能な限り、お客様に照会を転送します。 Microsoft は、顧客データに対する[政府からの要求](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)の開示を禁じた不当な法的要請に異議を申し立てました。 詳細については、[だれがどのような条件でお客様のデータにアクセスできるか](https://www.microsoft.com/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)に関する記事を参照してください。
+-   政府から Microsoft に、お客様のデータへのアクセスを求める働きかけがあった場合、Microsoft は、可能な限り、お客様に照会を転送します。 Microsoft は、顧客データに対する[政府からの要求](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)の開示を禁じた不当な法的要請に異議を申し立てました。 詳細については、[だれがどのような条件でお客様のデータにアクセスできるか](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)に関する記事を参照してください。
 
 ### <a name="privacy-controls"></a>プライバシー管理
 
@@ -76,7 +76,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 -   Microsoft Cloud App Security は現在、米国とヨーロッパのデータセンターで稼働しています (各々が "Geo")。 テナントのアカウントは、サインアップ時に選択した国に基づいて、Geo 内に作成されます。 具体的には、その場所に最も近い Geo 内のデータセンターにデータが格納されます。
 
-[プライバシーに関する詳細情報](https://www.microsoft.com/trustcenter/privacy)
+[プライバシーに関する詳細情報](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>透明度
 
@@ -100,7 +100,7 @@ Microsoft Cloud App Security は次のようにデータを保持しています
 
 Microsoft のデータ管理の実施に関する詳細については、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
-[透明性に関する詳細情報](https://www.microsoft.com/trustcenter/about/transparency) 
+[透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
 ## <a name="security"></a>セキュリティ
 
