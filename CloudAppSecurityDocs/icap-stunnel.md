@@ -1,23 +1,23 @@
 ---
-title: "Cloud App Security の安全な ICAP による外部 DLP 統合 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。"
-keywords: 
+title: Cloud App Security の安全な ICAP による外部 DLP 統合 | Microsoft Docs
+description: このトピックでは、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 1/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6d0de456770d06967db07bb0d145908405196968
-ms.sourcegitcommit: 4aaa8abdaaf5f2515f504b08c550c7987b6bc7be
+ms.openlocfilehash: 2e27bc333a5fa193c42d6e61fd6517cdfbdcf1f2
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
@@ -72,7 +72,7 @@ stunnel インストール対応のサーバーの種類については、[stunn
 #### <a name="install-stunnel-on-windows"></a>Windows に stunnel をインストールする
 
 1. [最新の Windows Server インストールをダウンロードします](https://www.stunnel.org/downloads.html) (これは最近のあらゆる版の Windows Server で可能になっています)。
-(既定のインストール)
+   (既定のインストール)
 
 2. インストール中、新しい自己署名証明書を作成しないでください。証明書は後の手順で作成します。
 
@@ -80,34 +80,34 @@ stunnel インストール対応のサーバーの種類については、[stunn
 
 4. 次のいずれかの方法で証明書を作成します。
 
-   -    証明書管理サーバーを利用し、ICAP サーバーで SSL 証明書を作成し、stunnel インストールのために用意したサーバーにキーをコピーします。
-   -    あるいは、stunnel サーバーで、次の OpenSSL コマンドを利用して秘密キーと自己署名証明書を生成します。 次の変数を置き換えます。
-       -    **key.pem** を秘密キーの名前に変更
-       -    **cert.pem** を証明書の名前に変更
-       -    **stunnel-key** を新しく作成したキーの名前に変更
+   - 証明書管理サーバーを利用し、ICAP サーバーで SSL 証明書を作成し、stunnel インストールのために用意したサーバーにキーをコピーします。
+   - あるいは、stunnel サーバーで、次の OpenSSL コマンドを利用して秘密キーと自己署名証明書を生成します。 次の変数を置き換えます。
+     -    **key.pem** を秘密キーの名前に変更
+     -    **cert.pem** を証明書の名前に変更
+     -    **stunnel-key** を新しく作成したキーの名前に変更
 
 5. stunnel インストール パスの下で、config ディレクトリを開きます。 既定では、c:\Program Files (x86)\stunnel\config\ です。
 6. 管理者アクセス許可で次のコマンド ラインを実行します。     `..\bin\openssl.exe genrsa -out key.pem 2048 `
       
      ` ..\bin\openssl.exe  req -new -x509 -config ".\openssl.cnf" -key key.pem -out .\cert.pem -days 1095`
 
-8. cert.pem と key.pem を連結し、ファイルに保存します。 `type cert.pem key.pem >> stunnel-key.pem`
+7. cert.pem と key.pem を連結し、ファイルに保存します。 `type cert.pem key.pem >> stunnel-key.pem`
 
-9. [公開キーをダウンロードし](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)、**C:\Program Files (x86)\stunnel\config\MCASca.pem** に保存します。
+8. [公開キーをダウンロードし](https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem)、**C:\Program Files (x86)\stunnel\config\MCASca.pem** に保存します。
 
-10. Windows ファイアウォールでポートを開くための次の規則を追加します。
+9. Windows ファイアウォールでポートを開くための次の規則を追加します。
 
-        rem Open TCP Port 11344 inbound and outbound
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
-        netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
+       rem Open TCP Port 11344 inbound and outbound
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=in action=allow protocol=TCP localport=11344
+       netsh advfirewall firewall add rule name="Secure ICAP TCP Port 11344" dir=out action=allow protocol=TCP localport=11344
 
-11. `c:\Program Files (x86)\stunnel\bin\stunnel.exe` を実行し、stunnel アプリケーションを開きます。 
+10. `c:\Program Files (x86)\stunnel\bin\stunnel.exe` を実行し、stunnel アプリケーションを開きます。 
 
-12. **[構成]** をクリックし、**[構成の編集]** をクリックします。
+11. **[構成]** をクリックし、**[構成の編集]** をクリックします。
 
-   ![Windows Server 構成を編集する](./media/stunnel-windows.png)
+    ![Windows Server 構成を編集する](./media/stunnel-windows.png)
  
-13. ファイルを開き、次のサーバー構成行を貼り付けます。ここで、**ICAP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel の公開証明書です。 また、サンプルがあればそれを削除し (例では Gmail テキストを確認できます)、次をファイルにコピーします。
+12. ファイルを開き、次のサーバー構成行を貼り付けます。ここで、**ICAP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel の公開証明書です。 また、サンプルがあればそれを削除し (例では Gmail テキストを確認できます)、次をファイルにコピーします。
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -116,9 +116,9 @@ stunnel インストール対応のサーバーの種類については、[stunn
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-12. ファイルを保存し、**[構成の再読み込み]** をクリックします。
+13. ファイルを保存し、**[構成の再読み込み]** をクリックします。
 
-13. 予想どおり動作していることを確認するには、コマンド プロンプトから次を実行します。 `netstat -nao  | findstr 11344`
+14. 予想どおり動作していることを確認するには、コマンド プロンプトから次を実行します。 `netstat -nao  | findstr 11344`
  
 
 #### <a name="install-stunnel-on-ubuntu"></a>Ubuntu に stunnel をインストールする
@@ -151,7 +151,7 @@ ICAP サーバーと Cloud App Security では、stunnel 全体でのサーバ�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Cloud App Security stunnel クライアントの公開キーをダウンロードする
 
-https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem から公開キーをダウンロードし、**/etc/ssl/certs/MCASCAfile.pem** に保存します。
+https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem から公開キーをダウンロードして、**/etc/ssl/certs/MCASCAfile.pem** に保存します
 
 ### <a name="configure-stunnel"></a>stunnel を構成する 
 
@@ -260,23 +260,25 @@ ForcePoint で、次の手順でアプライアンスを設定します。
  
 ### <a name="detection-server-installation"></a>検出サーバーのインストール 
 Cloud App Security によって使われる検出サーバーは、Web サーバーの標準的な Network Prevent です。 いくつかの構成オプションを変更する必要があります。
-1.  **[Trial Mode]\(トライアル モード\)** を無効にします。
-    1. **[System]\(システム\)** > **[Servers and Detectors]\(サーバーとディテクター\)** で、ICAP ターゲットをクリックします。 
+1. **[Trial Mode]\(トライアル モード\)** を無効にします。
+   1. **[System]\(システム\)** > **[Servers and Detectors]\(サーバーとディテクター\)** で、ICAP ターゲットをクリックします。 
     
       ![ICAP ターゲット](./media/icap-target.png)
     
-    2. **[構成]**をクリックします。 
+   2. **[構成]**をクリックします。 
     
       ![ICAP ターゲットを構成する](./media/configure-icap-target.png)
     
-    3. **[Trial Mode]\(トライアル モード\)** を無効にします。
+   3. **[Trial Mode]\(トライアル モード\)** を無効にします。
     
       ![トライアル モードを無効にする](./media/icap-disable-trial-mode.png)
     
 2. **[ICAP]** > **[Response Filtering]\(応答フィルタリング\)** で、**[Ignore Responses Smaller Than]\(次の値より小さい応答を無視する\)** の値を 1 に変更します。
 
-3. そして、**[Inspect Content Type]\(コンテンツ タイプを調べる\)** のリストに "application/*" を追加します。
+
+3. そして、**[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/<em>" を追加します。
      ![コンテンツ タイプを調べる](./media/icap-inspect-content-type.png)
+
 4. **[保存]** をクリックします。
 
 

@@ -1,23 +1,23 @@
 ---
-title: "G Suite を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs"
-description: "このトピックでは、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。"
-keywords: 
+title: G Suite を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
+description: このトピックでは、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/10/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf4f05f7605a15682141ae321bba3aad70d463fd
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 9dba7289b83397ae68224b56332baf1a59abe704
+ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
@@ -25,109 +25,109 @@ ms.lasthandoff: 03/05/2018
   
 ## <a name="configure-g-suite"></a>G Suite を構成する  
   
-1.  G Suite の特権管理者として、<a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> にログインします。  
+1. G Suite のスーパー管理者として、<a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> にログインします。  
   
-2.  **[プロジェクトの作成]** をクリックして新しいプロジェクトを開始します。  
+2. **[プロジェクトの作成]** をクリックして新しいプロジェクトを開始します。  
   
-     ![google1](./media/google1.png "google1")  
+    ![google1](./media/google1.png "google1")  
   
-3.  **[新しいプロジェクト]** 画面で、プロジェクトに</br>
-    **Microsoft Cloud App Security** という名前を付け、**[作成]** をクリックします。  
-           ![google2](./media/google2.png "google2")  
+3. **[新しいプロジェクト]** 画面で、プロジェクトに</br>
+   **Microsoft Cloud App Security** という名前を付け、**[作成]** をクリックします。  
+          ![google2](./media/google2.png "google2")  
   
-4.  プロジェクトが作成された後、ツール バーで **[Google Cloud Platform]** をクリックして、上部のドロップ ダウンで適切なプロジェクトが選ばれていることを確認します。
+4. プロジェクトが作成された後、ツール バーで **[Google Cloud Platform]** をクリックして、上部のドロップ ダウンで適切なプロジェクトが選ばれていることを確認します。
        
-       ![google プロジェクト](./media/googleverify-project.png "googleverify プロジェクト")  
+      ![google プロジェクト](./media/googleverify-project.png "googleverify プロジェクト")  
 
 5. **[API]** で、**[Go to APIs overview]**/(API 概要に進む/) をクリックします。  
   
      ![google3](./media/google3.png "google3")  
   
-6.  **[API]** で、一覧に表示されているすべての API を無効にします。  
+6. **[API]** で、一覧に表示されているすべての API を無効にします。  
       
-7.  **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
+7. **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
      
-    -   管理 SDK  
+   -   管理 SDK  
   
-    -   監査 API  
+   -   監査 API  
   
-    -   Google ドライブ API  
+   -   Google ドライブ API  
   
-    -   Google Apps Marketplace SDK  
+   -   Google Apps Marketplace API  
   
-    -   Gmail API  
+   -   Gmail API  
             
- ![Google API](./media/google4.png "google4")  
+   ![Google API](./media/google4.png "google4")  
   
    > [!NOTE]  
    >  ここでは **[資格情報]** の警告は無視します。  
 
 8. 各 API に対して [有効] をクリックします。
      ![Google API を有効にする](./media/google-api.png "google-api")  
-1. 5 つの**有効化された API** が必要です。その他の API は無効にしてください。
+9. 5 つの**有効化された API** が必要です。その他の API は無効にしてください。
   
      ![Google の有効にされた API](./media/google5.png "google5")  
   
-9.  **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
+10. **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
   
-    -   **[Product name shown to users]**\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
+    - **[Product name shown to users]**\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
   
-    -   その他のすべてのフィールドは省略できます。  
+    - その他のすべてのフィールドは省略できます。  
   
-    -   **[保存]** をクリックします。  
+    - **[Save]**(保存) をクリックします。  
   
-     ![Google の製品名](./media/google6.png "google6")  
+      ![Google の製品名](./media/google6.png "google6")  
   
-10. **[Credentials]**/(認証情報/) タブで、**[Create credentials]**/(認証情報の作成/) の隣にある矢印をクリックします。  
+11. **[Credentials]**/(認証情報/) タブで、**[Create credentials]**/(認証情報の作成/) の隣にある矢印をクリックします。  
   
      ![Google の資格情報](./media/google7.png "google7")  
 
-11. **[サービス アカウント キー]** を選択します。
+12. **[サービス アカウント キー]** を選択します。
 
      ![Google サービス アカウント キー](./media/google8.png "google8")  
   
-12. **[Create service account key]\(サービス アカウント キーの作成\)** で、**[New service account]\(新しいサービス アカウント\)** を選択して、「**Service account 1**」などの任意の名前を入力します。 **[ロール]** で、**[プロジェクト]**、**[エディター]** と選択します。 **[キーの種類]** で **[P12]** を選択してから **[作成]** をクリックします。 P12 証明書ファイルがコンピューターに保存されます。
+13. **[Create service account key]\(サービス アカウント キーの作成\)** で、**[New service account]\(新しいサービス アカウント\)** を選択して、「**Service account 1**」などの任意の名前を入力します。 **[ロール]** で、**[プロジェクト]**、**[エディター]** と選択します。 **[キーの種類]** で **[P12]** を選択してから **[作成]** をクリックします。 P12 証明書ファイルがコンピューターに保存されます。
  
      ![Google でのサービス アカウント キーの作成](./media/google9.png "google9")  
   
-13.  サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。    
+14. サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。    
         
-14. **[資格情報]** 画面で、一番右にある **[Manage service accounts (サービス アカウントの管理)]** をクリックします。  
+15. **[資格情報]** 画面で、一番右にある **[Manage service accounts (サービス アカウントの管理)]** をクリックします。  
      
     ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite の資格情報サービス アカウント")  
   
-15. 作成したサービス アカウントの右側にある 3 つの点をクリックし、**[編集]** を選択します。  
+16. 作成したサービス アカウントの右側にある 3 つの点をクリックし、**[編集]** を選択します。  
   
      ![Google 編集](./media/google11.png "google edit")  
   
-16. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
+17. **[Enable G Suite Domain-wide Delegation (G Suite ドメイン全体の委任を有効にする)]** チェック ボックスを選択し、**[保存]** をクリックします。  
   
      ![Google のサービス アカウント ID](./media/google12.png "google12")  
   
-17. タイトルバーで Google Cloud Platform の横にある 3 本の水平線をクリックして Google のメニューを開きます。 **[Google Cloud Platform]** をクリックし、左側のメニューの **[APIs and services**]/(API とサービス/) タブをクリックします。  
+18. タイトルバーで Google Cloud Platform の横にある 3 本の水平線をクリックして Google のメニューを開きます。 **[Google Cloud Platform]** をクリックし、左側のメニューの **[APIs and services**]/(API とサービス/) タブをクリックします。  
     
-18. 開いているダッシュボードで、下にスクロールして有効になっている API の一覧を表示し、**[Google ドライブ API]** をクリックします。   
+19. 開いているダッシュボードで、下にスクロールして有効になっている API の一覧を表示し、**[Google ドライブ API]** をクリックします。   
        ![Google ドライブを選択](./media/google14.png "google14")  
 
-19. **[Drive UI 統合]**/(Drive UI 統合/) タブをクリックし、次の情報を入力します。
+20. **[Drive UI 統合]**/(Drive UI 統合/) タブをクリックし、次の情報を入力します。
 
-    -   **アプリケーション名**: Microsoft Cloud App Security。  
+    - **アプリケーション名**: Microsoft Cloud App Security。  
   
-    -   **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
+    - **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
-    -   Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンを含む zip ファイルをダウンロードします。 次に、**[Application icon]\(アプリケーション アイコン\)** で 128x128 のイメージの横にある **[Select]\(選択\)** をクリックし、ポップアップ画面にドラッグします。 32x32 のイメージの横にある **[Select]\(選択\)** をクリックして、ポップアップ画面にドラッグします。  
+    - Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンが含まれる zip ファイルをダウンロードします。 次に、**[Application icon]\(アプリケーション アイコン\)** で 128x128 のイメージの横にある **[Select]\(選択\)** をクリックし、ポップアップ画面にドラッグします。 32x32 のイメージの横にある **[Select]\(選択\)** をクリックして、ポップアップ画面にドラッグします。  
   
-    -   下にスクロールして **[Drive Integration]**/(ドライブ統合/)セクションを表示し、**[Open URL]**/(URL を開く/) に次の URL を入力します。  
+    - 下にスクロールして **[Drive Integration]**/(ドライブ統合/)セクションを表示し、**[Open URL]**/(URL を開く/) に次の URL を入力します。  
   
-         https://portal.cloudappsecurity.com/#/services/11770?tab=files  
+       https://portal.cloudappsecurity.com/#/services/11770?tab=files  
     
-       ![Google ドライブの編集](./media/google15.png "google15")  
+      ![Google ドライブの編集](./media/google15.png "google15")  
 
-20. **[変更を保存]** をクリックします。
+21. **[変更を保存]** をクリックします。
 
-20. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[Google Apps Marketplace SDK]** をクリックします。 
+22. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[Apps Marketplace SDK]** をクリックします。 
       
-21. **[構成]** タブを選択します。 
+23. **[構成]** タブを選択します。 
   
     -   上部に表示される**プロジェクト番号 (アプリ ID)** を、後で使用できるようにコピーしておきます。  
   
@@ -139,7 +139,7 @@ ms.lasthandoff: 03/05/2018
   
     -   **[アプリケーション アイコン]** で、4 つの必須イメージを設定します。  
   
-         イメージは、[https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) から探すことができます。  
+         イメージは [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) にあります。  
   
     -   次に **[Support URLs (サポートの URL)]** を入力します:  
   
@@ -190,14 +190,14 @@ ms.lasthandoff: 03/05/2018
     -   **[Visibility]\(可視性\)** で **[My domain]\(独自ドメイン\)** (パブリックではありません) を選択します。 
     -   **[変更を保存]** をクリックします。  
         ![google の可視性](./media/google-visibility.png "google の可視性")  
-22. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
+24. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
    
       ![Google セキュリティ](./media/googlesec.png "Google セキュリティ")  
  
-23. **[API リファレンス]** を選択します。  
+25. **[API リファレンス]** を選択します。  
        ![Google API 有効化](./media/googleapi.png "google api")  
       
-24. **[Enable API Access (API アクセスの有効化)]** を選択してから **[変更を保存]** をクリックします。  
+26. **[Enable API Access (API アクセスの有効化)]** を選択してから **[変更を保存]** をクリックします。  
   
     ![Google API 参照](./media/googleapiref.png "google8")  
 
