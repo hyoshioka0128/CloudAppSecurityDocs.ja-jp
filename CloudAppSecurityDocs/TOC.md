@@ -20,7 +20,8 @@
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
 #### [Ubuntu および RHEL オンプレミス上の Docker](discovery-docker-ubuntu.md)
 #### [Azure での Ubuntu 上の Docker](discovery-docker-ubuntu-azure.md)
-#### [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
+#### 
+  [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
 ### [Cloud Discovery を強化する](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
@@ -38,7 +39,6 @@
 # vmmblue_2
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
 ## シナリオ
-### [ランサムウェアから組織を保護する](use-case-ransomware.md)
 ### [機密情報のダウンロードのブロック](use-case-proxy-block-session-aad.md)
 ### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
 ### [Azure Information Protection ラベルを自動的に適用する](use-case-information-protection.md)
@@ -52,7 +52,6 @@
 #### [アクティビティ フィルターとクエリ](activity-filters-queries.md)
 ### [ファイル](file-filters.md)
 ### [アカウント](accounts.md)
-### [組み込みレポートの参照](built-in-report-reference.md)
 ### [アプリのアクセス許可の管理](manage-app-permissions.md)
 ### [アプリの監視](monitor-alerts.md)
 #### [アラートの管理](managing-alerts.md)
@@ -65,8 +64,9 @@
 #### [ファイル ポリシー](data-protection-policies.md)
 ##### [コンテンツ検査](content-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
-#### [アクセス ポリシー](access-policy-aad.md)
-#### [セッション ポリシー](session-policy-aad.md)
+#### 条件付きアクセス アプリ制御ポリシー
+##### [アクセス ポリシー](access-policy-aad.md)
+##### [セッション ポリシー](session-policy-aad.md)
 #### [ポリシー テンプレート リファレンス](policy-template-reference.md)
 ### [接続されているアプリの管理](governance-actions.md)
 ### [検出されたアプリの管理](governance-discovery.md)
