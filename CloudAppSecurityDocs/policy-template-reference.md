@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security でのポリシー テンプレートのリファレンス | Microsoft ドキュメント"
-description: "このトピックでは、クラウド アプリの使用を制御するためにポリシーを使用および設定する方法について説明します。"
-keywords: 
+title: Cloud App Security でのポリシー テンプレートのリファレンス | Microsoft ドキュメント
+description: このトピックでは、クラウド アプリの使用を制御するためにポリシーを使用および設定する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6d318be12d776c2bf399f4aec07be92b0a7128
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="policy-templates"></a>ポリシー テンプレート
 
-Cloud App Security に存在するすべてのポリシー テンプレートの一覧を次に示します。 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。
+Microsoft Cloud App Security に存在するすべてのポリシー テンプレートの一覧を次に示します。 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。
 
 |リスク カテゴリ|テンプレート名|[説明]|
 |-----|----|----|

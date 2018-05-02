@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security での API トークンの管理 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security 用の API トークンの生成に関して説明します。"
-keywords: 
+title: Cloud App Security での API トークンの管理 | Microsoft Docs
+description: このトピックでは、Cloud App Security 用の API トークンの生成に関して説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7ae478fcd85bdb16a1783886f274a8ab81462bb
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 1823f6bbcf0061b43d9d438c94b9434a609b5fad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="api-tokens"></a>API トークン
     
-Cloud App Security API を使うと、REST API エンドポイントからプログラムで Cloud App Security にアクセスできます。 アプリケーションで API を使うことにより、Cloud App Security のデータとオブジェクトに対して読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API は、ユーザー オブジェクトに対する次の一般的な操作をサポートしています。
+Microsoft Cloud App Security API を使うと、REST API エンドポイントからプログラムで Cloud App Security にアクセスできます。 アプリケーションで API を使うことにより、Cloud App Security のデータとオブジェクトに対して読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API は、ユーザー オブジェクトに対する次の一般的な操作をサポートしています。
 
 - Cloud Discovery のログ ファイルをアップロードします
 - ブロック スクリプトを生成します
@@ -40,18 +43,18 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 1. **[設定]** メニューから **[セキュリティ拡張機能]**、**[API トークン]** の順に選びます。
 
 2. プラス アイコン **[新しいトークンの生成]** をクリックし、後でトークンの識別に使う名前を指定して、**[次へ]** をクリックします。
-![Cloud App Security が API トークンを生成する](./media/api-token-gen.png)
+   ![Cloud App Security が API トークンを生成する](./media/api-token-gen.png)
 
 3. トークンの値をコピーし、回復するときのためにどこかに保存します。トークンを紛失した場合、再生成する必要があります。 トークンには、それを発行したユーザーの特権が設定されます。 たとえば、セキュリティ閲覧者は、データを変更できるトークンを発行することはできません。
 
 4. 状態 (アクティブ、非アクティブ、生成済み) でトークンをフィルター処理できます。 
 
-  - 生成済みは、まだ使われていないトークンです。 
-  - アクティブは、生成されて過去 7 日以内に使われたトークンです。 
-  - 非アクティブは、使われたことはあるが、過去 7 日以内にアクティビティがなかったトークンです。
+   - 生成済みは、まだ使われていないトークンです。 
+   - アクティブは、生成されて過去 7 日以内に使われたトークンです。 
+   - 非アクティブは、使われたことはあるが、過去 7 日以内にアクティビティがなかったトークンです。
 5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が与えられます。 
 
- ![Cloud App Security API トークン](./media/generate-api-token.png)
+   ![Cloud App Security API トークン](./media/generate-api-token.png)
 
 ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
 

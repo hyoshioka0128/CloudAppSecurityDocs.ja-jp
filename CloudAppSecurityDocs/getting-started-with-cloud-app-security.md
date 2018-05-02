@@ -1,26 +1,29 @@
 ---
-title: "Cloud App Security を展開し、クラウド アプリの使用状況を詳細に表示し、管理する | Microsoft Docs"
-description: "このトピックでは、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。"
-keywords: 
+title: Cloud App Security を展開し、クラウド アプリの使用状況を詳細に表示し、管理する | Microsoft Docs
+description: このトピックでは、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e33f277a9576ab1855cf5700584d7ddbb7dfac6c
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 59588a909192f225a086bacc4c218f388cbc46d4
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="deploy-cloud-app-security"></a>Cloud App Security の展開
-Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
+*適用対象: Microsoft Cloud App Security*
+
+
+# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の展開
+Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
 組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
 
@@ -44,7 +47,7 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 
 ## <a name="to-access-the-portal"></a>ポータルにアクセスするには
 
-[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) にアクセスして Cloud App Security ポータルに移動します。  
+Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) に移動します。  
   
 または、**Cloud App Security** から管理センター アイコン ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 admin centers icon") をクリックして、**Office 365 管理センター**からポータルにアクセスすることもできます。  
   
@@ -139,7 +142,7 @@ Cloud App Security は、クラウド アプリケーションの利点の活用
 3. IP アドレス範囲の**詳細**や**場所**、**タグ**、**カテゴリ**を入力します。
 4. **[作成]** を選択します。
 
- これでポリシーを作成するときや、継続的レポートをフィルター処理して作成するときに、IP タグを使うことができるようになります。
+   これでポリシーを作成するときや、継続的レポートをフィルター処理して作成するときに、IP タグを使うことができるようになります。
 
 **継続的レポートを作成するには**
 

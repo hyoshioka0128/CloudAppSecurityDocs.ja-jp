@@ -34,8 +34,8 @@
 ### [Okta の接続](connect-okta-to-microsoft-cloud-app-security.md)
 ### [ServiceNow の接続](connect-servicenow-to-microsoft-cloud-app-security.md)
 ### [Salesforce の接続](connect-salesforce-to-microsoft-cloud-app-security.md)
-## [プロキシによるアプリの保護](proxy-intro-aad.md)
-### [Azure AD アプリでプロキシを展開する](proxy-deployment-aad.md)
+## [条件付きアクセス アプリ制御でのアプリの保護](proxy-intro-aad.md)
+### [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
 # vmmblue_2
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
 ## シナリオ
