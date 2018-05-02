@@ -1,26 +1,29 @@
 ---
-title: "クラウド アプリのアカウントの表示 | Microsoft Docs"
-description: "このトピックの内容"
-keywords: 
+title: クラウド アプリのアカウントの表示 | Microsoft Docs
+description: このトピックの内容
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e710418938af85a8a16a866dcbae43ac612f090a
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: f95480f8d7a12dd2ef62483d7847cbb8f057d276
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="accounts"></a>[アカウント]
-Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントを Cloud App Security が検出すると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
+Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントを Cloud App Security が検出すると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
 
 **[アカウント]** ページをフィルター処理して、特定のアカウントを検索したり、さまざまな種類のアカウントの詳細を確認したりできます。たとえば、過去 1 年間アクセスされていないすべての外部アカウントをフィルターにかけて検索することができます。 

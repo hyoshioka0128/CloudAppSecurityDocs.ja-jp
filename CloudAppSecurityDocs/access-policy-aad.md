@@ -1,30 +1,32 @@
 ---
-title: "Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする | Microsoft Docs"
-description: "このトピックでは、Cloud App Security Proxy アクセス ポリシーを設定し、Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。"
-keywords: 
+title: Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする | Microsoft Docs
+description: このトピックでは、Cloud App Security Proxy アクセス ポリシーを設定し、Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 421dae3f71ca26f167dbb4a53a28a466baf8b2a6
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="access-policies"></a>アクセス ポリシー 
 
 > [!NOTE]
 > これはプレビュー機能です。
 
-Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 管理対象デバイスにクライアント証明書をロールアウトしたり、サードパーティの MDM 証明書など、既存の証明書を活用したりすることで、ドメインに参加していないデバイスや Windows Intune で管理されていないデバイスを含め、あらゆるデバイスを対象にアクセス ポリシーを作成できます。 たとえば、管理対象デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。 
+Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 管理対象デバイスにクライアント証明書をロールアウトしたり、サードパーティの MDM 証明書など、既存の証明書を活用したりすることで、ドメインに参加していないデバイスや Windows Intune で管理されていないデバイスを含め、あらゆるデバイスを対象にアクセス ポリシーを作成できます。 たとえば、管理対象デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。 
 
 > [!NOTE]
 > [セッション ポリシー](session-policy-aad.md)では、アクセスを完全に許可またはブロックするのではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
@@ -44,12 +46,12 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 1. ユーザーまたはユーザー グループに対する割り当てと、Cloud App Security プロキシで制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
 
-  > [!NOTE]
-  > このポリシーが適用されるのは、[プロキシと共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
+   > [!NOTE]
+   > このポリシーが適用されるのは、[プロキシと共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
 
 2. **[セッション]** ブレードで **[プロキシによって適用される制限を使用する]** を選んで、Cloud App Security プロキシにユーザーをルーティングします。
 
- ![プロキシが制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
+   ![プロキシが制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security アクセス ポリシーを作成する 
 
@@ -58,11 +60,11 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 1. ポータルで、**[制御]**、**[ポリシー]** の順に選びます。
 2. **[ポリシー]** ページで、**[ポリシーの作成]** をクリックし、**[アクセス ポリシー]** を選択します。  
 
- ![アクセス ポリシーの作成](./media/access-policy-menu.png)
+   ![アクセス ポリシーの作成](./media/access-policy-menu.png)
 
 3. **[アクセス ポリシー]** ウィンドウで、*Block access from unmanaged devices* のような名前をポリシーに付けます。
 
- ![新しいアクセス ポリシー](./media/access-policy-screen.png)
+   ![新しいアクセス ポリシー](./media/access-policy-screen.png)
 
 4. **[次のすべてに一致するアクティビティ]** セクションの **[アクティビティ ソース]** で、ポリシーに適用する追加のアクティビティ フィルターを選びます。 次のオプションを指定できます。 
      

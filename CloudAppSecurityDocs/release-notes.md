@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/11/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,13 +13,23 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9f76d43ab9bda33632502ea2acd7491d8ec7b32a
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
+ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-121"></a>Cloud App Security リリース 121
+リリース日: 2018 年 4 月 22 日
+
+-   **Conditional Access App Control (以前の Cloud App Security プロキシ)** のパブリック プレビューは、さまざまなアプリケーションの深いレベルでの可視性を促進し、それらのアプリケーションを制御する機能を備えるように強化されています。 *[アクティビティの種類]* フィルターを使用してセッション ポリシーを作成し、アプリ固有のさまざまなアクティビティの監視やブロックを行えるようになりました。 この新しいフィルターは、既存のファイル ダウンロード制御機能を補い、組織でアプリケーションを包括的に制御できるようになります。また、Azure Active Directory の条件付きアクセスと連携して、リスクのあるユーザー セッション (B2B コラボレーション ユーザーや管理されていないデバイスからのユーザーとのセッションなど) に対してリアルタイムの可視性と制御を提供します。 詳しくは、「[セッション ポリシー](session-policy-aad.md)」をご覧ください。
+-   段階的なロールアウト: Cloud App Security の**異常検出ポリシーが改良され**、ランサムウェア アクティビティと終了させらたユーザーのアクティビティの 2 種類を新たに含むようになりました。 Cloud App Security は、異常検出を含むようにランサムウェア検出機能を拡張し、高度なランサムウェア攻撃に対する包括的な防御を強化しました。 Cloud App Security は、弊社のセキュリティ調査の専門技術を使用して、ランサムウェア アクティビティを反映する行動パターンを識別し、総体的で堅牢な保護を実現します。 終了させられたユーザーのアクティビティでは、終了させられたユーザーのアカウントを監視できます。このようなユーザーは、企業アプリからプロビジョニング解除されている可能性がありますが、多くの場合、特定の企業リソースのアクセスを保持しています。 詳細については、「[行動分析と異常検出を瞬時に取得する](anomaly-detection-policy.md)」を参照してください。
+
 
 ## <a name="cloud-app-security-release-120"></a>Cloud App Security リリース 120
 リリース日: 2018 年 4 月 8 日

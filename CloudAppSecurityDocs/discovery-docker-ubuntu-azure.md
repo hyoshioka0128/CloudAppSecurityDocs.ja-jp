@@ -1,24 +1,26 @@
 ---
-title: "継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs"
-description: "このトピックでは、Azure で Ubuntu の Docker を使って Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。"
-keywords: 
+title: 継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs
+description: このトピックでは、Azure で Ubuntu の Docker を使って Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 03ace8d5bf61ed623ad90b3717c4d35b767498a3
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59eb0ca7813a96f2ac2face66fba96d50851fd97
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
 
@@ -32,7 +34,7 @@ ms.lasthandoff: 01/16/2018
 
 -   RAM: 4 GB
 
--   [ネットワーク要件](network-requirements#log-collector)で説明されているとおりにファイアウォールを設定する
+-   [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 
@@ -46,48 +48,48 @@ ms.lasthandoff: 01/16/2018
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
-1.  自動アップロードの設定ページに移動します。  <br></br>Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
+1. 自動アップロードの設定ページに移動します。  <br></br>Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
 
-2.  ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
+2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    」を参照します。 **[データ ソースの追加]** をクリックします。
+   」を参照します。 **[データ ソースの追加]** をクリックします。
 
-    b. プロキシまたはファイアウォールの **[名前]** を付けます。
+   b. プロキシまたはファイアウォールの **[名前]** を付けます。
 
-    c. **[ソース]** リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+   c. **[ソース]** リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
-    d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+   d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-    e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
-    >[!NOTE]
-    >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
+   e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
+   >[!NOTE]
+   >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
 
-    f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
+   f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
 
-3.  画面上部の **[ログ コレクター]** タブに移動します。
+3. 画面上部の **[ログ コレクター]** タブに移動します。
 
-    」を参照します。 **[ログ コレクターを追加]** をクリックします。
+   」を参照します。 **[ログ コレクターを追加]** をクリックします。
 
-    b. ログ コレクターに **[名前]** を付けます。
+   b. ログ コレクターに **[名前]** を付けます。
 
-    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
+   c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
 
-     > [!NOTE]
-     > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
+    > [!NOTE]
+    > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-    d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
+   d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-    >  [!NOTE]
-    > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
-    >- Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
+   > [!NOTE]
+   > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
+   > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 
-4.  展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン ![クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
+4. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン ![クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
 
-6.  予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
+5. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
 
    ![ログ コレクターを作成する](./media/windows7.png)
 
@@ -97,34 +99,34 @@ ms.lasthandoff: 01/16/2018
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
 
-1.  Azure 環境内で新しい Ubuntu マシンを作成します。 
-2.  マシンが起動したら、次の手順でポートを開きます。
-    1.  マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
-    2.  **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
-    3.  **[受信セキュリティ規則]** に移動して **[追加]** をクリックします。
+1. Azure 環境内で新しい Ubuntu マシンを作成します。 
+2. マシンが起動したら、次の手順でポートを開きます。
+   1. マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
+   2. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
+   3. **[受信セキュリティ規則]** に移動して **[追加]** をクリックします。
       
       ![Ubuntu Azure](./media/ubuntu-azure.png)
     
-    4. 次の規則を追加します (**詳細設定**モード)。
+   4. 次の規則を追加します (**詳細設定**モード)。
 
-    |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
-    |----|----|----|----|----|
-    |caslogcollector_ftp|21|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
-    |caslogcollector_ftp_passive|20000-20099|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
-    |caslogcollector_syslogs_tcp|601-700|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
-    |caslogcollector_syslogs_udp|514-600|UDP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
+   |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
+   |----|----|----|----|----|
+   |caslogcollector_ftp|21|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
+   |caslogcollector_ftp_passive|20000-20099|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
+   |caslogcollector_syslogs_tcp|601-700|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
+   |caslogcollector_syslogs_udp|514-600|UDP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
       
-     ![Ubuntu Azure の規則](./media/inbound-rule.png)
+    ![Ubuntu Azure の規則](./media/inbound-rule.png)
 
-3.  マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
+3. マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
 
-4.  `sudo -i` を使ってルート権限に変更します。
+4. `sudo -i` を使ってルート権限に変更します。
 
-5.  [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
+5. [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
         
-        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
+       curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
-      ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
+     ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
 
 6. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
 

@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security で検出されたアプリの処理 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。"
-keywords: 
+title: Cloud App Security で検出されたアプリの処理 | Microsoft Docs
+description: このトピックでは、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe601cba94ad58f4baceb0df461faafbe7a974
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 24fb4cd0d7b4c927081e07ef4a35d18582af1135
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
@@ -106,15 +109,15 @@ Cloud Discovery データを削除する理由はいくつかあります。 次
   
 Cloud Discovery データを削除するには:  
   
-1.  ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
-2.  **[データの削除]** タブをクリックします。  
+2. **[データの削除]** タブをクリックします。  
   
-     操作を続行する前に、データを削除しても問題ないことを確認します。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
+    操作を続行する前に、データを削除しても問題ないことを確認します。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
-3.  **[削除]** ボタンをクリックします。  
+3. **[削除]** ボタンをクリックします。  
   
-     ![データを削除する](./media/delete-data.png "delete data")  
+    ![データを削除する](./media/delete-data.png "delete data")  
   
    > [!NOTE]  
    >  すぐには削除されず、削除処理には数分かかります。  

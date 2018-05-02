@@ -1,26 +1,28 @@
 ---
-title: "管理者の基本設定の設定 | Microsoft Docs"
-description: "この記事では、Cloud App Security で管理者の基本設定を設定する方法について説明します。"
-keywords: 
+title: 管理者の基本設定の設定 | Microsoft Docs
+description: この記事では、Cloud App Security で管理者の基本設定を設定する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eee24bc5079fd187f5515f96cdba760c507b1465
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 3651f962973d9e2850301097e403d2da7b9eb01e
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 ##  <a name="Adminsettings"></a> 管理設定のカスタマイズ  
-Cloud App Security の管理者としての設定をセットアップする場合、ポータルのメニュー バーでユーザー名をクリックしてから **[ユーザー設定]** を選択し、次の項目を設定します。  
+Microsoft Cloud App Security の管理者としての設定をセットアップする場合、ポータルのメニュー バーでユーザー名をクリックしてから **[ユーザー設定]** を選択し、次の項目を設定します。  
   
 1.  **[アカウント設定]** をクリックします。 ここで、Cloud App Security ポータルにアクセスするためのパスワードを設定または更新できます。  
   

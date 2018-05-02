@@ -1,24 +1,26 @@
 ---
-title: "Cloud App Security の検出されたアプリのフィルターとクエリを使用する | Microsoft Docs"
-description: "このトピックでは、Cloud App Security の検出されたアプリのフィルターとクエリの一覧を提示し、その使用方法について説明します。"
-keywords: 
+title: Cloud App Security の検出されたアプリのフィルターとクエリを使用する | Microsoft Docs
+description: このトピックでは、Cloud App Security の検出されたアプリのフィルターとクエリの一覧を提示し、その使用方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/3/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea1b0b150f1028e8a8d4edac32aa6d8a4f59b564
-ms.sourcegitcommit: bbf4a2715d1ea3fd21c1a1b87c7f5a2947d2ca68
+ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/04/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="discovered-app-filters-and-queries"></a>検出されたアプリのフィルターとクエリ
 
 ## <a name="discovered-app-filters"></a>検出されたアプリのフィルター
@@ -64,11 +66,11 @@ ms.lasthandoff: 01/04/2018
 
 3. **[クエリの保存]** ポップアップでクエリに名前を付けます。
 
- ![新しいクエリ](./media/new-query.png)
+   ![新しいクエリ](./media/new-query.png)
 
 4. このクエリを今後もう一度使用するには、**[クエリ]** の下で、下方向にスクロールして **[保存されたクエリ]** を表示し、クエリを選択します。 
 
- ![クエリを開く](./media/open-query.png)
+   ![クエリを開く](./media/open-query.png)
 
 
 Cloud App Security には**クエリ候補**機能もあります。頻繁に使用するカスタム クエリを保存できます。 クエリ候補機能は調査方法を推奨するものです。オプションのクエリ候補を利用し、検出されたアプリにフィルター処理を適用します。

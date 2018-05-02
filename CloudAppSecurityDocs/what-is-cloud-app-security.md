@@ -1,25 +1,28 @@
 ---
-title: "Cloud App Security とは | Microsoft ドキュメント"
-description: "このトピックでは、Cloud App Security とそのしくみについて説明します。"
-keywords: 
+title: Cloud App Security とは | Microsoft ドキュメント
+description: このトピックでは、Cloud App Security とそのしくみについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a5b663fc96400902854d7c6901885a3220ca4c3c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
-# <a name="what-is-cloud-app-security"></a>Cloud App Security とは
+*適用対象: Microsoft Cloud App Security*
+
+
+# <a name="what-is-microsoft-cloud-app-security"></a>Microsoft Cloud App Security とは
 
 > [!NOTE]
 > Office 365 の Advanced Security Management と Cloud App Security の詳細については、「[Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」(Advanced Security Management の概要) を参照してください。
@@ -50,7 +53,7 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 
 ### <a name="data-retention--compliance"></a>データ保持期間およびコンプライアンス
 
-Cloud App Security は、ISO、HIPAA、CSA STAR、EU モデル条項などの Microsoft コンプライアンスで公式に認められています。 認定の完全な一覧については、「Microsoft Compliance Offerings」(Microsoft コンプライアンスの提供内容) (https://go.microsoft.com/fwlink/?linkid=842039) に移動し、Cloud App Security を選択してください。  
+Cloud App Security は、ISO、HIPAA、CSA STAR、EU モデル条項などの Microsoft コンプライアンスで公式に認められています。 認定の完全な一覧については、「[Microsoft Compliance Offerings](https://go.microsoft.com/fwlink/?linkid=842039)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
 
 Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 ファイルの内容は Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。 データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
 Cloud App Security は次のようにデータを保持しています。 

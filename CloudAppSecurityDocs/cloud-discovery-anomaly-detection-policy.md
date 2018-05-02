@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security での Cloud Discovery の異常検出ポリシーの作成 | Microsoft ドキュメント"
-description: "このトピックでは、Cloud Discovery の異常検出ポリシーの使用方法に関する情報を提供します。"
-keywords: 
+title: Cloud App Security での Cloud Discovery の異常検出ポリシーの作成 | Microsoft ドキュメント
+description: このトピックでは、Cloud Discovery の異常検出ポリシーの使用方法に関する情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 408b136764fd5e16f47772fb73ff6588d9b5bc8e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 49e7dadb3d179e70c04decccdc8ab11aeefc3241
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常検出ポリシー
 この記事は、ポリシーに関する参照の詳細です。各ポリシーの種類、およびポリシーごとに設定できるフィールドについて詳しく説明します。  
   
@@ -33,7 +36,8 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
  
 2. **[ポリシー名]** と **[説明]** を指定します。  
 
-3. **[フィルターの追加]** をクリックして、監視するアプリのフィルターを作成します。 特定のアプリやアプリの **[カテゴリ]** を選択できます。あるいは **[名前]**、**ドメイン、**[リスク要因]** でフィルターし、**[保存]** をクリックします。
+3. <strong>[フィルターの追加]</strong> をクリックして、監視するアプリのフィルターを作成します。 
+   特定のアプリやアプリの <strong>[カテゴリ]</strong> を選択できます。あるいは <strong>[名前]</strong>、ドメイン、**<strong>[リスク要因]</strong> でフィルターし、<strong>[保存]</strong> をクリックします。
 
 4. **[適用先]** で、使用状況にフィルターを適用する方法を設定します。 監視対象の使用状況にフィルターを適用する方法は 2 つあります。  
   

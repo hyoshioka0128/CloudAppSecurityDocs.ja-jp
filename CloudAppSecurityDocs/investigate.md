@@ -1,26 +1,29 @@
 ---
-title: "Cloud App Security でクラウド アプリの危険性および疑わしいアクティビティについて調べる | Microsoft Docs"
-description: "このトピックでは、Cloud App Security を使用してアラート、問題、疑わしいアクティビティを調査するためのプロセスの概要を説明します。"
-keywords: 
+title: Cloud App Security でクラウド アプリの危険性および疑わしいアクティビティについて調べる | Microsoft Docs
+description: このトピックでは、Cloud App Security を使用してアラート、問題、疑わしいアクティビティを調査するためのプロセスの概要を説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e0d61fcd3147b25b84c7e5071ba8e7a02bc05f67
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="investigate"></a>調査
-クラウド環境で Cloud App Security を実行したら、次に Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。
+クラウド環境で Microsoft Cloud App Security を実行したら、次に Microsoft Cloud App Security のツールを使用してクラウド環境内のアクティビティを詳細に理解する方法を学習して調査する必要があります。 その後、お客様固有の環境とその使用状況に基づいて、組織をリスクから保護するための要件を特定することができます。
 
 このトピックでは、調査を実行して、クラウド環境内に対する理解を深める方法について説明します。  
 
@@ -41,7 +44,7 @@ ms.lasthandoff: 01/16/2018
 
 -   Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。  
 
--   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット ![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認済みとしてタグを付けるドット") を選択し、**[Mark as sanctioned]**\(承認済みとしてマークを付ける) を選択します。  
+-   検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット ![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認済みとしてタグを付けるドット") を選択し、**[Mark as sanctioned]** \(承認済みとしてマークを付ける) を選択します。  
 
      ![承認済みとしてタグを付ける](./media/mark-as-sanctioned.png "承認済みとしてタグを付ける")  
 
@@ -115,13 +118,6 @@ ms.lasthandoff: 01/16/2018
     -   代替ソリューションが使用されている場合は、組織内でクラウド アプリを禁止するか  
 
     -   組織のポリシーに準拠していないクラウド アプリが使用されていないか  
-
-## <a name="use-reports-to-investigate-risk"></a>レポートを使用してリスクを調査する  
-クラウド環境を制御しようとする場合、最初は検出されると思われるものを元に、ある程度の推測をします。この時点では、クラウドについて十分に理解していないためです。 このような推測に基づいてポリシーを作成します。
-
-Cloud App Security をクラウド環境で実行したら、組み込みのレポート (とカスタム レポート) を使用して、クラウドで実際にどのようなアクティビティが発生しているかを確認できます。 この情報に基づいて、ポリシーを再調整して例外を含めることにより、最終的にはポリシーによって検出される誤検知をごく少数に抑えることができます。  
-
-組み込みレポートでは、調査の集計を確認できます。 組み込みレポートを表示するには、**[調査]**、**[組み込みレポート]** の順に選択します。 さまざまな種類の組み込みレポートの詳細については、「[組み込みレポートのリファレンス](built-in-report-reference.md)」を参照してください。  
 
 ## <a name="sample-investigation"></a>調査方法の例  
 たとえば、お客様のクラウド環境にアクセスする危険な IP アドレス (匿名プロキシや Tor など) は存在しないと仮定しているとします。 しかし、念のために危険な IP のポリシーを作成することにします。  

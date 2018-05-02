@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/21/2018
+ms.date: 4/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,23 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbbab2b59c8e44433e3895fc63fefff562a44a29
-ms.sourcegitcommit: 716699286f8ebb33327eac28ca9b7bf9742daf32
+ms.openlocfilehash: b4d507b5fb3a646b31ba3c380b170c2abca18ddf
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
+
 # <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 分類ラベルを自動的に適用する  
 
 すべての従業員が情報保護の重要性を理解し、ポリシー範囲内で作業を行うのが理想的です。 しかし、現実では、会計に携わるパートナーが不適切なアクセス許可で Box リポジトリにドキュメントをアップロードしてから 1 週間後に会社の機密情報が競合他社にリークしたことに気付く場合があります。 
 
 Microsoft Cloud App Security は、このようなことを事前に防ぐのに役立ちます。
 
-Cloud App Security では、Box アカウントに保存されているドキュメントに対する公開アクセス許可があることを識別し、分類エンジンを使用して、公開共有ドキュメント内に機密情報があることを識別します。 Cloud App Security はアラートを送信して事象の発生をユーザーに知らせるだけでなく、Azure Information Protection の**社外秘**分類ラベルを自動的に適用して、ファイルの暗号化を強化します。 
+Microsoft Cloud App Security では、Box アカウントに保存されているドキュメントに対する公開アクセス許可があることを識別し、分類エンジンを使用して、公開共有ドキュメント内に機密情報があることを識別します。 Cloud App Security はアラートを送信して事象の発生をユーザーに知らせるだけでなく、Azure Information Protection の**社外秘**分類ラベルを自動的に適用して、ファイルの暗号化を強化します。 
 
 >[!NOTE]
 > - Azure Information Protection ラベルの適用は、使用可能な[ガバナンス アクション](governance-actions.md)の長いリストに含まれています。

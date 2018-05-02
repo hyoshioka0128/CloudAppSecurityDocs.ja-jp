@@ -1,27 +1,30 @@
 ---
-title: "コンテンツ検査ポリシーに対する RegEx エンジンの使用 | Microsoft ドキュメント"
-description: "このトピックでは、Cloud App Security ポリシーのパターン マッチングに正規表現を使用する方法について説明します。"
-keywords: 
+title: コンテンツ検査ポリシーに対する RegEx エンジンの使用 | Microsoft ドキュメント
+description: このトピックでは、Cloud App Security ポリシーのパターン マッチングに正規表現を使用する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1f6ee1a96a7f65c903fe6e0978fd9a31d850697e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 2e7c8f640a054ba8e5bc2ad999bd73a6604eb4d0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="working-with-the-regex-engine"></a>RegEx エンジンの操作
  
-Cloud App Security のコンテンツ検査ポリシーでは、パターン マッチングに正規表現が使用されます。 コンテンツ検査は、ファイル ポリシーの一部として適用できます。 正規表現をテストするには、次の Web サイトを使用できます。  
+Microsoft Cloud App Security のコンテンツ検査ポリシーでは、パターン マッチングに正規表現が使用されます。 コンテンツ検査は、ファイル ポリシーの一部として適用できます。 正規表現をテストするには、次の Web サイトを使用できます。  
   
 -   [http://regexpal.com/](http://regexpal.com/)  
   
@@ -51,14 +54,14 @@ Cloud App Security のコンテンツ検査ポリシーでは、パターン マ
   
 式の例  
   
-||||  
-|-|-|-|  
-|**正規表現**|**データ**|**一致する**|  
-|Colou?r (?:black&#124;blue&#124;white)|Color black<br /><br /> Color white<br /><br /> Color red|はい<br /><br /> はい<br /><br /> いいえ|  
-|[a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}|Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com|はい<br /><br /> はい<br /><br /> いいえ|  
-|20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31)|2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31|はい<br /><br /> はい<br /><br /> いいえ|  
-|d.n't\s{0,10}c.r.|Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care|はい<br /><br /> はい<br /><br /> いいえ|  
- 
+
+|                                                               |                                                               |                                    |
+|---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
+|              <strong>正規表現</strong>              |                     <strong>データ</strong>                     |      <strong>一致する</strong>      |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | はい<br /><br /> はい<br /><br /> いいえ |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | はい<br /><br /> はい<br /><br /> いいえ |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | はい<br /><br /> はい<br /><br /> いいえ |
+|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | はい<br /><br /> はい<br /><br /> いいえ |
 
 ## <a name="see-also"></a>参照  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   

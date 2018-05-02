@@ -1,24 +1,26 @@
 ---
-title: "Cloud App Security で Cloud Discovery にカスタム アプリを追加する | Microsoft Docs"
-description: "このトピックでは、シャドウ IT を監視するために Cloud App Security で Cloud Discovery にカスタム アプリを追加する方法について説明します。"
-keywords: 
+title: Cloud App Security で Cloud Discovery にカスタム アプリを追加する | Microsoft Docs
+description: このトピックでは、シャドウ IT を監視するために Cloud App Security で Cloud Discovery にカスタム アプリを追加する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/27/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8ccd44e3c488b9adb0d4cd9df96b29b6bcc3e2d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: 4eeaca599a51e110773555d1c6862d34f8fd99a2
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery にカスタム アプリを追加する
     
 Cloud Discovery では、15,000 以上のクラウド アプリを掲載した Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 このカタログには、公開されているクラウド アプリのみが含まれています。それらのアプリに対して、Cloud App Security で可視性とリスク情報が提供されます。
@@ -29,20 +31,20 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 
 新しいカスタム クラウド アプリを追加するには:
 
-1.  Cloud App Security ポータルで、**[検出]**、**[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。 
+1. Cloud App Security ポータルで、**[検出]**、**[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。 
   
- ![Cloud Discovery ダッシュボード メニュー](./media/cloud-discovery-dashboard-menu.png)
+   ![Cloud Discovery ダッシュボード メニュー](./media/cloud-discovery-dashboard-menu.png)
 
-2.  右上隅にある 3 つの点をクリックし、**[カスタム アプリの新規追加]** を選択します。 
+2. 右上隅にある 3 つの点をクリックし、**[カスタム アプリの新規追加]** を選択します。 
 
- ![カスタム アプリの新規追加メニュー](./media/add-custom-app-menu.png)
+   ![カスタム アプリの新規追加メニュー](./media/add-custom-app-menu.png)
 
-3.  新しいアプリ レコードを定義するフィールドに入力します。定義したレコードは、ファイアウォール ログ内で検出された後にクラウド アプリ カタログと Cloud Discovery に一覧表示されます。
+3. 新しいアプリ レコードを定義するフィールドに入力します。定義したレコードは、ファイアウォール ログ内で検出された後にクラウド アプリ カタログと Cloud Discovery に一覧表示されます。
 
-  ![カスタム アプリ](./media/add-custom-app.png)
+   ![カスタム アプリ](./media/add-custom-app.png)
 
 4. **[ドメイン]** には、カスタム アプリにアクセスするときに使用する一意のドメインを入力します。 入力したドメインは、トラフィック ログ メッセージをこのアプリに対応付けるために使用されます。 使用しているデータ ソースにアプリの URL 情報が含まれていない場合は、**IPv4** と **IPv6** のアドレス フィールドに必ず入力します。
-4.  このレコードに対する変更を追跡できるように、メモを追加することをお勧めします。
+5. このレコードに対する変更を追跡できるように、メモを追加することをお勧めします。
 
 作成したアプリは、クラウド アプリ カタログに表示されます。
 

@@ -1,24 +1,27 @@
 ---
-title: "管理アクションを使用してクラウド アプリの使用を制御する方法 | Microsoft ドキュメント"
-description: "この記事では、組織のクラウド アプリの使用を制御するため Cloud App Security で実施できるガバナンス アクションについて説明します。"
-keywords: 
+title: 管理アクションを使用してクラウド アプリの使用を制御する方法 | Microsoft ドキュメント
+description: この記事では、組織のクラウド アプリの使用を制御するため Cloud App Security で実施できるガバナンス アクションについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7586c32819f106e563eddf5bcda2af805f89310
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 12b360be1e4490b15d61f9e49ef411970e11e9d1
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  
 
@@ -74,13 +77,13 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 ### <a name="migrate-your-users-to-a-new-app"></a>新しいアプリにユーザーを移行する  
 たとえば、最近になって Office 365 を購入し、組織内のすべてのユーザーに他のクラウド ストレージ アプリの使用を停止して、代わりに OneDrive を使用してほしいと考えているとします。 この場合、以下の操作を実行できます。  
 
-1.   **Cloud Discovery ダッシュボード**に移動して、**[カテゴリ]** から **[クラウド ストレージ]** によってアプリをフィルタリングします。 **[ユーザー]** または **[IP アドレス]** 別に結果を並べ替え、最も多く使用されているアプリを確認します。  
+1. **Cloud Discovery ダッシュボード**に移動して、**[カテゴリ]** から **[クラウド ストレージ]** によってアプリをフィルタリングします。 **[ユーザー]** または **[IP アドレス]** 別に結果を並べ替え、最も多く使用されているアプリを確認します。  
 
-2.   他のアプリを使用しているユーザーを確認することができます。 また、それらのアプリにドリルダウンして、以下の手順で、そのアプリのユーザーに対して OneDrive に移行するように通知することもできます。
+2. 他のアプリを使用しているユーザーを確認することができます。 また、それらのアプリにドリルダウンして、以下の手順で、そのアプリのユーザーに対して OneDrive に移行するように通知することもできます。
 
-    1.  **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、**[IP アドレス]** または **[ユーザー]** タブを選びます。  
+   1.  **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、**[IP アドレス]** または **[ユーザー]** タブを選びます。  
 
-    2.  矢印 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選び、**[エクスポート]** を選択します。  
+   2.  矢印 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選び、**[エクスポート]** を選択します。  
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  

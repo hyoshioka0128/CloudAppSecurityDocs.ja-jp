@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security ポータルへの管理アクセス権を管理する | Microsoft Docs"
-description: "ここでは、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。"
-keywords: 
+title: Cloud App Security ポータルへの管理アクセス権を管理する | Microsoft Docs
+description: ここでは、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e20af36ddf5d3758d42a13caab89663ec1fab985
-ms.sourcegitcommit: c47fd92c71028ede8840e0766f20eb0ad2898e70
+ms.openlocfilehash: 220f25083ad4b1589b75a8ce17f40e80ebfd7ece
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 ## <a name="managing-admin-access"></a>管理アクセス許可の管理
 
-Cloud App Security はロール ベースのアクセス制御に対応しています。 既定では、Office 365 と Azure AD の次の管理者ロールで Cloud App Security にアクセスできます。
+Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 既定では、Office 365 と Azure AD の次の管理者ロールで Microsoft Cloud App Security にアクセスできます。
 
 - 全体管理者とセキュリティ管理者: **フル アクセス**権を持つ管理者は、Cloud App Security で管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションを実行するフル アクセス許可を持っています。
 

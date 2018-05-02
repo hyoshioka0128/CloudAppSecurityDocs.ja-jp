@@ -1,67 +1,70 @@
 ---
-title: "Cloud App Security のポータルでトリガーされるアラートの管理 | Microsoft ドキュメント"
-description: "この記事では、Cloud App Security のポータルで発生したアラートを操作する方法について説明します。"
-keywords: 
+title: Cloud App Security のポータルでトリガーされるアラートの管理 | Microsoft ドキュメント
+description: この記事では、Cloud App Security のポータルで発生したアラートを操作する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a674379eea455c1a7f384c56f1c3a6013f8aac6e
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 ## <a name="manage-your-alerts"></a>アラートの管理  
 アラートは、クラウド環境をより深く理解するための最初のステップです。 確認した状況に基づいて新しいポリシーを作成できます。 たとえば、ある管理者がグリーンランドからサインインしていることが判明したとします。しかし、これまでグリーンランドからサインインしたことがある人は組織にいません。 その場所からのサインインに使用されている管理者アカウントを自動的に停止するポリシーを作成することができます。  
 
 すべてのアラートを確認し、これに基づいてポリシーを修正することをお勧めします。 無害なイベントが既存のポリシーに違反していると判断される場合、ポリシーを調整して不要なアラートを受信する回数を減らします。  
 
-1.   **[アラートを開く]** を選択して **[すべてのアラートを表示]** をクリックします。  
+1. **[アラートを開く]** を選択して **[すべてのアラートを表示]** をクリックします。  
 
-     ダッシュボードのこのセクションでは、不審なアクティビティや作成済みのポリシーの違反がすべて表示されます。 これはクラウド環境で定義されているセキュリティ体制の保護に活用できます。  
+   ダッシュボードのこのセクションでは、不審なアクティビティや作成済みのポリシーの違反がすべて表示されます。 これはクラウド環境で定義されているセキュリティ体制の保護に活用できます。  
 
-     ![アラート](./media/alerts.png "アラート")  
+   ![アラート](./media/alerts.png "アラート")  
 
-2.   それぞれのアラートについて、違反の内容を調査し必要な対応を決定する必要があります。  
+2. それぞれのアラートについて、違反の内容を調査し必要な対応を決定する必要があります。  
 
-     アラートは、アラートの種類や重要度でフィルタリングすると最も重要なものから対応できます。  
+   アラートは、アラートの種類や重要度でフィルタリングすると最も重要なものから対応できます。  
 
-     特定のアラートを選択します。 アラートの種類に応じて、アラートを解決するためのさまざまな対応方法が表示されます。  
+   特定のアラートを選択します。 アラートの種類に応じて、アラートを解決するためのさまざまな対応方法が表示されます。  
 
-     アラートの調査について、対応が必要な違反には 3 つの種類があります。  
+   アラートの調査について、対応が必要な違反には 3 つの種類があります。  
 
-    #### <a name="serious-violations"></a>重大な違反
-     重大な違反は即座の対応が必要です。
+   #### <a name="serious-violations"></a>重大な違反
+   重大な違反は即座の対応が必要です。
 
-         Examples:  
+       Examples:  
 
-         For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
 
-         For a data leak you might want to restrict permissions or quarantine the file.  
+       For a data leak you might want to restrict permissions or quarantine the file.  
 
-         If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
 
-    #### <a name="questionable-violations"></a>問題のある違反
-    問題のある違反は、さらに詳細な調査が必要です。  
+   #### <a name="questionable-violations"></a>問題のある違反
+   問題のある違反は、さらに詳細な調査が必要です。  
 
-         You can contact the  user or the user's manager about the nature of the activity.  
+       You can contact the  user or the user's manager about the nature of the activity.  
 
-         Leave the activity open until you have more information.  
+       Leave the activity open until you have more information.  
 
- #### <a name="authorized-violations-or-anomalous-behavior"></a>承認された違反または変則的な動作
- 承認された違反または変則的な動作は、正当な使用によって発生する場合があります。  
+   #### <a name="authorized-violations-or-anomalous-behavior"></a>承認された違反または変則的な動作
+   承認された違反または変則的な動作は、正当な使用によって発生する場合があります。  
 
-         Dismiss the alert.  
+       Dismiss the alert.  
 
-3.   このプロセスが完了したら、アラートを解決済みとしてマークします。  
+3. このプロセスが完了したら、アラートを解決済みとしてマークします。  
 
 次の表は、トリガーされるアラートの種類と推奨される解決方法の一覧です。  
 

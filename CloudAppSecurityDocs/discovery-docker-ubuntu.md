@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/22/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,15 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a2ee6fc6e54daa84414565dbb7a61fa2e169a7a0
-ms.sourcegitcommit: 1a445f6c5cbfbeb3adbbaff85909c35de949918c
+ms.openlocfilehash: 5db98a5c9d8c5d3a9ce27f498b8237ed110289ad
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 03/22/2018
 
 -   RAM: 4 GB
 
--   [ネットワーク要件](network-requirements#log-collector)で説明されているとおりにファイアウォールを設定する
+-   [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
@@ -47,49 +50,49 @@ ms.lasthandoff: 03/22/2018
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
-1.  自動アップロードの設定ページに移動します。  <br></br>Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
+1. 自動アップロードの設定ページに移動します。  <br></br>Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png) をクリックしてから **[ログ コレクター]** をクリックします。
 
-2.  ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
+2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    ![ubuntu1](./media/ubuntu1.png)
+   ![ubuntu1](./media/ubuntu1.png)
 
-    」を参照します。 **[データ ソースの追加]** をクリックします。
+   」を参照します。 **[データ ソースの追加]** をクリックします。
 
-    b. プロキシまたはファイアウォールの **[名前]** を付けます。
+   b. プロキシまたはファイアウォールの **[名前]** を付けます。
 
-    c. **[ソース]** リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+   c. **[ソース]** リストからアプライアンスを選択します。 一覧に明示されていないネットワーク アプライアンスを処理するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
-    d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+   d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-    e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
+   e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
     
-     >[!NOTE]
-     >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
+    >[!NOTE]
+    >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
 
-    f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
+   f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
 
-3.  画面上部の **[ログ コレクター]** タブに移動します。
+3. 画面上部の **[ログ コレクター]** タブに移動します。
 
-    」を参照します。 **[ログ コレクターを追加]** をクリックします。
+   」を参照します。 **[ログ コレクターを追加]** をクリックします。
 
-    b. ログ コレクターに **[名前]** を付けます。
+   b. ログ コレクターに **[名前]** を付けます。
 
-    c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
+   c. Docker の展開に使うコンピューターの**ホスト IP アドレス**を入力します。 
        
-       > [!NOTE]
-       > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
+      > [!NOTE]
+      > ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-    d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
+   d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
 
-    ![ubuntu2](./media/ubuntu2.png)
+   ![ubuntu2](./media/ubuntu2.png)
 
-     >  [!NOTE]
-     > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
-     > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
+   > [!NOTE]
+   > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
+   > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 
-4.  展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン ![クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
+4. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピー アイコン ![クリップボードにコピー アイコン](./media/copy-icon.png) を使えます。
 
-6.  予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
+5. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
 
    ![ログ コレクターを作成する](./media/windows7.png)
 
@@ -98,33 +101,33 @@ ms.lasthandoff: 03/22/2018
 > [!NOTE]
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
-1.  Ubuntu コンピューターでターミナルを開きます。
+1. Ubuntu コンピューターでターミナルを開きます。
 
-2.  コマンド `sudo -i` を使ってルート権限に変更します。
+2. コマンド `sudo -i` を使ってルート権限に変更します。
 
 3. ネットワークのプロキシをバイパスするには、次の 2 つのコマンドを実行します。
         
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
-3.  [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
+4. [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
 
-    `curl -o /tmp/MCASInstallDocker.sh
-    https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
-    && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
+   `curl -o /tmp/MCASInstallDocker.sh
+   https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh
+   && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh`
 
-     > [!NOTE] 
-     > このコマンドでプロキシ証明書の検証に失敗した場合、最初に `curl -k` を使用してコマンドを実行します。
+    > [!NOTE] 
+    > このコマンドでプロキシ証明書の検証に失敗した場合、最初に `curl -k` を使用してコマンドを実行します。
     
-    ![ubuntu5](./media/ubuntu5.png)
+   ![ubuntu5](./media/ubuntu5.png)
 
-4.  コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 これを行うには、ポータルで生成された実行コマンドをコピーします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
+5. コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 これを行うには、ポータルで生成された実行コマンドをコピーします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
 
-            (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+           (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
    ![ログ コレクターを作成する](./media/windows7.png)
 
-5.  次のコマンドを実行して、コレクターが正しく動作していることを確認します。`docker logs \<collector_name\>`
+6. 次のコマンドを実行して、コレクターが正しく動作していることを確認します。`docker logs \<collector_name\>`
 
 "**Finished successfully!**" というメッセージが表示される必要があります。
 

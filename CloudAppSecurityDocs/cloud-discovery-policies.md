@@ -1,24 +1,27 @@
 ---
-title: "Cloud App Security で Cloud Discovery アプリに対するポリシーを作成する | Microsoft ドキュメント"
-description: "このトピックでは、Cloud Discovery ポリシーの使用に関する情報を提供します。"
-keywords: 
+title: Cloud App Security で Cloud Discovery アプリに対するポリシーを作成する | Microsoft ドキュメント
+description: このトピックでは、Cloud Discovery ポリシーの使用に関する情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f2a08facca3c932d5ee8890e295041dcc4e63d4
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 983a4af689351fe9c71d1971f16b858a577a31ae
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
     
 ## <a name="creating-an-app-discovery-policy"></a>アプリの検出ポリシーの作成  

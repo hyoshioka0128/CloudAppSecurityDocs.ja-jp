@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security と SIEM の統合のトラブルシューティング | Microsoft Docs"
-description: "このトピックでは、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。"
-keywords: 
+title: Cloud App Security と SIEM の統合のトラブルシューティング | Microsoft Docs
+description: このトピックでは、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5b801b889abdac386cba5cb850dc5d38bbba205c
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 940e5994e9260b5fff6882867d5acea4f974b5e7
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="troubleshooting-the-siem-agent"></a>SIEM エージェントのトラブルシューティング
 
-Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続がダウンしている状態が 2 時間を超える場合は **[接続エラー]**、12 時間を超える場合は **[切断]** と表示されます。
+Microsoft Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続がダウンしている状態が 2 時間を超える場合は **[接続エラー]**、12 時間を超える場合は **[切断]** と表示されます。
 
 エージェントを実行しているときにコマンド プロンプト ウィンドウに次のようなエラーのいずれかが表示された場合は、以下の手順を使用して問題を修正します。
 

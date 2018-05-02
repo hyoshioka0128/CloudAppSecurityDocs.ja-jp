@@ -1,24 +1,27 @@
 ---
-title: "Azure AD ユーザー名を使用して Cloud App Security Discovery データを強化する | Microsoft Docs"
-description: "この記事では、Azure AD ユーザー名を使用して、Cloud App Security Discovery データを強化する方法について説明します。"
-keywords: 
+title: Azure AD ユーザー名を使用して Cloud App Security Discovery データを強化する | Microsoft Docs
+description: この記事では、Azure AD ユーザー名を使用して、Cloud App Security Discovery データを強化する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 88bc530ec33f03da650dba558123ac1e0c217183
-ms.sourcegitcommit: 9de7ed2224aeed049fc2a87e52307988f8837eeb
+ms.openlocfilehash: 7778f1a2798975f5e292a4f013d07d2665f05536
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery を強化する
 
 Cloud Discovery のデータを、Azure Active Directory のユーザー名データを使用して強化できるようになりました。 この機能を有効にすると、検出トラフィック ログで受け取ったユーザー名が Azure AD のユーザー名と照合され、置き換えられることで、次の新機能が有効になります。

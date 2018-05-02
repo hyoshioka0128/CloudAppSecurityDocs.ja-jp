@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security ネットワークの要件 | Microsoft Docs"
-description: "このトピックでは、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。"
-keywords: 
+title: Cloud App Security ネットワークの要件 | Microsoft Docs
+description: このトピックでは、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/30/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 939e5c13f786adff59db189b1e54cc414f61c1b5
-ms.sourcegitcommit: 8d137c4ee27819cde6fb966d71b7809818347e5f
+ms.openlocfilehash: 4a493fcc3c2c92f48e1fe573993ea987b57f7f6d
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="network-requirements"></a>ネットワーク要件
 
-このトピックでは、Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
+このトピックでは、Microsoft Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
 
 
 ## <a name="view-your-data-center"></a>データ センターを表示する
@@ -44,15 +47,16 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
 
 
 > [!div class="mx-tableFixed"]
-|データ センター|IP アドレス|DNS 名|
-|----|----|----|
-|US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
-|US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
-|EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
-
-
->[!NOTE]
->ワイルドカード (\*) の代わりに、特定のテナント URL のみを開くことができます。たとえば、上記のスクリーンショットでは、mod244533.us.portal.cloudappsecurity.com を開くことができます。
+> 
+> |データ センター|IP アドレス|DNS 名|
+> |----|----|----|
+> |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+> |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
+> 
+> 
+> [!NOTE]
+> ワイルドカード (\*) の代わりに、特定のテナント URL のみを開くことができます。たとえば、上記のスクリーンショットでは、mod244533.us.portal.cloudappsecurity.com を開くことができます。
 
 ## <a name="siem-agent-connection"></a>SIEM エージェントの接続
 
@@ -60,11 +64,12 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 
 
 > [!div class="mx-tableFixed"]
-|データ センター|IP アドレス|  
-|----|----|
-|US|13.91.91.243|
-|US2|52.184.165.82|
-|EU|52.174.56.180|
+> 
+> |データ センター|IP アドレス|  
+> |----|----|
+> |US|13.91.91.243|
+> |US2|52.184.165.82|
+> |EU|52.174.56.180|
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
@@ -77,12 +82,13 @@ Cloud App Security にアクセスされるサードパーティ製アプリに�
 
 
 > [!div class="mx-tableFixed"]
-|データ センター|IP アドレス|  
-|----|----|
-|US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |データ センター|IP アドレス|  
+> |----|----|
+> |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 
 ## <a name="third-party-dlp-integration"></a>サード パーティ DLP との統合
 
@@ -100,12 +106,13 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 サードパーティ製のアプリに接続し、外部 DLP ソリューションと統合するには、Cloud App Security を有効にして次の IP アドレスから接続します。
 
 > [!div class="mx-tableFixed"]
-|データ センター|IP アドレス|  
-|----|----|
-|US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-|US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
-|EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
- 
+> 
+> |データ センター|IP アドレス|  
+> |----|----|
+> |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
+> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+
 ## <a name="email-server"></a>電子メール サーバー
 
 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
@@ -113,7 +120,7 @@ Cloud App Security 専用の電子メールの IP アドレスは次のとおり
 198.2.134.139 (mail1.cloudappsecurity.com)
 
 この IP アドレスを必ずお使いのスパム対策サービスにホワイトリスト登録し、通知が送信されるようにしてください。
-    
+
 ## <a name="log-collector"></a>ログ コレクター 
 
 Cloud Discovery 機能がログ コレクターを使って組織内のシャドウ IT を検出できるようにするには、以下を開始する必要があります。
@@ -121,12 +128,13 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 - ログ コレクターが着信 FTP および Syslog トラフィックを受信できる。
 - ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる。
 - ログ コレクターがポート 80 と 443 で Azure Blob Storage への送信トラフィックを開始できる。
-   
-    |データ センター|URL|
-    |----|----|
-    |US|https://adaprodconsole.blob.core.windows.net/|
-    |US2|https://prod03use2console1.blob.core.windows.net/|
-    |EU|https://prod02euwconsole1.blob.core.windows.net/|
+
+
+  | データ センター |                        URL                        |
+  |-------------|---------------------------------------------------|
+  |     US      |   https://adaprodconsole.blob.core.windows.net/   |
+  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
+  |     EU      | https://prod02euwconsole1.blob.core.windows.net/  |
 
 > [!NOTE]
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。
@@ -138,6 +146,5 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
-  
 
-   
+

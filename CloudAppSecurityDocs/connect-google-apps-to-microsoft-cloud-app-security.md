@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/10/2018
+ms.date: 4/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,14 +13,16 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9dba7289b83397ae68224b56332baf1a59abe704
-ms.sourcegitcommit: d9b65152d06b9924231b296ffe565689b44ab93e
+ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
-このセクションでは、コネクタ API を使用して Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
+このセクションでは、コネクタ API を使用して Microsoft Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
   
   
 ## <a name="configure-g-suite"></a>G Suite を構成する  
@@ -53,7 +55,7 @@ ms.lasthandoff: 04/16/2018
   
    -   Google ドライブ API  
   
-   -   Google Apps Marketplace API  
+   -   Apps Marketplace SDK  
   
    -   Gmail API  
             
@@ -70,7 +72,7 @@ ms.lasthandoff: 04/16/2018
   
 10. **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
   
-    - **[Product name shown to users]**\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
+    - **[Product name shown to users]** \(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
   
     - その他のすべてのフィールドは省略できます。  
   

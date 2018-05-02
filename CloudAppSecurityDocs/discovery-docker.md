@@ -1,28 +1,31 @@
 ---
-title: "継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs"
-description: "このトピックでは、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。"
-keywords: 
+title: 継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs
+description: このトピックでは、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/25/2017
+ms.date: 4/22/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f9af164385b74f9742581e9879424e02409af34d
-ms.sourcegitcommit: 85d90d51e9e265d077f38b0188bcfdab2ce63ed1
+ms.openlocfilehash: a55e0ff02d16af8b166b62a53fbcffb62d6dcc08
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 
 
-ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ログ コレクターへのファイルの FTP 転送が完了した後に、Cloud App Security にアップロードされます。  Syslog の場合、ログ コレクターは受信したログをディスクに書き込み、そのファイル サイズが 40 KB より大きい場合に、ファイルを Cloud App Security にアップロードします。
+ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ログ コレクターへのファイルの FTP 転送が完了した後に、Microsoft Cloud App Security にアップロードされます。  Syslog の場合、ログ コレクターは受信したログをディスクに書き込み、そのファイル サイズが 40 KB より大きい場合に、ファイルを Cloud App Security にアップロードします。
 
 ログが Cloud App Security にアップロードされた後は、バックアップ ディレクトリに移動されます。このディレクトリには、常に最新の 20 個のログが保存されています。 新しいログが移動されると、古いログは削除されます。 ログ コレクターのディスク領域がいっぱいになると、空きディスク領域が増えるまで、ログ コレクターは新しいログを削除します。 これが発生すると、**[ログを自動的にアップロード]** 設定の **[ログ コレクター]** タブに警告が表示されます。
 

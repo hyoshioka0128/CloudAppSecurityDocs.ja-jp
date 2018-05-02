@@ -1,27 +1,29 @@
 ---
-title: "Cloud App Security と SIEM の統合 | Microsoft Docs"
-description: "このトピックでは、SIEM と Cloud App Security との統合に関する情報を提供します。"
-keywords: 
+title: Cloud App Security と SIEM の統合 | Microsoft Docs
+description: このトピックでは、SIEM と Cloud App Security との統合に関する情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/5/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c75bc2fe08a969f9a3f63cfff913f4c6f462f8c
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: becfce9773460020b4188e65c69d257f3d1b2b53
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="siem-integration"></a>SIEM の統合
-    
-Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Cloud App Security SIEM エージェントはサーバー上で実行され、Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+
+Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 また、この機能を長期間無効にしてから再び有効にすると、過去 2 日間分とそれ以降のすべてのアラートとアクティビティが転送されます。
 
@@ -58,22 +60,26 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 2. プラス記号アイコンをクリックし、**[SIEM エージェントを追加する]** ウィザードを開始します。
 3. ウィザードで、**[ウィザード起動]** をクリックします。   
-4. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 **[次へ]**をクリックします。
+4. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 
+   **[次へ]** をクリックします。
 
    ![SIEM の全般設定](./media/siem1.png)
 
 5. **リモートの Syslog ホスト**の IP アドレスまたはホスト名と **Syslog ポート番号**を入力します。 リモートの Syslog プロトコルとして TCP または UDP を選択します。
-これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。
-**[次へ]**をクリックします。
+   これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。
+   **[次へ]** をクリックします。
 
-  ![リモートの Syslog 設定](./media/siem2.png)
+   ![リモートの Syslog 設定](./media/siem2.png)
 
-6. SIEM サーバーにエクスポートするデータの種類を選択します。**アラート**と**アクティビティ**があります。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。
-**[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認できます。 **[次へ]**をクリックします。 
+6. SIEM サーバーにエクスポートするデータの種類を選択します。**アラート**と**アクティビティ**があります。 
+   スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。
+   **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認できます。 
+   **[次へ]** をクリックします。 
 
-  ![データの種類の設定](./media/siem3.png)
+   ![データの種類の設定](./media/siem3.png)
 
-7. トークンをコピーし、保存して後で使用できるようにします。 [完了] をクリックし、ウィザードから SIEM ページに戻り、テーブルで追加した SIEM エージェントを確認できます。 後で接続されるまで **[作成済み]** と表示されます。
+7. トークンをコピーし、保存して後で使用できるようにします。 
+   [完了] をクリックし、ウィザードから SIEM ページに戻り、テーブルで追加した SIEM エージェントを確認できます。 後で接続されるまで **[作成済み]** と表示されます。
 
 > [!NOTE]
 > 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
@@ -84,7 +90,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596) で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意した後、.zip ファイルをダウンロードして解凍します。
 
 2. 抽出されたファイルをサーバーで実行します。
-    
+
         java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
 
 > [!NOTE]
@@ -114,7 +120,6 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 2017-11-27T20:41:20.000Z CEF:0|MCAS|SIEM_Agent|0.112.49|EVENT_CATEGORY_DELETE_USER|Delete user|0|externalId=1511815287798_bcf60601-ecef-4207-beda-3d2b8d87d383 rt=1511815280000 start=1511815280000 end=1511815280000 msg=Delete user: user 233490c0db360300906ff34ebf9619ef suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511815287798_bcf60601-ecef-4207-beda-3d2b8d87d383,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,233490c0db360300906ff34ebf9619ef,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 
 2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
-
 ```
 アラートのログ ファイルの例を次に示します。
 ```
@@ -129,37 +134,34 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 2017-07-16T09:17:46.290Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy4|3|externalId=596b30200c204203a33a4765 start=1500196666290 end=1500196666290 msg=Activity policy ''test-activity-policy4'' was triggered by ''admin@contoso.com'' suser=admin@contoso.com destinationServiceName=Microsoft Exchange Online cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b30200c204203a33a4765 cs2Label=uniqueServiceAppIds cs2=APPID_OUTLOOK cs3Label=relatedAudits cs3=1500196587034_a8673602-7e95-46d6-a1fe-c156c4709c5d cs4Label=policyIDs cs4=
 
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
-
 ```
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
 
 
-|適用対象|CEF フィールド名|[説明]|
-|----|-----|----|
-|アクティビティ/アラート|start| アクティビティまたはアラートのタイムスタンプ|
-|アクティビティ/アラート|end|アクティビティまたはアラートのタイムスタンプ|
-|アクティビティ/アラート|rt|アクティビティまたはアラートのタイムスタンプ|
-|アクティビティ/アラート|msg |ポータルで表示されるアクティビティまたはアラートの説明|
-|アクティビティ/アラート|suser| アクティビティまたはアラートの対象ユーザー|
-|アクティビティ/アラート|destinationServiceName| Office 365、SharePoint、Box などのアプリから発生するアクティビティまたはアラート。|
-|アクティビティ/アラート|cs<X>Label|各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味がわかる (例: targetObjects)。|
-|アクティビティ/アラート|cs<X>|ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。|
-|アクティビティ|EVENT_CATEGORY_* |アクティビティの高レベルのカテゴリ|
-|アクティビティ|<ACTION> |ポータルに表示されるアクティビティの種類|
-|アクティビティ|externalId| イベント ID|
-|アクティビティ|dvc| クライアント デバイスの IP|
-|アクティビティ|requestClientApplication|クライアント デバイスのユーザー エージェント|
-|アラート|<alert type>|たとえば、“ALERT_CABINET_EVENT_MATCH_AUDIT”|
-|アラート|<name>|一致するポリシー名|
-|アラート|externalId|アラート ID|
-
-
+|   適用対象   |      CEF フィールド名      |                                                   [説明]                                                   |
+|-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
+| アクティビティ/アラート |          start           |                                           アクティビティまたはアラートのタイムスタンプ                                           |
+| アクティビティ/アラート |           end            |                                           アクティビティまたはアラートのタイムスタンプ                                           |
+| アクティビティ/アラート |            rt            |                                           アクティビティまたはアラートのタイムスタンプ                                           |
+| アクティビティ/アラート |           msg            |                              ポータルで表示されるアクティビティまたはアラートの説明                               |
+| アクティビティ/アラート |          suser           |                                         アクティビティまたはアラートの対象ユーザー                                          |
+| アクティビティ/アラート |  destinationServiceName  |                  Office 365、SharePoint、Box などのアプリから発生するアクティビティまたはアラート。                   |
+| アクティビティ/アラート |        cs<X>Label        |        各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味がわかる (例: targetObjects)。        |
+| アクティビティ/アラート |          cs<X>           | ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。 |
+|    アクティビティ     |     EVENT_CATEGORY_*     |                                       アクティビティの高レベルのカテゴリ                                       |
+|    アクティビティ     |         <ACTION>         |                                  ポータルに表示されるアクティビティの種類                                  |
+|    アクティビティ     |        externalId        |                                                    イベント ID                                                     |
+|    アクティビティ     |           dvc            |                                             クライアント デバイスの IP                                             |
+|    アクティビティ     | requestClientApplication |                                         クライアント デバイスのユーザー エージェント                                         |
+|      アラート       |       <alert type>       |                                  たとえば、“ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
+|      アラート       |          <name>          |                                             一致するポリシー名                                             |
+|      アラート       |        externalId        |                                                    アラート ID                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する
 
 1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続がダウンしている状態が 2 時間を超える場合は **[接続エラー]**、12 時間を超える場合は **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
- 
+
    以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
 
 2. Syslog/SIEM サーバーで、Cloud App Security から送られたアクティビティとアラートが表示されていることを確認します。
@@ -191,5 +193,4 @@ SIEM エージェントは、最大 2 日間のダウンタイムの回復をサ
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
-  
-  
+

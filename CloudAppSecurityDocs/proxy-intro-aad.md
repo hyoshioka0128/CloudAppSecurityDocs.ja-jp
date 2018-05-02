@@ -1,31 +1,34 @@
 ---
-title: "Microsoft Cloud App Security プロキシで保護する | Microsoft Docs"
-description: "このトピックでは、Cloud App Security プロキシのしくみに関する情報を提供します。"
-keywords: 
+title: Microsoft Cloud App Security プロキシで保護する | Microsoft Docs
+description: このトピックでは、Cloud App Security プロキシのしくみに関する情報を提供します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 2/6/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 850436b8cb0c7a8e63a67a408ba51b6fecd9ac19
-ms.sourcegitcommit: 8bfb8236b83f7423e73fe449d662935c084ff844
+ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシでアプリを保護する
 
 > [!NOTE]
 > これはプレビュー機能です。
 
 
-現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Cloud App Security プロキシは包括的な統合エクスペリエンスでこれらの機能を提供します。
+現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security プロキシは包括的な統合エクスペリエンスでこれらの機能を提供します。
 
 ## <a name="how-it-works"></a>しくみ
 

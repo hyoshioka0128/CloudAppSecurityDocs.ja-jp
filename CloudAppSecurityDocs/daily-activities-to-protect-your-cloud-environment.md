@@ -1,26 +1,28 @@
 ---
-title: "Cloud App Security ダッシュボードでアラートを操作する | Microsoft Docs"
-description: "この記事では、Cloud App Security のダッシュボードを使用する方法の基礎について説明します。"
-keywords: 
+title: Cloud App Security ダッシュボードでアラートを操作する | Microsoft Docs
+description: この記事では、Cloud App Security のダッシュボードを使用する方法の基礎について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23962681e54706002322edeab3166d1a09e12f2f
-ms.sourcegitcommit: 458e936e1ac548eda37e9bf955b439199bbdd018
+ms.openlocfilehash: 59810d24a51241f6c323a072565beb22d79feca0
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
-Cloud App Security を起動して実行したら、データ ストリーム構成し、ユーザーにアプリの使用を許可し、クラウド環境を監視するポリシーを設定する必要があります。 これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。  
+Microsoft Cloud App Security を起動して実行したら、データ ストリーム構成し、ユーザーにアプリの使用を許可し、クラウド環境を監視するポリシーを設定する必要があります。 これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。  
 
 このトピックでは、Cloud App Security を使用して日常的に行う必要がある作業について説明します。  
 

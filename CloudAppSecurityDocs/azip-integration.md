@@ -1,27 +1,30 @@
 ---
-title: "Cloud App Security との Azure Information Protection の統合 | Microsoft ドキュメント"
-description: "この記事では、Cloud App Security で Azure Information Protection タグを使って、組織のクラウド アプリの使用をより強力に制御する方法について説明します。"
-keywords: 
+title: Cloud App Security との Azure Information Protection の統合 | Microsoft ドキュメント
+description: この記事では、Cloud App Security で Azure Information Protection タグを使って、組織のクラウド アプリの使用をより強力に制御する方法について説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 3/3/2018
+ms.date: 4/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 92182731b6ee80c24aa2f3d7836415b2dfa4da2c
-ms.sourcegitcommit: c5533d66b8e037d6221c48bdbad81574f25f2817
+ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
+ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/23/2018
 ---
+*適用対象: Microsoft Cloud App Security*
+
+
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
-Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 処理後、クラウドに置いてある機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。 
+Microsoft Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 処理後、クラウドに置いてある機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。 
 
 Azure Information Protection を Cloud App Security に統合すると、両方のサービスの全機能を活用し、クラウド内のファイルをセキュリティで保護することができます。
 - 特定のポリシーに一致するファイルにガバナンス アクションとして分類ラベルを適用する機能
@@ -90,17 +93,17 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 1. **[ファイル]** ページで、保護するファイルを選択して、ファイルの行の最後にある 3 つのドットをクリックし、**[分類ラベルの適用]** を選択します。
 
- ![アプリの保護](./media/protect-app.png)
+   ![アプリの保護](./media/protect-app.png)
   
-  >[!NOTE]
-  > Cloud App Security は、最大 50 MB のファイルに Azure Information Protection を適用できます。  
+   >[!NOTE]
+   > Cloud App Security は、最大 50 MB のファイルに Azure Information Protection を適用できます。  
 
 2. ファイルに適用する組織の分類ラベルを選択し、**[適用]** をクリックします。 
-![保護の分類ラベル](./media/protect-template.png)
+   ![保護の分類ラベル](./media/protect-template.png)
 
 3. 分類ラベルを選択して [適用] をクリックすると、Cloud App Security によって分類ラベルが元のファイルに適用されます。
 
-5. 分類ラベルは削除することもできます。**[分類ラベルの削除]** オプションを選択してください。 
+4. 分類ラベルは削除することもできます。**[分類ラベルの削除]** オプションを選択してください。 
 
 
 Cloud App Security と Azure Information Protection の連動のしくみの詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」をご覧ください。
@@ -111,9 +114,9 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 
 指示に従って、ファイル ポリシーを作成します。
 
-1.  ファイル ポリシーを作成します。
-2.  検出するファイルの種類など、ポリシーを設定します。たとえば、**[アクセス レベル]** が **[内部]** ではないすべてのファイルや **[所有者 OU]** が財務チームではないすべてのファイルを検出します。 
-3.  関連アプリのガバナンス アクションの下で**分類ラベルを適用**し、ラベルの種類を選択します。
+1. ファイル ポリシーを作成します。
+2. 検出するファイルの種類など、ポリシーを設定します。たとえば、**[アクセス レベル]** が **[内部]** ではないすべてのファイルや **[所有者 OU]** が財務チームではないすべてのファイルを検出します。 
+3. 関連アプリのガバナンス アクションの下で**分類ラベルを適用**し、ラベルの種類を選択します。
 
    ![ラベルを適用する](./media/aip-gov-action.png)
 
