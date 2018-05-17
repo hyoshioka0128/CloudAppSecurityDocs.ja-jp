@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d92a0b86424ef94fcb58cd50b6c4e8bde04e5f33
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 3a89faa350a35d7b5bfd5b2cfe7fdc0263bb2566
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 04/23/2018
 
 4. このクエリを今後もう一度使用するには、**[クエリ]** の下で、下方向にスクロールして **[保存されたクエリ]** を表示し、クエリを選択します。 
 
-   ![クエリを開く](./media/open-query.png)
+   ![クエリを開く](./media/discovered-app-query.png)
 
 
 Cloud App Security には**クエリ候補**機能もあります。頻繁に使用するカスタム クエリを保存できます。 クエリ候補機能は調査方法を推奨するものです。オプションのクエリ候補を利用し、検出されたアプリにフィルター処理を適用します。
