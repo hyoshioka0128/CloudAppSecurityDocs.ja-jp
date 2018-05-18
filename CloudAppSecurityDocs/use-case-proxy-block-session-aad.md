@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security プロキシを使用して管理されていないデバイスへの機密データのダウンロードをブロックする方法 | Microsoft Docs
-description: このトピックでは、Azure AD のプロキシ機能を使用して管理されていないデバイスによる機密データのダウンロードから組織を守るためのシナリオについて説明します。
+title: Cloud App Security の Conditional Access App Control を使用して管理されていないデバイスへの機密データのダウンロードをブロックする方法 | Microsoft Docs
+description: このトピックでは、Azure AD のリバース プロキシ機能を使用して管理されていないデバイスによる機密データのダウンロードから組織を守るためのシナリオについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,20 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: eb0e0eef92181f14d83f6c4c5eaf30023b5d80da
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: df7fa13ece4f375751152db48114d0f2edd04362
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
-# <a name="blocking-downloads-of-sensitive-information-using-the-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシを使用する機密情報のダウンロードのブロック
 
+# <a name="blocking-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security の Conditional Access App Control を使用する機密情報のダウンロードのブロック
+
+>[!div class="step-by-step"]
+[« 前へ: アクセス ポリシー](access-policy-aad.md)
 
 現在の IT 管理者は板挟みになっています。従業員が生産性を高められるようにする必要があります。 これは、従業員が任意のデバイスからいつでも作業できるようにアプリへのアクセスを許可することを意味します。 その一方で、会社の資産を守らなければなりません。それには所有財産や特権アクセス情報などが含まれます。 従業員にクラウド アプリへのアクセスを許可しつつ、データを保護するにはどうすればよいでしょうか。 **このユース ケースを使用すれば、管理されていないデバイスや社外ネットワークの場所からエンタープライズ クラウド アプリの機密データにアクセスできるユーザーによるダウンロードをブロックできます。**
 
@@ -32,7 +35,7 @@ ms.lasthandoff: 04/23/2018
 組織のアカウント マネージャーが週末、自宅で自分のノート PC から Salesforce の情報を確認します。 Salesforce データには、顧客のクレジット カード情報や個人情報が含まれている可能性があります。 自宅の PC は管理されていません。つまり、このマネージャーが Salesforce のドキュメントを PC にダウンロードすると、マルウェアに感染するおそれがあります。あるいは、PC を紛失したり、盗まれたりした場合、パスワードで保護されていなければ、機密情報が誰にでも見られてしまいます。 
 
 ## <a name="the-solution"></a>解決策
-Azure AD の条件付きアクセスと Cloud App Security プロキシを使用して、クラウド アプリの使用を監視し制御することにより、組織を保護します。  
+Azure AD の条件付きアクセスと Microsoft Cloud App Security の Conditional Access App Control を使って、クラウド アプリの使用を監視して制御することにより、組織を保護します。  
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -47,7 +50,7 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 ### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>手順 1: Azure AD の条件付きアクセス ポリシーを作成する
 
 1. 割り当て済みユーザーとアプリを使用して、Azure AD の条件付きアクセス ポリシーを作成します。
-2. 条件付きアクセス ポリシー内のセッション制御で **[プロキシによって適用される制限を使用する]** を選択します。   
+2. 条件付きアクセス ポリシー内のセッション制御で、**[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選択します。   
 
    ![Azure AD の条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
 
@@ -126,8 +129,11 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
  
    ![セッション ポリシー レポート](./media/session-policy-report.png)
 
-4. ポリシー レポートでは、セッション制御のプロキシにリダイレクトされたログインと、監視対象セッションからダウンロードまたはブロックされたファイルを確認することができます。
+4. ポリシー レポートでは、セッション制御の Microsoft Cloud App Security にリダイレクトされたログインと、監視対象セッションからダウンロードまたはブロックされたファイルを確認することができます。
 
+
+>[!div class="step-by-step"]
+[« 前へ: アクセス ポリシー](access-policy-aad.md)
 
 
 

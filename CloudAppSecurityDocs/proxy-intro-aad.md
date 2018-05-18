@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security プロキシで保護する | Microsoft Docs
-description: このトピックでは、Cloud App Security プロキシのしくみに関する情報を提供します。
+title: Microsoft Cloud App Security Conditional Access App Control で保護する | Microsoft Docs
+description: このトピックでは、Cloud App Security Conditional Access App Control リバース プロキシのしくみに関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,32 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 94e92c75aab62216d8eb374d584ff369e7cb6a2f
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 88e201e498ae4bf6369996be682d1d91bc324b04
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
-# <a name="protect-apps-with-microsoft-cloud-app-security-proxy"></a>Microsoft Cloud App Security プロキシでアプリを保護する
+# <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
 > [!NOTE]
 > これはプレビュー機能です。
 
 
-現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security プロキシは包括的な統合エクスペリエンスでこれらの機能を提供します。
+>[!div class="step-by-step"]
+[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
+
+
+現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
 
 ## <a name="how-it-works"></a>しくみ
 
-Cloud App Security プロキシは、Azure AD の条件付きアクセスと統合されています。 Azure AD の条件付きアクセスを使うと、特定の条件に基づくアクセス制御を組織のアプリに適用できます。 条件では、条件付きアクセス ポリシーの適用対象である "*人*" (たとえば、ユーザーやユーザー グループ)、"*物*" (どのクラウド アプリか)、"*場所*" (どの場所とネットワークか) が定義されています。 条件を決定した後は、ユーザーを Cloud App Security プロキシにルーティングしてアクセスとセッションを制御できます。
+Conditional Access App Control はリバース プロキシ アーキテクチャを利用し、Azure AD の条件付きアクセスと一意に統合されます。 Azure AD の条件付きアクセスを使うと、特定の条件に基づくアクセス制御を組織のアプリに適用できます。 条件では、条件付きアクセス ポリシーの適用対象である "*人*" (たとえば、ユーザーやユーザー グループ)、"*物*" (どのクラウド アプリか)、"*場所*" (どの場所とネットワークか) が定義されています。 条件が決まったら、ユーザーを Microsoft Cloud App Security にルーティングできます。ここで、アクセスおよびセッション制御を適用し、Conditional Access App Control でデータを保護することができます。
 
-ユーザーが Cloud App Security プロキシにルーティングされた後は、アクセス ポリシーとセッション ポリシーに基づいてアプリのアクセスとセッションをリアルタイムで監視したり、制御したりできます。 Cloud App Security ポータル内では、フィルターをさらに調整し、ユーザーに対して実行されるアクションを設定するために、アクセス ポリシーとセッション ポリシーが利用されます。 アクセス ポリシーとセッション ポリシーでは次のことができます。
+Conditional Access App Control では、アクセスおよびセッション ポリシーに基づいて、ユーザー アプリのアクセスとセッションをリアルタイムで監視して制御できます。 Cloud App Security ポータル内では、フィルターをさらに調整し、ユーザーに対して実行されるアクションを設定するために、アクセス ポリシーとセッション ポリシーが利用されます。 アクセス ポリシーとセッション ポリシーでは次のことができます。
 
 -   **ダウンロードのブロック**: 機密性の高いドキュメントのダウンロードをブロックすることができます。 たとえば、管理されていないデバイスでのダウンロードなどです。
 
@@ -49,22 +53,22 @@ Cloud App Security プロキシは、Azure AD の条件付きアクセスと統�
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
-プロキシのセッション制御は条件付きアクセスを基に構築されます。 アプリへのアクセスを制御した後は、ユーザー セッションを、アプリに直接渡す代わりに、プロキシのセッション制御にリダイレクトできます。 それ以降、ユーザーの要求と応答は、直接アプリにではなく、プロキシを介して行われます。
+Conditional Access App Control でセッション ポリシーを作成することで、直接アプリにではなく、リバース プロキシ経由でユーザーをリダイレクトして、ユーザー セッションを制御できます。 それ以降、ユーザーの要求と応答は、直接アプリにではなく、Microsoft Cloud App Security を介して行われます。
 
-セッション内でユーザーを保持するために、プロキシは、アプリ内の関連するすべての URL、Java スクリプト、Cookie を、プロキシの URL に置き換えます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、プロキシはそのリンクを、myapp.com.us.cas.ms などで終わるドメインに置き換えます。 
+セッション内でユーザーを保持するために、アプリ セッション内の関連するすべての URL、Java スクリプト、Cookie が Microsoft Cloud App Security の URL に置き換えられます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、そのリンクは myapp.com.us.cas.ms などで終わるドメインに置き換えられます。 
 
 この方法では、デバイスに何もインストールする必要はありません。 これは、管理されていないデバイスからのセッションを監視するときに最適です。 
 
-セッションがプロキシを通過するようになった後、プロキシは以下のことを実行できます。
+Microsoft Cloud App Security を介してセッションが送信されたら、以下の操作を実行できます。
 1. トラフィックでユーザーのアクティビティを調べます
-3. 識別されたアクティビティをクラウド アプリのプロキシ ポータルに表示します
-2. トラフィックのログを保存して分析します
-3. 管理者がトラフィック ログをエクスポートできるようにします
-4. セッションに対してポリシーを適用します
+2. Microsoft Cloud App Security のアクティビティ ログに識別されたアクティビティを表示します
+3. トラフィックのログを保存して分析します
+4. 管理者がトラフィック ログをエクスポートできるようにします
+5. セッションに対してポリシーを適用します
 
 ## <a name="managed-device-identification"></a>管理されたデバイスの識別
 
-プロキシを使うと、デバイスが管理されているかどうかを考慮するポリシーを作成できます。 デバイスが管理されているかどうかを識別するため、プロキシは以下を利用します。
+Conditional Access App Control を使うと、デバイスが管理されているかどうかを考慮するポリシーを作成できます。 デバイスが管理されているかどうかを識別するため、この機能では以下を利用します。
 
 -   準拠しているデバイス 
 -   ドメインに参加しているデバイス 
@@ -72,19 +76,19 @@ Cloud App Security プロキシは、Azure AD の条件付きアクセスと統�
  
  
 ### <a name="compliant-and-domain-joined-devices"></a>準拠していてドメインに参加済みのデバイス
-Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Cloud App Security プロキシに直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。
+Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Microsoft Cloud App Security に直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。
 詳しくは、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」をご覧ください。 
 
 ### <a name="client-certificate-authenticated-devices"></a>クライアント証明書で認証されたデバイス
 
-プロキシ デバイス識別メカニズムは、クライアント証明書を使って関連するデバイスに認証を要求することができます。 これにより、組織内に既にデプロイされている既存のクライアント証明書を利用するか、または新しいクライアント証明書を管理されたデバイスにデプロイした後、それらの証明書の存在を使ってアクセス ポリシーとセッション ポリシーを設定することができます。 クライアント証明書をデプロイする方法については、「[Azure AD アプリのプロキシをデプロイする](proxy-deployment-aad.md)」をご覧ください。
+デバイス識別メカニズムでは、クライアント証明書を使って関連するデバイスに認証を要求することができます。 これにより、組織内に既にデプロイされている既存のクライアント証明書を利用するか、または新しいクライアント証明書を管理されたデバイスにデプロイした後、それらの証明書の存在を使ってアクセス ポリシーとセッション ポリシーを設定することができます。 クライアント証明書をデプロイする方法については、「[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)」を参照してください。
  
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
 
-現在、プロキシでは、Azure AD での SAML シングル サインオンを構成されたアプリがサポートされています。 
+現在、Conditional Access App Control では、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 
 
 > [!NOTE]
-> - このプロキシは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
+> - Conditional Access App Control では、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 > - Office 365 アプリケーションは SAML を構成されないため、現在はサポートされていません。
 
 セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリは現在サポートされていません)。 Azure AD とネイティブで統合すると、次の機能を備えたアプリを含む、 Azure AD での SAML シングル サインオンで構成されているすべてのアプリをサポートできます。
@@ -115,13 +119,17 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 
 -   HighQ 
 
+-   Concur
+
 セッション制御には、その他のアプリが継続的に搭載されます。 ここに記載されていない特定のアプリに関心がある場合は、[アプリの詳細を送っていただき](mailto:casfeedback@microsoft.com)、ユース ケースとして関心があれば、そのアプリが搭載されます。
 
 
 
+>[!div class="step-by-step"]
+[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
 
 ## <a name="see-also"></a>参照  
-[Cloud App Security プロキシの展開](proxy-deployment-aad.md)   
+[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   

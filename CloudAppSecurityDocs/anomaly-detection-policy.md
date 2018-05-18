@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3fec0cf5ed6139ecdfc6b4e33b5a6e054e3d62ce
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9fdc726b65d404ad0bc3aeb7296ac2c82dc54208
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/13/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -86,8 +86,20 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 **複数回失敗したログイン試行**
 - この検出は、1 つのセッションで複数回ログインを試行して失敗した、学習したベースラインからセキュリティ違反を試みている可能性のあるユーザーを識別します。 
 
+## <a name="scope-anomaly-detection-policies"></a>異常検出ポリシーのスコープ指定
 
-## <a name="triaging-anomaly-detection-alerts"></a>異常検出アラートのトリアージ
+ポリシーに含めたり除外したりするユーザーおよびグループのみに適用するように、各異常検出ポリシーには独立してスコープを指定できます。
+たとえば、頻度の低い国/地域の検出から頻繁に出張する特定のユーザーを無視するために、アクティビティを設定できます。 
+
+異常検出ポリシーのスコープを指定するには、次の手順に従います。
+1. **[コントロール]** > **[ポリシー]** の順にクリックして、**[種類]** フィルターを **[異常検出ポリシー]** に設定します。
+2. スコープを指定するポリシーをクリックします。
+3. **[スコープ]** で、既定の設定である **[All users and groups]\(すべてのユーザーとグループ)** から **[Specific users and groups]\(特定のユーザーとグループ)** にドロップダウンを変更します。
+4. **[含める]** を選択して、このポリシーを適用するユーザーおよびグループを指定します。 ここで選択されなかったユーザーまたはグループはすべて、脅威とは見なされず、アラートは生成されません。
+5. **[含まない]** を選択して、このポリシーを適用しないユーザーを指定します。 ここで選択されたユーザーはすべて、**[含める]** で選択したグループのメンバーであっても、脅威とは見なされず、アラートは生成されません。
+
+ ![異常検出のスコープ指定](./media/anomaly-detection-scoping.png)
+## <a name="triage-anomaly-detection-alerts"></a>異常検出アラートのトリアージ
 
 新しい異常検出ポリシーによってトリガーされたさまざまなアラートを即座にトリアージし、最初に処理すべきアラートはどれかを決定できます。 これを行うにはアラートのコンテキストが必要になるため、ユーザーは全体像を確認し、実際に悪意のある操作が行われているかどうかを把握できます。  
 

@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする | Microsoft Docs
-description: このトピックでは、Cloud App Security Proxy アクセス ポリシーを設定し、Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。
+description: このトピックでは、Cloud App Security Conditional Access App Control アクセス ポリシーを設定し、リバース プロキシ機能を使用して Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4cf6ab04f91b2b834ba494870a62691d882ee556
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -25,6 +25,12 @@ ms.lasthandoff: 04/23/2018
 
 > [!NOTE]
 > これはプレビュー機能です。
+
+
+>[!div class="step-by-step"]
+[« セッション ポリシー](session-policy-aad.md)<br>
+[使用事例 »](use-case-proxy-block-session-aad.md)
+
 
 Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 管理対象デバイスにクライアント証明書をロールアウトしたり、サードパーティの MDM 証明書など、既存の証明書を活用したりすることで、ドメインに参加していないデバイスや Windows Intune で管理されていないデバイスを含め、あらゆるデバイスを対象にアクセス ポリシーを作成できます。 たとえば、管理対象デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。 
 
@@ -34,8 +40,8 @@ Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、�
 ## <a name="prerequisites-to-using-access-policies"></a>アクセス ポリシーを使うための前提条件
 
 - Azure AD Premium P2 のライセンス
-- 関連するアプリを[プロキシと共にデプロイする](proxy-deployment-aad.md)必要があります
-- 以下で説明するように、Cloud App Security プロキシにユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
+- 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
+- 以下の説明のとおり、Microsoft Cloud App Security にユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
 
 > [!NOTE]
 > - アクセス ポリシーは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
@@ -44,14 +50,14 @@ Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、�
 
 Azure Active Directory の条件付きアクセス ポリシーと Cloud App Security のセッション ポリシーは連携して動作し、各ユーザー セッションを調べて、各アプリに関するポリシーの決定を行います。 Azure AD で条件付きアクセス ポリシーを設定するには、次の手順のようにします。
 
-1. ユーザーまたはユーザー グループに対する割り当てと、Cloud App Security プロキシで制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
+1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
 
    > [!NOTE]
-   > このポリシーが適用されるのは、[プロキシと共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
+   > このポリシーが適用されるのは、[Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
 
-2. **[セッション]** ブレードで **[プロキシによって適用される制限を使用する]** を選んで、Cloud App Security プロキシにユーザーをルーティングします。
+2. **[セッション]** ブレードで **[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選んで、Microsoft Cloud App Security にユーザーをルーティングします。
 
-   ![プロキシが制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
+   ![Conditional Access App Control で制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security アクセス ポリシーを作成する 
 
@@ -88,10 +94,12 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 
 
-
+>[!div class="step-by-step"]
+[« 前へ: セッション ポリシー](session-policy-aad.md)
+[次へ:Microsoft Cloud App Security の Conditional Access App Control を使用する機密情報のダウンロードのブロック »](use-case-proxy-block-session-aad.md)
  
 ## <a name="see-also"></a>参照  
-[Azure AD のプロキシ機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
+[Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   

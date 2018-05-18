@@ -1,11 +1,11 @@
 ---
-title: Azure AD アプリの Cloud App Security プロキシのデプロイ | Microsoft Docs
-description: このトピックでは、Azure AD アプリの Microsoft Cloud App Security プロキシをデプロイする方法について説明します。
+title: Azure AD アプリの Microsoft Cloud App Security Conditional Access App Control をデプロイする | Microsoft Docs
+description: このトピックでは、Azure AD アプリの Microsoft Cloud App Security Conditional Access App Control リバース プロキシ機能をデプロイする方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,30 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64742336717e202f7080a37f447672b953cf124a
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: d82e0e1d46e3927d0488dc525fa9c6bea42dd791
+ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="deploy-proxy-for-azure-ad-apps"></a>Azure AD アプリのプロキシをデプロイする
+# <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD アプリの Conditional Access App Control のデプロイ
 
 > [!NOTE]
 > これはプレビュー機能です。
 
-Microsoft Cloud App Security プロキシによって制御されるように Azure AD アプリを構成するには、以下の手順に従います。
+
+
+>[!div class="step-by-step"]
+[« 前へ](proxy-intro-aad.md)
+[次へ »](session-policy-aad.md)
+
+
+Microsoft Cloud App Security Conditional Access App Control によって制御されるように Azure AD アプリを構成するには、以下の手順に従います。
 
 > [!NOTE]
-> Azure AD アプリの Cloud App Security プロキシをデプロイするには、有効な [Azure AD Premium P2 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要です。
+> Azure AD アプリの Conditional Access App Control をデプロイするには、有効な [Azure AD Premium P2 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要です。
 
 ## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>手順 1: Cloud App Security に Azure AD アプリを追加する  
 
@@ -39,36 +46,36 @@ Microsoft Cloud App Security プロキシによって制御されるように Az
 
       ![Azure AD の条件付きアクセス](./media/aad-conditional-access.png)
 
-   2. **[新しいポリシー]** をクリックし、新しいポリシーを作成します。**[セッション]** で必ず **[プロキシによって適用される制限を使用する]** を選択します。
+   2. **[新しいポリシー]** をクリックし、新しいポリシーを作成します。その場合、**[セッション]** で必ず **[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選択します。
 
       ![Azure AD の条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
 
    3. TEST ポリシーの **[ユーザー]** で、初期サインオンに使用できるテスト ユーザーまたはユーザーを割り当てます。
     
-   4. TEST ポリシーの **[クラウド アプリ]** で、プロキシで制御するアプリを割り当てます。 
+   4. TEST ポリシーの **[クラウド アプリ]** で、Conditional Access App Control で制御するアプリを割り当てます。 
 
       > [!NOTE]
-      >必ず、プロキシでサポートされているアプリを選択してください。 プロキシでは、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 たとえば、Office 365 アプリケーションは SAML で構成されていないため、現在はサポートされていません。
+      >必ず、Conditional Access App Control でサポートされているアプリを選択してください。 Conditional Access App Control では、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 たとえば、Office 365 アプリケーションは SAML で構成されていないため、現在はサポートされていません。
 
 
 2. ポリシーを作成したら、ポリシーに構成されているユーザーで、ポリシーに構成されている各アプリにログインします。 必ず、最初に既存のセッションからログアウトしてください。
 
-3. Cloud App Security ポータルで、設定の歯車アイコンに移動して **[プロキシ]** を選択します。 
+3. Cloud App Security ポータルで、設定の歯車アイコンに移動して **[Conditional Access App Control]** を選択します。 
     
      ![プロキシ メニュー](./media/proxy-menu.png)
 
-4. 新しい Azure AD アプリがプロキシで検出されたことを知らせるメッセージが表示されます。 **[新しいアプリを表示します]** リンクをクリックします。
+4. 新しい Azure AD アプリが Conditional Access App Control で検出されたことを知らせるメッセージが表示されます。 **[新しいアプリを表示します]** リンクをクリックします。
 
-   ![プロキシの新しいアプリの表示](./media/proxy-view-new-apps.png)
+   ![Conditional Access App Control の [新しいアプリを表示します]](./media/proxy-view-new-apps.png)
 
 5. 開いたダイアログで、前の手順でログインしたすべてのアプリを確認できます。 アプリごとに、+ 記号をクリックしてから **[追加]** をクリックします。
 
-   ![プロキシの新しいアプリ](./media/proxy-new-app.png)
+   ![Conditional Access App Control の新しいアプリ](./media/proxy-new-app.png)
 
    > [!NOTE]
    > アプリが Cloud App Security アプリ カタログに表示されない場合は、ダイアログの定義されていないアプリの下にログイン URL と共に表示されます。 これらのアプリの + 記号をクリックするときに、カタログへのアプリの追加を提案することができます。 アプリがカタログに表示されたら、アプリのデプロイ手順を再度実行します。 
 
-6. プロキシ アプリ テーブルで、**[利用可能なコントロール]** 列を参照し、Azure AD の条件付きアクセスとセッション制御の両方が表示されていることを確認します。 <br></br>アプリのセッション制御が表示されない場合、その特定のアプリではまだ使用できないことを意味し、代わりに **[要求セッション制御]** リンクが表示されます。 それをクリックしてダイアログを開き、セッション制御へのアプリのオンボードを要求します。 プロキシのパブリック プレビュー期間中は、オンボード プロセスは Cloud App Security チームと共に行います。
+6. Conditional Access App Control アプリ テーブルで、**[利用可能なコントロール]** 列を参照し、Azure AD の条件付きアクセスとセッション制御の両方が表示されていることを確認します。 <br></br>アプリのセッション制御が表示されない場合、その特定のアプリではまだ使用できないことを意味し、代わりに **[要求セッション制御]** リンクが表示されます。 それをクリックしてダイアログを開き、セッション制御へのアプリのオンボードを要求します。 Conditional Access App Control のパブリック プレビュー期間中は、オンボード プロセスは Microsoft Cloud App Security チームと共に行います。
   
    ![セッション制御の要求](./media/request-session-control.png)
 
@@ -101,12 +108,17 @@ Microsoft Cloud App Security プロキシによって制御されるように Az
    ![テストのユーザー エージェント タグ](./media/domain-joined.png)
 
 
-これで、プロキシ アプリを制御するための[アクセス ポリシー](access-policy-aad.md)と[セッション ポリシー](session-policy-aad.md)を作成できるようになりました。
+これで、Conditional Access App Control アプリを制御するための[アクセス ポリシー](access-policy-aad.md)と[セッション ポリシー](session-policy-aad.md)を作成できるようになりました。
+
+
+>[!div class="step-by-step"]
+[«前へ: Conditional Access App Control によるアプリの保護](proxy-intro-aad.md)
+[次へ: セッション ポリシー »](session-policy-aad.md)
 
 
 
 ## <a name="see-also"></a>参照  
-[Cloud App Security プロキシの操作](proxy-intro-aad.md)   
+[Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   

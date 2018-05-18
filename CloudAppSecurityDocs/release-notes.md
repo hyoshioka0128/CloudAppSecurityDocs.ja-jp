@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,31 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f5c1d986648aef00b605f32d5c0a986d316604ed
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 545d7cb0e7152918e8f9b1e37ff1d7a210605342
+ms.sourcegitcommit: aebd4dd970465a7f5818329f344c24fe73f616dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/13/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-123"></a>Cloud App Security リリース 123
+
+リリース日: 2018 年 5 月 13 日
+
+- **異常検出ポリシーのスコープ指定**: <br>
+異常検出ポリシーに、スコープを指定できるようになりました。 これにより、特定のユーザーまたはグループのみを含めたり、特定のユーザーまたはグループを除外したりするように、各異常検出ポリシーを設定できます。 たとえば、頻度の低い国/地域の検出から頻繁に出張する特定のユーザーを無視するために、アクティビティを設定できます。 
+
+
+## <a name="cloud-app-security-release-122"></a>Cloud App Security リリース 122
+リリース日: 2018 年 4 月 29 日
+
+-   段階的なロールアウト: アプリごとに、**Microsoft Cloud App Security 管理者に管理アクセス許可を設定**できるようになりました。 たとえば、G Suite のみの管理者として、特定のユーザーを設定することができます。 これにより、情報が G Suite だけに関連する場合にのみ、ユーザーは Microsoft Cloud App Security でその情報を表示して変更することができます。 詳細については、「[管理アクセス許可の管理](manage-admins.md)」を参照してください。
+- 段階的なロールアウト: Microsoft Cloud App Security で **Okta 管理者ロールが表示される**ようになりました。これらは、**[設定]** > **[ユーザー グループ]** でタグとして、各ロールで利用できます。
+
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security リリース 121
 リリース日: 2018 年 4 月 22 日

@@ -1,11 +1,11 @@
 ---
 title: ユーザー セッション アクティビティを詳細に可視化し、ダウンロードをブロックするためのセッション ポリシーを作成する | Microsoft Docs
-description: このトピックでは、ユーザー セッション アクティビティを詳細に可視化し、ダウンロードをブロックするように Cloud App Security プロキシ セッション ポリシーを設定する手順について説明します。
+description: このトピックでは、リバース プロキシ機能を使用して、ユーザー セッション アクティビティを詳細に可視化し、ダウンロードをブロックするように Cloud App Security の Conditional Access App Control セッション ポリシーを設定する手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b414597e499919d9d6251777c9bdbea160cac430
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: cf13b7439baafa11a94aa8420ec050781fde88fc
+ms.sourcegitcommit: 5d549d7e2d15f36452fe3c3d143493a7014b457b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/09/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,7 +26,13 @@ ms.lasthandoff: 04/23/2018
 > [!NOTE]
 > これはプレビュー機能です。
 
-Microsoft Cloud App Security のセッション ポリシーを使うと、セッション レベルでのリアルタイム監視が可能になり、クラウド アプリの詳細な情報を把握し、ユーザー セッションに設定したポリシーに応じて異なるアクションを実行できます。 セッション制御では、[アクセスを完全に許可またはブロックする](access-policy-aad.md)のではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
+
+>[!div class="step-by-step"]
+[«前へ: Conditional Access App Control の展開](proxy-deployment-aad.md)
+[次へ: アクセス ポリシー »](access-policy-aad.md)
+
+
+Microsoft Cloud App Security のセッション ポリシーを使うと、セッション レベルでのリアルタイム監視が可能になり、クラウド アプリの詳細な情報を把握し、ユーザー セッションに設定したポリシーに応じて異なるアクションを実行できます。 セッション制御では、[アクセスを完全に許可またはブロックする](access-policy-aad.md)のではなく、Conditional Access App Control のリバース プロキシ機能を使用して、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。 
 
 たとえば、デバイスが管理されていない場合やセッションが特定の場所から行われている場合に、アプリにアクセスすることをユーザーに許可しながら、機密ファイルのダウンロードを制限したり、特定のドキュメントがダウンロード時に保護されることを要求したりすることができます。 セッション ポリシーを使用すると、このようなユーザー セッション制御を設定し、アクセスを許可することができます。これにより、ユーザーは次の操作を行うことができます。
 
@@ -39,8 +45,8 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 ## <a name="prerequisites-to-using-session-policies"></a>セッション ポリシーを使うための前提条件
 
 - Azure AD Premium P2 のライセンス
-- 関連するアプリを[プロキシと共にデプロイする](proxy-deployment-aad.md)必要があります
-- 以下で説明するように、Cloud App Security プロキシにユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
+- 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
+- 以下の説明のとおり、Microsoft Cloud App Security にユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
 
 > [!NOTE]
 > - セッション ポリシーは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
@@ -49,14 +55,14 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 
 Azure Active Directory の条件付きアクセス ポリシーと Cloud App Security のセッション ポリシーは連携して動作し、各ユーザー セッションを調べて、各アプリに関するポリシーの決定を行います。 Azure AD で条件付きアクセス ポリシーを設定するには、次の手順のようにします。
 
-1. ユーザーまたはユーザー グループに対する割り当てと、Cloud App Security プロキシで制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
+1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
 
    > [!NOTE]
-   > このポリシーが適用されるのは、[プロキシと共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
+   > このポリシーが適用されるのは、[Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
 
-2. **[セッション]** ブレードで **[プロキシによって適用される制限を使用する]** を選んで、Cloud App Security プロキシにユーザーをルーティングします。
+2. **[セッション]** ブレードで **[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選んで、Microsoft Cloud App Security にユーザーをルーティングします。
 
-   ![プロキシが制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
+   ![Conditional Access App Control で制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Cloud App Security セッション ポリシーを作成する 
 
@@ -132,7 +138,7 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 ## すべてのアクティビティを監視する <a name="monitor-session"></a>
 
-セッション ポリシーを作成すると、ポリシーに一致する各ユーザー セッションは、直接アプリにではなく、プロキシ セッション制御にリダイレクトされます。 ユーザーには、セッションが監視されていることを知らせる監視通知が表示されます。
+セッション ポリシーを作成すると、ポリシーに一致する各ユーザー セッションは、直接アプリにではなく、セッション制御にリダイレクトされます。 ユーザーには、セッションが監視されていることを知らせる監視通知が表示されます。
 
    ![セッション監視のしくみ](./media/session-monitoring-notice.png)
 
@@ -140,32 +146,32 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 1. 設定の歯車アイコンで、**[全般設定]** を選びます。 
 
-2. 次に、Cloud App Security プロキシの設定で、**[ユーザーに通知する]** チェック ボックスをオフにします。
+2. 次に、Conditional Access App Control の設定で、**ユーザーへの通知**チェック ボックスをオフにします。
 
     ![セッション監視通知を無効にする](./media/disable-session-monitoring-notice.png)
 
-セッション内でユーザーを保持するために、プロキシは、アプリ内の関連するすべての URL、Java スクリプト、Cookie を、プロキシの URL に置き換えます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、プロキシはそのリンクを、myapp.com.us.cas.ms などで終わるドメインに置き換えます。 これにより、セッション全体がプロキシによって監視されます。
+セッション内でユーザーを保持するために、Conditional Access App Control は、アプリ セッション内の関連するすべての URL、Java スクリプト、Cookie を、Microsoft Cloud App Security の URL に置き換えます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、Conditional Access App Control はそのリンクを、myapp.com.us.cas.ms などで終わるドメインに置き換えます。 これにより、セッション全体が Microsoft Cloud App Security によって監視されます。
 
-プロキシは、ルーティングされてきたすべてのユーザー セッションのトラフィック ログを記録します。 トラフィック ログには、時刻、IP、ユーザー エージェント、アクセスした URL、アップロードおよびダウンロードされたバイト数が含まれます。 これらのログが分析されて、**Cloud App Security Proxy** という名前の継続的なレポートが、Cloud Discovery ダッシュボードの Cloud Discovery レポート一覧に追加されます。
+Conditional Access App Control は、ルーティングされてきたすべてのユーザー セッションのトラフィック ログを記録します。 トラフィック ログには、時刻、IP、ユーザー エージェント、アクセスした URL、アップロードおよびダウンロードされたバイト数が含まれます。 これらのログが分析されて、**Cloud App Security の Conditional Access App Control** という継続的なレポートが、Cloud Discovery ダッシュボードの Cloud Discovery レポート一覧に追加されます。
 
-![プロキシのレポート](./media/proxy-report.png)
+![Conditional Access App Control レポート](./media/proxy-report.png)
 
 
 ログをエクスポートするには:
 
-1. 設定の歯車アイコンに移動し、**[プロキシ]** をクリックします。
+1. 設定の歯車アイコンに移動し、**[Conditional Access App Control]** をクリックします。
 2. テーブルの右側にあるエクスポート ボタンをクリックします ![エクスポート ボタン](./media/export-button.png)。 
 3. レポートの範囲を選び、**[エクスポート]** をクリックします。 この処理には時間がかかる場合があります。
 
 エクスポートされたログをダウンロードするには:
 
 1. レポートの準備ができたら、**[調査]**、**[カスタム レポート]** の順に移動します。
-2. テーブルで、**プロキシ トラフィック ログ**の一覧から関連するレポートを選んで、ダウンロード ![ダウンロード ボタン](./media/download-button.png) をクリックします。 
+2. テーブルで、**Conditional Access App Control トラフィック ログ**の一覧から関連するレポートを選んで、ダウンロード ![ダウンロード ボタン](./media/download-button.png) をクリックします。 
 
 
 ## すべてのダウンロードをブロックする <a name="block-download"></a>
 
-Cloud App Security プロキシのセッション ポリシーで実行する **[アクション]** として **[ブロック]** が設定されていると、プロキシはポリシーのファイル フィルターに従ってユーザーがファイルをダウンロードできないようにします。 ダウンロード イベントは各 SAML アプリのプロキシによって認識され、ユーザーがこのイベントを開始すると、プロキシはリアルタイムで介入して実行を防ぎます。 ユーザーがダウンロードを開始したことを示す信号を受け取ったプロキシは、**ダウンロードが制限されている**というメッセージをユーザーに返し、ダウンロードされるファイルを、ユーザーに対するカスタマイズ可能なメッセージを含むテキスト ファイルに置き換えます。これは、プロキシ セッション ポリシーから構成できます。  
+Cloud App Security セッション ポリシーで実行する **[アクション]** として **[ブロック]** が設定されていると、Conditional Access App Control はポリシーのファイル フィルターに従ってユーザーがファイルをダウンロードできないようにします。 ダウンロード イベントは各 SAML アプリの Microsoft Cloud App Security によって認識され、ユーザーがこのイベントを開始すると、Conditional Access App Control はリアルタイムで介入して実行を防ぎます。 ユーザーがダウンロードを開始したことを示す信号を受け取った Conditional Access App Control は、**ダウンロードが制限されている**というメッセージをユーザーに返し、ダウンロードされるファイルを、ユーザーに対するカスタマイズ可能なメッセージを含むテキスト ファイルに置き換えます。これは、セッション ポリシーから構成できます。  
 
 ## 特定のアクティビティをブロックする <a name="block-activities"></a>
 
@@ -173,11 +179,15 @@ Cloud App Security プロキシのセッション ポリシーで実行する **
 
 ## ダウンロード時にファイルを保護する <a name="protect-download"></a>
 **[アクティビティのブロック]** を選択して、**[アクティビティの種類]** フィルターを使用して選択する特定のアクティビティをブロックします。 選択したアプリのすべてのアクティビティが監視されます (さらにアクティビティ ログで報告されます)。 選択した特定のアクティビティがブロックされるのは、**[ブロック]** アクションを選択した場合です。選択した特定のアクティビティからアラートが生成されるのは、**[テスト]** アクションを選択してアラートをオンにした場合のみです。
-Cloud App Security プロキシのセッション ポリシーで実行する **[アクション]** として **[保護]** が設定されていると、プロキシはポリシーのファイル フィルターに従って、ファイルのラベル付けとその後の保護を適用します。 ラベルは Azure の Azure Information Protection コンソールで構成され、Cloud App Security ポリシーのオプションとしてラベルが表示されるためには、ラベル内で **[保護]** が選ばれている必要があります。 ラベルが選ばれていて、Cloud App Security ポリシーの条件 (ラベル) に一致するファイルがダウンロードされると、アクセス許可がある対応する保護が、ダウンロード時にファイルに適用されます。 元のファイルはクラウド アプリ内にそのまま残っていますが、ダウンロードされるファイルは保護されています。 ファイルにアクセスしようとするユーザーは、適用された保護によって決定されるアクセス許可要件を満たす必要があります。  
+Cloud App Security のセッション ポリシーで実行する **[アクション]** として **[保護]** が設定されていると、Conditional Access App Control はポリシーのファイル フィルターに従って、ファイルのラベル付けとその後の保護を適用します。 ラベルは Azure の Azure Information Protection コンソールで構成され、Cloud App Security ポリシーのオプションとしてラベルが表示されるためには、ラベル内で **[保護]** が選ばれている必要があります。 ラベルが選ばれていて、Cloud App Security ポリシーの条件 (ラベル) に一致するファイルがダウンロードされると、アクセス許可がある対応する保護が、ダウンロード時にファイルに適用されます。 元のファイルはクラウド アプリ内にそのまま残っていますが、ダウンロードされるファイルは保護されています。 ファイルにアクセスしようとするユーザーは、適用された保護によって決定されるアクセス許可要件を満たす必要があります。  
  
+>[!div class="step-by-step"]
+[«前へ: Conditional Access App Control の展開](proxy-deployment-aad.md)
+[次へ: アクセス ポリシー »](access-policy-aad.md)
+
  
 ## <a name="see-also"></a>参照  
-[Azure AD のプロキシ機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
+[Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
   
