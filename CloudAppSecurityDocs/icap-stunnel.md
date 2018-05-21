@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 517a468e0ff1b64f3f24e2791b576f7249451c9e
-ms.sourcegitcommit: d43a0f5c17e1961348dcbf315120046bb83305c8
+ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -280,7 +280,7 @@ Cloud App Security によって使われる検出サーバーは、Web サーバ
 2. **[ICAP]** > **[Response Filtering]\(応答フィルタリング\)** で、**[Ignore Responses Smaller Than]\(次の値より小さい応答を無視する\)** の値を 1 に変更します。
 
 
-3. そして、**[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/" を追加します。
+3. そして、**[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/\*" を追加します。
      ![コンテンツ タイプを調べる](./media/icap-inspect-content-type.png)
 
 4. **[保存]** をクリックします。
