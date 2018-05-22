@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4a493fcc3c2c92f48e1fe573993ea987b57f7f6d
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -52,8 +52,11 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
 > |----|----|----|
 > |US|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us.portal.cloudappsecurity.com|
 > |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.us2.portal.cloudappsecurity.com|
+> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.us3.portal.cloudappsecurity.com|
 > |EU|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|portal.cloudappsecurity.com<br></br>\*.portal.cloudappsecurity.com <br></br>\*.eu.portal.cloudappsecurity.com|
-> 
+> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|portal.cloudappsecurity.com<br></br>*.portal.cloudappsecurity.com <br></br>*.eu2.portal.cloudappsecurity.com|
+
+
 > 
 > [!NOTE]
 > ワイルドカード (\*) の代わりに、特定のテナント URL のみを開くことができます。たとえば、上記のスクリーンショットでは、mod244533.us.portal.cloudappsecurity.com を開くことができます。
@@ -69,7 +72,9 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 > |----|----|
 > |US|13.91.91.243|
 > |US2|52.184.165.82|
+> |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
+> |EU2|40.81.156.154<br>40.81.156.156|
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
@@ -87,7 +92,9 @@ Cloud App Security にアクセスされるサードパーティ製アプリに�
 > |----|----|
 > |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US3|40.90.218.197<br>40.90.218.203|
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153|
 
 
 ## <a name="third-party-dlp-integration"></a>サード パーティ DLP との統合
@@ -111,7 +118,9 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 > |----|----|
 > |US|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
 > |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US3|40.90.218.197<br>40.90.218.203|
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153|
 
 ## <a name="email-server"></a>電子メール サーバー
 
@@ -134,7 +143,9 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
   |-------------|---------------------------------------------------|
   |     US      |   https://adaprodconsole.blob.core.windows.net/   |
   |     US2     | https://prod03use2console1.blob.core.windows.net/ |
+  |     US3     |https://prod5usw2console1.blob.core.windows.net/   |
   |     EU      | https://prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     |https://prod4uksconsole1.blob.core.windows.net/    |
 
 > [!NOTE]
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。

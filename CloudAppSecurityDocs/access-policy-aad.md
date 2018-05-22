@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/9/2018
+ms.date: 5/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dbf878e3dee283c6d200008b414fb062f9e79723
-ms.sourcegitcommit: aefbc9e0a381f0b7b6ef70c4a74b4b31d8bd9c62
+ms.openlocfilehash: 06a78107b33613fe8d947ed55e057990268c7026
+ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/14/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 05/09/2018
 
 
 >[!div class="step-by-step"]
-[« セッション ポリシー](session-policy-aad.md)<br>
-[使用事例 »](use-case-proxy-block-session-aad.md)
+[« 戻る: セッション ポリシーを作成する方法](session-policy-aad.md)<br>
+[次へ: 人気のあるユース ケースを参照する »](use-case-proxy-block-session-aad.md)
 
 
 Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 管理対象デバイスにクライアント証明書をロールアウトしたり、サードパーティの MDM 証明書など、既存の証明書を活用したりすることで、ドメインに参加していないデバイスや Windows Intune で管理されていないデバイスを含め、あらゆるデバイスを対象にアクセス ポリシーを作成できます。 たとえば、管理対象デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。 
@@ -95,8 +95,9 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 
 >[!div class="step-by-step"]
-[« 前へ: セッション ポリシー](session-policy-aad.md)
-[次へ:Microsoft Cloud App Security の Conditional Access App Control を使用する機密情報のダウンロードのブロック »](use-case-proxy-block-session-aad.md)
+[« 戻る: セッション ポリシーを作成する方法](session-policy-aad.md)<br>
+[次へ: 人気のあるユース ケースを参照する »](use-case-proxy-block-session-aad.md)
+
  
 ## <a name="see-also"></a>参照  
 [Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
