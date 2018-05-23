@@ -1,6 +1,6 @@
 # 理解と調査
 ## [Cloud App Security とは](what-is-cloud-app-security.md)
-## [Cloud App Security コンプライアンス、信頼、データのセキュリティとプライバシー](cas-compliance-trust.md)
+## [Cloud App Security のデータのセキュリティとプライバシー](cas-compliance-trust.md)
 ## [新機能](release-notes.md)
 ### [過去のリリースのアーカイブ](release-note-archive.md)
 ## 比較
