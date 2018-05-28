@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c8fb1c11fb522b826f7106798f2583e5fa4c6be6
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: e7531650e17fb7cca2a187bece484e48fe406aae
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 04/23/2018
 # <a name="what-is-microsoft-cloud-app-security"></a>Microsoft Cloud App Security とは
 
 > [!NOTE]
-> Office 365 の Advanced Security Management と Cloud App Security の詳細については、「[Get started with Advanced Security Management](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」(Advanced Security Management の概要) を参照してください。
+> Office 365 Cloud App Security については、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」をご覧ください。
 
 クラウドに移行することで、従業員の柔軟性が向上し、IT コストが削減されますが、組織のセキュリティを確保するための複雑さと課題も新たに生じます。 クラウド アプリケーションの利点を最大限に活用するには、IT チームはアクセスを許可することと、重要なデータを保護するための制御を維持することの間で適切なバランスを見つける必要があります。  
 
@@ -46,7 +46,7 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 -   Cloud Discovery を使用して、クラウド環境と組織で使用しているクラウド アプリをマップおよび特定する。
 -   クラウド内のアプリを承認および却下する。  
 -   プロバイダーの API を活用する簡単にデプロイ可能なアプリ コネクタを使用して、接続したアプリを把握および統制する。  
--   プロキシ保護を使用して、クラウド アプリ内で実行されるアクセスとアクティビティをリアルタイムで把握し、制御する。
+-   Conditional Access App Control 保護を使用して、クラウド アプリ内で実行されるアクセスとアクティビティをリアルタイムで把握し、制御する。
 -   ポリシーを設定し、継続的に調整できるようにすることで、継続的に制御する。  
 
 ![Cloud App Security アーキテクチャの図](./media/proxy-architecture.png)  
@@ -81,8 +81,8 @@ Cloud App Security では、*クラウド アプリ カタログ*を使用して
 
 Cloud App Security は、クラウド プロバイダーから提供される API を使用します。 各アプリには、独自のフレームワークと API の制限事項があります。 Cloud App Security では、各アプリ プロバイダーと連携して、API の使用を最適化すると共に、最適なパフォーマンスを確保しています。 アプリが API に課すさまざまな制限事項 (調整、API の制限、動的なタイムシフト API の期間など) を考慮して、Cloud App Security エンジンでは使用可能な機能が活用されます。 テナント内のすべてのファイルのスキャンなど、一部の処理には大量の API が必要となるため、長時間にわたって実行されます。 ポリシーによっては、数時間または数日間にわたって実行される場合があります。  
 
-### <a name="proxy-protection"></a>プロキシによる保護
-Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 プロキシでは、次のようにして組織を保護することができます。 
+### <a name="conditional-access-app-control-protection"></a>Conditional Access App Control 保護
+Microsoft Cloud App Security Conditional Access App Control ではリバース プロキシ アーキテクチャを利用して、クラウド環境へのアクセスとクラウド環境内で実行されるアクティビティのリアルタイムの表示と制御を行うのに必要なツールを提供します。 Conditional Access App Control では、次のようにして組織を保護することができます。 
 -   データのダウンロードをブロックして、事前にデータ リークを防ぐ
 -   暗号化によって保護されるように、クラウドでのデータの格納とクラウドからのデータのダウンロードを強制するルールを設定する
 -   非管理対象デバイスでの実行内容を監視できるように、保護されていないエンドポイントを把握する

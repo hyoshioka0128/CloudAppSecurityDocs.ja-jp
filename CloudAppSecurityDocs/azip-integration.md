@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 72850e76d653de3b9d355782d78254567e50aa91
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
+ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/25/2018
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -168,7 +168,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 これらのポリシーについて、アラートやユーザー通知を設定するか、すぐに対処することもできます。
 詳細については、[ガバナンス アクション](governance-actions.md)に関するページを参照してください。
 
-[Azure Information Protection](https://docs.microsoft.com/en-us/information-protection/understand-explore/what-is-information-protection) で詳細を確認するとともに、Azure Information Protection の[クイック スタート チュートリアル](https://docs.microsoft.com/en-us/information-protection/get-started/infoprotect-quick-start-tutorial)もご覧ください。
+[Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) で詳細を確認するとともに、Azure Information Protection の[クイック スタート チュートリアル](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)もご覧ください。
 
 
  
