@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 828cc94a-248b-44f6-a1ba-c28c0a135f8c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9bfc880cdaa0bf87abfd2b3b34cdf647a4aa1aaf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: cfc1d9442c50153ce06a358ccdd88b4ab316a88d
+ms.sourcegitcommit: 592478b77531328e23bedd6e8964c07321e6b1a9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/22/2018
+ms.locfileid: "34445337"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 |Error|[説明]|解決方法|
 |----|----|----|
-| **ポリシー <policy name> が自動的に無効になりました。**|Microsoft Cloud App Security でこのエラーが表示される場合は、指定されたポリシーの構成を修正する必要があることを意味します。 Microsoft Cloud App Security ポリシーを作成するときは、IP タグや IP 範囲フィルターなどの Cloud App Security 内で作成された他のオブジェクトを頻繁に活用します。 ポリシーで使用した IP タグまたは範囲が後から削除されると、ポリシーが自動的に無効になり、このエラーが表示されます。 |ポリシーを復元するには、ポリシーを編集してそのフィルターから消去されたすべてのオブジェクトを削除して、ポリシーを保存します。|
+| **構成エラーのため、ポリシー <policy name> が自動的に無効になりました**|Microsoft Cloud App Security でこのエラーが表示される場合は、指定されたポリシーの構成を修正する必要があることを意味します。 Microsoft Cloud App Security ポリシーを作成するときは、IP タグやカスタムの機密の種類など、Cloud App Security またはセキュリティとコンプライアンス センター内で作成した他のオブジェクトを頻繁に活用します。 ポリシーで使用した IP タグまたはカスタムの機密の種類が後から削除されると、ポリシーが自動的に無効になり、このエラーが表示されます。 これは、フィルターが複雑すぎるなど、より一般的な構成エラーを示している可能性もあります。 |ポリシーを復元するには、ポリシーを編集し、示されているすべての構成エラーを修正します。 つまり、通常は、すべての削除されたオブジェクトをポリシーのフィルターから削除して、ポリシーを保存する必要があります。|
 
 
 

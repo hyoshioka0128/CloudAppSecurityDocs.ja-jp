@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df50762bc16e9d272312d88bbc584a86615d17ee
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558925"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -124,9 +125,20 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 ## <a name="email-server"></a>電子メール サーバー
 
-Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
+既定のテンプレートと設定を使用して通知の送信を有効にするには、スパム対策のホワイトリストにこれらの IP アドレスを追加します。 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
 
-198.2.134.139 (mail1.cloudappsecurity.com)
+- 65.55.234.192/26
+- 207.46.200.0/27
+- 65.55.52.224/27
+- 94.245.112.0/27
+- 111.221.26.0/27
+- 207.46.50.192/26
+
+通知をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 これを機能させるには、Microsoft Cloud App Security ポータルで、**[設定]** の下で **[メールの設定]** を選択し、MailChimp のサービス利用規約とプライバシーに関する声明を確認して、Microsoft がユーザーの代理として MailChimp を使用することを許可します。
+
+これを行わない場合、電子メール通知はすべての既定の設定を使用して送信されます。
+
+MailChimp を使用するには、スパム対策のホワイトリストに IP アドレス 198.2.134.139 (mail1.cloudappsecurity.com) を追加して、通知の送信を可能にします。
 
 この IP アドレスを必ずお使いのスパム対策サービスにホワイトリスト登録し、通知が送信されるようにしてください。
 

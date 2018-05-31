@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,19 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 067709747631e18fbc88de165127d89be8fef068
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
+ms.sourcegitcommit: 4952c6368978f435df9e184ec885b200b70dd854
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/23/2018
+ms.locfileid: "34470663"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
-# <a name="microsoft-cloud-app-security-compliance-trust-data-security-and-privacy"></a>Microsoft Cloud App Security のコンプライアンス、信頼、データ セキュリティ、プライバシー
+# <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
 Microsoft Cloud App Security は、Microsoft Cloud Security スタックの重要なコンポーネントです。 クラウド アプリケーションが約束する完全なメリットを実現するだけでなく、機密データの包括的な可視化と監査の機能、きめ細かいコントロールを通して制御を維持できる総合的なソリューションです。
 
@@ -60,6 +63,9 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 ## <a name="privacy"></a>プライバシー
 
 ### <a name="you-are-the-owner-of-your-data"></a>お客様のデータはお客様が所有
+- Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
+- 
+- 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[**[ユーザーとアカウント]**](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 -   お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
 
@@ -74,6 +80,10 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 ### <a name="privacy-controls"></a>プライバシー管理
 
 -   プライバシー管理は、組織内のどのユーザーがサービスにアクセスでき、それらの各ユーザーが何にアクセスできるかを構成するのに役立ちます。
+
+## <a name="updating-personal-data"></a>個人データの更新
+ユーザーの個人データは、使用する SaaS アプリケーションのユーザーのオブジェクトから派生します。 このため、これらのアプリケーションのユーザー プロファイルに加えられた変更はすべて、Microsoft Cloud App Security に反映されます。
+
 
 ## <a name="data-location"></a>データの場所
 
@@ -104,6 +114,12 @@ Microsoft Cloud App Security は次のようにデータを保持しています
 Microsoft のデータ管理の実施に関する詳細については、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
 [透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+
+### <a name="deleting-personal-data"></a>個人データの削除
+接続されているクラウド アプリケーションからデータが削除されると、Microsoft Cloud App Security は、そのデータのコピーを 2 年以内に自動的に削除します。
+
+### <a name="exporting-personal-data"></a>個人データのエクスポート
+Microsoft Cloud App Security には、すべてのユーザー アクティビティとセキュリティ通知の情報を CSV に[エクスポート](activity-filters.md#export)する機能が備わっています。
 
 ## <a name="security"></a>セキュリティ
 

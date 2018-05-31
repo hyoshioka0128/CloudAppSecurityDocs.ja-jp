@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fe6d3794a19f7223df263a941e097f365c275ea1
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558891"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -29,18 +30,13 @@ Microsoft Cloud App Security から管理者に送信されるアラート要求
 
 1. メニュー バーで設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")を選択し、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
 
-2. **From email address (電子メール アドレスから)**: 通知の送信に使用する電子メール アカウント。  
+ ![メールの設定](./media/mail-settings-config.png)
+
+2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 電子メールの送信者 ID をカスタマイズする場合は、**[From display name]\(表示名から\)**、**[From email address]\(電子メール アドレスから\)**、**[返信用メール アドレス]** を設定できます。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを自動的に使用します。 これを有効にするためには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります - それ以外の場合は、Microsoft Cloud App Security は既定の設定を使用して通知を送信します。
    
-   **From display name (表示名から)**: 電子メール メッセージの **[From]** フィールドに表示する名前。  
    > [!NOTE]
    > [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
 
-   **返信用メール アドレス**: メッセージの返信に使用される電子メール アカウント。  
-  
-     ![[メールの設定] の構成](./media/mail-settings-config.png "[メールの設定] の構成")  
-
-   >[!NOTE]
-   >**[送信元メール アドレス]** フィールドを独自のドメインに変更する方法については、[こちら](https://mandrill.zendesk.com/hc/articles/205582277-How-do-I-add-DNS-records-for-my-sending-domains-)の指示を参照してください。
   
 3. **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
   

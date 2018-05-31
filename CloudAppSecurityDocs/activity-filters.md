@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10f8c4bef7e62c6a3e6f90c5df1f67e050f6c589
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: c80a67b0daa9191764528c0fcc2ed8fe5795541a
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34559078"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -42,7 +43,9 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
 
  ![詳細なアクティビティ ログ フィルター](media/activity-log-filter-advanced.png)
 
-
+> [!NOTE] 
+> レガシ タグは、古い "ユーザー" フィルターを使用するアクティビティ ポリシーに追加されます。 このフィルターは、引き続き通常どおり機能します。 レガシ タグを削除する場合は、フィルターを削除し、新しい **[ユーザー名]** フィルターを使用して、フィルターを再度追加できます。
+ 
 ## <a name="the-activity-drawer"></a>アクティビティ ドロワー
 
 ### <a name="working-with-the-activity-drawer"></a>アクティビティ ドロワーの使用
@@ -107,6 +110,15 @@ IP アドレスの洞察を表示するには:
 
 
 ![Cloud App Security での IP アドレスの洞察](./media/ip-address-insights.png)
+
+## アクティビティのエクスポート <a name="export"></a>
+
+ユーザー アクティビティはすべて CSV ファイルにエクスポートできます。 
+
+**[アクティビティ ログ]** で、右上隅の上にある **[エクスポート]** ボタンをクリックします ![エクスポート ボタン](./media/export-button.png)。
+
+[!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
+
 
 
 ## <a name="see-also"></a>参照  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 417e5eb128e5ec351369d8703a3c220117031f32
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: f93a78e35c76e9dd76e1264fb11d6046ed2b6d18
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558942"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -32,7 +33,7 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
 
 ### <a name="step-1-stream-your-azure-activity-logs-to-event-hubs"></a>手順 1: Event Hubs への Azure アクティビティ ログのストリーミング
 
-1. Azure サブスクリプションの Azure アクティビティ ログをイベント ハブにストリーミングします。 https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs にある Azure ドキュメントの公式ガイドに従います。
+1. Azure サブスクリプションの Azure アクティビティ ログをイベント ハブにストリーミングします。 https://docs.microsoft.com/azure/monitoring-and-diagnostics/monitoring-stream-activity-logs-event-hubs にある Azure ドキュメントの公式ガイドに従います。
 
    > [!NOTE]
    > 複数の Azure サブスクリプションをお持ちの場合は、1 つのイベント ハブを全サブスクリプションで共有して使用し、各サブスクリプションでこの手順を繰り返します。
@@ -48,9 +49,7 @@ Event Hubs を使用して Cloud App Security を Azure に接続します。 �
   
    ![Event Hubs メニュー](media/azure-event-hubs.png "Azure Event Hubs")
 
-2. イベント ハブの名前空間を選択します。
-  
-   ![イベント ハブの名前空間](media/azure-namespace.png "Azure 名前空間")
+2.  Azure のポップアップで、**[Connect Microsoft Azure]\(Microsoft Azure に接続\)** をクリックします。
 
 3. メニューの **[エンティティ]** から、**[イベント ハブ]** をクリックします。 
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ce67a75ee0fe62bec21660c87ce4a7d213aba1bf
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8d8a91193d6162cc6f37e905bdcb6b32a9c53784
+ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/27/2018
+ms.locfileid: "34558976"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -53,15 +54,13 @@ Cloud App Security は、次の Office 365 アプリをサポートしていま�
  
 1.  **[接続]** アプリページで、[+] ボタン、**[Office 365]** の順にクリックします。  
 
-2.  Office 365 ポップアップで、[Office 365 に接続する] をクリックします。
+    ![O365 を接続する](./media/connect-0365.png) 
 
-      ![O365 を接続する](./media/connect-0365.png) 
+2.  Office 365 ポップアップで、**[Office 365 に接続する]** をクリックします。
+
+    ![O365 を接続する](./media/office-connect.png) 
  
-3.  [今すぐテスト] をクリックして Office 365 への接続をテストします。 テストには数分かかる場合があります。
-  
-    ![O365 のテスト接続](./media/o365-test-connection.png) 
- 
-4.   Office 365 が正常に接続されていることが表示されたら、**[閉じる]** をクリックします。
+3.   Office 365 が正常に接続されていることが表示されたら、**[閉じる]** をクリックします。
   
      ![接続されている O365](./media/o365-connected.png) 
 
