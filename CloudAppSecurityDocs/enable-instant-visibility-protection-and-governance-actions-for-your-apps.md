@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 3b15ba46-ac9c-4b4f-aefc-137edc903bc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b0f009770d16f7d801df637e1ba632cc6f82f1ac
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8e9fb2a64417d68e64b2b37088fcb5baae3e6fe2
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568975"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -90,7 +91,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 > |**検疫**|✔|✔|適用できません|近日中にご利用になれます|||近日中にご利用になれます||  
 > |**アプリのアクセス許可の表示**|✔|プロバイダーはサポートしていません|適用できません|✔||✔|プロバイダーはサポートしていません||  
 > |**アプリのアクセス許可の取り消し**|✔||適用できません|✔||✔|適用できません||  
-> |**Azure Information Protection ラベルの適用**|✔|✔|||||||  
+> |**Azure Information Protection ラベルの適用**|✔|✔||✔|||||  
 
 ## <a name="prerequisites"></a>前提条件  
 
