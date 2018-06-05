@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0b9a5ccee5fed0df3ebe29f8549473ffbb36a0b3
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559095"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568664"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security を使用すると、デプロイのスコープを
      
      ![包含ルール](./media/include-rule.png)
 
-4. 特定のグループまたはユーザーを監視から除外するよう設定するには、**[含まない]** タブでプラス ![アイコン](./media/plus-icon.png) をクリックします。 <br>**[Create new include rule]\(新しい包含ルールの作成\)** ダイアログ ボックスで、次のパラメーターを設定します。
+4. 特定のグループを監視から除外するよう設定するには、**[含まない]** タブでプラス ![アイコン](./media/plus-icon.png) をクリックします。 <br>**[Create new include rule]\(新しい包含ルールの作成\)** ダイアログ ボックスで、次のパラメーターを設定します。
 
     1. **[Type rule name]\(ルール名を入力してください\)** の下に、ルールの内容を表す名前を入力します。
     **[ユーザー グループの選択]** の下で、Cloud App Security に監視させないグループをすべて選択します。
@@ -62,6 +62,7 @@ Microsoft Cloud App Security を使用すると、デプロイのスコープを
 - "ドイツのすべてのユーザー" というユーザー グループを除外
 - Office 365 のアクティビティに対してのみ "グローバル営業" というユーザー グループを含める
 - Power BI のアクティビティに対してのみ "営業部長" というユーザー グループを含める
+- Salesforce を Microsoft Cloud App Security に接続し、それに対するルールを設定しない
 
 次のユーザー アクティビティが監視されます。
 
@@ -72,6 +73,9 @@ Microsoft Cloud App Security を使用すると、デプロイのスコープを
 |Cornel|グローバル営業<br>営業部長|Office 365 とすべてのサブ アプリ|
 |Raymond|営業部長|Power BI のみ|
 
+> [!NOTE] 
+> このルールで、他のアプリがグループのスコープによる影響を受けることはありません。
+> 例では、Salesforce の場合、すべてのユーザー グループのすべてのアクティビティが監視されます。
 
   
     

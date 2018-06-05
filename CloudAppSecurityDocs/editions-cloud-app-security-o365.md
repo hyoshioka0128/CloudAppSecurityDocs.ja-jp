@@ -1,23 +1,24 @@
 ---
-title: "Cloud App Security と Office 365 Cloud App Security の違い | Microsoft ドキュメント"
-description: "このトピックでは、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。"
-keywords: 
+title: Cloud App Security と Office 365 Cloud App Security の違い | Microsoft ドキュメント
+description: このトピックでは、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。
+keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/15/2018
+ms.date: 5/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: 
+ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfe5f1170793249290e0785c99bd94548dbef92f
-ms.sourcegitcommit: 9cfb4b4e91e37fa3acf238b729cb68be0adc7086
+ms.openlocfilehash: 5edbb6a812060cee1fef9b0bdf78bc31d362dfaf
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567610"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security と Office 365 Cloud App Security の違い
 
@@ -36,7 +37,7 @@ Office 365 Cloud App Security は Microsoft Cloud App Security のサブセッ�
 
 |機能|機能|Microsoft Cloud App Security|Office 365 Cloud App Security|
 |----|----|----|----|
-|Cloud Discovery|検出されたアプリ |15,000 を超えるクラウド アプリ  |Office 365 と同様の機能を持つ 750 を超えるクラウド アプリ|
+|Cloud Discovery|検出されたアプリ |16,000 を超えるクラウド アプリ  |Office 365 と同様の機能を持つ 750 を超えるクラウド アプリ|
 ||検出分析の展開|ログの手動アップロードと自動アップロード|ログの手動アップロード|
 ||ユーザーのプライバシー保護のためのログの匿名化|はい||
 ||すべてのクラウド アプリ カタログへのアクセス|はい||
@@ -62,4 +63,3 @@ Office 365 Cloud App Security は Microsoft Cloud App Security のサブセッ�
 基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。    
 
 Premier サポートをご利用のお客様も、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することができます。   
-

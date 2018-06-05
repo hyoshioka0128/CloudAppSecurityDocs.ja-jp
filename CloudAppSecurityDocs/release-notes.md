@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5d7d03bc2c30716c9c449f66734ea65c58220eb
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34559061"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568582"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,21 +39,28 @@ Microsoft データ分類サービスには、Office 365、Azure Information Pro
 
 -   **Microsoft Azure への接続** (段階的なロールアウト)<br>
 Microsoft Cloud App Security では、アマゾン ウェブ サービスを超えて IaaS 監視機能を拡張しており、Microsoft Azure がサポートされるようになりました。 これにより、Cloud App Security ですべての Azure サブスクリプションをシームレスに接続し、監視できます。 この接続では、次のような、Azure 環境を保護するための一連の強力なツールが提供されます。 
- -  ポータルを通じて実行されるすべてのアクティビティの表示。
- -  危険性の高いユーザーを、一時停止や再サインインの強制によって自動的に保護する機能に加えて、望ましくない動作をアラートするカスタム ポリシーを作成する機能。
- -  異常検出エンジンは Azure のすべてのアクティビティをカバーしており、あり得ない移動、大量の不審なアクティビティ、新しい国からのアクティビティなど、Azure Portal での疑わしい動作を検出すると自動的にアラートが生成されます。<br>
-詳細については、「[Azure を Microsoft Cloud App Security に接続する](connect-azure-to-microsoft-cloud-app-security.md)」を参照してください。
+
+       -    ポータルを通じて実行されるすべてのアクティビティの表示。
+
+       -    危険性の高いユーザーを、一時停止や再サインインの強制によって自動的に保護する機能に加えて、望ましくない動作をアラートするカスタム ポリシーを作成する機能。
+
+       -    異常検出エンジンは Azure のすべてのアクティビティをカバーしており、あり得ない移動、大量の不審なアクティビティ、新しい国からのアクティビティなど、Azure Portal での疑わしい動作を検出すると自動的にアラートが生成されます。<br>
+
+  詳細については、「[Azure を Microsoft Cloud App Security に接続する](connect-azure-to-microsoft-cloud-app-security.md)」を参照してください。
  
--   **スコープ付きデプロイ**<br> (段階的なロールアウト) Microsoft Cloud App Security には、企業がどのユーザーを監視し、グループのメンバーシップに基づいて保護するかを細かく決定するための機能が用意されています。 この機能を使用すると、すべての保護されたアプリケーションでアクティビティが表示されないユーザーを選択できます。 スコープ付き監視機能は次の場合に特に便利です。 
-  - コンプライアンス – コンプライアンスの規制により、ローカルの規制のために特定の国のユーザーの監視を控える必要がある場合。
-  - ライセンス – Microsoft Cloud App Security のライセンスの制限内にとどまる、少数のユーザーを監視する場合。
-詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
+-   **スコープ付きデプロイ** (段階的なロールアウト) <br>
+Microsoft Cloud App Security には、企業がどのユーザーを監視し、グループのメンバーシップに基づいて保護するかを細かく決定するための機能が用意されています。 この機能を使用すると、すべての保護されたアプリケーションでアクティビティが表示されないユーザーを選択できます。 スコープ付き監視機能は次の場合に特に便利です。 
+
+    -   コンプライアンス – コンプライアンスの規制により、ローカルの規制のために特定の国のユーザーの監視を控える必要がある場合。
+
+       -    ライセンス – Microsoft Cloud App Security のライセンスの制限内にとどまる、少数のユーザーを監視する場合。
+   詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
 
 -   **検出されたアプリに対する侵害されたアプリのアラート**<br>
-テナントの検出されたアプリのいずれかが侵害された場合に通知する、組み込みのアラートが追加されました。 このアラートによって、違反の日時 (ユーザーがアプリを使用していた日時) に関する情報が提供され、違反に関する情報を提供している、一般に公開されているソースにリンクされます。
+ テナントの検出されたアプリのいずれかが侵害された場合に通知する、組み込みのアラートが追加されました。 このアラートによって、違反の日時 (ユーザーがアプリを使用していた日時) に関する情報が提供され、違反に関する情報を提供している、一般に公開されているソースにリンクされます。
 
 -   **新しいメール サーバー**<br>
-Cloud App Security のメール サーバーは変更され、異なる IP アドレスの範囲を使用するようになりました。 通知を受け取ることができるようにするためには、新しい IP アドレスをスパム対策のホワイトリストに追加します。 通知をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 メール サーバーの IP アドレスの一覧、および MailChimp との連携を有効にする手順については、「[ネットワーク要件](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server)」と[メール設定](mail-settings.md)に関するページをご覧ください。
+ Cloud App Security のメール サーバーは変更され、異なる IP アドレスの範囲を使用するようになりました。 通知を受け取ることができるようにするためには、新しい IP アドレスをスパム対策のホワイトリストに追加します。 通知をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 メール サーバーの IP アドレスの一覧、および MailChimp との連携を有効にする手順については、「[ネットワーク要件](https://docs.microsoft.com/cloud-app-security/network-requirements#email-server)」と[メール設定](mail-settings.md)に関するページをご覧ください。
 
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security リリース 123

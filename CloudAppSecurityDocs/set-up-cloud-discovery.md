@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2017
+ms.date: 5/27/2017
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3daf04f3caa2541bacafe6be33c7f9714b1dda71
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 403d61fd6c0177371dab351413e80e40dde41386
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567661"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
-Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上のリスク要因がランクおよびスコア付けされた Microsoft Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
+Cloud Discovery は、16,000 を超えるクラウド アプリの 70 以上のリスク要因がランクおよびスコア付けされた Microsoft Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
 
 ## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットと継続的なリスク評価レポート 
 
@@ -39,7 +40,7 @@ Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上の�
 
 -   **解析** – Cloud App Security で、トラフィック ログからトラフィック データが抽出され、データ ソースごとに専用のパーサーを使用して解析されます。  
 
--   **分析** – トラフィック データをクラウド アプリ カタログと比較して分析することで、15,000 以上のクラウド アプリを識別できるほか、アプリのリスク スコアの評価もできます。 アクティブ ユーザーと IP アドレスも、分析の一環として識別されます。  
+-   **分析** – トラフィック データをクラウド アプリ カタログと比較して分析することで、16,000 以上のクラウド アプリを識別できるほか、アプリのリスク スコアの評価もできます。 アクティブ ユーザーと IP アドレスも、分析の一環として識別されます。  
 
 -   **レポートの生成** – ログ ファイルから抽出されたデータのリスク評価レポートが生成されます。   
 

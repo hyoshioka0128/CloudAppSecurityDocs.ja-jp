@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 5/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 863801bab42b957af98541da326d9b7ec6c69ccc
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34567678"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 ## <a name="the-cloud-app-catalog"></a>クラウド アプリ カタログ
 
-クラウド アプリ カタログを使うと、Cloud Discovery で識別されたものの全体像を把握できます。 Cloud Discovery は、15,000 を超えるクラウド アプリの 60 以上のリスク要因がランクおよびスコア付けされた Microsoft Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
+クラウド アプリ カタログを使うと、Cloud Discovery で識別されたものの全体像を把握できます。 Cloud Discovery は、16,000 を超えるクラウド アプリの 70 以上のリスク要因がランクおよびスコア付けされた Microsoft Cloud App Security のクラウド アプリ カタログに対し、トラフィック ログ解析を実行します。これにより、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
 **クラウド アプリ カタログ**では、規制遵守の認定、業界標準、ベスト プラクティスに基づいて、クラウド アプリのリスクをランク付けします。 クラウド アプリ カタログを最新に保つために、次の 4 つの補完的なプロセスが実行されます。
 1.  データのクラウド アプリからの自動抽出 (SOC 2 準拠、サービスの条件、ログオン URL、プライバシー ポリシー、本社所在地などの属性)。
 2.  Cloud App Security のアルゴリズムを使用したデータの高度な自動抽出 (HTTP セキュリティ ヘッダーなどの属性)。

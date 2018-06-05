@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6db675140d808b6dc8f7cd0d742a6745591e913
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 5e8e98ce2ea00f834a59e4e472911d2f70e4b6e4
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558925"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568630"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -123,9 +123,9 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 > |EU|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
 > |EU2|40.81.156.155<br>40.81.156.153|
 
-## <a name="email-server"></a>電子メール サーバー
+## <a name="mail-server"></a>メール サーバー
 
-既定のテンプレートと設定を使用して通知の送信を有効にするには、スパム対策のホワイトリストにこれらの IP アドレスを追加します。 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
+既定のテンプレートと設定から通知が送信されるようにするには、スパム対策のホワイトリストにこれらの IP アドレスを追加します。 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -134,13 +134,12 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-通知をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 これを機能させるには、Microsoft Cloud App Security ポータルで、**[設定]** の下で **[メールの設定]** を選択し、MailChimp のサービス利用規約とプライバシーに関する声明を確認して、Microsoft がユーザーの代理として MailChimp を使用することを許可します。
+メール送信者の ID をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 これを機能させるには、Microsoft Cloud App Security ポータルの、**[設定]** の下で **[メールの設定]** を選択し、MailChimp のサービス利用規約とプライバシーに関する声明を確認して、Microsoft がユーザーの代理として MailChimp を使用することを許可します。
 
 これを行わない場合、電子メール通知はすべての既定の設定を使用して送信されます。
 
 MailChimp を使用するには、スパム対策のホワイトリストに IP アドレス 198.2.134.139 (mail1.cloudappsecurity.com) を追加して、通知の送信を可能にします。
 
-この IP アドレスを必ずお使いのスパム対策サービスにホワイトリスト登録し、通知が送信されるようにしてください。
 
 ## <a name="log-collector"></a>ログ コレクター 
 
@@ -169,5 +168,4 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
-
 

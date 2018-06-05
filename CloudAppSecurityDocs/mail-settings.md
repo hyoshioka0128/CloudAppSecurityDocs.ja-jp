@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 5/29/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6b9ec2fca122bfdfdea4e6ad298a689dd79bcaf6
-ms.sourcegitcommit: 0d73d21f961dc883f01a329bcf16dcaf070dca2a
+ms.openlocfilehash: 6d19e90b8eda14868f1b25e6d9a776b030aeedbd
+ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2018
-ms.locfileid: "34558891"
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34568426"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -30,9 +30,9 @@ Microsoft Cloud App Security から管理者に送信されるアラート要求
 
 1. メニュー バーで設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")を選択し、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
 
- ![メールの設定](./media/mail-settings-config.png)
+   ![メールの設定](./media/mail-settings-config.png)
 
-2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 電子メールの送信者 ID をカスタマイズする場合は、**[From display name]\(表示名から\)**、**[From email address]\(電子メール アドレスから\)**、**[返信用メール アドレス]** を設定できます。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを自動的に使用します。 これを有効にするためには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります - それ以外の場合は、Microsoft Cloud App Security は既定の設定を使用して通知を送信します。
+2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次のいずれか、またはすべてを変更することができます: **[From display name]\(送信元の表示名\)**、**[From email address]\(送信元のメール アドレス\)**、**[返信用メール アドレス]**。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを自動的に使用します。 これを有効にするためには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります - それ以外の場合は、Microsoft Cloud App Security は既定の設定を使用して通知を送信します。
    
    > [!NOTE]
    > [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
