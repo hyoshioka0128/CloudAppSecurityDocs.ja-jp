@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a89c20e728d852ee3220be861e3e0f5988418a21
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759983"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -77,7 +78,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 
 6. Conditional Access App Control アプリ テーブルで、**[利用可能なコントロール]** 列を参照し、Azure AD の条件付きアクセスとセッション制御の両方が表示されていることを確認します。 <br></br>アプリのセッション制御が表示されない場合、その特定のアプリではまだ使用できないことを意味し、代わりに **[要求セッション制御]** リンクが表示されます。 それをクリックしてダイアログを開き、セッション制御へのアプリのオンボードを要求します。 Conditional Access App Control のパブリック プレビュー期間中は、オンボード プロセスは Microsoft Cloud App Security チームと共に行います。
   
-   ![セッション制御の要求](./media/request-session-control.png)
+   ![セッション制御の要求](./media/proxy-view-new-apps.png)
 
 7. 省略可能 - 次のように、クライアント証明書を使用してデバイスを識別します。
 
