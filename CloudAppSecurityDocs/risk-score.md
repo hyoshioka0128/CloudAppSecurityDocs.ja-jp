@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/27/2018
+ms.date: 6/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ed1896655c6d94eb134c3dd0aa0bac345f08aa89
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 40b477b3618e39473fe09568b3da761ce4d3b898
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567678"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759918"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -102,7 +102,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
   
 1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
-2. **[スコア メトリックの構成]** で **[重要度]** をスライドして、フィールドの重み付けまたはリスク カテゴリを **[無視]**、**[低]**、**[中]**、**[高]**、または **[非常に高い]** にします。  
+2. **[Score metric]\(スコア メトリック\)** で **[重要度]** をスライドして、フィールドの重み付けまたはリスク カテゴリを **[無視]**、**[低]**、**[中]**、**[高]**、または **[非常に高い]** にします。  
   
 3. さらにスコアの計算では、特定の値を使用できない、または適用対象外として設定することができます。 このような値を設定すると、該当なしの値 (N/A 値) が、計算されたスコアのマイナスに寄与します。  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/30/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1d7d73fcc4dd31874613cb0e31e21b1bb21060db
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 6e9a2f9466352296caea57ee3219fa6a5151f1c8
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568392"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251771"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -54,8 +54,8 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
    - [スナップショット レポートの管理] ページへのアクセスと表示 
 
 - アプリ/インスタンス管理者: ここで選択した特定のアプリまたはアプリのインスタンスのみを扱う Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、Box European インスタンスに対する管理者アクセス許可をユーザーに与えた場合、管理者は次のように、ファイル、アクティビティ、ポリシー、アラートのいずれの場合も、このアプリ インスタンスに関連するデータのみを表示できます。
-- 
-  - アクティビティ ページ - タグ付きのエンティティに関するアクティビティのみ
+
+  - アクティビティ ページ - 特定のアプリに関するアクティビティのみ
   - アラート - 特定のアプリに関連するアラートのみ
   - ポリシー - すべてのポリシーを表示でき、アプリ/インスタンスのみを扱うポリシーのみを編集または作成できます。
   - アカウント - 特定のアプリ/インスタンスのアカウントのみ
@@ -65,6 +65,21 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - Cloud Discovery アクティビティ - アクセス許可なし
   - セキュリティ拡張機能 - ユーザー アクセス許可を持つ API トークンのアクセス許可のみ
   - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ 
+
+- グループ管理者: ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対してユーザー管理者のアクセス許可を与えた場合、管理者は、次のようにそのユーザー グループに対してのみ、Microsoft Cloud App Security の情報を表示したり変更したりできます。
+
+  - アクティビティ ページ - グループのユーザーに関するアクティビティのみ
+  -     アラート - グループのユーザーに関連するアラートのみ
+  -     ポリシー - すべてのポリシーを表示でき、グループのユーザーを排他的に扱うポリシーのみを編集または作成できます
+  -     アカウント - グループの特定のユーザーのアカウントのみ
+  -     アプリのアクセス許可 – アクセス許可がありません
+  -     ファイル ページ – アクセス許可がありません
+  -     Conditional Access App Control - アクセス許可なし
+  -     Cloud Discovery アクティビティ - アクセス許可なし
+  -     セキュリティ拡張機能 - グループのユーザーを含む API トークンのアクセス許可のみ
+  -     ガバナンス アクション - グループの特定のユーザーの場合のみ
+
+
 
 詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 

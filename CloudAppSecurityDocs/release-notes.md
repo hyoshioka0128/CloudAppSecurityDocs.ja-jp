@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8777b2e073482c8528f70072a97172cd9904e58d
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568582"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251856"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+
+## <a name="cloud-app-security-release-125"></a>Cloud App Security リリース 125
+
+リリース日: 2018 年 6 月 10 日
+
+
+### <a name="new-investigation-capability-by-top-users"></a>上位ユーザーの新しい調査機能: 
+新しい調査ウィジェットが Microsoft Cloud App Security のダッシュボードに追加されました。脅威検出のオープン アラートの数が上位のユーザーを表示します。 この調査ウィジェットを使用すれば、不審なセッションの数が最も多いユーザーに脅威の調査を集中できます。
+
+### <a name="support-for-aws-s3-buckets"></a>AWS S3 バケットのサポート:
+Microsoft Cloud App Security では、AWS S3 バケットとその共有レベルを検出できるようになりました。 これにより、パブリックにアクセスできる AWS バケットにアラートと可視性が備えられます。 また、バケットに基づいてポリシーを作成し、自動ガバナンスを適用することも可能になります。 さらに、**パブリックにアクセス可能な S3 バケット (AWS)** という名前の新しいポリシー テンプレートを利用できます。これを使用して、AWS ストレージを制御するためのポリシーを簡単に作成できます。 これらの新機能を有効にするには、「[AWS の接続](connect-aws-to-microsoft-cloud-app-security.md)」で説明されている新しいアクセス許可を追加することで、AWS に接続されているアプリを更新します。
+
+### <a name="admin-privileges-based-on-user-groups"></a>ユーザー グループに基づく管理特権:
+ユーザー グループごとに Microsoft Cloud App Security 管理者に管理アクセス許可を設定できるようになりました。 たとえば、特定のユーザーを、ドイツのユーザーに対してのみ管理者として設定できます。 これによりユーザーは、ユーザー グループ "ドイツ - すべてのユーザー" に対してのみ、Microsoft Cloud App Security でその情報を表示して変更できます。 詳細については、「[管理アクセス許可の管理](manage-admins.md)」を参照してください。
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security リリース 124
@@ -104,7 +119,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 - Microsoft Cloud App Security のシャドウ IT 検出と監視の機能をユーザー独自のカスタム アプリで実行できるようになりました。 Cloud Discovery にカスタム アプリを追加する新しい機能を使用すると、アプリの使用状況を監視し、使用パターンの変化に関してアラートを受け取ることができます。 詳細については、[カスタム アプリの保護](cloud-discovery-custom-apps.md)に関する記事を参照してください。 この機能は、徐々にロール アウトされていきます。
 
-- Cloud App Security ポータルの **[設定]** ページが再設計されました。 新しい設計では、すべての設定ページの統合、検索機能と強化されたデザインを提供します。 
+- Cloud App Security ポータルの **[設定]** ページが再設計されました。 新しい設計では、すべての設定ページの統合、検索機能と強化されたデザインが提供されます。 
 
 - Cloud Discovery では、Barracuda F シリーズ ファイアウォールおよび Barracuda F シリーズ ファイアウォール Web ログ ストリーミングがサポートされました。
 

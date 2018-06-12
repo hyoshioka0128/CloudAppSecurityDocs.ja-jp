@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6dbfa26443bf1b05c689aec563b8ee71599076c9
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251798"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="policy-templates"></a>ポリシー テンプレート
 
-Microsoft Cloud App Security に存在するすべてのポリシー テンプレートの一覧を次に示します。 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。
+Microsoft Cloud App Security に存在するポリシー テンプレートの一覧を次に示します。 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。
 
 |リスク カテゴリ|テンプレート名|[説明]|
 |-----|----|----|
@@ -46,19 +47,20 @@ Microsoft Cloud App Security に存在するすべてのポリシー テンプ�
 |Cloud Discovery|New sales app (新しい販売アプリ)|50 人を超えるユーザーに使用され、毎日の合計使用量が 50 MB を超える新しい販売アプリが検出されたときにアラートを生成します。|
 |Cloud Discovery|New vendor management system apps (新しいベンダー管理システム アプリ)|50 人を超えるユーザーに使用され、毎日の合計使用量が 50 MB を超える新しいベンダー管理システム アプリが検出されたときにアラートを生成します。|
 |DLP|Externally shared source code (外部で共有されたソース コード)|ソース コードを含むファイルが組織外で共有されたときにアラートを生成します。|
-|DLP|File containing PCI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PCI を含むファイル)|承認されたクラウド アプリで、組み込みのデータ損失防止 (DLP) エンジンによって支払いカード情報 (PCI) を含むファイルが検出されたときにアラートを生成します。|
-|DLP|File containing PHI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PHI を含むファイル)|承認されたクラウド アプリで、組み込みのデータ損失防止 (DLP) エンジンによって保護されている医療情報 (PHI) を含むファイルが検出されたときにアラートを生成します。|
-|DLP|File containing PII detected in the cloud (built-in DLP engine) (クラウド (組み込みの DLP エンジン) で検出された PII を含むファイル)|承認されたクラウド アプリで、組み込みのデータ損失防止 (DLP) エンジンによって個人を特定できる情報 (PII) を含むファイルが検出されたときにアラートを生成します。|
-|脅威の検出|Administrative activity from a non-corporate IP address (企業以外の IP アドレスからの管理アクティビティ)|管理者が、企業 IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 最初に、[設定] ページに移動し**IP アドレス範囲**を設定することで、企業 IP アドレスを構成する必要があります。|
+|DLP|File containing PCI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PCI を含むファイル)|承認されたクラウド アプリで、Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって支払いカード情報 (PCI) を含むファイルが検出されたときに、アラートを生成します。|
+|DLP|File containing PHI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PHI を含むファイル)|承認されたクラウド アプリで、Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって保護されている医療情報 (PHI) を含むファイルが検出されたときに、アラートを生成します。|
+|DLP|クラウド (組み込みの DLP エンジン) で検出された個人情報を含むファイル|承認されたクラウド アプリで、Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって個人を特定できる情報 (PHI) を含むファイルが検出されたときに、アラートを生成します。|
+|脅威の検出|Administrative activity from a non-corporate IP address (企業以外の IP アドレスからの管理アクティビティ)|管理者が、企業 IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 最初に、[設定] ページに移動し、**[IP アドレスの範囲]** を設定することで、企業 IP アドレスを構成します。|
 |脅威の検出|General anomaly detection (一般的な異常検出)|承認済みのアプリのいずれかで異常なセッション (不可能な場所移動、ログオン パターン、非アクティブなアカウントなど) が検出されたときにアラートを生成します。|
 |脅威の検出|危険な IP アドレスからのログオン|承認済みアプリに危険な IP アドレスのユーザーがログオンすると、アラートを生成します。 危険な IP アドレスのカテゴリには、既定で、匿名プロキシ、TOR、またはボットネットの IP アドレス タグを持つアドレスが含まれます。 IP アドレスの範囲設定ページで、このカテゴリに IP アドレスを追加することができます。|
 |脅威の検出|Mass download by a single user (1 人のユーザーによる大量ダウンロード)|1 人のユーザーが 5 分以内に 50 回を超えるダウンロードを実行したときにアラートを生成します。|
-|脅威の検出|Multiple failed user log on attempts to an app (複数回失敗したアプリに対するユーザー ログオン)|1 人のユーザーが 1 つのアプリにログオンを試み、5 分以内に失敗回数が 10 回を超えると、アラートを生成します。|
+|脅威の検出|複数回失敗したアプリに対するユーザー サインイン|1 人のユーザーが 1 つのアプリにログオンを試み、5 分以内に失敗回数が 10 回を超えると、アラートを生成します。|
 |脅威の検出|ランサムウェア アクティビティの可能性|ランサムウェアに感染している可能性のあるクラウドにユーザーがファイルをアップロードしたときにアラートを生成します。|
-|脅威の検出|User logon from a non-categorized IP address (分類されていない IP アドレスからのユーザー ログオン)|特定の IP 範囲カテゴリに含まれていない IP アドレスからユーザーがログオンしたときにアラートを生成します。 IP アドレスを分類するには、[設定] ページに移動し、IP アドレスの範囲を選択します。|
+|脅威の検出|分類されていない IP アドレスからのユーザー ログオン|特定の IP 範囲カテゴリに含まれていない IP アドレスからユーザーがログオンしたときにアラートを生成します。 IP アドレスを分類するには、[設定] ページに移動し、IP アドレスの範囲を選択します。|
 |コントロールの共有|File shared with personal email addresses (個人の電子メール アドレスを含むファイルの共有)|ユーザー個人の電子メール アドレスを含むファイルが共有されたときにアラートを生成します。|
 |コントロールの共有|File shared with unauthorized domain (未承認ドメインとのファイル共有)|ファイルが未承認ドメイン (競合他社など) と共有されたときにアラートを生成します。|
-|コントロールの共有|Shared digital certificates (file extensions) (デジタル証明書の共有 (ファイル拡張子))|デジタル証明書を含むファイルが公に共有されたときにアラートを生成します。|
+|コントロールの共有|Shared digital certificates (file extensions) (デジタル証明書の共有 (ファイル拡張子))|デジタル証明書を含むファイルが公に共有されたときにアラートを生成します。 このテンプレートを使用して、AWS ストレージを管理します。|
+|コントロールの共有|パブリックにアクセス可能な S3 バケット (AWS)|AWS S3 バケットが公開共有されたときにアラートを生成します。|
 |コントロールの共有|Stale externally shared files (外部と共有した古いファイル)|外部と共有したファイルのうち、過去 6 か月間に開かれたり、変更されたりしていないファイルを検索し、自分のドライブから削除します。|
 
 

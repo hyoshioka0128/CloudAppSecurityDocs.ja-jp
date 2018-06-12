@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2cf378e8490ebf1e0cb7d35fe3842800a08290e2
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759865"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -146,7 +147,7 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 1. 設定の歯車アイコンで、**[全般設定]** を選びます。 
 
-2. 次に、Conditional Access App Control の設定で、**ユーザーへの通知**チェック ボックスをオフにします。
+2. 次に、**[アプリの条件付きアクセス制御]** の下で、**[ユーザーの監視]** チェック ボックスをオンにし、**[ユーザーへの通知]** チェック ボックスをオフにします。
 
     ![セッション監視通知を無効にする](./media/disable-session-monitoring-notice.png)
 

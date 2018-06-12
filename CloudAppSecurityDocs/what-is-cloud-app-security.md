@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59d949723939c2e82887044ce0a4c325019f5b6c
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e4e2c77d3bb3b8f6a2a83b73aa9f16ae356b374f
+ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568681"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34759935"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -52,18 +52,8 @@ Cloud App Security は、Microsoft Cloud Security スタックの重要なコン
 
 ![Cloud App Security アーキテクチャの図](./media/proxy-architecture.png)  
 
-### <a name="data-retention--compliance"></a>データ保持期間およびコンプライアンス
-
-Cloud App Security は、ISO、HIPAA、CSA STAR、EU モデル条項などの Microsoft コンプライアンスで公式に認められています。 認定の完全な一覧については、「[Microsoft Compliance Offerings](https://go.microsoft.com/fwlink/?linkid=842039)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
-
-Cloud App Security でコンテンツの調査を実施する際には、データのプライバシー保護が適用されます。 ファイルの内容は Cloud App Security データベースに保存されません。Cloud App Security データベースに保存されるのは、ファイル レコードのメタデータと特定された違反のみです。 データ保持期間の詳細については、Microsoft の[プライバシー ポリシー](http://go.microsoft.com/fwlink/?LinkId=512132)と [Microsoft セキュリティ センター](https://www.microsoft.com/TrustCenter/Privacy/You-are-in-control-of-your-data)を参照してください。
-Cloud App Security は次のようにデータを保持しています。 
- 
-- アクティビティ ログ: 180 日間 
-- 検出データ: 90 日間 
-- アラート: 180 日間 
-
-これらのソースからデータが収集されると、Cloud App Security は高度なヒューリスティック異常検出エンジンを実行してユーザーの環境をプロファイルし、得られたベースラインに関する異常なアクティビティについてユーザーに警告し、クラウド環境を詳細に可視化できるようにします。 Cloud App Security でポリシーを構成し、クラウド環境内のすべてのデータを保護するために使用することができます。  
+### <a name="data-retention--compliance"></a>データ保有期間およびコンプライアンス
+Microsoft Cloud App Security のデータ保有期間とコンプライアンスについて詳しくは、「[Microsoft Cloud App Security のデータのセキュリティとプライバシー](cas-compliance-trust.md)」をご覧ください。
 
 ### <a name="cloud-discovery"></a>Cloud Discovery  
 

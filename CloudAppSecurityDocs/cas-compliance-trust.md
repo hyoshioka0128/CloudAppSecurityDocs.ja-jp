@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/22/2018
+ms.date: 6/10/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6db4518feb2c212feaece9bcd216a8ed25f7af2f
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
+ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34470663"
+ms.lasthandoff: 06/10/2018
+ms.locfileid: "35251754"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 |![SOC のロゴ](./media/soc-logo.png)|SOC 3|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
 |![g-cloud のロゴ](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service が Microsoft クラウド サービスの分類を Government Cloud v6 に更新しました。|
 
-詳細については、「[Microsoft Compliance Offerings](https://go.microsoft.com/fwlink/?linkid=842039)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
+詳細については、「[Microsoft Compliance Offerings](https://servicetrust.microsoft.com)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
 
 ## <a name="privacy"></a>プライバシー
 
@@ -137,9 +137,9 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 ## <a name="customer-controls-for-organizational-compliance"></a>組織のコンプライアンスを確保するためのお客様独自のコントロール
 
-### <a name="do-not-track"></a>追跡禁止
+### <a name="scoped-deployment"></a>スコープ付きデプロイ
 
-Microsoft Cloud App Security では、特定のユーザーを追跡禁止 (DNT) に設定することができます。 これにより、Cloud App Security を使用して特定のグループのみを制御することや、Cloud App Security によるガバナンスから特定のグループを除外することができます。
+Microsoft Cloud App Security を使用するとデプロイのスコープを指定できます。 これにより、Cloud App Security を使用して特定のグループのみを制御することや、Cloud App Security によるガバナンスから特定のグループを除外することができます。 詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
 
 ### <a name="anonymization"></a>匿名化 
 
