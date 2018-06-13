@@ -26,7 +26,7 @@
 ### [Cloud Discovery を強化する](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-### [Azure を Microsoft Cloud App Security に接続する](connect-azure-to-microsoft-cloud-app-security.md)
+### [Azure の接続](connect-azure-to-microsoft-cloud-app-security.md)
 ### [AWS の接続](connect-aws-to-microsoft-cloud-app-security.md)
 ### [Box の接続](connect-box-to-microsoft-cloud-app-security.md)
 ### [Dropbox の接続](connect-dropbox-to-microsoft-cloud-app-security.md)
@@ -52,6 +52,7 @@
 ### [アクティビティ](activity-filters.md)
 #### [アクティビティ フィルターとクエリ](activity-filters-queries.md)
 ### [ファイル](file-filters.md)
+#### [データ管理レポートを生成する](built-in-reports.md)
 ### [アカウント](accounts.md)
 ### [アプリのアクセス許可の管理](manage-app-permissions.md)
 ### [アプリの監視](monitor-alerts.md)
@@ -63,7 +64,9 @@
 #### [アクティビティ ポリシー](user-activity-policies.md)
 #### [異常検出ポリシー](anomaly-detection-policy.md)
 #### [ファイル ポリシー](data-protection-policies.md)
-##### [コンテンツ検査](content-inspection.md)
+##### コンテンツ検査
+###### [組み込みのコンテンツ検査](content-inspection.md)
+###### [データ分類サービスの統合](dcs-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
 #### 条件付きアクセス アプリ制御ポリシー
 ##### [アクセス ポリシー](access-policy-aad.md)
