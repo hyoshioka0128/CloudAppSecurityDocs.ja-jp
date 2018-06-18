@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97aeddd863ce34da0ebe5f6a5b74606212ef8f54
-ms.sourcegitcommit: f34a20a079863dd916343dd59aeff8a221831866
+ms.openlocfilehash: 62c2eca135031d756864a268c57677a31dad4746
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259692"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -108,7 +109,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 Cloud App Security と Azure Information Protection の連動のしくみの詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」をご覧ください。
 
-### <a name="automatically-label-files-preview"></a>ラベル ファイルを自動的に適用する (プレビュー)
+### <a name="automatically-label-files"></a>ラベル ファイルを自動的に適用する
 
 分類ラベルを自動的に適用できます。ファイル ポリシーを作成し、ガバナンス アクションとして **[分類ラベルの適用]** を設定します。
 

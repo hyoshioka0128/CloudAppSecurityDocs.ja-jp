@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 214bc10092765ff2470c258765b8adcf0cce5a9f
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: f72ec05e044f6c14aa9336ee80cd9bc6a344cc7b
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
-ms.locfileid: "34152744"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259725"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -32,8 +32,6 @@ Microsoft Cloud App Security は既存の DLP ソリューションと統合し�
 
 本ガイドでは、Cloud App Security と stunnel セットアップで ICAP 接続を構成し、通信を保護するために必要な手順について説明します。
 
-> [!NOTE]
->この機能はパブリック プレビュー段階です。
 
 ## <a name="architecture"></a>アーキテクチャ
 Cloud App Security はクラウド環境をスキャンします。ファイル ポリシー構成に基づき、内部 DLP エンジンと外部 DLP のいずれを利用してファイルをスキャンするのか決定します。 外部 DLP スキャンが適用される場合、ファイルは安全なトンネルを経由して顧客環境に送信され、顧客環境で ICAP アプライアンスに中継され、DLP 判定が行われます (許可またはブロック)。 応答は stunnel 経由で Cloud App Security に返されます。このとき、ポリシーを利用し、通知、隔離、共有コントロールなど、後続のアクションが決定されます。

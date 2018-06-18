@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/16/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b981a885d36f5a6aee8c605c049894d3f07a64e2
-ms.sourcegitcommit: de99734dd98ac36b56ee6a759b45a12f007eff80
+ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/16/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259621"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -189,9 +190,7 @@ SIEM エージェントを後で編集する必要がある場合は、テーブ
 > [!NOTE]
 > この機能はパブリック プレビュー段階です。
 
-## <a name="high-availability-options"></a>高可用性オプション
 
-SIEM エージェントは、最大 2 日間のダウンタイムの回復をサポートする単一のエンドポイントです。 高可用性の他の指標は、顧客のエンドポイントとしてロード バランサーを使用することで達成できます。
 
 ## <a name="see-also"></a>参照  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
