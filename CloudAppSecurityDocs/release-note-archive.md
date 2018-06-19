@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 4/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f17cf637569007ea3a83e2b360f4e0516f4fe461
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
+ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/30/2018
+ms.locfileid: "32298964"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -78,7 +79,7 @@ ms.lasthandoff: 04/23/2018
     -   管理されていないデバイスでの実行内容を監視できるように、保護されていないエンドポイントを把握できます。
     -   会社以外のネットワークまたは危険な IP アドレスからのアクセスを制御します。
   
-  詳細については、「[プロキシによるアプリの保護](proxy-intro-aad.md)」を参照してください。
+  詳細については、「[条件付きアクセス アプリ制御でのアプリの保護](proxy-intro-aad.md)」を参照してください。
 
 -   特定のサービス アクティビティ名に基づくフィルターの機能については、段階的にロールアウトします。 この新しいアクティビティの種類のより細かいフィルターでは、より一般的なアクティビティの種類ではなく、特定のアプリのアクティビティを監視できます。 たとえば、以前は**実行コマンド**をフィルター処理できましたが、現在では特定の EXO コマンドレットをフィルター処理できます。 アクティビティ ドロワーの **[Type (in app)]\(種類 (アプリ)\)** には、アクティビティ名も表示できます。 この機能は最終的には、アクティビティの種類のフィルターに置き換えられます。  
 
