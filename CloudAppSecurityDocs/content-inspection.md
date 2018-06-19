@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,20 @@ ms.technology: ''
 ms.assetid: 2401adbc-0011-4938-9e3a-a4c719a2f619
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d2deb0cda5a2414fba046e0a99760b533e7d9b4
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 0f4a97d719c409987bc5b3df268338b562c3da67
+ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35259581"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 
-# <a name="content-inspection"></a>コンテンツ検査
-この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Microsoft Cloud App Security が従うプロセスについて説明します。 
+# <a name="built-in-content-inspection"></a>組み込みのコンテンツ検査
+
+この記事では、クラウド内のデータに対して組み込みの DLP コンテンツ検査を実行する場合に Microsoft Cloud App Security が従うプロセスについて説明します。 
 
 
 Cloud App Security コンテンツ検査は次のように行われます。
