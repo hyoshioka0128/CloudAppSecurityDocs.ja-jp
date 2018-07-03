@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 6/27/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b23559bfa872c39fc878864f64caa1e174d35f3e
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251754"
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140756"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -46,10 +46,10 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 |----|----|----|
 |![csa のロゴ](./media/csastar-attest.png)|CSA STAR Attestation|Azure と Intune には独立した監査に基づき、Cloud Security Alliance STAR Attestation が授与されています。|
 |![csa のロゴ](./media/csastar.png)|CSA STAR Certification|Azure、Intune、Power BI には、Cloud Security Alliance STAR Certification のゴールド レベルが授与されています。|
-|![EU model clauses のロゴ](./media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft は、EU Standard Contractual Clauses (EU 標準契約条項) をお客様に提供し、個人データの転送を保証しています。|
+|![EU model clauses のロゴ](./media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft では、個人データの転送の保証である EU 標準契約条項を提供します。|
 |![privacy shield のロゴ](./media/privacy_shield.png)|EU-U.S.Privacy Shield|Microsoft は EU から米国に転送される個人データの保護に関するこの枠組みに準拠しています。|
 |![FISC のロゴ](./media/logo_fisc.png)|FISC|Microsoft は日本の金融情報システム センターによる安全対策基準第 8 版の要件を満たしています。|
-|![HIPAA のロゴ](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft は Health Insurance Portability & Accountability Act Business Associate Agreements (BAA) を提供しています。|
+|![HIPAA のロゴ](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft では、医療保険の携行性と責任に関する法律の Business Associate Agreements (BAAs) を提供します。|
 |![iso 9001 のロゴ](./media/iso-9001.png)|ISO 9001|Microsoft はこれらの品質管理標準の実施に関する認証を取得しています。|
 |![iso 27001 のロゴ](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft is ceMicrosoft はこれらの情報セキュリティ管理標準の実施に関する認証を取得しています。|
 |![iso 27018 のロゴ](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft は、クラウド プライバシーに関するこの実施基準を順守した初めてのクラウド プロバイダーです。|
@@ -64,7 +64,6 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 ### <a name="you-are-the-owner-of-your-data"></a>お客様のデータはお客様が所有
 - Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
-- 
 - 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[**[ユーザーとアカウント]**](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 -   お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
