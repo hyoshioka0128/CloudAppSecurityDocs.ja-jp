@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 59eb0ca7813a96f2ac2face66fba96d50851fd97
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 3eb6f6b5338273abc31d0019a967d269aa51bed4
+ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 07/01/2018
+ms.locfileid: "37140739"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/23/2018
 
 ## <a name="technical-requirements"></a>技術要件
 
--   OS: Ubuntu 14.04 以降 (Ubuntu 17.10 をサポートする Docker の安定バージョンはありません)
+-   OS: Ubuntu 14.04 および 16.04 (新しいバージョンについては、サポートにお問い合わせください)
 
 -   ディスク領域: 250 GB
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 6/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7de4cb2a78032f253cc2ec68ffbc9f1d12a2bc83
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: fc9832d9eb41be007edc213e457bc9fe00ffb115
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746978"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -41,28 +42,24 @@ ms.lasthandoff: 04/23/2018
 
    アラートの調査について、対応が必要な違反には 3 つの種類があります。  
 
-   #### <a name="serious-violations"></a>重大な違反
-   重大な違反は即座の対応が必要です。
+   - **重大な違反**<br>
+     重大な違反は即座の対応が必要です。 <br>
+     例:<br>
+     不審なアクティビティのアラートの場合、ユーザーがパスワードを変更するまでアカウントを停止することができます。  
 
-       Examples:  
+     データが漏えいした場合は、アクセス許可を制限するか、ファイルを検疫することができます。  
 
-       For a suspicious activity alert, you might want to suspend the account until the user changes their password.  
+     新しいアプリが検出された場合は、プロキシまたはファイアウォールでサービスへのアクセスをブロックできます。  
 
-       For a data leak you might want to restrict permissions or quarantine the file.  
+   - **問題のある違反**<br>
+     問題のある違反は、さらに詳細な調査が必要です。  <br>
+     アクティビティの内容について、ユーザーまたはユーザーのマネージャーに連絡することができます。 <br>  
+     詳細を把握するまでは、アクティビティをそのままにしておきます。  
 
-       If a new app is discovered, you might want to block access to the service on your proxy or firewall.  
+   - **承認された違反または変則的な動作**<br>
+     承認された違反または変則的な動作は、正当な使用によって発生する場合があります。  
 
-   #### <a name="questionable-violations"></a>問題のある違反
-   問題のある違反は、さらに詳細な調査が必要です。  
-
-       You can contact the  user or the user's manager about the nature of the activity.  
-
-       Leave the activity open until you have more information.  
-
-   #### <a name="authorized-violations-or-anomalous-behavior"></a>承認された違反または変則的な動作
-   承認された違反または変則的な動作は、正当な使用によって発生する場合があります。  
-
-       Dismiss the alert.  
+     アラートを消去します。  
 
 3. このプロセスが完了したら、アラートを解決済みとしてマークします。  
 

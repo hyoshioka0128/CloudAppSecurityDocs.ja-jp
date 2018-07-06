@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/4/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,16 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 61a4381ac3c337d7a983c9e3fbfacaca91c4575c
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759983"
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36746961"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD アプリの Conditional Access App Control のデプロイ
-
-> [!NOTE]
-> これはプレビュー機能です。
-
-
 
 >[!div class="step-by-step"]
 [« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>
@@ -76,7 +71,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
    > [!NOTE]
    > アプリが Cloud App Security アプリ カタログに表示されない場合は、ダイアログの定義されていないアプリの下にログイン URL と共に表示されます。 これらのアプリの + 記号をクリックするときに、カタログへのアプリの追加を提案することができます。 アプリがカタログに表示されたら、アプリのデプロイ手順を再度実行します。 
 
-6. Conditional Access App Control アプリ テーブルで、**[利用可能なコントロール]** 列を参照し、Azure AD の条件付きアクセスとセッション制御の両方が表示されていることを確認します。 <br></br>アプリのセッション制御が表示されない場合、その特定のアプリではまだ使用できないことを意味し、代わりに **[要求セッション制御]** リンクが表示されます。 それをクリックしてダイアログを開き、セッション制御へのアプリのオンボードを要求します。 Conditional Access App Control のパブリック プレビュー期間中は、オンボード プロセスは Microsoft Cloud App Security チームと共に行います。
+6. Conditional Access App Control アプリ テーブルで、**[利用可能なコントロール]** 列を参照し、Azure AD の条件付きアクセスとセッション制御の両方が表示されていることを確認します。 <br></br>アプリのセッション制御が表示されない場合、その特定のアプリではまだ使用できないことを意味し、代わりに **[要求セッション制御]** リンクが表示されます。 それをクリックしてダイアログを開き、セッション制御へのアプリのオンボードを要求します。 このシナリオでは、オンボード プロセスは Microsoft Cloud App Security チームと共に行います。
   
    ![セッション制御の要求](./media/proxy-view-new-apps.png)
 
@@ -103,8 +98,8 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 
     ![Azure AD の条件付きアクセスを使用するフィルター処理](./media/sso-logon.png)
 
-4. 管理対象デバイスと管理されていないデバイスからモバイル アプリやデスクトップ アプリにログインし、アクティビティがアクティビティ ログに適切にキャプチャされていることを確認することをお勧めします。<br></br>
-   アクティビティが適切にキャプチャされていることを確認するには、シングル サインオン ログオン アクティビティをクリックしてアクティビティ ドロアーを開き、**[ユーザー エージェント タグ]** に、デバイスがネイティブ クライアント (モバイルまたはデスクトップ アプリのいずれかであることを意味する) であるか、またはデバイスが管理対象デバイス (準拠、ドメイン参加済み、または有効なクライアント証明書) であるかが適切に反映されていることを確認します。
+4. マネージド デバイスとアンマネージド デバイスからモバイル アプリやデスクトップ アプリにログインし、アクティビティがアクティビティ ログに適切にキャプチャされていることを確認することをお勧めします。<br></br>
+   アクティビティが適切にキャプチャされていることを確認するには、シングル サインオン ログオン アクティビティをクリックしてアクティビティ ドロアーを開き、**[ユーザー エージェント タグ]** に、デバイスがネイティブ クライアント (モバイルまたはデスクトップ アプリのいずれかであることを意味する) であるか、またはデバイスがマネージド デバイス (準拠、ドメイン参加済み、または有効なクライアント証明書) であるかが適切に反映されていることを確認します。
  
    ![テストのユーザー エージェント タグ](./media/domain-joined.png)
 

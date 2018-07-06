@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,20 +13,17 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4ef6f91c13e2dc997efe51856d53775e124e0b4d
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 8b3aea5db6a56efc94ed165f540519a5e7de22f3
+ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 06/24/2018
+ms.locfileid: "36747036"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
-
-> [!NOTE]
-> これはプレビュー機能です。
-
 
 >[!div class="step-by-step"]
 [次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
@@ -44,12 +41,13 @@ Conditional Access App Control では、アクセスおよびセッション ポ
 
 -   **ダウンロードの保護**: 機密性の高いドキュメントのダウンロードをブロックする代わりに、ダウンロードに暗号化を使ってドキュメントを保護するように要求できます。 これにより、データが信頼されていないデバイスにダウンロードされる場合に、ドキュメントを保護し、ユーザー アクセスを認証できます。 
 
--   **会社以外のネットワークからのユーザー セッションを制限**: 会社のネットワークの一部ではない場所から保護されたアプリにアクセスしているユーザーは制限されたアクセスを許可され、機密情報のダウンロードはブロックまたは保護されます。
-
 -   **信頼性の低いユーザー セッションの監視**: 危険性の高いユーザーはアプリにサインインするときに監視され、アクションはセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。 
 
 - **アクセスのブロック**: ユーザーが管理対象外のデバイスや会社のものではないネットワークを利用している場合、特定のアプリへのアクセスを完全にブロックできます。
 
+- **読み取り専用モードの作成**: カスタムのアプリ内アクティビティを監視してブロックすることで、特定ユーザーの特定のアプリに対する読み取り専用モードを作成することができます。  
+
+- **会社以外のネットワークからのユーザー セッションを制限**: 会社のネットワークの一部ではない場所から保護されたアプリにアクセスしているユーザーは制限されたアクセスを許可され、機密情報のダウンロードはブロックまたは保護されます。
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
@@ -66,7 +64,7 @@ Microsoft Cloud App Security を介してセッションが送信されたら、
 4. 管理者がトラフィック ログをエクスポートできるようにします
 5. セッションに対してポリシーを適用します
 
-## <a name="managed-device-identification"></a>管理されたデバイスの識別
+## <a name="managed-device-identification"></a>マネージド デバイスの識別
 
 Conditional Access App Control を使うと、デバイスが管理されているかどうかを考慮するポリシーを作成できます。 デバイスが管理されているかどうかを識別するため、この機能では以下を利用します。
 
@@ -81,17 +79,17 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 
 ### <a name="client-certificate-authenticated-devices"></a>クライアント証明書で認証されたデバイス
 
-デバイス識別メカニズムでは、クライアント証明書を使って関連するデバイスに認証を要求することができます。 これにより、組織内に既にデプロイされている既存のクライアント証明書を利用するか、または新しいクライアント証明書を管理されたデバイスにデプロイした後、それらの証明書の存在を使ってアクセス ポリシーとセッション ポリシーを設定することができます。 クライアント証明書をデプロイする方法については、「[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)」を参照してください。
+デバイス識別メカニズムでは、クライアント証明書を使って関連するデバイスに認証を要求することができます。 これにより、組織内に既にデプロイされている既存のクライアント証明書を利用するか、または新しいクライアント証明書をマネージド デバイスにデプロイした後、それらの証明書の存在を使ってアクセス ポリシーとセッション ポリシーを設定することができます。 クライアント証明書をデプロイする方法については、「[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)」を参照してください。
  
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
 
 現在、Conditional Access App Control では、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 
 
 > [!NOTE]
-> - Conditional Access App Control では、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
+> - アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 > - Office 365 アプリケーションは SAML を構成されないため、現在はサポートされていません。
 
-セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリは現在サポートされていません)。 Azure AD とネイティブで統合すると、次の機能を備えたアプリを含む、 Azure AD での SAML シングル サインオンで構成されているすべてのアプリをサポートできます。
+セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリをブロックすることも許可することもできます)。 Azure AD とネイティブで統合すると、次の機能を備えたアプリを含む、 Azure AD での SAML シングル サインオンで構成されているすべてのアプリをサポートできます。
 
 -   Salesforce
 
@@ -120,6 +118,8 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 -   HighQ 
 
 -   Concur
+
+-   Tableau
 
 セッション制御には、その他のアプリが継続的に搭載されます。 ここに記載されていない特定のアプリに関心がある場合は、[アプリの詳細を送っていただき](mailto:casfeedback@microsoft.com)、ユース ケースとして関心があれば、そのアプリが搭載されます。
 
