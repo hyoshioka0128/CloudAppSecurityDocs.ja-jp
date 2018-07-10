@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,16 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cf8f0230b2316646b49bd2f80f688d47229625c6
-ms.sourcegitcommit: c95c913d384f32d6dab00e4f22804113596de3f1
+ms.openlocfilehash: ef45ee81fced76dd3ff619aa8d42edf60b90e954
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34759865"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340041"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 # <a name="session-policies"></a>セッション ポリシー 
-
-> [!NOTE]
-> これはプレビュー機能です。
 
 
 >[!div class="step-by-step"]
@@ -45,12 +42,12 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 
 ## <a name="prerequisites-to-using-session-policies"></a>セッション ポリシーを使うための前提条件
 
-- Azure AD Premium P2 のライセンス
+- Azure AD Premium P1 のライセンス
 - 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
 - 以下の説明のとおり、Microsoft Cloud App Security にユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
 
 > [!NOTE]
-> - セッション ポリシーは、プライベート プレビューの Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 プライベート プレビューに関する詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
+> - セッション ポリシーは、Azure AD 以外の ID プロバイダーで構成されたアプリにも対応しています。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
 ## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセス ポリシーを作成する
 
@@ -63,8 +60,6 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 2. **[セッション]** ブレードで **[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選んで、Microsoft Cloud App Security にユーザーをルーティングします。
 
-   ![Conditional Access App Control で制限する Azure AD 条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
-
 ## <a name="create-a-cloud-app-security-session-policy"></a>Cloud App Security セッション ポリシーを作成する 
 
 新しいセッション ポリシーを作成するには、以下の手順を実行します。
@@ -72,23 +67,17 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 1. ポータルで、**[制御]**、**[ポリシー]** の順に選びます。
 2. **[ポリシー]** ページで、**[ポリシーの作成]** をクリックし、**[セッション ポリシー]** を選びます。  
 
-   ![セッション ポリシーを作成する](./media/create-session-policy.png)
-
 3. **[セッション ポリシー]** ウィンドウで、ポリシーの名前を割り当てます (例: "*マーケティング ユーザー用 Box の機密ドキュメントのダウンロードをブロックする*")。
-
-   ![新しいセッション ポリシー](./media/new-session-policy.png)
 
 4. **[セッション制御の種類]** フィールドで次のようにします。 
 
    1. ユーザーによるアクティビティを監視するだけの場合は、**[監視のみ]** を選びます。 これで監視のみのポリシーが作成され、選択したアプリについて、すべてのサインイン、発見的ダウンロード、アクティビティの種類がダウンロードされます。
 
    2. ユーザーのアクティビティを監視し、ユーザーのダウンロードのブロックや保護などの追加アクションを実行する場合は、**[ファイル ダウンロードの制御 (DLP 使用)]** を選びます。
-
-      ![セッション ポリシー制御の種類](./media/session-policy-control-type.png)
    
    3. **[アクティビティのブロック]** を選択して、**[アクティビティの種類]** フィルターを使用して選択する特定のアクティビティをブロックします。 選択したアプリのすべてのアクティビティが監視されます (さらにアクティビティ ログで報告されます)。 選択した特定のアクティビティがブロックされるのは、**[ブロック]** アクションを選択した場合です。選択した特定のアクティビティからアラートが生成されるのは、**[テスト]** アクションを選択してアラートをオンにした場合のみです。
 
-1. **[次のすべてに一致するアクティビティ]** セクションの **[アクティビティ ソース]** で、ポリシーに適用する追加のアクティビティ フィルターを選びます。 次のオプションを指定できます。 
+5. **[次のすべてに一致するアクティビティ]** セクションの **[アクティビティ ソース]** で、ポリシーに適用する追加のアクティビティ フィルターを選びます。 次のオプションを指定できます。 
 
    - **[デバイス タグ]**: 管理されていないデバイスを識別するには、このフィルターを使います。
 
@@ -97,13 +86,10 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
    - **[IP アドレス]**: IP アドレスでフィルター処理するか、前に割り当てた IP アドレス タグを使うには、このフィルターを使います。 
 
    - **[ユーザー エージェント タグ]**: モバイル アプリまたはデスクトップ アプリを識別するためにヒューリスティックを有効にするには、このフィルターを使います。 このフィルターは、**ネイティブ クライアント**と等しくなるように、または等しくならないように設定でき、各クラウド アプリについてモバイル アプリとデスクトップ アプリに対してテストする必要があります。
-         
-       ![ネイティブ クライアントのサポート](./media/user-agent-tag.png)
-
+       
+ 
      >[!NOTE]
-     >セッション ポリシーは、モバイル アプリとデスクトップ アプリをサポートしていません。 セッション ポリシーがモバイル アプリとデスクトップ アプリの機能に干渉しないことをテストして確認してください。 必要な場合は、モバイル アプリとデスクトップ アプリをセッション ポリシーから除外します。
-
-     ![セッション ポリシーのアクティビティ ソース](./media/session-policy-activity-filters.png)
+     >セッション ポリシーは、モバイル アプリとデスクトップ アプリをサポートしていません。 モバイル アプリとデスクトップ アプリは、アクセス ポリシーの作成によって許可またはブロックすることもできます。
 
 6. **[ファイル ダウンロードの制御 (DLP 使用)]** オプションを選んだ場合:
 
@@ -114,14 +100,9 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
       - **[ファイル名]**: 特定のファイルにポリシーを適用するには、このフィルターを使います。
 
       - **[ファイルの種類]**: 特定のファイルの種類にポリシーを適用するには、このフィルターを使います (すべての .xls ファイルのダウンロードをブロックする場合など)。
-
-        ![セッション ポリシーのファイル フィルター](./media/session-policy-file-filters.png)
-
-        
+       
    2. **[コンテンツ検査]** セクションで、DLP エンジンによるドキュメントとファイルのコンテンツのスキャンを有効にするかどうかを設定します。
  
-      ![セッション ポリシーのコンテンツ検査](./media/session-policy-content-inspection.png)
-
    3. **[アクション]** ウィンドウで、次のいずれかを選びます。 
 
       - **[テスト]**(すべてのアクティビティを監視する): 設定したポリシー フィルターに従ってダウンロードを明示的に許可するには、このアクションを設定します。
@@ -130,18 +111,12 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
       - **[保護]**(ダウンロードしたファイルに分類ラベルを適用し、すべてのアクティビティを監視します): これを選択できるのは、**[セッション ポリシー]** の下で **[ファイル ダウンロードの制御 (DLP 使用)]** を選択した場合のみです。 組織が Azure Information Protection を使っている場合は、Azure Information Protection で設定されている分類ラベルをファイルに適用するように **[アクション]** を設定できます。 詳しくは、「[ダウンロードの保護のしくみ](#protect-download)」をご覧ください。
 
-        ![セッション ポリシーのアクション](./media/session-policy-actions.png)
-
 7. **一致するイベントごとにポリシー重要度に応じたアラートを作成**し、アラート制限を設定して、アラートをメールとテキスト メッセージのどちらか一方または両方にするかどうかを選ぶことができます。
-
-   ![セッション ポリシーのアラート](./media/session-policy-alert.png)
 
 
 ## すべてのアクティビティを監視する <a name="monitor-session"></a>
 
 セッション ポリシーを作成すると、ポリシーに一致する各ユーザー セッションは、直接アプリにではなく、セッション制御にリダイレクトされます。 ユーザーには、セッションが監視されていることを知らせる監視通知が表示されます。
-
-   ![セッション監視のしくみ](./media/session-monitoring-notice.png)
 
 監視されていることをユーザーに通知したくない場合は、通知メッセージを無効にすることができます。
 
@@ -149,14 +124,9 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
 2. 次に、**[アプリの条件付きアクセス制御]** の下で、**[ユーザーの監視]** チェック ボックスをオンにし、**[ユーザーへの通知]** チェック ボックスをオフにします。
 
-    ![セッション監視通知を無効にする](./media/disable-session-monitoring-notice.png)
-
 セッション内でユーザーを保持するために、Conditional Access App Control は、アプリ セッション内の関連するすべての URL、Java スクリプト、Cookie を、Microsoft Cloud App Security の URL に置き換えます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、Conditional Access App Control はそのリンクを、myapp.com.us.cas.ms などで終わるドメインに置き換えます。 これにより、セッション全体が Microsoft Cloud App Security によって監視されます。
 
 Conditional Access App Control は、ルーティングされてきたすべてのユーザー セッションのトラフィック ログを記録します。 トラフィック ログには、時刻、IP、ユーザー エージェント、アクセスした URL、アップロードおよびダウンロードされたバイト数が含まれます。 これらのログが分析されて、**Cloud App Security の Conditional Access App Control** という継続的なレポートが、Cloud Discovery ダッシュボードの Cloud Discovery レポート一覧に追加されます。
-
-![Conditional Access App Control レポート](./media/proxy-report.png)
-
 
 ログをエクスポートするには:
 
@@ -177,6 +147,8 @@ Cloud App Security セッション ポリシーで実行する **[アクショ�
 ## 特定のアクティビティをブロックする <a name="block-activities"></a>
 
 **[アクティビティの種類]** として **[アクティビティのブロック]** が設定されているとき、特定のアプリ内でブロックする特定のアクティビティを選択できます。 選択したアプリのすべてのアクティビティが監視されます (さらにアクティビティ ログで報告されます)。選択した特定のアクティビティがブロックされるのは、**[ブロック]** アクションを選択した場合です。選択した特定のアクティビティからアラートが生成されるのは、**[テスト]** アクションを選択してアラートをオンにした場合のみです。
+
+また、**[Block specific activities]\(特定のアクティビティをブロック\)** フィルターを使用して組織内の特定のグループに適用すると、組織用の包括的な読み取り専用モードを作成できます。
 
 ## ダウンロード時にファイルを保護する <a name="protect-download"></a>
 **[アクティビティのブロック]** を選択して、**[アクティビティの種類]** フィルターを使用して選択する特定のアクティビティをブロックします。 選択したアプリのすべてのアクティビティが監視されます (さらにアクティビティ ログで報告されます)。 選択した特定のアクティビティがブロックされるのは、**[ブロック]** アクションを選択した場合です。選択した特定のアクティビティからアラートが生成されるのは、**[テスト]** アクションを選択してアラートをオンにした場合のみです。

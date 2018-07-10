@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/14/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8686ebcddd2d2eef02970facfddca65fde3f02ae
-ms.sourcegitcommit: 2ca1f7b11679d15faa1abdf0b8a805c9aff89d2a
+ms.openlocfilehash: 69da592808750b9c20e3615f935f6a0570b6afd4
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2018
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37339990"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,7 +40,7 @@ Azure AD の条件付きアクセスと Microsoft Cloud App Security の Conditi
 
 ## <a name="prerequisites"></a>前提条件
 
-- Azure AD Premium P2 の有効なライセンス
+- Azure AD Premium P1 の有効なライセンス
 - Azure AD で SSO のクラウド アプリを構成する  
 - [アプリが Cloud App Security にデプロイされている](proxy-deployment-aad.md)ことを確認する
 
@@ -52,8 +53,6 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 1. 割り当て済みユーザーとアプリを使用して、Azure AD の条件付きアクセス ポリシーを作成します。
 2. 条件付きアクセス ポリシー内のセッション制御で、**[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選択します。   
 
-   ![Azure AD の条件付きアクセス](./media/proxy-deploy-restrictions-aad.png)
-
 このタスクが完了したら、Cloud App Security ポータルに進み、セッションでのファイルのダウンロードを監視して制御するセッション ポリシーを作成します。
 
 ### <a name="step-2-create-a-session-policy"></a>手順 2: セッション ポリシーを作成する
@@ -62,21 +61,16 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 
 2. **[ポリシー]** ページで、**[ポリシーの作成]**、**[セッション ポリシー]** の順にクリックします。
  
-   ![セッション ポリシーを作成する](./media/create-session-policy.png)
-
 3. **[セッション ポリシーの作成]** ページで、ポリシーの名前と説明を指定します。 たとえば、**管理されていないデバイスに対して Salesforce からのダウンロードをブロックする**などと指定します。
 
 4. **[ポリシー重要度]** と **[カテゴリ]** を割り当てます。
 
-   ![新しいセッション ポリシー](./media/new-session-policy.png)
-
 5. **[セッション制御の種類]** で、**[ファイル ダウンロードの制御 (DLP 使用)]** を選択します。 これで、Salesforce セッション内でユーザーが行うあらゆる活動を監視し、ダウンロードをリアルタイムでブロックしたり、保護したりできます。
-
-   ![セッション ポリシー制御の種類](./media/session-policy-control-type.png)
 
 6. **[次のすべてに一致する活動]** セクションの **[アクティビティ ソース]** で、次のフィルターを選択します。 
     
-   - **[デバイス タグ]**: **[次の値に等しくない]** を選択してから、管理対象デバイスを識別するために組織で使用されている方法に応じて、**[準拠]**、**[ドメイン参加済み]**、または **[有効なクライアント証明書]** を選択します。 
+   - 
+  **[デバイス タグ]**: **[次の値に等しくない]** を選択してから、マネージド デバイスを識別するために組織で使用されている方法に応じて、**[準拠]**、**[ドメイン参加済み]**、または **[有効なクライアント証明書]** を選択します。 
     
    - **[アプリ]**: 制御対象のアプリを選択します。  
 
@@ -98,21 +92,11 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
    - **[分類ラベル]**: Azure Information Protection 分類ラベルを使用して、特定の Azure Information Protection 分類ラベルに基づいてファイルをフィルター処理する場合。
    
    - **[ファイル名]** または **[ファイルの種類]** を選択し、選択内容に基づいて制限を適用します。
- 
-     ![セッション ポリシーのファイル フィルター](./media/session-policy-file-filters.png)
-
 9. **[コンテンツ検査]** を有効にし、内部 DLP でファイルをスキャンし、機密性の高いコンテンツがないかを確認できるようにします。 
-
-   ![セッション ポリシーのコンテンツ検査](./media/session-policy-content-inspection.png)
 
 10. **[アクション]** で、**[ブロック]** を選択します。 ユーザーがファイルをダウンロードできない場合に表示するブロック メッセージをカスタマイズします。  
 
-    ![セッション ポリシーのアクション](./media/session-policy-actions.png)
-
 11. ポリシーに一致したときに受け取るアラートを設定します。 アラートが大量に発生しすぎないように上限を設定できます。また、アラートの形式としてメール メッセージまたはテキスト メッセージ、あるいはその両方を選択できます。
-
-    ![セッション ポリシー アラート](./media/session-policy-alert.png)
-
 
 12. **[作成]** をクリックします。  
  
@@ -123,11 +107,7 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 
 2. ファイルはブロックされ、**[ブロック メッセージのカスタマイズ]** で設定したメッセージが表示されます。 
 
-   ![ダウンロードのブロック メッセージ](./media/block-download-message.png)
-
 3. Cloud App Security ポータルで、**[制御]**、**[ポリシー]** の順にクリックし、作成したポリシーをクリックしてポリシー レポートを表示します。 セッション ポリシーの一致がすぐに表示されます。 
- 
-   ![セッション ポリシー レポート](./media/session-policy-report.png)
 
 4. ポリシー レポートでは、セッション制御の Microsoft Cloud App Security にリダイレクトされたログインと、監視対象セッションからダウンロードまたはブロックされたファイルを確認することができます。
 

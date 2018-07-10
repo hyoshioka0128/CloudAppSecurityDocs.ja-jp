@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7405d04251b148bde65b8fe502ef727dc7925dea
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
+ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251856"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37843525"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,19 +26,51 @@ ms.locfileid: "35251856"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 
+## <a name="cloud-app-security-release-127"></a>Cloud App Security リリース 127
+
+リリース日: 2018 年 7 月 8 日
+
+- **アクティビティ ログ**と**アクティビティ ポリシー**で Office 365 の全般的なアクティビティを表示する機能が提供され、Office 365 のアクティビティをフィルター処理して**指定なし**のアクティビティを抽出できるようになりました。 これらのアクティビティを確認すると、Cloud App Security でまだ種類別に分類されていない実行済みアクティビティに関する情報を調査できます。さらに、これらのアクティビティに基づいて新しいアクティビティの種類を作成するように Cloud App Security チームに要求を送信できます。 
+
+## <a name="cloud-app-security-release-126"></a>Cloud App Security リリース 126
+
+リリース日: 2018 年 6 月 24 日
+
+-   **アプリの条件付きアクセス制御が一般提供に**<br>Microsoft Cloud App Security のアプリの条件付きアクセス制御 (リバース プロキシ) が、すべての SAML アプリケーションで一般提供されました。 アプリの条件付きアクセス制御は、Azure AD の条件付きアクセス ポリシーと直接統合され、生産性を維持しながら**ユーザーのセッションをリアルタイムで監視および制御**します。 この機能の最初のプレビュー以降、多くの機能と機能強化が導入されました。その一部を次に示します。 
+    -   ブラウザー トラフィック用のセッション ポリシーの作成に加えて、ネイティブ クライアントから同じアプリへのアクセスを管理する[アクセス ポリシー](access-policy-aad.md)を作成する機能。
+    -   アプリのオンボード プロセスが、組織内のカスタム SAML アプリケーションをサポートするように効率化されました。
+    -   Azure の世界的なネットワークの一環として、世界中のユーザーにシームレスなエクスペリエンスを提供できるように統合とインターフェイスが改善されました。
+ 
+
+-   **Microsoft データ分類サービスによるコンテンツ検査が一般提供に**<br>Microsoft Cloud App Security と Microsoft データ分類サービスの統合が一般提供されました。 この統合により、Microsoft データ分類サービスをネイティブに利用してクラウド アプリ内のファイルを分類できます。 詳細については、「[Microsoft データ分類サービスの統合](dcs-inspection.md)」を参照してください。 この機能は現在、米国とヨーロッパ (フランスを除く) でのみ利用できます。
+
+- **Cloud Discovery エグゼクティブ レポート**<br>Microsoft Cloud App Security では、Cloud Discovery エグゼクティブ PDF レポートを生成する機能を段階的にロールアウトしています。 このレポートは、組織内での指定されたシャドウ IT の使用の概況を、全体と主要カテゴリにおける使用順位の高いアプリとユーザーを強調表示することによって示し、シャドウ IT が組織にもたらすリスクに焦点を当てます。 さらに、このレポートでは、組織内のシャドウ IT に対する可視性を高め制御を強化するための推奨事項のリストが表示されます。 潜在的リスクと脅威を確実に排除し、組織の安全性とセキュリティを確保するために、このレポートを使用できます。
+
+-   **マルウェアの検出**<br>ファイルの種類を問わず、**クラウド ストレージ内の悪意のあるファイルを自動的に検出する**マルウェア検出機能が段階的にロールアウトされています。 Microsoft Cloud App Security は、Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられていたり悪意のある可能性があるかどうかを認識します。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
+ 
+-   **疑わしいアクティビティに対する自動修復**<br>異常検出ポリシーによってトリガーされる、疑わしいセッションに対する自動修復アクションを設定できるようになりました。 この機能強化により、違反が発生するとすぐに警告が表示され、ユーザーの停止などの**ガバナンス アクションが自動的に適用**されます。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md#adp-automated-gov)に関する記事を参照してください。 
+ 
+-   **Azure のセキュリティ構成の評価**<br>Microsoft Cloud App Security では、お客様の Azure 環境のセキュリティ構成の評価を取得し、不足している構成およびセキュリティ制御に関する推奨事項を提供する機能を段階的にロールアウトしています。 たとえば、管理ユーザー向けの MFA が不足している場合に通知が行われます。 詳細については、[クラウド セキュリティに対する姿勢の管理の統合](security-config.md)に関する記事を参照してください。  
+  
+-   **危険な OAuth アプリの自動検出**<br>ご利用の環境に接続されている OAuth アプリの既存の調査に加えて、Microsoft Cloud App Security では、OAuth アプリが特定の条件を満たした場合に通知を受け取れるように自動通知を設定する機能を段階的にロールアウトしています。 たとえば、高いアクセス許可レベルが必要であり、50 人を超えるユーザーによって承認されているアプリがある場合、自動的にアラートを表示させることができます。 詳細については、「[アプリのアクセス許可ポリシー](app-permission-policy.md)」を参照してください。
+ 
+-   **Managed Security Service Provider (MSSP) の管理のサポート**<br>Microsoft Cloud App Security で、MSSP の管理エクスペリエンスが改善されました。 外部ユーザーを管理者として構成し、[Microsoft Cloud App Security で現在使用できるロール](manage-admins.md)のいずれかを割り当てられるようになりました。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。 管理者の管理の詳細については、[管理者の管理](manage-admins.md)に関する記事を参照してください。
+  
+-   **外部 DLP との統合が一般提供に**<br>Microsoft Cloud App Security で、データ損失防止 (DLP) ソリューションのような[サードパーティ製分類システムの既存の投資を活用](icap-stunnel.md)できるようになり、環境内で実行されている既存の展開を使用してクラウドのアプリケーションの内容をスキャンできるようになりました。 詳細については、「[外部 DLP 統合](icap-stunnel.md)」を参照してください。
+
+
 ## <a name="cloud-app-security-release-125"></a>Cloud App Security リリース 125
 
 リリース日: 2018 年 6 月 10 日
 
 
-### <a name="new-investigation-capability-by-top-users"></a>上位ユーザーの新しい調査機能: 
+- **上位ユーザーの新しい調査機能:**<br>
 新しい調査ウィジェットが Microsoft Cloud App Security のダッシュボードに追加されました。脅威検出のオープン アラートの数が上位のユーザーを表示します。 この調査ウィジェットを使用すれば、不審なセッションの数が最も多いユーザーに脅威の調査を集中できます。
 
-### <a name="support-for-aws-s3-buckets"></a>AWS S3 バケットのサポート:
+- **AWS S3 バケットのサポート:**<br>
 Microsoft Cloud App Security では、AWS S3 バケットとその共有レベルを検出できるようになりました。 これにより、パブリックにアクセスできる AWS バケットにアラートと可視性が備えられます。 また、バケットに基づいてポリシーを作成し、自動ガバナンスを適用することも可能になります。 さらに、**パブリックにアクセス可能な S3 バケット (AWS)** という名前の新しいポリシー テンプレートを利用できます。これを使用して、AWS ストレージを制御するためのポリシーを簡単に作成できます。 これらの新機能を有効にするには、「[AWS の接続](connect-aws-to-microsoft-cloud-app-security.md)」で説明されている新しいアクセス許可を追加することで、AWS に接続されているアプリを更新します。
 
-### <a name="admin-privileges-based-on-user-groups"></a>ユーザー グループに基づく管理特権:
-ユーザー グループごとに Microsoft Cloud App Security 管理者に管理アクセス許可を設定できるようになりました。 たとえば、特定のユーザーを、ドイツのユーザーに対してのみ管理者として設定できます。 これによりユーザーは、ユーザー グループ "ドイツ - すべてのユーザー" に対してのみ、Microsoft Cloud App Security でその情報を表示して変更できます。 詳細については、「[管理アクセス許可の管理](manage-admins.md)」を参照してください。
+- **ユーザー グループに基づく管理特権**: ユーザー グループごとに Microsoft Cloud App Security 管理者に管理アクセス許可を設定できるようになりました。 たとえば、特定のユーザーを、ドイツのユーザーに対してのみ管理者として設定できます。 これによりユーザーは、ユーザー グループ "ドイツ - すべてのユーザー" に対してのみ、Microsoft Cloud App Security でその情報を表示して変更できます。 詳細については、「[管理アクセス許可の管理](manage-admins.md)」を参照してください。
 
 
 ## <a name="cloud-app-security-release-124"></a>Cloud App Security リリース 124

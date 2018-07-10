@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 7/4/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54fbda3ec925643e640f31b5f6493843886dea13
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: c16e44132ec7047e5f1624907c184a0e03c6bf73
+ms.sourcegitcommit: 2862ebeb9e886bea16e62eb87dfdace638cf67bb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36746961"
+ms.lasthandoff: 07/04/2018
+ms.locfileid: "37799163"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -32,7 +32,7 @@ ms.locfileid: "36746961"
 Microsoft Cloud App Security Conditional Access App Control によって制御されるように Azure AD アプリを構成するには、以下の手順に従います。
 
 > [!NOTE]
-> Azure AD アプリの Conditional Access App Control をデプロイするには、有効な [Azure AD Premium P2 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要です。
+> Azure AD アプリに対するアプリの条件付きアクセス制御をデプロイするには、有効な [Azure AD Premium P1 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要です。
 
 ## <a name="step-1-add-azure-ad-apps-in-cloud-app-security"></a>手順 1: Cloud App Security に Azure AD アプリを追加する  
 
