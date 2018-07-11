@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f25b827c7b0ff635789a4ef721b538598729d0e9
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: fcd4f6a16f4783fc7b2b7b5446e1a57aa23488a4
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36746917"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340160"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -38,7 +38,7 @@ Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、�
 
 ## <a name="prerequisites-to-using-access-policies"></a>アクセス ポリシーを使うための前提条件
 
-- Azure AD Premium P2 のライセンス
+- Azure AD Premium P1 のライセンス
 - 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
 - 以下の説明のとおり、Microsoft Cloud App Security にユーザーをリダイレクトする [Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を設定する必要があります。
 

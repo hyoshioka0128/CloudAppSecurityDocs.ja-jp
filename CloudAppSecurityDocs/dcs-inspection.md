@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ebba40c8f04dd644711a172fcf150761db3e11cc
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: a1a9455681106c066888cf29c83971914e35babb
+ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259757"
+ms.lasthandoff: 07/02/2018
+ms.locfileid: "37340007"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -28,6 +28,9 @@ ms.locfileid: "35259757"
 
 Microsoft Cloud App Security を使用すると、Microsoft データ分類サービスをネイティブに利用してクラウド アプリのファイルを分類できます。
 Microsoft データ分類サービスには、Office 365、Azure Information Protection、および Microsoft Cloud App Security の間での、統合された情報保護エクスペリエンスが用意されています。また、Microsoft Cloud App Security によって保護されているサード パーティのクラウド アプリにデータ分類を拡張できます。これにより、さらに多くのアプリ間で既存の決定事項を活用できます。
+
+>[!NOTE]
+> この機能は現在、米国とヨーロッパ (フランスを除く) でのみ利用できます。
 
 追加構成なしで、Microsoft Cloud App Security のファイルに対するデータ漏えい保護のポリシーを作成するときに、**[Microsoft データ分類サービス]** を使用する **[検査方法]** を自動的に選択できるようになります。
 
