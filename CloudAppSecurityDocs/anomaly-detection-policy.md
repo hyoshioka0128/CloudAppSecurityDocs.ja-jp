@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/18/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c182ea9cfebd7161e637cbd1460ac6b56b17362d
-ms.sourcegitcommit: 49a06f2169af74304eef0288e31783c06ccd3b74
+ms.openlocfilehash: b0662b428a902c28f1908e6e978e3256aa45f6af
+ms.sourcegitcommit: 70e685dc53c70b719b707e685d5ef45cec445891
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2018
-ms.locfileid: "36747002"
+ms.lasthandoff: 07/15/2018
+ms.locfileid: "39063930"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 
 **頻度の低い国からのアクティビティ**
-- この検出では、過去にアクティビティがあった場所を考慮し、新規の場所とあまり使用されない場所が判別されます。 この異常検出エンジンでは、組織のユーザーが以前に使用した場所の情報が保持されます。 組織内の特定のユーザーや任意のユーザーが、最近使用されていない場所や使用されたことがない場所からアクティビティを行うと、アラートがトリガーされます。 
+- この検出では、過去にアクティビティがあった場所を考慮し、新規の場所とあまり使用されない場所が判別されます。 この異常検出エンジンでは、組織のユーザーが以前に使用した場所の情報が保持されます。 組織内の任意のユーザーが、最近使用されていない場所や使用されたことがない場所からアクティビティを行うと、アラートがトリガーされます。 
 
 **マルウェアの検出**
 - この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、**[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
