@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d7148854286218172fdbeb7c9e651a49cb721980
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: 26f6314dd1a3285049b4bf2bbd46467e63fca8ac
+ms.sourcegitcommit: 92ffce1e6067b087732f617cf56ca904ee3691de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34568664"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175419"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security を使用すると、デプロイのスコープを
      
      ![包含ルール](./media/include-rule.png)
 
-4. 特定のグループを監視から除外するよう設定するには、**[含まない]** タブでプラス ![アイコン](./media/plus-icon.png) をクリックします。 <br>**[Create new include rule]\(新しい包含ルールの作成\)** ダイアログ ボックスで、次のパラメーターを設定します。
+4. 特定のグループを監視から除外するよう設定するには、**[含まない]** タブでプラス ![アイコン](./media/plus-icon.png) をクリックします。 <br>**[新しい除外ルールの作成]** ダイアログ ボックスで、次のパラメーターを設定します。
 
     1. **[Type rule name]\(ルール名を入力してください\)** の下に、ルールの内容を表す名前を入力します。
     **[ユーザー グループの選択]** の下で、Cloud App Security に監視させないグループをすべて選択します。

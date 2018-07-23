@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 650107deb070b0442312de441877b29d5da93358
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: c116a2b199638d60aeb793a8562a0852e07031f0
+ms.sourcegitcommit: 00e7adf7ebf26bf414df67e42ff6e3bac709b68b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259621"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39143344"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -52,6 +52,13 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
 - サーバーでは Java 8 を実行する必要があります。これより前のバージョンはサポートされていません。
+- OS: Windows または Linux
+- CPU: 2
+- ディスク領域: 20 GB
+- RAM: 2 GB
+- サーバーは Java 8 を実行している必要があります。 これより古いバージョンはサポートしていません。
+- [ネットワーク要件](network-requirements.md)で説明されているとおりにファイアウォールを設定する
+ 
 
 ## <a name="integrating-with-your-siem"></a>SIEM との統合
 
