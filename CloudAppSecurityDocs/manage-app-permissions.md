@@ -79,7 +79,7 @@ Cloud App Security ポータルで、**[調査]**、**[アプリのアクセス�
 
 G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、禁止行為であることをユーザーに通知したりできます。 
 
-1. アプリのアクセス許可ページで、アプリの行の終わりにある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次の通知が届きます。*You authorized the app Adallom Google Protector to access your G Suite account.このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュ ーバーの Revoke access をクリックします。* 送信メッセージはカスタマイズできます。
+1. アプリのアクセス許可ページで、アプリの行の終わりにある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次の通知が届きます。*You authorized the app Adallom Google Protector to access your G Suite account.このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、 https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュ ーバーの Revoke access をクリックします。* 送信メッセージはカスタマイズできます。
 2. ユーザーのためにアプリを使用するアクセス許可を取り消すこともできます。テーブルのアプリの行の終わりにあるアイコンをクリックし、**[アプリの取り消し]** を選択します。 
 
    ![アプリを取り消す](./media/revoke-app.png)
