@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/1/2018
+ms.date: 7/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,40 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4dace36a95c01ec08fe1bca42477121fa977dc6a
-ms.sourcegitcommit: 3f02b02c294c4d7575702d9083ea3f94d3169ebc
+ms.openlocfilehash: 02e1036b6ab8b4796080bb3e91007e6d2dd365ce
+ms.sourcegitcommit: 8a31b9bb4594c74cf200cf81e31c0fd9d6d776a6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37843525"
+ms.lasthandoff: 07/24/2018
+ms.locfileid: "39220645"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-128"></a>Cloud App Security リリース 128
+
+リリース日: 2018 年 7 月 22 日
+
+-   **複数のアプリにわたるアプリのアクセス許可の操作**<br>
+アプリのアクセス許可が与えられているアプリでは、1 回のアクションで複数のアプリを禁止したり承認したりできます。 たとえば、組織内のユーザーによってアクセス許可が与えられているすべてのアプリを確認し、禁止するアプリを選択し、[アプリの禁止] をクリックすると、与えられたすべての同意が無効になり、そのアプリにユーザーがアクセス許可を与えることができなくなります。  詳細については、[アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
+-   **Azure アプリケーションのサポートの強化**<br>
+Azure では、アプリケーションを Azure アプリケーション (内部も外部も) によって実行されたユーザー アカウント アクティビティとして検出する機能を段階的にロールアウトしています。 これにより、アプリケーションが予期しない、承認されていないアクティビティを実行した場合にアラートを発するポリシーを作成できるようになります。 詳細については、「[Azure を Microsoft Cloud App Security に接続する](connect-azure-to-microsoft-cloud-app-security.md)」を参照してください。
+-   **新しい GDPR の機密の種類によるデータ分類エンジンの更新**<br>
+[Cloud App Security のデータ分類サービス](dcs-inspection.md)により、データ分類エンジンに新しい GDPR の機密の種類が追加され、ファイル内の GDPR 関連のコンテンツを検出できるようになりました。
+-   **クラウド アプリ カタログの更新**<br>
+クラウド アプリ カタログに ([全般]、[セキュリティ]、[コンプライアンス] の他に) 法的なリスク カテゴリが追加され、GDPR の準備を含めた、データ プライバシーと所有権のコンプライアンスを管理できるようになりました。
+各クラウド アプリの GDPR 適合性評価を支援するため、新しいリスク カテゴリには、クラウド サービスの GDPR の準備の声明と各 GDPR フレームワーク コントロールの状態が含まれています。
+この機能強化の一環として、次のリスク属性が他のリスク カテゴリから法的なカテゴリに移動しました。
+     - DMCA
+     - データ所有権
+     - データ リテンション期間ポリシー
+
+     さらに、新しいリスク カテゴリが別々にスコア付けされるため、設定と優先順位に従ってスコアの重み付けを構成することができます。 詳細については、「[リスク スコア](risk-score.md)」を参照してください。
+
+-   **新しい推奨クエリ: GDPR 準備完了** <br>
+GDPR の準備が完了しているアプリを識別できる新しい推奨クエリがあります。 GDPR は最近セキュリティ管理者の最優先事項になったため、GDPR の準備が完了したアプリを簡単に特定し、準備が完了していないアプリのリスクを評価することで脅威を軽減できるこのクエリが役立ちます。
 
 
 ## <a name="cloud-app-security-release-127"></a>Cloud App Security リリース 127
