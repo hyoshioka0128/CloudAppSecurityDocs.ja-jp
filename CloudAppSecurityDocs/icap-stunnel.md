@@ -154,7 +154,7 @@ ICAP サーバーと Cloud App Security では、stunnel 全体でのサーバ�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Cloud App Security stunnel クライアントの公開キーをダウンロードする
 
-https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem から公開キーをダウンロードして、**/etc/ssl/certs/MCASCAfile.pem** に保存します
+から公開キーをダウンロードして、 https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem **/etc/ssl/certs/MCASCAfile.pem** に保存します
 
 ### <a name="configure-stunnel"></a>stunnel を構成する 
 

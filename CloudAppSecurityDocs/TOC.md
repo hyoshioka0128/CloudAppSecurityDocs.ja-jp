@@ -16,7 +16,7 @@
 ### [ユーザー グループ](user-groups.md)
 ### [スコープ付きデプロイ](scoped-deployment.md)
 ### [IP タグと IP 範囲](ip-tags.md)
-## [Cloud Discovery の展開](set-up-cloud-discovery.md)
+## [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
 #### [Ubuntu および RHEL オンプレミス上の Docker](discovery-docker-ubuntu.md)
