@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/06/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3eb6f6b5338273abc31d0019a967d269aa51bed4
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: e5bde1c7caa26b9501a63c884125ffa0f30ed5f8
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140739"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519144"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -68,6 +68,10 @@ ms.locfileid: "37140739"
    >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
 
    f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。
+    > [!NOTE]
+    >ネットワーク デバイスごとに専用のデータ ソースを設定することをお勧めします。これにより、次のことができるようになります。
+    <br>- 調査目的で、各デバイスの状態を個別に監視する。
+    <br>- 各デバイスが異なるユーザー セグメントで使用されている場合に、デバイスごとのシャドウ IT の検出を行う。
 
 3. 画面上部の **[ログ コレクター]** タブに移動します。
 

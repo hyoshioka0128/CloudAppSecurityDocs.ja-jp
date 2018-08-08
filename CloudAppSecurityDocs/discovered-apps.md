@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/6/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: abec8d49559c7ff29476a5a5291f1920db877b88
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 9c9cae44e8ecbd3856495723f951c050fa8f50e3
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519059"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -62,6 +63,14 @@ Cloud Discovery を使うと、組織でのクラウドの使用状況をさら�
 これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 サポートされているアプライアンスの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」をご覧ください。
 
  ![サブドメインの情報](./media/discovery-domains.png) 
+
+## <a name="generate-cloud-discovery-executive-report"></a>Cloud Discovery エグゼクティブ レポートの生成
+
+組織全体でのシャドウ IT の使用の概要を得る最良の方法が、Cloud Discovery エグゼクティブ レポートを生成することです。 このレポートは、上位の潜在的なリスクを特定して、そのリスクが解決されるまで、リスクの軽減と管理を行うためのワークフローの計画を支援します。
+
+Cloud Discovery エグゼクティブ レポートを生成するには: 
+
+Cloud Discovery ダッシュ ボードで、メニューの右上隅にある 3 つのドットをクリックし、**[Cloud Discovery エグゼクティブ レポートの生成]** を選択します。
 
 ## <a name="exclude-entities"></a>エンティティの除外  
 特に不要かつ興味対象ではないシステム ユーザーまたは IP アドレス、あるいは関連性の低いアプリケーションがある場合は、分析対象の Cloud Discovery データからこれらのデータを除外することができます。 たとえば、127.0.0.1 またはローカル ホストから送信されたすべての情報を除外するとします。  
