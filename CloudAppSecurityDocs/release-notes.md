@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e477e1551f9004e31a5743b67a99ecef4e95d7f
-ms.sourcegitcommit: b4bc20170a97e4fedc47cf67906a13aa0b70bcb6
+ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
+ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2018
-ms.locfileid: "39518178"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39519110"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -29,7 +29,7 @@ ms.locfileid: "39518178"
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security リリース 129
 
-リリース日: 2018 年 7 月 22 日
+リリース日: 2018 年 8 月 5 日
 
 - **新しい異常検出ポリシー - 疑わしい電子メールのルール**<br>疑わしい電子メール転送ルールを検出する新しい異常検出ポリシーが追加されました。たとえば、ユーザーが、すべての電子メールのコピーを外部アドレスに転送する受信トレイのルールを作成した場合などです。 
 - このリリースには、複数の問題に対する修正と機能強化が含まれています。 
