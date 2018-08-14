@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/6/2018
+ms.date: 8/8/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2032d5fbfc78e734abd747dc6f6f84fca1f95f95
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: a2b5ec778ef7e9cd5968353b247f117f3019d3be
+ms.sourcegitcommit: 96f82381a17b89f9aef384f760ebf142695a6051
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519008"
+ms.lasthandoff: 08/08/2018
+ms.locfileid: "39653283"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ ms.locfileid: "39519008"
 - **[リスク スコア]**: リスク スコアによってアプリをフィルター処理し、たとえば非常に危険なアプリだけに注目するといったことができます。 Cloud App Security によって設定されたリスク スコアをオーバーライドすることもできます。 詳しくは、「[リスク スコアの操作](risk-score.md)」をご覧ください。
 - **[セキュリティ リスク要因]**: 特定のセキュリティ メジャー (保存データの暗号化や多要素認証など) に基づいてフィルター処理できます。
 - **[使用状況]**: そのアプリの使用状況の統計に基づいてフィルター処理できます。たとえば、指定した**データ アップロード**数より多い、または少ないアプリや、指定した**ユーザー**数より多い、または少ないアプリなどです。
-- **[法務]**: アプリのユーザーのデータ保護とプライバシーを確保するため、GDPR、DMCA、データ保持ポリシーなどの採用されているすべての規制とポリシーに基づいてフィルター処理できます。
+- **[法的リスク要因]**: アプリのユーザーのデータ保護とプライバシーを確保するため、GDPR 対応クラウド アプリ、DMCA、データ保有ポリシーなど、インプレースのすべての規制とポリシーに基づいてフィルター処理できます。
 
 ### <a name="creating-and-managing-custom-app-tags"></a>カスタム アプリ タグの作成と管理
 
@@ -91,7 +91,7 @@ Cloud App Security には**クエリ候補**機能もあります。頻繁に使
 
  - 暗号化が弱いエンタープライズ クラウド アプリ - 検出されたアプリにフィルター処理を適用し、保管中のデータを暗号化しない、暗号化プロトコルに対応していないなど、リスクのあるアプリのみを表示します。
 
-- GDPR 対応: 検出されたすべてのアプリにフィルター処理を適用し、GDPR 対応のアプリのみを表示します。 GDPR への準拠は最優先事項であるため、GDPR 対応のアプリを簡単に特定し、対応していないアプリのリスクを評価することで脅威を軽減できるこのクエリが役立ちます。
+- GDPR 対応クラウド アプリ: 検出されたすべてのアプリにフィルター処理を適用し、GDPR 対応のアプリのみを表示します。 GDPR への準拠は最優先事項であるため、GDPR 対応のアプリを簡単に特定し、対応していないアプリのリスクを評価することで脅威を軽減できるこのクエリが役立ちます。
  
 ![検出されたアプリにクエリを実行する](./media/queries-discovered-apps.png)
 
