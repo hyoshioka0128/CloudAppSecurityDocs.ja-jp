@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/27/2018
+ms.date: 68/21/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 122c2027573d20b81e7a604396201f6485c028ab
-ms.sourcegitcommit: c7e4351345d55cfeb0517651446490ce5f208651
+ms.openlocfilehash: 2c0535c3c2fceec521383d00e828072c4e9ad1ff
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2018
-ms.locfileid: "37140756"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016966"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 |![SOC のロゴ](./media/soc-logo.png)|SOC 3|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
 |![g-cloud のロゴ](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service が Microsoft クラウド サービスの分類を Government Cloud v6 に更新しました。|
 
-詳細については、「[Microsoft Compliance Offerings](https://servicetrust.microsoft.com)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
+詳細については、「[Microsoft Compliance Offerings](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
 
 ## <a name="privacy"></a>プライバシー
 
