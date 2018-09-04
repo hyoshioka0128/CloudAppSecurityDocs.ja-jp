@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: feab5ecc5705fe0d0f43c2b49a15e970c8f54f67
-ms.sourcegitcommit: 41fbc8e235befd240ad7a1eed52339cfafb5d906
+ms.openlocfilehash: 85985a9ad83cff0bb68b3d1fd310e98bbea09181
+ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2018
-ms.locfileid: "35251798"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43115728"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -61,7 +61,7 @@ Microsoft Cloud App Security に存在するポリシー テンプレートの�
 |コントロールの共有|File shared with unauthorized domain (未承認ドメインとのファイル共有)|ファイルが未承認ドメイン (競合他社など) と共有されたときにアラートを生成します。|
 |コントロールの共有|Shared digital certificates (file extensions) (デジタル証明書の共有 (ファイル拡張子))|デジタル証明書を含むファイルが公に共有されたときにアラートを生成します。 このテンプレートを使用して、AWS ストレージを管理します。|
 |コントロールの共有|パブリックにアクセス可能な S3 バケット (AWS)|AWS S3 バケットが公開共有されたときにアラートを生成します。|
-|コントロールの共有|Stale externally shared files (外部と共有した古いファイル)|外部と共有したファイルのうち、過去 6 か月間に開かれたり、変更されたりしていないファイルを検索し、自分のドライブから削除します。|
+|コントロールの共有|Stale externally shared files (外部と共有した古いファイル)|外部と共有したファイルのうち、過去 6 か月間に開かれたり、変更されたりしていないファイルを検索します。|
 
 
 

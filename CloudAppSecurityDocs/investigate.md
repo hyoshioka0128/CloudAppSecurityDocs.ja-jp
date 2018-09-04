@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0187adc2115e835c246b31c8412a359a4d3e2bc3
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 27d13ace0f278a8191f99e0436c056d90948bf8a
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016912"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -87,9 +88,7 @@ ms.lasthandoff: 04/23/2018
     
     -   ユーザーのアカウント行の末尾にある歯車アイコンをクリックして、実行するアクション (**[ユーザーの中断]** や **[ユーザーのコラボレーションを削除]** など) を選択して、ユーザーのアカウントをドリル ダウンすることもできます。 ユーザーが Azure Active Directory からインポートされている場合は、**[Azure AD アカウント設定]** をクリックして、グループ管理、MFA、ユーザーのサインインに関する詳細、およびサインインをブロックする機能など、高度なユーザー管理機能に簡単にアクセスすることもできます。
 
-4.  **[調査]** に移動してアプリを選択します。 アプリのダッシュ ボードが開き、情報や洞察が提供されます。 上部のタブを使用して、以下を確認できます。  
-
-     ![アプリのダッシュ ボード](./media/investigate-app.png "アプリの調査")  
+4.  **[調査]**、**[接続アプリ]** の順に移動した後、アプリを選択します。 アプリのダッシュ ボードが開き、情報や洞察が提供されます。 上部のタブを使用して、以下を確認できます。  
 
     -   ユーザーがアプリに接続するために使用しているデバイスの種類  
 
@@ -104,6 +103,8 @@ ms.lasthandoff: 04/23/2018
     -   それらのアプリが許可されているアクセス レベルで承認されているか  
 
     -   それらのアプリをデプロイしているユーザーの数 それらのアプリの一般的な普及率  
+ 
+    ![アプリのダッシュ ボード](./media/investigate-app.png "アプリの調査")  
 
 5.  **Cloud Discovery ダッシュボード**に移動して、次の点を確認します。  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/05/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 266af546cd795c3675676b43f0830818af10ebab
-ms.sourcegitcommit: a97e6d93124433547149fd8a642fcb77e02a75f2
+ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519110"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017039"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
+
+## <a name="cloud-app-security-release-130"></a>Cloud App Security リリース 130
+
+リリース日: 2018 年 8 月 22日
+
+
+- **新しいメニュー バー**<br>
+Microsoft 365 製品間にわたるより一貫した管理者エクスペリエンスを提供し、Microsoft のセキュリティ ソリューション間の作業をより簡単にするため、Cloud App Security ポータルのメニュー バーが画面の左側に移動されました。 この一貫性のある移動に関するエクスペリエンスは、Microsoft のセキュリティ ポータル間を移動する際に自分の位置を確認するのに役立ちます。
+
+- **OAuth アプリ スコアに影響を与える**<br>
+悪意があると思われる OAuth アプリが組織内で検出された場合に、Cloud App Security チームにフィードバックを送信して報告できるようになりました。 この新しい機能を使用すると、セキュリティ コミュニティの一員となって、OAuth アプリのリスク スコアと分析を強化できます。 詳細については、[アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
+
+- **新しい Cloud Discovery パーサー**<br>
+Cloud Discovery パーサーで iboss Secure Cloud Gateway および Sophos XG がサポートされるようになりました。
 
 
 ## <a name="cloud-app-security-release-129"></a>Cloud App Security リリース 129

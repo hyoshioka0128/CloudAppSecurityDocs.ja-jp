@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 537f95a46164678e921b5f6b4644d864bea24316
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 1131a736fa630e9507427267fc9865723d5eaf82
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340075"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017056"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,6 +39,8 @@ ms.locfileid: "37340075"
    アラートは、アラートの種類や重要度でフィルタリングすると最も重要なものから対応できます。  
 
    特定のアラートを選択します。 アラートの種類に応じて、アラートを解決するためのさまざまな対応方法が表示されます。  
+   
+   アプリに基づいてフィルター処理できます。一覧表示されるアプリは、Cloud App Security によってそれに対するアクティビティが検出されたアプリです。
 
    アラートの調査について、対応が必要な違反には 3 つの種類があります。  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/11/2018
+ms.date: 8/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 36798d23961f34a0c97fbe6a1547c558668640e6
-ms.sourcegitcommit: 3177ffcbdabbddc6c758e9a1994fb21fde939ffc
+ms.openlocfilehash: f391b886783934a07aa295e882ec845fdf74f149
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35259489"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016991"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -79,7 +79,7 @@ Cloud App Security ポータルで、**[調査]**、**[アプリのアクセス�
 
 G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、禁止行為であることをユーザーに通知したりできます。 
 
-1. アプリのアクセス許可ページで、アプリの行の終わりにある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次の通知が届きます。*You authorized the app Adallom Google Protector to access your G Suite account.このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、 https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュ ーバーの Revoke access をクリックします。* 送信メッセージはカスタマイズできます。
+1. **[アプリのアクセス許可]** ページで、アプリの行の終わりにある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次の通知が届きます。 *あなたは Adallom Google Protector アプリにご自分の G Suite アカウントへのアクセスを許可しています。このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、 https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュ ーバーの [Revoke access] をクリックします。* 送信メッセージはカスタマイズできます。
 2. ユーザーのためにアプリを使用するアクセス許可を取り消すこともできます。テーブルのアプリの行の終わりにあるアイコンをクリックし、**[アプリの取り消し]** を選択します。 
 
    ![アプリを取り消す](./media/revoke-app.png)
@@ -92,7 +92,15 @@ G Suite と Salesforce の場合、アプリのアクセス許可を取り消し
 
 - フィルターを削除するには、そのフィルターの横にある **フィルターの削除**アイコンをクリックします。
 
+## <a name="send-feedback"></a>フィードバックを送信
 
+悪意があると思われる OAuth アプリが組織内で検出された場合は、Cloud App Security チームにフィードバックを送信して報告できます。 この新しい機能を使用すると、セキュリティ コミュニティの一員となって、OAuth アプリのリスク スコアと分析を強化できます。
+1. **[アプリのアクセス許可]** ページで、アプリの行の終わりにある 3 つの点をクリックし、**[このアプリの報告]** を選択します。  
+
+   ![アプリの報告](./media/report-app.png)
+2. **[このアプリの報告]** 画面では、悪意があるアプリとしてアプリを報告するか、Cloud App Security がアプリを認識する方法についてのその他の問題 (たとえば**不適切なパブリッシャー**や**不適切なアクセス許可**) を報告するか選択できます。 送信するデータは、アプリのリスク スコアやアプリに関するその他の分析を更新するために使用されます。
+
+ 
 ## <a name="see-also"></a>参照  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 

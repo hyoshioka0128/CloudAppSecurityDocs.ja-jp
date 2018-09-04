@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/2/2018
+ms.date: 8/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2e81d57768f552f5564e35733f5a09ca17f9217c
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: abca47db7d4c3aa2db69bca2219e742af96b040e
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37340058"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43016943"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -35,7 +35,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 
 
 > [!NOTE] 
-> この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P2 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
+> この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P1 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
 
 
 ## <a name="prerequisites"></a>前提条件

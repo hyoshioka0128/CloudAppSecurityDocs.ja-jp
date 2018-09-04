@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 8/22/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 670d5f479d53741d4cd047b9ad9c864e1239d5d8
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 8fe064b9955e0b2b5db5d40f0450c4af63d352b3
+ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43017008"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -44,9 +45,7 @@ ms.lasthandoff: 04/23/2018
 5. **[API]** で、**[Go to APIs overview]**/(API 概要に進む/) をクリックします。  
   
      ![google3](./media/google3.png "google3")  
-  
-6. **[API]** で、一覧に表示されているすべての API を無効にします。  
-      
+   
 7. **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
      
    -   管理 SDK  
@@ -66,7 +65,7 @@ ms.lasthandoff: 04/23/2018
 
 8. 各 API に対して [有効] をクリックします。
      ![Google API を有効にする](./media/google-api.png "google-api")  
-9. 5 つの**有効化された API** が必要です。その他の API は無効にしてください。
+9. 次の API が有効になっていることを確認します。
   
      ![Google の有効にされた API](./media/google5.png "google5")  
   
