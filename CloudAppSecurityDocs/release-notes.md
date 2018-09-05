@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 9/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9d64ca397930ba2f93e36c6689e32bda11218486
-ms.sourcegitcommit: b439f29dc1d0aa8eec783ba45e3d517722a5ebe0
+ms.openlocfilehash: c966c33a1ed31c1e5981600750760493133c8493
+ms.sourcegitcommit: 9ae2e002db44ed8a808351cec5eda305e4c0bd92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43017039"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "43486453"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -26,6 +26,16 @@ ms.locfileid: "43017039"
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 
+## <a name="cloud-app-security-release-131"></a>Cloud App Security リリース 131
+
+リリース日: 2018 年 9 月 2 日
+
+- **危険な OAuth アプリに対するアクセス許可を自動的に取り消し**<br>
+Office、Google、または Salesforce での OAuth アプリのアクセス許可を取り消すことにより、アクセス可能な OAuth アプリを制御できるようになりました。 **アプリのアクセス許可ポリシー**を作成するときに、アプリのアクセス許可を取り消すポリシーを設定できます。 
+
+- **Cloud Discovery の追加組み込みパーサーがサポートされている**<br>Cloud Discovery は、Forcepoint Web セキュリティ クラウドのログ形式をサポートします。
+
+ 
 ## <a name="cloud-app-security-release-130"></a>Cloud App Security リリース 130
 
 リリース日: 2018 年 8 月 22日
