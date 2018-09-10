@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 5/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4a304dc7e4da6282fe350fbb6d25825957d723fd
-ms.sourcegitcommit: af8fad9709171b200699ca1ed513e2831826ed7e
+ms.openlocfilehash: e1fc6388107a33bf42aada57e17153a3d7b8437e
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34567576"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44142478"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 >[!NOTE]
 > - 追加したカスタム アプリには、"**カスタム アプリ**" タグが自動的にタグ付けされます。 このアプリ タグを削除することはできません。
 すべてのカスタム アプリを表示するには、**[アプリ タグ]** フィルターを "カスタム アプリ" に等しくなるように設定します。 
-> - カスタム アプリのリスク スコアは、既定では 10 ですが、**[アプリ スコアの上書き]** を使用していつでも変更できます。
+> - カスタム アプリのリスク スコアは、既定では 10 ですが、**[アプリ スコアのオーバーライド]** を使用していつでも変更できます。
 
   
 ## <a name="see-also"></a>参照  

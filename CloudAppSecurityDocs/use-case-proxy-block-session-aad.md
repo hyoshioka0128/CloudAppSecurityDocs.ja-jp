@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 6/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 69da592808750b9c20e3615f935f6a0570b6afd4
-ms.sourcegitcommit: 9d2a34a2d4145b39d855dd6f596c0fc858b92f9b
+ms.openlocfilehash: 213a289c3a9205a9f48ee44febf4c55c146c59de
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339990"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44143139"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -69,8 +69,7 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
 
 6. **[次のすべてに一致する活動]** セクションの **[アクティビティ ソース]** で、次のフィルターを選択します。 
     
-   - 
-  **[デバイス タグ]**: **[次の値に等しくない]** を選択してから、マネージド デバイスを識別するために組織で使用されている方法に応じて、**[準拠]**、**[ドメイン参加済み]**、または **[有効なクライアント証明書]** を選択します。 
+   - **[デバイス タグ]**: **[次の値に等しくない]** を選択してから、マネージド デバイスを識別するために組織で使用されている方法に応じて、**[準拠]**、**[ドメイン参加済み]**、または **[有効なクライアント証明書]** を選択します。 
     
    - **[アプリ]**: 制御対象のアプリを選択します。  
 

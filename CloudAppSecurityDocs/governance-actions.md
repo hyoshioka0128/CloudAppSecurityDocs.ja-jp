@@ -6,18 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c6e2da38cf05a302aa622b1d49f5f3386df63ca
-ms.sourcegitcommit: 45311f2cafef79483e40d971a4c61c7673834d96
+ms.openlocfilehash: 77286bcf8981430369497b6fd306b43980b2e856
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144552"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -92,7 +93,7 @@ ms.lasthandoff: 04/23/2018
 
   - ユーザーの停止 - ユーザーのアプリケーションの使用を停止します。 
     > [!NOTE] 
-    > Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定により Azure AD 設定が上書きされ、このガバナンス アクションが元に戻されます。 
+    > Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定により Azure AD 設定がオーバーライドされ、このガバナンス アクションが元に戻されます。 
 
   - ユーザーにもう一度サインインするよう要求する - ユーザーにサインアウトし、もう一度サインインするよう要求します。  
 
@@ -111,7 +112,7 @@ ms.lasthandoff: 04/23/2018
 
 #### <a name="conflicts-in-user-sync"></a>ユーザー同期の競合
 
-- Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定により Azure AD 設定が上書きされ、このガバナンス アクションが元に戻されます。 
+- Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定により Azure AD 設定がオーバーライドされ、このガバナンス アクションが元に戻されます。 
 
 ### <a name="governance-log"></a>ガバナンス ログ
 ガバナンス ログは、Cloud App Security で実行するように設定された各タスク (手動と自動の両方) の状態レコードを提供します。 これらのタスクには、ポリシーで設定するタスク、ファイルやユーザーに設定するガバナンス アクション、Cloud App Security で実行するように設定する他のすべてのアクションが含まれます。 ガバナンス ログは、これらのアクションの成否に関する情報も提供します。 ガバナンス ログからは、ガバナンス アクションの一部を再試行したり、元に戻したりすることができます。 
