@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38faca2d4d8da2802ca0043bf53564d840645523
-ms.sourcegitcommit: 1744ef45b9c5ac8e08b3489bb9b73fc1347587ac
+ms.openlocfilehash: b61244a1c611355cf5ce9b0ca4f073c1ebccb765
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "31773095"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144042"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -51,26 +51,28 @@ ms.locfileid: "31773095"
    1. 元のファイルは、設定した管理者検疫フォルダーに移動されます。
    2. 元のファイルは削除されます。
    3. 廃棄標識ファイルは元のファイルの場所にアップロードされています。
-
+      
       ![検疫の廃棄標識](./media/quarantine-tombstone.png)
-
+      
    4. ユーザーは廃棄標識にのみアクセスすることができます。ここで IT 担当者から提供されたカスタム ガイドラインを読み、関連付け ID を使用して IT に連絡し、ファイルをリリースすることができます。
 
 4. ファイルが検疫されたというアラートを受け取った場合は、Cloud App Security の **[アラート]** ページでファイルを調査します。
-
+   
    ![検疫のアラート](./media/quarantine-alerts.png)
- 
+   
 5. また、**[検疫済み]** タブの **[ポリシー レポート]** も調査します。
-
+   
    ![検閲レポート](./media/quarantine-report.png)
     
 6. ファイルが検疫された場合、次の手順で脅威の状況を修復します。
-       
+    
     1. SharePoint Online の検疫済みフォルダー内にあるファイルを検査します。
-    3. 監査ログで、ファイルのプロパティを詳細に調査することもできます。
-    4. 会社のポリシーに反するファイルが見つかった場合は、組織のインシデント対応 (IR) プロセスを実行します。
-    5. ファイルが無害であると判明した場合、検疫からファイルを復元することができます。その時点で、元のファイルは解放されます。つまり、元の場所にコピーされ、廃棄標識は削除され、ユーザーはファイルにアクセスできるようになります。
+    2. 監査ログで、ファイルのプロパティを詳細に調査することもできます。
+    3. 会社のポリシーに反するファイルが見つかった場合は、組織のインシデント対応 (IR) プロセスを実行します。
+    4. ファイルが無害であると判明した場合、検疫からファイルを復元することができます。その時点で、元のファイルは解放されます。つまり、元の場所にコピーされ、廃棄標識は削除され、ユーザーはファイルにアクセスできるようになります。
+       
        ![検疫の復元](./media/quarantine-restore.png)
+       
 7. ポリシーがスムーズに実行されたことを確認したら、ポリシーで自動ガバナンス アクションを使用して今後の漏えいを防ぎ、ポリシーと一致するときに管理者検疫を自動的に適用することができます。
 
 > [!NOTE]
