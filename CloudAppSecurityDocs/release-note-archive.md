@@ -6,19 +6,19 @@ author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
 ms.date: 4/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 64d6d4b2c1d7eb27995d006c890d20590f3df06c
-ms.sourcegitcommit: c5dbeb75e409518feaa26200e9a02c59accc8dcc
+ms.openlocfilehash: 1753cf48360bd2c8c895eaa6ae93b7141402c1fa
+ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2018
-ms.locfileid: "32298964"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44144603"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -159,12 +159,12 @@ ms.locfileid: "32298964"
 -   **クラウド アプリ カタログのカスタマイズ:** 
     - **アプリ タグ**: アプリのカスタム タグを作成できるようになりました。 これらのタグは、調査する特定の種類のアプリをより詳しく調べるためのフィルターとして使うことができます。 たとえば、カスタム ウォッチ リスト、特定の事業単位への割り当て、“法務により承認済み” のようなカスタム承認などです。
     - **カスタム ノート**: 環境全体で検出されたさまざまなアプリケーションをレビューして評価する際に、結論と洞察をメモに保存できるようになりました。
-    - **カスタム リスク スコア**: アプリのリスク スコアを上書きできるようになりました。 たとえば、アプリのリスク スコアが 8 で、そのアプリが組織で却下されている場合、その組織に対してリスク スコアを 10 に変更することができます。 誰かがそのアプリをレビューしたときに変更の理由をクリアにするためのノートも追加できます。
+    - **カスタム リスク スコア**: アプリのリスク スコアをオーバーライドできるようになりました。 たとえば、アプリのリスク スコアが 8 で、そのアプリが組織で却下されている場合、その組織に対してリスク スコアを 10 に変更することができます。 誰かがそのアプリをレビューしたときに変更の理由をクリアにするためのノートも追加できます。
 -   **新しいログ コレクターの展開モード:** 新しい展開モードがロールアウトされ、ログ コレクターで使用できるようになりました。 現在の仮想アプライアンス ベースの展開に加えて、新しい Docker (コンテナー) ベースのログ コレクターを、パッケージとしてオンプレミスと Azure の Windows および Ubuntu マシンにインストールできます。 Docker を使用する場合、ホスティング マシンはお客様が所有していて、このお客様が自由にパッチを適用したり監視したりできます。
 
 #### <a name="announcements"></a>お知らせ: 
 -   クラウド アプリ カタログは、15,000 以上の探索可能なアプリをサポートしています。
--   コンプライアンス: Cloud App Security は Azure によって SOC1/2/3 を正式に認定されています。 認定の完全な一覧については、「[Compliance Offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)」(コンプライアンスの提供内容) を参照し、Cloud App Security で結果をフィルターしてください。
+-   コンプライアンス: Cloud App Security は Azure によって SOC1/2/3 を正式に認定されています。 認定の完全な一覧については、[コンプライアンスの提供内容](https://www.microsoft.com/trustcenter/compliance/complianceofferings)に関するページをご覧いただき、Cloud App Security でフィルターした結果を表示してください。
 
 #### <a name="other-improvements"></a>その他の機能強化: 
 -   **解析の向上:** Cloud Discovery のログ解析メカニズムで機能強化が行われました。 内部エラーが発生する可能性が大幅に低下しました。
@@ -202,7 +202,7 @@ Cloud Discovery の更新内容:
 -   Azure Active Directory ユーザー グループに基づいてカスタム検出レポートを作成するための機能がロールアウトされました。 たとえば、マーケティング部門のクラウドの使用状況を確認したい場合は、ユーザー グループのインポート機能を使用してマーケティング グループをインポートして、このグループにカスタム レポートを作成できます。
 
 新機能:
--   セキュリティ閲覧者の RBAC のロールアウトが完了しました。この機能では、管理者に付与したアクセス許可を Cloud App Security コンソール内で管理できます。 既定で、Azure Active Directory と Office 365 の全体管理者とセキュリティ管理者はいずれも、ポータル内でフル アクセス許可を持っています。また、Azure Active Directory と Office 365 のセキュリティ閲覧者はいずれも、Cloud App Security 内で読み取り専用アクセス権を持ちます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可を上書きしたりできます。 詳細については、「[Managing admin access](manage-admins.md)」 (管理アクセス許可の管理) を参照してください。
+-   セキュリティ閲覧者の RBAC のロールアウトが完了しました。この機能では、管理者に付与したアクセス許可を Cloud App Security コンソール内で管理できます。 既定で、Azure Active Directory と Office 365 の全体管理者とセキュリティ管理者はいずれも、ポータル内でフル アクセス許可を持っています。また、Azure Active Directory と Office 365 のセキュリティ閲覧者はいずれも、Cloud App Security 内で読み取り専用アクセス権を持ちます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可をオーバーライドしたりできます。 詳細については、「[Managing admin access](manage-admins.md)」 (管理アクセス許可の管理) を参照してください。
 -   Microsoft インテリジェント セキュリティ グラフによって検出された危険な IP アドレスの詳細な脅威インテリジェンス レポートがロールアウトされました。アクティビティがボットネットによって実行されると、そのボットネット名が (存在する場合は) 表示され、特定のボットネットに関する詳細なレポートへのリンクが示されます。
  
 ### <a name="cloud-app-security-release-97"></a>Cloud App Security リリース 97
