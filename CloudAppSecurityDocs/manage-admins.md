@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 623c2c5e89da95f550c35f346a27dede245195b1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0e3c2ed7397f1c233955ea59c6c8be8f0d9c06e3
+ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144399"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45561186"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -72,7 +72,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 
 
-詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
 
 Azure Active Directory 管理者ロールにユーザーを追加せずに、Cloud App Security に管理者を追加することもできます。次の手順を実行します。
 

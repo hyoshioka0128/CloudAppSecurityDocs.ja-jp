@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0f0cc3758f09ae77966ace3622e5c658a4e2cf9d
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: b4f96e969a4276e6f2456659dfcae7243a791232
+ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144654"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45561203"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -226,7 +226,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security リリース 116
 2018 年 2 月 4 日のリリース
-- Cloud App Security の異常検出ポリシーが拡張され、ありえない移動、疑わしい IP アドレスからのアクティビティ、複数回のログイン試行の失敗など、新しい**シナリオ ベースの検出**が追加されました。 新しいポリシーは自動的に有効になり、設定不要の脅威検出機能がクラウド環境全体で利用できます。 また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 詳細については、「[行動分析と異常検出を瞬時に取得する](https://docs.microsoft.com/en-us/cloud-app-security/anomaly-detection-policy)」を参照してください。
+- Cloud App Security の異常検出ポリシーが拡張され、ありえない移動、疑わしい IP アドレスからのアクティビティ、複数回のログイン試行の失敗など、新しい**シナリオ ベースの検出**が追加されました。 新しいポリシーは自動的に有効になり、設定不要の脅威検出機能がクラウド環境全体で利用できます。 また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 詳細については、「[行動分析と異常検出を瞬時に取得する](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)」を参照してください。
 
 - 段階的なロールアウト: Cloud App Security は SaaS アプリ全体でユーザーとユーザー アカウントを関連付けるようになります。 これにより、関連するさまざまな SaaS アプリすべてで、使用したアプリやアカウントに関係なく、ユーザーのすべてのアクティビティを簡単に調査できます。  
 
