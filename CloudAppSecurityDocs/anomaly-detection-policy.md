@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0735a00693c1f744867d577ae46e1709b4f24cc9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 9d86355440c92ab832257de1876be5653ae1db8d
+ms.sourcegitcommit: 13bdf7cc2df122d42e6d66ce2ffb58de3796accd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144212"
+ms.lasthandoff: 09/16/2018
+ms.locfileid: "45683385"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -74,8 +74,11 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 - この検出では、Microsoft 脅威インテリジェンスによってリスクがあると判断された IP アドレスからユーザーがアクティブであったことが識別されます。 これらの IP アドレスは、ボットネット C & C などの悪意のあるアクティビティに関係しており、危険な状態のアカウントである可能性があります。 この検出には、組織内のユーザーに広く使用されている誤ってタグ付けされた IP アドレスなどの "誤検知" を減らす機械学習アルゴリズムが使用されています。
 
 
-**異常なアクティビティ (ユーザーによる)**
+**疑わしい電子メールのルール**
 
+- この検出では疑わしい電子メール転送ルールが検索されます。たとえば、すべての電子メールのコピーを外部アドレスに転送する受信トレイのルールをユーザーが作成した場合などです。 
+
+**異常なアクティビティ (ユーザーによる)**<br>
 これらの検出では、以下を行うユーザーを識別します。
 
  - 複数回にわたる異常なファイル ダウンロード アクティビティ
