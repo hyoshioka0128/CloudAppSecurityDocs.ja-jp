@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6976c39a644fe96f1d9ec431df08c9737026ffd
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e0e616914ce44ca28938298a5a0f3951b83454dc
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143041"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881790"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -37,7 +37,7 @@ ms.locfileid: "44143041"
 
 承認または非承認にするアプリが一覧になっている場合、チェックボックスを利用し、管理するすべてのアプリを選択し、アクションを選択できます。
 
-承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://mod636914.us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
+承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
 
 > [!NOTE]
 > テナントで Zscaler NSS を使用している場合、承認されていないとマークされているアプリはすべて自動的に Cloud App Security によってブロックされます。このため、ブロッキング スクリプトの作成に関する以下のセクションは必要ありません。 詳細については、[Zscaler との統合](zscaler-integration.md)に関するページをご覧ください。
