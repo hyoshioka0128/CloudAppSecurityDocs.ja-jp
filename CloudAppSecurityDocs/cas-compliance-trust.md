@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 68/21/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 04baf0164ebead748914d8492a43fc62f5d63160
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 8e6af8713761ccff80a141dadabba33b12bf00ea
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143889"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349578"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -144,7 +144,7 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 **Cloud Discovery** レポートを匿名化することを選択できます。 ログ ファイルが **Microsoft** Cloud App Security にアップロードされた後、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 特定のセキュリティ調査を行うために、実際のユーザー名を解決することができます。 個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。 [詳細情報](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer)
 
-## <a name="see-also"></a>「
+## <a name="next-steps"></a>次の手順
 
 [Cloud App Security 概要](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
