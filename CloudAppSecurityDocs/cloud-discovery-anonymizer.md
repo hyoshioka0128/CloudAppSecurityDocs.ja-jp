@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f1dbc607d0ea5f1242874e4c5744dfabdce4a234
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143804"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349434"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -30,10 +30,10 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 重要なポイント:
 -   個人情報は保存も、表示もされません。 暗号化された情報のみが保存され、表示されます。
 -   個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。
--   ユーザー名の解決は、指定の暗号化されたユーザー名を解読することで、ユーザー名ごとに随時実行されます。
+-   ユーザー名の解決は、指定の暗号化されたユーザー名を解読することで、アドホックでユーザー名ごとに随時実行されます。
 
 
-データの匿名化のしくみ:
+## <a name="how-data-anonymization-works"></a>データの匿名化のしくみ
 
 1. データの匿名化を適用する方法は次の 3 つです。 
     
@@ -49,7 +49,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
      
      1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
      
-     2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、**「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。
+     2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、**「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。 **[Anonymize machine information by default in 'Win10 Endpoint Users' report]\('Win10 エンドポイント ユーザー' レポートのマシンの情報を既定で匿名化する\)** を選択することもできます。
 
      3. [暗号化キー] で、**[Use the dedicated key generated for your portal (ポータル用に生成された専用キーを使用する)]** か、**[Use a custom key (カスタム キーを使用する)]** かを選択します。 **[Use a custom key (カスタム キーを使用する)]** を選択した場合は、16 バイト UTF8 暗号化キーを入力します。
      4. **[Save]**(保存) をクリックします。
@@ -67,7 +67,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
    このページは、既知のユーザー名の暗号化されたユーザー名を検索する際にも使用できます。 
 
    1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
-   2. **[匿名化]** タブの **「Anonymize and resolve usernames」** (ユーザー名の匿名化と解決) で、解決策を実行する正当な理由を入力します。
+   2. **[匿名化]** タブの **[Anonymize and resolve usernames]\(ユーザー名の匿名化と解決\)** で、解決策を実行する正当な理由を入力します。
    3. **「Enter username to resolve」** (解決するユーザー名を入力してください) で、**「From anonymized」** (匿名化されたユーザー名を基にする) を選択して匿名化されたユーザー名を入力するか、**「To anonymized」** (匿名化されたユーザー名の実データを基にする) を選択して、解決する元のユーザー名を入力します。 **[解決]** をクリックします。 
 
    ![匿名化](./media/anonymizer.png)

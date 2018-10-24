@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0bf959510ac5daf87c421ed9977479a7e037d6d7
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 02c09c05ca89e58bc45648fc592c8b5a79aaf4f3
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144586"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349527"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery を強化する
 
-Cloud Discovery のデータを、Azure Active Directory のユーザー名データを使用して強化できるようになりました。 この機能を有効にすると、検出トラフィック ログで受け取ったユーザー名が Azure AD のユーザー名と照合され、置き換えられることで、次の新機能が有効になります。
--   Azure Active Directory のユーザーによるシャドウ IT の使用を調査できます。
--   検出されたクラウド アプリの使用と API で収集されたアクティビティを関連付けることができます。
--   Azure AD ユーザー グループに基づくカスタム ログを作成できるようになります。 たとえば、特定のマーケティング部門のシャドウ IT レポートなどです。
+Cloud Discovery のデータを、Azure Active Directory のユーザー名データを使用して強化できるようになりました。 この機能を有効にすると、検出トラフィック ログで受け取ったユーザー名が Azure AD のユーザー名と照合され、置き換えられます。 Cloud Discovery の強化により、次の機能が有効になります。
+- Azure Active Directory のユーザーによるシャドウ IT の使用を調査できます。
+- 検出されたクラウド アプリの使用と API で収集されたアクティビティを関連付けることができます。
+- Azure AD ユーザー グループに基づくカスタム ログを作成できるようになります。 たとえば、特定のマーケティング部門のシャドウ IT レポートなどです。
 
 
 ## <a name="prerequisites"></a>前提条件:
@@ -39,7 +39,7 @@ Cloud Discovery のデータを、Azure Active Directory のユーザー名デ�
     
 1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
      
-2. **[ユーザー エンリッチメント]** タブで、Cloud App Security を有効にして Azure Active Directory データを使用し、既定でユーザー名を強化するために、**[検出されたユーザー識別子を Azure Active Directory ユーザー名で強化します]** を選択します。
+2. **[ユーザー エンリッチメント]** タブで、**[Enrich discovered user identifiers with Azure Active Directory usernames]\(検出されたユーザー ID を Azure Active Directory のユーザー名で強化する\)** を選択します。 このオプションにより、Cloud App Security で Azure Active Directory データを使用して、既定のユーザー名を強化できます。
 
 3. **[Save]**(保存) をクリックします。
  
@@ -48,7 +48,8 @@ Cloud Discovery のデータを、Azure Active Directory のユーザー名デ�
 
   
       
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順
+  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
