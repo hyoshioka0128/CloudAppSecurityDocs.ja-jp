@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a1ec5d07316f56a2f859cffa30ec22297c8b935
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: c1778a15df20cfccad8375dbf7f9fb4a753c17e7
+ms.sourcegitcommit: 96ff394dd75c98a783ac196f312048a963717155
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143634"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48584511"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -45,7 +45,7 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
 6. 最後になりますが、**アプリのリスク概要**で検出されたアプリのリスク スコアを確認することを忘れないでください。調査する必要があれば、検出アラートの状況を見て、未処理のアラート数を確認します。
   
 ## <a name="exclude-entities"></a>エンティティの除外  
-特に不要かつ興味対象ではないシステム ユーザーまたは IP アドレス、あるいは関連性の低いアプリケーションがある場合は、分析対象の Cloud Discovery データからこれらのデータを除外することができます。 たとえば、127.0.0.1 またはローカル ホストから送信されたすべての情報を除外するとします。  
+特に不要で興味対象ではないシステム ユーザーまたは IP アドレス ([Windows Defender ATP 統合](wdatp-integration.md)を使用している場合はマシン) の場合、分析対象の Cloud Discovery データからこれらのデータを除外することができます。 たとえば、127.0.0.1 またはローカル ホストから送信されたすべての情報を除外するとします。  
   
 除外を作成するには:  
   
@@ -55,7 +55,7 @@ Cloud Discovery アプリの概要を得るために最初にするべきこと�
   
 3.  **[除外されたユーザー]** または **[除外された IP アドレスを]** タブのいずれかを選択して、**[ユーザーの追加]** ボタンまたは **[IP アドレスの追加]** ボタンをクリックします。  
   
-4.  ユーザーのエイリアスまたは IP アドレスを追加します。 ユーザーまたは IP アドレスを除外した理由についての情報を追加することをお勧めします。  
+4.  Windows Defender ATP 統合を使用している場合は、ユーザー エイリアス、IP アドレス、またはマシンを追加します。 ユーザーまたは IP アドレスを除外した理由についての情報を追加することをお勧めします。  
   
      ![ユーザーを除外する](./media/exclude-user.png "exclude user")  
   

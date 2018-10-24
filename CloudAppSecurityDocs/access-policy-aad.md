@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7188174777e87293576f20cbd6ee512b82e51b8e
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0c6f6a8139996cadde78f5378b84d82210d70ade
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143130"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251389"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -49,7 +49,7 @@ Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、�
 
 Azure Active Directory の条件付きアクセス ポリシーと Cloud App Security のセッション ポリシーは連携して動作し、各ユーザー セッションを調べて、各アプリに関するポリシーの決定を行います。 Azure AD で条件付きアクセス ポリシーを設定するには、次の手順のようにします。
 
-1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
+1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御するアプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
 
    > [!NOTE]
    > このポリシーが適用されるのは、[Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。

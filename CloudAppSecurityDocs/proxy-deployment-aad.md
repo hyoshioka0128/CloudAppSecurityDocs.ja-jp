@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 636c0e407db3a7460cf64a76dc82133e7febf4c9
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 39b9a5554e326e2d1a9237b1999e316949aad607
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143345"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251507"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -60,7 +60,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
    4. TEST ポリシーの **[クラウド アプリ]** で、Conditional Access App Control で制御するアプリを割り当てます。 
 
       > [!NOTE]
-      >必ず、Conditional Access App Control でサポートされているアプリを選択してください。 Conditional Access App Control では、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 たとえば、Office 365 アプリケーションは SAML で構成されていないため、現在はサポートされていません。
+      >必ず、Conditional Access App Control でサポートされているアプリを選択してください。 アプリの条件付きアクセス制御では、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリがサポートされます。 
 
 ## 手順 2: ポリシーのスコープに含まれるユーザーでアプリにサインインする <a name="sign-in-scoped"></a>
 

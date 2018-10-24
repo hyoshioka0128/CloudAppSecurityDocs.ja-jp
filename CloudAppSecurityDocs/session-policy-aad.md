@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f241033fc56cb1c9adea4cb2c9c8facd95c82d73
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6614c845fad94880883dccff14f5f7f9d110dfa1
+ms.sourcegitcommit: da651fb36d26d0dfe796b988e86205f41f7dc5de
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144501"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48251406"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -53,7 +53,7 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 
 Azure Active Directory の条件付きアクセス ポリシーと Cloud App Security のセッション ポリシーは連携して動作し、各ユーザー セッションを調べて、各アプリに関するポリシーの決定を行います。 Azure AD で条件付きアクセス ポリシーを設定するには、次の手順のようにします。
 
-1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御する SAML アプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
+1. ユーザーまたはユーザー グループに対する割り当てと、Conditional Access App Control で制御するアプリを指定して、[Azure AD 条件付きアクセス ポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。 
 
    > [!NOTE]
    > このポリシーが適用されるのは、[Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)されたアプリだけです。
@@ -142,7 +142,7 @@ Conditional Access App Control は、ルーティングされてきたすべて�
 
 ## すべてのダウンロードをブロックする <a name="block-download"></a>
 
-Cloud App Security セッション ポリシーで実行する **[アクション]** として **[ブロック]** が設定されていると、Conditional Access App Control はポリシーのファイル フィルターに従ってユーザーがファイルをダウンロードできないようにします。 ダウンロード イベントは各 SAML アプリの Microsoft Cloud App Security によって認識され、ユーザーがこのイベントを開始すると、Conditional Access App Control はリアルタイムで介入して実行を防ぎます。 ユーザーがダウンロードを開始したことを示す信号を受け取った Conditional Access App Control は、**ダウンロードが制限されている**というメッセージをユーザーに返し、ダウンロードされるファイルを、ユーザーに対するカスタマイズ可能なメッセージを含むテキスト ファイルに置き換えます。これは、セッション ポリシーから構成できます。  
+Cloud App Security セッション ポリシーで実行する **[アクション]** として **[ブロック]** が設定されていると、Conditional Access App Control はポリシーのファイル フィルターに従ってユーザーがファイルをダウンロードできないようにします。 ダウンロード イベントは各アプリの Microsoft Cloud App Security によって認識され、ユーザーがこのイベントを開始すると、Conditional Access App Control はリアルタイムで介入して実行を防ぎます。 ユーザーがダウンロードを開始したことを示す信号を受け取った Conditional Access App Control は、**ダウンロードが制限されている**というメッセージをユーザーに返し、ダウンロードされるファイルを、ユーザーに対するカスタマイズ可能なメッセージを含むテキスト ファイルに置き換えます。これは、セッション ポリシーから構成できます。  
 
 ## 特定のアクティビティをブロックする <a name="block-activities"></a>
 

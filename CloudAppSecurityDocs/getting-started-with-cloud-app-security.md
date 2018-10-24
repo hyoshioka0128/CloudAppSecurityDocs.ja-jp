@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cc2099958c64448931c1211fa9a5fe76d82f1422
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
+ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144382"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49072856"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -61,24 +61,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
  
 
-### <a name="step-1-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 1. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
-必須のタスク: トラフィック ログをアップロードする **継続的な Cloud Discovery レポートを作成するには**
-
- 1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
- 2. **[ログの自動アップロード]** を選択します。
- 3. **[データ ソース]** タブでソースを追加します。
- 4. **[ログ コレクター]** タブでログ コレクターを構成します。
- 
-**Cloud Discovery のスナップショット レポートを作成するには**
-
- 1. **[検出]** > **[スナップショット レポート]** に移動し、次に示す手順に従います。
-
-**Cloud Discovery レポートを構成する必要がある理由。**
-社内のシャドウ IT 対策を把握することは不可欠です。
-ログを分析すると、どのクラウド アプリが、どのユーザーに、どのデバイスで使用されているかを簡単に特定できます。
-
-
-### <a name="step-2-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 2. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
+### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 1. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
 必須のタスク: アプリを接続する
 
 1. 設定の歯車アイコンから **[アプリ コネクタ]** を選択します。
@@ -89,7 +72,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 アプリを接続すると、クラウド環境でアプリのアクティビティやファイル、アカウントの詳細な調査ができます。
 
 
-### <a name="step-3-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>手順 3. [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
+### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>手順 2. [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
 必須のタスク: ポリシーを作成する
 
 **ポリシーを作成するには**
@@ -103,6 +86,27 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 **ポリシーは企業でどのように役立つか。**
 ポリシーは、傾向を監視したり、セキュリティ上の脅威を確認したり、カスタマイズされたレポートやアラートを生成することに利用できます。 ポリシーを使用すると、ガバナンス アクションの作成や、データ損失防止およびファイル共有コントロールの設定ができます。
 
+
+### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 3. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
+
+必須のタスク: ご利用のクラウド アプリの使用を確認できるように Cloud App Security を有効にします。
+
+1. [Windows Defender ATP と統合](wdatp-integration.md)することで、Cloud App Security が自動的に有効にされ、会社内外のご利用の Windows 10 デバイスを監視できるようになります。
+2. Zscaler を使用する場合は、Cloud App Security に [Zscaler を統合](zscaler-integration.md)します。
+3. 完全なカバレッジを実現するには、継続的な Cloud Discovery レポートを作成します。
+
+   1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+   2. **[ログの自動アップロード]** を選択します。
+   3. **[データ ソース]** タブでソースを追加します。
+   4. **[ログ コレクター]** タブでログ コレクターを構成します。
+ 
+**Cloud Discovery のスナップショット レポートを作成するには**
+
+ **[検出]** > **[スナップショット レポート]** に移動し、次に示す手順に従います。
+
+**Cloud Discovery レポートを構成する必要がある理由。**
+社内のシャドウ IT 対策を把握することは不可欠です。
+ログを分析すると、どのクラウド アプリが、どのユーザーに、どのデバイスで使用されているかを簡単に特定できます。
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>手順 4. [エクスペリエンスの個人設定を行います](mail-settings.md)。
 推奨されるタスク: 組織の詳細情報を追加する

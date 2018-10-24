@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/15/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e6007579b9c83b83a1fa24502249437f645aeb94
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 629e1133b57a9d2aef7e83390aee156b71c53b8e
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144450"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881824"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -30,6 +30,10 @@ ms.locfileid: "44144450"
 
 
 現在のワークプレースでは、多くの場合、クラウド環境で起こっていることを後で知るようでは十分ではありません。従業員が意図的に、または誤ってデータと組織を危険にさらす前に、リアルタイムで違反やリークを防げるようにする必要があります。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
+
+> [!NOTE]
+> Cloud App Security のアプリの条件付きアクセス制御を使用するには、[Azure Active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)と Microsoft Cloud App Security のアクティブなサブスクリプションが必要です。
+>
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -83,13 +87,12 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
  
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
 
-現在、Conditional Access App Control では、Azure AD の SAML シングル サインオンで構成されているアプリがサポートされます。 
+現在、アプリの条件付きアクセス制御では、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリがサポートされます。 
 
 > [!NOTE]
-> - アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
-> - Office 365 アプリケーションは SAML を構成されないため、現在はサポートされていません。
+> アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
-セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリをブロックすることも許可することもできます)。 Azure AD とネイティブで統合すると、次の機能を備えたアプリを含む、 Azure AD での SAML シングル サインオンで構成されているすべてのアプリをサポートできます。
+セッション制御は任意の主なプラットフォーム上の任意のブラウザーで使用できます (モバイル アプリとデスクトップ アプリをブロックすることも許可することもできます)。 Azure AD とネイティブに統合すると、次の機能を備えたアプリを含む、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリをサポートできます。
 
 - AWS
 - ボックス
@@ -109,6 +112,13 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 - Workday
 - Workiva
 - Workplace by Facebook
+- Exchange Online (プレビュー)
+- OneDrive for Business (プレビュー)
+- Power BI (プレビュー)
+- SharePoint Online (プレビュー)
+- Azure DevOps (Visual Studio Team Services) (プレビュー)
+- Yammer (プレビュー)
+
 
 
 セッション制御には、その他のアプリが継続的に搭載されます。 ここに記載されていない特定のアプリに関心がある場合は、[アプリの詳細を送っていただき](mailto:casfeedback@microsoft.com)、ユース ケースとして関心があれば、そのアプリが搭載されます。

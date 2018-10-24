@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 9/3/2018
+ms.date: 10/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,32 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b4f96e969a4276e6f2456659dfcae7243a791232
-ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
+ms.openlocfilehash: 84db548efef74a84e2b97419eb6f5d213512b6c7
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45561203"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881909"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
+
+## <a name="cloud-app-security-release-132"></a>Cloud App Security リリース 132
+
+リリース日: 2018 年 9 月 25 日
+
+- **Office 365 用のアプリの条件付きアクセス制御がパブリック プレビューになりました**
+    - アプリの条件付きアクセス制御では、Office 365 および Open ID Connect で構成されているすべてのアプリもサポートされるようになりました。
+    - セッション内からのフィードバックの提供: この新しいツールを使用すると、セッション管理下にあるアプリケーションのパフォーマンスについて、セッション内から直接、Cloud App Security チームにフィードバックを提供できます。
+
+
+- **企業の範囲を超えた Shadow IT Discovery のための Windows Defender ATP とのネイティブ統合**
+    - Microsoft Cloud App Security は Windows Defender Advanced Threat Protection (ATP) とネイティブに統合して、企業ネットワーク内外でのクラウド アプリの使用に関するデプロイレスのシャドウ IT 検出機能を提供するようになりました。  これにより、企業ネットワーク内にない場合でも、マシンで Cloud Discovery を実行できます。 また、マシン ベースの調査も可能です。リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを調査できます。 詳しくは、「[Windows Defender Advanced Threat Protection と Microsoft Cloud App Security の統合](wdatp-integration.md)」をご覧ください。
+- **暗号化されたファイルの内容の検査**
+    - Cloud App Security では、Azure Information Protection を使用して暗号化により保護されているファイルの内容の検査がサポートされるようになりました。 これらの暗号化されたファイルで再分類の提案を検査し、追加の DLP 公開とセキュリティ ポリシー違反を識別できます。 
 
 ## <a name="cloud-app-security-release-131"></a>Cloud App Security リリース 131
 

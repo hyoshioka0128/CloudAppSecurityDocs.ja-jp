@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/07/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,23 @@ ms.technology: ''
 ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6e251ff0ede60e0d612eb7741ec949877bde8b38
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: f53eca16b08b72798e2b3b0ababcad7ae676765d
+ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142563"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48881773"
 ---
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-docker"></a>Microsoft Cloud App Security の Cloud Discovery の Docker のトラブルシューティング
+# <a name="troubleshooting-the-microsoft-cloud-app-security-cloud-discovery-deployment"></a>Microsoft Cloud App Security の Cloud Discovery の展開に関するトラブルシューティング
 
-## <a name="changing-the-ftp-password"></a>FTP パスワードの変更
+## <a name="windows-defender-atp-integration"></a>Windows Defender ATP の統合
+Windows Defender ATP と Cloud App Security を統合し、統合の結果が表示されない (**Win10 エンドポイント ユーザー** レポートがない) 場合は、接続しているマシンが Windows 10 バージョン 1809 以降であること、およびデータにアクセスできるようになるまでに必要な 2 時間待ったことを確認します。
+
+## <a name="docker-deployment"></a>Docker の展開
+
+### <a name="changing-the-ftp-password"></a>FTP パスワードの変更
 
 
 1. ログ コレクター ホストに接続します。
@@ -39,7 +44,7 @@ ms.locfileid: "44142563"
 
   ![FTP パスワードの変更](./media/ftp-connect.png)
 
-## <a name="customize-certificate-files"></a>証明書ファイルのカスタマイズ
+### <a name="customize-certificate-files"></a>証明書ファイルのカスタマイズ
 
 この手順に従って、Cloud Discovery Docker へのセキュリティで保護された接続で使用する証明書ファイルをカスタマイズできます。
 
