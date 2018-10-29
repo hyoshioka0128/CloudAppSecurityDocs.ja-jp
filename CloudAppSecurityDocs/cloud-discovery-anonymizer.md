@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 73ac9c91bae7c5fa9f59aafe3b52293099e9797c
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 0330128447be0de3c9b3c8419a241f665c3038fd
+ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349434"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49990666"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -81,7 +81,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
   
       
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
