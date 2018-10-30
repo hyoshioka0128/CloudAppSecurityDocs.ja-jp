@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/08/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c68426af8eb0f12bc0157c3b24841e381dd119ce
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: ab7311691a9c0c2c4ebb573f0b0dd01a6da598e9
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072873"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349663"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
-Microsoft Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 処理後、クラウドに置いてある機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。 
+Microsoft Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 分類を使用すると、クラウド内の機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。 
 
 Azure Information Protection を Cloud App Security に統合すると、両方のサービスの全機能を使用して、クラウド内のファイルをセキュリティで保護することができます。
 - 特定のポリシーに一致するファイルにガバナンス アクションとして分類ラベルを適用する機能
 - 1 つの場所にある分類されたファイルをすべて表示する機能
-- 分類レベルに従って調査を実行し、クラウド アプリケーション経由で機密データの公開を定量化する機能
+- 分類レベルに従って調査し、クラウド アプリケーション経由での機密データの公開を定量化する機能
 - 分類されたファイルが適切に処理されていることを確認するためのポリシーを作成する機能
 
 
@@ -49,24 +49,24 @@ Cloud App Security では現在、次の種類のファイルに Azure Informati
 - PowerPoint: potm、potx、ppsx、ppsm、pptm、pptx
 - PDF は、今後のバージョンで対応する予定です。 
 
-この機能は現在、Box、G Suite、SharePoint Online、OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
+現在、この機能は Box、G Suite、SharePoint Online、OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
 
-Cloud App Security の外で、保護されてラベルが付けられたファイルは、現在 Cloud App Security ではスキャンしたり変更したりすることができません。 Cloud App Security の外で (保護なしで) ラベルが付けられたファイルはスキャンできます。Cloud App Security は、Cloud App Security ポリシーに定義されているように、(保護ありまたは保護なしで) 別のラベルを適用できます。
+現在、Cloud App Security の外で保護されてラベルが付けられたファイルは、Cloud App Security ではスキャンしたり変更したりすることができません。 Cloud App Security の外で (保護なしで) ラベルが付けられたファイルはスキャンできます。Cloud App Security は、Cloud App Security ポリシーに定義されているように、(保護ありまたは保護なしで) 別のラベルを適用できます。
 
 
 ## <a name="how-it-works"></a>しくみ
 [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection) のファイル分類ラベルについてはよくご存知なのではないでしょうか。 Cloud App Security で Azure Information Protection 分類タグを表示することができます。 Cloud App Security を Azure Information Protection と統合するとすぐに、次のように Cloud App Security でファイルがスキャンされます。
 
-1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、この処理は 1 時間に 1 回実行されます。
+1. Cloud App Security は、テナントで使用されているすべての分類ラベルの一覧を取得します。 一覧を最新の状態に保つために、このアクションは 1 時間に 1 回実行されます。
 
 2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。
 
-   1. 自動スキャンを有効にした場合 (以下参照)、すべての新しいファイルや変更されたファイルはスキャン キューに追加され、すべての既存のファイルおよびリポジトリはスキャン、分類、保護されます。
-   2. 分類ラベルを検索するようにファイル ポリシー (下記参照) を設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
+    - 自動スキャンを有効にした場合、すべての新しいファイルや変更されたファイルはスキャン キューに追加され、すべての既存のファイルおよびリポジトリはスキャン、分類、保護されます。
+     -  分類ラベルを検索するようにファイル ポリシーを設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
 
-3. 前述のように、これらのスキャンは、Cloud App Security が最初に実行するスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 これらをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant]\(このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする\)** チェックボックスをオンにします (下記参照)。
+3. 前述のように、これらのスキャンは、Cloud App Security が最初に行うスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 これらをスキャンしない場合は、**[Only scan files for Azure Information Protection classification labels from this tenant \(このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする\)]** チェックボックスをオンにします。
 
-4. Cloud App Security 上で Azure Information Protection を有効にすると、Office 365 に追加されたすべての新しいファイルについても分類ラベルがスキャンされます。
+4. Cloud App Security 上で Azure Information Protection を有効にすると、Office 365 に追加されたすべての新しいファイルについて分類ラベルがスキャンされます。
 
 5. 分類ラベルを自動的に適用する新しいポリシーを Cloud App Security 内で作成できます。
 
@@ -74,32 +74,32 @@ Cloud App Security の外で、保護されてラベルが付けられたファ�
   
 ### <a name="enable-azure-information-protection"></a>Azure Information Protection を有効にする
 
-Azure Information Protection を Cloud App Security に統合するために必要な操作は、1 つのチェックボックスをクリックすることだけです。 自動スキャンを有効にすると、ポリシーを作成しなくても、ご利用の Office 365 ファイルでの Azure Information Protection 分類ラベルの検索が有効になります。 自動スキャンを有効にすると、Azure Information Protection 分類ラベルでラベル付けされたファイルがクラウド環境内にある場合、Cloud App Security にそれらのファイルが表示されます。
+Azure Information Protection を Cloud App Security に統合するために必要な操作は、1 つのチェックボックスをクリックすることだけです。 自動スキャンを有効にすると、ポリシーを作成しなくても、ご利用の Office 365 ファイルでの Azure Information Protection 分類ラベルの検索が有効になります。 これを有効にすると、Azure Information Protection 分類ラベルでラベル付けされたファイルがクラウド環境内にある場合、Cloud App Security にそれらのファイルが表示されます。
 
 Cloud App Security で、分類ラベルを対象にしたコンテンツ検査を有効にしてファイルをスキャンするには、次の手順に従います。
 
-1. Cloud App Security の設定歯車で、**[全般設定]** ページを選択します。
-2. Azure Information Protection で、**「Automatically scan files for Azure Information Protection classification labels」** (Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする) を選択します。 
+1. Cloud App Security の設定歯車で、**[システム]** 見出しの下の **[設定]** ページを選択します。
+    ![設定メニュー](./media/azip-system-settings.png)
+1. **Azure Information Protection** で、**[Automatically scan files for Azure Information Protection classification labels]\(Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする\)** を選択します。 
+    ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
-Azure Information Protection を有効にすると、Cloud App Security 内で分類ラベルのあるファイルを表示し、ラベルごとにフィルターを適用できるようになります。 Cloud App Security がクラウド アプリに接続されたら、Cloud App Security の Azure Information Protection 統合機能を利用し、Azure Information Protection ラベルを Cloud App Security ポータルで直接 (保護ありまたは保護なしで) 適用できます。ファイルに直接追加するか、ガバナンス アクションとして分類ラベルを自動適用するようにファイル ポリシーを構成できます。
+Azure Information Protection を有効にすると、Cloud App Security 内で分類ラベルのあるファイルを表示し、ラベルごとにフィルターを適用できるようになります。 Cloud App Security がクラウド アプリに接続されたら、Azure Information Protection 統合機能を利用し、Azure Information Protection 分類ラベルを Cloud App Security ポータルで (保護ありまたは保護なしで) 適用できます。ファイルに直接追加するか、ガバナンス アクションとして分類ラベルを自動適用するようにファイル ポリシーを構成できます。
 
-
- ![Azure Information Protection を有効にする](./media/enable-azip.png)
 
 > [!NOTE] 
 > 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、**[コンテンツ検査]** オプションを確認します。 次に、**[コンテンツ検査]** の **[プリセットの式と一致するファイルを含む]** をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 #### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
-既定では、Cloud App Security は、自分の組織内で定義された分類ラベルだけでなく、他の組織で定義された外部の分類ラベルもスキャンします。 
+既定では、Cloud App Security では、自分の組織内で定義した分類ラベルだけでなく、他の組織で定義した外部の分類ラベルもスキャンされます。 
 
 
-組織の部外者によって設定された分類ラベルを無視するには、Cloud App Security ポータルの **[Azure security settings (Azure セキュリティ設定)]** の **[全般設定]** で、**[Ignore Azure Information Protection classification labels from other tenants (他のテナントからの Azure Information Protection 分類ラベルを無視する)]** を選択します。
+組織の外部で設定された分類ラベルを無視するには、Cloud App Security ポータル内の **[設定]** と **[Azure Information Protection]** に移動します。 **[Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant]\(このテナントから Azure Information Protection の分類ラベルとコンテンツ検査の警告に対してのみファイルをスキャンする\)** を選択します。
  
 ![ラベルを無視する](./media/azip-ignore.png)
 
 ### <a name="apply-labels-directly-to-files"></a>ファイルにラベルを直接適用する
 
-1. **[ファイル]** ページで、保護するファイルを選択して、ファイルの行の最後にある 3 つのドットをクリックし、**[分類ラベルの適用]** を選択します。
+1. **[調査]** の **[ファイル]** ページから、保護するファイルを選択します。 ファイルの行の末尾にある 3 つのドットをクリックし、**[分類ラベルの適用]** を選択します。  
 
    ![アプリの保護](./media/protect-app.png)
   
@@ -123,8 +123,8 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 指示に従って、ファイル ポリシーを作成します。
 
 1. ファイル ポリシーを作成します。
-2. 検出するファイルの種類など、ポリシーを設定します。たとえば、**[アクセス レベル]** が **[内部]** ではないすべてのファイルや **[所有者 OU]** が財務チームではないすべてのファイルを検出します。 
-3. 関連アプリのガバナンス アクションの下で**分類ラベルを適用**し、ラベルの種類を選択します。
+2. 検出するファイルの種類を含めるようにポリシーを設定します。 たとえば、**[アクセス レベル]** が **[内部]** ではなく、**[所有者 OU]** が財務チームであるすべてのファイルを選択します。 
+3. 関連アプリのガバナンス アクションの下で **[分類ラベルの適用]** をクリックし、ラベルの種類を選択します。
 
    ![ラベルを適用する](./media/aip-gov-action.png)
 
@@ -133,24 +133,22 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 
 ### <a name="control-file-exposure"></a>ファイルの公開を制限する
 
-- Azure Information Protection 分類ラベルでラベル付けしたドキュメントである場合:
+-  例: 以下が Azure Information Protection 分類ラベルでラベル付けしたドキュメントである場合:
 
    ![Azure Information Protection 画面サンプル](./media/azip-screen.png)
 
-- Cloud App Security の **[ファイル]** ページで、分類ラベルにフィルターを適用するとこのファイルを確認できます。
+- **[ファイル]** ページで Azure Information Protection の分類ラベルでフィルター処理することで、Cloud App Security でこのドキュメントを表示できます。
 
    ![Cloud App Security と Azure Information Protection の比較](./media/cas-compared-azip.png)
 
-- **[ファイル]** ページで関連ファイルをクリックしてファイル ドロワーでこれらのファイルとその分類ラベルに関する詳細を取得したり、分類ラベルが含まれているかどうかを確認したりすることができます。
+- これらのファイルとその分類ラベルの詳細情報については、ファイル ドロワーで取得できます。 **[ファイル]** ページで関連ファイルをクリックし、分類ラベルが使用されているかどうかを確認します。
 
    ![ファイル ドロワー](./media/azip-file-drawer.png)
 
 - Cloud App Security 内でファイル ポリシーを作成することで、不適切に共有されているファイルの制御、およびラベル付けされており最近変更されたファイルの検索を行うことができます。
-- また、分類されたファイルに関連するアクティビティでアラートをトリガーできます。
 
-  ![Cloud App Security における Azure Information Protection タグ](./media/azip-tags-in-cas.png)
-
-- 特定のファイルに分類ラベルを自動的に適用するポリシーを作成することもできます。
+- 特定のファイルに分類ラベルを自動的に適用するポリシーを作成できます。
+- また、ファイルの分類に関連するアクティビティでアラートをトリガーすることもできます。
 
 
 > [!Note]
@@ -159,17 +157,17 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 
 **サンプル ポリシー - Box で外部共有されている機密データ:**
 
-1.  ファイル ポリシーを作成します。
-2.  ポリシーの名前、重要度、カテゴリを設定します。
-3.  Box で外部共有されている機密データをすべて検索する、以下のフィルターを追加します。
+1. ファイル ポリシーを作成します。
+2. ポリシーの名前、重要度、カテゴリを設定します。
+3. Box で外部共有されている機密データをすべて検索する、以下のフィルターを追加します。
 
 ![機密性ポリシー](./media/azip-confidentiality-policy.png) 
 
 **サンプル ポリシー - SharePoint の Finance フォルダー以外にある最近変更された制限付きのデータ:**
 
-1.  ファイル ポリシーを作成します。
-2.  ポリシーの名前、重要度、カテゴリを設定します。
-3.  最近変更された制限付きデータをすべて検索する以下のフィルターを追加して、フォルダー選択オプションで Finance フォルダーを除外します。 
+1. ファイル ポリシーを作成します。
+2. ポリシーの名前、重要度、カテゴリを設定します。
+3. 次のフィルターを追加して、最近変更された制限付きデータをすべて検索します。また、フォルダー選択オプションで Finance フォルダーを除外します。 
  
 ![制限付きデータのポリシー](./media/azip-restricted-data-policy.png) 
 

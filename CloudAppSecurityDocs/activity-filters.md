@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/5/2018
+ms.date: 10/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 55427fdfa73893fae763304eda6b73d19dac3f93
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
+ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072890"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49349459"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,7 +39,7 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
 
  ![基本的なアクティビティ ログ フィルター](media/activity-log-filter-basic.png)
 
-さらに詳細にアクティビティを絞り込むには、[詳細] をクリックして、基本的なフィルターを拡張します。
+さらに詳細にアクティビティを絞り込むには、**[詳細]** をクリックして、基本的なフィルターを拡張します。
 
  ![詳細なアクティビティ ログ フィルター](media/activity-log-filter-advanced.png)
 
