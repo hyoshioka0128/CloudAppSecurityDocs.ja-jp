@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/23/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 3a677bc7-c8b7-4c6a-aada-82c8b3778352
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fd068465731dd4759aa0e110ceaa76e4eb8eade4
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0bb637129c852e284aad5b27bba9ed13a5111cf5
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143311"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217154"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -46,7 +46,7 @@ ms.locfileid: "44143311"
 > Azure を接続すると、データがプルされます。 以降のデータが表示されます。
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
