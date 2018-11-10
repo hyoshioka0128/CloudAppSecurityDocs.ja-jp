@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 10/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dc5249ae183da37293920aade12346aaca46eb32
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349629"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745733"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -78,6 +78,9 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 **疑わしい受信トレイの転送**
 
 - この検出では疑わしい電子メール転送ルールが検索されます。たとえば、すべての電子メールのコピーを外部アドレスに転送する受信トレイのルールをユーザーが作成した場合などです。 
+ 
+> [!NOTE]
+> Cloud App Security では、ユーザーの一般的な動作に基づき、疑わしいものとして識別される各転送ルールについてのみアラートが表示されます。 
 
 **異常なアクティビティ (ユーザーによる)**<br>
 これらの検出では、以下を行うユーザーを識別します。
@@ -92,6 +95,13 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 **複数回失敗したログイン試行**
 - この検出は、1 つのセッションで複数回ログインを試行して失敗した、学習したベースラインからセキュリティ違反を試みている可能性のあるユーザーを識別します。 
+
+**承認されていないアプリへのデータ抜き取り**
+- ユーザーまたは IP アドレスによって、組織からの情報流出の試みの可能性があるアクティビティを実行することを承認されていないアプリが使用されると、このポリシーが自動的に有効になり、アラートが表示されます。
+
+**複数の VM 削除アクティビティ**
+- このポリシーでは使用環境をプロファイルし、ユーザーが単一セッションで複数の VM を削除したときに、組織のベースラインを基にアラートをトリガーします。 これは、侵害の試行を示している可能性があります。
+
 
 ## 自動ガバナンスを有効にする<a name="adp-automated-gov"></a>
 

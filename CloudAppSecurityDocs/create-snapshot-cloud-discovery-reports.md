@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/07/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1072196cb6a1ab8781f1bde5b2b58a094d6d3afe
-ms.sourcegitcommit: 53a1c990ff06674c26563a9ebcb1979818c3c063
+ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881926"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217392"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
-自動ログ コレクターを使用する前に、手動でログをアップロードし、Microsoft Cloud App Security でログ解析することが重要です。 ログ コレクターのしくみと予想されるログの形式については、「[Cloud Discovery に対するトラフィック ログの使用](#log-format)」をご覧ください。
+自動ログ コレクターの使用を試みる前に、手動でログをアップロードし、Microsoft Cloud App Security でログ解析することが重要です。 ログ コレクターのしくみと予想されるログの形式については、「[Cloud Discovery に対するトラフィック ログの使用](#log-format)」をご覧ください。
 
-まだログを取得していなく、ログがどのようなものかをサンプルで確認したい場合は、以下の手順に従ってサンプル ログ ファイルをダウンロードし、ログがどのように表示されるかを確認してください。
+ログがまだない状態で、ログの表示例を確認する場合は、サンプル ログ ファイルをダウンロードします。 ログがどのように表示されるかを確認するには、以下の手順に従います。
 
 
 スナップショット レポートを作成するには:
   
 1. 組織のユーザーがインターネット アクセスに使用するファイアウォールとプロキシからログ ファイルを収集します。 組織内のすべてのユーザー アクティビティを示す、トラフィック ピーク時のログを収集するようにしてください。  
   
-2. Cloud App Security ポータルで **[探索]** をクリックし、**[新しいスナップショット レポートの作成]** をクリックします。  
+2. Cloud App Security ポータルで、**[探索]**、**[スナップショット レポートの作成]** の順にクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
@@ -43,7 +43,7 @@ ms.locfileid: "48881926"
 
 4. ログ ファイルのアップロード元にする **[データソース]** を選択します。  
   
-5. ダウンロードできるサンプルに従ってログが正しく書式設定されているかどうかを確認します。 「**View and verify**」 (表示して確認) をクリックし、「**Download sample log**」 (サンプル ログのダウンロード) をクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
+5. ログの形式を調べ、ダウンロードできるサンプル ログに従ってログが正しく書式設定されているかどうかを確認します。 **[View and verify]\(表示して確認\)**、**[サンプル ログのダウンロード]** の順にクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 
    ![ログの書式を確認する](./media/cloud-discovery-snapshot-verify.png)  
 
@@ -61,19 +61,19 @@ ms.locfileid: "48881926"
 9. ログ ファイルのアップロード後、ファイルの解析および分析には多少時間がかかります。  
    ログ ファイルの処理が完了した後、終了したことを通知する電子メールを受け取ります。 
   
-10. ポータル上部のステータス バーに、ログ ファイルの処理状態を知らせる通知バナーが表示されます。  
+10. **Cloud Discovery ダッシュボード**の上部にあるステータス バーに通知バナーが表示されます。 バナーは、自分のログ ファイルの処理状態で更新されます。  
     ![ログ ファイル メニュー バーの処理](./media/processing-log-file-menu-bar.png) 
    
-11. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定歯車アイコンの **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
+11. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定の歯車アイコンに移動して **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
 12. **[スナップショット レポート]** を選択し、スナップショット レポートを選択します。
  
-![スナップショット レポートの管理](./media/snapshot-report-managment.png)
+     ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 
   
 ## Cloud Discovery に対するトラフィック ログの使用 <a name="log-format"></a>
-Cloud Discovery はトラフィック ログ内のデータを使用します。 ログが詳細であるほど、可視性は高まります。 Cloud Discovery では、次の属性の Web トラフィック データを必要とします。
+Cloud Discovery では、トラフィック ログ内のデータが使用されます。 ログが詳細であるほど、可視性は高まります。 Cloud Discovery では、次の属性の Web トラフィック データを必要とします。
 - トランザクションの日付
 - Source IP
 - ソース ユーザー: 推奨
@@ -83,16 +83,16 @@ Cloud Discovery はトラフィック ログ内のデータを使用します。
 - アップロードおよびダウンロードされたデータの量 (クラウド アプリの使用状況のパターンを知ることができます)
 - 実行したアクション (許可/ブロック)
 
-Cloud Discovery は、ログに含まれていない属性の表示や分析はできません。
-たとえば、**Cisco ASA Firewall** の標準のログ形式には、**トランザクションごとにアップロードされるバイト数**も**ユーザー名**も含まれず、**ターゲット URL** も含みません (ターゲット IP は含みます)。
+Cloud Discovery で、ログに含まれていない属性の表示や分析はできません。
+たとえば、**Cisco ASA Firewall** の標準のログ形式には、**トランザクションごとにアップロードされるバイト数**、**ユーザー名**、**ターゲット URL** (ターゲット IP のみ) は含まれません。
 そのため、これらの属性はこれらのログの Cloud Discovery データに表示されず、クラウド アプリの可視性は制限されます。 Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります。 
 
 
-Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たしている必要があります。
-1.  データ ソースがサポートされている (次の一覧を参照)。
-2.  ログの形式が期待されている標準の形式と一致する (これはログ ツールのアップロードで確認されます)。
-3.  イベントが 90 日以上経過していない。
-4.  ログ ファイルが有効で、送信トラフィック情報を含む。
+Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たす必要があります。
+1. データ ソースがサポートされている (次の一覧を参照)。
+2. ログの形式が期待されている標準の形式と一致する (形式はログ ツールのアップロードで確認されます)。
+3. イベントが 90 日以上経過していない。
+4. ログ ファイルが有効で、送信トラフィック情報を含む。
 
 
 
@@ -101,7 +101,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access ログ (W3C)
 - Check Point
-- Cisco ASA Firewall (Cisco ASA Firewall では情報レベルを 6 に設定する必要があります)
+- Cisco ASA Firewall (Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります)
 - Cisco ASA with FirePOWER
 - Cisco IronPort WSA
 - Cisco ScanSafe
@@ -128,7 +128,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 > [!NOTE]
 > Cloud Discovery では、IPv4 と IPv6 の両方のアドレスをサポートします。
 
-ログがサポートされていない場合は、**データ ソース**に **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは確認され、Cloud App Security のクラウド アナリスト チームによって要求したログの種類が追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+ログがサポートされていない場合は、**データ ソース**として **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは Cloud App Security クラウド アナリスト チームによって確認され、要求したログの種類のサポートが追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
 
 データ属性 (ベンダーのドキュメントに従う)
@@ -161,7 +161,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 |                   Zscaler                    | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
      
  
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

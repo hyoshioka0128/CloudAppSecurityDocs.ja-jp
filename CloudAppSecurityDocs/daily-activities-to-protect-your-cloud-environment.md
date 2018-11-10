@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/10/2018
+ms.date: 10/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,25 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b71ff344dc6d1e821a3462ff36f302d49d90b281
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 71fe930881b792661b782b9d88782c9272216702
+ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143430"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "50745682"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
-Microsoft Cloud App Security を起動して実行したら、データ ストリーム構成し、ユーザーにアプリの使用を許可し、クラウド環境を監視するポリシーを設定する必要があります。 これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。  
+この記事では、Cloud App Security を使用して毎日行う必要がある作業について説明します。  Microsoft Cloud App Security を稼働させたら、次のことを行う必要があります。
 
-このトピックでは、Cloud App Security を使用して日常的に行う必要がある作業について説明します。  
+- データ ストリームを構成する。
+- 他の人に使用を許可するアプリを承認する。 
+- クラウド環境を監視するポリシーを設定する。 
+
+これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。  
+
+
 
 ## <a name="check-the-dashboard"></a>ダッシュボードの確認  
 Cloud App Security ダッシュ ボードは、次のようなアクティビティや機能の概要を提供します。
@@ -37,7 +43,7 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 - クラウド環境で接続中のアプリの使用状況の傾向
 - 上位ユーザー (脅威検出別)
 
-トリガーされた新しいアラートを確認するため、毎日ダッシュボードを確認することをお勧めします。 これは、クラウド環境全体で何が起こっているかを把握し、クラウド環境の正常性を監視するうえでも役立ちます。  
+トリガーされた新しいアラートを確認するため、毎日ダッシュボードを確認することをお勧めします。 これは、クラウド環境の正常性を監視するのに適しています。 ダッシュボードは、何が起こっているかを把握するのに役立ちます。  
 
 ![Cloud App Security ダッシュボード](./media/dashboard.png "ダッシュボード")  
 

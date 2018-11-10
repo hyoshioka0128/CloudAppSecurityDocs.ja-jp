@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b6d426b1b59dc8f62322d404b1cd18e829611ba6
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143974"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217341"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -31,11 +31,11 @@ ms.locfileid: "44143974"
 
 -   Cloud App Security ダッシュボードで **[制御]**、**[ポリシー]** の順にクリックします。  
 
--   特定のポリシーを選択して、アラートをトリガーしていないポリシーの一致の 「**Violating now**」 (発生中の違反) リストを確認します。  
+-   特定のポリシーを選択して、アラートをトリガーしていないポリシーの一致の **[現在一致しています]** リストを確認します。  
 
 -   違反を 1 つずつクリックし、それぞれの処理を決定します。 ガバナンス アクションの詳細については、以下の図を参照してください。  
 
-     コンプライアンス違反を発見するようにポリシーが設定されていて、クレジット カード番号のファイルが OneDrive に保存された場合、ポリシーに一致します。  
+     コンプライアンス違反を見つけるようにポリシーが設定されていて、誰かがクレジット カード番号を OneDrive 上のファイルに保存する場合、ポリシーに一致します。  
 
      ![PCI との一致](./media/pci-matches.png "PCI との一致")  
 
@@ -49,7 +49,7 @@ ms.locfileid: "44143974"
 
      **[一致]** をクリックすると、実際のクレジット カード番号が表示されます。  
 
-     ![コンテンツ一致 ccn](./media/content-matches-ccn.png "コンテンツ一致 ccn")  
+     ![[コンテンツの一致] のクレジット カード番号](./media/content-matches-ccn.png "[コンテンツの一致] のクレジット カード番号")  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
@@ -78,13 +78,13 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 ### <a name="migrate-your-users-to-a-new-app"></a>新しいアプリにユーザーを移行する  
 たとえば、最近になって Office 365 を購入し、組織内のすべてのユーザーに他のクラウド ストレージ アプリの使用を停止して、代わりに OneDrive を使用してほしいと考えているとします。 この場合、以下の操作を実行できます。  
 
-1. **Cloud Discovery ダッシュボード**に移動して、**[カテゴリ]** から **[クラウド ストレージ]** によってアプリをフィルタリングします。 **[ユーザー]** または **[IP アドレス]** 別に結果を並べ替え、最も多く使用されているアプリを確認します。  
+1. **Cloud Discovery ダッシュボード**に移動して、**[アプリのカテゴリ]** から **[クラウド ストレージ]** でアプリをフィルター処理します。 **[ユーザー]** または **[IP アドレス]** 別に結果を並べ替え、最も多く使用されているアプリを確認します。  
 
 2. 他のアプリを使用しているユーザーを確認することができます。 また、それらのアプリにドリルダウンして、以下の手順で、そのアプリのユーザーに対して OneDrive に移行するように通知することもできます。
 
-   1.  **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、**[IP アドレス]** または **[ユーザー]** タブを選びます。  
+   1. **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、**[IP アドレス]** または **[ユーザー]** タブを選びます。  
 
-   2.  矢印 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選び、**[エクスポート]** を選択します。  
+   2. **[エクスポート]** の矢印アイコン ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選んで、エクスポート オプションを選びます。  
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  
@@ -99,7 +99,7 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 
 4.   組織全体のエンタープライズ ライセンスを購入しようと考えている場合は、**[ユーザー]** 列もチェックしてください。 この列では、決定を行う前に、現在最も多くのユーザーが使用しているアプリ、そのアプリの信頼性、そのアプリに備わっているセキュリティ機能を確認することができます。  
 
-## <a name="see-also"></a>「  
+## <a name="next-steps"></a>次の手順
 クラウド アプリの使用を制御するポリシーを設定する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。   
 
 Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  

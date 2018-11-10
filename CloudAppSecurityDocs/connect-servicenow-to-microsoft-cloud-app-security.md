@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 887a77321c6f62fcd48dd94b58bfbb5b7f7f4874
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 75e22bb5ff151ea71ea2a48e5aef45f22fc4b5f8
+ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144280"
+ms.lasthandoff: 10/29/2018
+ms.locfileid: "50217324"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -30,12 +30,12 @@ ms.locfileid: "44144280"
 >  Fuji 以降のリリースで使用可能な OAuth アプリ トークンを使用して ServiceNow を展開することをお勧めします (関連する [ServiceNow ドキュメント](http://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)を参照)。 以前のリリースの場合は、[レガシー接続モード](#legacy-servicenow-connection)がユーザー/パスワードに基づいて使用可能です。 指定したユーザー名/パスワードは、API トークンの生成にのみ使用され、最初の接続処理後に保存されません。
 > 
 > [!NOTE]
->  Cloud App Security では、Eureka、Fiji、Geneva、Helsinki、Istanbul バージョンの ServiceNow がサポートされています。 ServiceNow を Cloud App Security に接続するには、**管理者**ロールが必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  詳細については、「[ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)」を参照してください。
+>  Cloud App Security では、Eureka、Fiji、Geneva、Helsinki、Istanbul バージョンの ServiceNow がサポートされています。 ServiceNow を Cloud App Security に接続するには、**管理者**ロールが必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  詳細については、「[ServiceNow Product Documentation](http://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)」 (ServiceNow 製品ドキュメント) を参照してください。
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>OAuth を使用して ServiceNow を Cloud App Security に接続する方法
   
   
-1. ServiceNow アカウントに管理者アカウントでログオンします。  
+1. ServiceNow アカウントに管理者アカウントでサインインします。  
  
    > [!NOTE]
    >  指定したユーザー名/パスワードは、API トークンの生成にのみ使用され、最初の接続処理後に保存されません。
@@ -70,7 +70,7 @@ ms.locfileid: "44144280"
   
     ![ServiceNow を接続する](./media/connect-servicenow.png "ServiceNow を接続する")  
   
-8. ポップアップの該当するボックスに ServiceNow のユーザー ID、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。 ServiceNow のユーザー ID を見つけるには、ServiceNow ポータルに移動します。**[ユーザー]** テーブルの自分の名前がユーザー ID の横に表示されています。
+8. ポップアップの該当するボックスに ServiceNow のユーザー ID、パスワード、インスタンス URL、クライアント ID、クライアント シークレットを追加します。 ServiceNow のユーザー ID を見つけるには、ServiceNow ポータルの **[ユーザー]** に移動して、テーブルの自分の名前を見つけます。
 
    ![ServiceNow ユーザー ID](./media/servicenow-userid.png)
   
@@ -88,7 +88,7 @@ ServiceNow を接続すると、接続までの 60 日間のイベントを受�
 
 ServiceNow を Cloud App Security に接続するには、管理者レベルのアクセス許可が必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。   
 
-1. ServiceNow アカウントに管理者アカウントでログオンします。   
+1. ServiceNow アカウントに管理者アカウントでサインインします。   
 
 2. Cloud App Security 用の新しいサービス アカウントを作成し、その新しいアカウントに管理者のロールを与えます。   
 
@@ -114,7 +114,7 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
    ServiceNow を接続すると、接続までの 60 日間のイベントを受け取ります。 
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
