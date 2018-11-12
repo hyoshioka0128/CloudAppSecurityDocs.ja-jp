@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3e0a56c9c174765660dfd19cad0c3cced1d74cd7
-ms.sourcegitcommit: 6069639ae538cc23831bbcaf61f18d92c6a5117d
+ms.openlocfilehash: a3c955a037f7ea81e0a06e673fd18030c0cbbf9b
+ms.sourcegitcommit: 3253c98f1bf2fafc2578a87ee2db9698caa05c5b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2018
-ms.locfileid: "50982073"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51265326"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -89,6 +89,8 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU|52.174.56.180|
 > |EU2|40.81.156.154<br>40.81.156.156|
+
+Cloud App Security SIEM エージェントを設定するときにプロキシを指定していなかった場合は、ポート 80 でhttp 接続を http://ocsp.msocsp.com/ に許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
@@ -174,6 +176,7 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 > [!NOTE]
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。
 >- ログ コレクターが Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
+>- ログ コレクターを設定するときにプロキシを指定していなかった場合は、ポート 80 でhttp 接続を http://ocsp.msocsp.com/ に許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 
 

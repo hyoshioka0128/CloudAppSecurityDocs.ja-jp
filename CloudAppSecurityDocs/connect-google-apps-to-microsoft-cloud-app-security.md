@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/22/2018
+ms.date: 11/08/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf1a10466deb59ca06a88674993c628b8b744563
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 834f444831e2024d9a29ace710e7e2c35fb6f1ce
+ms.sourcegitcommit: b8e75cefeffe3ae160830f3bf384f05db985e0d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144620"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51285845"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -28,7 +28,7 @@ ms.locfileid: "44144620"
   
 ## <a name="configure-g-suite"></a>G Suite を構成する  
   
-1. G Suite のスーパー管理者として、<a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> にログインします。  
+1. G Suite のスーパー管理者として、<a href="https://cloud.google.com/console/project" target="_blank">https://cloud.google.com/console/project</a> にサインインします。  
   
 2. **[プロジェクトの作成]** をクリックして新しいプロジェクトを開始します。  
   
@@ -38,7 +38,7 @@ ms.locfileid: "44144620"
    **Microsoft Cloud App Security** という名前を付け、**[作成]** をクリックします。  
           ![google2](./media/google2.png "google2")  
   
-4. プロジェクトが作成された後、ツール バーで **[Google Cloud Platform]** をクリックして、上部のドロップ ダウンで適切なプロジェクトが選ばれていることを確認します。
+4. プロジェクトが作成されたら、ツール バーの **[Google Cloud Platform]** をクリックします。 上部にあるドロップダウン リストで適切なプロジェクトが選択されていることを確認します。
        
       ![google プロジェクト](./media/googleverify-project.png "googleverify プロジェクト")  
 
@@ -46,7 +46,7 @@ ms.locfileid: "44144620"
   
      ![google3](./media/google3.png "google3")  
    
-7. **[ライブラリ]** タブをクリックし、次の API を有効にします (API が **[Popular APIs (よく使用される API)]** リストに表示されていない場合、検索行を使用します)。  
+7. **[ライブラリ]** をクリックし、次の API を有効にします (API が **[Popular APIs]\(よく使用される API\)** リストに表示されていない場合、検索行を使用します)。  
      
    -   管理 SDK  
   
@@ -54,7 +54,7 @@ ms.locfileid: "44144620"
   
    -   Google ドライブ API  
   
-   -   Apps Marketplace SDK  
+   -   G Suite Marketplace SDK  
   
    -   Gmail API  
             
@@ -77,7 +77,7 @@ ms.locfileid: "44144620"
   
     - **[Save]**(保存) をクリックします。  
   
-      ![Google の製品名](./media/google6.png "google6")  
+      ![Google oauth 同意](./media/google-oauth-consent.png "google oauth 同意")  
   
 11. **[Credentials]**/(認証情報/) タブで、**[Create credentials]**/(認証情報の作成/) の隣にある矢印をクリックします。  
   
@@ -126,7 +126,7 @@ ms.locfileid: "44144620"
 
 21. **[変更を保存]** をクリックします。
 
-22. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[Apps Marketplace SDK]** をクリックします。 
+22. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[G Suite Marketplace SDK]** をクリックします。 
       
 23. **[構成]** タブを選択します。 
   
@@ -134,8 +134,11 @@ ms.locfileid: "44144620"
   
     -   **[アプリケーション名]** で、「**Microsoft Cloud App Security**」と入力します。
   
-         **[アプリケーションの説明]** に、「Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況が把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます」と入力します。  
-  
+         **[アプリケーションの説明]** に、「Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況が把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます」と入力します。 
+    - **[新しい項目]** ウィンドウの **[完了]** をクリックします。      
+     
+       ![google の新しい項目](./media/google-new-item.png "google の新しい項目")  
+
     -   **[Enable individual install (個々のインストールを有効にする)]** チェック ボックスをオフにします。  
   
     -   **[アプリケーション アイコン]** で、4 つの必須イメージを設定します。  
@@ -240,7 +243,7 @@ G Suite を接続すると、接続までの 60 日間のイベントを受け�
 G Suite を接続すると、Cloud App Security がフル スキャンを実行します。 所有するファイルとユーザーの数に応じて、フル スキャンの実行に時間がかかる場合があります。 ほぼリアルタイムのスキャンを有効にするために、アクティビティが検出されたファイルはスキャン キューの先頭に移動されます。 たとえば、編集、更新、または共有されたファイルはすぐにスキャンされます。 これは、本質的に変更されていないファイルには適用されません。 たとえば、表示、プレビュー、印刷、またはエクスポートされたファイルは、定期スキャンのときにスキャンされます。
   
   
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
