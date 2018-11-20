@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 4fb0fce3c96110a37ff2fc8d3e5c0dd865e4dd64
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 191f575964eeaa55bbbb1ad0ea8d955f8243b9b0
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349476"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596677"
 ---
+# <a name="admin-user-settings"></a>管理者ユーザー設定
+
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="admin-user-settings"></a>管理者ユーザー設定
 Microsoft Cloud App Security では、ご利用の管理者ユーザー設定をカスタマイズすることができます。 通知設定により、管理者はアラートに対して電子メールまたはテキスト通知のいずれの受信を希望するかを指定できます。 
 
 ##  <a name="Adminsettings"></a> 管理設定のカスタマイズ  

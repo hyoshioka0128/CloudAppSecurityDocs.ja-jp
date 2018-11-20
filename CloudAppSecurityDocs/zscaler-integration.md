@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb408b5422e2b9ed4eb0ab5287a67a929ec680c0
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 972ee25a77f491704b6ebc17a059c2d1f7e4d367
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142733"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644316"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -54,7 +54,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
     
 3. ネットワーク上で検出されたクラウド アプリの調査について、さらなる情報と調査手順については、「[Cloud Discovery での作業](working-with-cloud-discovery-data.md)」をご覧ください。
  
-4. Cloud App Security で "承認されていない" として設定したすべてのアプリは、2 時間ごとに Zscaler によって ping され、Zscaler によって自動的にブロックされます。 承認されていないアプリについて詳しくは、「[アプリの承認/非承認](governance-discovery.md#govern-discovered-apps)」をご覧ください。
+4. Cloud App Security で "承認されていない" として設定したすべてのアプリは、2 時間ごとに Zscaler によって ping され、Zscaler によって自動的にブロックされます。 承認されていないアプリについて詳しくは、「[アプリの承認/非承認](governance-discovery.md#BKMK_SanctionApp)」をご覧ください。
     
     
     

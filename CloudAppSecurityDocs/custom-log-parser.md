@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3d70d71364157d6e3eca2a97574a2cbd82020e78
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217188"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596815"
 ---
+# <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成できるため、Cloud Discovery で使用することができます。 ファイアウォールまたはデバイスが Cloud App Security によって明示的にサポートされていない場合、通常はカスタム パーサーを使用します。 
 
 カスタム パーサーでこのプロセスに従うと、サポートされていないファイアウォールからログを使用することができます。 

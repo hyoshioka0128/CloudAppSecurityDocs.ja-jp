@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,16 @@ ms.technology: ''
 ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7bf867e9eff77e51e84a2af9d60abe31efb40e2f
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 6de41d28e2ab9469bf8dd5229eea1652b53c3aca
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745648"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596727"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
-
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
+
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security では、Microsoft データ分類サービスをネイティブに使用して、クラウド アプリのファイルを分類できます。 Microsoft データ分類サービスには、Office 365、Azure Information Protection、および Microsoft Cloud App Security の間での、統合された情報保護エクスペリエンスが用意されています。 分類サービスでは、Microsoft Cloud App Security によって保護されているサード パーティのクラウド アプリにデータ分類を拡張できます。これにより、さらに多くのアプリ間で既存の決定事項を使用できます。
 

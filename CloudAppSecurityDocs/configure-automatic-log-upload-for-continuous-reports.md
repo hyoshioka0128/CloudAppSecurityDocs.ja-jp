@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/23/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6bc011f2e5d42f49d679260a2c36f977ba1b004f
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 014bc198a0033b86f5a4c07d01dab3f76724b75d
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990700"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597003"
 ---
-*適用対象: Microsoft Cloud App Security*
-
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する - 非推奨
+
+*適用対象: Microsoft Cloud App Security*
 
 > [!WARNING] 
 > 柔軟性の高い展開を実現するために、[Docker](discovery-docker.md) を使用してログのアップロードを構成することをお勧めします。

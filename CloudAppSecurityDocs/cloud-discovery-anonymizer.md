@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/18/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0330128447be0de3c9b3c8419a241f665c3038fd
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 3926e7a62105d3b709dfe4171997417cfa5d7600
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990666"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596993"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
+
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery データを匿名化することで、ユーザーのプライバシーを保護することができます。 データ ログが Microsoft Cloud App Security ポータルにアップロードされると、ログはサニタイズされ、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 このように、すべてのクラウド アクティビティの匿名が維持されます。 必要に応じて、(セキュリティ違反や疑わしいユーザー アクティビティが発生した場合などに) 特定のセキュリティ調査を行うために、管理者は実際のユーザー名を解決することができます。 管理者は、特定のユーザーを疑う理由がある場合、既知のユーザー名の暗号化されたユーザー名を調べ、暗号化されたユーザー名を使用して調査を開始することもできます。 ユーザー名の各変換はポータルの**ガバナンス ログ**で監査されます。
 

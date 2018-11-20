@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 82193845bffa1f88f69eef035dbcc20dbb2da40b
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ff22c10cdbb1736fde90922c7dc36b81f26558cc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217392"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597444"
 ---
+# <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 自動ログ コレクターの使用を試みる前に、手動でログをアップロードし、Microsoft Cloud App Security でログ解析することが重要です。 ログ コレクターのしくみと予想されるログの形式については、「[Cloud Discovery に対するトラフィック ログの使用](#log-format)」をご覧ください。
 
 ログがまだない状態で、ログの表示例を確認する場合は、サンプル ログ ファイルをダウンロードします。 ログがどのように表示されるかを確認するには、以下の手順に従います。

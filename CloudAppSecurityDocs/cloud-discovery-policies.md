@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/17/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a7f39372953b49f4e220c0350f8912421449b825
-ms.sourcegitcommit: 9c314d566a1dd35e32650928052b8a817dd20d9d
+ms.openlocfilehash: 01b08ae0246dbae89a71794bca170d757725c3c8
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49990717"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597206"
 ---
+# <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 新しいアプリが検出されたときに通知する、アプリの検出ポリシーを作成できます。 Cloud App Security では、Cloud Discovery 内のすべてのログの異常も検索されます。 
 
 ## <a name="creating-an-app-discovery-policy"></a>アプリの検出ポリシーの作成  
