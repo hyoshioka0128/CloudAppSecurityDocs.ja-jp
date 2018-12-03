@@ -56,7 +56,7 @@
 ### [ファイル](file-filters.md)
 #### [データ管理レポートを生成する](built-in-reports.md)
 ### [アカウント](accounts.md)
-### [アプリのアクセス許可の管理](manage-app-permissions.md)
+### [OAuth アプリの管理](manage-app-permissions.md)
 ### [セキュリティの構成](security-config.md)
 ### [アプリの監視](monitor-alerts.md)
 #### [アラートの管理](managing-alerts.md)
@@ -66,7 +66,7 @@
 ##### [Cloud Discovery 異常検出ポリシー](cloud-discovery-anomaly-detection-policy.md)
 #### [アクティビティ ポリシー](user-activity-policies.md)
 #### [異常検出ポリシー](anomaly-detection-policy.md)
-#### [アプリのアクセス許可ポリシー](app-permission-policy.md)
+#### [OAuth のポリシー](app-permission-policy.md)
 #### [ファイル ポリシー](data-protection-policies.md)
 ##### コンテンツ検査
 ###### [組み込みのコンテンツ検査](content-inspection.md)
