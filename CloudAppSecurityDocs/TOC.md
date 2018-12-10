@@ -21,6 +21,7 @@
 ### [Zscaler との統合](zscaler-integration.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
+#### [Windows 上の Docker](discovery-docker-windows.md)
 #### [Ubuntu および RHEL オンプレミス上の Docker](discovery-docker-ubuntu.md)
 #### [Azure での Ubuntu 上の Docker](discovery-docker-ubuntu-azure.md)
 #### [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
