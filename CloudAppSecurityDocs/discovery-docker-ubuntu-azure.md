@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9ca0c80c87ad942c5b8e04fd7c840558b276ba34
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597314"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124725"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
@@ -58,17 +58,17 @@ Azure の Ubuntu で Docker を使用して Cloud App Security の継続的な�
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 [**データ ソースの追加**] をクリックします。
+     」を参照します。 **[データ ソースの追加]** をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
           
-     b. プロキシまたはファイアウォールの [**名前**] を付けます。
+     b. プロキシまたはファイアウォールの **[名前]** を付けます。
       
       ![ubuntu1](./media/ubuntu1.png)
 
-     c. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
+     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
      e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
      
@@ -80,11 +80,11 @@ Azure の Ubuntu で Docker を使用して Cloud App Security の継続的な�
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
      
-3. 画面上部の [**ログ コレクター**] タブに移動します。
+3. 画面上部の **[ログ コレクター]** タブに移動します。
 
-     」を参照します。 [**ログ コレクターを追加**] をクリックします。
+     」を参照します。 **[ログ コレクターを追加]** をクリックします。
 
-     b. ログ コレクターに [**名前**] を付けます。
+     b. ログ コレクターに **[名前]** を付けます。
 
      c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
