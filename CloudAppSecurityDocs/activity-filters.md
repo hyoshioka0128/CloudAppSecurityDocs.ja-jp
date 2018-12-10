@@ -1,11 +1,11 @@
 ---
 title: クラウド アプリのアクティビティの表示 | Microsoft ドキュメント
-description: このトピックでは、アクティビティ ポリシーに適用できるアクティビティ、フィルター、一致パラメーターの一覧を提供します。
+description: この記事では、アクティビティ ポリシーに適用できるアクティビティ、フィルター、一致パラメーターの一覧を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 87aa9ac1cb823222230d24d667c1bcfa7e702104
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: ed2628a18eaa777b8ad849cf2cc9f4417589685c
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349459"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743524"
 ---
+# <a name="activities"></a>アクティビティ
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="activities"></a>アクティビティ
 Microsoft Cloud App Security は、接続しているアプリのすべてのアクティビティを表示します。 アプリのコネクターを使用して Cloud App Security をアプリに接続したら、発生したすべてのアクティビティが Cloud App Security によってスキャンされます (遡及的スキャンの期間はアプリによって異なります)。その後、継続的に新しいアクティビティが発生するたびに更新されます。 
 
 > [!NOTE] 
@@ -122,7 +122,9 @@ IP アドレスの洞察を表示するには:
 
 ユーザー アクティビティはすべて CSV ファイルにエクスポートできます。 
 
-**[アクティビティ ログ]** で、右上隅にある **[エクスポート]** ボタンをクリックします。 ![エクスポート ボタン](./media/export-button.png)
+**[アクティビティ ログ]** で、右上隅にある **[エクスポート]** ボタンをクリックします。
+
+ ![エクスポート ボタン](./media/export-button.png)
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 

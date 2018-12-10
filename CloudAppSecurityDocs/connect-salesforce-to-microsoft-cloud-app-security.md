@@ -1,11 +1,11 @@
 ---
 title: Salesforce を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
-description: このトピックでは、API コネクタを使用して Cloud App Security に Salesforce を接続する方法について説明します。
+description: この記事では、API コネクタを使用して Cloud App Security に Salesforce を接続する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 1a2830cb7813eb5b86fc56751f628b6b9d5a630e
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: acac9a56ec2ecd55206c7e3cd6ccb743c3c1a65b
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217307"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597036"
 ---
+# <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
+
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
-このセクションでは、App Connector API を使用して Microsoft Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
+この記事では、App Connector API を使用して Microsoft Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Salesforce を Cloud App Security に接続する方法  
   
@@ -39,7 +40,7 @@ ms.locfileid: "50217307"
   
      現在のエディションで REST API を使用可能かどうか、有効化されているかどうかを確認するには、以下の手順を実行します。  
   
-    -   Salesforce アカウントにサインインし、**[設定]** ページに移動します。  
+    -   Salesforce アカウントにサインインし、[**設定**] ページに移動します。  
   
     -   **[Manage Users]\(ユーザーの管理\)** で、**[User Profiles]\(ユーザー プロファイル\)** ページに移動します。  
   
@@ -58,7 +59,7 @@ ms.locfileid: "50217307"
         
         チェックボックスがオフになっている場合は、Salesforce に連絡して自分のアカウントに追加する必要があります。  
              
-3.  組織で **[Salesforce CRM Content]** を有効化している場合は、現在の管理者アカウントでも有効になっていることを確認します。  
+3.  組織で [**Salesforce CRM Content**] を有効化している場合は、現在の管理者アカウントでも有効になっていることを確認します。  
   
     1.  Salesforce の設定ページに移動します。  
   
@@ -84,21 +85,21 @@ ms.locfileid: "50217307"
   
      ![Salesforce への接続](./media/connect-salesforce.png "Salesforce への接続")  
   
-6.  Salesforce の設定ページの API] タブで、インストールするインスタンスに応じて **[Follow this link (このリンクに移動)]** をクリックします。  
+6.  Salesforce の設定ページの [API] タブで、インストールするインスタンスに応じて [**Follow this link (このリンクに移動)**] をクリックします。  
   
 7.  これで Salesforce のサインイン ページが開きます。 Cloud App Security がチームの Salesforce アプリにアクセスできるように、資格情報を入力します。  
   
      ![Salesforce へのサインイン](./media/salesforce-logon.png "Salesforce へのログオン")  
   
-8.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、任意のチーム メンバーと同様に任意のアクティビティを実行することを許可するかどうかを確認するメッセージが Salesforce で表示されます。 続行するには、**[許可]** をクリックします。  
+8.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、任意のチーム メンバーと同様に任意のアクティビティを実行することを許可するかどうかを確認するメッセージが Salesforce で表示されます。 続行するには、[**許可**] をクリックします。  
   
 9. この時点で、デプロイの成功または失敗に関する通知を受信します。 Cloud App Security が Salesforce.com で承認されました。  
   
 10. Cloud App Security コンソールに戻ると、Salesforce が正常に接続されたことを示すメッセージが表示されます。  
   
-11. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
+11. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功の通知を受信したら、**[完了]** をクリックします。  
+     テストには数分かかる場合があります。 成功の通知を受信したら、[**完了**] をクリックします。  
   
   
 Salesforce を接続すると、Salesforce EventMonitoring ライセンスに応じて、接続した時点からのトリガー、接続までの 60 日間のログイン イベントとセットアップ監査証跡、30 日前または 1 日前の EventMonitoring などのイベントを受け取ります。 Cloud App Security API は Salesforce から利用できる API と直接通信します。 Salesforce はそれが受け取る API 呼び出しの数を制限できるため、Cloud App Security はそれを考慮し、制限を順守します。 Salesforce API は、利用できる合計数や残りの数など、API カウンターのフィールドと共に各応答を送信します。 Cloud App Security はこれを百分率に計算し、利用できる API 呼び出しの 10% が常に残るようにします。 

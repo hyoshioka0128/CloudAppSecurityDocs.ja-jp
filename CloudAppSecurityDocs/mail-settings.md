@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 5/29/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,48 +13,57 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 682d3e7a988e7662f393b20296322ee590d85315
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 2d1621dd7a1e082631b941ecfb711a686a69991a
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143209"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943703"
 ---
+# <a name="email-notification-preferences"></a>電子メールの通知の基本設定
+
 *適用対象: Microsoft Cloud App Security*
 
+この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
 
-##  <a name="mailsettings"></a> 電子メールの通知の基本設定  
+## <a name="mailsettings"></a> 電子メールの通知の基本設定  
 
-Microsoft Cloud App Security から管理者に送信されるアラート要求の電子メール通知、および関与している支社についてエンド ユーザーに送信される通知のパラメーターを設定するには、次の手順に従います。 迷惑メール対策サービスにホワイトリスト登録すべきMicrosoft Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。 
+ Microsoft Cloud App Security では、アラートを要求している管理者、および侵害に関係のあるエンド ユーザーに、メール通知が送信されます。 メール通知のパラメーターを設定するには、次の手順のようにします。 迷惑メール対策サービスにホワイトリスト登録すべきMicrosoft Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
 
-
-1. メニュー バーで設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")を選択し、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
+1. メニュー バーで設定の歯車アイコンをクリックし、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
 
    ![メールの設定](./media/mail-settings-config.png)
 
-2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次のいずれか、またはすべてを変更することができます: **[From display name]\(送信元の表示名\)**、**[From email address]\(送信元のメール アドレス\)**、**[返信用メール アドレス]**。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを自動的に使用します。 これを有効にするためには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります - それ以外の場合は、Microsoft Cloud App Security は既定の設定を使用して通知を送信します。
-   
+2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次の項目のいずれか、またはすべてを変更することができます。**[送信元表示名]**、**[送信元メール アドレス]**、**[返信用メール アドレス]**。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを使用することで、カスタマイズを実現します。 カスタマイズを有効にするには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります。 そうしないと、Microsoft Cloud App Security では既定の設定を使用して通知が送信されます。
+ 
    > [!NOTE]
    > [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
 
   
-3. **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の項目が含まれます。  
+3. [**メールのデザイン**] では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の設定が含まれます。  
   
-   -   すべてのテンプレートの CSS ファイルは、テンプレート内でインラインである必要があります。  
+   - すべてのテンプレートの CSS ファイルは、テンプレート内でインラインである必要があります。  
   
-   -   テンプレートには編集不可能なプレースホルダーが 3 つ含まれます。  
+   - テンプレートには、次の 3 つの編集不可能なプレースホルダーが必要です。  
   
-        %%logo%% - [全般設定] ページでアップロードされた企業のロゴの URL。  
+        - **%%logo%%** - [全般設定] ページでアップロードされた企業のロゴの URL。  
   
-        %%title%% - ポリシーにより設定された電子メールのタイトルのプレースホルダー。  
+        - **%%title%%** - ポリシーにより設定された電子メールのタイトルのプレースホルダー。  
 
-        %%content%% - ポリシーにより設定されたエンド ユーザー向けコンテンツのプレースホルダー。  
-     
-4. **[テンプレートのアップロード]** をクリックして、作成したファイルを選択します。 
+        - **%%content%%** - ポリシーにより設定されたエンド ユーザー向けコンテンツのプレースホルダー。  
 
-5. 次に、**[テスト メールの送信]** をクリックしてテスト メールを自分自身に送信し、作成したテンプレートの例を確認します。 電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールでは、メタデータ フィールド、テンプレート、電子メールの件名、電子メール本文のタイトルと内容を確認できます。  電子メール テンプレートのサンプルを次に示します。 
+4. [**テンプレートのアップロード**] をクリックして、作成したファイルを選択します。 
 
+5. **[テスト メールの送信]** をクリックして、作成したテンプレートの例のメールを自分自身に送信し。 電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールで、次の項目を確認します。
+    - メタデータ フィールド
+    - テンプレート
+    - メールの件名
+    - メール本文のタイトル
+    - 内容
 
+## <a name="sample-email-template"></a>サンプルのメール テンプレート
+
+メール テンプレートのサンプルを次に示します。
 
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -108,15 +117,10 @@ Microsoft Cloud App Security から管理者に送信されるアラート要求
           </table>  
             </body>  
           </html>  
-   ```
-  
+```
 
-  
-  
+## <a name="next-steps"></a>次の手順
 
-  
-    
-## <a name="see-also"></a>参照  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

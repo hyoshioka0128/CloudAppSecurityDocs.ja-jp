@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security ネットワークの要件 | Microsoft Docs
-description: このトピックでは、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。
+description: この記事では、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38c2e52118cd896f9cfe148647b43d72a154647f
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
+ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597461"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52280597"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="network-requirements"></a>ネットワーク要件
 
-このトピックでは、Microsoft Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
+*適用対象: Microsoft Cloud App Security*
 
+この記事では、Microsoft Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
 
 ## <a name="view-your-data-center"></a>データ センターを表示する
 
-以下の要件の一部は、接続しているデータ センターに依存します。 
+以下の要件の一部は、接続しているデータ センターによって異なります。 
 
-接続しているデータ センターを確認するには:
+接続しているデータ センターを表示するには、次の手順を行います。
 
-1. Cloud App Security ポータルで、メニュー バーの **[?]** をクリックして、 **[バージョン情報]** を選択します。 
+1. Cloud App Security ポータルで、メニュー バーの**疑問符のアイコン**をクリックします。 次に、**[バージョン情報]** を選択します。 
 
     ![[バージョン情報] をクリックします。](./media/about-menu.png)
 
@@ -59,7 +57,7 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
     dc.services.visualstudio.com
     *.blob.core.windows.net
 
-さらに、使用するデータ センターに応じて、次の項目をホワイトリストに登録する必要があります。
+さらに、使用するデータ センターに応じて、次の項目をホワイトリストに追加する必要があります。
 > [!div class="mx-tableFixed"]
 > 
 > |データ センター|IP アドレス|DNS 名|
@@ -95,7 +93,7 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
-Cloud App Security にアクセスされるサードパーティ製アプリによっては、Cloud App Security によるログ収集や、Cloud App Security コンソールのアクセスの提供を可能にするために上記の IP アドレスが利用されることがあります。 
+一部のサードパーティ製のアプリに Cloud App Security からアクセスする場合、これらの IP アドレスが使用される可能性があります。 これらの IP アドレスによって、Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスが可能になります。 
 
 > [!NOTE]
 >Cloud App Security は上記の IP アドレスからガバナンス アクションとスキャンを実行するため、ベンダーからのアクティビティ ログにこの IP アドレスが表示される場合があります。 
@@ -116,12 +114,12 @@ Cloud App Security にアクセスされるサードパーティ製アプリに�
 
 ## <a name="third-party-dlp-integration"></a>サード パーティ DLP との統合
 
-Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、上記の IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
+Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信できるようにするには、動的ソース ポート番号を使用して、これらの IP アドレスに DMZ ファイアウォールを開きます。 
 
-1.  ソースのアドレス: 上記の API コネクタのサードパーティ製アプリについて記載したように、これらをホワイトリストに追加する必要があります
-2.  ソース TCP ポート: 動的
-3.  宛先アドレス: 外部 ICAP サーバーに接続されている stunnel の 1 つまたは 2 つの IP アドレス
-4.  宛先 TCP ポート: ネットワークに定義されている宛先 TCP ポート
+1. **ソースのアドレス**: 上記で API コネクタのサードパーティ製アプリについて記載したように、これらのアドレスはホワイトリストに追加する必要があります
+2. **ソース TCP ポート**: 動的
+3. **宛先アドレス**: 外部 ICAP サーバーに接続されている stunnel の 1 つまたは 2 つの IP アドレス
+4. **宛先 TCP ポート**: ご利用のネットワークに定義されているもの
 
 > [!NOTE] 
 > -  既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。
@@ -150,16 +148,16 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 - 111.221.26.0/27
 - 207.46.50.192/26
 
-メール送信者の ID をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してこれを可能にします。 これを機能させるには、Microsoft Cloud App Security ポータルの、**[設定]** の下で **[メールの設定]** を選択し、MailChimp のサービス利用規約とプライバシーに関する声明を確認して、Microsoft がユーザーの代理として MailChimp を使用することを許可します。
+メール送信者の ID をカスタマイズする場合、Microsoft Cloud App Security では、サード パーティ製の電子メール サービス MailChimp® を使用してカスタマイズすることができます。 この操作を行うには、Microsoft Cloud App Security ポータルの **[設定]** に移動します。 **[メールの設定]** を選択して、MailChimp のサービス使用条件とプライバシー ポリシーを確認します。 次に、あなたの代理として MailChimp を使用する権限を Microsoft に与えます。
 
-これを行わない場合、電子メール通知はすべての既定の設定を使用して送信されます。
+送信者の ID をカスタマイズしない場合、電子メールの通知はすべての既定の設定を使用して送信されます。
 
 MailChimp を使用するには、スパム対策のホワイトリストに IP アドレス 198.2.134.139 (mail1.cloudappsecurity.com) を追加して、通知の送信を可能にします。
 
 
 ## <a name="log-collector"></a>ログ コレクター 
 
-Cloud Discovery 機能がログ コレクターを使って組織内のシャドウ IT を検出できるようにするには、以下を開始する必要があります。
+Cloud Discovery 機能がログ コレクターを使って組織内のシャドウ IT を検出できるようにするには、以下の項目を開きます。
 
 - ログ コレクターが着信 FTP および Syslog トラフィックを受信できる。
 - ログ コレクターがポート 443 でポータル (contoso.cloudappsecurity.com など) への発信トラフィックを開始できる。
@@ -179,9 +177,8 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 >- ログ コレクターが Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
 >- ログ コレクターを設定するときにプロキシを指定していなかった場合は、ポート 80 でhttp 接続を http://ocsp.msocsp.com/ に許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
-
-
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順
+ 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

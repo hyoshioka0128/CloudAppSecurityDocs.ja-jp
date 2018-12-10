@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,29 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d8b15a5ce0deebb90b40d5a4bcd7c1aefd9bfc8a
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 593c54aa44b2345e1c0b7e3ad7dab9b6e50e774a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596815"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743643"
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 
 *適用対象: Microsoft Cloud App Security*
 
-Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成できるため、Cloud Discovery で使用することができます。 ファイアウォールまたはデバイスが Cloud App Security によって明示的にサポートされていない場合、通常はカスタム パーサーを使用します。 
+Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成できるため、Cloud Discovery で使用することができます。 ファイアウォールまたはデバイスが Cloud App Security によって明示的にサポートされていない場合、通常はカスタム パーサーを使用します。 これは、CSV パーサーまたはカスタムのキー値パーサーになります。
 
 カスタム パーサーでこのプロセスに従うと、サポートされていないファイアウォールからログを使用することができます。 
 
 
  
-カスタム CSV パーサーを構成するには:
-1. Cloud App Security ポータルで **[探索]** をクリックし、**[新しいスナップショット レポートの作成]** をクリックします。  
+カスタム パーサーを構成するには
+1. Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
-2. **[レポート名]** と **[説明]** を入力します。
+2. [**レポート名**] と [**説明**] を入力します。
   
 3. **[データ ソース]** で **[Custom log format (カスタム ログの書式)]** を選択します。  
 
@@ -55,12 +55,12 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
    ![カスタム ログ パーサー](./media/custom-log-parser.png) 
 
 
-7. **[Save]**(保存) をクリックします。 構成したカスタム ログの書式は、既定のカスタム パーサーとして保存されます。 いつでも [編集] をクリックして編集できます。
+7. **[Save]**(保存) をクリックします。 構成したカスタム ログの書式は、既定のカスタム パーサーとして保存されます。 いつでも **[編集]** をクリックして編集できます。
 
 8. **[トラフィックのログの選択]** で、変更したログ ファイルを選択してアップロードします。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
 
-9. **[作成]** をクリックします。  
+9. [**作成**] をクリックします。  
 
 10. アップロードが完了すると、ログが正常にアップロードされたことを通知するステータス メッセージが画面右上隅に表示されます。  
   
@@ -73,7 +73,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 13. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定の歯車アイコンに移動して **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
-14. **[スナップショット レポートの管理]** を選択し、スナップショット レポートを選択します。
+14. [**スナップショット レポートの管理**] を選択し、スナップショット レポートを選択します。
  
     ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 

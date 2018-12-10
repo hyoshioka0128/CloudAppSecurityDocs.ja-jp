@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security ポータルへの管理アクセス権を管理する | Microsoft Docs
-description: ここでは、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
+description: この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 6/24/2018
+ms.date: 11/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,28 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0e3c2ed7397f1c233955ea59c6c8be8f0d9c06e3
-ms.sourcegitcommit: bb44de2ebaf2526cc04e08c3737f77f73f219310
+ms.openlocfilehash: 0e326a75bbece56bd991e951b02260440db65493
+ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45561186"
+ms.lasthandoff: 11/18/2018
+ms.locfileid: "51943747"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
-Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 既定では、Office 365 と Azure AD の次の管理者ロールで Microsoft Cloud App Security にアクセスできます。
+*適用対象: Microsoft Cloud App Security*
 
-- 全体管理者とセキュリティ管理者: **フル アクセス**権を持つ管理者は、Cloud App Security で管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションを実行するフル アクセス許可を持っています。
+Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 既定では、特定の [Office 365 管理者ロール](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)と [Azure Active Directory (Azure AD) 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)が Microsoft Cloud App Security にアクセスできます。 この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。 管理者ロールの割り当ての詳細については、[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) と [Office 365 ](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles) に関する記事を参照してください。
 
-- コンプライアンス管理者: 読み取り専用アクセス許可を持ち、アラートを管理できます。 ファイル ポリシーを作成し、変更できます。ファイル ガバナンス アクションを許可できます。[データ管理] で、組み込みレポートをすべて表示できます。 
+## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Cloud App Security にアクセスできる Office 365 と Azure AD のロール
 
-- セキュリティ閲覧者: 読み取り専用アクセス許可を持ち、アラートを管理できます。 セキュリティ閲覧者は、以下の機能を実行できません。
+既定では、Office 365 と Azure AD の次の管理者ロールで Microsoft Cloud App Security にアクセスできます。
+
+- **グローバル管理者とセキュリティ管理者:** **フル アクセス**が可能な管理者には Cloud App Security の完全なアクセス許可があります。 このようなユーザーは管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションの実行ができます。
+
+- **コンプライアンス管理者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 ファイル ポリシーを作成し、変更できます。ファイル ガバナンス アクションを許可できます。[データ管理] で、組み込みレポートをすべて表示できます。 
+
+- **セキュリティ閲覧者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 セキュリティ閲覧者は、以下のアクションの実行が制限されています。
 
   - ポリシーを作成する、または既存のポリシーを編集および変更する 
   - ガバナンス アクションを実行する 
@@ -44,11 +47,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - ガバナンス ログへのアクセスと表示 
   - [スナップショット レポートの管理] ページへのアクセスと表示 
 
-- アプリ/インスタンス管理者: ここで選択した特定のアプリまたはアプリのインスタンスのみを扱う Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、Box European インスタンスに対する管理者アクセス許可をユーザーに与えた場合、管理者は次のように、ファイル、アクティビティ、ポリシー、アラートのいずれの場合も、このアプリ インスタンスに関連するデータのみを表示できます。
+- **アプリ/インスタンス管理者:** 選択した特定のアプリまたはアプリのインスタンスを排他的に扱う Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、Box European インスタンスへの管理者アクセス許可をユーザーに付与します。 管理者には、ファイル、アクティビティ、ポリシー、アラートのいずれかを問わず、Box European インスタンスに関連するデータのみが次のように表示されます。
 
   - アクティビティ ページ - 特定のアプリに関するアクティビティのみ
   - アラート - 特定のアプリに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、アプリ/インスタンスのみを扱うポリシーのみを編集または作成できます。
+  - ポリシー - すべてのポリシーを表示でき、アプリ/インスタンスを排他的に扱うポリシーのみ編集または作成が可能
   - アカウント - 特定のアプリ/インスタンスのアカウントのみ
   - アプリのアクセス許可 - 特定のアプリ/インスタンスのアクセス許可のみ
   - ファイル ページ - 特定のアプリ/インスタンスからのファイルのみ
@@ -57,11 +60,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - ユーザー アクセス許可を持つ API トークンのアクセス許可のみ
   - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ 
 
-- グループ管理者: ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対してユーザー管理者のアクセス許可を与えた場合、管理者は、次のようにそのユーザー グループに対してのみ、Microsoft Cloud App Security の情報を表示したり変更したりできます。
+- **グループ管理者:** ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、次のようにそのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
 
   - アクティビティ ページ - グループのユーザーに関するアクティビティのみ
   - アラート - グループのユーザーに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、グループのユーザーを排他的に扱うポリシーのみを編集または作成できます
+  - ポリシー - すべてのポリシーを表示でき、グループのユーザーを排他的に扱うポリシーのみ編集または作成が可能
   - アカウント - グループの特定のユーザーのアカウントのみ
   - アプリのアクセス許可 – アクセス許可がありません
   - ファイル ページ – アクセス許可がありません
@@ -71,49 +74,41 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - ガバナンス アクション - グループの特定のユーザーの場合のみ
 
 
+## <a name="override-admin-permissions"></a>管理者のアクセス許可をオーバーライドする
 
-詳細については、「[Azure Active Directory での管理者ロールの割り当て](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)」を参照してください。
+Azure Active Directory または Office 365 の管理者のアクセス許可をオーバーライドするには、手動で Cloud App Security にユーザーを追加し、ユーザーにアクセス許可を割り当てます。
+たとえば、Azure Active Directory でセキュリティ閲覧者である佐藤さんに、Cloud App Security では**フル アクセス**権を付与するには、手動で佐藤さんを Cloud App Security に追加し、**フル アクセス**を割り当てて元のロールをオーバーライドして、Cloud App Security で必要なアクセス許可を持たせることができます。 
 
-Azure Active Directory 管理者ロールにユーザーを追加せずに、Cloud App Security に管理者を追加することもできます。次の手順を実行します。
+## <a name="add-additional-admins"></a>他の管理者を追加する
 
-1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[管理者の管理]** をクリックします。 
+Azure Active Directory 管理者ロールにユーザーを追加せずに、Cloud App Security に管理者を追加することができます。 管理者を追加するには、次の手順を実行します。
+
+   >[!IMPORTANT]
+   > 全体管理者かセキュリティ管理者だけが Cloud App Security へのアクセスを他のユーザーに与えることができます。
+
+
+1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、**[管理者アクセス権を管理します]** をクリックします。 
 
 2. プラス記号をクリックして、Cloud App Security へのアクセス権を付与する管理者を追加します。 内部または外部のメール アドレスを入力して、組織内部、または外部の Managed Security Service Provider (MSSP) の管理者がセキュリティ アラートを管理できるようにします。
   
-  ![管理者の追加](./media/add-admin.png)
-    
+   ![管理者の追加](./media/add-admin.png)
+
 3. 次に、ドロップダウンをクリックして、管理者のロールの種類 (**グローバル管理者**、**セキュリティ閲覧者**、**コンプライアンス管理者**、**アプリ/インスタンス管理者**) を設定します。**アプリ/インスタンス管理者**を選択した場合は、アクセス許可を与える管理者のアプリとインスタンスを選びます。
 
      >[!NOTE]
       >アクセスが制限されている管理者が制限されているページにアクセスしたり、制限されている操作を実行しようとしたりすると、そのページへのアクセスまたは操作の実行のアクセス許可がないというエラーが表示されます。
+
 4. **[管理者の追加]** をクリックします。  
 
-   >[!NOTE]
-    >全体管理者かセキュリティ管理者だけが Cloud App Security へのアクセスを他のユーザーに与えることができます。
-
-
-## <a name="override-admin-permissions"></a>管理者のアクセス許可をオーバーライドする
-
-Azure Active Directory または Office 365 の管理者のアクセス許可をオーバーライドするには、手動で Cloud App Security にユーザーを追加し、ユーザーにアクセス許可を割り当てます。
-たとえば、Azure Active Directory でセキュリティ閲覧者である佐藤さんに、Cloud App Security では**フル アクセス**権を付与するには、手動で佐藤さんを Cloud App Security に追加し、**フル アクセス**を割り当てて元のロールをオーバーライドして、Cloud App Security で目的のアクセス許可を持たせることができます。 
-
-## <a name="add-additional-admins"></a>他の管理者を追加する
-
-Cloud App Security に管理者を追加するには:
-1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、**[管理者アクセス権を管理します]** をクリックします。 
-
-2. Cloud App Security へのアクセス権を付与する管理者を追加します。 ユーザーのアクセス レベルを選択し、**[閉じる]** をクリックします。
-
-  
 ## <a name="invite-external-admins"></a>外部管理者を招待する
 
-Microsoft Cloud App Security では、Microsoft Cloud App Security ポータルの管理者として外部の Managed Security Service Provider (MSSP) を招待することができます。 外部ユーザーを管理者として構成し、Microsoft Cloud App Security で現在使用できるいずれかのロールを割り当てられるようになりました。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。 
+Microsoft Cloud App Security では、Microsoft Cloud App Security ポータルの管理者として外部の Managed Security Service Provider (MSSP) を招待することができます。 外部ユーザーを管理者として構成し、Microsoft Cloud App Security で使用できるロールのいずれかを割り当てられるようになりました。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。 
 
-テナントを切り替えるには、複数のテナントへのアクセス許可を取得してから、ユーザー アイコン ![ユーザー アイコン](./media/user-icon.png "ユーザー アイコン") をクリックします。 これで、アクセス許可があるテナントのリストが表示されます。 管理するテナントを選択します。
+テナントを切り替えるには、複数のテナントへのアクセス許可を取得してから、ユーザー アイコンをクリックします。 これで、アクセス許可があるテナントのリストが表示されます。 管理するテナントを選択します。
 
 ![テナントの選択](./media/choose-tenant.png "テナントの選択")
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

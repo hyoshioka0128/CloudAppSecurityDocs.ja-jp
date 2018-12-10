@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: be1254ef4e4f623e898e3e94b713a924e493476a
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 0321ecc91cc6dc420e44a323cdef37f34c19556a
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143448"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644282"
 ---
+# <a name="basic-setup"></a>基本的なセットアップ
+
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="basic-setup"></a>基本的なセットアップ
 ここでは、Microsoft Cloud App Security ポータルをカスタマイズする手順について説明します。
 
 ## <a name="prerequisites"></a>前提条件 
@@ -39,18 +40,17 @@ ms.locfileid: "44143448"
 
 2. **[組織の詳細]** に自社の**組織の表示名**を指定することは重要です。 これは、システムから送信される電子メールや Web ページに表示されます。  
   
-3. **環境名** (テナント) を指定します。 これは、複数のテナントを管理する場合に特に重要です。  
+3. **環境名** (テナント) を指定します。 この情報は、複数のテナントを管理する場合に特に重要です。  
   
-4. システムから送信される電子メールや Web ページで表示する**ロゴ**を指定することもできます。 ロゴには、150 x 50 ピクセル以下のサイズで背景が透明色の png ファイルを使用する必要があります。  
+4. システムから送信されるメールや Web ページで表示される**ロゴ**を指定することもできます。 ロゴには、150 x 50 ピクセル以下のサイズで背景が透明色の png ファイルを使用する必要があります。  
 
-5. **マネージド ドメイン**のリストを追加します。 これは重要な手順です。マネージド ドメインは、Cloud App Security により、内部ユーザーと外部ユーザー、およびファイルの共有の可否を判別する際に使用されるためです。 これは、レポートとアラートで使用されます。  
-   > [!NOTE] 
-   > - 内部として構成されていないドメインのユーザーは、外部として指定され、アクティビティまたはファイルをスキャンされません。
+5. **マネージド ドメイン**のリストを追加します。 マネージド ドメインの追加は非常に重要な手順です。 マネージド ドメインは、Cloud App Security により、内部ユーザーと外部ユーザー、およびファイルの共有の可否を判別する際に使用されます。 この情報は、レポートとアラートに使用されます。  
+   
+    - 内部として構成されていないドメイン内のユーザーは、外部とマークされます。 外部ユーザーについては、アクティビティまたはファイルはスキャンされません。
 
-6. Azure Information Protection の統合により統合を行う場合は、「[Azure Information Protection の統合](azip-integration.md)」で詳細を確認してください。 
+6. Azure Information Protection の統合により統合を行う場合は、「[Azure Information Protection の統合](azip-integration.md)」を参照してください。 
 
-   >[!NOTE]
-   > Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
+    - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
   
 7. ポータル設定は、この画面からいつでもバックアップできます。 **[ポータル設定をエクスポート]** をクリックすると、ポリシー規則やユーザー グループ、IP アドレス範囲などのポータル設定がすべて記述された json ファイルが作成されます。  
   
@@ -58,7 +58,7 @@ ms.locfileid: "44143448"
 > [!NOTE] 
 > ExpressRoute を使用している場合は、Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。 <br></br>パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。  
     
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

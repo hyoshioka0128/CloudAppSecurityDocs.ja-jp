@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security の安全な ICAP による外部 DLP 統合 | Microsoft Docs
-description: このトピックでは、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。
+description: この記事では、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,26 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c893c5411201c2f40863d6f49602a694a915e2d5
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 6898bfa943129fb32cae1f587e88dfd478c355d6
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144433"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644350"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
-
 # <a name="external-dlp-integration"></a>外部 DLP 統合
+
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は既存の DLP ソリューションと統合し、コントロールをクラウドに拡張できます。同時に、オンプレミスとクラウドを問わず、アクティビティ全体で一貫性のある統合ポリシーが維持されます。 このプラットフォームは、REST API や ICAP など、使いやすいインターフェイスをエクスポートします。Symantec Data Loss Prevention (以前の Vontu Data Loss Prevention) や Forcepoint DLP など、コンテンツ分類システムと統合できます。 
 
-統合は標準 ICAP プロトコルを利用して行われます。これは [RFC 3507](https://tools.ietf.org/html/rfc3507) に説明のある http 型のプロトコルです。 ICAP のデータ転送を守るために、DLP ソリューションと Cloud App Security の間に安全な SSL トンネル (stunnel) を構築する必要があります。 stunnel を構築することで、DLP サーバーと Cloud App Security の間で送信されるデータが TLS で暗号化されます。 
+統合は標準 ICAP プロトコルを使用して行われます。これは [RFC 3507](https://tools.ietf.org/html/rfc3507) に説明のある http 型のプロトコルです。 ICAP のデータ転送を守るために、DLP ソリューションと Cloud App Security の間に安全な SSL トンネル (stunnel) を構築する必要があります。 stunnel を構築することで、DLP サーバーと Cloud App Security の間で送信されるデータが TLS で暗号化されます。 
 
 本ガイドでは、Cloud App Security と stunnel セットアップで ICAP 接続を構成し、通信を保護するために必要な手順について説明します。
 
 
 ## <a name="architecture"></a>アーキテクチャ
-Cloud App Security はクラウド環境をスキャンします。ファイル ポリシー構成に基づき、内部 DLP エンジンと外部 DLP のいずれを利用してファイルをスキャンするのか決定します。 外部 DLP スキャンが適用される場合、ファイルは安全なトンネルを経由して顧客環境に送信され、顧客環境で ICAP アプライアンスに中継され、DLP 判定が行われます (許可またはブロック)。 応答は stunnel 経由で Cloud App Security に返されます。このとき、ポリシーを利用し、通知、隔離、共有コントロールなど、後続のアクションが決定されます。
+Cloud App Security はクラウド環境をスキャンします。ファイル ポリシー構成に基づき、内部 DLP エンジンと外部 DLP のいずれを利用してファイルをスキャンするのかを決定します。 外部 DLP スキャンが適用される場合、ファイルは安全なトンネルを経由して顧客環境に送信され、顧客環境で ICAP アプライアンスに中継され、DLP 判定が行われます (許可またはブロック)。 応答は stunnel 経由で Cloud App Security に返されます。このとき、ポリシーを利用し、通知、隔離、共有コントロールなど、後続のアクションが決定されます。
 
 ![stunnel アーキテクチャ](./media/icap-architecture-stunnel.png)
 
@@ -55,7 +53,7 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 ICAP サーバーを設定します。ポート番号を書き留め、**[モード]** を **[ブロック]** に設定します。 ブロック モードでは、分類判定を Cloud App Security に戻すように ICAP サーバーが設定されます。
 
-この方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B: Symantec 展開ガイド](#symantec)」をご覧ください。
+このセットアップを行う方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B: Symantec 展開ガイド](#symantec)」をご覧ください。
 
 ## <a name="step-2--set-up-your-stunnel-server"></a>手順 2: stunnel サーバーを設定する 
 
@@ -74,20 +72,20 @@ stunnel インストール対応のサーバーの種類については、[stunn
 
 #### <a name="install-stunnel-on-windows"></a>Windows に stunnel をインストールする
 
-1. [最新の Windows Server インストールをダウンロードします](https://www.stunnel.org/downloads.html) (これは最近のあらゆる版の Windows Server で可能になっています)。
+1. [最新の Windows Server インストールをダウンロードします](https://www.stunnel.org/downloads.html) (このアプリケーションは最近のあらゆる版の Windows Server で可能になっています)。
    (既定のインストール)
 
-2. インストール中、新しい自己署名証明書を作成しないでください。証明書は後の手順で作成します。
+2. インストール中に、新しい自己署名証明書を作成しないでください。 証明書は後の手順で作成します。
 
 3. **[Start server after installation]\(インストール後にサーバーを起動する\)** をクリックします。
 
 4. 次のいずれかの方法で証明書を作成します。
 
-   - 証明書管理サーバーを利用し、ICAP サーバーで SSL 証明書を作成し、stunnel インストールのために用意したサーバーにキーをコピーします。
+   - 証明書管理サーバーを使用して、ICAP サーバー上で SSL 証明書を作成します。 その後、stunnel インストール用に用意したサーバーにキーをコピーします。
    - あるいは、stunnel サーバーで、次の OpenSSL コマンドを利用して秘密キーと自己署名証明書を生成します。 次の変数を置き換えます。
-     -    **key.pem** を秘密キーの名前に変更
-     -    **cert.pem** を証明書の名前に変更
-     -    **stunnel-key** を新しく作成したキーの名前に変更
+     - **key.pem** を秘密キーの名前に変更
+     - **cert.pem** を証明書の名前に変更
+     - **stunnel-key** を新しく作成したキーの名前に変更
 
 5. stunnel インストール パスの下で、config ディレクトリを開きます。 既定では、c:\Program Files (x86)\stunnel\config\ です。
 6. 管理者アクセス許可で次のコマンド ラインを実行します。     `..\bin\openssl.exe genrsa -out key.pem 2048 `
@@ -110,7 +108,7 @@ stunnel インストール対応のサーバーの種類については、[stunn
 
     ![Windows Server 構成を編集する](./media/stunnel-windows.png)
  
-12. ファイルを開き、次のサーバー構成行を貼り付けます。ここで、**ICAP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel の公開証明書です。 また、サンプルがあればそれを削除し (例では Gmail テキストを確認できます)、次をファイルにコピーします。
+12. ファイルを開き、次のサーバー構成行を貼り付けます。 **DLP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel クライアントの公開証明書です。 サンプルがあればそれを削除し (例では Gmail テキストを確認できます)、次のテキストをファイルにコピーします。
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -128,11 +126,12 @@ stunnel インストール対応のサーバーの種類については、[stunn
 
 次の例は Ubuntu サーバー インストールに基づきます。ルート ユーザーとしてサインインしています。他のサーバーの場合、並列コマンドを使用します。 
 
-用意したサーバーに最新版の stunnel をダウンロードし、インストールします。Ubuntu サーバーで次のコマンドを実行すると、stunnel と OpenSSL の両方がインストールされます。
+用意したサーバーで、最新版の stunnel をダウンロードしてインストールします。 Ubuntu サーバーで次のコマンドを実行して、stunnel と OpenSSL の両方をインストールします。
 
     apt-get update
     apt-get install openssl -y
     apt-get install stunnel4 -y
+
 コンソールから次のコマンドを実行し、stunnel がインストールされていることを確認します。 バージョン番号と構成オプションの一覧が表示されるはずです。
 
     stunnel-version
@@ -142,8 +141,8 @@ stunnel インストール対応のサーバーの種類については、[stunn
 ICAP サーバーと Cloud App Security では、stunnel 全体でのサーバーの暗号化と認証に秘密キーと公開証明書が使用されます。 stunnel をバックグラウンド サービスとして実行できるように、パス フレーズなしで秘密キーを作成してください。 また、ファイルのアクセス許可を、stunnel 所有者は**読み取り可能**に、その他のユーザーは**なし**に設定してください。
 
 次のいずれかの方法で証明書を作成できます。
--   証明書管理サーバーを利用し、ICAP サーバーで SSL 証明書を作成し、stunnel インストールのために用意したサーバーにキーをコピーします。 
--   あるいは、stunnel サーバーで、次の OpenSSL コマンドを利用して秘密キーと自己署名証明書を生成します。 次の変数を置き換えます。
+- 証明書管理サーバーを使用して、ICAP サーバー上で SSL 証明書を作成します。 その後、stunnel インストール用に用意したサーバーにキーをコピーします。 
+- あるいは、stunnel サーバーで、次の OpenSSL コマンドを利用して秘密キーと自己署名証明書を生成します。 次の変数を置き換えます。
     - **“key.pem”** を秘密キーの名前に変更
     - **“cert.pem”** を証明書の名前に変更
     - **“stunnel-key”** を新しく作成したキーの名前に変更
@@ -162,7 +161,7 @@ stunnel 構成は stunnel.conf ファイルで設定されます。
 
 1. 次のディレクトリで stunnel.conf ファイルを作成します。 **vim /etc/stunnel/stunnel.conf**
 
-3.  ファイルを開き、次のサーバー構成行を貼り付けます。ここで、**ICAP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel の公開証明書です。
+2. ファイルを開き、次のサーバー構成行を貼り付けます。  **ICAP Server IP** は ICAP サーバーの IP アドレスです。**stunnel-key** は前の手順で作成したキーです。**MCASCAfile** は Cloud App Security stunnel の公開証明書です。
 
         [microsoft-Cloud App Security]
         accept = 0.0.0.0:11344
@@ -185,19 +184,19 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
  
 
 ### <a name="run-stunnel"></a>stunnel を実行する
-1.  stunnel サーバーで、次のコマンドを実行します。
+1. stunnel サーバーで、次のコマンドを実行します。
 
         vim /etc/default/stunnel4
 
-2.  変数 ENABLED を 1 に変更します。
+2. 変数 ENABLED を 1 に変更します。
 
         ENABLED=1
 
-3.  サービスを再起動し、構成を有効にします。
+3. サービスを再起動し、構成を有効にします。
 
         /etc/init.d/stunnel4 restart
 
-4.  次のコマンドを実行し、stunnel が正しく動作していることを確認します。
+4. 次のコマンドを実行し、stunnel が正しく動作していることを確認します。
 
         ps -A | grep stunnel
 
@@ -219,23 +218,23 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
 3. **[Add new external DLP]\(新しい外部 DLP の追加\)** ウィザードに **[接続名]** を入力します (たとえば、「My Forcepoint connector」と入力します)。この名前はコネクタの識別に利用されます。
 
 4. **[接続の種類]** を選択します。
-    - **Symantec Vontu** – Vontu DLP アプライアンスにカスタマイズ統合を利用するにはこれを選択します。
-    - **Forcepoint DLP** – Forcepoint DLP アプライアンスにカスタマイズ統合を利用するにはこれを選択します。
-    - **Generic ICAP – REQMOD** - [要求変更](https://tools.ietf.org/html/rfc3507)を利用するその他の DLP アプライアンスの場合
-    - **Generic ICAP – RESPMOD** - [応答変更](https://tools.ietf.org/html/rfc3507)を利用するその他の DLP アプライアンスの場合
+    - **Symantec Vontu** – Vontu DLP アプライアンスにカスタマイズした統合を使用します。
+    - **Forcepoint DLP** – Forcepoint DLP アプライアンスにカスタマイズした統合を使用します。
+    - **Generic ICAP – REQMOD** - [要求変更](https://tools.ietf.org/html/rfc3507)を使用する他の DLP アプライアンスを使用します。
+    - **Generic ICAP – RESPMOD** - [応答変更](https://tools.ietf.org/html/rfc3507)を使用する他の DLP アプライアンスを使用します。
     ![Cloud App Security ICAP 接続](./media/icap-wizard1.png)
 
-5. stunnel に接続するために前の手順で生成したパブリック証明書 "cert.pem" を参照して選び、**[次へ]** をクリックします。
+5. stunnel に接続するために前の手順で生成したパブリック証明書 "cert.pem" を参照して選択します。 **[次へ]** をクリックします。
 
    > [!NOTE]
-   > **[Use secure ICAP]\(安全な ICAP を使用する\)** ボックスを選択し、stunnel ゲートウェイを暗号化することが推奨されます。 テスト目的であれば、あるいは stunnel サーバーがない場合、この選択を外し、DLP サーバーと直接統合します。 
+   > **[Use secure ICAP]\(安全な ICAP を使用する\)** ボックスを選択し、stunnel ゲートウェイを暗号化することが推奨されます。 テストが目的の場合、または stunnel サーバーがない場合は、このボックスをオフにして、DLP サーバーと直接統合します。 
 
-5. **[サーバー構成]** 画面で、手順 2 で設定した stunnel サーバーの **[IP アドレス]** と **[ポート]** を指定します。 負荷分散を目的とする場合、追加のサーバーの **[IP アドレス]** と **[ポート]** を構成できます。 指定する IP アドレスは、サーバーの外部静的 IP アドレスになります。
+5. **[サーバー構成]** 画面で、手順 2 で設定した stunnel サーバーの **[IP アドレス]** と **[ポート]** を指定します。 負荷分散が目的の場合は、追加のサーバーの **[IP アドレス]** と **[ポート]** を構成できます。 指定する IP アドレスは、サーバーの外部静的 IP アドレスになります。
 
    ![Cloud App Security ICAP 接続](./media/icap-wizard2.png)
 6. **[次へ]** をクリックします。 Cloud App Security により、構成したサーバーへの接続がテストされます。 エラーが発生した場合、マニュアルとネットワーク設定を見直してください。 正常に接続されたら、**[終了]** をクリックします。
 
-7. 次に、この外部 DLP サーバーにトラフィックを送るために、**ファイル ポリシー**の作成の **[コンテンツ検査方法]** で、先ほど作成した接続を選択します。 ファイル ポリシーの作成方法については[こちら](data-protection-policies.md)をご覧ください。
+7. 次に、この外部 DLP サーバーにトラフィックを送るために、**[コンテンツ検査方法]** で**ファイル ポリシー**を作成するときに、先ほど作成した接続を選択します。 ファイル ポリシーの作成方法については[こちら](data-protection-policies.md)をご覧ください。
 
 
 ## 付録 A: ForcePoint ICAP サーバー セットアップ <a name="forcepoint"></a>
@@ -318,7 +317,7 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
 > Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に http://misc/filename から始まる URL で表示されます。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

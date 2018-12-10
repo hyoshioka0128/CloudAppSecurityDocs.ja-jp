@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security で検出されたアプリの処理 | Microsoft Docs
-description: このトピックでは、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
+description: この記事では、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/31/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,23 +13,22 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8cc854e387cb563ca488c299f17b6553905ac6d7
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745699"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53122838"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
-## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
 
 ![Cloud Discovery ダッシュボード](./media/cloud-discovery-dashboard.png)
+
+## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
 
 Cloud Discovery アプリの概要を得るために最初にすべきことは、Cloud Discovery ダッシュボードで次の情報を確認することです。
  
@@ -42,7 +41,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 4. アプリを**最も多く使用しているユーザーやソース IP アドレス**を表示し、組織でクラウド アプリを最も頻繁に使用しているユーザーを特定できます。
 5. **アプリの本社地図**では、検出されたアプリの本社が地理的にどのように散らばっているのかを確認できます。
 
-6. 最後に、**アプリのリスク概要**で検出されたアプリのリスク スコアを確認することを忘れないでください。  調査する場合は、**検出アラートの状況**を調べ、未処理のアラート数を確認します。
+6. 最後に、**アプリのリスク概要**で検出されたアプリのリスク スコアを確認することを忘れないでください。 調査する場合は、**検出アラートの状況**を調べ、未処理のアラート数を確認します。
 
 ## <a name="deep-dive-into-discovered-apps"></a>検出されたアプリの詳細情報
 Cloud Discovery によって提供されるデータを掘り下げたい場合は、フィルターを使って、危険性の高いアプリやよく使われるアプリを確認します。
@@ -109,7 +108,7 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
   
 5. 含めるデータ ソースを選択します (全部または一部)。  
   
-6. データに必要なフィルターを設定します。 これらのフィルターには、**[ユーザー グループ]**、**[IP アドレス タグ]、**[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
+6. データに必要なフィルターを設定します。 これらのフィルターには、**[ユーザー グループ]**、**[IP アドレス タグ]**、**[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
   
     ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png) 
 

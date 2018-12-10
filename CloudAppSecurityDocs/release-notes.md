@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,43 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2c82311bacf965d12e7f23aa4769862aba6d3207
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745750"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743694"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+## <a name="cloud-app-security-release-137"></a>Cloud App Security リリース 137
+
+リリース日: 2018 年 11 月 25 日
+
+-   **Dynamics に対するサポートの追加**<br>
+Cloud App Security で、Office 365 監査ログでサポートされている Microsoft Dynamics アクティビティがサポートされるようになりました。 
+-   **暗号化されたコンテンツのスキャン (プレビュー)**<br>
+Cloud App Security によって、Azure Information Protection の保護ラベルによって保護されたコンテンツをスキャンできるようになりました。 これにより、Azure Information Protection によって既に暗号化されているファイル内でも、機密コンテンツを見つけることができます。 
+-   **注意 – 新しい用語**<br>
+アプリのアクセス許可機能の名前がわかりやすく変更され、**OAuth アプリ**と呼ばれるようになりました。 
+
+## <a name="cloud-app-security-release-136"></a>Cloud App Security リリース 136
+
+リリース日: 2018 年 11 月 11 日
+
+
+- **Cloud Discovery の更新情報**<br>
+カスタム ログ パーサーが、より複雑な追加の Web トラフィック ログの形式をサポートするように拡張されました。 これらの拡張の一環として、ユーザーはヘッダーのない CSV ログ ファイルへのカスタム ヘッダーの入力、キー値ファイルに対する特殊な区切り記号の使用、Syslog ファイル形式の処理などを行えるようになります。
+- **新しい異常検出ポリシー**<br>
+疑わしい受信トレイの操作ルール: このポリシーで使用環境をプロファイルし、メッセージやフォルダーを削除または移動する疑わしいルールがユーザーの受信トレイに設定されている場合にアラートをトリガーします。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に非表示にされていること、または組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを示す可能性があります。
+- **アプリのアクセス許可ポリシーでのグループのサポート**<br>
+Cloud App Security では、アプリを承認したユーザーのグループ メンバーシップに基づいて、より細かくアプリのアクセス許可ポリシーを定義できるようになりました。 たとえば、管理者は、アクセス許可を承認したユーザーが管理者グループのメンバーである場合にのみ、アプリで高いアクセス許可を求める場合に一般的ではないアプリを無効にするポリシーを設定するように決定することができます。
+- **アプリの条件付きアクセス制御では、Azure Active Directory アプリケーション プロキシによってご利用のオンプレミスのアプリと統合できるようになりました**
+  - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)では、オンプレミスでホストされている Web アプリにシングル サインオンとセキュリティで保護されたリモート アクセスを提供します。
+  - これらのオンプレミスの Web アプリは、Azure AD の条件付きアクセスによって Microsoft Cloud App Security にルーティングされ、[アクセス](access-policy-aad.md) ポリシーと[セッション](session-policy-aad.md) ポリシーによってリアルタイムの監視と制御が提供されます。
 
 
 ## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security リリース 133、134、135
@@ -73,7 +99,7 @@ Office、Google、または Salesforce での OAuth アプリのアクセス許�
 Microsoft 365 製品間にわたるより一貫した管理者エクスペリエンスを提供し、Microsoft のセキュリティ ソリューション間の作業をより簡単にするため、Cloud App Security ポータルのメニュー バーが画面の左側に移動されました。 この一貫性のある移動に関するエクスペリエンスは、Microsoft のセキュリティ ポータル間を移動する際に自分の位置を確認するのに役立ちます。
 
 - **OAuth アプリ スコアに影響を与える**<br>
-悪意があると思われる OAuth アプリが組織内で検出された場合に、Cloud App Security チームにフィードバックを送信して報告できるようになりました。 この新しい機能を使用すると、セキュリティ コミュニティの一員となって、OAuth アプリのリスク スコアと分析を強化できます。 詳細については、[アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
+悪意があると思われる OAuth アプリが組織内で検出された場合に、Cloud App Security チームにフィードバックを送信して報告できるようになりました。 この新しい機能を使用すると、セキュリティ コミュニティの一員となって、OAuth アプリのリスク スコアと分析を強化できます。 詳細については、[OAuth アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
 
 - **新しい Cloud Discovery パーサー**<br>
 Cloud Discovery パーサーで iboss Secure Cloud Gateway および Sophos XG がサポートされるようになりました。
@@ -90,8 +116,8 @@ Cloud Discovery パーサーで iboss Secure Cloud Gateway および Sophos XG �
 
 リリース日: 2018 年 7 月 22 日
 
--   **複数のアプリにわたるアプリのアクセス許可の操作**<br>
-アプリのアクセス許可が与えられているアプリでは、1 回のアクションで複数のアプリを禁止したり承認したりできます。 たとえば、組織内のユーザーによってアクセス許可が与えられているすべてのアプリを確認し、禁止するアプリを選択し、[アプリの禁止] をクリックすると、与えられたすべての同意が無効になり、そのアプリにユーザーがアクセス許可を与えることができなくなります。  詳細については、[アプリのアクセス許可の管理](manage-app-permissions.md)に関するページを参照してください。
+-   **複数のアプリにわたる OAuth アプリのアクション**<br>
+アプリのアクセス許可が与えられている OAuth アプリでは、1 回のアクションで複数のアプリを禁止したり承認したりできるようになりました。 たとえば、組織内のユーザーによってアクセス許可が与えられているすべてのアプリを確認し、禁止するアプリを選択し、[アプリの禁止] をクリックすると、与えられたすべての同意が無効になり、そのアプリにユーザーがアクセス許可を与えることができなくなります。  詳細については、「[OAuth アプリの管理](manage-app-permissions.md)」を参照してください。
 -   **Azure アプリケーションのサポートの強化**<br>
 Azure では、アプリケーションを Azure アプリケーション (内部も外部も) によって実行されたユーザー アカウント アクティビティとして検出する機能を段階的にロールアウトしています。 これにより、アプリケーションが予期しない、承認されていないアクティビティを実行した場合にアラートを発するポリシーを作成できるようになります。 詳細については、「[Azure を Microsoft Cloud App Security に接続する](connect-azure-to-microsoft-cloud-app-security.md)」を参照してください。
 -   **新しい GDPR の機密の種類によるデータ分類エンジンの更新**<br>

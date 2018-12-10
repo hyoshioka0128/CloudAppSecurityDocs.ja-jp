@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,29 +13,28 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8e6af8713761ccff80a141dadabba33b12bf00ea
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 54b58aa5b8aa098addbb2f10b7615da91676befe
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349578"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124011"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
+
+*適用対象: Microsoft Cloud App Security*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
-Microsoft Cloud App Security は、Microsoft Cloud Security スタックの重要なコンポーネントです。 クラウド アプリケーションが約束する完全なメリットを実現するだけでなく、機密データの包括的な可視化と監査の機能、きめ細かいコントロールを通して制御を維持できる総合的なソリューションです。
+Microsoft Cloud App Security は、Microsoft Cloud Security スタックの重要なコンポーネントです。 包括的なソリューションであり、クラウド アプリケーションが約束するメリットを最大限に活用するのに役立ちます。 Cloud App Security を使用すると、包括的な可視性、監査、きめ細かいコントロールによって機密データを制御し続けることができます。
 
-シャドウ IT の発見、リスクの評価、ポリシーの適用、アクティビティの調査を行うためのツールを使用できます。 Microsoft Cloud App Security は、組織がより安全にクラウドに移行できるように、リアルタイムでアクセスを制御して脅威を抑止します。
+Microsoft Cloud App Security のツールを使用すると、シャドウ IT の発見とリスクの評価を行いながら、ポリシーの適用とアクティビティの調査を行うことができます。 組織がより安全にクラウドに移行できるように、リアルタイムでアクセスを制御して脅威を抑止するのに役立ちます。
 
 ## <a name="cloud-app-security-compliance"></a>Cloud App Security のコンプライアンス
 
-データに対する侵害や攻撃が日常的に起きる世界において、最大限のデータ保護機能を備えたクラウド アプリ セキュリティ ブローカーを選ぶことが組織にとって重要です。 Microsoft のすべてのクラウド製品やクラウド サービスと同様に、Microsoft Cloud App Security は、Cloud App Security ユーザーの厳格なセキュリティとプライバシーの要求に応えるために基礎から構築されています。
+データに対する侵害や攻撃が日常的に起きる世界において、最大限のデータ保護機能を備えたクラウド アプリ セキュリティ ブローカーを選ぶことが組織にとって重要です。 Microsoft のすべてのクラウド製品やクラウド サービスと同様に、Microsoft Cloud App Security は、お客様の厳格なセキュリティとプライバシーの要求に応えるために構築されています。
 
-個人のデータの収集と利用を統制する国、地域、および業界固有の要件に組織が準拠できるように、Microsoft Cloud App Security には (証明書や構成証明を含めて) 包括的なコンプライアンス認証セットが用意されています。
+個人のデータの収集と利用を統制する国、地域、および業界固有の要件に組織が準拠できるように、Microsoft Cloud App Security には包括的なコンプライアンス認証セットが用意されています。 コンプライアンス認証には、証明書と構成証明が含まれます。
 
 ### <a name="compliance-framework-and-offerings"></a>コンプライアンスのフレームワークとコンプライアンス認証
 
@@ -62,23 +61,23 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 ## <a name="privacy"></a>プライバシー
 
-### <a name="you-are-the-owner-of-your-data"></a>お客様のデータはお客様が所有
+### <a name="youre-the-owner-of-your-data"></a>お客様のデータはお客様が所有
 - Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
 - 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[**[ユーザーとアカウント]**](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
--   お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
+- お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、 [オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
 
--   サービスの利用を停止する場合は、お客様はご自身のデータを持ち出すことができます。
+- サービスの利用を停止する場合は、お客様はご自身のデータを持ち出すことができます。
 
 ### <a name="microsoft-cloud-app-security-is-the-processor-of-your-data"></a>Microsoft Cloud App Security はデータ処理者
 
--   Cloud App Security では、お客様がサブスクライブしたサービスを提供する目的でのみお客様のデータを使用します。
+- Cloud App Security では、お客様がサブスクライブしたサービスを提供する目的でのみお客様のデータを使用します。
 
--   政府から Microsoft に、お客様のデータへのアクセスを求める働きかけがあった場合、Microsoft は、可能な限り、お客様に照会を転送します。 Microsoft は、顧客データに対する[政府からの要求](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)の開示を禁じた不当な法的要請に異議を申し立てました。 詳細については、[だれがどのような条件でお客様のデータにアクセスできるか](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)に関する記事を参照してください。
+- 政府から Microsoft に、お客様のデータへのアクセスを求める働きかけがあった場合、Microsoft は、可能な限り、お客様に照会を転送します。 Microsoft は、お客様のデータに対する[政府からの要求](https://www.microsoft.com/en-us/trustcenter/privacy/govt-requests-for-data)の開示を禁じた不当な法的要請に異議を申し立てました。 詳細については、[だれがどのような条件でお客様のデータにアクセスできるか](https://www.microsoft.com/en-us/trustcenter/Privacy/Who-can-access-your-data-and-on-what-terms)に関する記事を参照してください。
 
 ### <a name="privacy-controls"></a>プライバシー管理
 
--   プライバシー管理は、組織内のどのユーザーがサービスにアクセスでき、それらの各ユーザーが何にアクセスできるかを構成するのに役立ちます。
+- プライバシー管理は、組織内のどのユーザーがサービスにアクセスでき、それらの各ユーザーが何にアクセスできるかを構成するのに役立ちます。
 
 ## <a name="updating-personal-data"></a>個人データの更新
 ユーザーの個人データは、使用する SaaS アプリケーションのユーザーのオブジェクトから派生します。 このため、これらのアプリケーションのユーザー プロファイルに加えられた変更はすべて、Microsoft Cloud App Security に反映されます。
@@ -86,19 +85,23 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 ## <a name="data-location"></a>データの場所
 
--   Microsoft Cloud App Security は現在、米国とヨーロッパのデータセンターで稼働しています (各々が "Geo")。 テナントのアカウントは、サインアップ時に選択した国に基づいて、Geo 内に作成されます。 具体的には、その場所に最も近い Geo 内のデータセンターにデータが格納されます。
+- Microsoft Cloud App Security は現在、米国とヨーロッパのデータセンターで稼働しています (各々が "Geo")。 テナントのアカウントは、サインアップ時に選択した国に基づいて、Geo 内に作成されます。 具体的には、その場所に最も近い Geo 内のデータセンターにデータが格納されます。
 
 [プライバシーに関する詳細情報](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>透明度
 
-Microsoft は、その取り組みの透明性を確保します。つまり、データの保存場所を共有し、合意済みのサービスを提供する目的にのみデータを使用することを確約して、Microsoft のエンジニアと承認済み委託先会社がサービスを提供するためにデータを使用する方法を定めます。
+Microsoft は、その取り組みの透明性を確保します。 
+
+- データの保存場所を共有します。
+- 合意済みのサービスを提供する目的にのみデータを使用することを確約します。
+- Microsoft のエンジニアと承認済み下請業者がサービスを提供するためにデータを使用する方法を定めます。
 
 Microsoft は厳格な管理を通じて顧客データへのアクセスを統制し、重要なタスクを完了するのに必要な最低レベルのアクセス権を付与して、不要になった時点でそのアクセス権を無効にします。
 
 ### <a name="data-protection"></a>データ保護
 
-Microsoft Cloud App Security では、コンテンツ検査の実行時にデータ保護を適用します。 Cloud App Security データセンターにファイルの内容は保存されません。保存されるのは、ファイル レコードのメタデータと特定された一致情報のみです。
+Microsoft Cloud App Security では、コンテンツ検査時にデータ保護を適用します。 ファイルの内容は、Cloud App Security のデータセンターに保存されません。 保存されるのは、ファイル レコードのメタデータと特定された一致のみです。
 
 ### <a name="data-retention"></a>データ保持期間
 
@@ -110,7 +113,7 @@ Microsoft Cloud App Security は次のようにデータを保持しています
 
 - アラート: 180 日間
 
-Microsoft のデータ管理の実施に関する詳細については、[オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
+Microsoft のデータ管理の実施に関する詳細については、 [オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
 [透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 
@@ -128,7 +131,7 @@ Microsoft は、Microsoft データベースでの保管時、およびユーザ
 
 ### <a name="identity-and-access-management"></a>ID およびアクセスの管理
 
-Microsoft Cloud App Security では、アクセスを制限する Azure Active Directory を使用して、ポータルへの管理者のアクセスを地理的な場所に基づいて制限することができます。 Azure Active Directory を使用して、Microsoft Cloud App Security ポータルへのアクセスに多要素認証を要求することができます。
+Microsoft Cloud App Security では、Azure Active Directory を使用して、ポータルへの管理者のアクセスを地理的な場所に基づいて制限することができます。 Azure Active Directory を使用して、Microsoft Cloud App Security ポータルへのアクセスに多要素認証を要求することができます。
 
 ### <a name="permissions"></a>アクセス許可
 
@@ -138,7 +141,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 ### <a name="scoped-deployment"></a>スコープ付きデプロイ
 
-Microsoft Cloud App Security を使用するとデプロイのスコープを指定できます。 これにより、Cloud App Security を使用して特定のグループのみを制御することや、Cloud App Security によるガバナンスから特定のグループを除外することができます。 詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
+Microsoft Cloud App Security を使用するとデプロイのスコープを指定できます。 スコープの設定により、Cloud App Security を使用して特定のグループのみを制御することや、Cloud App Security によるガバナンスから特定のグループを除外することができます。 詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
 
 ### <a name="anonymization"></a>匿名化 
 

@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security での異常検出ポリシーの作成 | Microsoft ドキュメント
-description: このトピックでは異常検出ポリシーについて説明し、異常検出ポリシーの構成要素に関する参照情報を提供します。
+description: この記事では異常検出ポリシーについて説明し、異常検出ポリシーの構成要素に関する参照情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/28/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,16 @@ ms.technology: ''
 ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: a6ac7a6f8fcfbcde01dbcdcb9eaaaac82da3c8bc
-ms.sourcegitcommit: d70e5bf78a1db6d9e277c486638a08a474942edb
+ms.openlocfilehash: e29456add1796ea13c67b44f61c628cdb924f0dc
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50745733"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596951"
 ---
-*適用対象: Microsoft Cloud App Security*
-
- 
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
+
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使えるユーザーおよびエンティティ行動分析 (UEBA) と機械学習 (ML) が提供されるため、クラウド環境全体で高度な脅威検出をすばやく実行できます。 異常検出ポリシーは自動的に有効になるため、新しい異常検出ポリシーでは、即時検出を行い、ユーザー全体、またネットワークに接続されたマシンやデバイス全体の数多くの異常な動作を対象とすることにより、即時結果が提示されます。  また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 
 
@@ -81,6 +80,9 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
  
 > [!NOTE]
 > Cloud App Security では、ユーザーの一般的な動作に基づき、疑わしいものとして識別される各転送ルールについてのみアラートが表示されます。 
+
+**疑わしい受信トレイの操作ルール**
+- この検出では、環境がプロファイリングされて、メッセージやフォルダーを削除または移動する疑わしいルールがユーザーの受信トレイに設定されていると、アラートがトリガーされます。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に非表示にされていること、または組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを示す可能性があります。
 
 **異常なアクティビティ (ユーザーによる)**<br>
 これらの検出では、以下を行うユーザーを識別します。

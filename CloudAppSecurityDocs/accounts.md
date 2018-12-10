@@ -1,11 +1,11 @@
 ---
 title: クラウド アプリのアカウントの表示 | Microsoft Docs
-description: このトピックの内容
+description: この記事では、接続されたアプリからのアカウントの確認に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06662cea3c0712fb26f6afdab1e83ab330b076e1
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 7785b9ea4e9f9d6dbc164ec7636e4f7a8ec79121
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349544"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51596696"
 ---
+# <a name="accounts"></a>[アカウント]
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="accounts"></a>[アカウント]
 Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントが Cloud App Security によって検出されると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
@@ -54,7 +54,7 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、**[設定]** で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
+- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、[**設定**] で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
 
 - **アプリ**: 組織内のアカウントで使用されている API 接続アプリをフィルター処理することができます。
 

@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security と SIEM の統合 | Microsoft Docs
-description: このトピックでは、SIEM と Cloud App Security との統合に関する情報を提供します。
+description: この記事では、SIEM と Cloud App Security との統合に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 7/19/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,27 +13,27 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2744ea7ec15bd216a73aa332d530e9422463e401
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fbb9790307d2fd069e876438fa660300053be64a
+ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143532"
+ms.lasthandoff: 12/02/2018
+ms.locfileid: "52743422"
 ---
-*適用対象: Microsoft Cloud App Security*
-
 # <a name="siem-integration"></a>SIEM の統合
 
-Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できるようになりました。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+*適用対象: Microsoft Cloud App Security*
 
-SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 また、この機能を長期間無効にしてから再び有効にすると、過去 2 日間分とそれ以降のすべてのアラートとアクティビティが転送されます。
+Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+
+SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 この機能を長期間無効にしてから再び有効にすると、過去 2 日間分のアラートとアクティビティが転送され、それからそれ以降のすべてのアラートとアクティビティが転送されます。
 
 ## <a name="siem-integration-architecture"></a>SIEM 統合アーキテクチャ
 
 SIEM エージェントは組織のネットワークに展開されます。 展開と構成が行われると、Cloud App Security RESTful API を使用して構成を行ったデータの種類 (アラートとアクティビティ) がプルされます。
 ポーリングされるトラフィックはポート 443 の暗号化された HTTPS チャネルを通じて送信されます。
 
-SIEM エージェントは Cloud App Security からデータを取得すると、セットアップ中に指定したネットワーク構成 (TCP または UDP とカスタム ポート) を使用してローカル SIEM に Syslog メッセージを送信します。 
+SIEM エージェントは Cloud App Security からデータを取得すると、ローカル SIEM に Syslog メッセージを送信します。 Cloud App Security では、セットアップ中に指定されたネットワーク公正が使用されます (TCP または UDP とカスタム ポート)。 
 
 ![SIEM 統合アーキテクチャ](./media/siem-architecture.png)
 
@@ -64,7 +64,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1: Cloud App Security ポータルでセットアップする
 
-1. Cloud App Security ポータルの設定歯車の下で **[セキュリティ拡張機能]** をクリックし、**[SIEM エージェント]** タブをクリックします。
+1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、**[SIEM エージェント]** タブをクリックします。
 
 2. プラス記号アイコンをクリックし、**[SIEM エージェントを追加する]** ウィザードを開始します。
 3. ウィザードで、**[ウィザード起動]** をクリックします。   
@@ -79,15 +79,15 @@ SIEM との統合は次の 3 つの手順で行われます。
 
    ![リモートの Syslog 設定](./media/siem2.png)
 
-6. SIEM サーバーにエクスポートするデータの種類を選択します。**アラート**と**アクティビティ**があります。 
+6. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 
    スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。
-   **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認できます。 
+   **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 
    **[次へ]** をクリックします。 
 
    ![データの種類の設定](./media/siem3.png)
 
 7. トークンをコピーし、保存して後で使用できるようにします。 
-   [完了] をクリックし、ウィザードから SIEM ページに戻り、テーブルで追加した SIEM エージェントを確認できます。 後で接続されるまで **[作成済み]** と表示されます。
+   [完了] をクリックし、ウィザードを終了します。 SIEM ページに戻ると、追加した SIEM エージェントがテーブルに表示されます。 後で接続されるまで **[作成済み]** と表示されます。
 
 > [!NOTE]
 > 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
@@ -133,7 +133,9 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 2017-11-28T19:24:55.000Z LAB-EUW-ARCTEST CEF:0|MCAS|SIEM_Agent|0.112.68|EVENT_CATEGORY_DELETE_OBJECT|Delete object|0|externalId=1511897117617_5be018ee-f676-4473-a9b5-5982527409be rt=1511897095000 start=1511897095000 end=1511897095000 msg=Delete object: ServiceNow Object b1709c40db360300906ff34ebf961923 suser=admin@contoso.com destinationServiceName=ServiceNow dvc= requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511897117617_5be018ee-f676-4473-a9b5-5982527409be,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=,,admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 ```
-アラートのログ ファイルの例を次に示します。
+
+次のテキストはアラートのログ ファイル例です。
+
 ```
 2017-07-15T20:42:30.531Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|myPolicy|3|externalId=596a7e360c204203a335a3fb start=1500151350531 end=1500151350531 msg=Activity policy ''myPolicy'' was triggered by ''admin@box-contoso.com'' suser=admin@box-contoso.com destinationServiceName=Box cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596a7e360c204203a335a3fb cs2Label=uniqueServiceAppIds cs2=APPID_BOX cs3Label=relatedAudits cs3=1500151288183_acc891bf-33e1-424b-a021-0d4370789660 cs4Label=policyIDs cs4=59f0ab82f797fa0681e9b1c7
 
@@ -160,18 +162,18 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 | アクティビティ/アラート |  destinationServiceName  |                  Office 365、SharePoint、Box などのアプリから発生するアクティビティまたはアラート。                   |
 | アクティビティ/アラート |        cs<X>Label        |        各ラベルにはそれぞれ別の意味があり、ラベル自体からその意味がわかる (例: targetObjects)。        |
 | アクティビティ/アラート |          cs<X>           | ラベルに対応する情報 (ラベル例では、アクティビティまたはアラートの対象ユーザー)。 |
-|    アクティビティ     |     EVENT_CATEGORY_*     |                                       アクティビティの高レベルのカテゴリ                                       |
+|    アクティビティ     |     EVENT_CATEGORY_*     |                                       アクティビティの大まかなカテゴリ                                       |
 |    アクティビティ     |         <ACTION>         |                                  ポータルに表示されるアクティビティの種類                                  |
 |    アクティビティ     |        externalId        |                                                    イベント ID                                                     |
 |    アクティビティ     |           dvc            |                                             クライアント デバイスの IP                                             |
 |    アクティビティ     | requestClientApplication |                                         クライアント デバイスのユーザー エージェント                                         |
-|      アラート       |       <alert type>       |                                  たとえば、“ALERT_CABINET_EVENT_MATCH_AUDIT”                                  |
+|      アラート       |       <alert type>       |                                  たとえば、"ALERT_CABINET_EVENT_MATCH_AUDIT"                                  |
 |      アラート       |          <name>          |                                             一致するポリシー名                                             |
 |      アラート       |        externalId        |                                                    アラート ID                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する
 
-1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続がダウンしている状態が 2 時間を超える場合は **[接続エラー]**、12 時間を超える場合は **[切断]** と表示されます。
+1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、**[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
 
    以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
@@ -180,17 +182,20 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 
 ## <a name="regenerating-your-token"></a>トークンの再生成
-トークンが失われた場合は、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[トークンの再生成]** を選択して、いつでも再生成することができます。
+
+トークンをなくした場合、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックすればいつでも再生成できます。 **[トークンの再生成]** を選択すると、新しいトークンが与えられます。
 
  ![SIEM - トークンの再生成](./media/siem-regenerate-token.png)
 
-## <a name="editing-your-siem-agent"></a>SIEM エージェントの編集 
-SIEM エージェントを後で編集する必要がある場合は、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[編集]** を選択できます。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はありません。自動的に更新されます。
+## <a name="editing-your-siem-agent"></a>SIEM エージェントの編集
+
+SIEM エージェントを編集するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[編集]** を選択します。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はありません。自動的に更新されます。
 
 ![SIEM - 編集](./media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>SIEM エージェントの削除
-後で SIEM エージェントを削除する必要がある場合は、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[削除]** を選択できます。
+
+SIEM エージェントを削除するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[削除]** を選択します。
 
 ![SIEM - 削除](./media/siem-delete.png)
 
@@ -199,7 +204,8 @@ SIEM エージェントを後で編集する必要がある場合は、テーブ
 
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順
+  
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

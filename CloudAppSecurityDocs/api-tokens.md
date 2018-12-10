@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security での API トークンの管理 | Microsoft Docs
-description: このトピックでは、Cloud App Security 用の API トークンの生成に関して説明します。
+description: この記事では、Cloud App Security 用の API トークンの生成に関して説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/11/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,17 @@ ms.technology: ''
 ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 772c140ac178f65f1d558c69b732de6925ce0d51
-ms.sourcegitcommit: 82052a88acbc33893f7b9e0d10cc2e8c652ef003
+ms.openlocfilehash: 849669dc659d3abfb4787d3a94edadc170db485e
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49349493"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597070"
 ---
+# <a name="api-tokens"></a>API トークン
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="api-tokens"></a>API トークン
-    
 Microsoft Cloud App Security API を使うと、REST API エンドポイントからプログラムで Cloud App Security にアクセスできます。 アプリケーションで API を使うことにより、Cloud App Security のデータとオブジェクトに対して読み取りと更新の操作を実行できます。 たとえば、Cloud App Security API は、ユーザー オブジェクトに対する次の一般的な操作をサポートしています。
 
 - Cloud Discovery のログ ファイルをアップロードします
@@ -76,7 +75,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  

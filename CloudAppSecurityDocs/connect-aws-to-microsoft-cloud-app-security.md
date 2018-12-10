@@ -1,11 +1,11 @@
 ---
 title: AWS を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
-description: このトピックでは、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。
+description: この記事では、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,18 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d6c3e680ec17d8a62977e4c25af5b9163244afea
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: 3a8936a8a3f9a9e2198edbdec3111f1cccad0c90
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217290"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597174"
 ---
+# <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
+
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
-このセクションでは、コネクタ API を使用して Microsoft Cloud App Security を既存のアマゾン ウェブ サービス アカウントに接続する方法を説明します。  
+この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存のアマゾン ウェブ サービス アカウントに接続する方法を説明します。  
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Amazon Web Services を Cloud App Security に接続する方法  
   
@@ -95,7 +96,7 @@ ms.locfileid: "50217290"
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    これまでに CloudTrail を使用したことがない場合、**[開始する]** ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
+    これまでに CloudTrail を使用したことがない場合、[**開始する**] ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
   
        ![AWS で CloudTrail の有効化](./media/aws-turnon-cloudtrail.png "AWS で CloudTrail の有効化")
   
@@ -112,9 +113,9 @@ ms.locfileid: "50217290"
 13. ポップアップで、csv ファイルから関連フィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[接続]** をクリックします。  
    ![AWS アプリに接続](./media/aws-connect-app.png "AWS アプリに接続") 
   
-14. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
+14. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、**[完了]** をクリックします。  
+     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、[**完了**] をクリックします。  
   
 AWS を接続すると、接続までの 7 日間のイベントを受け取ります。 CloudTrail を有効にしただけであれば、CloudTrail を有効にした時点からイベントを受け取ります。
   

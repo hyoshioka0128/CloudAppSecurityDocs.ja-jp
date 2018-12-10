@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 11/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e67ba01b00af1f8af9bdd5e282f0fac74afa0183
-ms.sourcegitcommit: bb010d8dd0a6eff39df31e33c2cc9c37ec321b46
+ms.openlocfilehash: ad88c9d224426a73687ae972a58617ae5800221a
+ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50217341"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51597087"
 ---
+# <a name="control"></a>Control
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="control"></a>Control
 ガバナンス アクションは、クラウド環境全体のユーザーのファイルに適用できます。 クラウドについて十分に調査して理解したら、ガバナンス アクションを使用して組織の保護に役立てることができます。  
 
 ## <a name="use-policies-to-assess-risk"></a>ポリシーを使用してリスクを評価  
@@ -54,9 +54,9 @@ ms.locfileid: "50217341"
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-**[設定]** 歯車 ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[ガバナンス ログ]** をクリックすると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。  
+**[設定]** 歯車アイコンで **[ガバナンス ログ]** を選択すると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。 ![設定アイコン](./media/settings-icon.png "設定アイコン")
 
-ガバナンス アクションが失敗した場合は、**[再試行]** アイコン ![再試行アイコン](./media/retry-icon.png "再試行アイコン") をクリックして再度適用できます。  
+ガバナンス アクションが失敗した場合は、**[再試行]** を選択して再度適用できます。 ![再試行アイコン](./media/retry-icon.png "再試行アイコン")   
 
 ポリシー、違反、アプリの種類に応じて、さまざまなガバナンス アクションを使用できます。  
 
@@ -84,7 +84,7 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 
    1. **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、**[IP アドレス]** または **[ユーザー]** タブを選びます。  
 
-   2. **[エクスポート]** の矢印アイコン ![矢印アイコン](./media/arrow-icon.png "矢印アイコン") を選んで、エクスポート オプションを選びます。  
+   2. **[エクスポート]** 矢印アイコンを選択して、エクスポートのオプションを選択します。 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン")
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  

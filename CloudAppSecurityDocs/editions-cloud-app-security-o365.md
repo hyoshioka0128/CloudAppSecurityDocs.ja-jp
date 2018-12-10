@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security と Office 365 Cloud App Security の違い | Microsoft ドキュメント
-description: このトピックでは、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。
+description: この記事では、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 8/21/2018
+ms.date: 11/12/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0ece617169af47eeaa83ec626667d81ea8a394ad
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: fa11ebe67ddf86995a404ec386d0c601fd4dc021
+ms.sourcegitcommit: e424807015f33aa359d9e29e13cc2faac5adcb92
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44142898"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561123"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security と Office 365 Cloud App Security の違い
 
-> [!NOTE]
-> Office 365 Cloud App Security については、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」をご覧ください。
+*適用対象: Microsoft Cloud App Security*
+
+この記事では、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。 Office 365 Cloud App Security については、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」をご覧ください。
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
 
-Cloud App Security は包括的なクロス SaaS ソリューションです。高度な可視化、強力なデータ管理、高性能な脅威防御といった機能をクラウド アプリにもたらします。 このサービスを利用すると、使用されているクラウド アプリを見つけ出し、シャドウ IT を可視化できます。アプリを認可し、アプリのデータを管理し、保護できます。 
+Microsoft Cloud App Security は包括的なクロス SaaS ソリューションであり、高度な可視化、強力なデータ管理、高性能な脅威防御といった機能をクラウド アプリに提供します。 このサービスにより、使用中のクラウド アプリを検出することで、シャドウ IT への可視性を得られます。 サービスに対してアプリを認可すると、アプリ内のデータを管理して保護できます。
 
 ## <a name="office-365-cloud-app-security"></a>Office 365 Cloud App Security
 
-Office 365 Cloud App Security は Microsoft Cloud App Security のサブセットであり、強化された可視性と制御を Office 365 に提供します。 これには、ユーザー アクティビティ ログに基づく脅威の検出、Office 365 のサービスと同様の機能を持つアプリのシャドウ IT の発見、Office 365 に対するアプリのアクセス許可の制御などが含まれます。
+Office 365 Cloud App Security は Microsoft Cloud App Security のサブセットであり、強化された可視性と制御を Office 365 に提供します。 Office 365 Cloud App Security には、ユーザー アクティビティ ログに基づく脅威の検出、Office 365 のサービスと同様の機能を持つアプリのシャドウ IT の発見、Office 365 に対するアプリのアクセス許可の制御などが含まれます。
 
 ### <a name="feature-support"></a>機能のサポート
 
@@ -58,7 +59,7 @@ Office 365 Cloud App Security は Microsoft Cloud App Security のサブセッ�
 
 
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順  
 
 基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。    
 

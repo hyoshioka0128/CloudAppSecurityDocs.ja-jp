@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security を展開し、クラウド アプリの使用状況を詳細に表示し、管理する | Microsoft Docs
-description: このトピックでは、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
+description: この記事では、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 11/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 066618c4e1096df0436a3b1bd40eb2563a35ae59
-ms.sourcegitcommit: c80c584c444b12dc8c788208cf973b46192b0cf0
+ms.openlocfilehash: baa1aed2ca4e1c2f52248fbfec35376502370d7f
+ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49072856"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51644333"
 ---
+# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の展開
+
 *適用対象: Microsoft Cloud App Security*
 
-
-# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の展開
-Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 このトピックでは、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
+Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 この記事では、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
 組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
 
@@ -33,24 +33,19 @@ Microsoft Cloud App Security は、クラウド アプリケーションの利�
 
 ## <a name="prerequisites"></a>前提条件  
   
--   製品を使用するには、企業が Cloud App Security のライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
+- 製品を使用するには、企業が Cloud App Security のライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
   
      テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。  
+- Cloud App Security のライセンスを入手すると、ライセンス認証情報と Cloud App Security ポータルへのリンクが記載されたメールが送信されます。  
   
-> [!NOTE] 
-> Office 365 のライセンスは Cloud App Security には必要ありません。  
+- Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者、コンプライアンス管理者、またはセキュリティ閲覧者である必要があります。 管理者ロールを割り当てられたユーザーは、組織がサブスクライブしているすべてのクラウド アプリについて同じアクセス許可を持つことを理解しておくことが重要です。 これは、ロールの割り当てを、Office 365 ポータル、Azure クラシック ポータル、または [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 用 Azure AD モジュールのいずれで行った場合でも同じです。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。  
   
--   Cloud App Security のライセンスを購入すると、ライセンス認証情報と Cloud App Security ポータルへのリンクが記載されたメールが送信されます。  
-  
--   Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者、コンプライアンス管理者、またはセキュリティ閲覧者である必要があります。 管理者ロールを割り当てられているユーザーは、企業がサブスクライブしているすべてのクラウド アプリに対して、Office 365 ポータル、Azure クラシック ポータル、または [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 用 Azure AD モジュールのいずれを使用して割り当てられている場合でも、同じ権限を持つことを理解しておくことが重要です。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。  
-  
--   Cloud App Security ポータルを実行するには、Internet Explorer 11、Microsoft Edge (最新版)、Google Chrome (最新版)、Mozilla Firefox (最新版)、Apple Safari (最新版) のいずれかを使用してください。  
+- Cloud App Security ポータルを実行するには、Internet Explorer 11、Microsoft Edge (最新版)、Google Chrome (最新版)、Mozilla Firefox (最新版)、Apple Safari (最新版) のいずれかを使用してください。  
 
 ## <a name="to-access-the-portal"></a>ポータルにアクセスするには
 
 Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) に移動します。  
-  
-または、**Cloud App Security** から管理センター アイコン ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 admin centers icon") をクリックして、**Office 365 管理センター**からポータルにアクセスすることもできます。  
+管理センター アイコンをクリックして、**Office 365 管理センター**からポータルにアクセスすることもできます。 ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 管理センター アイコン") その後、**[Cloud App Security]** を選択します。  
   
 ![O365 からのアクセス](./media/access-from-o365.png "Access from O365")  
   
@@ -77,10 +72,10 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 **ポリシーを作成するには**
 
-1. **[制御]** > **[テンプレート]** の順に選択します。
-2. リストからポリシー テンプレートを選択し、**[ポリシーの作成]** \(+) を選択します。
-3. ポリシーをカスタマイズ (フィルター、アクション、およびその他の設定を選択) し、**[作成]** を選びます。
-4. **[ポリシー]** タブでポリシーを選択して、関連する一致項目 (アクティビティ、ファイル、アラート) を確認できます。
+1. [**制御**] > [**テンプレート**] の順に選択します。
+2. リストからポリシー テンプレートを選択し、[**ポリシーの作成**] \(+) を選択します。
+3. ポリシーをカスタマイズ (フィルター、アクション、およびその他の設定を選択) し、[**作成**] を選びます。
+4. [**ポリシー**] タブでポリシーを選択して、関連する一致項目 (アクティビティ、ファイル、アラート) を確認できます。
  ヒント: 社内のクラウド環境のあらゆるセキュリティ シナリオに対応するには、**リスク カテゴリ**ごとにポリシーを作成します。
 
 **ポリシーは企業でどのように役立つか。**
@@ -97,8 +92,8 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
    1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
    2. **[ログの自動アップロード]** を選択します。
-   3. **[データ ソース]** タブでソースを追加します。
-   4. **[ログ コレクター]** タブでログ コレクターを構成します。
+   3. [**データ ソース**] タブでソースを追加します。
+   4. [**ログ コレクター**] タブでログ コレクターを構成します。
  
 **Cloud Discovery のスナップショット レポートを作成するには**
 
@@ -114,26 +109,26 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 **電子メールの設定を入力するには**
 
 1. 設定の歯車アイコンから **[メールの設定]** を選択します。
-2. **[メール送信者の ID]** でメール アドレスと表示名を入力します。
-3. **[メールのデザイン]** で企業のメール テンプレートをアップロードします。
+2. [**メール送信者の ID**] でメール アドレスと表示名を入力します。
+3. [**メールのデザイン**] で企業のメール テンプレートをアップロードします。
 
 **管理者通知を設定するには**
 
-1. ナビゲーション バーでユーザー名を選択し、**[ユーザー設定]** に移動します。
-2. **[通知]** で、システム通知を設定する方法を構成します。
-3. **[保存]** を選択します。
+1. ナビゲーション バーでユーザー名を選択し、[**ユーザー設定**] に移動します。
+2. [**通知**] で、システム通知を設定する方法を構成します。
+3. [**保存**] を選択します。
 
 **スコアのメトリックをカスタマイズするには**
 
 1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
 1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
 2. **[Score metris]\(スコア メトリック\)** で各種のリスクの値の重要度を構成します。
-3. **[保存]** を選択します。
+3. [**保存**] を選択します。
 
 検出されたアプリに付与されたリスク スコアは、企業のニーズと優先順位に従って正確に構成されます。
 
 **環境のカスタマイズが必要な理由。**
-一部の機能は、お客様のニーズに合わせてカスタマイズされたときに最大の効果を発揮します。 独自の電子メール テンプレートをユーザーに提供したり、どのような通知を受信するかを決定したり、企業のニーズに応じてリスク スコア メトリックをカスタマイズしたりできます。
+一部の機能は、お客様のニーズに合わせてカスタマイズされたときに最大の効果を発揮します。 独自のメール テンプレートでユーザー用の優れたエクスペリエンスを提供します。 どのような通知を受信するかを決定し、企業のニーズに応じてリスク スコア メトリックをカスタマイズします。
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>手順 5. [ニーズに応じてデータを編成します](ip-tags.md)。
@@ -145,7 +140,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 1. 設定の歯車アイコンから **[IP アドレスの範囲]** を選択します。
 2. IP アドレスの範囲を追加するプラス記号をクリックします。
 3. IP アドレス範囲の**詳細**や**場所**、**タグ**、**カテゴリ**を入力します。
-4. **[作成]** を選択します。
+4. [**作成**] を選択します。
 
    これでポリシーを作成するときや、継続的レポートをフィルター処理して作成するときに、IP タグを使うことができるようになります。
 
@@ -154,15 +149,15 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 1. 設定の歯車アイコンから、**[Cloud Discovery 設定**] を選択します。
 2. **[継続的レポート]** で **[レポートの作成]** を選びます。
 3. 以下の構成手順に従います。
-4. **[作成]** を選択します。
+4. [**作成**] を選択します。
 
 部署や IP アドレス範囲などの設定に基づいて、検出されたデータを表示できます。
 
 **ドメインを追加するには**
 
 1. 設定の歯車アイコンから **[設定]** を選択します。
-2. **[組織の詳細]** で企業の内部ドメインを追加します。
-3. **[保存]** を選択します。
+2. [**組織の詳細**] で企業の内部ドメインを追加します。
+3. [**保存**] を選択します。
 
 **これらの設定を構成する必要がある理由。**
 これらの設定によって、コンソールの機能をより適切に制御できるようになります。 IP タグを使用すると、ニーズに応じたポリシーの作成や、正確なデータのフィルタリングなどの作業が簡単になります。 データを論理カテゴリにグループ化する際にこのデータ ビューをご利用ください。
