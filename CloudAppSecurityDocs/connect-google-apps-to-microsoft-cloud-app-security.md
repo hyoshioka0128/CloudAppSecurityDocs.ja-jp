@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e5d70f17437e2fb195fdc1555340dc29f8cfb436
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596934"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124555"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 
@@ -61,7 +61,7 @@ ms.locfileid: "51596934"
    ![Google API](./media/google4.png "google4")  
   
    > [!NOTE]  
-   >  ここでは [**資格情報**] の警告は無視します。  
+   >  ここでは **[資格情報]** の警告は無視します。  
 
 8. 各 API に対して [有効] をクリックします。
      ![Google API を有効にする](./media/google-api.png "google-api")  
@@ -71,7 +71,7 @@ ms.locfileid: "51596934"
   
 10. **[Credentials]**/(認証情報/) を選択して、**[OAuth consent screen]**/(OAuth 同意画面/) タブを選択します。
   
-    - [**Product name shown to users**]\(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
+    - **[Product name shown to users]** \(製品名をユーザーに表示する\) で、「**Microsoft Cloud App Security**」と入力します。  
   
     - その他のすべてのフィールドは省略できます。  
   
@@ -93,7 +93,7 @@ ms.locfileid: "51596934"
   
 14. サービスに割り当てられている**サービス アカウント ID** をコピーします。この ID は後で必要になります。    
         
-15. [**資格情報**] 画面で、一番右にある [**Manage service accounts (サービス アカウントの管理)**] をクリックします。  
+15. **[資格情報]** 画面で、一番右にある **[Manage service accounts (サービス アカウントの管理)]** をクリックします。  
      
     ![G Suite の資格情報サービス アカウント](./media/google10.png "G Suite の資格情報サービス アカウント")  
   
@@ -124,7 +124,7 @@ ms.locfileid: "51596934"
     
       ![Google ドライブの編集](./media/google15.png "google15")  
 
-21. [**変更を保存**] をクリックします。
+21. **[変更を保存]** をクリックします。
 
 22. **[Enabled APIs]**/(有効にされた API/) の一覧に戻ります。 **[G Suite Marketplace SDK]** をクリックします。 
       
@@ -139,13 +139,13 @@ ms.locfileid: "51596934"
      
        ![google の新しい項目](./media/google-new-item.png "google の新しい項目")  
 
-    -   [**Enable individual install (個々のインストールを有効にする)**] チェック ボックスをオフにします。  
+    -   **[Enable individual install (個々のインストールを有効にする)]** チェック ボックスをオフにします。  
   
     -   **[アプリケーション アイコン]** で、4 つの必須イメージを設定します。  
   
          イメージは [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) にあります。  
   
-    -   次に [**Support URLs (サポートの URL)**] を入力します:  
+    -   次に **[Support URLs (サポートの URL)]** を入力します:  
   
         -   **サービス利用規約 URL**: http://go.microsoft.com/fwlink/?LinkID=733268  
   
@@ -192,16 +192,16 @@ ms.locfileid: "51596934"
            https://www.googleapis.com/auth/admin.directory.user  
 
     -   **[Visibility]\(可視性\)** で **[My domain]\(独自ドメイン\)** (パブリックではありません) を選択します。 
-    -   [**変更を保存**] をクリックします。  
+    -   **[変更を保存]** をクリックします。  
         ![google の可視性](./media/google-visibility.png "google の可視性")  
 24. [admin.google.com](https://admin.google.com/) にアクセスし、**[セキュリティ]** を選択します。 
    
       ![Google セキュリティ](./media/googlesec.png "Google セキュリティ")  
  
-25. [**API リファレンス**] を選択します。  
+25. **[API リファレンス]** を選択します。  
        ![Google API 有効化](./media/googleapi.png "google api")  
       
-26. [**Enable API Access (API アクセスの有効化)**] を選択してから [**変更を保存**] をクリックします。  
+26. **[Enable API Access (API アクセスの有効化)]** を選択してから **[変更を保存]** をクリックします。  
   
     ![Google API 参照](./media/googleapiref.png "google8")  
 
@@ -227,11 +227,11 @@ ms.locfileid: "51596934"
   
     5.  G Suite Business または Enterprise のアカウントがある場合、このチェック ボックスをオンにします。 Cloud App Security で使用できる G Suite Business または Enterprise の機能の詳細については、[アプリの表示、保護、ガバナンスの操作をすぐに実行できるようにする](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)方法に関するページをご覧ください。  
   
-    6.  [**設定の保存**] をクリックします。  
+    6.  **[設定の保存]** をクリックします。  
   
     7.  **[リンクに移動]** をクリックし、G Suite に接続します。 これにより G Suite が開き、Cloud App Security へのアクセス承認を求められます。  
          
-    8.  [**今すぐテスト**] をクリックし、正常に接続されたことを確認します。  
+    8.  **[今すぐテスト]** をクリックし、正常に接続されたことを確認します。  
   
          テストには数分かかる場合があります。  
   
@@ -246,6 +246,6 @@ G Suite を接続すると、Cloud App Security がフル スキャンを実行�
 ## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

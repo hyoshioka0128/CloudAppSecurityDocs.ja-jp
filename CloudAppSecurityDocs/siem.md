@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/30/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: fbb9790307d2fd069e876438fa660300053be64a
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743422"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124215"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 
@@ -208,5 +208,5 @@ SIEM エージェントを削除するには、テーブルの SIEM エージェ
   
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
 

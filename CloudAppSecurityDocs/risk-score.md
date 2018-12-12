@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/28/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: dcc60f975b7dcbf2c17260b95c30b58769acdf87
-ms.sourcegitcommit: 5d3a057a8bb2cb98fd7350775e46b0e4d34763ed
+ms.openlocfilehash: bb6539d5e80f4918d1e6b49bc244c0e58a94b092
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52386260"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124504"
 ---
 # <a name="working-with-the-risk-score"></a>リスク スコアの操作
 
@@ -109,7 +109,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
   
 時間を割いて、Cloud Discovery スコアの構成に割り当てられた既定の重み付けを見直し修正することは重要です。 既定で、評価されたさまざまなパラメーターはすべて同じ重みで割り当てられています。 組織にとって重要な特定パラメーターがある場合は、次のように変更するようにしてください。  
   
-1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
 2. **[スコア メトリック]** で **[重要度]** をスライドさせ、フィールドの重み付けまたはリスク カテゴリを変更します。 重要度は **[無視]**、**[低]**、**[中]**、**[高]**、**[非常に高い]** に設定できます。  
   
@@ -142,6 +142,6 @@ Cloud App Security のリスク スコアがどのように計算されている
  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

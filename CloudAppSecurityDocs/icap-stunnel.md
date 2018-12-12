@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6898bfa943129fb32cae1f587e88dfd478c355d6
-ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
+ms.openlocfilehash: 006d9eaa2bb7a71c6661931724344ca55166ba61
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644350"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124470"
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
@@ -320,4 +320,4 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
 ## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

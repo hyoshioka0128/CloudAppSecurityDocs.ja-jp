@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ef834c9b73af6a1bed34530b29bec4fd3581cc1e
-ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
+ms.openlocfilehash: 890d5600ab97e66735b5db277755c5567ff494dc
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52280563"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124385"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD アプリの Conditional Access App Control のデプロイ
 
@@ -127,5 +127,5 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 ## <a name="next-steps"></a>次の手順 
 [Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   

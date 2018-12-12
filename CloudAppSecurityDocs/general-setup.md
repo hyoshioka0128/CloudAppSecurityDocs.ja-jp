@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/15/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0321ecc91cc6dc420e44a323cdef37f34c19556a
-ms.sourcegitcommit: 79e5aa5a5f90223a5963eb8f6df81a80578e9ce9
+ms.openlocfilehash: 5262c51e18ba46bd6a5b41da5a41b2a73deecfba
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51644282"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123730"
 ---
 # <a name="basic-setup"></a>基本的なセットアップ
 
@@ -61,6 +61,6 @@ ms.locfileid: "51644282"
 ## <a name="next-steps"></a>次の手順  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

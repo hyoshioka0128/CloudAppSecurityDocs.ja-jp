@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3a8936a8a3f9a9e2198edbdec3111f1cccad0c90
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 358d7a8398a213664e4fae3be9f1515ebbbfc6c1
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597174"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124317"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 
@@ -96,7 +96,7 @@ ms.locfileid: "51597174"
   
      ![AWS CloudTrail](./media/aws-cloudtrail.png "AWS CloudTrail")  
   
-    これまでに CloudTrail を使用したことがない場合、[**開始する**] ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
+    これまでに CloudTrail を使用したことがない場合、**[開始する]** ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
   
        ![AWS で CloudTrail の有効化](./media/aws-turnon-cloudtrail.png "AWS で CloudTrail の有効化")
   
@@ -113,15 +113,15 @@ ms.locfileid: "51597174"
 13. ポップアップで、csv ファイルから関連フィールドに**アクセス キー**と**秘密鍵**を貼り付けて、**[接続]** をクリックします。  
    ![AWS アプリに接続](./media/aws-connect-app.png "AWS アプリに接続") 
   
-14. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+14. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、[**完了**] をクリックします。  
+     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、**[完了]** をクリックします。  
   
 AWS を接続すると、接続までの 7 日間のイベントを受け取ります。 CloudTrail を有効にしただけであれば、CloudTrail を有効にした時点からイベントを受け取ります。
   
 ## <a name="next-steps"></a>次の手順  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security のエラー メッセージを使用したアプリ コネクタのトラブルシューティング | Microsoft ドキュメント
-description: このトピックでは、API アプリ コネクタのエラー メッセージの一覧と各エラーの推奨される解決策について説明します。
+description: この記事では、API アプリ コネクタのエラー メッセージの一覧と各エラーの推奨される解決策について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,20 @@ ms.technology: ''
 ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 38a1699644d5c04197d46a88bb86586a7c9b0c99
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: 22eb82fc88af490979b9b66b7a54628a92aba220
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44144535"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124249"
 ---
+# <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
+
 *適用対象: Microsoft Cloud App Security*
 
-# <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
+この記事では、API アプリ コネクタのエラー メッセージの一覧と各エラーの推奨される解決策について説明します。
+
+## <a name="troubleshooting"></a>トラブルシューティング
 
 API アプリ コネクタを使用してクラウド アプリに接続しようとしたときに発生したアプリ コネクタ エラーは、アプリ コネクタ ダイアログで確認できます。
 
@@ -59,8 +63,9 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 > |HttpRequestFailure: Server returned: 500 Internal server error|すべてのアプリ|アプリ内にエラーがありました。|アプリの状態を確認してください|
 > |Service timeout|すべてのアプリ|Cloud App Security とアプリ間の接続でタイムアウトが検出されました。 アプリに問題がある可能性があります。|後でやり直してください。|
 
-## <a name="see-also"></a>参照  
+## <a name="next-steps"></a>次の手順
+
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
 

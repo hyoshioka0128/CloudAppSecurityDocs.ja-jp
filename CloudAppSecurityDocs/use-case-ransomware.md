@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/29/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5fd6cf54012d148261e98f0058109420cb55e9fa
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: cf9da01f896b1f9509918bca73c3d189e9d4557e
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143872"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123586"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -53,6 +53,6 @@ ms.locfileid: "44143872"
    ## <a name="see-also"></a>参照  
    [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

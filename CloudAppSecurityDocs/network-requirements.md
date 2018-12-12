@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 25ebeff05dc6fc7afd5e16de2076534c7f5070a3
-ms.sourcegitcommit: b0b3e6c6f150fff8c286185826ce099601a12679
+ms.openlocfilehash: 06de1b58f2a9a13559f4ac04a594ac681376e696
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52280597"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124368"
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
@@ -181,5 +181,5 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
 

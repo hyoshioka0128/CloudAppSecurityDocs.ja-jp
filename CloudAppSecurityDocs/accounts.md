@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7785b9ea4e9f9d6dbc164ec7636e4f7a8ec79121
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: a48077187ace1980cf819a32514c9fbbb930c444
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596696"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123637"
 ---
 # <a name="accounts"></a>[アカウント]
 
@@ -54,7 +54,7 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、[**設定**] で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
+- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、**[設定]** で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
 
 - **アプリ**: 組織内のアカウントで使用されている API 接続アプリをフィルター処理することができます。
 
@@ -80,6 +80,6 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
 ## <a name="next-steps"></a>次の手順  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しい問題を作成することもできます。](https://premier.microsoft.com/)  
   
   

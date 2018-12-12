@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 6a994e5ef04a18299d78613adfb74147787c862c
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 045ba61f4621bc82be7743098b43ccbc96f2085a
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596798"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124232"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 
@@ -39,19 +39,19 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
 3.  ポップアップで、管理者アカウントの電子メール アドレスを入力します。  
   
-4.  [**リンクを生成**] をクリックします。  
+4.  **[リンクを生成]** をクリックします。  
   
-5.  [**リンクに移動**] をクリックします。  
+5.  **[リンクに移動]** をクリックします。  
   
      Dropbox のサインイン ページが開きます。 Cloud App Security がチームの Dropbox インスタンスにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、[**許可**] をクリックします。  
+6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、**[許可]** をクリックします。  
   
 7.  Cloud App Security コンソールに戻ると、Dropbox が正常に接続されたことを通知するメッセージが届いています。  
   
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、[**閉じる**] をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、**[閉じる]** をクリックします。  
   
 Dropbox を接続すると、接続までの 60 日間のイベントを受け取ります。
 
@@ -61,6 +61,6 @@ Dropbox を接続すると、接続までの 60 日間のイベントを受け�
 ## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

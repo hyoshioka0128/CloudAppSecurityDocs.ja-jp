@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7485128c46fcbf64811299489a2108b3b2ce66d3
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: b8acf7427b399a0eccb5229798a589e6370ef02e
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596969"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123060"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 
@@ -37,7 +37,7 @@ ms.locfileid: "51596969"
   
          ![Box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
   
-    -   [**アプリ**] タブをクリックします。  
+    -   **[アプリ]** タブをクリックします。  
   
          ![Box アプリ](./media/box-apps.png "Box アプリ")  
   
@@ -68,13 +68,13 @@ ms.locfileid: "51596969"
   
 5.  Box のサインイン ページが開きます。 Cloud App Security がチームの Box アプリにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、[**許可**] をクリックします。  
+6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、**[許可]** をクリックします。  
   
 7.  Cloud App Security ポータルに戻ると、Box と正常に接続されたことを示すメッセージが届いています。  
   
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
 これで、Box が Cloud App Security に接続されました。  
  
@@ -85,6 +85,6 @@ Box を接続すると、Cloud App Security がフル スキャンを実行し�
 ## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 813dc33d884f502090c3d60fef3faef33c379d90
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 3c261adfbec2044ae2625f7ffb3b851907e2e223
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596900"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123014"
 ---
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
 
@@ -52,4 +52,4 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 ## <a name="next-steps"></a>次の手順  
 アラートの調査の詳細については、「[調査](investigate.md)」を参照してください。  
 
-Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/13/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 191f575964eeaa55bbbb1ad0ea8d955f8243b9b0
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: 7b975907e6a2d1b78a61fd5e1960496b44ade234
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51596677"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53122821"
 ---
 # <a name="admin-user-settings"></a>管理者ユーザー設定
 
@@ -49,6 +49,6 @@ Microsoft Cloud App Security の管理者としての設定をセットアップ
 ## <a name="next-steps"></a>次の手順  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

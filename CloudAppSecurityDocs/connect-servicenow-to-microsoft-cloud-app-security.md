@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 10/29/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: f81623e718d9cf4329f3e738c1b585cb6b33b102
-ms.sourcegitcommit: 77850c6777504c2478611cb71a387e7fcc5f2551
+ms.openlocfilehash: db322502c8036e6e8d6060aa9e8f313e3893d0b7
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51597274"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123977"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -60,7 +60,7 @@ ms.locfileid: "51597274"
     
     - **[Access Token Lifespan (アクセス トークン有効期間)]** を 3,600 以上に増やします。
     
-    - [ **送信**] をクリックします。
+    - **[送信]** をクリックします。
 
    ![ServiceNow プロファイル ID](./media/servicenow-profile-ids.png)
 
@@ -78,9 +78,9 @@ ms.locfileid: "51597274"
   
     ![ServiceNow を CAS に接続する](./media/servicenow-portal-connect.png "ポータルで ServiceNow を接続する")  
   
-10. [**今すぐテスト**] をクリックし、正常に接続されたことを確認します。  
+10. **[今すぐテスト]** をクリックし、正常に接続されたことを確認します。  
   
-    テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
+    テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
 ServiceNow を接続すると、接続までの 60 日間のイベントを受け取ります。
   
@@ -96,9 +96,9 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
 
    ![ServiceNow アカウント](./media/servicenow-account.png "ServiceNow アカウント")   
 
-4. Cloud App Security のポータルで [**調査**]、[**承認されたアプリ**] の順にクリックします。   
+4. Cloud App Security のポータルで **[調査]**、**[承認されたアプリ]** の順にクリックします。   
 
-5. [ServiceNow] 行の [**アプリ コネクタの状態**] 列で [**接続**] をクリックするか、または [**アプリを接続**] ボタンをクリックして [**ServiceNow**] を選択します。   
+5. ServiceNow] 行の **[アプリ コネクタの状態]** 列で **[接続]** をクリックするか、または **[アプリを接続]** ボタンをクリックして **[ServiceNow]** を選択します。   
 
    ![ServiceNow を接続する](./media/connect-servicenow.png "ServiceNow を接続する")   
 
@@ -108,14 +108,14 @@ ServiceNow を Cloud App Security に接続するには、管理者レベルの�
 
    ![ServiceNow のパスワードの更新](./media/servicenow-update-password.png "ServiceNow のパスワードの更新")   
 
-8. [**API のテスト**] をクリックして、正常に接続されたことを確認します。   
+8. **[API のテスト]** をクリックして、正常に接続されたことを確認します。   
   
-   テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。    
+   テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。    
    ServiceNow を接続すると、接続までの 60 日間のイベントを受け取ります。 
 
 
 ## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   

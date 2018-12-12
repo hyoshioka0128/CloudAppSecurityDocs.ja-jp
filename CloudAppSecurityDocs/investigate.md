@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/16/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 980a6aba1c9c566e74a9c54be50c198b8bd3516d
-ms.sourcegitcommit: 851ff017c226435d38bed18dbece640a632cd2a0
+ms.openlocfilehash: a285943125d3973089f21e522924e4e2b428d753
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2018
-ms.locfileid: "51943746"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123943"
 ---
 # <a name="investigate"></a>調査
 
@@ -43,14 +43,14 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 - Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。  
 
-- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット ![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認済みとしてタグを付けるドット") を選択し、[**Mark as sanctioned**]\(承認済みとしてマークを付ける) を選択します。  
+- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット ![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認済みとしてタグを付けるドット") を選択し、**[Mark as sanctioned]** \(承認済みとしてマークを付ける) を選択します。  
 
      ![承認済みとしてタグを付ける](./media/mark-as-sanctioned.png "承認済みとしてタグを付ける")  
 
 
 ## <a name="use-the-investigation-tools"></a>調査ツールの使用  
 
-1. Cloud App Security ポータルで [**調査**] に移動し、[**アクティビティ ログ**] を表示して特定のアプリによってフィルタリングします。 次の項目を確認します。  
+1. Cloud App Security ポータルで **[調査]** に移動し、**[アクティビティ ログ]** を表示して特定のアプリによってフィルタリングします。 次の項目を確認します。  
 
     - クラウド環境にアクセスしているユーザー  
 
@@ -136,7 +136,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 ポリシーを設定したところ、仮定に反してポリシー違反のアラートが表示されました。  
 
-1. [**アラート**] ページに移動して、ポリシー違反に関するアラートを表示します。  
+1. **[アラート]** ページに移動して、ポリシー違反に関するアラートを表示します。  
 
 2. 本当に違反している可能性があると判断した場合は、リスクを抑制または修復する必要があります。  
 
@@ -152,4 +152,4 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
  
 組織のクラウド アプリを制御する方法については、「[Control](control.md)」を参照してください。   
 
-Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

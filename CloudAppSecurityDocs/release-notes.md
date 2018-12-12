@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 11/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,17 +13,27 @@ ms.technology: ''
 ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 16d39803071d000e6394caaef94787182c82cea0
-ms.sourcegitcommit: cae782d508db9d1a7c0c362e9a23e83f74d48b21
+ms.openlocfilehash: 0c994ed22caae6daed57a6514c0ac6496abacf8d
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2018
-ms.locfileid: "52743694"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53124827"
 ---
 *適用対象: Microsoft Cloud App Security*
 
 
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
+
+
+## <a name="cloud-app-security-release-138"></a>Cloud App Security リリース 138
+
+リリース日: 2018 年 12 月 9 日
+
+- **Windows で Docker を使用した自動ログ アップロード**<br>Cloud App Security で、Docker for Windows を使用して、Windows 10 (Fall Creators Update) および Windows Server バージョン 1709 以降の自動ログ アップロードがサポートされるようになりました。
+詳細およびこの構成の手順については、「[Docker on Windows on-premises](discovery-docker-windows.md)」 (オンプレミスの Windows の Docker) を参照してください。
+- Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 詳細と統合の手順については、[Microsoft Flow との統合](flow-integration.md)に関するページを参照してください。
+
 
 ## <a name="cloud-app-security-release-137"></a>Cloud App Security リリース 137
 
@@ -313,6 +323,6 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 ここに示されるもの以前のリリースについて詳しくは、「[Past releases of Microsoft Cloud App Security](release-note-archive.md)」(Microsoft Cloud App Security の過去のリリース) を参照してください。
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   

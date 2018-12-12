@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 4/22/2018
+ms.date: 12/9/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bb209535c6969a3177ea5a638425eedabda1bba1
-ms.sourcegitcommit: 0ac08ca7b3140b79f1d36ff7152476c188fa12b3
+ms.openlocfilehash: d952746375c18730b92f7629ac4978c61ebfbfa9
+ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44143471"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53123790"
 ---
 *適用対象: Microsoft Cloud App Security*
    
@@ -53,7 +53,8 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 グループをインポートすると、**[アクティビティ ログ]** で調査したり、ポリシーを作成したりするときのフィルターとしてグループを選択できます。 
 
 > [!NOTE]
-> あるユーザー グループのインポート後に実行されたアクティビティにのみ、そのユーザー グループのメンバーにより実行されているというタグが付けられます。
+> - あるユーザー グループのインポート後に実行されたアクティビティにのみ、そのユーザー グループのメンバーにより実行されているというタグが付けられます。
+> - 初回の同期後は、1 時間ごとにグループが更新されます。
 
 ユーザー グループ フィルターの使用方法については、「[アクティビティ](activity-filters.md)」を参照してください。
 
@@ -62,6 +63,6 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 ## <a name="see-also"></a>参照  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
   
   
