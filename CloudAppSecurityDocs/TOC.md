@@ -1,21 +1,13 @@
-# 理解と調査
-## [Cloud App Security とは](what-is-cloud-app-security.md)
+# Microsoft Cloud App Security
+# [概要](what-is-cloud-app-security.md)
 ## [Cloud App Security のデータのセキュリティとプライバシー](cas-compliance-trust.md)
 ## [新機能](release-notes.md)
 ### [過去のリリースのアーカイブ](release-note-archive.md)
 ## 比較
 ### [Office 365](editions-cloud-app-security-o365.md)
 ### [Azure AD](editions-cloud-app-security-aad.md)
-# 展開
+# クイックスタート
 ## [はじめに](getting-started-with-cloud-app-security.md)
-## [基本設定](general-setup.md)
-### [ネットワーク要件](network-requirements.md)
-### [管理者の管理](manage-admins.md)
-#### [管理者の設定](admin-settings.md)
-### [メールの設定](mail-settings.md)
-### [ユーザー グループ](user-groups.md)
-### [スコープ付きデプロイ](scoped-deployment.md)
-### [IP タグと IP 範囲](ip-tags.md)
 ## [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 ### [Windows Defender ATP での統合](wdatp-integration.md)
 ### [Zscaler との統合](zscaler-integration.md)
@@ -28,6 +20,20 @@
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
 ### [Cloud Discovery を強化する](cloud-discovery-aad-enrichment.md)
 ### [Cloud Discovery データの匿名化](cloud-discovery-anonymizer.md)
+# チュートリアル
+## [シャドウ IT の検出および管理](tutorial-shadow-it.md)
+## [機密情報のダウンロードのブロック](use-case-proxy-block-session-aad.md)
+## [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
+## [Azure Information Protection ラベルを自動的に適用する](use-case-information-protection.md)
+# 使い方ガイド
+## [基本設定](general-setup.md)
+### [ネットワーク要件](network-requirements.md)
+### [管理者の管理](manage-admins.md)
+#### [管理者の設定](admin-settings.md)
+### [メールの設定](mail-settings.md)
+### [ユーザー グループ](user-groups.md)
+### [スコープ付きデプロイ](scoped-deployment.md)
+### [IP タグと IP 範囲](ip-tags.md)
 ## [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 ### [Azure の接続](connect-azure-to-microsoft-cloud-app-security.md)
 ### [AWS の接続](connect-aws-to-microsoft-cloud-app-security.md)
@@ -40,12 +46,7 @@
 ### [ServiceNow の接続](connect-servicenow-to-microsoft-cloud-app-security.md)
 ## [条件付きアクセス アプリ制御でのアプリの保護](proxy-intro-aad.md)
 ### [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
-# vmmblue_2
 ## [ダッシュボードの使用](daily-activities-to-protect-your-cloud-environment.md)
-## シナリオ
-### [機密情報のダウンロードのブロック](use-case-proxy-block-session-aad.md)
-### [管理者検疫によるファイルの保護](use-case-admin-quarantine.md)
-### [Azure Information Protection ラベルを自動的に適用する](use-case-information-protection.md)
 ## [探索]
 ### [検出されたアプリの処理](discovered-apps.md)
 #### [Cloud Discovery にカスタム アプリを追加する](cloud-discovery-custom-apps.md)
@@ -69,8 +70,8 @@
 #### [異常検出ポリシー](anomaly-detection-policy.md)
 #### [OAuth のポリシー](app-permission-policy.md)
 #### [ファイル ポリシー](data-protection-policies.md)
-##### コンテンツ検査
-###### [組み込みのコンテンツ検査](content-inspection.md)
+##### [コンテンツ検査](content-inspection.md)
+###### [組み込みのコンテンツ検査](content-inspection-built-in.md)
 ###### [データ分類サービスの統合](dcs-inspection.md)
 ##### [RegEx エンジンの操作](working-with-the-regex-engine.md)
 #### 条件付きアクセス アプリ制御ポリシー
@@ -84,7 +85,7 @@
 ### [SIEM の統合](siem.md)
 ### [外部 DLP 統合](icap-stunnel.md)
 ### [API トークン](api-tokens.md)
-# トラブルシューティング
+## トラブルシューティング
 ## [サービスの状態のトラブルシューティング](troubleshooting-status.md)
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
@@ -92,3 +93,8 @@
 ## [SIEM 統合のトラブルシューティング](troubleshooting-siem.md)
 ## [Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
 ## [ポリシーのトラブルシューティング](troubleshoot-policies.md)
+# 参照先
+# 参照情報
+## [Premier サポート ポータル](https://premier.microsoft.com/)
+## [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)
+## [Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)
