@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼 | Microsoft Docs
-description: このトピックでは、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。
+title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼
+description: この記事では、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 54b58aa5b8aa098addbb2f10b7615da91676befe
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 75480c8e243573922864845ffea617b49b22404c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124011"
+ms.locfileid: "53177285"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -65,7 +66,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 - Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
 - 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[**[ユーザーとアカウント]**](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
-- お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、 [オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
+- お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、 [オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
 
 - サービスの利用を停止する場合は、お客様はご自身のデータを持ち出すことができます。
 
@@ -107,13 +108,13 @@ Microsoft Cloud App Security では、コンテンツ検査時にデータ保護
 
 Microsoft Cloud App Security は次のようにデータを保持しています。
 
-- アクティビティ ログ: 180 日間
+- アクティビティ ログ:180 日
 
-- 検出データ: 90 日間
+- 検出データ:90 日間
 
-- アラート: 180 日間
+- アラート:180 日
 
-Microsoft のデータ管理の実施に関する詳細については、 [オンライン サービス条件](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
+Microsoft のデータ管理の実施に関する詳細については、 [オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
 [透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
 

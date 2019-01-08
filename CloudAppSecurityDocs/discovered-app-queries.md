@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security の検出されたアプリのフィルターとクエリを使用する | Microsoft Docs
+title: Cloud App Security の検出されたアプリのフィルターとクエリ
 description: この記事では、Cloud App Security の検出されたアプリのフィルターとクエリの一覧を示し、その使用方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1a2d3aeb-4e28-4c73-804b-95e862b08e43
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e62fca426ddd1d3a6ec1adde6ccbdb5f2d0bf0f8
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a91520a7334694b0e5a4416a9db5f22877ec55d9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123858"
+ms.locfileid: "53175789"
 ---
 # <a name="discovered-app-filters-and-queries"></a>検出されたアプリのフィルターとクエリ
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 検出されたアプリの数が多い場合は、フィルター処理してクエリを実行すると便利です。 この記事では、利用可能なフィルターと、検出されたアプリに対するクエリの実行方法について説明します。  
 

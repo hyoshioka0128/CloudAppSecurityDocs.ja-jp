@@ -1,11 +1,11 @@
 ---
-title: クラウド アプリでファイルを監視および保護するためのポリシーを作成する | Microsoft ドキュメント
+title: クラウド アプリのファイルを監視および保護する - Cloud App Security | Microsoft Docs
 description: この記事では、組織のクラウド アプリ使用においてデータとファイルを監視および制御するためのデータ ポリシーを設定する手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: c0a92453831cad191b2c69ebdf5b45deaf7c0b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4ab929752a0e90026104f0451932c6a89a50ad2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124623"
+ms.locfileid: "53177370"
 ---
 # <a name="file-policies"></a>ファイル ポリシー  
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 ファイル ポリシーでは、クラウド プロバイダーの API を使用して、さまざまな自動プロセスを適用できます。 ポリシーを設定することにより、継続的なコンプライアンスのスキャン、法的な電子情報開示タスク、一般公開された機密コンテンツの DLP、その他多数のユース ケースを実現できます。 Cloud App Security は、20 を超えるメタデータ フィルター (アクセス レベルやファイルの種類など) に基づいてファイルの種類を監視できます。 
  

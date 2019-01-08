@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security ネットワークの要件 | Microsoft Docs
+title: ネットワークの要件 - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 06de1b58f2a9a13559f4ac04a594ac681376e696
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: df90f8a2b2a52f9dbaacac3e317b1354bdbe1d8a
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124368"
+ms.locfileid: "53176605"
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Microsoft Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
 
@@ -152,7 +153,7 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 送信者の ID をカスタマイズしない場合、電子メールの通知はすべての既定の設定を使用して送信されます。
 
-MailChimp を使用するには、スパム対策のホワイトリストに IP アドレス 198.2.134.139 (mail1.cloudappsecurity.com) を追加して、通知の送信を可能にします。
+MailChimp を使用するには、スパム対策のホワイトリストに次の IP アドレスを追加して、通知の送信を可能にします。198.2.134.139 (mail1.cloudappsecurity.com)
 
 
 ## <a name="log-collector"></a>ログ コレクター 

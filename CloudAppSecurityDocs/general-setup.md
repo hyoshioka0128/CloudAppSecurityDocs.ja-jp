@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security ポータルに組織の設定を入力し、最良の結果を得る | Microsoft Docs
+title: Cloud App Security で組織の設定を入力する
 description: この記事では、Cloud App Security に組織の情報を入力する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5262c51e18ba46bd6a5b41da5a41b2a73deecfba
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 74816bcdd872d000e56f61431bfb26cc04386901
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123730"
+ms.locfileid: "53176656"
 ---
-# <a name="basic-setup"></a>基本的なセットアップ
+# <a name="basic-setup-for-cloud-app-security"></a>Cloud App Security の基本セットアップ
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 ここでは、Microsoft Cloud App Security ポータルをカスタマイズする手順について説明します。
 

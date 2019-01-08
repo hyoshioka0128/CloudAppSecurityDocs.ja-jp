@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security での Cloud Discovery の異常検出ポリシーの作成 | Microsoft ドキュメント
+title: Cloud App Security での Cloud Discovery の異常検出ポリシーの作成
 description: このトピックでは、Cloud Discovery の異常検出ポリシーの使用方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 871027dc667bcb83e904c512c6b21e7fb817cf36
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 2d4979204779192e784bd6a6159750f61fe37723
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123892"
+ms.locfileid: "53177030"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常検出ポリシー
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、ポリシーに関する詳細なリファレンスを提供します。 各ポリシーに対して構成可能な各ポリシーの種類とフィールドの説明の一覧を示します。  
   

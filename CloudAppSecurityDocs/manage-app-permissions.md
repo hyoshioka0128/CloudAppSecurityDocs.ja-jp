@@ -1,11 +1,11 @@
 ---
-title: サードパーティ製のクラウド OAuth アプリでのアクセス許可の取得を制御する | Microsoft Docs
+title: サードパーティ製のクラウド OAuth アプリでのアクセス許可の取得を制御する - Cloud App Security | Microsoft Docs
 description: この記事では、サードパーティ製の OAuth アプリのアクセス許可を制御、禁止、許可する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5984b4c7067086d11f2504f7bd1cdb186ccc8788
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d4b6911ac508d9b52fd54c3afe3b33ede4ffdc45
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124606"
+ms.locfileid: "53175634"
 ---
 # <a name="manage-oauth-apps"></a>OAuth アプリの管理
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 組織内のビジネス ユーザーがインストールするサード パーティ製の生産性アプリの多くでは、ユーザー情報とデータにアクセスし、Office 365、G Suite、Salesforce などの他のクラウド アプリにユーザーの代理としてサインインするためのアクセス許可が要求されます。 ユーザーは、こうしたアプリをインストールする場合、アプリへのアクセス許可の付与などの詳細を厳密に確認せずに、承認の操作を行いがちです。 IT 部門がこうしたアプリケーションのセキュリティ上のリスクと生産性のメリットとを比較検討するための十分な知識を持っていない場合、この問題はさらに重大になります。 サード パーティ製アプリのアクセス許可を承認することは、組織にとって潜在的なセキュリティ リスクになるため、ユーザーが付与するアプリのアクセス許可を監視することで、ユーザーとアプリケーションの保護に欠かせない可視性と制御が得られます。 Microsoft Cloud App Security アプリのアクセス許可によって、Office 365 データ、G Suite データ、および Salesforce データへのアクセス権がある、ユーザーがインストールした OAuth アプリケーションを表示できます。 Cloud App Security では、アプリに備わっているアクセス許可、およびこれらのアプリに Office 365、G Suite、および Salesforce のアカウントへのアクセス権を付与したユーザーが示されます。 アプリのアクセス許可は、ユーザーのアクセスを許可するアプリと、禁止するアプリを判断するのに役立ちます。
 
@@ -88,7 +89,7 @@ Cloud App Security ポータルで、**[調査]**、**[OAuth アプリ]** の順
 
 G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、アクセス許可を変更する必要があることをユーザーに通知したりすることができます。 
 
-1. **[OAuth アプリ]** ページで、アプリの行の末尾にある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次のように通知されます。*あなたはアプリにご自分の G Suite アカウントへのアクセスを許可しています。このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、 https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュ ーバーの [Revoke access] をクリックします。* 送信メッセージはカスタマイズできます。
+1. **[OAuth アプリ]** ページで、アプリの行の末尾にある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次のように通知されます。*あなたはアプリにご自分の G Suite アカウントへのアクセスを許可しています。このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュー バーの [アクセスの取り消し] をクリックします。* 送信メッセージはカスタマイズできます。
 2. また、ユーザーのためにそのアプリを使用するアクセス許可を取り消すこともできます。 テーブル内のアプリ行の末尾にあるアイコンをクリックして、**[アプリを取り消す]** を選択します。 
 
    ![アプリを取り消す](./media/revoke-app.png)

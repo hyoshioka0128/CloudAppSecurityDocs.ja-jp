@@ -1,11 +1,11 @@
 ---
-title: 電子メールの通知の基本設定 |Microsoft Docs
+title: 電子メールの通知の基本設定 - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 686ea1838ea0f034e48ef320d106149ad51db5b0
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123552"
+ms.locfileid: "53177047"
 ---
 # <a name="email-notification-preferences"></a>電子メールの通知の基本設定
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
 
@@ -37,7 +38,7 @@ ms.locfileid: "53123552"
 2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次の項目のいずれか、またはすべてを変更することができます。**[送信元表示名]**、**[送信元メール アドレス]**、**[返信用メール アドレス]**。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを使用することで、カスタマイズを実現します。 カスタマイズを有効にするには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります。 そうしないと、Microsoft Cloud App Security では既定の設定を使用して通知が送信されます。
  
    > [!NOTE]
-   > [rfc822 標準](http://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
+   > [rfc822 標準](https://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
 
   
 3. **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の設定が含まれます。  
@@ -66,7 +67,7 @@ ms.locfileid: "53123552"
 メール テンプレートのサンプルを次に示します。
 
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html>  
        <head>  
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  

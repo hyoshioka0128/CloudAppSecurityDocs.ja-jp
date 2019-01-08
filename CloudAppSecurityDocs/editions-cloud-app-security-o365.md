@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security と Office 365 Cloud App Security の違い | Microsoft ドキュメント
+title: Cloud App Security と Office 365 Cloud App Security の違い
 description: この記事では、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 49c12f7c-3fb8-46ac-b2ab-59ba6cf2ddfb
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: e63deb70f408abece2d7933ceaf8ce5c96bc39a8
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 24fd83482c9db1271ddd3a079b5bd69776aa9b41
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123875"
+ms.locfileid: "53176146"
 ---
 # <a name="what-are-the-differences-between-microsoft-cloud-app-security-and-office-365-cloud-app-security"></a>Microsoft Cloud App Security と Office 365 Cloud App Security の違い
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security と Office 365 Cloud App Security の違いについて説明します。 Office 365 Cloud App Security については、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」をご覧ください。
 

@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security と Azure AD の検出機能の相違点 | Microsoft ドキュメント
+title: Cloud App Security と Azure AD の検出機能の相違点
 description: この記事では、Microsoft Cloud App Security と Azure AD の検出機能の相違点について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d5a3a552e256fe20c1dcfe6896f373e8902599ea
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 279617cf38a70d5a5ecf78c6e3c19013b7fd45aa
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123603"
+ms.locfileid: "53175647"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory と Microsoft Cloud App Security の検出機能の相違点
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Microsoft Cloud App Security と Azure Active Directory (Azure AD) の検出機能の相違点について説明します。
 

@@ -1,11 +1,11 @@
 ---
-title: AWS を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
-description: この記事では、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。
+title: AWS と Cloud App Security を接続する
+description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に AWS アプリを接続する方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 358d7a8398a213664e4fae3be9f1515ebbbfc6c1
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: c85b55d52de91d58fccaba2241008ef5be6beca2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124317"
+ms.locfileid: "53176129"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存のアマゾン ウェブ サービス アカウントに接続する方法を説明します。  
+この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存のアマゾン ウェブ サービス アカウントに接続する方法を説明します。 この接続により、AWS アプリの使用状況を視覚化して制御できるようになります。 
   
 ## <a name="how-to-connect-amazon-web-services-to-cloud-app-security"></a>Amazon Web Services を Cloud App Security に接続する方法  
   

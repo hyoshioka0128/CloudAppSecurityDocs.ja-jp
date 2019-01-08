@@ -1,11 +1,11 @@
 ---
-title: サポートされていないログに対してカスタム ログ パーサーを使用する | Microsoft Docs
+title: サポートされていないログのための Cloud App Security カスタム ログ パーサー
 description: この記事では、カスタム ログ パーサーを使用して、サポートされていないデバイスのログを Cloud App Security にアップロードする方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 10d6e40ef8b2634fbcac3677ce37bd695141507a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 80eef93d11e11025d9e6cf01138bc9fab6a6fc19
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123733"
+ms.locfileid: "53177217"
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成できるため、Cloud Discovery で使用することができます。 ファイアウォールまたはデバイスが Cloud App Security によって明示的にサポートされていない場合、通常はカスタム パーサーを使用します。 これは、CSV パーサーまたはカスタムのキー値パーサーになります。
 

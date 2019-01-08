@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security ダッシュボードでアラートを操作する | Microsoft Docs
+title: Cloud App Security ダッシュボードで操作する
 description: この記事では、Cloud App Security のダッシュボードを使用する方法の基礎について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3c261adfbec2044ae2625f7ffb3b851907e2e223
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 480ac5273eaca15252c0a216147c1d6d3711a266
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123014"
+ms.locfileid: "53175228"
 ---
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security を使用して毎日行う必要がある作業について説明します。  Microsoft Cloud App Security を稼働させたら、次のことを行う必要があります。
 

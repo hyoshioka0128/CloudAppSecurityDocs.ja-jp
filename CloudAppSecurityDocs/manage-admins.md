@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security ポータルへの管理アクセス権を管理する | Microsoft Docs
+title: Cloud App Security ポータルへの管理アクセス権を管理する
 description: この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 23fe11600fc802e0c4f4d8024b78fa2713cc4a63
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 7fff5cffcae418225af7f1f14e98bf0c42e6811c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123960"
+ms.locfileid: "53175704"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 既定では、特定の [Office 365 管理者ロール](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)と [Azure Active Directory (Azure AD) 管理者ロール](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)が Microsoft Cloud App Security にアクセスできます。 この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。 管理者ロールの割り当ての詳細については、[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) と [Office 365 ](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles) に関する記事を参照してください。
 

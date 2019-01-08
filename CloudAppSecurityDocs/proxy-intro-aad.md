@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security Conditional Access App Control で保護する | Microsoft Docs
+title: Microsoft Cloud App Security のアプリの条件付きアクセス制御で保護する
 description: この記事では、Cloud App Security アプリの条件付きアクセス制御のリバース プロキシのしくみに関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,19 +13,20 @@ ms.technology: ''
 ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 620bcbc8751ac782c947b2a761e8250ddc0f5807
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
+ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124266"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53587836"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
+[次へ:アプリの条件付きアクセス制御の展開 »](proxy-deployment-aad.md)
 
 
 現代の職場では、多くの場合、犯行後にご利用のクラウド環境の状態を把握できるだけでは十分ではありません。 従業員が意図的に、あるいは不注意からデータや組織を危険にさらす前に、違反や漏洩をリアルタイムで防止することが望まれます。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
@@ -40,17 +41,17 @@ ms.locfileid: "53124266"
 
 Conditional Access App Control では、アクセスおよびセッション ポリシーに基づいて、ユーザー アプリのアクセスとセッションをリアルタイムで監視して制御できます。 Cloud App Security ポータル内では、フィルターをさらに調整し、ユーザーに対して実行されるアクションを設定するために、アクセス ポリシーとセッション ポリシーが利用されます。 アクセス ポリシーとセッション ポリシーでは次のことができます。
 
-- **ダウンロードのブロック**: 機密性の高いドキュメントのダウンロードをブロックすることができます。 たとえば、管理されていないデバイスでのダウンロードなどです。
+- **ダウンロードのブロック**:機密性の高いドキュメントのダウンロードをブロックすることができます。 たとえば、管理されていないデバイスでのダウンロードなどです。
 
-- **ダウンロードの保護**: 機密性の高いドキュメントのダウンロードをブロックする代わりに、ダウンロードに暗号化を使ってドキュメントを保護するように要求できます。 この暗号化により、データが信頼されていないデバイスにダウンロードされる場合に、ドキュメントを保護し、ユーザー アクセスを認証できます。 
+- **ダウンロードの保護**:機密性の高いドキュメントのダウンロードをブロックする代わりに、ダウンロードに暗号化を使ってドキュメントを保護するように要求できます。 この暗号化により、データが信頼されていないデバイスにダウンロードされる場合に、ドキュメントを保護し、ユーザー アクセスを認証できます。 
 
-- **信頼性の低いユーザー セッションの監視**: 危険性の高いユーザーはアプリにサインインするときに監視され、アクションはセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。 
+- **信頼性の低いユーザー セッションの監視**:危険性の高いユーザーはアプリにサインインするときに監視され、アクションはセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。 
 
-- **アクセスのブロック**: ユーザーが管理対象外のデバイスや会社のものではないネットワークを利用している場合、特定のアプリへのアクセスを完全にブロックできます。
+- **アクセスのブロック**:ユーザーが管理対象外のデバイスや会社のものではないネットワークを利用している場合、特定のアプリへのアクセスを完全にブロックできます。
 
-- **読み取り専用モードの作成**: カスタムのアプリ内アクティビティを監視してブロックすることで、特定ユーザーの特定のアプリに対する読み取り専用モードを作成することができます。  
+- **読み取り専用モードの作成**:カスタムのアプリ内アクティビティを監視してブロックすることで、特定ユーザーの特定のアプリに対する読み取り専用モードを作成することができます。  
 
-- **会社以外のネットワークからのユーザー セッションを制限**: 会社のネットワークの一部ではない場所から保護されたアプリにアクセスしているユーザーは制限されたアクセスを許可されます。 機密情報のダウンロードはブロックまたは保護されます。
+- **会社以外のネットワークからのユーザー セッションを制限**:会社のネットワークの一部ではない場所から保護されたアプリにアクセスしているユーザーは制限されたアクセスを許可されます。 機密情報のダウンロードはブロックまたは保護されます。
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
@@ -117,6 +118,7 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 - SharePoint Online (プレビュー)
 - Azure DevOps (Visual Studio Team Services) (プレビュー)
 - Yammer (プレビュー)
+- Microsoft Flow (プレビュー)
 
 
 
@@ -125,7 +127,7 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 
 
 >[!div class="step-by-step"]
-[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
+[次へ:アプリの条件付きアクセス制御の展開 »](proxy-deployment-aad.md)
 
 
 ## <a name="next-steps"></a>次の手順

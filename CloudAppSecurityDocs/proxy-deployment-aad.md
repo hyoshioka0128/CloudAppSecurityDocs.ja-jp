@@ -1,11 +1,11 @@
 ---
-title: Azure AD アプリの Microsoft Cloud App Security Conditional Access App Control をデプロイする | Microsoft Docs
+title: Azure AD アプリの Cloud App Security Conditional Access App Control をデプロイする
 description: この記事では、Azure AD アプリの Microsoft Cloud App Security のアプリの条件付きアクセス制御リバース プロキシ機能をデプロイする方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 890d5600ab97e66735b5db277755c5567ff494dc
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: d7f0041a385a60cde5bc714312435dd2cd6ac389
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124385"
+ms.locfileid: "53177132"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD アプリの Conditional Access App Control のデプロイ
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>
@@ -43,7 +44,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 > [!NOTE]
 > Azure AD アプリに対するアプリの条件付きアクセス制御をデプロイするには、有効な [Azure AD Premium P1 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要です。
 
-## 手順 1: Cloud App Security に Azure AD アプリを追加する <a name="add-azure-ad"></a>  
+## 手順 1:Cloud App Security に Azure AD アプリを追加する <a name="add-azure-ad"></a>  
 
 1. Azure AD 条件付きアクセスの TEST ポリシーを作成します。
 
@@ -62,11 +63,11 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
       > [!NOTE]
       >必ず、Conditional Access App Control でサポートされているアプリを選択してください。 アプリの条件付きアクセス制御では、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリがサポートされます。 
 
-## 手順 2: ポリシーのスコープに含まれるユーザーでアプリにサインインする <a name="sign-in-scoped"></a>
+## 手順 2:ポリシーのスコープに含まれるユーザーでアプリにサインインする <a name="sign-in-scoped"></a>
 
 ポリシーを作成したら、そのポリシーで構成されている各アプリにサインインします。 必ずポリシーで構成されているユーザーでサインインしてください。 最初に、既存のセッションからサインアウトしてください。
 
-## 手順 3: Cloud App Security ポータルに戻り、アプリを追加するバナー通知を選択する <a name="banner-notification"></a>
+## 手順 3:Cloud App Security ポータルに戻り、アプリを追加するバナー通知を選択する <a name="banner-notification"></a>
 
 1. Cloud App Security ポータルで、設定の歯車アイコンに移動して **[Conditional Access App Control]** を選択します。 
     

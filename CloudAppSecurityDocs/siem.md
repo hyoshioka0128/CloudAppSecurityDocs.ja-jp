@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security と SIEM の統合 | Microsoft Docs
+title: Cloud App Security と SIEM の統合
 description: この記事では、SIEM と Cloud App Security との統合に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b7eec71a7ed224f76830fa7387bdf5e320f61eb6
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 41143a1c953306d05f6a18f07d4083b565a77d93
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124215"
+ms.locfileid: "53177013"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
@@ -52,17 +53,17 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
 - サーバーでは Java 8 を実行する必要があります。これより前のバージョンはサポートされていません。
-- OS: Windows または Linux
-- CPU: 2
-- ディスク領域: 20 GB
-- RAM: 2 GB
+- OS:Windows または Linux
+- CPU:2 で保護されたプロセスとして起動されました
+- ディスク領域:20 GB
+- RAM:2 GB
 - サーバーは Java 8 を実行している必要があります。 これより古いバージョンはサポートしていません。
 - [ネットワーク要件](network-requirements.md)で説明されているとおりにファイアウォールを設定する
  
 
 ## <a name="integrating-with-your-siem"></a>SIEM との統合
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1: Cloud App Security ポータルでセットアップする
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1:Cloud App Security ポータルでセットアップする
 
 1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、**[SIEM エージェント]** タブをクリックします。
 
@@ -93,7 +94,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 > 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
 
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: JAR ファイルをダウンロードし、サーバーで実行する
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2:JAR ファイルをダウンロードし、サーバーで実行する
 
 1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596) で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意した後、.zip ファイルをダウンロードして解凍します。
 
@@ -105,8 +106,8 @@ SIEM との統合は次の 3 つの手順で行われます。
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
 > - サーバーの起動時に JAR を実行することをお勧めします。
->   - Windows: スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、**[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
->   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   - Windows:スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、**[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
+>   - Linux:**&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
 - DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
@@ -171,7 +172,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 |      アラート       |          <name>          |                                             一致するポリシー名                                             |
 |      アラート       |        externalId        |                                                    アラート ID                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3:SIEM エージェントが動作しているか検証します。
 
 1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、**[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)

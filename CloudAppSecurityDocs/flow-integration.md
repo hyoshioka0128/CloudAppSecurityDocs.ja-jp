@@ -1,11 +1,11 @@
 ---
-title: Flow と Cloud App Security を統合して、カスタム アラート オートメーションを取得する | Microsoft Docs
+title: Flow と Cloud App Security を統合して、カスタム アラート オートメーションを取得する
 description: この記事では、Flow と Cloud App Security を統合することでカスタム アラート オートメーションを取得する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ea109073ef6bab3520073272224da65589627960
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 558559463df0bcb4e008d75115501c23d27cd878
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124937"
+ms.locfileid: "53175772"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>カスタム アラート オートメーションのための Flow との統合 - プレビュー
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 Microsoft Flow で使用可能な[コネクタのエコシステム](https://docs.microsoft.com/connectors/)を使用することで、Cloud App Security がアラートを生成するときに、プレイブックのトリガーを自動化することができます。 たとえば、[ServiceNow コネクタ](https://docs.microsoft.com/connectors/service-now/)を使用してチケット発行システムで問題を自動的に作成したり、Cloud App Security でアラートがトリガーされたときに、カスタム ガバナンス アクションを実行するための承認メールを送信します。  
 

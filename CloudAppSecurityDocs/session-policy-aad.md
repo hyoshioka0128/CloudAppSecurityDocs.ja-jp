@@ -1,11 +1,11 @@
 ---
-title: ユーザー セッション アクティビティを詳細に可視化し、ダウンロードをブロックするためのセッション ポリシーを作成する | Microsoft Docs
+title: Cloud App Security でセッション ポリシーを作成する
 description: この記事では、リバース プロキシ機能を使用して、ユーザー セッション アクティビティを詳細に可視化し、ダウンロードをブロックするように Cloud App Security のアプリの条件付きアクセス制御セッション ポリシーを設定する手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 0019609036b222da25eede8b1ca3a34d0617ebe4
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 50230751efbc9dfcbd203d130c6e1d3e7489eb03
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124538"
+ms.locfileid: "53176996"
 ---
 # <a name="session-policies"></a>セッション ポリシー 
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 戻る: アプリの条件付きアクセス制御の展開](proxy-deployment-aad.md)<br>
@@ -105,7 +106,7 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 
       - **[テスト]**(すべてのアクティビティを監視する): 設定したポリシー フィルターに従ってダウンロードを明示的に許可するには、このアクションを設定します。
 
-      - **[ブロック]**(ファイルのダウンロードをブロックし、すべてのアクティビティを監視します): 設定したポリシー フィルターに従ってダウンロードを明示的にブロックするには、このアクションを設定します。 詳しくは、「[ダウンロードのブロックのしくみ](#block-download)」をご覧ください。
+      - **[ブロック (ファイルのダウンロードをブロックし、すべてのアクティビティを監視します)]**: 設定したポリシー フィルターに従ってダウンロードを明示的にブロックするには、このアクションを設定します。 詳しくは、「[ダウンロードのブロックのしくみ](#block-download)」をご覧ください。
 
       - **[保護]**(ダウンロードしたファイルに分類ラベルを適用し、すべてのアクティビティを監視します): このオプションを選択できるのは、**[セッション ポリシー]** の下で **[ファイル ダウンロードの制御 (DLP 使用)]** を選択した場合のみです。 組織が Azure Information Protection を使っている場合は、Azure Information Protection で設定されている分類ラベルをファイルに適用するように **[アクション]** を設定できます。 詳しくは、「[ダウンロードの保護のしくみ](#protect-download)」をご覧ください。
 

@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security でデータの匿名化によりユーザーのプライバシーを保護する | Microsoft ドキュメント
-description: この記事では、Cloud Discovery データのユーザー名を匿名化する方法について説明します。
+title: Cloud App Security でユーザー データを匿名化する
+description: この記事では、Cloud Discovery データのユーザー名を匿名化し、ユーザーのプライバシーを保護する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: cfb7463e20f0756a08a7df1169996911908c8cd3
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: b1eceacb47e8339bb0b7162d27f13866188d10e7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123484"
+ms.locfileid: "53176435"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Cloud Discovery データを匿名化することで、ユーザーのプライバシーを保護することができます。 データ ログが Microsoft Cloud App Security ポータルにアップロードされると、ログはサニタイズされ、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 このように、すべてのクラウド アクティビティの匿名が維持されます。 必要に応じて、(セキュリティ違反や疑わしいユーザー アクティビティが発生した場合などに) 特定のセキュリティ調査を行うために、管理者は実際のユーザー名を解決することができます。 管理者は、特定のユーザーを疑う理由がある場合、既知のユーザー名の暗号化されたユーザー名を調べ、暗号化されたユーザー名を使用して調査を開始することもできます。 ユーザー名の各変換はポータルの**ガバナンス ログ**で監査されます。
 

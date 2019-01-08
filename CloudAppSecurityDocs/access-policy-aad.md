@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする | Microsoft Docs
+title: Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする
 description: この記事では、Cloud App Security のアプリの条件付きアクセス制御のアクセス ポリシーを設定し、リバース プロキシ機能を使用して Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,21 +13,21 @@ ms.technology: ''
 ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 60d85d25400386161dacd09e359353e96dac6b94
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 8252c3ec83dd2e37663c5c13df8fa56e333af19c
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124130"
+ms.locfileid: "53176180"
 ---
-# <a name="access-policies"></a>アクセス ポリシー 
+# <a name="access-policies"></a>アクセス ポリシー
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 戻る: セッション ポリシーを作成する方法](session-policy-aad.md)<br>
 [次へ: 人気のあるユース ケースを参照する »](use-case-proxy-block-session-aad.md)
-
 
 Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 マネージド デバイスにクライアント証明書をロールアウトしたり、サードパーティの MDM 証明書など、既存の証明書を使用したりすることで、ドメインに参加していないデバイスや Windows Intune で管理されていないデバイスを含め、あらゆるデバイスを対象にアクセス ポリシーを作成できます。 たとえば、マネージド デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。 
 

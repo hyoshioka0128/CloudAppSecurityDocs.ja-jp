@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security で継続的なレポートのために自動ログ アップロードを構成する | Microsoft ドキュメント
-description: このトピックでは、Cloud Discovery の自動レポートを作成するためにログをアップロードする方法に関する情報を提供します。
+title: 継続的なレポートのために自動ログ アップロードを構成する - Cloud App Security | Microsoft ドキュメント
+description: この記事では、Cloud Discovery の自動レポートを作成するためにログをアップロードする方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,25 +13,26 @@ ms.technology: ''
 ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 331ae314d77cbc2ea85d8b714823a392d40fa209
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 389760b6e5279668ec2b2fe389dccdbe647b7f5b
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124572"
+ms.locfileid: "53176979"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する - 非推奨
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 > [!WARNING] 
 > 柔軟性の高い展開を実現するために、[Docker](discovery-docker.md) を使用してログのアップロードを構成することをお勧めします。
 
 ## <a name="technical-requirements"></a>技術要件
 - ハイパーバイザー: Hyper-V または VMware
-- ディスク領域: 250 GB
-- CPU: 2
-- RAM: 4 GB 
+- ディスク領域:250 GB
+- CPU:2 で保護されたプロセスとして起動されました
+- RAM:4 GB 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 
@@ -104,7 +105,7 @@ ms.locfileid: "53124572"
   
 10. **[仮想マシン]** の表でこのマシンをクリックしてから、**[スタート]** をクリックします。   
   
-11. ログ コレクター仮想マシンに接続し、DHCP アドレスが割り当てられていることを確認します。その場合、仮想マシンをクリックして **[接続]** を選択します。 サインイン プロンプトが表示されます。 IP アドレスを表示する場合は、ターミナル/SSH ツールを使用して仮想マシンに接続できます。  IP アドレスが表示されない場合は、ログ コレクターを作成したときにコピーした資格情報を使用し、Hyper-V/VMWare 接続ツールでサインインします。 次のコマンドを実行することで、パスワードを変更し、ネットワーク構成ユーティリティを使用して、仮想マシンを構成することができます。
+11. ログ コレクター仮想マシンに接続し、DHCP アドレスが割り当てられていることを確認します。仮想マシンをクリックして **[接続]** を選択します。 サインイン プロンプトが表示されます。 IP アドレスを表示する場合は、ターミナル/SSH ツールを使用して仮想マシンに接続できます。  IP アドレスが表示されない場合は、ログ コレクターを作成したときにコピーした資格情報を使用し、Hyper-V/VMWare 接続ツールでサインインします。 次のコマンドを実行することで、パスワードを変更し、ネットワーク構成ユーティリティを使用して、仮想マシンを構成することができます。
     ```
     sudo network_config
     ```
@@ -119,9 +120,9 @@ ms.locfileid: "53124572"
 
 1.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。 (コンソールに初めてログインする場合は、パスワードを変更してからもう一度サインインする必要があります。 ターミナル セッションを使用している場合は、ターミナル セッションの再起動が必要になることがあります。 )
 2.  ログ コレクターの作成時に提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config <access token> ```
-3. たとえば、```contoso.portal.cloudappsecurity.com``` のようなコンソールのドメインを入力します。これは、Cloud App Security ポータルへのログイン後に表示される URL から入手できます。 
+3. たとえば、次に示すようなコンソールのドメインを入力します。```contoso.portal.cloudappsecurity.com``` これは、Cloud App Security ポータルへのログイン後に表示される URL から入手できます。 
 
-4. 構成するログ コレクターの名前を入力します。たとえば、上図の場合、「**CloudAppSecurityLogCollector01**」または「**NewYork**」と入力します。
+4. たとえば、構成するログ コレクターに次のような名前を入力します。**CloudAppSecurityLogCollector01** または **NewYork** (上の図の場合)。
 
 5.  次のように、ポータルからログ コレクターの構成をインポートします。  
   

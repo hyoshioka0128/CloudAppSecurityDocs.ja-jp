@@ -1,11 +1,11 @@
 ---
-title: 継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs
+title: オンプレミス Docker を使用して自動ログ アップロードを構成する
 description: この記事では、オンプレミス サーバーの Ubuntu または RHEL で Docker を使用して、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,29 @@ ms.technology: ''
 ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e20a02b3075a496e30c99d8ae3d0364b7e60d82
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: add574af2b6ff28191b4f6ecf5a21746913cd8d5
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124283"
+ms.locfileid: "53177115"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 オンプレミスの Ubuntu または RHEL サーバーで Docker を使用して、Cloud App Security の継続的なレポートに自動ログ アップロードを構成できます。
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS: Ubuntu 14.04、16.04、および 18.04、または RHEL 7.2 以降 
+- OS:Ubuntu 14.04、16.04、および 18.04、または RHEL 7.2 以降 
 
-- ディスク領域: 250 GB
+- ディスク領域:250 GB
 
-- CPU: 2
+- CPU:2 で保護されたプロセスとして起動されました
 
-- RAM: 4 GB
+- RAM:4 GB
 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
@@ -132,7 +133,7 @@ ms.locfileid: "53124283"
 
 6. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-"**Finished successfully!**" というメッセージが表示される必要があります。
+次のメッセージが表示されるはずです: **"Finished successfully!" (正常に終了しました)**
 
   ![ubuntu8](./media/ubuntu8.png)
 

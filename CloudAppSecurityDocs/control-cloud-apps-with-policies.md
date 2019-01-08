@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security でポリシーを作成してクラウド アプリの使用を制御する | Microsoft ドキュメント
+title: ポリシーを作成してクラウド アプリの使用を制御する - Cloud App Security | Microsoft ドキュメント
 description: この記事では、クラウド アプリの使用を制御するためにポリシーを使用および設定する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 14d10238-0f61-43e9-ab96-71534a27d3d4
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: b15e3f54b8aabe4dff37597fa78465d34ad6c144
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: e73f9e3ab8de86bd2ea7a010435b93e860cf54a4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124810"
+ms.locfileid: "53177064"
 ---
 # <a name="control-cloud-apps-with-policies"></a>ポリシーにるクラウド アプリの制御
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 ポリシーを使用すると、クラウド内のユーザーの動作を定義できます。 クラウド環境内の危険な動作、違反、または疑わしいデータ ポイントやアクティビティを検出できます。 必要に応じて、修復ワーク フローを統合し、完全なリスク軽減を実現できます。 収集するクラウド環境の情報の種類や実行する修復アクションの種類ごとに、さまざまな種類のポリシーが関連付けられています。  
   
@@ -97,7 +98,7 @@ Cloud App Security では、クラウド内のさまざまなリスクを軽減�
   
 1. コンソールで、**[制御]**、**[テンプレート]** の順にクリックします。  
   
-    ![](./media/create-policy-from-template.png)  
+    ![テンプレートからポリシーを作成する](./media/create-policy-from-template.png)  
   
 2. 使用するテンプレートの行の右端にある **+** をクリックします。 定義済みのテンプレートの構成を含む、ポリシーの作成ページが開きます。  
   

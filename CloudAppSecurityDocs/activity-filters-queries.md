@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security のアクティビティ フィルターとクエリを使用する | Microsoft Docs
+title: Cloud App Security のアクティビティ フィルターとクエリを使用する
 description: この記事では、Cloud App Security のアクティビティ フィルターとクエリの一覧を提示し、その使用方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 404095a7c688a1e077bc11703c737697b5311a59
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124674"
+ms.locfileid: "53177183"
 ---
 # <a name="activity-filters-and-queries"></a>アクティビティ フィルターとクエリ
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security のアクティビティ フィルターとクエリについて説明し、手順を示します。
 
@@ -46,7 +47,7 @@ ms.locfileid: "53124674"
 
 - アプリ - 特定のアプリ内のアクティビティのみを検索します。  
   
-- 適用されたアクション - 適用されているガバナンス アクション ([ブロック]、[プロキシのバイパス]、[暗号化解除されました]、[暗号化]、[暗号化できませんでした]、[アクションなし]) で検索します。
+- 適用されたアクション - 適用されているガバナンス アクションで検索します:[ブロック]、[プロキシのバイパス]、[暗号化解除されました]、[暗号化]、[暗号化できませんでした]、[アクションなし]。
 
 - 日付 - アクティビティが発生した日付。 フィルターでは指定した日以前/以降、および日付の範囲を設定できます。  
   

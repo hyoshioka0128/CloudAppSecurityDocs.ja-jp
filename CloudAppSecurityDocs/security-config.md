@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security でセキュリティ構成の推奨事項を取得する |Microsoft Docs
+title: セキュリティ構成の推奨事項を取得する - Cloud App Security | Microsoft Docs
 description: この記事では、Azure Security Center を統合することによって Cloud App Security で セキュリティ構成の推奨事項を取得する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 3f5517acc0cf829983d65f7680a237066949c75d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 0cd5567c1f89375109a97be00c1053fe0da64833
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124300"
+ms.locfileid: "53175738"
 ---
 # <a name="security-configuration"></a>セキュリティ構成
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security では、ご利用の Azure 環境におけるセキュリティ構成の評価を提供します。 Azure Security Center で提供される評価には、不足している構成とセキュリティ制御に対する推奨事項が示されます。
 

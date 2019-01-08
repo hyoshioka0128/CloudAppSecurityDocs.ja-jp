@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security の安全な ICAP による外部 DLP 統合 | Microsoft Docs
+title: Cloud App Security の安全な ICAP による外部 DLP 統合
 description: この記事では、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 006d9eaa2bb7a71c6661931724344ca55166ba61
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 86ef20ca985213a369035505232d4bf594a47caf
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124470"
+ms.locfileid: "53177234"
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は既存の DLP ソリューションと統合し、コントロールをクラウドに拡張できます。同時に、オンプレミスとクラウドを問わず、アクティビティ全体で一貫性のある統合ポリシーが維持されます。 このプラットフォームは、REST API や ICAP など、使いやすいインターフェイスをエクスポートします。Symantec Data Loss Prevention (以前の Vontu Data Loss Prevention) や Forcepoint DLP など、コンテンツ分類システムと統合できます。 
 
@@ -41,21 +42,21 @@ Cloud App Security は Azure で実行されます。Azure での展開により
 ## <a name="prerequisites"></a>前提条件
 Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、Cloud App Security で使用される外部 IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
 
-1.  ソース アドレス: [「前提条件」の「アプリを接続する」](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)を参照
-2.  ソース TCP ポート: 動的
+1.  ソース アドレス:「アプリを接続する」の「[前提条件](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)」を参照
+2.  ソース TCP ポート:動的
 3.  宛先アドレス: 後続の手順で構成する外部 ICAP サーバーに接続されている stunnel の 1 または 2 つの IP アドレス
-4.  宛先 TCP ポート: ネットワークに定義されている宛先 TCP ポート
+4.  宛先 TCP ポート:お使いのネットワークで定義されているもの
 
 > [!NOTE] 
 > 既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。次の手順で入力する必要があります。
 
-## <a name="step-1--set-up-icap-server"></a>手順 1: ICAP サーバーを設定する
+## <a name="step-1--set-up-icap-server"></a>手順 1:ICAP サーバーを設定する
 
 ICAP サーバーを設定します。ポート番号を書き留め、**[モード]** を **[ブロック]** に設定します。 ブロック モードでは、分類判定を Cloud App Security に戻すように ICAP サーバーが設定されます。
 
-このセットアップを行う方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B: Symantec 展開ガイド](#symantec)」をご覧ください。
+このセットアップを行う方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A:ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B:Symantec 展開ガイド](#symantec)」をご覧ください。
 
-## <a name="step-2--set-up-your-stunnel-server"></a>手順 2: stunnel サーバーを設定する 
+## <a name="step-2--set-up-your-stunnel-server"></a>手順 2:stunnel サーバーを設定する 
 
 この手順では、ICAP サーバーに接続される stunnel を設定します。 
 
@@ -209,7 +210,7 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
 プロセスが終わらない場合、[stunnel マニュアル](https://www.stunnel.org/docs.html)を参照して問題を解決してください。
 
 
-## <a name="step-3--connect-to-cloud-app-security"></a>手順 3:  Cloud App Security に接続する
+## <a name="step-3--connect-to-cloud-app-security"></a>手順 3:Cloud App Security に接続する
 
 1. Cloud App Security の **[設定]** で、**[セキュリティ拡張機能]** を選択し、**[外部 DLP]** タブを選択します。
 
@@ -237,7 +238,7 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
 7. 次に、この外部 DLP サーバーにトラフィックを送るために、**[コンテンツ検査方法]** で**ファイル ポリシー**を作成するときに、先ほど作成した接続を選択します。 ファイル ポリシーの作成方法については[こちら](data-protection-policies.md)をご覧ください。
 
 
-## 付録 A: ForcePoint ICAP サーバー セットアップ <a name="forcepoint"></a>
+## 付録 A:ForcePoint ICAP サーバー セットアップ <a name="forcepoint"></a>
 
 ForcePoint で、次の手順でアプライアンスを設定します。
 
@@ -254,7 +255,7 @@ ForcePoint で、次の手順でアプライアンスを設定します。
     ![ICAP ブロック](./media/icap-blocking.png)
  
 
-## 付録 B: Symantec 展開ガイド <a name="symantec"></a>
+## 付録 B:Symantec 展開ガイド<a name="symantec"></a>
 
 サポートされている Symantec DLP のバージョンは、11 以降です。 
 
@@ -314,7 +315,7 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
 既存のすべてのポリシーにこのルールを追加する必要があります。
 
 >[!NOTE]
-> Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に http://misc/filename から始まる URL で表示されます。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
+> Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に次の URL からのものとして表示されます:http://misc/filename。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
 
 
 ## <a name="next-steps"></a>次の手順 

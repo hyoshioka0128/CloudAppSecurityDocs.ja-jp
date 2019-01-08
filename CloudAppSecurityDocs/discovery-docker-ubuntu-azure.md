@@ -1,11 +1,11 @@
 ---
-title: 継続的なレポートのために自動ログ アップロードを構成する | Microsoft Docs
+title: Azure での Docker を使用した自動ログ アップロードを構成する
 description: この記事では、Azure の Ubuntu で Docker を使用して Cloud App Security の継続的なレポート用に自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,29 @@ ms.technology: ''
 ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 2be66b030b7b46b55ab9c757a3ae036ebad14c5f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124725"
+ms.locfileid: "53177353"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Azure の Ubuntu で Docker を使用して Cloud App Security の継続的なレポート用に自動ログ アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。 
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS: Ubuntu 14.04 および 16.04 (新しいバージョンについては、サポートにお問い合わせください)
+- OS:Ubuntu 14.04 および 16.04 (新しいバージョンについては、サポートにお問い合わせください)
 
-- ディスク領域: 250 GB
+- ディスク領域:250 GB
 
-- CPU: 2
+- CPU:2 で保護されたプロセスとして起動されました
 
-- RAM: 4 GB
+- RAM:4 GB
 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
@@ -150,7 +151,7 @@ Azure の Ubuntu で Docker を使用して Cloud App Security の継続的な�
 
      ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
 
-8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!**” という結果を受け取ります。
+8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 次のような結果を受け取ります:**"Finished successfully!" (正常に終了しました)**
 
    ![ubuntu8](./media/ubuntu8.png)
 

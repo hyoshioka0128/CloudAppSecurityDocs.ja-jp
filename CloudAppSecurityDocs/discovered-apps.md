@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security で検出されたアプリの処理 | Microsoft Docs
+title: Cloud App Security で検出されたアプリの処理
 description: この記事では、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 403eb991a33fd8f0deda7212b0ec180fe23f8551
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53122838"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450590"
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
 
@@ -44,6 +45,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 6. 最後に、**アプリのリスク概要**で検出されたアプリのリスク スコアを確認することを忘れないでください。 調査する場合は、**検出アラートの状況**を調べ、未処理のアラート数を確認します。
 
 ## <a name="deep-dive-into-discovered-apps"></a>検出されたアプリの詳細情報
+
 Cloud Discovery によって提供されるデータを掘り下げたい場合は、フィルターを使って、危険性の高いアプリやよく使われるアプリを確認します。
 
 
@@ -62,7 +64,7 @@ Cloud Discovery では、組織のクラウドの使用状況をさらに詳し�
      
 たとえば、異なる SharePoint サイトを区別することができます。
 
-これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 サポートされているアプライアンスの一覧については、「[サポートされているファイアウォールとプロキシ](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)」をご覧ください。
+これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 詳細については、「[サポートされているファイアウォールとプロキシ](create-snapshot-cloud-discovery-reports.md#supported-firewalls-and-proxies)」でサポートされているアプライアンスの一覧をご覧ください。
 
  ![サブドメインの情報](./media/discovery-domains.png) 
 
@@ -75,21 +77,20 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
 **Cloud Discovery ダッシュボード**で、メニューの右上隅にある 3 つのドットをクリックし、**[Cloud Discovery エグゼクティブ レポートの生成]** を選択します。
 
 ## <a name="exclude-entities"></a>エンティティの除外
+
 目立つが興味のないシステム ユーザー、IP アドレス、コンピューター、あるいは関連性の低いアプリケーションがある場合は、分析対象の Cloud Discovery データからこれらのデータを除外することができます。 たとえば、127.0.0.1 またはローカル ホストから送信されたすべての情報を除外するとします。  
   
 除外を作成するには:  
   
 1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
-  
 2. **[エンティティの除外]** タブをクリックします。  
-  
-3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。  
-  
-4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。  
+3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
+4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
      ![ユーザーを除外する](./media/exclude-user.png "exclude user")  
   
-## <a name="manage-continuous-reports"></a>継続的レポートの管理  
+## <a name="manage-continuous-reports"></a>継続的レポートの管理
+
 カスタムの継続的レポートを使用すると、組織の Cloud Discovery ログ データを詳細に監視できます。 カスタム レポートを作成すると、特定の地理的な場所、ネットワークとサイト、または組織単位をフィルター処理することができます。 既定では、Cloud Discovery レポート セレクターには次のレポートのみが表示されます。  
   
 - **グローバル レポート**では、ログに含まれるすべてのデータ ソースからポータルに収集されたデータが、統合表示されます。  
@@ -116,7 +117,8 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
 > すべてのカスタム レポートは、圧縮されていないデータで最大 1 GB までに制限されます。 1 GB を超えるデータがある場合は、最初の 1 GB のデータがレポートにエクスポートされます。
 
 
-## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery データの削除  
+## <a name="deleting-cloud-discovery-data"></a>Cloud Discovery データの削除
+
 Cloud Discovery データを削除する理由はいくつかあります。 次の場合に削除することをお勧めします。  
   
 - ログ ファイルの手動アップロード後、長い時間が経過してから新しいログ ファイルでシステムを更新したが、その結果に古いデータからの影響を与えたくない場合。  
@@ -138,10 +140,7 @@ Cloud Discovery データを削除するには:
     ![データを削除する](./media/delete-data.png "delete data")  
   
    > [!NOTE]  
-   >  すぐには削除されず、削除処理には数分かかります。  
-
-
-
+   >  すぐには削除されず、削除処理には数分かかります。
 
 ## <a name="next-steps"></a>次の手順
  

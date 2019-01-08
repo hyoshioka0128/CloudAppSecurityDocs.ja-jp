@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security で使用可能なファイル データとフィルターを理解する | Microsoft ドキュメント
+title: Cloud App Security で使用可能なファイル データとフィルターを理解する
 description: このリファレンス記事では、Cloud App Security によって使用されるファイルとファイル フィルターの種類について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5136b75dd45836cc8493b1021d598567ef858a73
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: dad41edad096f56349dbd729756151499ffecbb4
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124419"
+ms.locfileid: "53176945"
 ---
 # <a name="files"></a>ファイル
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は、データ保護を提供するため、接続しているアプリのすべてのファイルを表示します。 アプリ コネクターを使用して Microsoft Cloud App Security をアプリを接続すると、Microsoft Cloud App Security は OneDrive や Salesforce などに格納されたすべてのファイルをスキャンします。 その後、Cloud App Security では、ファイルが変更されるたびに再スキャンが行われます。内容、メタデータ、共有アクセス許可の変更を対象にできます。 スキャン時間は、アプリに格納されたファイルの数によって異なります。 **[ファイル]** ページでは、ファイルをフィルターしてクラウド アプリにどのような種類のデータが保存されているかを調べることもできます。
 

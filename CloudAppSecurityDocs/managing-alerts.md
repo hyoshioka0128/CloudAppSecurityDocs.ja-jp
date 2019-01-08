@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security のポータルでトリガーされるアラートの管理 | Microsoft ドキュメント
+title: Cloud App Security で発生するアラートを管理する
 description: この記事では、Cloud App Security のポータルで発生したアラートを操作する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 97cc1a6bee2c8264b7dfc430f555219ccd40ffd9
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 34fe83d4d6300037d31f577029f0b4887c7108e2
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124487"
+ms.locfileid: "53176836"
 ---
 # <a name="manage-alerts"></a>アラートの管理
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security のポータルで発生したアラートを操作する方法について説明します。
 
@@ -58,11 +59,17 @@ ms.locfileid: "53124487"
          - アクティビティの内容について、ユーザーまたはユーザーのマネージャーに連絡することができます。
          - 詳細を把握するまでは、アクティビティをそのままにしておきます。  
 
-       - **承認された違反または変則的な動作** - 承認された違反または変則的な動作は、正当な使用によって発生する場合があります。  
+       - **承認された違反または変則的な動作** - 承認された違反または変則的な動作は、正当な使用によって発生する場合があります。 <br>
+         - アラートは無視して構いません。
 
-   - アラートを消去します。  
 
-3. このプロセスが完了したら、アラートを解決済みとしてマークします。  
+3. アラートを無視するとき、無視する理由についてフィードバックを送信することが重要です。 Cloud App Security チームはこのフィードバックをアラートの精度を示すものとして利用し、 今後のアラートの機械学習モデルを調整する際に役立てます。 アラートを分類する方法を決定するとき、次のガイドラインを利用できます。
+   - 正しく使用してアラートがトリガーされ、セキュリティ問題ではない場合、次のいずれかに該当する可能性があります。 
+
+     - 無害な陽性: アラートは的確であるが、アクティビティにも問題ありません。 アラートを消去し、理由を **[実際の重要度は低いです]** か **[興味なし]** に設定できます。
+     -  誤検知: アラートが間違って作動しました。 アラートを消去し、理由を **[アラートが正確ではありません]** に設定してください。
+   - 無意味な情報が多すぎてアラートの妥当性や精度を判断できない場合、理由を **[類似のアラートが多すぎます]** に設定してください。
+   - 真陽性: 悪意により行われたか、内部または外部の人間が意図せずに行った実際に危険なイベントにアラートが関連している場合、適切なイベント修繕措置をすべて取った後、イベントを **[解決]** に設定してください。
 
 ## <a name="alert-types"></a>アラートの種類
 

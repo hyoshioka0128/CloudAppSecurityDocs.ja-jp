@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security サービスのトラブルシューティング | Microsoft Docs
+title: Cloud App Security サービスのトラブルシューティング
 description: この記事では、Cloud App Security 状態のページへのリンクを提供します
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 138790d8a6aed062b0ada67f1bc60b1a0d5ebc09
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: fa47fde4ae0277ab18eb478d67526e75450a87e9
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53123433"
+ms.locfileid: "53176622"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Microsoft Cloud App Security 状態のトラブルシューティング
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security の状態ページにアクセスするための方法を説明し、リンクを提供します。
 

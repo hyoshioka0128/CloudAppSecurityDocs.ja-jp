@@ -1,11 +1,11 @@
 ---
-title: G Suite を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
-description: この記事では、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。
+title: G Suite を Cloud App Security に接続する
+description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: df026fdf654703e61c87419df5dfd31558319e7a
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48be91b9bcdd6689f5e0af138176a8bbd8033301
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124555"
+ms.locfileid: "53177268"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。
+この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存の G Suite アカウントに接続する方法を説明します。 この接続により、G Suite の使用状況を視覚化して制御できるようになります。 
     
 ## <a name="configure-g-suite"></a>G Suite を構成する  
   
@@ -112,9 +113,9 @@ ms.locfileid: "53124555"
 
 20. **[Drive UI 統合]**/(Drive UI 統合/) タブをクリックし、次の情報を入力します。
 
-    - **アプリケーション名**: Microsoft Cloud App Security。  
+    - **[Application Name]\(アプリケーション名\)**:Microsoft Cloud App Security。  
   
-    - **簡単な説明と詳しい説明** (省略可能): Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
+    - **[Short Description]\(簡単な説明\)、[Long Description]\(詳しい説明\)** (省略可能):Microsoft Cloud App Security を使用すると、クラウド アプリケーションの状況を把握できるようになり、クラウド アプリケーションの使用を制御、調査、および管理できるほか、企業データを保護したり、クラウド アプリケーション上での疑わしいアクティビティを検出したりするのに役立ちます。  
   
     - Google から、少なくとも 1 つのアプリケーション アイコンをアップロードするように要求されます。 [https://go.microsoft.com/fwlink/?linkid=862826](https://go.microsoft.com/fwlink/?linkid=862826) に移動して、Cloud App Security のアイコンが含まれる zip ファイルをダウンロードします。 次に、**[Application icon]\(アプリケーション アイコン\)** で 128x128 のイメージの横にある **[Select]\(選択\)** をクリックし、ポップアップ画面にドラッグします。 32x32 のイメージの横にある **[Select]\(選択\)** をクリックして、ポップアップ画面にドラッグします。  
   
@@ -147,9 +148,9 @@ ms.locfileid: "53124555"
   
     -   次に **[Support URLs (サポートの URL)]** を入力します:  
   
-        -   **サービス利用規約 URL**: http://go.microsoft.com/fwlink/?LinkID=733268  
+        -   **サービス利用規約 URL**: https://go.microsoft.com/fwlink/?LinkID=733268  
   
-        -   **プライバシー ポリシー URL**: http://go.microsoft.com/fwlink/?LinkId=512132  
+        -   **プライバシー ポリシー URL**: https://go.microsoft.com/fwlink/?LinkId=512132  
   
     -   **[OAuth 2.0 scopes]\(OAuth 2.0 スコープ\)** で、以下の URL をコピーして貼り付けます (1 つコピーするたびに Enter キーを押します)。  
   

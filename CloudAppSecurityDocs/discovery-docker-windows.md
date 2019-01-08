@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/16/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,28 +13,28 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eab4a159d0791f5cc84a42eb7db3da4797ff92
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.openlocfilehash: 44cea3dcb50132a79db54d6b741ade1784014e09
+ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124402"
+ms.lasthandoff: 12/16/2018
+ms.locfileid: "53450649"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS: Windows 10 (Fall Creators Update) および Windows Server バージョン 1709 以降 
+- OS:Windows 10 (Fall Creators Update) および Windows Server バージョン 1709 以降 
 
-- ディスク領域: 250 GB
+- ディスク領域:250 GB
 
-- CPU: 2
+- CPU:2 で保護されたプロセスとして起動されました
 
-- RAM: 4 GB
+- RAM:4 GB
 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
@@ -58,17 +58,17 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 **[データ ソースの追加]** をクリックします。
+     」を参照します。 [**データ ソースの追加**] をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
           
-     b. プロキシまたはファイアウォールの **[名前]** を付けます。
+     b. プロキシまたはファイアウォールの [**名前**] を付けます。
       
       ![ubuntu1](./media/ubuntu1.png)
 
-     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+     c. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
 
      e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
      
@@ -79,11 +79,11 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
      - 調査目的で、各デバイスの状態を個別に監視する。
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
-3. 画面上部の **[ログ コレクター]** タブに移動します。
+3. 画面上部の [**ログ コレクター**] タブに移動します。
 
-   」を参照します。 **[ログ コレクターを追加]** をクリックします。
+   」を参照します。 [**ログ コレクターを追加**] をクリックします。
 
-   b. ログ コレクターに **[名前]** を付けます。
+   b. ログ コレクターに [**名前**] を付けます。
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
@@ -126,7 +126,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
    ![ログ コレクターを作成する](./media/windows7.png)
 8. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-"**Finished successfully!**" というメッセージが表示される必要があります。
+次のメッセージが表示されるはずです: **"Finished successfully!" (正常に終了しました)**
 
   ![ubuntu8](./media/ubuntu8.png)
 
@@ -160,12 +160,12 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 Docker のインストーラーが Microsoft によって署名されていることを確認するには:
 1. ファイルを右クリックし、**[プロパティ]** を選択します。
-2. **[全般]** をクリックして、**[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。  
-3. **[デジタル署名]** をクリックして、**署名一覧**に Microsoft が表示されていることを確認します。  
+2. **[デジタル署名]** をクリックして、**[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。  
+3. **[署名者名]** で **Microsoft Corporation** が唯一のエントリであることを確認します。  
 
 ![デジタル署名が有効](./media/digital-signature-successful.png)
 
-デジタル署名が有効ではない場合は、次のように表示されます。
+デジタル署名が有効でない場合は、**[このデジタル署名は有効ではありません]** と表示されます。
 
 ![デジタル署名が無効](./media/digital-signature-unsuccessful.png)
 

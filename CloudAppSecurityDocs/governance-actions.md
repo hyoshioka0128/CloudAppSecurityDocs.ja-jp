@@ -1,11 +1,11 @@
 ---
-title: ガバナンス アクションを適用して接続されているアプリを制御する方法 | Microsoft Docs
+title: 接続されているアプリを制御するためのガバナンス アクション - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 39022433ffb09410d883728a3f0ce2cae4d30d88
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 48708ea18227a68a780c6ed02905cda51cea48e0
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124640"
+ms.locfileid: "53177472"
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 ガバナンスによって、アプリ全体におけるユーザーの作業をリアルタイムで制御できるようになります。 接続されているアプリの場合、ファイルまたはアクティビティにガバナンス アクションを適用できます。 ガバナンス アクションは、Microsoft Cloud App Security からファイルまたはアクティビティに対して直接実行できる統合アクションです。 ガバナンス アクションでは、接続されたアプリ全体でのユーザーの作業をリアルタイムに制御します。 
 
@@ -50,7 +51,7 @@ ms.locfileid: "53124640"
 
      - **共有の変更** 
 
-        - **公開共有の削除** – アクセス許可を名前を指定したコラボレーターのみに与えます。たとえば、G Suite のパブリック アクセスを削除し、Box の直接共有リンクを削除します。 
+        - **公開共有の削除** – アクセス許可を名前を指定したコラボレーターのみに与えます。例:G Suite のパブリック アクセスを削除し、Box の直接共有リンクを削除する。 
 
        - **外部ユーザーの削除** – アクセス許可を会社のユーザーのみに与えます。 
 

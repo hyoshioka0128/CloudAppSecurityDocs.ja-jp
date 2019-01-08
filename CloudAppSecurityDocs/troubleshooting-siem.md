@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security と SIEM の統合のトラブルシューティング | Microsoft Docs
+title: SIEM の統合のトラブルシューティング - Cloud App Security | Microsoft Docs
 description: この記事では、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9711115763babc9807d4761f62bde675b435a68d
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 2a609d5081f2464482fd017c1cfa59ea4e789cdd
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124062"
+ms.locfileid: "53176554"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>SIEM エージェントのトラブルシューティング
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。
 

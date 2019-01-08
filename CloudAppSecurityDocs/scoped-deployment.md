@@ -1,11 +1,11 @@
 ---
-title: Microsoft Cloud App Security のデプロイのスコープを指定する | Microsoft Docs
+title: Microsoft Cloud App Security のデプロイのスコープを指定する
 description: この記事では、Cloud App Security のデプロイのスコープを指定して、特定のユーザーやグループを含めたり除外したりする方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: fe2ce27b-1020-45e9-ad72-fad93d197169
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: bf0a19b89d79b6bc6f3bb6edf51cf4392621ab68
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 899a6000674163f250dc981c58a800133902973f
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124752"
+ms.locfileid: "53176397"
 ---
 # スコープ付きデプロイ <a name="scoped-deployment"></a> 
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security を使用するとデプロイのスコープを指定できます。 スコープを指定することで、アプリについて監視する特定のユーザー グループを選択したり、監視から除外したりできます。
 

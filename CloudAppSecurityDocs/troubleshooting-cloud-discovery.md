@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security で検出された Cloud Discovery エラーのトラブルシューティング | Microsoft Docs
+title: Cloud Discovery エラーのトラブルシューティング - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud Discovery でよく起こるエラー一覧と、各エラーの推奨される解決策について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 8229eec0452cbb6c34a9c16ab7711455e63f01af
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 17890e4b54b4ed6447b274dc7e266011f8be236d
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124657"
+ms.locfileid: "53176928"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud Discovery のエラー一覧と、各エラーの推奨される解決策について説明します。
 
@@ -47,8 +48,8 @@ ms.locfileid: "53124657"
 |FTP でログ コレクターに接続できません| 1.SSH の資格情報ではなく、FTP の資格情報を使用していることを確認します。 <br />2.使用している FTP クライアントが SFTP に設定されていないことを確認します。  |
 |コレクター構成を更新できませんでした | 1.最新のアクセス トークンを入力したことを確認します。 <br />2.ファイアウォールで、ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。|
 |コレクターに送信されたログがポータルに表示されません | 1.ガバナンス ログに失敗した解析タスクがあるかどうかを確認します。  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2.ない場合は、ポータルでデータ ソースとログ コレクターの構成を確認します。 <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3.オンプレミス ログ コレクター コンピューターのローカル構成を確認します。  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4. ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。 |
-|ログ コレクターの状態: 作成済み | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
-|ログ コレクターの状態: 切断 | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
+|ログ コレクターの状態:作成日 | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
+|ログ コレクターの状態:Disconnected | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
 
 
 ## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー

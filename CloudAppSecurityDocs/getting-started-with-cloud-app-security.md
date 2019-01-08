@@ -1,11 +1,11 @@
 ---
-title: Cloud App Security を展開し、クラウド アプリの使用状況を詳細に表示し、管理する | Microsoft Docs
-description: この記事では、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
+title: Cloud App Security の展開
+description: この記事では、クラウド アプリを使用、洞察、制御できるように、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,16 +13,17 @@ ms.technology: ''
 ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ba1b2af9267595bfed88d34a280774aa47411786
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124096"
+ms.locfileid: "53177251"
 ---
 # <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の展開
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 この記事では、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
@@ -57,7 +58,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
  
 
 ### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 1. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
-必須のタスク: アプリを接続する
+必要なタスク:アプリを接続する
 
 1. 設定の歯車アイコンから **[アプリ コネクタ]** を選択します。
 2. アプリを追加するプラス記号をクリックし、アプリを選択します。
@@ -68,7 +69,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 
 ### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>手順 2. [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
-必須のタスク: ポリシーを作成する
+必要なタスク:ポリシーの作成
 
 **ポリシーを作成するには**
 
@@ -76,7 +77,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 2. リストからポリシー テンプレートを選択し、**[ポリシーの作成]** \(+) を選択します。
 3. ポリシーをカスタマイズ (フィルター、アクション、およびその他の設定を選択) し、**[作成]** を選びます。
 4. **[ポリシー]** タブでポリシーを選択して、関連する一致項目 (アクティビティ、ファイル、アラート) を確認できます。
- ヒント: 社内のクラウド環境のあらゆるセキュリティ シナリオに対応するには、**リスク カテゴリ**ごとにポリシーを作成します。
+ ヒント社内のクラウド環境のあらゆるセキュリティ シナリオに対応するには、**リスク カテゴリ**ごとにポリシーを作成します。
 
 **ポリシーは企業でどのように役立つか。**
 ポリシーは、傾向を監視したり、セキュリティ上の脅威を確認したり、カスタマイズされたレポートやアラートを生成することに利用できます。 ポリシーを使用すると、ガバナンス アクションの作成や、データ損失防止およびファイル共有コントロールの設定ができます。
@@ -84,7 +85,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 ### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 3. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
 
-必須のタスク: ご利用のクラウド アプリの使用を確認できるように Cloud App Security を有効にします。
+必要なタスク:クラウド アプリの使用を確認できるように Cloud App Security を有効にする
 
 1. [Windows Defender ATP と統合](wdatp-integration.md)することで、Cloud App Security が自動的に有効にされ、会社内外のご利用の Windows 10 デバイスを監視できるようになります。
 2. Zscaler を使用する場合は、Cloud App Security に [Zscaler を統合](zscaler-integration.md)します。
@@ -104,7 +105,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 ログを分析すると、どのクラウド アプリが、どのユーザーに、どのデバイスで使用されているかを簡単に特定できます。
 
 ### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>手順 4. [エクスペリエンスの個人設定を行います](mail-settings.md)。
-推奨されるタスク: 組織の詳細情報を追加する
+推奨されるタスク:企業の詳細を追加する
 
 **電子メールの設定を入力するには**
 
@@ -132,7 +133,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 
 ### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>手順 5. [ニーズに応じてデータを編成します](ip-tags.md)。
-推奨されるタスク: 重要な設定を構成する
+推奨されるタスク:重要な設定を構成する
 
 **IP アドレスのタグを作成するには**
 
