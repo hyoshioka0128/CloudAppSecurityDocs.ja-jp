@@ -14,12 +14,12 @@ ms.assetid: 9ba5c7d3-c733-4048-9b99-bf41a0f46695
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e10adf4b059728e45d9a87ebefcf1f1707566a7
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 4fb8d909ee8720d6b2610bfe6acc65a02666167e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177183"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059306"
 ---
 # <a name="activity-filters-and-queries"></a>アクティビティ フィルターとクエリ
 
@@ -160,6 +160,5 @@ Cloud App Security によっても**クエリ候補**が提供されます。 �
 ## <a name="next-steps"></a>次の手順 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しい問題を作成することもできます。](https://premier.microsoft.com/)  
   
   
