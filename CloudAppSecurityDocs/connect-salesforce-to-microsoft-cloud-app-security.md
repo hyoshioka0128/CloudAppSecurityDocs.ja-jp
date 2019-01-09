@@ -1,11 +1,11 @@
 ---
-title: Salesforce を Cloud App Security に接続して使用状況を表示し、管理する | Microsoft Docs
-description: この記事では、API コネクタを使用して Cloud App Security に Salesforce を接続する方法について説明します。
+title: Salesforce を Cloud App Security に接続する
+description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に Salesforce を接続する方法に関する情報を提供します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/9/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,18 +13,19 @@ ms.technology: ''
 ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 83b2f4572c2e5714867ed529c6199e441da5234f
-ms.sourcegitcommit: c497253a7ab63973bb806607e5f15dece91640be
+ms.custom: seodec18
+ms.openlocfilehash: 322e5d0564e70ff4e8ff85bdd3f798f43aacf235
+ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/10/2018
-ms.locfileid: "53124691"
+ms.locfileid: "53176741"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-この記事では、App Connector API を使用して Microsoft Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。  
+この記事では、App Connector API を使用して Microsoft Cloud App Security を既存の Salesforce アカウントに接続する方法を説明します。 この接続により、Salesforce の使用状況を視覚化して制御できるようになります。 
   
 ## <a name="how-to-connect-salesforce-to-cloud-app-security"></a>Salesforce を Cloud App Security に接続する方法  
   
