@@ -35,7 +35,6 @@
 ## [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 ### [Windows Defender ATP での統合](wdatp-integration.md)
 ### [Zscaler との統合](zscaler-integration.md)
-### [Microsoft Flow との統合](flow-integration.md)
 ### [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 ### [継続的なレポートのために自動ログ アップロードを構成する](discovery-docker.md)
 #### [Windows 上の Docker](discovery-docker-windows.md)
@@ -92,6 +91,7 @@
 ### [Azure Information Protection の統合](azip-integration.md)
 ### [SIEM の統合](siem.md)
 ### [外部 DLP 統合](icap-stunnel.md)
+### [Microsoft Flow との統合](flow-integration.md)
 ### [API トークン](api-tokens.md)
 # 参照先
 ## [サービスの状態のトラブルシューティング](troubleshooting-status.md)
