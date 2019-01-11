@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security のアプリの条件付きアクセス制御でアンマネージド デバイスによるダウンロードをブロックする
-description: この記事では、Azure AD のリバース プロキシ機能を使用して、アンマネージド デバイスによる機密データのダウンロードから組織を守るためのシナリオについて説明します。
+description: このチュートリアルでは、Azure AD のリバース プロキシ機能を使用してアンマネージド デバイスによる機密データのダウンロードから組織を守るためのシナリオについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/4/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,21 +14,26 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aab9063ad057abfe3dce3860494b1d20abe74f0f
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 25f08416549e8dbcf5cdb4dc15f0e2412381366e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347346"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059278"
 ---
-# <a name="block-downloads-of-sensitive-information-using-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security のアプリの条件付きアクセス制御を使用して機密情報のダウンロードをブロックする
+# <a name="tutorial-block-download-of-sensitive-information"></a>チュートリアル: 機密情報のダウンロードのブロック 
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 戻る: アクセス ポリシーを作成する方法](access-policy-aad.md)
 
-現在の IT 管理者は板挟みになっています。 従業員が生産性を高められるようにする必要があります。 これは、従業員が任意のデバイスからいつでも作業できるようにアプリへのアクセスを許可することを意味します。 一方で、会社の資産を守らなければなりません。それには所有財産や特権アクセス情報などが含まれます。 従業員にクラウド アプリへのアクセスを許可しつつ、データを保護するにはどうすればよいでしょうか。 **このユース ケースを使用すれば、管理されていないデバイスや社外ネットワークの場所からエンタープライズ クラウド アプリの機密データにアクセスできるユーザーによるダウンロードをブロックできます。**
+現在の IT 管理者は板挟みになっています。 従業員が生産性を高められるようにする必要があります。 これは、従業員が任意のデバイスからいつでも作業できるようにアプリへのアクセスを許可することを意味します。 一方で、会社の資産を守らなければなりません。それには所有財産や特権アクセス情報などが含まれます。 従業員にクラウド アプリへのアクセスを許可しつつ、データを保護するにはどうすればよいでしょうか。 **このチュートリアルを利用して、アンマネージド デバイスや社外ネットワークの場所からエンタープライズ クラウド アプリの機密データにアクセスできるユーザーによるダウンロードをブロックできます。**
+
+> [!div class="checklist"]
+> * 管理されていないデバイスに対するダウンロードのブロック ポリシーを作成する
+> * ポリシーの検証
+
 
 ## <a name="the-threat"></a>脅威
 

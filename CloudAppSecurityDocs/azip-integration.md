@@ -14,18 +14,22 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 590027f7769637188fc77aad882cedbc41158012
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177336"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059454"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
 *適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 分類を使用すると、クラウド内の機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。 
+
+> [!NOTE]
+> また、既に[ Office 365 Security およびコンプライアンス センター](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)向けに分類ラベルを移行済みの場合、この記事は、Microsoft Information Protection の統合ラベルにも該当します。 既存の分類ラベルを移行済みではなく、Office 365 Security およびコンプライアンス センター内で新しいラベルの作成を開始している場合、Cloud App Security では、Azure Information Protection ポータル内で構成された既存のラベルのみを使用します。
+
 
 Azure Information Protection を Cloud App Security に統合すると、両方のサービスの全機能を使用して、クラウド内のファイルをセキュリティで保護することができます。
 - 特定のポリシーに一致するファイルにガバナンス アクションとして分類ラベルを適用する機能

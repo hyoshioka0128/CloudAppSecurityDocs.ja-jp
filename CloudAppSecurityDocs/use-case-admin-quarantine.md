@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security の管理者検疫でファイルを保護する
-description: この記事では、管理者検疫を使用してデータの違反を管理するシナリオについて説明します。
+description: このチュートリアルでは、管理者検疫を使用してデータの違反を制御するシナリオについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/6/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,24 +14,33 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82398a5fad8f2d5b3da67a7932b9df6857dd9355
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 825645f44ff2d7dd0d6ba289608f10a23ff62dea
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347256"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059353"
 ---
-# <a name="protecting-your-files-with-admin-quarantine"></a>管理者検疫によるファイルの保護
+# <a name="tutorial-protect-files-with-admin-quarantine"></a>チュートリアル: 管理者検疫によるファイルの保護
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-[ファイル ポリシー](data-protection-policies.md)は、情報保護ポリシーに対する脅威を見つけるための優れたツールです。 たとえば、クラウド内でユーザーが機密情報、クレジット カード番号、サードパーティの ICAP ファイルを格納した場所を発見するファイル ポリシーを作成します。 Microsoft Cloud App Security を使用すると、クラウドに脆弱な状態で保存されているこのような望ましくないファイルを検出できるだけでなく、直ちに脅威の対象となるファイルの追跡を停止し、ロックする措置を取ることができます。 **管理者検疫**を使用すると、クラウド内のファイルを保護し、問題を修復できるだけでなく、今後の漏えいを防ぐこともできます。
+[ファイル ポリシー](data-protection-policies.md)は、情報保護ポリシーに対する脅威を見つけるための優れたツールです。 たとえば、クラウド内でユーザーが機密情報、クレジット カード番号、サードパーティの ICAP ファイルを格納した場所を発見するファイル ポリシーを作成します。 
+
+このチュートリアルでは、Microsoft Cloud App Security を使用して、脆弱なままのクラウドに格納されている不要なファイルを検出し、それらのファイルの追跡を停止するアクションをただちに実行すると共に、**管理者検疫**を使ってクラウド内のファイルを保護することで脅威を及ぼすファイルを封鎖して、それ以上の漏洩の発生を防ぐことができます。
+
+
+
+> [!div class="checklist"]
+> * 検疫のしくみを理解する 
+> * 管理者検疫を設定する
+
+
+## <a name="understand-how-quarantine-works"></a>検疫のしくみを理解する 
 
 >[!NOTE] 
 > - これはプレビュー機能です。
 > - 管理者検疫をサポートするアプリの一覧については、[ガバナンス アクション](governance-actions.md)の一覧を参照してください。
- 
-## <a name="how-quarantine-works"></a>検疫のしくみ 
 
 1. ファイルがポリシーに一致する場合、ファイルに**管理者検疫**のオプションを使用できます。
 

@@ -1,12 +1,12 @@
 ---
 title: Azure Information Protection 分類ラベルを自動的に適用する
-description: この記事では、Microsoft Cloud App Security で Azure Information Protection 分類ラベルを自動的に適用する方法について説明します。
+description: このチュートリアルでは、Microsoft Cloud App Security で Azure Information Protection 分類ラベルを自動的に適用する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
-ms.topic: conceptual
+ms.date: 1/3/2019
+ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,27 +14,25 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85dd32e95cfa866b7ac1f75f87685466b1bcb3db
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: 12c3e913a66813f234040272eba638c9dae5e9f5
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347318"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059378"
 ---
-# <a name="automatically-apply-azure-information-protection-classification-labels"></a>Azure Information Protection 分類ラベルを自動的に適用する
+# <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>チュートリアル: Azure Information Protection 分類ラベルを自動的に適用する
 
 *適用対象:Microsoft Cloud App Security*
 
-すべての従業員が情報保護の重要性を理解し、ポリシー範囲内で作業を行うのが理想的です。 しかし、現実では、会計に携わるパートナーが不適切なアクセス許可で Box リポジトリにドキュメントをアップロードします。 1 週間後に、会社の機密情報が競合他社にリークしたことに気付くのです。
+すべての従業員が情報保護の重要性を理解し、ポリシー範囲内で作業を行うのが理想的です。 しかし、現実では、会計に携わるパートナーが不適切なアクセス許可で Box リポジトリにドキュメントをアップロードします。 1 週間後に、会社の機密情報が競合他社にリークしたことに気付くのです。 Microsoft Cloud App Security は、このようなことを事前に防ぐのに役立ちます。 この機能は、Box、SharePoint、OneDrive for Business で使用できます。 Azure Information Protection ラベルの適用は、使用可能な[ガバナンス アクション](governance-actions.md)の長いリストに含まれています。
 
-Microsoft Cloud App Security は、このようなことを事前に防ぐのに役立ちます。
+このチュートリアルでは、お使いのクラウド ストレージ内に保存されたドキュメントにどのパブリック アクセス許可が設定されているかを特定して、違反が発生したときにアラート通知を受け取れるようにすることが可能です。 さらに、ご利用の Azure Information Protection の **[機密]** ラベルを自動適用して、ファイルに追加の暗号化を提供できます。
 
-Microsoft Cloud App Security では、Box アカウントに保存されているドキュメントに対する公開アクセス許可が識別され、その中に機密情報があることを識別する分類エンジンが使用されます。 この問題が発生したことを知らせるアラートが送信されます。 その後、Cloud App Security では、Azure Information Protection の**社外秘**分類ラベルを自動的に適用されて、ファイルの暗号化が強化されます。
+> [!div class="checklist"]
+> * データ保護の設定 
+> * ポリシーの検証
 
->[!NOTE]
->
-> - Azure Information Protection ラベルの適用は、使用可能な[ガバナンス アクション](governance-actions.md)の長いリストに含まれています。
-> - この機能は、Box、SharePoint、OneDrive for Business で使用できます。
 
 ## <a name="enhanced-data-level-encryption-protection"></a>強化されたデータ レベルの暗号化による保護
 
@@ -55,7 +53,7 @@ Cloud App Security と Microsoft Azure Information Protection を併用して、
 - テナントに対する [Cloud App Security と Azure Information Protection の有効化](azip-integration.md)。
 - Cloud App Security に [Box を接続します](connect-box-to-microsoft-cloud-app-security.md)。
 
-## <a name="setting-up-data-protection"></a>データ保護のセットアップ
+## <a name="set-up-data-protection"></a>データ保護の設定
 
 Box アカウントに格納されているファイルでクレジット カード番号を見つけるポリシーをセットアップしてみましょう。 ファイルが見つかったら、Azure Information Protection のラベルを自動的に適用し、そのラベルを持つすべてのファイルに対して行われる操作を制御します。
 
@@ -76,7 +74,7 @@ Box アカウントに格納されているファイルでクレジット カー
 
     7. [Cloud App Security は Azure Information Protection と統合されている](azip-integration.md)ため、データの保護に使用される分類ラベルを既存の一覧から選択できます。
 
-    8. [**作成**] をクリックします。 
+    8. **[作成]** をクリックします。 
 
    ![ポリシーに分類ラベルを追加する](./media/aip-auto-policy.png)
 
@@ -86,7 +84,7 @@ Box アカウントに格納されているファイルでクレジット カー
 
     2. 特定の一致をクリックしてファイルのドロワーを開き、一致を調査します。 ドロワーでは、このファイルと一致した他のポリシーを確認できます。
 
-## <a name="validating-your-policy"></a>ポリシーの検証
+## <a name="validate-your-policy"></a>ポリシーの検証
 
 1. アラートのシミュレーションを行うには、Box アカウントに移動して、**顧客データ** フォルダーのファイルへのアクセスを試みます。
 2. ポリシー レポートに移動します。 ファイル ポリシーの一致がすぐに表示されます。 

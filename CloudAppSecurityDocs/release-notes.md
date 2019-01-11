@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/6/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e946e341d901be2f3facfd5a0d6118cfc7770a22
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
+ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177422"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54059502"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -27,6 +27,29 @@ ms.locfileid: "53177422"
 
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
+
+## <a name="cloud-app-security-release-139-140"></a>Cloud App Security リリース 139、140
+
+2019 年 1 月 6 日のリリース
+
+- **ファイル検出における変更点**<br>
+SharePoint および One Drive 内ですべての人と共有されているファイルは、[SharePoint および One Drive に対して実施された変更によって](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365)、**内部**と見なされるようになりました。 そのため、すべての人と共有されているファイルが検出された場合、内部ファイルとして処理されることになります。ポリシーによってファイルが処理されてファイル ページ内に表示される方法も、この影響を受けます。
+
+- **ファイル監視における変更点**<br>
+新規顧客およびアイドル状態の顧客に対する既定のファイル監視動作が変更されました。 今後は、**[設定]** > **[ファイル]** から、ファイル監視をオンにして機能を有効にする必要があります。 既存のアクティブな顧客は、この変更の影響を受けません。 
+
+- **異常検出ポリシーの詳細な調整**<br>
+異常検出エンジンを操作して、ユーザー設定に応じてアラートを抑制または表示させることが可能になりました。 
+   - [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に、必要な異常時の動作のレベルを決定できます。 
+   - また、アクセス頻度の低い国、異常な IP アドレス、不審な IP アドレス、あり得ない移動によるアラートでは、失敗および成功した両方のログインを分析するか、または成功したログインのみを分析するかを構成できます。 
+
+-   **複数の信頼チェーンのサポート** アプリの条件付きアクセス制御では、複数の信頼済みのルート証明書または中間証明書をデバイス管理の形式として追加および使用する機能がサポートされるようになりました。
+
+- **新しい Cloud Discovery ロール** (段階的なロールアウト) Cloud App Security では、Cloud Discovery ユーザーに新しい管理者ロールを提供できるようになりました。 管理者ユーザーのアクセス範囲を Cloud App Security ポータル内にある Cloud Discovery の設定とデータのみに設定するために、このロールを使用できます。
+
+- **Microsoft Information Protection の統合ラベルのサポート** Cloud App Security では、Microsoft Information Protection の統合ラベルがサポートされるようになりました。 既に [Office 365 Security およびコンプライアンス センターに分類ラベルを移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)した顧客に対して、Cloud App Security では、「[Azure Information Protection の統合](azip-integration.md)」に説明されているように、これらのラベルを特定して処理します。 
+
+**PDF ファイルのラベル付けのサポート** 統合ラベルを使用している顧客に対して、Cloud App Security では PDF ファイルの自動ラベル付けをサポートするようになりました。
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security リリース 138
 
