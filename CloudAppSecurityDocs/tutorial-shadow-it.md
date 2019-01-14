@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: ccf52abaad217c257bbab14b886f6af120721c8c
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059567"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142286"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -93,8 +93,9 @@ Cloud Discovery が、ネットワーク上で実行されるようになった�
 
 ### <a name="phase-4-control-sanctioned-apps"></a>フェーズ 4: 承認されたアプリの管理
 
-    1. API でのアプリのコントロールを有効にするには、継続的監視のために [API を使用してアプリを接続します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
-    2. [アプリの条件付きアクセス制御](proxy-intro-aad.md)を使用してアプリを保護します。
+1. API でのアプリのコントロールを有効にするには、継続的監視のために [API を使用してアプリを接続します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).(enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
+
+2. [アプリの条件付きアクセス制御](proxy-intro-aad.md)を使用してアプリを保護します。
 
 
 クラウド アプリの性質上、更新は日々行われ、新しいアプリも常に発生しています。 従業員は次々に新しいアプリを使用するため、ポリシーを継続的に追跡、レビュー、更新し、ユーザーが使用しているアプリと、その使用やビヘイビアーのパターンを確認することが重要です。 いつでも Cloud Discovery ダッシュ ボードに移動して、使用されている新しいアプリを確認し、この記事の手順にもう一度従うことで、組織とそのデータが確実に保護されていることを確認できます。
