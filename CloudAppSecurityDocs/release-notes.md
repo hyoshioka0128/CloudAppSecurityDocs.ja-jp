@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/9/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7ac2458af007fa556cf7212281154174fe2276e
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
+ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059502"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54142337"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -47,9 +47,9 @@ SharePoint および One Drive 内ですべての人と共有されているフ�
 
 - **新しい Cloud Discovery ロール** (段階的なロールアウト) Cloud App Security では、Cloud Discovery ユーザーに新しい管理者ロールを提供できるようになりました。 管理者ユーザーのアクセス範囲を Cloud App Security ポータル内にある Cloud Discovery の設定とデータのみに設定するために、このロールを使用できます。
 
-- **Microsoft Information Protection の統合ラベルのサポート** Cloud App Security では、Microsoft Information Protection の統合ラベルがサポートされるようになりました。 既に [Office 365 Security およびコンプライアンス センターに分類ラベルを移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)した顧客に対して、Cloud App Security では、「[Azure Information Protection の統合](azip-integration.md)」に説明されているように、これらのラベルを特定して処理します。 
+- **Microsoft Information Protection の統合ラベルのサポート** (段階的なロールアウト) Cloud App Security では、Microsoft Information Protection の統合ラベルがサポートされるようになりました。 既に [Office 365 Security およびコンプライアンス センターに分類ラベルを移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)した顧客に対して、Cloud App Security では、「[Azure Information Protection の統合](azip-integration.md)」に説明されているように、これらのラベルを特定して処理します。 
 
-**PDF ファイルのラベル付けのサポート** 統合ラベルを使用している顧客に対して、Cloud App Security では PDF ファイルの自動ラベル付けをサポートするようになりました。
+**PDF ファイルのラベル付けのサポート** (段階的なロールアウト) 統合ラベルを使用している顧客に対して、Cloud App Security では PDF ファイルの自動ラベル付けをサポートするようになりました。
 
 ## <a name="cloud-app-security-release-138"></a>Cloud App Security リリース 138
 

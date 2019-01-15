@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security で検出されたアプリの処理
-description: この記事では、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
+description: このクイックスタートでは、Cloud App Security でリスクのある Cloud Discovery アプリを識別して修復するプロセスについて説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/10/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a70dc1796304a32606e54d4e9e93f6cf3169c6a6
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 589f0d11d7fac47a4080926f6aa4f654c17deb34
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450590"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060175"
 ---
-# <a name="working-with-discovered-apps"></a>検出されたアプリの処理
+# <a name="quickstart-work-with-discovered-apps"></a>クイック スタート:検出されたアプリの処理
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
+このクイック スタートでは、検出されたアプリの監視方法や管理方法の概要を説明します。 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
 
 ![Cloud Discovery ダッシュボード](./media/cloud-discovery-dashboard.png)
 

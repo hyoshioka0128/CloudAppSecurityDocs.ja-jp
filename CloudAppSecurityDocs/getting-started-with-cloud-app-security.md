@@ -1,12 +1,12 @@
 ---
 title: Cloud App Security の展開
-description: この記事では、クラウド アプリを使用、洞察、制御できるように、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
+description: このクイックスタートでは、クラウド アプリを使用、洞察、制御できるように、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
-ms.topic: conceptual
+ms.date: 1/7/2019
+ms.topic: quickstart
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 240a2831ca31945cff4b957c21096d2ed0a64b42
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: e30c4cf8b582bb0471ac4a90f39e7a5649a74ed0
+ms.sourcegitcommit: 076705cc9684fe5fb35c33a51e3319ba2ccfd24e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177251"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54060226"
 ---
-# <a name="deploy-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の展開
+#  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security の使用を開始する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 この記事では、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
+このクイックスタートでは、Cloud App Security を準備して使用を開始する手順を示します。 Microsoft Cloud App Security は、クラウド アプリケーションの利点の活用に役立つだけでなく、会社のリソース管理にも役立ちます。 これは、クラウドの利用状況の可視性を向上させ、企業データの保護を強化することによって機能します。 この記事では、Microsoft Cloud App Security をセットアップして使用する手順を順番に説明していきます。  
 
 組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 詳細については、Cloud App Security のホーム ページの「[Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)」セクションを参照してください。  
 
@@ -53,11 +53,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 
 
-## <a name="get-started-quickly-with-cloud-app-security"></a>Cloud App Security の使用をすばやく開始する  
-
- 
-
-### <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 1. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
+## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 1. [アプリの可視性、保護、およびガバナンス アクションをすぐに設定します](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)。
 必要なタスク:アプリを接続する
 
 1. 設定の歯車アイコンから **[アプリ コネクタ]** を選択します。
@@ -68,7 +64,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 アプリを接続すると、クラウド環境でアプリのアクティビティやファイル、アカウントの詳細な調査ができます。
 
 
-### <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>手順 2. [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
+## <a name="step-2-control-cloud-apps-with-policiescontrol-cloud-apps-with-policiesmd"></a>手順 2. [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
 必要なタスク:ポリシーの作成
 
 **ポリシーを作成するには**
@@ -83,7 +79,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 ポリシーは、傾向を監視したり、セキュリティ上の脅威を確認したり、カスタマイズされたレポートやアラートを生成することに利用できます。 ポリシーを使用すると、ガバナンス アクションの作成や、データ損失防止およびファイル共有コントロールの設定ができます。
 
 
-### <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 3. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
+## <a name="step-3-set-up-cloud-discoveryset-up-cloud-discoverymd"></a>手順 3. [Cloud Discovery をセットアップします](set-up-cloud-discovery.md)。
 
 必要なタスク:クラウド アプリの使用を確認できるように Cloud App Security を有効にする
 
@@ -104,7 +100,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 社内のシャドウ IT 対策を把握することは不可欠です。
 ログを分析すると、どのクラウド アプリが、どのユーザーに、どのデバイスで使用されているかを簡単に特定できます。
 
-### <a name="step-4-personalize-your-experiencemail-settingsmd"></a>手順 4. [エクスペリエンスの個人設定を行います](mail-settings.md)。
+## <a name="step-4-personalize-your-experiencemail-settingsmd"></a>手順 4. [エクスペリエンスの個人設定を行います](mail-settings.md)。
 推奨されるタスク:企業の詳細を追加する
 
 **電子メールの設定を入力するには**
@@ -132,7 +128,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 一部の機能は、お客様のニーズに合わせてカスタマイズされたときに最大の効果を発揮します。 独自のメール テンプレートでユーザー用の優れたエクスペリエンスを提供します。 どのような通知を受信するかを決定し、企業のニーズに応じてリスク スコア メトリックをカスタマイズします。
 
 
-### <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>手順 5. [ニーズに応じてデータを編成します](ip-tags.md)。
+## <a name="step-5-organize-the-data-according-to-your-needsip-tagsmd"></a>手順 5. [ニーズに応じてデータを編成します](ip-tags.md)。
 推奨されるタスク:重要な設定を構成する
 
 **IP アドレスのタグを作成するには**
