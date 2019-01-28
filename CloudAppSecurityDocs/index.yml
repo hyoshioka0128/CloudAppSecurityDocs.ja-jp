@@ -1,0 +1,71 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 380111c9dfac45ef74a796071231230f42f5c853
+ms.sourcegitcommit: f9f50480f5353b395e1c6b0dd8ac6b0c7243aa77
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55071206"
+documentType: LandingData
+title: Microsoft Cloud App Security
+metadata:
+  title: Microsoft Cloud App Security
+  description: Microsoft Cloud App Security はクラウド アプリに、より深い可視性、包括的な制御、およびクラウド セキュリティの問題に対する強力な保護のエンタープライズ グレードのセキュリティを提供します。
+  author: msmbaldwin
+  manager: mbaldwin
+  ms.prod: cloud-app-security
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 01/22/2019
+  ms.author: mbaldwin
+  layout: LandingPage
+abstract:
+  description: Microsoft Cloud App Security (MCAS) はクラウド アプリに、クラウド セキュリティの問題に対する専門的な可視性、包括的なコントロール、強化された保護などの、設置型システムのエンタープライズ グレードのセキュリティを提供します。
+sections:
+- title: 詳細情報
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Microsoft Cloud App Security の詳細情報
+      href: what-is-cloud-app-security.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_learn-about.svg
+        href: what-is-cloud-app-security.md
+    - title: MCAS データのセキュリティとプライバシー
+      href: cas-compliance-trust.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        href: cas-compliance-trust.md
+    - title: MCAS の新機能
+      href: release-notes.md
+      image:
+        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        href: release-notes.md
+- title: 5 分間のクイックスタート
+  items:
+  - type: paragraph
+    text: Microsoft Cloud App Security の基礎について説明します。
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/media/common/i_design.svg
+      text: Microsoft Cloud App Security の使用を開始する
+      href: getting-started-with-cloud-app-security.md
+    - image:
+        src: https://docs.microsoft.com/media/common/i_event.svg
+      text: 検出されたアプリの処理
+      href: discovered-apps.md
+- title: ステップバイステップ チュートリアル
+  items:
+  - type: paragraph
+    text: アラートを理解し、これらのチュートリアルでの調査の実施について説明します。
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="/cloud-app-security/tutorial-shadow-it">ネットワーク内のシャドウ IT の検出と管理</a>
+    - html: <a href="/cloud-app-security/use-case-proxy-block-session-aad">機密情報のダウンロードのブロック</a>
+    - html: <a href="/cloud-app-security/use-case-admin-quarantine">管理者検疫によるファイルの保護</a>
+    - html: <a href="/cloud-app-security/use-case-information-protection">Azure Information Protection 分類ラベルの適用</a>

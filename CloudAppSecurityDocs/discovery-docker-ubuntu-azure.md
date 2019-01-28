@@ -14,12 +14,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a6064660a869f30cf38d4ff3982fee8a7e2b0c3e
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 3b274bd8515fc893fb92af0c96f34d99d68d0bdc
+ms.sourcegitcommit: 900fce2575c39acda71ba42589f75d4c935fecb3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177353"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460023"
 ---
 # <a name="set-up-and-configuration-on-ubuntu"></a>Ubuntu でのセットアップと構成
 
@@ -163,13 +163,13 @@ Azure の Ubuntu で Docker を使用して Cloud App Security の継続的な�
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
 
- **[ログ コレクター]** の表でコレクターの状態を確認し、状態が **[接続済み]** であることを確認します。  **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
+**[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
 
  ![ubuntu9](./media/ubuntu9.png)
 
 **ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
-展開中に問題が発生した場合は、「 [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)」をご覧ください。
+展開中に問題が発生した場合は、「[Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)」(Cloud Discovery のトラブルシューティング) を参照してください。
 
 ### <a name="optional---create-custom-continuous-reports"></a>省略可能 - カスタムの継続的レポートを作成する
 
