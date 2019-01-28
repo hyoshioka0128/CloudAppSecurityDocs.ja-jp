@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f92e8707c742ae36b5e9e018b3a1ba707f206046
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 51df3ca47ab92da437772ee2d901be38699b5aea
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177462"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086313"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 
@@ -96,71 +96,6 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 4. ログ ファイルが有効で、送信トラフィック情報を含む。
 
 
-
-## サポートされているファイアウォールとプロキシ <a name="supported-firewalls-and-proxies"></a>
-
-- Barracuda - Web App Firewall (W3C)
-- Blue Coat Proxy SG - Access ログ (W3C)
-- Check Point
-- Cisco ASA Firewall (Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります)
-- Cisco ASA with FirePOWER
-- Cisco IronPort WSA
-- Cisco ScanSafe
-- Cisco Meraki - URL ログ
-- Clavister NGFW (Syslog)
-- Digital Arts i-FILTER
-- Fortinet Fortigate
-- iboss Secure Cloud Gateway
-- Juniper SRX
-- Juniper SSG
-- McAfee Secure Web Gateway
-- Microsoft Forefront Threat Management Gateway (W3C)
-- Palo Alto Firewall シリーズ
-- Sonicwall (旧称 Dell)
-- Sophos SG
-- Sophos XG
-- Sophos Cyberoam
-- Squid (共通)
-- Squid (ネイティブ)
-- Websense - Web Security Solutions - 調査の詳細レポート (CSV)
-- Websense - Web Security Solutions - インターネットのアクティビティ ログ (CEF)
-- Zscaler
-
-> [!NOTE]
-> Cloud Discovery では、IPv4 と IPv6 の両方のアドレスをサポートします。
-
-ログがサポートされていない場合は、**データ ソース**として **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは Cloud App Security クラウド アナリスト チームによって確認され、要求したログの種類のサポートが追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
-
-
-データ属性 (ベンダーのドキュメントに従う)
-
-
-|                 [データ ソース]                  |    ターゲット アプリの URL    |    ターゲット アプリの IP     |       Username       |      配信元 IP       |    総トラフィック     |    アップロードされたバイト数    |
-|----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-|                  Barracuda                   | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |          いいえ          |          いいえ          |
-|                  Blue Coat                   | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                  Checkpoint                  |          いいえ          | <strong>はい</strong> |          いいえ          | <strong>はい</strong> |          いいえ          |          いいえ          |
-|              Cisco ASA (Syslog)              |          いいえ          | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> |          いいえ          |
-|           Cisco ASA with FirePOWER           | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                  Cisco FWSM                  |          いいえ          | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> |          いいえ          |
-|              Cisco IronPort WSA              | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                 Cisco Meraki                 | <strong>はい</strong> | <strong>はい</strong> |          いいえ          | <strong>はい</strong> |          いいえ          |          いいえ          |
-|           Clavister NGFW (Syslog)            | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                SonicWall (旧称 Dell)                | <strong>はい</strong> | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|            Digital Arts i-FILTER             | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                  Fortigate                   |          いいえ          | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                 Juniper SRX                  |          いいえ          | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                 Juniper SSG                  |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                  McAfee SWG                  | <strong>はい</strong> |          いいえ          |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                    MS TMG                    | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|              Palo Alto Networks              |          いいえ          | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                    Sophos                    | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |          いいえ          |
-|                Squid (共通)                | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> |          いいえ          | <strong>はい</strong> |
-|                Squid (ネイティブ)                | <strong>はい</strong> |          いいえ          | <strong>はい</strong> | <strong>はい</strong> |          いいえ          | <strong>はい</strong> |
-| Websense: 調査の詳細レポート (CSV) | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|    Websense: インターネットのアクティビティ ログ (CEF)    | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|                   Zscaler                    | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-     
  
 ## <a name="next-steps"></a>次の手順  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
