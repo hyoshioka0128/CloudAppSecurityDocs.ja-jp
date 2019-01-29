@@ -40,6 +40,7 @@
 #### [Windows 上の Docker](discovery-docker-windows.md)
 #### [Ubuntu および RHEL オンプレミス上の Docker](discovery-docker-ubuntu.md)
 #### [Azure での Ubuntu 上の Docker](discovery-docker-ubuntu-azure.md)
+#### [Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
 #### [プロキシの背後にあるログ コレクター](log-collector-proxy.md)
 #### [仮想アプライアンスの使用 - 非推奨](configure-automatic-log-upload-for-continuous-reports.md)
 ### [カスタム ログ パーサーの使用](custom-log-parser.md)
@@ -94,7 +95,6 @@
 ### [Microsoft Flow との統合](flow-integration.md)
 ### [API トークン](api-tokens.md)
 # 参照先
-## [サービスの状態のトラブルシューティング](troubleshooting-status.md)
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)
 ## [エラー メッセージを使用した API コネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)
 ## [コンテンツ検査のトラブルシューティング](troubleshooting-content-inspection.md)
@@ -102,6 +102,7 @@
 ## [Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
 ## [ポリシーのトラブルシューティング](troubleshoot-policies.md)
 # 参照情報
+## [サポートとトラブルシューティング](support-and-ts.md)
 ## [Premier サポート ポータル](https://premier.microsoft.com/)
-## [クラウド アプリ セキュリティ ポータル](https://portal.cloudappsecurity.com)
+## [Cloud App Security ポータル](https://portal.cloudappsecurity.com)
 ## [Cloud App Security の購入方法](https://www.microsoft.com/cloud-platform/cloud-app-security)
