@@ -1,11 +1,11 @@
 ---
 title: Cloud App Security を Zscaler と統合する
-description: この記事では、シームレスな Cloud Discovery と承認されたアプリの自動ブロックのために Microsoft Cloud App Security と Zscaler を統合する方法を説明します。
+description: この記事では、シームレスな Cloud Discovery と承認されていないアプリの自動ブロックのために Microsoft Cloud App Security と Zscaler を統合する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/14/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0acb52d2a22fe05a293db6158df13d174bad3e49
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: d26ba74ff95df4fc2def9cfff0acd41dcef358a4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450547"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086398"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Cloud App Security を Zscaler と統合する
 

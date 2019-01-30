@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/18/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9f3b2282d4a62706e72500db9bb3c57f7598029
-ms.sourcegitcommit: 96fabfedfe747bb02379876d34f0f5ac8019c1a8
+ms.openlocfilehash: 319fa2395e972d79b3d010a88b0758752103c345
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53587836"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086143"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -92,33 +92,36 @@ Azure AD の条件付きアクセスでは、準拠しているデバイスと�
 > [!NOTE]
 > アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
-セッション制御はすべての主要なプラットフォーム上のすべてのブラウザーで使用可能です。 モバイル アプリとデスクトップ アプリは許可またはブロックすることもできます。 Azure AD とネイティブに統合すると、次の機能を備えたアプリを含む、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリをサポートできます。
+**セッション制御は、あらゆるオペレーティング システム上の、すべての主要なプラットフォーム上のすべてのブラウザーで使用可能です**。 モバイル アプリとデスクトップ アプリは許可またはブロックすることもできます。 Azure AD とネイティブに統合すると、次の機能を備えたアプリを含む、SAML で構成されたアプリおよび Azure AD においてシングル サインオンで構成された Open ID Connect アプリをサポートできます。
 
 - AWS
+- Azure DevOps (Visual Studio Team Services) (プレビュー)
+- Azure portal (プレビュー)
 - ボックス
 - Concur
 - CornerStone on Demand
 - DocuSign
 - ドロップボックス
 - Egnyte
+- Exchange Online (プレビュー)
 - G Suite
 - GitHub
 - HighQ
 - JIRA/Confluence
+- OneDrive for Business (プレビュー)
+- LinkedIn Learning
+- Power BI (プレビュー)
 - Salesforce
 - ServiceNow
+- SharePoint Online (プレビュー)
 - Slack
 - Tableau
+- Microsoft Teams (プレビュー)
 - Workday
 - Workiva
 - Workplace by Facebook
-- Exchange Online (プレビュー)
-- OneDrive for Business (プレビュー)
-- Power BI (プレビュー)
-- SharePoint Online (プレビュー)
-- Azure DevOps (Visual Studio Team Services) (プレビュー)
 - Yammer (プレビュー)
-- Microsoft Flow (プレビュー)
+
 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/9/2019
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,33 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9955c7e88caffd83859dd404e1615384f9a05490
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142337"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086364"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 *適用対象:Microsoft Cloud App Security*
 
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
+
+## <a name="cloud-app-security-release-141"></a>Cloud App Security リリース 141
+
+2019 年 1 月 20 日のリリース
+
+**クラウドのリスクの評価に関する機能強化**
+- クラウド アプリのリスク評価が、2 つの新しいエクスペリエンスで強化されました。 
+    - 新しい**データ型**属性によって、ユーザーがアプリにアップロードできるコンテンツの種類を評価します。 この属性を使って、ご自身の組織内の各データ型の機密性に従ってアプリを評価できます。 
+    - アプリのより包括的なリスク概要を得るために、**ホスティング企業**属性をクリックしてアプリのリスク評価からホスティング企業のリスク評価に簡単にピボットできるようになりました。
+
+**異常検出のアラートを調査するためのファイルのコンテキストの機能強化**
+- 異常検出の調査が強化され、アラートに関係するファイルに関連付けられている追加の分析情報を表示できるようになりました。 異常なアクティビティのアラート (ダウンロード、共有、削除) に関係するファイルに対してアラートがトリガーされた場合に、このドリル ダウンを使用できます。 たとえば、影響を受けたファイルのほとんどが同じフォルダーにあったり、同じファイル拡張子を持っていたりする場合、アラートの追加のリスク セクションでこれらの分析情報を確認できます。
+
+**ファイル調査用のクエリ**
+- カスタム クエリを作成および保存する Cloud App Security の機能が、**[ファイル]** ページに拡張されました。 **[ファイル]** ページのクエリを使うと、詳しい調査のために再使用できるフィルター テンプレートを作成できます。 
 
 
 ## <a name="cloud-app-security-release-139-140"></a>Cloud App Security リリース 139、140

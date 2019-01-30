@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/16/2018
+ms.date: 1/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 37eed2eb11dfd3f77a1cf26281af6d867c9e9c4d
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059466"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086109"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -28,7 +28,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS:Windows 10 (Fall Creators Update) および Windows Server バージョン 1709 以降 
+- OS:**Windows 10** (Fall Creators Update) および Windows Server **バージョン 1709 以降**
 
 - ディスク領域:250 GB
 
@@ -37,6 +37,8 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 - RAM:4 GB
 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
+
+- Hyper-V でオペレーティング システム上の仮想化を有効にすることが必要
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 

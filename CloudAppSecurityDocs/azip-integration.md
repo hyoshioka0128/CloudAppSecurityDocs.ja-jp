@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bbe1bd310f7c661ba631f088a474baf536fb8d32
-ms.sourcegitcommit: 9f322632666636de12ac332349130d7961dbbb81
+ms.openlocfilehash: d0858c2cadf3e36ed70ae59b715cfa9b7c7469c4
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54059454"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086296"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -116,6 +116,9 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 3. 分類ラベルを選択して [適用] をクリックすると、Cloud App Security によって分類ラベルが元のファイルに適用されます。
 
 4. 分類ラベルは削除することもできます。**[分類ラベルの削除]** オプションを選択してください。 
+
+> [!NOTE]
+> ラベルを削除できるのは、それが保護を含まず、かつ Cloud App Security 内から適用された場合のみです。Information Protection で直接適用されたラベルは削除できません。
 
 
 Cloud App Security と Azure Information Protection の連動のしくみの詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)」をご覧ください。

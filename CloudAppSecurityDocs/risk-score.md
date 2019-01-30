@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 1/27/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8427aa87af9b986b482901cf3671e54a6aa6fac3
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: b58ab490123824a0e0ba211cc1382a750985a0a0
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177440"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086347"
 ---
 # <a name="working-with-the-risk-score"></a>リスク スコアの操作
 
@@ -104,7 +104,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
   
 - **コンプライアンス** - このカテゴリは、アプリを作成した会社が導入している一般的なベスト プラクティスのコンプライアンス基準を示します。 選択肢リストには、HIPAA、CSA および PCI-DSS などの基準が含まれています。  
 
-- **[法務]**:このカテゴリは、アプリのユーザーのデータ保護とプライバシーを確保するため、どのアプリがどのインプレースの規制とポリシー (GDPR、DMCA、データ保有ポリシーなど) に基づいているかを表示します。
+- **法務** - このカテゴリは、アプリのユーザーのデータ保護とプライバシーを確保するため、どのアプリがどのインプレースの規制とポリシー (GDPR、DMCA、データ保有ポリシーなど) に基づいているかを表示します。
   
 各カテゴリは、多くの特定プロパティで構成されます。 各プロパティは、Cloud App Security のスコア付けアルゴリズムに従って、値の種類に合わせて 0 から 10 までの予備スコアが割り当てられます。 True/False 値には適宜 10 または 0 が与えられます。 一方、ドメインの有効期間など連続性のあるプロパティには、範囲内で特定の値が割り当てられます。 各プロパティのスコアは、カテゴリ内のその他すべての既存フィールドに対して重み付けされ、カテゴリのサブスコアとして表示されます。 スコア付けされていないアプリがあった場合は通常、アプリのプロパティが不明であるためスコア付けされていないことが原因です。  
   

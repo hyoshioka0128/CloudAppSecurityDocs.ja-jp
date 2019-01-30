@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/6/2019
+ms.date: 1/28/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: cloud-app-security
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 3e31313739befa39b11853df971dd0c490884e07
-ms.sourcegitcommit: 2a25d1af0560243d7f926c87bf56230bdf336ba9
+ms.openlocfilehash: 579359640f5c2e53f2267938620908be70ad617f
+ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54142286"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55086619"
 ---
 *適用対象: Microsoft Cloud App Security*
 
@@ -44,15 +44,15 @@ ms.locfileid: "54142286"
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>フェーズ 1: シャドウ IT の検出と特定
     
 1. **シャドウ IT の検出**: ネットワークで実際に起きていることを確認するために組織内で Cloud Discovery を実行して、組織のセキュリティ対策を特定します。 詳細については、「[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)」を参照してください。次のいずれかの方法を使用して行います。
-  
-    - Cloud App Security をプロキシと統合します。 Cloud App Security は、[Zscaler](zscaler-integration.md) を含む、いくつかのサードパーティ プロキシとネイティブに統合します。
-    
+   
     - [Windows Defender ATP](wdatp-integration.md) と統合すると、Cloud Discovery がすばやく起動します。 このネイティブ統合により、ネットワークとの接続の有無を問わず、Windows 10 デバイスの間でクラウド トラフィックのデータの収集をすぐに始めることができます。
    
     - ネットワークに接続されているすべてのデバイスを網羅するには、エンドポイントからのデータを収集し、これを分析のために Cloud App Security に送信するため、ファイアウォールとその他のプロキシに [Cloud App Security ログ コレクター](discovery-docker.md)を展開することが重要です。
 
-
-ポリシーはユーザー グループ、リージョン、ビジネス グループの間で異なるため、ユニットごとに専用のシャドウ IT レポートを作成しなければならないことがあります。 詳細については、(discovery-docker-windows#continuous-reports) を参照してください。
+   - Cloud App Security をプロキシと統合します。 Cloud App Security は、[Zscaler](zscaler-integration.md) を含む、いくつかのサードパーティ プロキシとネイティブに統合します。
+   
+ 
+ポリシーはユーザー グループ、リージョン、ビジネス グループの間で異なるため、ユニットごとに専用のシャドウ IT レポートを作成しなければならないことがあります。 詳細については、[オンプレミスの Windows の Docker](discovery-docker-windows.md#continuous-reports) に関するページをご覧ください。
 
 
 Cloud Discovery が、ネットワーク上で実行されるようになったため、生成された継続的レポートと [Cloud Discovery ダッシュ ボード](working-with-cloud-discovery-data.md)を確認し、組織内でどのようなアプリが使用されているかの全体像を把握します。 未承認のアプリが、承認されたアプリでは対処できない、正当な業務目的で使用されている場合も多いため、アプリはカテゴリ別に確認することをお勧めします。 
@@ -79,10 +79,10 @@ Cloud Discovery が、ネットワーク上で実行されるようになった�
     
 - **クラウド アプリの管理**: Cloud App Security は、組織内で使用されているアプリを管理するプロセスで役立ちます。 組織内で使用されているさまざまなパターンやビヘイビアーを特定すると、そのビジネス ステータスや理由付けに従って各アプリを分類するための新しいカスタム アプリ タグを作成することができます。
 これらのタグは、危険なクラウド ストレージ アプリとしてタグ付けされているアプリに対する高いトラフィックの特定といった、特定の監視のために使用できます。 アプリ タグは **[Cloud Discovery 設定]** > **[アプリ タグ]** で管理できます。 これらのタグは、後で Cloud Discovery ページでのフィルター処理や、タグを使用したポリシーの作成に使用できます。
-    
-では、懸念していた何かが起きた場合に自動的にアラートが発生するようなポリシーを作成しましょう。 たとえば、ダウンロードや懸念しているアプリからのトラフィックの急増を把握できる、**アプリ検出ポリシー**を作成できます。 電子メールまたはテキスト メッセージで通知されるようにポリシーを設定できます。 詳細については、[ポリシー テンプレートのリファレンス](policy-template-reference.md)や、[Cloud Discovery ポリシー](cloud-discovery-policies.md)を参照してください。
 
 - **継続的監視**: アプリを十分に調査したら、アプリを監視し、必要に応じてコントロールを提供するポリシーを設定する必要があります。
+
+では、懸念していた何かが起きた場合に自動的にアラートが発生するようなポリシーを作成しましょう。 たとえば、懸念しているアプリからのダウンロードやトラフィックの急増を把握できる、**アプリ検出ポリシー**を作成できます。 電子メールまたはテキスト メッセージで通知されるようにポリシーを設定できます。 詳細については、[ポリシー テンプレートのリファレンス](policy-template-reference.md)や、[Cloud Discovery ポリシー](cloud-discovery-policies.md)を参照してください。
 
 
 [**アプリ検出ポリシー**](cloud-discovery-policies.md)を構成します。 たとえば、**[Anomalous behavior in discovered users policy]\(検出されたユーザー ポリシーの異常な動作\)**、**[Cloud storage app compliance check]\(クラウド ストレージ アプリのコンプライアンス チェック\)**、**[New risky app]\(新しい危険なアプリ\)** などを有効にする必要があります。
