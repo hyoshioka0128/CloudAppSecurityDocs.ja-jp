@@ -126,7 +126,7 @@ Cloud App Security では、アプリを承認したユーザーのグループ 
 
 
 - **企業の範囲を超えた Shadow IT Discovery のための Windows Defender ATP とのネイティブ統合**
-    - Microsoft Cloud App Security は Windows Defender Advanced Threat Protection (ATP) とネイティブに統合して、企業ネットワーク内外でのクラウド アプリの使用に関するデプロイレスのシャドウ IT 検出機能を提供するようになりました。  これにより、企業ネットワーク内にない場合でも、マシンで Cloud Discovery を実行できます。 また、マシン ベースの調査も可能です。リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを調査できます。 詳しくは、「[Windows Defender Advanced Threat Protection と Microsoft Cloud App Security の統合](wdatp-integration.md)」をご覧ください。
+    - Microsoft Cloud App Security は Windows Defender Advanced Threat Protection (ATP) とネイティブに統合して、企業ネットワーク内外でのクラウド アプリの使用に関するデプロイレスのシャドウ IT 検出機能を提供するようになりました。  これにより、企業ネットワーク内にない場合でも、マシンで Cloud Discovery を実行できます。 また、マシン ベースの調査も可能です。リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを調査できます。 詳しくは、「Windows Defender Advanced Threat Protection と [Microsoft Cloud App Security の統合](wdatp-integration.md)」をご覧ください。
 - **暗号化されたファイルの内容の検査**
     - Cloud App Security では、Azure Information Protection を使用して暗号化により保護されているファイルの内容の検査がサポートされるようになりました。 これらの暗号化されたファイルで再分類の提案を検査し、追加の DLP 公開とセキュリティ ポリシー違反を識別できます。 
 
