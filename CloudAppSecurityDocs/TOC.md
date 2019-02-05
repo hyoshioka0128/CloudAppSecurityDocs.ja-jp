@@ -93,6 +93,7 @@
 ### [SIEM の統合](siem.md)
 ### [外部 DLP 統合](icap-stunnel.md)
 ### [Microsoft Flow との統合](flow-integration.md)
+### [iboss との統合](iboss-integration.md)
 ### [API トークン](api-tokens.md)
 # 参照先
 ## [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)

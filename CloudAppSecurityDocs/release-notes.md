@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/27/2019
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,18 +14,42 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4372f4877a9c839b6cc75b374e742a61500f18c
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 191664850596aad2ab4bc7ed0bc78600004382f0
+ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086364"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55689213"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 *適用対象:Microsoft Cloud App Security*
 
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
+
+- **Azure AD でのセッション ポリシーの構成**<br>
+ユーザーの監視やダウンロードのブロックをリアルタイムで行うためのセッション ポリシーを、Azure AD の条件付きアクセスで直接構成することができるようになりました。 高度なセッション ポリシーは、現在も Cloud App Security で直接構成できます。 この展開の手順については、「[Azure AD アプリでのアプリの条件付きアクセス制御の展開](proxy-deployment-aad.md)」を参照してください。 
+
+- **OAuth アプリのクエリ候補と保存されたクエリ** <br>
+OAuth アプリのページにクエリ候補機能が追加されました。調査テンプレートとして直接利用し、OAuth アプリにフィルター処理を適用できます。 クエリ候補には、管理者によって承認されたアプリなど、危険なアプリを識別するためのカスタム フィルターが含まれています。 保存されたクエリ機能では、アクティビティ ログと検出ページで現在利用可能な保存済みのクエリと同様に、カスタム クエリを将来使用するために保存することができます。 
+
+- **Office 365 監査の既定の構成**<br>
+現在、Cloud App Security で Office 365 アクティビティの監視を有効にするには、[Office のセキュリティ/コンプライアンス センター]( https://support.microsoft.com/help/4026501/office-auditing-in-office-365-for-admins)での監視を有効にする必要があります。これは、[Office 365 監査機能の変更]( https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api)によるものです。 この変更は、Cloud App Security で Office 365 の監視をまだ有効にしていない場合にのみ、必要となります。
+
+- **Box のサポートの強化**<br>
+Cloud App Security では、Box に関して 2 つの新しいガバナンス アクションがサポートされるようになりました。
+
+   - **共有リンクの有効期限** – このガバナンス アクションにより、共有リンクがアクティブではなくなる有効期限日を設定できるようになります。 
+
+   - **共有リンクのアクセス レベルの変更** - このガバナンス アクションにより、共有リンクのアクセス レベルを、企業のみ、コラボレーターのみ、パブリックの中で変更できるようになります。
+
+- **OneDrive での複数の場所のサポート**<br>
+Cloud App Security では現在 OneDrive ファイルについて、複数の地理的場所に分散している場合でも、完全な可視性が提供されます。 メインの場所にあるファイルと同様に、別の場所にあるファイルにも保護が適用されます。
+
+- **ポータル ナビゲーションの強化**<br>
+効率と使いやすさを目的として Cloud App Security ポータルが強化され、ナビゲーションの向上、Cloud App Security と Microsoft の他のセキュリティ サービスとの高い整合性が実現しました。
+
+
 
 ## <a name="cloud-app-security-release-141"></a>Cloud App Security リリース 141
 

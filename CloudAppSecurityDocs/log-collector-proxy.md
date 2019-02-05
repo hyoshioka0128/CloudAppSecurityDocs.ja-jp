@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 1/29/2019
+ms.date: 2/2/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,12 +14,12 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d69444a4baa4e861c1ffa14c081f77a584911431
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: b256affd64705b874e68359c51af118b355330df
+ms.sourcegitcommit: 7b1b1e80f90bd12e38a2e14dfea6708341eb0f34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086585"
+ms.lasthandoff: 02/03/2019
+ms.locfileid: "55668930"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを有効にする
 
@@ -46,7 +46,7 @@ Windows または Linux コンピューター上で Docker を実行し、Cloud 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>プロキシのルート CA 証明書をコンテナーにコピーする
 
 ご自身の仮想マシンから、CA 証明書を Cloud App Security のコンテナーにコピーします。 次の例では、コンテナーの名前は *Ubuntu-LogCollector*、CA 証明書の名前は *Proxy-CA.crt* となっています。
-Ubuntu ホスト上でコマンドを実行すると、稼働中のコンテナー内のフォルダーに証明書がコピーされます。
+Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナー内のフォルダーに証明書がコピーされます。
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
