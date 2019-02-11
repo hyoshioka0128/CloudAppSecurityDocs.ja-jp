@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: mbaldwin
-ms.date: 12/10/2018
+ms.date: 2/4/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: cloud-app-security
@@ -14,22 +14,25 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f51db980e6a30f0e2c0f21c25982f6c95b51ea2c
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
+ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177047"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "55740067"
 ---
 # <a name="email-notification-preferences"></a>電子メールの通知の基本設定
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
+この記事では、侵害が検出された場合に、Cloud App Security によってエンド ユーザーに送信された電子メール通知を個人用に設定する方法についての情報を提供します。
+
+> [!NOTE]
+> このカスタマイズは、Cloud App Security の管理者に送信された通知ではなく、エンド ユーザーに送信された通知にのみ影響します。
 
 ## <a name="mailsettings"></a> 電子メールの通知の基本設定  
 
- Microsoft Cloud App Security では、アラートを要求している管理者、および侵害に関係のあるエンド ユーザーに、メール通知が送信されます。 メール通知のパラメーターを設定するには、次の手順のようにします。 迷惑メール対策サービスにホワイトリスト登録すべきMicrosoft Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
+ Microsoft Cloud App Security では、侵害に関係するエンド ユーザーに送信される電子メール通知をカスタマイズすることができます。 メール通知のパラメーターを設定するには、次の手順のようにします。 迷惑メール対策サービスにホワイトリスト登録すべきMicrosoft Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
 
 1. メニュー バーで設定の歯車アイコンをクリックし、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
 
