@@ -4,9 +4,10 @@ description: このトピックでは、アプリ リスク スコアの操作�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9af9ad3d28d2fd126d163544c0153d6ea029a9d1
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450632"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282309"
 ---
 # <a name="working-with-discovery-data"></a>探索データでの作業
 
@@ -50,8 +51,8 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
   
 除外を作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
-2. **[エンティティの除外]** タブをクリックします。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+2. [**エンティティの除外**] タブをクリックします。  
 3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
@@ -67,11 +68,11 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
   
 新しい継続的レポートを作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
 2. **[継続的レポート]** タブをクリックします。  
   
-3. **[レポートの作成]** ボタンをクリックします。  
+3. [**レポートの作成**] ボタンをクリックします。  
   
 4. レポート名を入力します。  
   
@@ -96,13 +97,13 @@ Cloud Discovery データを削除する理由はいくつかあります。 次
   
 Cloud Discovery データを削除するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
-2. **[データの削除]** タブをクリックします。  
+2. [**データの削除**] タブをクリックします。  
   
     操作を続行する前に、データを削除しても問題がないことを確認するのが重要です。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
-3. **[削除]** ボタンをクリックします。  
+3. [**削除**] ボタンをクリックします。  
   
     ![データを削除する](./media/delete-data.png "delete data")  
   

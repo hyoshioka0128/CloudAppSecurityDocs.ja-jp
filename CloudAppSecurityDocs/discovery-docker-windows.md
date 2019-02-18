@@ -4,21 +4,22 @@ description: この記事では、オンプレミス サーバーの Windows で
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 9e645becc555c73dc7403dc3075095f903e760f9
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 1a4f5fdb9bfe807729bf29de370bca913b3409ce
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086109"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282241"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -60,17 +61,17 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 **[データ ソースの追加]** をクリックします。
+     」を参照します。 [**データ ソースの追加**] をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
           
-     b. プロキシまたはファイアウォールの **[名前]** を付けます。
+     b. プロキシまたはファイアウォールの [**名前**] を付けます。
       
       ![ubuntu1](./media/ubuntu1.png)
 
-     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+     c. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
 
      e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
      
@@ -81,11 +82,11 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
      - 調査目的で、各デバイスの状態を個別に監視する。
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
-3. 画面上部の **[ログ コレクター]** タブに移動します。
+3. 画面上部の [**ログ コレクター**] タブに移動します。
 
-   」を参照します。 **[ログ コレクターを追加]** をクリックします。
+   」を参照します。 [**ログ コレクターを追加**] をクリックします。
 
-   b. ログ コレクターに **[名前]** を付けます。
+   b. ログ コレクターに [**名前**] を付けます。
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
@@ -140,13 +141,13 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ### <a name="step-4---verify-the-successful-deployment-in-the-cloud-app-security-portal"></a>ステップ 4 - Cloud App Security ポータルで正常に展開されたことを確認する
 
- **[ログ コレクター]** の表でコレクターの状態を確認し、状態が **[接続済み]** であることを確認します。  **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
+**[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
 
  ![ubuntu9](./media/ubuntu9.png)
 
 **ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
-展開中に問題が発生した場合は、「 [クラウド検出のトラブル シューティング](troubleshooting-cloud-discovery.md)」をご覧ください。
+展開中に問題が発生した場合は、「[Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)」(Cloud Discovery のトラブルシューティング) を参照してください。
 
 ### 省略可能 - カスタムの継続的レポートを作成する<a name="continuous-reports"></a>
 

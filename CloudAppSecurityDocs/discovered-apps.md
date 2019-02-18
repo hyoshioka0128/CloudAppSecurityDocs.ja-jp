@@ -4,9 +4,10 @@ description: このクイックスタートでは、Cloud App Security でリス
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: quickstart
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 645fd8c7-06d0-4f93-a85c-2976e7b3766d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2fd3acfb60e65a75b0ce964a70c612330a79ff79
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 61e1c434c6726c58f4abffe190ce0911ec03730e
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086016"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281266"
 ---
 # <a name="quickstart-work-with-discovered-apps"></a>クイック スタート:検出されたアプリの処理
 
@@ -82,8 +83,8 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
   
 除外を作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
-2. **[エンティティの除外]** タブをクリックします。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+2. [**エンティティの除外**] タブをクリックします。  
 3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
@@ -99,11 +100,11 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
   
 新しい継続的レポートを作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
 2. **[継続的レポート]** タブをクリックします。  
   
-3. **[レポートの作成]** ボタンをクリックします。  
+3. [**レポートの作成**] ボタンをクリックします。  
   
 4. レポート名を入力します。  
   
@@ -129,13 +130,13 @@ Cloud Discovery データを削除する理由はいくつかあります。 次
   
 Cloud Discovery データを削除するには:  
   
-1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
   
-2. **[データの削除]** タブをクリックします。  
+2. [**データの削除**] タブをクリックします。  
   
     操作を続行する前に、データを削除しても問題がないことを確認するのが重要です。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
-3. **[削除]** ボタンをクリックします。  
+3. [**削除**] ボタンをクリックします。  
   
     ![データを削除する](./media/delete-data.png "delete data")  
   

@@ -4,9 +4,10 @@ description: この記事では異常検出ポリシーについて説明し、�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: ab9bc377-d2f5-4f4c-a419-f1728a15d1c7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 40b514ce50cf03bd111adcd615dff5616908d933
-ms.sourcegitcommit: cd0500c7338917ce2a33fab5537966bb34544d19
+ms.openlocfilehash: 74f912e7bffe544f6fd26434a72133e749b199c6
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55689179"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281969"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 

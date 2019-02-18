@@ -4,9 +4,10 @@ description: この記事では、Cloud App Security によって送信された
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 2/4/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: de5474e2fd65d21f3221dd562f63a8ddc3bd9566
-ms.sourcegitcommit: b32fb2c561108cf280cd9098da20b0cb9aab4273
+ms.openlocfilehash: 6066b40cd4de3695a9ed2f1fc0fbd6b460cdf187
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55740067"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56280983"
 ---
 # <a name="email-notification-preferences"></a>電子メールの通知の基本設定
 
@@ -44,7 +45,7 @@ ms.locfileid: "55740067"
    > [rfc822 標準](https://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
 
   
-3. **[メールのデザイン]** では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の設定が含まれます。  
+3. [**メールのデザイン**] では、HTML ファイルを使用すると、システムから送信される電子メール メッセージのカスタマイズやデザインを行えます。 テンプレートに使用される HTML ファイルには次の設定が含まれます。  
   
    - すべてのテンプレートの CSS ファイルは、テンプレート内でインラインである必要があります。  
   
@@ -56,7 +57,7 @@ ms.locfileid: "55740067"
 
         - **%%content%%** - ポリシーにより設定されたエンド ユーザー向けコンテンツのプレースホルダー。  
 
-4. **[テンプレートのアップロード]** をクリックして、作成したファイルを選択します。 
+4. [**テンプレートのアップロード**] をクリックして、作成したファイルを選択します。 
 
 5. **[テスト メールの送信]** をクリックして、作成したテンプレートの例のメールを自分自身に送信し。 電子メールは、ポータルへのログインに使用されたアカウントに送信されます。 テスト メールで、次の項目を確認します。
     - メタデータ フィールド

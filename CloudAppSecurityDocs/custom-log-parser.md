@@ -4,9 +4,10 @@ description: この記事では、カスタム ログ パーサーを使用し�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/10/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 80eef93d11e11025d9e6cf01138bc9fab6a6fc19
-ms.sourcegitcommit: b86c3afd1093fbc825fec5ba4103e3a95f65758e
+ms.openlocfilehash: 4eaa2e05006cdb7ff08a29eec14abbb021980e05
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53177217"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281562"
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 
@@ -32,11 +33,11 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 
  
 カスタム パーサーを構成するには
-1. Cloud App Security ポータルで **[探索]** をクリックし、**[新しいスナップショット レポートの作成]** をクリックします。  
+1. Cloud App Security ポータルで [**探索**] をクリックし、[**新しいスナップショット レポートの作成**] をクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
-2. **[レポート名]** と **[説明]** を入力します。
+2. [**レポート名**] と [**説明**] を入力します。
   
 3. **[データ ソース]** で **[Custom log format (カスタム ログの書式)]** を選択します。  
 
@@ -61,7 +62,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 8. **[トラフィックのログの選択]** で、変更したログ ファイルを選択してアップロードします。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
 
-9. **[作成]** をクリックします。  
+9. [**作成**] をクリックします。  
 
 10. アップロードが完了すると、ログが正常にアップロードされたことを通知するステータス メッセージが画面右上隅に表示されます。  
   
@@ -74,7 +75,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 13. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定の歯車アイコンに移動して **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
-14. **[スナップショット レポートの管理]** を選択し、スナップショット レポートを選択します。
+14. [**スナップショット レポートの管理**] を選択し、スナップショット レポートを選択します。
  
     ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 

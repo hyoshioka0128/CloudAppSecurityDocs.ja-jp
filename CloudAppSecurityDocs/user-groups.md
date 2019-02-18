@@ -4,9 +4,10 @@ description: この記事では、接続されているアプリから Cloud App
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed02285732f363c91159981c5abb3179e45a6de8
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: fb823e9aa13df6710ee3d07ced6b6db97d442eb0
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347282"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282224"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>接続されているアプリからユーザー グループをインポートする
 

@@ -4,9 +4,10 @@ description: この記事では、Windows Defender Advanced Threat Protection �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1741b209e1e76da18297e075dff26d97fb3adcd4
-ms.sourcegitcommit: 475dc75456f4683336e3e4875e3155677e4fb827
+ms.openlocfilehash: 2312ee7cdb7ab7f7e4f9a132442fac397614189b
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/16/2018
-ms.locfileid: "53450564"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281323"
 ---
 # <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Windows Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 

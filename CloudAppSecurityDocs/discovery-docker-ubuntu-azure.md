@@ -4,9 +4,10 @@ description: この記事では、Azure での Ubuntu または RHEL 上で Dock
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/27/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9d3d0aad417050011a5a5780e5563ac3d040eb37
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 5acd24e9cd99abaed17c0bdb88f1a4e9825b0b16
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086449"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282717"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -59,17 +60,17 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 **[データ ソースの追加]** をクリックします。
+     」を参照します。 [**データ ソースの追加**] をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
           
-     b. プロキシまたはファイアウォールの **[名前]** を付けます。
+     b. プロキシまたはファイアウォールの [**名前**] を付けます。
       
       ![ubuntu1](./media/ubuntu1.png)
 
-     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+     c. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
 
      e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
      
@@ -81,11 +82,11 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
      
-3. 画面上部の **[ログ コレクター]** タブに移動します。
+3. 画面上部の [**ログ コレクター**] タブに移動します。
 
-     」を参照します。 **[ログ コレクターを追加]** をクリックします。
+     」を参照します。 [**ログ コレクターを追加**] をクリックします。
 
-     b. ログ コレクターに **[名前]** を付けます。
+     b. ログ コレクターに [**名前**] を付けます。
 
      c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 

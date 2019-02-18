@@ -4,9 +4,10 @@ description: この記事では、Cloud App Security で実行できるすべて
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 1/29/2019
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 037687d0883ed7a50eb4c27df1a551695c175c5f
-ms.sourcegitcommit: c24732bc40350c3cf416640b7d15f3c6f7be371d
+ms.openlocfilehash: 6bce6df97a83e6a0a8e65c4eed8d8ac955ab9a1f
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55086568"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56282071"
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 

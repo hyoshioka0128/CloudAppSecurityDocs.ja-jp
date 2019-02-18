@@ -4,9 +4,10 @@ description: この記事では、アクティビティ ポリシーを作成お
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: mbaldwin
+manager: barbkess
 ms.date: 12/14/2018
 ms.topic: conceptual
+ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
@@ -14,12 +15,12 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c98b01083b964901d3ff2823fff35c9702ddcd17
-ms.sourcegitcommit: 420a0119513e3f4a8651f6a9e66c56fe442a31c0
+ms.openlocfilehash: b1ab9549e4bb4587137f8560b2ef997c7ee1218a
+ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53347300"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56281901"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 
@@ -42,9 +43,9 @@ ms.locfileid: "53347300"
   
 新しいアクティビティ ポリシーを作成するには、次の手順を実行します。  
   
-1. コンソールで、**[制御]**、**[ポリシー]** の順にクリックします。  
+1. コンソールで、[**制御**]、[**ポリシー**] の順にクリックします。  
   
-2. **[ポリシーの作成]** をクリックしてから **[アクティビティ ポリシー]** を選択します。  
+2. [**ポリシーの作成**] をクリックしてから [**アクティビティ ポリシー**] を選択します。  
   
      ![アクティビティ ポリシー メニュー](./media/activity-policy-menu.png "activity policy menu")  
   
@@ -55,7 +56,7 @@ ms.locfileid: "53347300"
 5. **[Activity match parameters]\(アクティビティ一致パラメーター\)** で、ポリシー違反がトリガーされるタイミングを選択します。 1 つのアクティビティがフィルターと一致したらトリガーするか、または指定した数の**反復アクティビティ**が検出されたときにだけトリガーするかを選択します。  
     - **反復アクティビティ**を選択する場合は、**[1 つのアプリで]** を設定できます。 これを設定すると、反復アクティビティが同じアプリで起きた場合にのみ、ポリシー一致がトリガーされます。 たとえば、Box から 30 分以内に 5 回ダウンロードが行われると、ポリシー一致がトリガーされます。  
   
-6. 一致が検出された場合に実行する **[アクション]** を設定します。  
+6. 一致が検出された場合に実行する [**アクション**] を設定します。  
   
 以下で例を見ていきます。  
   
@@ -63,7 +64,7 @@ ms.locfileid: "53347300"
   
      短い期間内に多数のログイン失敗が発生したらアラートを受け取るように、ポリシーを設定できます。 この種のポリシーを構成するには、**[New Activity Policy]\(新しいアクティビティ ポリシー\)** ページで適切なアクティビティ フィルターを選択します。  
   
-     **[アクティビティ フィルター]** フィールドの下で、アラートがトリガーされるパラメーターを設定します。  
+     [**アクティビティ フィルター**] フィールドの下で、アラートがトリガーされるパラメーターを設定します。  
   
      ![複数のサインイン試行失敗のポリシーの例](./media/multiple-failed-log-on-attempts-policy-example.png "複数のログオン試行失敗のポリシーの例")  
   
