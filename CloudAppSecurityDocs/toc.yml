@@ -1,0 +1,232 @@
+items:
+- name: Microsoft Cloud App Security ドキュメント
+  href: index.yml
+- name: 概要
+  items:
+  - name: Microsoft Cloud App Security とは
+    href: what-is-cloud-app-security.md
+  - name: Cloud App Security のデータのセキュリティとプライバシー
+    href: cas-compliance-trust.md
+  - name: 新機能
+    href: release-notes.md
+    items:
+    - name: リリース ノートのアーカイブ
+      href: release-note-archive.md
+  - name: 比較
+    items:
+    - name: Office 365
+      href: editions-cloud-app-security-o365.md
+    - name: Azure AD
+      href: editions-cloud-app-security-aad.md
+- name: クイックスタート
+  items:
+  - name: はじめに
+    href: getting-started-with-cloud-app-security.md
+  - name: 検出されたアプリの処理
+    href: discovered-apps.md
+  expanded: true
+- name: チュートリアル
+  items:
+  - name: シャドウ IT の検出および管理
+    href: tutorial-shadow-it.md
+  - name: 機密情報のダウンロードのブロック
+    href: use-case-proxy-block-session-aad.md
+  - name: 管理者検疫によるファイルの保護
+    href: use-case-admin-quarantine.md
+  - name: Azure Information Protection ラベルを自動的に適用する
+    href: use-case-information-protection.md
+- name: 概念
+  items:
+  - name: アプリの条件付きアクセス制御でのアプリの保護
+    href: proxy-intro-aad.md
+  - name: ダッシュボードの操作
+    href: daily-activities-to-protect-your-cloud-environment.md
+  - name: リスク スコアの操作
+    href: risk-score.md
+- name: 使い方ガイド
+  items:
+  - name: 基本設定
+    href: general-setup.md
+    items:
+    - name: ネットワーク要件
+      href: network-requirements.md
+    - name: 管理者の管理
+      href: manage-admins.md
+      items:
+      - name: 管理者の設定
+        href: admin-settings.md
+    - name: メールの設定
+      href: mail-settings.md
+    - name: ユーザー グループ
+      href: user-groups.md
+    - name: スコープ付きデプロイ
+      href: scoped-deployment.md
+    - name: IP タグと範囲
+      href: ip-tags.md
+  - name: Cloud Discovery のセットアップ
+    href: set-up-cloud-discovery.md
+    items:
+    - name: Windows Defender ATP での統合
+      href: wdatp-integration.md
+    - name: Zscaler との統合
+      href: zscaler-integration.md
+    - name: Cloud Discovery のスナップショット レポートを作成する
+      href: create-snapshot-cloud-discovery-reports.md
+    - name: 継続的なレポートのために自動ログ アップロードを構成する
+      href: discovery-docker.md
+      items:
+      - name: Windows 上の Docker
+        href: discovery-docker-windows.md
+      - name: Ubuntu および RHEL オンプレミス上の Docker
+        href: discovery-docker-ubuntu.md
+      - name: Azure での Ubuntu 上の Docker
+        href: discovery-docker-ubuntu-azure.md
+      - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
+        href: troubleshoot-docker.md
+      - name: プロキシの背後にあるログ コレクター
+        href: log-collector-proxy.md
+      - name: 仮想アプライアンスの使用 - 非推奨
+        href: configure-automatic-log-upload-for-continuous-reports.md
+    - name: カスタム ログ パーサーの使用
+      href: custom-log-parser.md
+    - name: Cloud Discovery を強化する
+      href: cloud-discovery-aad-enrichment.md
+    - name: Cloud Discovery データの匿名化
+      href: cloud-discovery-anonymizer.md
+  - name: アプリを接続する
+    href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+    items:
+    - name: Azure の接続
+      href: connect-azure-to-microsoft-cloud-app-security.md
+    - name: AWS の接続
+      href: connect-aws-to-microsoft-cloud-app-security.md
+    - name: Box の接続
+      href: connect-box-to-microsoft-cloud-app-security.md
+    - name: Dropbox の接続
+      href: connect-dropbox-to-microsoft-cloud-app-security.md
+    - name: G Suite の接続
+      href: connect-google-apps-to-microsoft-cloud-app-security.md
+    - name: Office 365 の接続
+      href: connect-office-365-to-microsoft-cloud-app-security.md
+    - name: Okta の接続
+      href: connect-okta-to-microsoft-cloud-app-security.md
+    - name: Salesforce の接続
+      href: connect-salesforce-to-microsoft-cloud-app-security.md
+    - name: ServiceNow の接続
+      href: connect-servicenow-to-microsoft-cloud-app-security.md
+  - name: Azure AD アプリの Conditional Access App Control のデプロイ
+    href: proxy-deployment-aad.md
+  - name: '[探索]'
+    items:
+    - name: Cloud Discovery にカスタム アプリを追加する
+      href: cloud-discovery-custom-apps.md
+    - name: 検出されたアプリのフィルターとクエリ
+      href: discovered-app-queries.md
+  - name: 調査
+    href: investigate.md
+    items:
+    - name: アクティビティ
+      href: activity-filters.md
+      items:
+      - name: アクティビティ フィルターとクエリ
+        href: activity-filters-queries.md
+    - name: ファイル
+      href: file-filters.md
+      items:
+      - name: データ管理レポートを生成する
+        href: built-in-reports.md
+    - name: '[アカウント]'
+      href: accounts.md
+    - name: OAuth アプリの管理
+      href: manage-app-permissions.md
+    - name: セキュリティ構成
+      href: security-config.md
+    - name: アプリの監視
+      href: monitor-alerts.md
+      items:
+      - name: アラートの管理
+        href: managing-alerts.md
+  - name: Control
+    href: control.md
+    items:
+    - name: ポリシーにるクラウド アプリの制御
+      href: control-cloud-apps-with-policies.md
+      items:
+      - name: Cloud Discovery ポリシー
+        href: cloud-discovery-policies.md
+        items:
+        - name: Cloud Discovery 異常検出ポリシー
+          href: cloud-discovery-anomaly-detection-policy.md
+      - name: アクティビティ ポリシー
+        href: user-activity-policies.md
+      - name: 異常検出ポリシー
+        href: anomaly-detection-policy.md
+      - name: OAuth のポリシー
+        href: app-permission-policy.md
+      - name: ファイル ポリシー
+        href: working-with-the-regex-engine.md
+        items:
+        - name: コンテンツ検査
+          href: content-inspection.md
+          items:
+          - name: 組み込みのコンテンツ検査
+            href: content-inspection-built-in.md
+          - name: データ分類サービスの統合
+            href: dcs-inspection.md
+        - name: RegEx エンジンの操作
+      - name: 条件付きアクセス アプリ制御ポリシー
+        items:
+        - name: アクセス ポリシー
+          href: access-policy-aad.md
+        - name: セッション ポリシー
+          href: session-policy-aad.md
+      - name: ポリシー テンプレート リファレンス
+        href: policy-template-reference.md
+    - name: 接続されているアプリの管理
+      href: governance-actions.md
+    - name: 検出されたアプリの管理
+      href: governance-discovery.md
+    - name: セキュリティ拡張機能を使用して統合する
+      items:
+      - name: Azure Information Protection の統合
+        href: azip-integration.md
+      - name: SIEM の統合
+        href: siem.md
+      - name: 外部 DLP 統合
+        href: icap-stunnel.md
+      - name: Microsoft Flow との統合
+        href: flow-integration.md
+      - name: iboss との統合
+        href: iboss-integration.md
+      - name: API トークン
+        href: api-tokens.md
+- name: 参照先
+  items:
+  - name: クラウド検出のトラブル シューティング
+    href: troubleshooting-cloud-discovery.md
+  - name: エラー メッセージを使用した API コネクタのトラブルシューティング
+    href: troubleshooting-api-connectors-using-error-messages.md
+  - name: コンテンツ検査のトラブルシューティング
+    href: troubleshooting-content-inspection.md
+  - name: SIEM 統合のトラブルシューティング
+    href: troubleshooting-siem.md
+  - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
+    href: troubleshoot-docker.md
+  - name: ポリシーのトラブルシューティング
+    href: troubleshoot-policies.md
+- name: 参照情報
+  items:
+  - name: サポートとトラブルシューティング
+    href: support-and-ts.md
+  - name: Premier サポート ポータル
+    href: https://premier.microsoft.com/
+  - name: Cloud App Security ポータル
+    href: https://portal.cloudappsecurity.com
+  - name: Cloud App Security の購入方法
+    href: https://www.microsoft.com/cloud-platform/cloud-app-security
+ms.openlocfilehash: 564eaaa5992f0f212f23c8979e8db0fe4fc4972f
+ms.sourcegitcommit: fd1bf30af3117d8ad6cf241f3e02ad5e4c4bc9a1
+ms.translationtype: HT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "56409639"
