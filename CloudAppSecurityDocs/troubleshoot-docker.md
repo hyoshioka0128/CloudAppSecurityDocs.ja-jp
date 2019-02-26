@@ -63,7 +63,7 @@ Cloud App Security の Cloud Discovery の Docker 構成を変更する必要が
    ![FTP パスワードの変更](./media/new-certs.png)
 
     - **FTP:** 1 ファイルのみが必要です。 このファイルは、キーと証明書データをこの順序で含む、**pure-ftpd.pem** という名前です。
-    - **Syslog:** **ca.pem**、**server-key.pem、**server-cert.pem** という 3 つのファイルが必要です。 いずれかのファイルが欠けていると、更新は行われません。
+    - **Syslog:** **ca.pem**、\*\*server-key.pem、**server-cert.pem** という 3 つのファイルが必要です。 いずれかのファイルが欠けていると、更新は行われません。
 
 4. ターミナルでの実行: `docker exec -t <collector name> update_certs` このコマンドにより、次のスクリーンショットと同様の出力が表示されます。
 
