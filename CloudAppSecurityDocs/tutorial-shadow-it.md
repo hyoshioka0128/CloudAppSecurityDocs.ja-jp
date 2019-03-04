@@ -14,17 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 748d4daa5f3ca47b652888ee382bc22eff0f340c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281784"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014849"
 ---
-*適用対象: Microsoft Cloud App Security*
-
-
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル: ネットワーク内のシャドウ IT の検出と管理
+
+*適用対象: Microsoft Cloud App Security*
 
 従業員がどれくらいのクラウド アプリを使用していると思うかの問いに対し、IT 管理者は平均して 30 から 40 と答えます。しかし実際には、組織内の従業員は平均して 1,000 種類を超えるアプリを使用しています。 シャドウ IT により、どのアプリが使用されていて、ユーザーのリスク レベルがどれくらいかを把握して特定することができます。 従業員の 80% は、まだレビューがなく、セキュリティとコンプライアンスのポリシーに準拠していない可能性がある未承認のアプリを使用しています。 また、従業員は企業ネットワークの外からリソースやアプリにアクセスできるため、ファイアウォールにルールとポリシーを設定するだけでは、もはや不十分です。 
 
