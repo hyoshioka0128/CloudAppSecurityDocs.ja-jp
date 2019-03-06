@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2312ee7cdb7ab7f7e4f9a132442fac397614189b
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: ea58971cfa8ca79d61bd6a660edf4d34cf38055a
+ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281323"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57254385"
 ---
 # <a name="windows-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Windows Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
@@ -44,7 +44,7 @@ Microsoft Cloud App Security では、Windows Defender ATP とのネイティブ
 - Microsoft Cloud App Security ライセンス
 - Windows Defender ATP ライセンス
 - バージョン 1809 以降を実行している Windows 10 マシン
-
+- **[プレビュー機能]** をオンに切り替え、Cloud App Security でこの機能を有効にする
 
 ## <a name="how-it-works"></a>しくみ
 

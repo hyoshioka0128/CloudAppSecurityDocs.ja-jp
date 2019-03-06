@@ -6,7 +6,7 @@ author: rkarlin
 ms.author: rkarlin
 manager: barbkess
 ms.date: 2/17/2019
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
@@ -15,18 +15,30 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 554983cb38a566c96f8232a614f44d0505a70c75
-ms.sourcegitcommit: fba10a43f04823e4de5050dc94328bf76940656d
+ms.openlocfilehash: 75beec72a8d182e08334d51fc5654da3fc1cea32
+ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56444057"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57014866"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
+この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。 以前の更新は[リリース ノートのアーカイブ](release-note-archive.md)に記載されています。
+
+
+## <a name="cloud-app-security-release-144"></a>Cloud App Security リリース 144
+
+2019 年 2 月 24 日のリリース
+
+- **アプリのインスタンスのスコープ デプロイ** スコープ付きデプロイをアプリのインスタンス レベルで構成できるようになり、細分性とコントロールが向上しました。
+- **ロールの機能強化** 
+   - データ管理者およびセキュリティ オペレーターの Office 365 ロールが、Cloud App Security でサポートされるようになりました。 データ管理者ロールを付与されたユーザーは、Cloud Discovery レポートを表示するだけでなく、関連するすべてのファイルを管理することができます。 セキュリティ オペレーターには、アラートを管理し、ポリシーの構成を表示する権限があります。
+   - セキュリティ閲覧者ロールで SIEM エージェントを構成できるようになり、アクセス許可のスコープ設定が向上しました。
+- **Microsoft Flow のサポート** Cloud App Security で Microsoft Flow 内のユーザー アクティビティを監視できるようになりました。 サポートされるアクティビティは、Flow により Office 365 監査ログにレポートされるアクティビティです。
+- **アラート エンティティのグループ化** 調査を支援するために、[アラート] ページで、アラートに関係していた関連エンティティがグループ化されるようになりました。
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security リリース 143
 
