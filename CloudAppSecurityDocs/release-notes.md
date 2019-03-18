@@ -15,18 +15,20 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10b5b4d4402230aef2f9538b6e10a312248e430f
-ms.sourcegitcommit: e5c09b9f9da0354e6c25e4d325dbd1457c94e5d4
+ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
+ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57346920"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57830508"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。 以前の更新は[リリース ノートのアーカイブ](release-note-archive.md)に記載されています。
+この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
+
+RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
 
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security リリース 143
