@@ -67,6 +67,8 @@ items:
       href: wdatp-integration.md
     - name: Zscaler との統合
       href: zscaler-integration.md
+    - name: iboss との統合
+      href: iboss-integration.md
     - name: Cloud Discovery のスナップショット レポートを作成する
       href: create-snapshot-cloud-discovery-reports.md
     - name: 継続的なレポートのために自動ログ アップロードを構成する
@@ -161,7 +163,7 @@ items:
       - name: OAuth のポリシー
         href: app-permission-policy.md
       - name: ファイル ポリシー
-        href: working-with-the-regex-engine.md
+        href: data-protection-policies.md
         items:
         - name: コンテンツ検査
           href: content-inspection.md
@@ -170,7 +172,8 @@ items:
             href: content-inspection-built-in.md
           - name: データ分類サービスの統合
             href: dcs-inspection.md
-        - name: RegEx エンジンの操作
+          - name: RegEx エンジンの操作
+            href: working-with-the-regex-engine.md
       - name: 条件付きアクセス アプリ制御ポリシー
         items:
         - name: アクセス ポリシー
@@ -183,20 +186,22 @@ items:
       href: governance-actions.md
     - name: 検出されたアプリの管理
       href: governance-discovery.md
-    - name: セキュリティ拡張機能を使用して統合する
+    - name: Azure Information Protection の統合
+      href: azip-integration.md
+    - name: 外部ソリューションと統合する
       items:
-      - name: Azure Information Protection の統合
-        href: azip-integration.md
       - name: SIEM の統合
         href: siem.md
       - name: 外部 DLP 統合
         href: icap-stunnel.md
-      - name: Microsoft Flow との統合
-        href: flow-integration.md
-      - name: iboss との統合
-        href: iboss-integration.md
-      - name: API トークン
+    - name: プロセスとワークフローを自動化する
+      items:
+      - name: REST API を使う
         href: api-tokens.md
+      - name: API を使ってアクティビティを調査する
+        href: investigate-activities-api.md
+      - name: Microsoft Flow を使う
+        href: flow-integration.md
 - name: 参照先
   items:
   - name: クラウド検出のトラブル シューティング
@@ -215,6 +220,8 @@ items:
   items:
   - name: リリース ノートのアーカイブ
     href: release-note-archive.md
+  - name: ライセンスのデータシート
+    href: https://aka.ms/mcaslicensing
   - name: サポートとトラブルシューティング
     href: support-and-ts.md
   - name: Premier サポート ポータル
@@ -223,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Cloud App Security の購入方法
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 1e60193523c6b8c9b456f89c18d77a5de32a3352
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 7bda89d1d13dd10ab2c9ea981edf16959437bb2f
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014840"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476537"
