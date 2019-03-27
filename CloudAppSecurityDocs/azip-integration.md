@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2d17d646479e9686c2ebbeb3c4675cf8dff2ee1d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cc861a9b9c655039bc9fa87298d553a7bf9a9294
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281663"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476673"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -92,7 +92,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 
 > [!NOTE] 
-> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection の分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つの**コンテンツ検査ファイル ポリシー**が必要になります。 1 つもない場合は、新しい**ファイル ポリシー**を作成し、すべてのプリセット フィルターを削除してから、**[コンテンツ検査]** オプションを確認します。 次に、**[コンテンツ検査]** の **[プリセットの式と一致するファイルを含む]** をクリックし、定義済みの値を選択してから、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
+> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection 分類ラベルの既存のファイルをスキャンするには、少なくとも 1 つが必要**ファイル ポリシー**コンテンツ検査が含まれます。 なし がある場合は、新規作成**ファイル ポリシー**、すべてのプリセット フィルターを削除**検査方法**選択**組み込み DLP**します。 **コンテンツ検査**フィールドで、**プリセットの式に一致するファイルを含める**ポリシーを保存し、定義済みの値を選択します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 #### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
 既定では、Cloud App Security では、自分の組織内で定義した分類ラベルだけでなく、他の組織で定義した外部の分類ラベルもスキャンされます。 
@@ -137,7 +137,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
    ![ラベルを適用する](./media/aip-gov-action.png)
 
 > [!NOTE]
-> ファイル ポリシーを介して Azure Information Protection のラベルを自動的に適用する機能は、強力な機能です。 多数のファイルにラベルを誤って適用することを防ぐための安全対策として、各テナントでアプリごとに 1 日に実行できる**ラベルの適用**アクションに 100 回という上限があります。 1 日の上限に達すると、ラベルの適用アクションは一時的に停止し、次の日 (UTC 12:00 を過ぎた時点) になると自動的に続行します。 テナントの上限を引き上げるには、[Cloud App Security のサポートにお問い合わせ](mailto:cascoresupport@microsoft.com)ください。
+> ファイル ポリシーを介して、Azure Information Protection のラベルを自動的に適用する機能は強力です。 お客様が多数のファイルに誤ってラベルを適用することを防ぐための安全策として、アプリごと、テナントごとに 1 日に実行できる**ラベルの適用**操作は 100 回に制限されています。 1 日の上限に達すると、ラベルの適用操作は一時的に停止し、翌日 (UTC 12 時 00分 を過ぎてから) に自動的に再開します。 テナントの上限を引き上げるには、[Cloud App Security のサポートにお問い合わせください](mailto:cascoresupport@microsoft.com)。
 
 ### <a name="control-file-exposure"></a>ファイルの公開を制限する
 

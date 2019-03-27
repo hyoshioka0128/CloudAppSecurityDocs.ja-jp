@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/3/2019
+ms.date: 3/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffb0a07daba385f000094273cb0afd9c85eda1f8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281646"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476622"
 ---
 # <a name="manage-oauth-apps"></a>OAuth アプリの管理
 
@@ -88,7 +88,7 @@ Cloud App Security ポータルで、**[調査]**、**[OAuth アプリ]** の順
 
 ## <a name="revoke-app-and-notify-user"></a>アプリを取り消し、ユーザーに通知する
 
-G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、アクセス許可を変更する必要があることをユーザーに通知したりすることができます。 
+G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、アクセス許可を変更する必要があることをユーザーに通知したりすることができます。 アクセス許可を取り消すときに、Azure AD では、[エンタープライズ アプリケーション] の下のアプリケーションに付与されたすべてのアクセス許可を削除します。
 
 1. **[OAuth アプリ]** ページで、アプリの行の末尾にある 3 つの点をクリックし、**[ユーザーに通知]** を選択します。 既定では、ユーザーに次のように通知されます。*あなたはアプリにご自分の G Suite アカウントへのアクセスを許可しています。このアプリはあなたが所属する組織のセキュリティ ポリシーに相反します。自分の G Suite アカウントにアクセスする許可を与えるべきか、取り消すべきか再検討してください。アプリのアクセスを取り消すには、 https://security.google.com/settings/security/permissions?hl=en&pli=1 に移動して、アプリを選択し、右側のメニュー バーの [アクセスの取り消し] をクリックします。* 送信メッセージはカスタマイズできます。
 2. また、ユーザーのためにそのアプリを使用するアクセス許可を取り消すこともできます。 テーブル内のアプリ行の末尾にあるアイコンをクリックして、**[アプリを取り消す]** を選択します。 

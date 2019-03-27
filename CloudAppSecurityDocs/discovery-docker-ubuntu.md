@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 3/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7e0c1d5bc257c6f4c9586a607ccaf26b7c5d6aea
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4085cff828e8af6190bb0a46ff0306e2c64d87ab
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282020"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476605"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
@@ -30,11 +30,11 @@ ms.locfileid: "56282020"
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS:Ubuntu 14.04、16.04、および 18.04、または RHEL 7.2 以降 
+- OS:Ubuntu 14.04、16.04、および 18.04;RHEL 7.2 以降、または CentOS 7.2 以降 
 
 - ディスク領域:250 GB
 
-- CPU:2 で保護されたプロセスとして起動されました
+- CPU:2
 
 - RAM:4 GB
 
@@ -72,10 +72,10 @@ ms.locfileid: "56282020"
 
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
+     e. **[レシーバーの種類]** に **[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、**[Syslog – TLS]** のいずれかを設定します。
      
      >[!NOTE]
-     >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
+     >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
 
       f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。 ネットワーク デバイスごとに専用のデータ ソースを設定することをお勧めします。これにより、次のことができるようになります。
      - 調査目的で、各デバイスの状態を個別に監視する。
@@ -89,7 +89,7 @@ ms.locfileid: "56282020"
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-   d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
+   d. コレクターに接続するすべての**データ ソース**を選択し、**[更新]** をクリックして構成を保存し、次の展開手順を確認します。
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -104,9 +104,9 @@ ms.locfileid: "56282020"
    ![ログ コレクターを作成する](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
-次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
+次のステップは、Ubuntu での展開を説明しています。 その他のプラットフォームの展開手順は、少し異なります。
 
-1. Ubuntu コンピューターでターミナルを開きます。
+1. Ubuntu マシンでターミナルを開きます。
 
 2. コマンド `sudo -i` を使ってルート権限に変更します。
 
@@ -150,7 +150,7 @@ ms.locfileid: "56282020"
 
  ![ubuntu9](./media/ubuntu9.png)
 
-**ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
+**[ガバナンス ログ]** に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
 展開中に問題が発生した場合は、「[Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)」(Cloud Discovery のトラブルシューティング) を参照してください。
 
