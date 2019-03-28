@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 85a9071abc625e580e27b2a01220ac76104bda45
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 5c3cd5a1583260fa06a5f00805a7695cda8d44eb
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830457"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543622"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security のサポートとトラブルシューティング
 
@@ -68,7 +68,7 @@ Microsoft では、Microsoft Cloud App Security 向けに、全体的な技術�
 
 5.  情報を確認し、それが正しいことを確かめたら、**[作成]** を選択してサポート リクエストを送信します。
 
-**注:** 課金やサブスクリプションの質問があれば、サポートを取得し、ケースを開くことができます、 [Microsoft 365 管理センター](https://portal.office.com/Support/SupportEntry.aspx)します。
+**注:** 課金やサブスクリプションの質問があれば、サポートを取得し、ケースを開くことができます、 [Microsoft 365 管理センター](https://admin.microsoft.com/Support/SupportEntry.aspx)します。
 
 ### <a name="view-open-support-requests"></a>未解決のサポート リクエストを確認する
 

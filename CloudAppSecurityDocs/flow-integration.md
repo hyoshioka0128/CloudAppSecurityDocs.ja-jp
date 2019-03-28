@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 337582af366aad63589f20362b2afb20ec80f11d
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 497272a2072cf61349c1b0c9ccf49644b7f91665
+ms.sourcegitcommit: eba8c158d34198363a8da02b3cb6258df10f7673
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476554"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543126"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>カスタム アラート オートメーションのための Flow との統合 - プレビュー
 
@@ -35,7 +35,7 @@ Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-
 
 Cloud App Security 単体で、ポリシーを定義するときに、ユーザーの停止やファイルを非公開にするなどの定義済みのガバナンス オプションを提供します。 Cloud App Security コネクタを使用して Microsoft Flow でプレイブックを作成すると、ワークフローを作成してポリシー用にカスタマイズしたガバナンス オプションを有効にすることができます。 Flow でプレイブックが作成されたら、それを Cloud App Security でポリシーと関連付けて、アラートを Flow に送信するだけです。 Microsoft Flow では、組織用にカスタマイズされたワークフローを作成するために複数のコネクタと条件が用意されています。 
 
-[Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/#/providers/microsoft.powerapps/apis/shared_cloudappsecurity/apioperations/mcas_on_alert_generated)のトリガーとアクション フローでサポートを自動化します。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。 
+[Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/)のトリガーとアクション フローでサポートを自動化します。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。 
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Microsoft Flow でプレイブックを作成する方法
 
@@ -69,4 +69,3 @@ Cloud App Security 単体で、ポリシーを定義するときに、ユーザ�
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
