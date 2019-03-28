@@ -40,12 +40,12 @@ items:
     href: daily-activities-to-protect-your-cloud-environment.md
   - name: リスク スコアの操作
     href: risk-score.md
-- name: 使い方ガイド
+- name: 操作方法ガイド
   items:
   - name: 基本設定
     href: general-setup.md
     items:
-    - name: ネットワーク要件
+    - name: ネットワークの要件
       href: network-requirements.md
     - name: 管理者の管理
       href: manage-admins.md
@@ -143,7 +143,7 @@ items:
     - name: アプリの監視
       href: monitor-alerts.md
       items:
-      - name: アラートの管理
+      - name: アラートを管理する
         href: managing-alerts.md
   - name: Control
     href: control.md
@@ -202,7 +202,7 @@ items:
         href: investigate-activities-api.md
       - name: Microsoft Flow を使う
         href: flow-integration.md
-- name: 参照先
+- name: リファレンス
   items:
   - name: クラウド検出のトラブル シューティング
     href: troubleshooting-cloud-discovery.md
@@ -216,7 +216,7 @@ items:
     href: troubleshoot-docker.md
   - name: ポリシーのトラブルシューティング
     href: troubleshoot-policies.md
-- name: 参照情報
+- name: リソース
   items:
   - name: リリース ノートのアーカイブ
     href: release-note-archive.md
@@ -230,9 +230,9 @@ items:
     href: https://portal.cloudappsecurity.com
   - name: Cloud App Security の購入方法
     href: https://www.microsoft.com/cloud-platform/cloud-app-security
-ms.openlocfilehash: 7bda89d1d13dd10ab2c9ea981edf16959437bb2f
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ffa2bbb2a6efbc829fb68c7eee8a1b1eb1db4bef
+ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476537"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58543605"

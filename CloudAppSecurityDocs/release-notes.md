@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 2/17/2019
+ms.date: 3/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b8d55cfc5034048a3dbd4833f7d663f7d1f8dbce
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
+ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830508"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "58476656"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -28,7 +28,34 @@ ms.locfileid: "57830508"
 
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
-RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+with+microsoft+cloud+app+security%3F+-+Azure%22&locale=en-us`
+RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-145"></a>Cloud App Security リリース 145
+
+リリース日: 2019 年 3 月 17 日
+
+- **Windows Defender ATP 統合が GA になりました** <br>
+昨年に、[Windows Defender Advanced Threat Protection との統合](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)が発表されました。これにより、組織内でのシャドウ IT の検出が強化され、企業ネットワークを越えて拡張されます。 このユニークな統合の一般提供が開始され、[1 回のクリックで有効化できる](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG)ようになったことをお知らせいたします。
+- **Dynamics 365 のサポート** <br>Cloud App Security に Dynamics 365 のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとこれらのアプリ内に格納された機密コンテンツを保護できるようになりました。 
+
+## <a name="cloud-app-security-release-144"></a>Cloud App Security リリース 144
+
+リリース日: 2019 年 3 月 3 日
+
+- **ハイブリッド環境用の統一された SecOps 調査**<br> 多くの組織にハイブリッド環境があるため、攻撃はクラウド内で始まってからオンプレミスにピボットします。つまり、SecOps チームは複数の場所からこれらの攻撃を調査する必要があります。 Microsoft Cloud App Security、Azure ATP、Azure AD Identity Protection など、クラウドとオンプレミスのソースからのシグナルを組み合わせ、統一された ID とユーザー情報を 1 つのコンソールで提供することで、Microsoft はセキュリティ アナリストを支援し、セキュリティ ソリューション間での切り替えを不要にします。 これによって、より多くの時間と、優れた判断を下すための適切な情報が SecOps チームに与えられ、実際の ID の脅威とリスクが積極的に修復されます。 詳細については、「[Unified SecOps Investigation for Hybrid Environments (ハイブリッド環境用の統一された SecOps 調査)](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Unified-SecOps-Investigation-for-Hybrid-Environments/ba-p/360850)」をご覧ください
+
+
+- **マルウェア検出のためのサンドボックス機能** (段階的なロールアウト)<br>
+Cloud App Security のマルウェア検出機能は、高度なサンドボックス テクノロジを使ってゼロデイ マルウェアを識別する機能を追加するよう拡張中です。<br>
+この機能の一部として、Cloud App Security では不審なファイルを自動的に識別し、それらを爆発させて、不審なファイルの動作や、悪意があるファイル (マルウェア) の指標を検索します。 <br>
+この変更の一環として、マルウェア検出ポリシーに検出の種類フィールドが追加されました。これを使うと、サンドボックスだけでなく脅威インテリジェンスでもフィルター処理できるようになります。
+- **条件付きアクセスの更新**<br> アプリの条件付きアクセス制御に、次のアクティビティを監視およびブロックする機能が追加されました。
+    - 任意のアプリでのファイルのアップロード - 既知のマルウェアの拡張機能のアップロードを防いだり、ユーザーがアップロード前に AIP でファイルを保護することを保証したりするシナリオなどを実現します。
+    - 任意のアプリでのコピーと貼り付け - データ窃盗に対する堅牢な制御を仕上げます。これには既に、ダウンロード、印刷、および共有などのカスタム アクティビティが含まれています。
+    - メッセージの送信 - パスワードなどの PII データが、Slack、Salesforce、Workplace by Facebook などの人気のあるコラボレーション ツールで共有されないことを保証します。
+- 人気のあるリアルタイム監視や承認されたアプリの制御を、組織が簡単に実現できるようにするための組み込みのテンプレートが、セッション ポリシーに含まれるようになりました。**[リアルタイムのコンテンツ検査に基づいてアップロードをブロックします]** などです。
+
 
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security リリース 143
