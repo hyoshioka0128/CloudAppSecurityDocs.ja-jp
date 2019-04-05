@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/17/2019
+ms.date: 3/31/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 71e6de2b5894c3d0600f0fad6b4c1972868a1586
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: ba30d7e563b7b36c8be6bfcb30eccbe93cba1cd2
+ms.sourcegitcommit: 465b386d56f64d81a72fa03326c9ad19079362cc
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476656"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58763700"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -30,6 +30,19 @@ ms.locfileid: "58476656"
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+
+## <a name="cloud-app-security-release-146"></a>Cloud App Security リリース 146
+
+リリース日: 2019 年 3 月 31 日
+
+- **あり得ない移動に関する強化**<br>
+隣接する国専用のサポートによって、あり得ない移動の検出が強化されました。
+- **汎用 CEF パーサーの追加属性のサポート**<br>
+汎用 CEF 形式の Cloud Discovery ログ パーサー サポートが強化され、追加の属性がサポートされるようになりました。
+- **Cloud Discovery レポートに対するアクセスの範囲指定**<br>
+検出管理者ロールに加え、特定の検出レポートに対するアクセスを範囲指定できます。 この機能強化によって、特定のサイトや業務部門のデータに対するアクセス許可を構成できるようになります。
+- **新しいロールのサポート:グローバルな閲覧者**<br>
+Microsoft Cloud App Security で、Azure AD のグローバルな閲覧者ロールがサポートされるようになりました。 グローバルな閲覧者は、Microsoft Cloud App Security の全面的な読み取り専用アクセスを保持しますが、設定の変更やアクションの実行はできません。
 
 ## <a name="cloud-app-security-release-145"></a>Cloud App Security リリース 145
 
@@ -60,7 +73,7 @@ Cloud App Security のマルウェア検出機能は、高度なサンドボッ�
 
 ## <a name="cloud-app-security-release-143"></a>Cloud App Security リリース 143
 
-2019 年 2 月 17 日のリリース
+リリース日: 2019 年 2 月 17 日
 
 - **アプリのインスタンスのスコープ デプロイ** スコープ付きデプロイをアプリのインスタンス レベルで構成できるようになり、細分性とコントロールが向上しました。
 - **ロールの機能強化** 
@@ -392,7 +405,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 ## <a name="cloud-app-security-release-117"></a>Cloud App Security リリース 117
 2018 年 2 月 20 日のリリース
 
--   Cloud App Security と Azure Information Protection との統合が深まり、G Suite 内のファイルを保護できるようになりました。 このパブリック プレビュー機能を使用すると、G Suite のファイルをスキャンし、分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
+-   Cloud App Security と Azure Information Protection との緊密な統合により、G Suite のファイルを保護できるようになりました。 このパブリック プレビュー機能を使用すると、G Suite のファイルをスキャンし、分類したり、Azure Information Protection ラベルを保護のために自動的に適用したりできます。 詳細については、[Azure Information Protection の統合](azip-integration.md)に関するページを参照してください。
 
 -   Cloud Discovery で [Digital Arts i-FILTER](https://www.daj.jp/en/products/if/) がサポートされました。
 
