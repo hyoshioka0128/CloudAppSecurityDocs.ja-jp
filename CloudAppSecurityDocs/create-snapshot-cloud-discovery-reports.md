@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9c819aa1e9b71007a158a388272d1f37cf9412df
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4381c872d9e17294e1a5b8767243f9afc6e797b0
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281340"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233566"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 
@@ -39,11 +39,11 @@ ms.locfileid: "56281340"
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
-3. [**レポート名**] と [**説明**] を入力します。
+3. **[レポート名]** と **[説明]** を入力します。
   
     ![新しいスナップショット レポート](./media/new-snapshot-report.png) 
 
-4. ログ ファイルのアップロード元にする [**データソース**] を選択します。  
+4. ログ ファイルのアップロード元にする **[データソース]** を選択します。  
   
 5. ログの形式を調べ、ダウンロードできるサンプル ログに従ってログが正しく書式設定されているかどうかを確認します。 **[View and verify]\(表示して確認\)**、**[サンプル ログのダウンロード]** の順にクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 
@@ -56,7 +56,7 @@ ms.locfileid: "56281340"
 
 6. アップロードする**トラフィック ログを選択**します。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
-7. [**作成**] をクリックします。  
+7. **[作成]** をクリックします。  
 
 8. アップロードが完了すると、ログが正常にアップロードされたことを通知するステータス メッセージが画面右上隅に表示されます。  
   
@@ -69,7 +69,7 @@ ms.locfileid: "56281340"
 11. ログが正常にアップロードされると、ログ ファイルの処理が正常に完了したことを知らせる通知が表示されます。 この時点で、ステータス バーのリンクをクリックするか、設定の歯車アイコンに移動して **[Cloud Discovery の設定]** を選択することで、レポートを表示できます。   
   
      ![Discovery の [設定] タブ](./media/discovery-settings-tab.png)
-12. [**スナップショット レポート**] を選択し、スナップショット レポートを選択します。
+12. **[スナップショット レポート]** を選択し、スナップショット レポートを選択します。
  
      ![スナップショット レポートの管理](./media/snapshot-report-managment.png)
 
@@ -91,7 +91,7 @@ Cloud Discovery で、ログに含まれていない属性の表示や分析は�
 
 
 Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たす必要があります。
-1. データ ソースがサポートされている (次の一覧を参照)。
+1. [データ ソースがサポートされている](set-up-cloud-discovery.md#supported-firewalls-and-proxies)します。
 2. ログの形式が期待されている標準の形式と一致する (形式はログ ツールのアップロードで確認されます)。
 3. イベントが 90 日以上経過していない。
 4. ログ ファイルが有効で、送信トラフィック情報を含む。

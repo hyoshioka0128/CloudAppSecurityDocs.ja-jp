@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/27/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90cc081f33b30ac3b4774c7292752d1c27dddd0c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 83e2adb5d0890c926843403a6bdf1d0087abb007
+ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281232"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59233549"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -62,7 +62,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - ユーザー アクセス許可を持つ API トークンのアクセス許可のみ
   - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ 
 
-- **グループ管理者:** ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
+- **ユーザー グループの管理者:** ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
 
   - アクティビティ ページ - グループのユーザーに関するアクティビティのみ
   - アラート - グループのユーザーに関連するアラートのみ
@@ -75,7 +75,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - グループのユーザーを含む API トークンのアクセス許可のみ
   - ガバナンス アクション - グループの特定のユーザーの場合のみ
 
-- **グローバル検出管理者:** すべての Cloud Discovery の設定およびデータを表示および編集できます。 グローバル検出管理者には、次のアクセス許可があります。
+- **クラウド検出のグローバル管理者:** すべての Cloud Discovery の設定およびデータを表示および編集できます。 グローバル検出管理者には、次のアクセス許可があります。
 
   - 設定 -  
      -  システム設定 - 表示のみ
@@ -91,6 +91,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - アクセス許可なし
   - ガバナンス アクション - Cloud Discovery 関連のアクションのみ
 
+- **Cloud Discovery レポート管理者:** 特定の Cloud Discovery レポートのみでの取引が選択されている Microsoft Cloud App Security ですべてのデータを表示する権限があります。 たとえばに付与できますだれかが管理者権限を持って、継続的レポート Windows Defender ATP から。 検出の管理とアプリケーション カタログにそのデータ ソースに関連する Cloud Discovery データのみが表示されます。
+この管理者がアクセスするにはない、**アクティビティ**または**ファイル**ページとポリシーへのアクセス制限です。
+
+- **グローバル リーダー:** Microsoft Cloud App Security のすべての側面を完全に読み取り専用アクセスがあります。 設定を変更、またはアクションを実行できません。
+ 
 ## <a name="override-admin-permissions"></a>管理者のアクセス許可をオーバーライドする
 
 Azure Active Directory または Office 365 の管理者のアクセス許可をオーバーライドするには、手動で Cloud App Security にユーザーを追加し、ユーザーにアクセス許可を割り当てます。
