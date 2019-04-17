@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/22/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09555165697ee66a84c99d4f3a5790f22b4d17d6
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 764ca55b076c837b784ddc82ef3b4337bc9a8fcd
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476980"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622356"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco WebEx を Microsoft Cloud App Security に接続します。
 
@@ -30,7 +30,9 @@ ms.locfileid: "58476980"
  
 ## <a name="prerequisites"></a>前提条件
 
-接続専用のサービス アカウントを作成することをお勧めします。 これにより、ように、このアカウントから実行中として WebEx で実行されたガバナンス アクションが WebEx で送信されるメッセージを削除することを確認することができます。 それ以外の場合、Cloud App Security を WebEx に接続した管理者の名前は、操作を実行したユーザーとして表示されます。  
+- 接続専用のサービス アカウントを作成することをお勧めします。 これにより、ように、このアカウントから実行中として WebEx で実行されたガバナンス アクションが WebEx で送信されるメッセージを削除することを確認することができます。 それ以外の場合、Cloud App Security を WebEx に接続した管理者の名前は、操作を実行したユーザーとして表示されます。  
+- 完全な管理者を持っている必要があります**と**WebEx でのコンプライアンス管理者のアクセス許可。
+
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>WebEx を Cloud App Security に接続する方法  
   

@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/20/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,20 @@ ms.assetid: 137e0630-5440-4c49-bfe4-48bbc64575e2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bba266d0e51748d3aab1e4d2e4a77b7e35e79998
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: 445c8ac7d535e349ed3c8bee7af100062c76d184
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476622"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622390"
 ---
 # <a name="manage-oauth-apps"></a>OAuth アプリの管理
 
 *適用対象:Microsoft Cloud App Security*
 
 組織内のビジネス ユーザーがインストールするサード パーティ製の生産性アプリの多くでは、ユーザー情報とデータにアクセスし、Office 365、G Suite、Salesforce などの他のクラウド アプリにユーザーの代理としてサインインするためのアクセス許可が要求されます。 ユーザーは、こうしたアプリをインストールする場合、アプリへのアクセス許可の付与などの詳細を厳密に確認せずに、承認の操作を行いがちです。 IT 部門がこうしたアプリケーションのセキュリティ上のリスクと生産性のメリットとを比較検討するための十分な知識を持っていない場合、この問題はさらに重大になります。 サード パーティ製アプリのアクセス許可を承認することは、組織にとって潜在的なセキュリティ リスクになるため、ユーザーが付与するアプリのアクセス許可を監視することで、ユーザーとアプリケーションの保護に欠かせない可視性と制御が得られます。 Microsoft Cloud App Security アプリのアクセス許可によって、Office 365 データ、G Suite データ、および Salesforce データへのアクセス権がある、ユーザーがインストールした OAuth アプリケーションを表示できます。 Cloud App Security では、アプリに備わっているアクセス許可、およびこれらのアプリに Office 365、G Suite、および Salesforce のアカウントへのアクセス権を付与したユーザーが示されます。 アプリのアクセス許可は、ユーザーのアクセスを許可するアプリと、禁止するアプリを判断するのに役立ちます。
+
+Oauth アプリの調査方法の詳細については、次を参照してください。 
 
 ## <a name="working-with-the-oauth-apps-page"></a>OAuth アプリ ページでの操作
 
