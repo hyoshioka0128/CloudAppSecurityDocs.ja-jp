@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 3/31/2019
+ms.date: 04/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 277be79d2d9621f84b97c7fca84b56e0110d27ae
-ms.sourcegitcommit: 28b3ab878b1fc403d2c3b617e989f711320530d4
+ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
+ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59233583"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59622441"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -29,6 +29,18 @@ ms.locfileid: "59233583"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-147"></a>Cloud App Security リリース 147
+
+リリース日: 2019 年 4 月 14 日
+
+- **新しい Cloud Discovery ログ パーサー**<br>Cloud App Security の Cloud Discovery に、Palo Alto LEEF ログ形式をサポートする組み込みのログ パーサーが含まれるようになりました。 
+
+- **セッション ポリシーの更新**
+    - **セッション ポリシーの追加のコンテンツ検査方法**:<br>セッション ポリシーを設定するときに、ファイルのコンテンツ検査方法として、データ分類サービスを選択できるようになりました。 データ分類サービスでは、広範囲の機密の種類が組み込みでユーザーに提供され、機密情報を識別するために使用できます。
+    - **セッション ポリシーでのファイルのアクセス許可の制御の強化**:<br>Cloud App Security を使ってダウンロードを制御するセッション コントロールを作成する場合、自分のクラウド アプリからのダウンロードに関して、ユーザーごとにアクセス許可 (読み取り専用など) を自動的に適用できるようになりました。 これにより、柔軟性のレベルが大きく上がり、事前に構成された企業のラベルを超えて情報を保護できるようになります。
+    - **大きなファイルのダウンロードの制御**:<br>セッション ポリシーでコンテンツ検査が有効になっている場合、ユーザーが非常に大きなファイルをダウンロードしようとしたときの動作を制御できるようになりました。 ダウンロード時にスキャンするにはファイルが大きすぎる場合は、それをブロックするか、許可するかを選択できます。
+
 
 ## <a name="cloud-app-security-release-146"></a>Cloud App Security リリース 146
 
