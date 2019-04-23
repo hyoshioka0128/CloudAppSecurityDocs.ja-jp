@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 12/10/2018
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 966cefac08c84c92a4cdd60cb9d75c6f3af5525d
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: cb34e67744c8d2f316eff09641e379ca562bd71f
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904296"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 
@@ -28,13 +28,18 @@ ms.locfileid: "56281510"
 
 この記事では、Cloud Discovery のエラー一覧と、各エラーの推奨される解決策について説明します。
 
+## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP 統合
+
+ないと Cloud App Security では、Microsoft Defender ATP を統合して、統合の結果が表示されない場合、 **Win10 エンドポイント ユーザー**レポート - に接続しているマシンは、Windows 10 のバージョンは 1809 かどうかを確認または後は、データの前に、必要なために必要な 2 時間を待機したとします。
+
+
 ## <a name="log-parsing-errors"></a>ログ解析エラー
 
 ガバナンス ログを使用して Cloud Discovery ログの処理を追跡できます。 この記事では、表示される可能性がある各エラーに対する解決方法について説明します。
 
 ### <a name="governance-log-errors"></a>ガバナンス ログ エラー
 
-|Error|[説明]|解決方法|
+|[エラー]|説明|解決策|
 |----|----|----|
 |サポートされていないファイルの種類|アップロードしたファイルが有効なログ ファイルではありません (画像ファイルなど)。|ファイアウォールまたはプロキシから直接エクスポートされた **text**、**zip、または **gzip** ファイルをアップロードします。|
 |ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しませんでした。|1.ログが破損していないことを確認します。 <br /> 2.ログと、アップロード ページに表示されるサンプル形式とを比較し、照合します。|
@@ -49,13 +54,13 @@ ms.locfileid: "56281510"
 |FTP でログ コレクターに接続できません| 1.SSH の資格情報ではなく、FTP の資格情報を使用していることを確認します。 <br />2.使用している FTP クライアントが SFTP に設定されていないことを確認します。  |
 |コレクター構成を更新できませんでした | 1.最新のアクセス トークンを入力したことを確認します。 <br />2.ファイアウォールで、ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。|
 |コレクターに送信されたログがポータルに表示されません | 1.ガバナンス ログに失敗した解析タスクがあるかどうかを確認します。  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2.ない場合は、ポータルでデータ ソースとログ コレクターの構成を確認します。 <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3.オンプレミス ログ コレクター コンピューターのローカル構成を確認します。  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4. ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。 |
-|ログ コレクターの状態:作成日 | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
-|ログ コレクターの状態:Disconnected | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
-
+|ログ コレクターの状態:Created | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
+|ログ コレクターの状態:切断されています。 | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
+|最新のコレクター イメージをプルできませんでした。| Docker のデプロイ中に、このエラーが発生した場合、ホスト コンピューターに十分なメモリがないことがある可能性があります。 これを確認するには、ホストでこのコマンドを実行します。`docker pull microsoft/caslogcollector`します。 このエラーが返された場合:`failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device`より多くの領域を提供する、ホスト コンピューターの管理者にお問い合わせください。|
 
 ## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー
 
-|問題|解決方法|
+|問題点|解決策|
 |----|----|
 |Discovery データのアップロードと解析は成功しましたが、Cloud Discovery ダッシュボードの表示が空です|ダッシュボードは、ログに含まれていないデータでフィルターされているため、表示されるデータがない場合があります。 Cloud Discovery ダッシュボードのフィルターを変更して、別の種類のデータが結果に表示されるようにします。|
 
