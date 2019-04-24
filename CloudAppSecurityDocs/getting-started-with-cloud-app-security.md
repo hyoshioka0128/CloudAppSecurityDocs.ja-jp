@@ -15,12 +15,12 @@ ms.assetid: cf040b18-93d1-41e8-a26a-647c56afb00f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 977afbb5126e2f225ff4f89b2f6c353b166c2d27
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: 568bfa46ec52bc4f20a3981fc627467d2bb3cab0
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904381"
 ---
 #  <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security の使用を開始する
 
@@ -84,7 +84,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 必要なタスク:クラウド アプリの使用を確認できるように Cloud App Security を有効にする
 
-1. [Windows Defender ATP と統合](wdatp-integration.md)することで、Cloud App Security が自動的に有効にされ、会社内外のご利用の Windows 10 デバイスを監視できるようになります。
+1. [Microsoft Defender ATP と統合](wdatp-integration.md)することで、Cloud App Security が自動的に有効にされ、会社内外のご利用の Windows 10 デバイスを監視できるようになります。
 2. Zscaler を使用する場合は、Cloud App Security に [Zscaler を統合](zscaler-integration.md)します。
 3. 完全なカバレッジを実現するには、継続的な Cloud Discovery レポートを作成します。
 

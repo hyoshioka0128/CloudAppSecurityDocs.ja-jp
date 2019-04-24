@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 1/28/2019
+ms.date: 04/21/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: d2ddae1fe570b975a021ec882058465a53edac3e
-ms.sourcegitcommit: e096d06d92c4b2ab4f416c8c6cf956cc503380d3
+ms.openlocfilehash: 48ec0ce810023dde3bd4866e23ec0c5078a158dc
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57014849"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904262"
 ---
-# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル: ネットワーク内のシャドウ IT の検出と管理
+# <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル: ネットワーク内のシャドウ IT の検出と管理 
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 従業員がどれくらいのクラウド アプリを使用していると思うかの問いに対し、IT 管理者は平均して 30 から 40 と答えます。しかし実際には、組織内の従業員は平均して 1,000 種類を超えるアプリを使用しています。 シャドウ IT により、どのアプリが使用されていて、ユーザーのリスク レベルがどれくらいかを把握して特定することができます。 従業員の 80% は、まだレビューがなく、セキュリティとコンプライアンスのポリシーに準拠していない可能性がある未承認のアプリを使用しています。 また、従業員は企業ネットワークの外からリソースやアプリにアクセスできるため、ファイアウォールにルールとポリシーを設定するだけでは、もはや不十分です。 
 
@@ -45,7 +45,7 @@ ms.locfileid: "57014849"
     
 1. **シャドウ IT の検出**: ネットワークで実際に起きていることを確認するために組織内で Cloud Discovery を実行して、組織のセキュリティ対策を特定します。 詳細については、「[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)」を参照してください。次のいずれかの方法を使用して行います。
    
-    - [Windows Defender ATP](wdatp-integration.md) と統合すると、Cloud Discovery がすばやく起動します。 このネイティブ統合により、ネットワークとの接続の有無を問わず、Windows 10 デバイスの間でクラウド トラフィックのデータの収集をすぐに始めることができます。
+    - [Microsoft Defender ATP](wdatp-integration.md) と統合すると、Cloud Discovery がすばやく起動します。 このネイティブ統合により、ネットワークとの接続の有無を問わず、Windows 10 デバイスの間でクラウド トラフィックのデータの収集をすぐに始めることができます。
    
     - ネットワークに接続されているすべてのデバイスを網羅するには、エンドポイントからのデータを収集し、これを分析のために Cloud App Security に送信するため、ファイアウォールとその他のプロキシに [Cloud App Security ログ コレクター](discovery-docker.md)を展開することが重要です。
 

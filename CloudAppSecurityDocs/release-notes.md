@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e2b22c35cfa72860689a89d149805eca7074fc55
-ms.sourcegitcommit: ec7ae3cd7648fa62d7a7925f8693dcb99b0b0d26
+ms.openlocfilehash: eecaede1b31fd6bebab6d877a81ec582328fff5b
+ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59622441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "59904347"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -59,7 +59,7 @@ Microsoft Cloud App Security で、Azure AD のグローバルな閲覧者ロー
 
 リリース日: 2019 年 3 月 17 日
 
-- **Windows Defender ATP 統合が GA になりました** <br>
+- **Microsoft Defender ATP 統合が GA になりました** <br>
 昨年に、[Windows Defender Advanced Threat Protection との統合](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)が発表されました。これにより、組織内でのシャドウ IT の検出が強化され、企業ネットワークを越えて拡張されます。 このユニークな統合の一般提供が開始され、[1 回のクリックで有効化できる](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG)ようになったことをお知らせいたします。
 - **Dynamics 365 のサポート** <br>Cloud App Security に Dynamics 365 のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとこれらのアプリ内に格納された機密コンテンツを保護できるようになりました。 
 
@@ -219,7 +219,7 @@ Cloud App Security では、アプリを承認したユーザーのグループ 
     - セッション内からフィードバックを提供する:この新しいツールを使用すると、セッション管理下にあるアプリケーションのパフォーマンスについて、セッション内から直接、Cloud App Security チームにフィードバックを提供できます。
 
 
-- **企業の範囲を超えた Shadow IT Discovery のための Windows Defender ATP とのネイティブ統合**
+- **企業の範囲を超えた Shadow IT Discovery のための Microsoft Defender ATP とのネイティブ統合**
     - Microsoft Cloud App Security は Windows Defender Advanced Threat Protection (ATP) とネイティブに統合して、企業ネットワーク内外でのクラウド アプリの使用に関するデプロイレスのシャドウ IT 検出機能を提供するようになりました。  これにより、企業ネットワーク内にない場合でも、マシンで Cloud Discovery を実行できます。 また、マシン ベースの調査も可能です。リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを調査できます。 詳しくは、「Windows Defender Advanced Threat Protection と [Microsoft Cloud App Security の統合](wdatp-integration.md)」をご覧ください。
 - **暗号化されたファイルの内容の検査**
     - Cloud App Security では、Azure Information Protection を使用して暗号化により保護されているファイルの内容の検査がサポートされるようになりました。 これらの暗号化されたファイルで再分類の提案を検査し、追加の DLP 公開とセキュリティ ポリシー違反を識別できます。 
