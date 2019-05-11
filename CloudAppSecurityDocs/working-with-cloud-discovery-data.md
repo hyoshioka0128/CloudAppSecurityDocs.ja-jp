@@ -4,8 +4,8 @@ description: このトピックでは、アプリ リスク スコアの操作�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
-ms.date: 12/14/2018
+manager: angrobe
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f760a9aa5bb80d1301cf6125eeeec22a8e9a8a7a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: ffba8584bcd9b7521f3fc1ec8b8774e096a32854
+ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282309"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65047778"
 ---
 # <a name="working-with-discovery-data"></a>探索データでの作業
 
@@ -51,8 +51,8 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
   
 除外を作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
-2. [**エンティティの除外**] タブをクリックします。  
+1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
+2. **[エンティティの除外]** タブをクリックします。  
 3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
@@ -62,17 +62,17 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 
 カスタムの継続的レポートを使用すると、組織の Cloud Discovery ログ データを詳細に監視できます。 カスタム レポートを作成すると、特定の地理的な場所、ネットワークとサイト、または組織単位をフィルター処理することができます。 既定では、Cloud Discovery レポート セレクターには次のレポートのみが表示されます。  
   
-- **グローバル レポート**では、ログに含まれるすべてのデータ ソースからポータルに収集されたデータが、統合表示されます。  
+- **グローバル レポート**では、ログに含まれるすべてのデータ ソースからポータルに収集されたデータが、統合表示されます。  グローバル レポートには、Defender ATP を Microsoft からのデータは含まれません。
   
 - **データ ソースごとのレポート**には、特定のデータ ソースの情報のみが表示されます。  
   
 新しい継続的レポートを作成するには:  
   
-1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
 2. **[継続的レポート]** タブをクリックします。  
   
-3. [**レポートの作成**] ボタンをクリックします。  
+3. **[レポートの作成]** ボタンをクリックします。  
   
 4. レポート名を入力します。  
   
@@ -97,13 +97,13 @@ Cloud Discovery データを削除する理由はいくつかあります。 次
   
 Cloud Discovery データを削除するには:  
   
-1. ポータルで、設定アイコンの下に表示される [**Cloud Discovery 設定**] を選択します。  
+1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
   
-2. [**データの削除**] タブをクリックします。  
+2. **[データの削除]** タブをクリックします。  
   
     操作を続行する前に、データを削除しても問題がないことを確認するのが重要です。削除すると元に戻すことはできず、システム内の**すべて**の Cloud Discovery データが削除されてしまうからです。  
   
-3. [**削除**] ボタンをクリックします。  
+3. **[削除]** ボタンをクリックします。  
   
     ![データを削除する](./media/delete-data.png "delete data")  
   

@@ -1,7 +1,7 @@
 ---
- タイトル: インクルード ファイル 説明: インクルード ファイル サービス: active-directory 作成者: eross-msft
+ title: include file description: include file services: active-directory author: eross-msft
  
-ms.service: active-directory ms.topic: インクルード ms.date: 2018 年 4 月 24 日 ms.author: lizross ms.custom: インクルード ファイル
+ms.service: active-directory ms.topic: include ms.date:04/24/2018 ms.author: lizross ms.custom: include file
 ---
 
 >[!Note] 
