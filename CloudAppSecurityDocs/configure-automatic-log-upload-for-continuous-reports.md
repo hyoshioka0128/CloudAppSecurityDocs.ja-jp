@@ -4,7 +4,7 @@ description: この記事では、Cloud Discovery の自動レポートを作成
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c4123272-4111-4445-b6bd-2a1efd3e0c5c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 88e84e64bb93d39f83296b77ce83bde4738ba715
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 5cd93f4a98572af44b17515ac6bd0c4ed94e789f
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282003"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567697"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports-on-a-virtual-appliance---deprecated"></a>仮想アプライアンスでの継続的なレポートのために自動ログ アップロードを構成する - 非推奨
 
@@ -32,7 +32,7 @@ ms.locfileid: "56282003"
 ## <a name="technical-requirements"></a>技術要件
 - ハイパーバイザー: Hyper-V または VMware
 - ディスク領域:250 GB
-- CPU:2 で保護されたプロセスとして起動されました
+- CPU:2
 - RAM:4 GB 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
@@ -55,7 +55,7 @@ ms.locfileid: "56282003"
   
    」を参照します。  **[データ ソースの追加]** をクリックします。  
   
-   b.  プロキシまたはファイアウォールの **[名前]** を付けます。  
+   B.  プロキシまたはファイアウォールの **[名前]** を付けます。  
   
    c.  **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
   
@@ -69,7 +69,7 @@ ms.locfileid: "56282003"
   
    」を参照します。  **[ログ コレクターを追加]** をクリックします。  
   
-   b.  ログ コレクターに**名前**を付けます。  
+   B.  ログ コレクターに**名前**を付けます。  
   
    c.  コレクターに接続するすべての**データ ソース**を選択します。 **[更新]** をクリックして構成を保存し、アクセス トークンを生成します。  
    ![データ ソースの検出](./media/discovery-data-sources.png)
@@ -101,7 +101,7 @@ ms.locfileid: "56282003"
   
 8. **[Use an existing virtual hard disk]** \(既存の仮想ハード ディスクを使用する\) を選択します。 ダウンロードした ZIP ファイルに含まれる **.vhd** ファイルを選択します。  
   
-9. **[次へ]**、**[完了]** の順にクリックします。  
+9. **[次へ]** をクリックし、 **[完了]** をクリックします。  
    マシンが Hyper-V 環境に追加されます。  
   
 10. **[仮想マシン]** の表でこのマシンをクリックしてから、**[スタート]** をクリックします。   
@@ -127,9 +127,9 @@ ms.locfileid: "56282003"
 
 5.  次のように、ポータルからログ コレクターの構成をインポートします。  
   
-      」を参照します。  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。  
+      A.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。  
   
-      b.  次のコマンドで提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config \<access token>```  
+      B.  次のコマンドで提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config \<access token>```  
      
       c.  たとえば、次に示すようなコンソールのドメインを入力します。``` contoso.portal.cloudappsecurity.com ```
   

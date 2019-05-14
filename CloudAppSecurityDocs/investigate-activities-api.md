@@ -4,7 +4,7 @@ description: この記事では、API を使用して Cloud App Security での�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4d91f196cb8d2bab51a2688c07f0654317765f3
-ms.sourcegitcommit: fe4cd2174f6dc83811a2d484f079e8dfbac5d082
+ms.openlocfilehash: db4e10c7ecc8e82795d3a75fb915757bfada6bb9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476452"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568290"
 ---
 # <a name="investigate-activities-using-the-api"></a>API を使用してアクティビティを調査します。
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security Api を使用して、接続されているクラ�
 - 「フィルター」:フィルターは、要求は、すべての検索フィルターを使用してオブジェクトを参照してください[アクティビティ フィルター](activity-filters.md)詳細についてはします。 調整する、クエリの制限を含めることを確認要求を避けるには、最後の日のアクティビティをクエリや、特定のアプリをフィルター処理などです。
 - "isScan":ブール値。 スキャン モードを有効にします。
 - "sortDirection":並べ替え方向を指定できる値は"asc"と"desc" 
-- "sortField":フィールドは、アクティビティの並べ替えに使用します。 次の値をとります。 
+- "sortField":フィールドは、アクティビティの並べ替えに使用します。 有効な値は次のとおりです。 
     - 日付 - アクティビティが発生し、日付 (これは、既定値です)。
     - 作成したアクティビティが保存されたときのタイムスタンプ。
 - "limit":整数。 500 ~ 5000 で、スキャン モード (既定値は 500)。 すべてのデータをスキャンするために使用するイテレーションの数を制御します。 

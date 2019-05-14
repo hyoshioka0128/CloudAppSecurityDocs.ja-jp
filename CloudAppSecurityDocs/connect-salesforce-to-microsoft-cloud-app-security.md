@@ -4,7 +4,7 @@ description: この記事では、使用状況を視覚化して制御できる�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 776d7589-acdb-4cb6-99a0-3be2f7b6aab2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b3ac3ffcef0dfaaad492c0794eee9841a899b0eb
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 16e149d5b79d22c512cd1c318e69b89b2880cace
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281884"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567199"
 ---
 # <a name="connect-salesforce-to-microsoft-cloud-app-security"></a>Salesforce を Microsoft Cloud App Security に接続する
 
@@ -87,7 +87,7 @@ ms.locfileid: "56281884"
   
      ![Salesforce への接続](./media/connect-salesforce.png "Salesforce への接続")  
   
-6.  Salesforce の設定ページの API] タブで、インストールするインスタンスに応じて **[Follow this link (このリンクに移動)]** をクリックします。  
+6.  Salesforce の設定ページの [API] タブで、インストールするインスタンスに応じて **[Follow this link (このリンクに移動)]** をクリックします。  
   
 7.  これで Salesforce のサインイン ページが開きます。 Cloud App Security がチームの Salesforce アプリにアクセスできるように、資格情報を入力します。  
   
@@ -115,7 +115,7 @@ Salesforce イベントは Cloud App Security により次のように処理さ�
   
 - 15 分ごとにサインイン イベント
 - 15 分ごとにセットアップ監査証跡
-- Salesforce のログは、利用状況を 24 時間 (UTC 時刻の午前 00 時 00 分から 午後 11 時 59 分まで ) 追跡します。 Salesforce のイベントは、リアルタイムにログ データを生成します。 ただし、ログ ファイルは、イベントが発生した翌日の非ピーク時に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントが発生してから少なくとも 1 日は利用できません。 Salesforce のイベントについて詳しくは、「[Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」(イベント監視の使用) をご覧ください。
+- Salesforce のログは、利用状況を 24 時間 (UTC 時刻の午前 00 時 00 分から 午後 11 時 59 分まで ) 追跡します。 Salesforce のイベントは、リアルタイムにログ データを生成します。 ただしログ ファイルは、イベントが発生した翌日のピーク時以外に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントの後、少なくとも 1 日は利用できません。 Salesforce のイベントについて詳しくは、「[Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」(イベント監視の使用) をご覧ください。
 
 
 ## <a name="next-steps"></a>次の手順  

@@ -4,7 +4,7 @@ description: この記事では、シームレスな Cloud Discovery と承認�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 829dbac07eca84a3468da0260bec1141aa05a2c9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 31316c4a8902ed85489e03a82dde3fb3ec7962b8
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281605"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568186"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Cloud App Security を iboss と統合する
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Cloud App Security と iboss の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 iboss は、組織のトラフィックを監視し、トランザクションをブロックするポリシーを設定することができる、スタンドアロンのセキュリティで保護されたクラウド ゲートウェイです。 Cloud App Security と iboss を同時に使用することで、次の機能が提供されます。
 

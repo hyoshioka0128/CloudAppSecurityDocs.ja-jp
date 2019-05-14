@@ -4,7 +4,7 @@ description: この記事では、組織のクラウド アプリ使用におい
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: ac53fbd6-4d31-4bce-b2bc-9dc65ad83b3e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 51d9c16f4a5946568bfbd13d364347bc3b2a81a2
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: 6a15705c9d3154ab5450c4e183988030230db394
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830406"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568017"
 ---
 # <a name="file-policies"></a>ファイル ポリシー  
 
@@ -87,7 +87,7 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
    
 10. Cloud App Security で一致が検出された場合に実行する **[ガバナンス]** アクションを選択します。  
   
-11. 作成したポリシーは、**[ファイル ポリシー]** タブに表示されます。ポリシーはいつでも編集して、フィルターを調整したり、自動アクションを変更したりできます。 ポリシーは作成時に自動的に有効化され、すぐにクラウド ファイルのスキャンを開始します。  ガバナンス アクションを設定する場合には十分に注意してください。ファイルへのアクセス許可が失われ、元に戻せなくなる可能性があります。 複数の検索フィールドを使用して、ポリシーを実行する対象ファイルのみが表示されるようにフィルター条件を絞り込むことをお勧めします。 フィルター条件を絞り込むほど、適切な結果が得られます。 フィルター] セクションの **[結果の編集とプレビュー]** ボタンを使用すると結果を確認できます。  
+11. 作成したポリシーは、**[ファイル ポリシー]** タブに表示されます。ポリシーはいつでも編集して、フィルターを調整したり、自動アクションを変更したりできます。 ポリシーは作成時に自動的に有効化され、すぐにクラウド ファイルのスキャンを開始します。  ガバナンス アクションを設定する場合には十分に注意してください。ファイルへのアクセス許可が失われ、元に戻せなくなる可能性があります。 複数の検索フィールドを使用して、ポリシーを実行する対象ファイルのみが表示されるようにフィルター条件を絞り込むことをお勧めします。 フィルター条件を絞り込むほど、適切な結果が得られます。 [フィルター] セクションの **[結果の編集とプレビュー]** ボタンを使用すると結果を確認できます。  
   
     ![ファイル ポリシーの編集と結果のプレビュー](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集と結果のプレビュー")  
   

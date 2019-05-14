@@ -4,7 +4,7 @@ description: このチュートリアルでは、Microsoft Cloud App Security �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9f5b07951f96481198244dbcdc9d7025d89cc845
-ms.sourcegitcommit: cb049bf15ccc02ec462d7ea6bbaa99ac8c0fa18d
+ms.openlocfilehash: f3c3afbf03acca812b47388c956ab22dbffd5dd0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57830440"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568714"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>チュートリアル: Azure Information Protection 分類ラベルを自動的に適用する
 
@@ -49,7 +49,7 @@ Cloud App Security と Azure Information Protection との統合により、フ�
 
 Cloud App Security と Microsoft Azure Information Protection を併用して、分類情報と保護情報を組み込み、データを永続的に保護できるようにします。そうすれば、データの格納場所や共有相手に関係なく、保護状態を維持することができます。 この保護により、同僚、顧客、パートナーとデータを安全に共有できるようになります。 データにアクセスできる人と、その人がデータに対してできることを定義します。 たとえば、ユーザーにファイルの表示と編集は許可しますが、印刷や転送は禁止します。 また、コラボレーターの削除や共有機能の削除など、Cloud App Security でファイルに対してサポートされている他の[ガバナンス アクション](governance-actions.md)も追加できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - テナントに対する [Cloud App Security と Azure Information Protection の有効化](azip-integration.md)。
 - Cloud App Security に [Box を接続します](connect-box-to-microsoft-cloud-app-security.md)。

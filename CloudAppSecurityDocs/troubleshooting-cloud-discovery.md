@@ -4,7 +4,7 @@ description: この記事では、Cloud Discovery でよく起こるエラー一
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 04/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cb34e67744c8d2f316eff09641e379ca562bd71f
-ms.sourcegitcommit: b0ae3a969a85a1ae0332a30efd058e415d9efb5c
+ms.openlocfilehash: bc8e477cac15dc9b5bd3338360d7c3953db0e442
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "59904296"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568815"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 
@@ -55,7 +55,7 @@ ms.locfileid: "59904296"
 |コレクター構成を更新できませんでした | 1.最新のアクセス トークンを入力したことを確認します。 <br />2.ファイアウォールで、ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。|
 |コレクターに送信されたログがポータルに表示されません | 1.ガバナンス ログに失敗した解析タスクがあるかどうかを確認します。  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2.ない場合は、ポータルでデータ ソースとログ コレクターの構成を確認します。 <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3.オンプレミス ログ コレクター コンピューターのローカル構成を確認します。  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4. ログ コレクターがポート 443 で送信トラフィックを開始することが許可されていることを確認します。 |
 |ログ コレクターの状態:Created | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
-|ログ コレクターの状態:切断されています。 | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
+|ログ コレクターの状態:Disconnected | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
 |最新のコレクター イメージをプルできませんでした。| Docker のデプロイ中に、このエラーが発生した場合、ホスト コンピューターに十分なメモリがないことがある可能性があります。 これを確認するには、ホストでこのコマンドを実行します。`docker pull microsoft/caslogcollector`します。 このエラーが返された場合:`failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device`より多くの領域を提供する、ホスト コンピューターの管理者にお問い合わせください。|
 
 ## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー

@@ -4,7 +4,7 @@ description: この記事では、Azure AD アプリの Microsoft Cloud App Secu
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e74b6280175c459d9153dc267e16e91ad218b8c
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 14e5f822c5075f1d59dc7ecef350b46e3c8c0f0c
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281952"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568662"
 ---
 # <a name="deploy-conditional-access-app-control-for-azure-ad-apps"></a>Azure AD アプリの Conditional Access App Control のデプロイ
 
@@ -37,7 +37,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 
 **手順 2: [ポリシーのスコープに含まれるユーザーでアプリにサインインします](#sign-in-scoped)。**
 
-**手順 3: Azure AD 内で組み込みの Cloud App Security ポリシーを選択しなかった場合、またはおすすめ以外のアプリにポリシーを適用したい場合は、[Cloud App Security ポータルへ移動](#portal)** します。
+**手順 3:Azure AD 内で組み込みの Cloud App Security ポリシーを選択しなかった場合、またはおすすめ以外のアプリにポリシーを適用したい場合は、[Cloud App Security ポータルへ移動](#portal)** します。
 
 [**手順 4: デプロイをテストする**](#test)
 
@@ -58,7 +58,7 @@ Microsoft Cloud App Security Conditional Access App Control によって制御�
 
 6. 該当する **[Condition assignments]** \(条件に同意する\) または **[制御の許可]** を追加します (省略可能)。
 
-   ![Azure AD の条件付きアクセス](./media/azure-ad-caac-policy.png)
+   ![Azure AD 条件付きアクセス](./media/azure-ad-caac-policy.png)
 
   
       > [!NOTE]

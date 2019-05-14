@@ -4,7 +4,7 @@ description: この記事は、Cloud App Security の過去のリリースに加
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4e274776fce369037e3688c1ef66f0002ca121c6
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 30cf7145006156cddce444fb2365f8691fe3eb07
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282275"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568597"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の過去のリリースのアーカイブ
 
@@ -176,8 +176,8 @@ ms.locfileid: "56282275"
 
 **お知らせ:**
 
-- クラウド アプリ カタログは、15,000 以上の探索可能なアプリをサポートしています。
-- 法令遵守:Cloud App Security は Azure によって SOC1/2/3 を正式に認定されています。 認定の完全な一覧については、[コンプライアンスの提供内容](https://www.microsoft.com/trustcenter/compliance/complianceofferings)に関するページをご覧いただき、Cloud App Security でフィルターした結果を表示してください。
+- クラウド アプリ カタログでは、15,000 以上の検索可能なアプリをサポートしています。
+- コンプライアンス:Cloud App Security は Azure によって SOC1/2/3 を正式に認定されています。 認定の完全な一覧については、[コンプライアンスの提供内容](https://www.microsoft.com/trustcenter/compliance/complianceofferings)に関するページをご覧いただき、Cloud App Security でフィルターした結果を表示してください。
 
 **その他の機能強化:** 
 

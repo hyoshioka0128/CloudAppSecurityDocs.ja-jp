@@ -4,7 +4,7 @@ description: この記事では、すべてのアラートの一覧を示して�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7d11bb2f91142e04d7f9f3df3cd38e8966a5fcce
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: e5b144b4c260aa55f3bd6546f76c1802c10631e0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281986"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568904"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Cloud App Security のアラートを監視する
 
@@ -52,7 +52,7 @@ ms.locfileid: "56281986"
 
 次のアラートの種類が表示されます。 
 
-|アラート名|アラート ID|[説明]|
+|アラート名|アラート ID|説明|
 |----|----|----|
 |新しい場所|ALERT_GEOLOCATION_NEW_COUNTRY|スキャン開始以降に新しい場所が検出されました (6 か月)。 このアラートは、組織全体で国ごとに 1 回のみ表示されます。 |
 |新しい管理ユーザー|ALERT_ADMIN_USER|特定のアプリに対して新しい管理者が検出されました。 あるアプリケーションの管理者が別のアプリケーションの管理者になったのがこの管理者である可能性があります。 このアラートは特定の管理者の種類に関するものなので、管理者の種類が変わるたびに表示されます。 ユーザーが管理者権限が失ってから再び権限を得ると、このアラートが表示されます。|
@@ -64,7 +64,7 @@ ms.locfileid: "56281986"
 
 次のアラートの種類が表示されます。 
 
-|アラート名|アラート ID|[説明]|
+|アラート名|アラート ID|説明|
 |----|----|----|
 |不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 新しい場所からか)。これらの条件がすべて計算され、以下のリスク要因に基づいてリスク スコアが提供されます。 <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
 |不審なクラウド使用アラート|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery の異常検出は、通常の動作のパターンを検出し、普通ではない方法で使用されたユーザーまたはアプリを発見します。 |

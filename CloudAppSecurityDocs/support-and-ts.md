@@ -4,7 +4,7 @@ description: この記事では、Microsoft Cloud App Security に関するサ�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5c3cd5a1583260fa06a5f00805a7695cda8d44eb
-ms.sourcegitcommit: 099543494c94cc9c1fd62451580f794e538cd1c2
+ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58543622"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568480"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security のサポートとトラブルシューティング
 
@@ -72,7 +72,7 @@ Microsoft では、Microsoft Cloud App Security 向けに、全体的な技術�
 
 ### <a name="view-open-support-requests"></a>未解決のサポート リクエストを確認する
 
-Azure portal 内からサポート リクエストを確認できます。 次の手順に従います。
+Azure portal 内からサポート リクエストを確認できます。 そのためには次を行います。
 
 1.  ご自身の管理者資格情報を使って Azure [https://portal.azure.com](https://portal.azure.com/) にサインインし、**?** アイコン (ポータルの右上隅) を選択します。次に、**[ヘルプとサポート]** を選択して [Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ページに移動します。
 
@@ -83,7 +83,7 @@ Azure portal 内からサポート リクエストを確認できます。 次�
 [Microsoft Cloud App Security の現在の状態](https://status.cloudappsecurity.com/)をチェックします。
 
 
-## <a name="additional-resources"></a>その他の技術情報
+## <a name="additional-resources"></a>その他の資料
 
 - [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート リクエストを作成できます。](https://premier.microsoft.com/)
 

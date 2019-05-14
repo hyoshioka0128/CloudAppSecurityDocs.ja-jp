@@ -4,7 +4,7 @@ description: この記事では、アクティビティ ポリシーに適用で
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/16/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3043de593036dc5f8eec0ac9be2aca9b195f32c9
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 1db651146978c187a043abce78b4d92d819df217
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281918"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65565723"
 ---
 # <a name="activities"></a>アクティビティ
 
@@ -62,7 +62,7 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
 
    - デバイスの種類:[デバイスの種類] をクリックすると、生のユーザー エージェント データが表示されます。 
 
-   - 場所:[場所] をクリックすると、Bing マップで場所が表示されます。
+   - 所在地:[場所] をクリックすると、Bing マップで場所が表示されます。
 
    - IP アドレス カテゴリとタグ:IP タグをクリックすると、そのアクティビティで見つかった IP タグの一覧を表示されます。 このタグに一致するすべてのアクティビティでフィルター処理することができます。    
 
@@ -95,7 +95,7 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
     - **[ISP]**:過去 30 日以内にユーザーが接続された ISP の数。
     - **[IP アドレス]**:過去 30 日以内にユーザーが接続された IP アドレスの数。
 
-![Cloud App Security でのユーザー洞察](./media/user-insights.png)
+![Cloud App Security におけるユーザーの分析情報](./media/user-insights.png)
 
 #### <a name="ip-address-insights"></a>IP アドレスの洞察
 

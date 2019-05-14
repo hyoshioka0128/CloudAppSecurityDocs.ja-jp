@@ -4,7 +4,7 @@ description: このリファレンス記事では、Cloud App Security によっ
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 298e3b042dfc7866622604f29b954c17a3f08bc5
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 841255c2d313c510374458316184161359c7855f
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281527"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567857"
 ---
 # <a name="files"></a>ファイル
 
@@ -58,7 +58,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 > - 単語間をスペースで区切ると、OR のように機能します。たとえば、**malware** **virus** を検索すると、名前に malware または virus が含まれているすべてのファイルが検出されるので、malware-virus.exe と virus.exe の両方が検出されます。  
 > - 文字列を検索する場合は、単語を引用符で囲みます。 引用符で単語を囲むと、AND のように機能します。たとえば、**"malware"** **"virus"** を検索すると、virus_malware_file.exe は検出されますが、malwarevirusfile.exe や malware.exe は検出されません。 ただし、検索されるのは正確な文字列のみです。 **"malware virus"** を検索した場合、**"virus"** や **"virus_malware"** は検出されません。
 >
-> [**が次と等しい**] を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
+> **[が次と等しい]** を使用して検索すると、完全な文字列のみが検索されます。たとえば、**malware.exe** を検索すると、malware.exe は検出されますが、malware.exe.txt は検出されません。 
 
 - **アクセス レベル** – 共有のアクセス レベルです (パブリック、外部、内部、プライベート)。  外部ファイルの詳細については、「[General Setup, Set up the portal](getting-started-with-cloud-app-security.md)」 (一般的なセットアップ、ポータルのセットアップ) を参照してください。
 

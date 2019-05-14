@@ -4,7 +4,7 @@ description: この記事では、Cloud Discovery データのユーザー名を
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eb250ede-fede-4699-a08b-b8ea4b232f07
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3e4c3e002bba503f204ddb2e474db40a93dc6ad1
-ms.sourcegitcommit: e88ec011088f7f6f4ccad58c86dc7e3aa908b05f
-ms.translationtype: HT
+ms.openlocfilehash: 509373f5b63df5da2df0d75b8404c9963dcee186
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57254386"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567653"
 ---
 # <a name="cloud-discovery-data-anonymization"></a>Cloud Discovery データの匿名化
 
@@ -53,7 +53,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
      2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、**「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。 **[Anonymize machine information by default in 'Win10 Endpoint Users' report]\('Win10 エンドポイント ユーザー' レポートのマシンの情報を既定で匿名化する\)** を選択することもできます。
 
      3. [暗号化キー] で、**[Use the dedicated key generated for your portal (ポータル用に生成された専用キーを使用する)]** か、**[Use a custom key (カスタム キーを使用する)]** かを選択します。 **[Use a custom key (カスタム キーを使用する)]** を選択した場合は、16 バイト UTF8 暗号化キーを入力します。
-     4. **[Save]**(保存) をクリックします。
+     4. **[保存]** をクリックします。
  
         ![匿名化](./media/anonymizer1.png)
   

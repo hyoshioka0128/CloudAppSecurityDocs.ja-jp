@@ -4,7 +4,7 @@ description: この記事では、使用状況を視覚化して制御できる�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d04ed1e016f1f642f952ad361439c79154a77025
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 5d9a5835473eb6a6012c315a1313fbf05cd9ced5
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282666"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568120"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 
@@ -39,7 +39,7 @@ ms.locfileid: "56282666"
   
          ![Box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
   
-    -   [**アプリ**] タブをクリックします。  
+    -   **[アプリ]** タブをクリックします。  
   
          ![Box アプリ](./media/box-apps.png "Box アプリ")  
   
@@ -70,13 +70,13 @@ ms.locfileid: "56282666"
   
 5.  Box のサインイン ページが開きます。 Cloud App Security がチームの Box アプリにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、[**許可**] をクリックします。  
+6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、**[許可]** をクリックします。  
   
 7.  Cloud App Security ポータルに戻ると、Box と正常に接続されたことを示すメッセージが届いています。  
   
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
 これで、Box が Cloud App Security に接続されました。  
  

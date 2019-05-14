@@ -4,7 +4,7 @@ description: この記事では、クラウド内のデータに対して DLP �
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5f3b58d738ed8f514c5128312a64bf8e83792811
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: b0fcd13550d62d5ff96462b7d3f9f4a7437c1a44
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281102"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568050"
 ---
 # <a name="content-inspection"></a>コンテンツ検査
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 
 コンテンツ検査を有効にすると、現在の式を使用するか、またはそれ以外のカスタマイズされた式を検索することを選択できます。  
@@ -33,7 +33,7 @@ ms.locfileid: "56281102"
    
 ファイルが違反と見なされる前に、一致する必要のあるコンテンツ違反の最小数を設定できます。 たとえば、最低 10 個のクレジット カード番号が検出されたファイルについてアラートを受け取る場合は、10 を選択します。  
 
-選択された式とコンテンツが一致すると、違反テキストが "X" 文字に置き換えられます。 既定では、違反はマスクされており、コンテキストの違反の前後の 100 文字が示されています。 式のコンテキスト内の数字は "#" 文字に置き換えられ、Cloud App Security 内に保存されることはありません。 [**Unmask the last 4 characters of a violation**]\(違反の最後の 4 文字のマスクを解除する) オプションを選択すると、違反自体の最後の 4 文字のマスクを解除することができます。 正規表現で検索するデータ型 (コンテンツ、メタデータ、またはファイル名) を設定する必要があります。 既定では、コンテンツとメタデータが検索されます。 
+選択された式とコンテンツが一致すると、違反テキストが "X" 文字に置き換えられます。 既定では、違反はマスクされており、コンテキストの違反の前後の 100 文字が示されています。 式のコンテキスト内の数字は "#" 文字に置き換えられ、Cloud App Security 内に保存されることはありません。 **[Unmask the last 4 characters of a violation]** \(違反の最後の 4 文字のマスクを解除する) オプションを選択すると、違反自体の最後の 4 文字のマスクを解除することができます。 正規表現で検索するデータ型 (コンテンツ、メタデータ、またはファイル名) を設定する必要があります。 既定では、コンテンツとメタデータが検索されます。 
 
 
 ## <a name="content-inspection-for-protected-files"></a>保護されたファイルのコンテンツ検査

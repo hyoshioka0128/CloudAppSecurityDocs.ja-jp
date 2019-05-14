@@ -4,7 +4,7 @@ description: この記事では、使用状況を視覚化して制御できる�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2a02f89dad1d713263a63deca740dcc8209ca1e3
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 8fd87bf68e4c694089bd859b2b47e1b38ef912da
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281170"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568106"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 
@@ -41,19 +41,19 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
 3.  ポップアップで、管理者アカウントの電子メール アドレスを入力します。  
   
-4.  [**リンクを生成**] をクリックします。  
+4.  **[リンクを生成]** をクリックします。  
   
-5.  [**リンクに移動**] をクリックします。  
+5.  **[リンクに移動]** をクリックします。  
   
      Dropbox のサインイン ページが開きます。 Cloud App Security がチームの Dropbox インスタンスにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、[**許可**] をクリックします。  
+6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、**[許可]** をクリックします。  
   
 7.  Cloud App Security コンソールに戻ると、Dropbox が正常に接続されたことを通知するメッセージが届いています。  
   
-8.  [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
+8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、[**閉じる**] をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、**[閉じる]** をクリックします。  
   
 Dropbox を接続すると、接続までの 60 日間のイベントを受け取ります。
 

@@ -4,7 +4,7 @@ description: この記事では、Azure での Ubuntu または RHEL 上で Dock
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5acd24e9cd99abaed17c0bdb88f1a4e9825b0b16
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282717"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567991"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。 
 
@@ -34,7 +34,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 - ディスク領域:250 GB
 
-- CPU:2 で保護されたプロセスとして起動されました
+- CPU:2
 
 - RAM:4 GB
 
@@ -60,37 +60,37 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 [**データ ソースの追加**] をクリックします。
+     」を参照します。 **[データ ソースの追加]** をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
           
-     b. プロキシまたはファイアウォールの [**名前**] を付けます。
+     b. プロキシまたはファイアウォールの **[名前]** を付けます。
       
       ![ubuntu1](./media/ubuntu1.png)
 
-     c. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
+     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
+     e. **[レシーバーの種類]** に **[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、**[Syslog – TLS]** のいずれかを設定します。
      
      >[!NOTE]
-     >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
+     >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
 
      f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。 ネットワーク デバイスごとに専用のデータ ソースを設定することをお勧めします。これにより、次のことができるようになります。
      - 調査目的で、各デバイスの状態を個別に監視する。
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
      
-3. 画面上部の [**ログ コレクター**] タブに移動します。
+3. 画面上部の **[ログ コレクター]** タブに移動します。
 
-     」を参照します。 [**ログ コレクターを追加**] をクリックします。
+     」を参照します。 **[ログ コレクターを追加]** をクリックします。
 
-     b. ログ コレクターに [**名前**] を付けます。
+     b. ログ コレクターに **[名前]** を付けます。
 
      c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-     d. コレクターに接続するすべての**データ ソース**を選び、**[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
+     d. コレクターに接続するすべての**データ ソース**を選択し、**[更新]** をクリックして構成を保存し、次の展開手順を確認します。
 
       ![ubuntu2](./media/ubuntu2.png)
 
@@ -168,7 +168,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
  ![ubuntu9](./media/ubuntu9.png)
 
-**ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
+**[ガバナンス ログ]** に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
 展開中に問題が発生した場合は、「[Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)」(Cloud Discovery のトラブルシューティング) を参照してください。
 

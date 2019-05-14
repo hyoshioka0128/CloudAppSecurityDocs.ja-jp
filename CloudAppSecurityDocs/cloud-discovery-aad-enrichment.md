@@ -4,7 +4,7 @@ description: この記事では、Azure AD ユーザー名を使用して、Clou
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67917683d40763be574a20398fe7b5919fef0f5e
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: f7e1e2b9035711d0f12f23da8809f470bb2da557
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281425"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567712"
 ---
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery を強化する
 
@@ -42,7 +42,7 @@ Cloud Discovery のデータを、Azure Active Directory のユーザー名デ�
      
 2. **[ユーザー エンリッチメント]** タブで、**[Enrich discovered user identifiers with Azure Active Directory usernames]\(検出されたユーザー ID を Azure Active Directory のユーザー名で強化する\)** を選択します。 このオプションにより、Cloud App Security で Azure Active Directory データを使用して、既定のユーザー名を強化できます。
 
-3. **[Save]**(保存) をクリックします。
+3. **[保存]** をクリックします。
  
 ![Azure AD ユーザー名を利用し、Cloud App Security Discovery を強化する](./media/discovery-enrichment.png)
   

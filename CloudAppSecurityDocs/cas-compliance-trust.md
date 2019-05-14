@@ -4,7 +4,7 @@ description: この記事では、Cloud App Security のコンプライアンス
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 03/01/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26a199d0e92c48258b49ef69ddf0473584c54287
-ms.sourcegitcommit: 0b913d3a91e236d60ac8aede566cfd9a4f757abd
+ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57305883"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568138"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 
@@ -45,19 +45,19 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 | |Title|[説明]|
 |----|----|----|
-|![csa のロゴ](./media/csastar-attest.png)|CSA STAR Attestation|Azure と Intune には独立した監査に基づき、Cloud Security Alliance STAR Attestation が授与されています。|
-|![csa のロゴ](./media/csastar.png)|CSA STAR Certification|Azure、Intune、Power BI には、Cloud Security Alliance STAR Certification のゴールド レベルが授与されています。|
+|![csa のロゴ](./media/csastar-attest.png)|CSA スター構成証明|独立した監査に基づいて、Azure と Intune には、クラウド セキュリティ アライアンス スター構成証明が与えられました。|
+|![ロゴ csa](./media/csastar.png)|CSA スター証明書|Azure、Intune、および Power BI は、ゴールド レベルのクラウド セキュリティ アライアンス スター証明書を獲得しました。|
 |![EU model clauses のロゴ](./media/eu-model-icon.png)|[EU Model Clauses](https://www.microsoft.com/en-us/trustcenter/compliance/eu-model-clauses)|Microsoft では、個人データの転送の保証である EU 標準契約条項を提供します。|
-|![privacy shield のロゴ](./media/privacy_shield.png)|EU-U.S.Privacy Shield|Microsoft は EU から米国に転送される個人データの保護に関するこの枠組みに準拠しています。|
-|![FISC のロゴ](./media/logo_fisc.png)|FISC|Microsoft は日本の金融情報システム センターによる安全対策基準第 8 版の要件を満たしています。|
+|![ロゴ プライバシー シールド](./media/privacy_shield.png)|EU - 米国プライバシー シールド|Microsoft は、EU から米国に転送される個人データを保護するために、このフレームワークに準拠しています。|
+|![ロゴ FISC](./media/logo_fisc.png)|FISC|Microsoft は、日本の金融業界情報システム v8 標準の要件を満たしています。|
 |![HIPAA のロゴ](./media/hipaa-logo.png)|[HIPAA/HITECH](https://www.microsoft.com/en-us/trustcenter/compliance/hipaa)|Microsoft では、医療保険の携行性と責任に関する法律の Business Associate Agreements (BAAs) を提供します。|
-|![iso 9001 のロゴ](./media/iso-9001.png)|ISO 9001|Microsoft はこれらの品質管理標準の実施に関する認証を取得しています。|
+|![ロゴ iso 9001](./media/iso-9001.png)|ISO 9001|Microsoft はこれらの品質管理標準の実装について認定を受けています。|
 |![iso 27001 のロゴ](./media/iso-27001.png)|[ISO/IEC 27001](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27001)|Microsoft is ceMicrosoft はこれらの情報セキュリティ管理標準の実施に関する認証を取得しています。|
 |![iso 27018 のロゴ](./media/iso-27018.png)|[ISO/IEC 27018](https://www.microsoft.com/en-us/trustcenter/compliance/iso-iec-27018)|Microsoft は、クラウド プライバシーに関するこの実施基準を順守した初めてのクラウド プロバイダーです。|
-|![PCI のロゴ](./media/pci-logo.png)|PCI DSS|Azure は、Payment Card Industry Data Security Standards レベル 1 バージョン 3.1 に準拠しています。|
+|![ロゴ PCI](./media/pci-logo.png)|PCI DSS|Azure は、支払いカード業界のデータ セキュリティ標準レベル 1 バージョン 3.1 に準拠しています。|
 |![SOC のロゴ](./media/soc-logo.png)|[SOC 1 Type 2 および SOC 2 Type 2 レポート](https://www.microsoft.com/en-us/trustcenter/compliance/soc)|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
-|![SOC のロゴ](./media/soc-logo.png)|SOC 3|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
-|![g-cloud のロゴ](./media/g-cloud.png)|UK G-Cloud|Crown Commercial Service が Microsoft クラウド サービスの分類を Government Cloud v6 に更新しました。|
+|![ロゴ SOC](./media/soc-logo.png)|SOC 3|Microsoft クラウド サービスは運用セキュリティに関する Service Organization Controls の基準に準拠しています。|
+|![ロゴ g クラウド](./media/g-cloud.png)|UK G-cloud|Crown Commercial Service が Microsoft クラウド サービスの分類を Government Cloud v6 に更新しました。|
 
 詳細については、「[Microsoft Compliance Offerings](https://www.microsoft.com/en-us/trustcenter/compliance/complianceofferings)」(Microsoft コンプライアンスの提供内容) に移動し、Cloud App Security を選択してください。  
 

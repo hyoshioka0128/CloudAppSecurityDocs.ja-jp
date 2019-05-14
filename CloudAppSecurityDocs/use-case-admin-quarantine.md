@@ -4,7 +4,7 @@ description: このチュートリアルでは、管理者検疫を使用して�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/27/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e7ccd9d5b818361889755137f088ba833fec24c8
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: b175cc1e6556289ecb4dc255d39e0ca733546cb0
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282479"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568708"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>チュートリアル: 管理者検疫によるファイルの保護
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 [ファイル ポリシー](data-protection-policies.md)は、情報保護ポリシーに対する脅威を見つけるための優れたツールです。 たとえば、クラウド内でユーザーが機密情報、クレジット カード番号、サードパーティの ICAP ファイルを格納した場所を発見するファイル ポリシーを作成します。 
 
@@ -42,6 +42,7 @@ ms.locfileid: "56282479"
 >[!NOTE] 
 > - これはプレビュー機能です。
 > - 管理者検疫をサポートするアプリの一覧については、[ガバナンス アクション](governance-actions.md)の一覧を参照してください。
+> - SharePoint または OneDrive 内のファイルがマルウェアとして検出された場合、それは Cloud App Security ポータルで検疫されません。 
 
 1. ファイルがポリシーに一致する場合、ファイルに**管理者検疫**のオプションを使用できます。
 
@@ -104,7 +105,7 @@ ms.locfileid: "56282479"
       管理者検疫設定を指定するには、設定の歯車アイコンをクリックし、**[設定]** に移動します。 検疫されたファイルの場所と、ファイルが検疫されたときにユーザーが受信するユーザー通知を指定します。 
       ![検疫設定](./media/quarantine-settings.png)
 
-   2. Box の場合、検疫フォルダーの場所とユーザー メッセージはカスタマイズできません。 フォルダーの場所は、Box を Cloud App Security に接続した管理者のドライブです。また、ユーザー メッセージは次の通りです:"このファイルは会社のセキュリティとコンプライアンスのポリシーに違反している可能性があるため、管理者のドライブに隔離されました。 支援が必要な場合には IT 管理者にお問い合わせください"。
+   2. Box の場合、検疫フォルダーの場所とユーザー メッセージはカスタマイズできません。 フォルダーの場所は、Box を Cloud App Security に接続した管理者のドライブです。また、ユーザー メッセージは次の通りです:"このファイルは会社のセキュリティとコンプライアンスのポリシーに違反している可能性があるため、管理者のドライブに隔離されました。 サポートが必要であれば、IT 管理者にお問い合わせください。
 
 
 

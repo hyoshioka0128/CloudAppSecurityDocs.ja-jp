@@ -4,7 +4,7 @@ description: このチュートリアルでは、Azure AD のリバース プロ
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 1/24/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2aa85bd282344143cd360c35e229ea51edc96a65
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
+ms.openlocfilehash: 55f6943b6631178dbdc732264082715e2565b633
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282700"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568442"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>チュートリアル: 機密情報のダウンロードのブロック 
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
 [« 戻る: アクセス ポリシーを作成する方法](access-policy-aad.md)
@@ -44,7 +44,7 @@ ms.locfileid: "56282700"
 
 Azure AD の条件付きアクセスと Microsoft Cloud App Security の Conditional Access App Control を使って、クラウド アプリの使用を監視して制御することにより、組織を保護します。  
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Azure AD Premium P1 の有効なライセンス
 - Azure AD で SSO のクラウド アプリを構成する  
@@ -54,14 +54,14 @@ Azure AD の条件付きアクセスと Microsoft Cloud App Security の Conditi
 
 Cloud App Security セッション ポリシーでは、デバイス状態に基づいてセッションを制限できます。 条件としてそのデバイスを使用するセッションの制御を実現するには、条件付きアクセス ポリシーとセッション ポリシーの両方を作成します。
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>手順 1:Azure AD 条件付きアクセス ポリシーを作成する
+### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>手順 1.Azure AD 条件付きアクセス ポリシーを作成する
 
 1. 割り当て済みユーザーとアプリを使用して、Azure AD の条件付きアクセス ポリシーを作成します。
 2. 条件付きアクセス ポリシー内のセッション制御で、**[Use Conditional Access App Control enforced restrictions]\(Conditional Access App Control によって適用される制限を使用する\)** を選択します。
 
 このタスクが完了したら、Cloud App Security ポータルに移動し、セッションでのファイルのダウンロードを監視して制御するセッション ポリシーを作成します。
 
-### <a name="step-2-create-a-session-policy"></a>手順 2:セッション ポリシーを作成する
+### <a name="step-2-create-a-session-policy"></a>手順 2: セッション ポリシーを作成する
 
 1. Cloud App Security ポータルで、**[制御]**、**[ポリシー]** の順に選択します。 
 

@@ -4,7 +4,7 @@ description: このトピックでは、シャドウ IT を監視するために
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7edc445fef65e414fa088c46f7329811e0ce2cff
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: c44772dc46d04c46eb1d22b2440d06d338d448db
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281408"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65567568"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery にカスタム アプリを追加する
 
@@ -49,7 +49,7 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 4. **[ドメイン]** には、カスタム アプリにアクセスするときに使用する一意のドメインを入力します。 入力したドメインは、トラフィック ログ メッセージをこのアプリに対応付けるために使用されます。 使用しているデータ ソースにアプリの URL 情報が含まれていない場合は、**IPv4** と **IPv6** のアドレス フィールドが入力されていることを確認します。
 5. **ホスティング プラットフォーム**と **Azure サブスクリプション ID** を追加します。 必要に応じて、アプリの**部署**を指定します。 
 6. リスク **スコア**を割り当て、このレコードの変更が追跡できるように、**アプリのメモ**を追加します。
-7. [**作成**] をクリックします。
+7. **[作成]** をクリックします。
 
 作成したアプリは、クラウド アプリ カタログに表示されます。
 

@@ -4,7 +4,7 @@ description: この記事では、API アプリ コネクタのエラー メッ�
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: abb1622c3cd88120dc9ad748ef8fa0c5fa2d9b43
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: acdb5bee55a296af2886c39010ce524a39de5f2d
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56282088"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568502"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
 
@@ -35,7 +35,7 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 
 > [!div class="mx-tableFixed"]
 > 
-> |エラー メッセージ|関連するアプリ|[説明]|解決方法|
+> |エラー メッセージ|関連するアプリ|説明|解決策|
 > |----|----|----|------------|
 > |HttpRequestFailure:Server returned:400 Bad Request: {"error":{"code":"AF20012","message":"Specified tenant ID (Tenant_ID goes here) is incorrectly configured in the system."|Office 365 |割り当てられた Office 365 ライセンスが見つかりませんでした。 |テナントに少なくとも 1 つの Office 365 ライセンスを割り当ててください。| 
 > |AuthFatalFailureException: com.box.boxjavalibv2.exceptions.BoxServerException: {"error":"invalid_grant","error_description":"Invalid refresh token"}|ボックス|Box の更新トークンが有効ではありません。|プロセスに従って Box を Cloud App Security に接続し直してください。|
@@ -63,7 +63,7 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 > |HttpRequestFailure:Server returned:404 Not Found|Exchange Online|Exchange Online へのログインに使用しているユーザーが、Exchange Online にプライマリ メールボックスを持っていません (たとえば、Azure AD に存在しないユーザーや、Azure AD には存在しても Exchange Online ライセンスを持っていないユーザーがいます)。|新しい管理者アカウントを使用して、プロセスに従って Exchange Online を Cloud App Security に接続し直します。|
 > |NullPointerException|AWS|内部エラー。|サポートにお問い合わせください|
 > |HttpRequestFailure:Server returned:500 Internal server error|すべてのアプリ|アプリ内にエラーがありました。|アプリの状態を確認してください|
-> |Service timeout|すべてのアプリ|Cloud App Security とアプリ間の接続でタイムアウトが検出されました。 アプリに問題がある可能性があります。|後でやり直してください。|
+> |Service timeout|すべてのアプリ|Cloud App Security とアプリ間の接続でタイムアウトが検出されました。 アプリに問題がある可能性があります。|後でもう一度やり直してください。|
 
 ## <a name="next-steps"></a>次の手順
 

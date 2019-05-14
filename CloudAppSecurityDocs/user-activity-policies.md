@@ -4,7 +4,7 @@ description: この記事では、アクティビティ ポリシーを作成お
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: barbkess
+manager: rkarlin
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 99d5fd37-d922-4269-b557-86d7f84180eb
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b1ab9549e4bb4587137f8560b2ef997c7ee1218a
-ms.sourcegitcommit: 8ef0438fa35916c48625ff750cb85e9628d202f2
-ms.translationtype: HT
+ms.openlocfilehash: 05b4fdf4d2795417619d55320cac2839a7b0ccea
+ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56281901"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65568564"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 
@@ -43,9 +43,9 @@ ms.locfileid: "56281901"
   
 新しいアクティビティ ポリシーを作成するには、次の手順を実行します。  
   
-1. コンソールで、[**制御**]、[**ポリシー**] の順にクリックします。  
+1. コンソールで、**[制御]**、**[ポリシー]** の順にクリックします。  
   
-2. [**ポリシーの作成**] をクリックしてから [**アクティビティ ポリシー**] を選択します。  
+2. **[ポリシーの作成]** をクリックしてから **[アクティビティ ポリシー]** を選択します。  
   
      ![アクティビティ ポリシー メニュー](./media/activity-policy-menu.png "activity policy menu")  
   
@@ -56,7 +56,7 @@ ms.locfileid: "56281901"
 5. **[Activity match parameters]\(アクティビティ一致パラメーター\)** で、ポリシー違反がトリガーされるタイミングを選択します。 1 つのアクティビティがフィルターと一致したらトリガーするか、または指定した数の**反復アクティビティ**が検出されたときにだけトリガーするかを選択します。  
     - **反復アクティビティ**を選択する場合は、**[1 つのアプリで]** を設定できます。 これを設定すると、反復アクティビティが同じアプリで起きた場合にのみ、ポリシー一致がトリガーされます。 たとえば、Box から 30 分以内に 5 回ダウンロードが行われると、ポリシー一致がトリガーされます。  
   
-6. 一致が検出された場合に実行する [**アクション**] を設定します。  
+6. 一致が検出された場合に実行する **[アクション]** を設定します。  
   
 以下で例を見ていきます。  
   
@@ -64,7 +64,7 @@ ms.locfileid: "56281901"
   
      短い期間内に多数のログイン失敗が発生したらアラートを受け取るように、ポリシーを設定できます。 この種のポリシーを構成するには、**[New Activity Policy]\(新しいアクティビティ ポリシー\)** ページで適切なアクティビティ フィルターを選択します。  
   
-     [**アクティビティ フィルター**] フィールドの下で、アラートがトリガーされるパラメーターを設定します。  
+     **[アクティビティ フィルター]** フィールドの下で、アラートがトリガーされるパラメーターを設定します。  
   
      ![複数のサインイン試行失敗のポリシーの例](./media/multiple-failed-log-on-attempts-policy-example.png "複数のログオン試行失敗のポリシーの例")  
   
