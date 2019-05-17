@@ -4,8 +4,8 @@ description: この記事は、Cloud App Security の最新リリースの新機
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/15/2019
+manager: angrobe
+ms.date: 05/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ae0c0ee16c36127b124115917aa8640387835795
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
+ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568712"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65629532"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -29,6 +29,23 @@ ms.locfileid: "65568712"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security リリース 148 と 149
+
+リリース日: 2019 年 5 月 12 日
+
+- **WebEx アプリ コネクタの使用**<br>Cisco WebEx Teams の新しいアプリ コネクタがパブリック プレビューで使用できるようになりました。 Microsoft Cloud App Security を Cisco WebEx Teams と接続して、そのユーザー、アクティビティ、およびファイルを監視および保護できるようになりました。 詳細については、[WebEx の接続](connect-webex-to-microsoft-cloud-app-security.md)に関するページをご覧ください。
+
+- **Microsoft データ分類サービスの新しい場所**<br>[Microsoft データ分類サービス](dcs-inspection.md)が、4 つの新しい場所で利用できるようになりました。オーストラリア、インド、カナダ、日本です。 ご自身の Office テナントがこれらの場所にある場合は、Microsoft Cloud App Security のファイル ポリシーのコンテンツ検査方法として Microsoft データ分類サービスを利用できるようになりました。
+
+- **シャドウの PaaS と IaaS の検出**<br> Microsoft Cloud App Security の Cloud Discovery 機能が拡張されました。Microsoft Azure、アマゾン ウェブ サービス、Google Cloud Platform などの IaaS および PaaS ソリューション上でホストされるリソースに対して、シャドウ IT も提供されるようになりました。 Cloud Discovery では、IaaS や PaaS 上で実行されるカスタム アプリや、作成されるストレージ アカウントなどを確認できるようになりました。 この新しい機能を使用して、どのようなリソースが存在するか、誰がそれらにアクセスしているか、および転送されるトラフィックの量を検出します。
+
+- **アプリの構成証明**<br>Microsoft Cloud App Security のコンプライアンスとリスク評価では、クラウド プロバイダーが、各自のアプリがクラウド アプリ カタログで最新であることを証明できるようになりました。 このパイロットにより、クラウド プロバイダーは、クラウド アプリ カタログのリスク属性に基づいて自分の構成証明アンケートに記入し、Cloud App Security での各自のリスク評価が正確かつ最新であることを確認できます。 次に、ユーザーは、どのリスク属性がプロバイダーによって証明されたか (Cloud App Security チームによる評価ではなく)、および各属性はいつプロバイダーによって送信されたかに関する表示を取得できます。 詳細については、「[アプリを証明する](attest-your-app.md)」をご覧ください。 
+
+- **Office 365 ワークロードの細分性**<br>Office 365 を Microsoft Cloud App Security に接続するときに、どのワークロードを接続したいか制御できるようになりました。 たとえば、アクティビティの監視用にのみ Office 365 の接続に関心があるお客様は、接続プロセス中に、または既存の Office 365 コネクタを編集することで、これを行えるようになりました。 既存の Office 365 コネクタを使っているお客様は、この変更の影響を受けません。
+
+- **Teams のサポートの強化**<br>機密性の高いコンテンツに基づいてセッション ポリシーを構成することで、Teams Web アプリでのメッセージ送信をリアルタイムで監視およびブロックできるようになりました。 
 
 ## <a name="cloud-app-security-release-147"></a>Cloud App Security リリース 147
 
