@@ -61,20 +61,22 @@
           href: scoped-deployment.md
         - name: IP タグと範囲
           href: ip-tags.md
-    - name: Cloud Discovery のセットアップ
-      href: set-up-cloud-discovery.md
+    - name: Cloud Discovery
       items:
-        - name: Microsoft Defender ATP との統合
-          href: wdatp-integration.md
-        - name: Zscaler との統合
-          href: zscaler-integration.md
-        - name: iboss との統合
-          href: iboss-integration.md
-        - name: Cloud Discovery のスナップショット レポートを作成する
-          href: create-snapshot-cloud-discovery-reports.md
-        - name: 継続的なレポートのために自動ログ アップロードを構成する
-          href: discovery-docker.md
+        - name: セットアップ
           items:
+            - name: Cloud Discovery のセットアップ
+              href: set-up-cloud-discovery.md
+            - name: Microsoft Defender ATP との統合
+              href: wdatp-integration.md
+            - name: Zscaler との統合
+              href: zscaler-integration.md
+            - name: iboss との統合
+              href: iboss-integration.md
+            - name: Cloud Discovery のスナップショット レポートを作成する
+              href: create-snapshot-cloud-discovery-reports.md
+            - name: 継続的なレポートのために自動ログ アップロードを構成する
+              href: discovery-docker.md
             - name: Windows 上の Docker
               href: discovery-docker-windows.md
             - name: Ubuntu および RHEL オンプレミス上の Docker
@@ -85,14 +87,19 @@
               href: troubleshoot-docker.md
             - name: プロキシの背後にあるログ コレクター
               href: log-collector-proxy.md
-        - name: カスタム ログ パーサーの使用
-          href: custom-log-parser.md
-        - name: Cloud Discovery を強化する
-          href: cloud-discovery-aad-enrichment.md
-        - name: Cloud Discovery データの匿名化
-          href: cloud-discovery-anonymizer.md
-    - name: アプリを接続する
-      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
+            - name: カスタム ログ パーサーの使用
+              href: custom-log-parser.md
+    - name: Cloud Discovery を強化する
+      href: cloud-discovery-aad-enrichment.md
+    - name: Cloud Discovery データの匿名化
+      href: cloud-discovery-anonymizer.md
+    - name: Cloud Discovery での作業
+      items:
+        - name: Cloud Discovery にカスタム アプリを追加する
+          href: cloud-discovery-custom-apps.md
+        - name: 検出されたアプリのフィルターとクエリ
+          href: discovered-app-queries.md
+    - name: 継続的なレポートのために自動ログ アップロードを構成する
       items:
         - name: Azure の接続
           href: connect-azure-to-microsoft-cloud-app-security.md
@@ -112,14 +119,11 @@
           href: connect-salesforce-to-microsoft-cloud-app-security.md
         - name: ServiceNow の接続
           href: connect-servicenow-to-microsoft-cloud-app-security.md
+        - name: WebEx の接続
+          href: connect-webex-to-microsoft-cloud-app-security.md
+      href: enable-instant-visibility-protection-and-governance-actions-for-your-apps.md
     - name: Azure AD アプリの Conditional Access App Control のデプロイ
       href: proxy-deployment-aad.md
-    - name: '[探索]'
-      items:
-        - name: Cloud Discovery にカスタム アプリを追加する
-          href: cloud-discovery-custom-apps.md
-        - name: 検出されたアプリのフィルターとクエリ
-          href: discovered-app-queries.md
     - name: 調査
       href: investigate.md
       items:

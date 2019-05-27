@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a23a081ece3e6aa94995e688ec2163b36441e60
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b49ab77b33548d6fd188eadde97294ceb6c62ca5
+ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568411"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66173518"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security と Microsoft Defender Advanced Threat Protection の統合
 
@@ -71,8 +71,8 @@ Microsoft Defender ATP から Cloud App Security との統合を有効にしま�
 
 Cloud App Security と Microsoft Defender ATP を統合した後は、Cloud Discovery ダッシュ ボードで検出されたマシン データを調査できます。
 
-1. Cloud App Security ポータルで、**[Cloud Discovery]**、**[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。
-2. 上部のナビゲーション バーで、**[継続的レポート]** の **[Win10 endpoint users]\(Win10 エンドポイント ユーザー\)** を選択します。
+1. Cloud App Security ポータルで、 **[Cloud Discovery]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。
+2. 上部のナビゲーション バーで、 **[継続的レポート]** の **[Win10 endpoint users]\(Win10 エンドポイント ユーザー\)** を選択します。
   ![WD ATP レポート](./media/win10-dashboard-report.png)
 3. 上部では、検出されたマシンの数が統合後に追加されていることがわかります。
 4. **[マシン]** タブをクリックします。
@@ -92,6 +92,9 @@ Cloud App Security と Microsoft Defender ATP を統合した後は、Cloud Disc
  
 他の Cloud Discovery ソースと同様、Win10 エンドポイント ユーザー レポートからデータをエクスポートして、さらに詳しく調査できます。 
 
+> [!NOTE]
+> - Defender ATP を Cloud App Security に最大 4 MB (1 ~ 4000 のエンドポイントのトランザクション) のチャンク単位でデータを転送します。
+> - 4 MB の制限はありません、1 時間以内に達すると、Defender ATP のレポートのすべてのトランザクションは、過去 1 時間実行されます。
 
 ## <a name="related-videos"></a>関連ビデオ
 
