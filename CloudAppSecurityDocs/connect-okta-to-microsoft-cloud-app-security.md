@@ -2,10 +2,10 @@
 title: Okta を Cloud App Security に接続する
 description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に Okta を接続する方法に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,19 +15,21 @@ ms.assetid: 9c3673b9-99bd-400c-9da1-5bf809ea5892
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca7ee59430227c193f2532f3cffb2fde756dd793
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ff6e44681deeb0d2666c0614b1b554e5911f2fa3
+ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567226"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66491556"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Okta を Microsoft Cloud App Security に接続する
 
 *適用対象:Microsoft Cloud App Security*
 
 この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存の Okta アカウントに接続する方法を説明します。 この接続により、Okta の使用状況を視覚化して制御できるようになります。
-  
+
+>[!NOTE]
+>Cloud App Security コネクタには、2019 年 1 月 7 日前に確立された Okta の展開のみサポートされます。
   
 ## <a name="how-to-connect-okta-to-cloud-app-security"></a>Okta を Cloud App Security に接続する方法  
   
@@ -39,7 +41,7 @@ ms.locfileid: "65567226"
   
 2.  Okta コンソールで **[管理者]** をクリックします。  
   
-    -   **[セキュリティ]**、**[API]** の順にクリックします。  
+    -   **[セキュリティ]** 、 **[API]** の順にクリックします。  
   
          ![Okta API](./media/okta-api.png "Okta API")  
   
@@ -51,13 +53,13 @@ ms.locfileid: "65567226"
   
          ![Okta のトークン ポップアップ](./media/okta-token-popup.png "Okta のトークン ポップアップ")  
   
-    -   **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、**[Token value (トークン値)]** をコピーします。  
+    -   **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、 **[Token value (トークン値)]** をコピーします。  
   
          ![Okta のトークン値](./media/okta-token-value.png "Okta のトークン値")  
   
-3.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
+3.  Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。  
   
-4.  **[アプリ コネクター]** ページで、[+] ボタン、**[Okta]** の順にクリックします。  
+4.  **[アプリ コネクター]** ページで、[+] ボタン、 **[Okta]** の順にクリックします。  
   
      ![Okta の接続](./media/connect-okta.png "Okta の接続")  
   
