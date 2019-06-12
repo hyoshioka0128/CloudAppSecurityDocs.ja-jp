@@ -2,10 +2,10 @@
 title: Microsoft データ分類サービスを使用した Cloud App Security コンテンツ検査
 description: この記事では、Microsoft データ分類サービスを使用して DLP コンテンツ検査を実行する場合に Microsoft Cloud App Security で従うプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 596ed74834a78b993c1b8d4833b8ce1ae481dcc2
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0424af7b50aea3bfe77ae0cb2fe1e7d66f6f1fde
+ms.sourcegitcommit: a5b9089b381bcf8bb48031a5a9141e4e20955aaf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567869"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66830329"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
@@ -37,7 +37,7 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 追加構成なしで、**Microsoft データ分類サービス**を使用するように**検査方法**を設定するためのオプションがあります。 このオプションは、Microsoft Cloud App Security のファイルに対するデータ漏えい保護のポリシーを作成するときに便利です。
 
 
-1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、**[データ分類サービス]** を選択します。
+1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、 **[データ分類サービス]** を選択します。 設定することも、**検査方法**で、[セッション ポリシー](session-policy-aad.md)ページ**ファイル ダウンロードの制御 (DLP)** 選択します。
      ![データ分類サービスの設定](./media/dcs-enable.png)
 2. ポリシーを適用するタイミングについて、条件が **1 つ以上**満たされた場合、または**すべて**満たされた場合のいずれかを選択します。
 3. **機密情報の種類**を選び、**検査の種類を選択**します。
@@ -47,7 +47,7 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 
 5. 必要に応じて、一致の最後の 4 文字のマスクを解除できます。 既定では、マスクされた一致がコンテキストの中で示され、一致の前後の 40 文字が含まれます。 このチェック ボックスをオンにした場合、一致自体の最後の 4 文字のマスクが解除されます。
 
-6. また、ポリシーのためにアラートとガバナンス アクションを設定することもできます。 詳細については、[ファイル ポリシー](data-protection-policies.md)と[ガバナンス アクション](governance-actions.md)に関するページをご覧ください。
+6. ファイル ポリシーを活用するには、設定することもアラートと、ポリシーのガバナンス アクション。 詳細については、[ファイル ポリシー](data-protection-policies.md)と[ガバナンス アクション](governance-actions.md)に関するページをご覧ください。 セッション ポリシーを活用することもできますアクションを監視および制御ファイルときにリアルタイムで DC の型が一致します。 詳細については、次を参照してください。[セッション ポリシー](session-policy-aad.md)します。
 
 これらのポリシーを設定すると、その他の承認されたクラウド アプリすべてに Office 365 DLP 機能の長所を簡単に拡張できます。また、Microsoft Cloud App Security によって提供されるツールセット (たとえば、[Azure Information Protection 分類ラベルを自動的に適用する](azip-integration.md)機能や、共有アクセス許可を制御する機能) をフルに使用して、アプリに格納されているデータを保護できます。
 

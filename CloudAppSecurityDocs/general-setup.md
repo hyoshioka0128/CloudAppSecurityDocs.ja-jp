@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2889bbf3c837e0d8e086d7e7a579f2839c42b5f3
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: d3339c5b0edc1fd9ee3b3b201fb9fa66531d7694
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567849"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837478"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Cloud App Security の基本セットアップ
 
@@ -38,7 +38,7 @@ ms.locfileid: "65567849"
   
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ  
   
-1. Cloud App Security ポータルのメニュー バーで、設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[設定]** を選択して組織の詳細を構成します。     
+1. Cloud App Security ポータルのメニュー バーで、設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、 **[設定]** を選択して組織の詳細を構成します。     
 
 2. **[組織の詳細]** に自社の**組織の表示名**を指定することは重要です。 これは、システムから送信される電子メールや Web ページに表示されます。  
   
@@ -54,6 +54,9 @@ ms.locfileid: "65567849"
 
     - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
   
+7. Azure Advanced Threat Protection の統合を統合する場合は、次を参照してください。 [Azure Advanced Threat Protection の統合](azip-integration.md)について。 
+
+
 7. ポータル設定は、この画面からいつでもバックアップできます。 **[ポータル設定をエクスポート]** をクリックすると、ポリシー規則やユーザー グループ、IP アドレス範囲などのポータル設定がすべて記述された json ファイルが作成されます。  
   
    
