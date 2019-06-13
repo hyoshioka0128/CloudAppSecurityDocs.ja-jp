@@ -25,6 +25,8 @@
   items:
     - name: シャドウ IT の検出および管理
       href: tutorial-shadow-it.md
+    - name: 危険性の高いユーザーを調査する
+      href: tutorial-ueba.md
     - name: 危険な OAuth アプリを調査する
       href: investigate-risky-oauth.md
     - name: 機密情報のダウンロードのブロック
@@ -63,7 +65,7 @@
           href: ip-tags.md
     - name: Cloud Discovery
       items:
-        - name: セットアップ
+        - name: 設定
           items:
             - name: Cloud Discovery のセットアップ
               href: set-up-cloud-discovery.md
@@ -208,18 +210,28 @@
   items:
     - name: アプリを証明する
       href: attest-your-app.md
-    - name: クラウド検出のトラブル シューティング
-      href: troubleshooting-cloud-discovery.md
-    - name: エラー メッセージを使用した API コネクタのトラブルシューティング
-      href: troubleshooting-api-connectors-using-error-messages.md
-    - name: コンテンツ検査のトラブルシューティング
-      href: troubleshooting-content-inspection.md
-    - name: SIEM 統合のトラブルシューティング
-      href: troubleshooting-siem.md
-    - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
-      href: troubleshoot-docker.md
-    - name: ポリシーのトラブルシューティング
-      href: troubleshoot-policies.md
+    - name: 共通のポリシー
+      items:
+        - name: Cloud Discovery ポリシー
+          href: policies-cloud-discovery.md
+        - name: 脅威保護に関するポリシー
+          href: policies-threat-protection.md
+        - name: 情報保護に関するポリシー
+          href: policies-information-protection.md
+    - name: トラブルシューティング
+      items:
+        - name: クラウド検出のトラブル シューティング
+          href: troubleshooting-cloud-discovery.md
+        - name: エラー メッセージを使用した API コネクタのトラブルシューティング
+          href: troubleshooting-api-connectors-using-error-messages.md
+        - name: コンテンツ検査のトラブルシューティング
+          href: troubleshooting-content-inspection.md
+        - name: SIEM 統合のトラブルシューティング
+          href: troubleshooting-siem.md
+        - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
+          href: troubleshoot-docker.md
+        - name: ポリシーのトラブルシューティング
+          href: troubleshoot-policies.md
 - name: リソース
   items:
     - name: リリース ノートのアーカイブ
