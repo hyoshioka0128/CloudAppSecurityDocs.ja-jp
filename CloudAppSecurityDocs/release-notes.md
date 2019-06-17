@@ -2,10 +2,10 @@
 title: Cloud App Security の新機能
 description: この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: angrobe
-ms.date: 05/15/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 06/04/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 55a534b9c47f6db18cccc8f302d73deabda606ec
-ms.sourcegitcommit: fffdbcf52ac482f7f5180ab6a5911203a717af54
+ms.openlocfilehash: 958d005a9c2a34bb714fc5b2a4f17b04eb727df2
+ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65629532"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66837519"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -29,6 +29,13 @@ ms.locfileid: "65629532"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+
+## <a name="cloud-app-security-release-150"></a>Cloud App Security リリース 150
+
+リリース日: 2019 年 5 月 26 日
+
+- **アラートのエクスポートの機能強化**<br> **[アラート]** ページから CSV にアラートをエクスポートするとき、そのアラートが解決または無視された日付が結果に追加されるようになりました。
 
 
 ## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security リリース 148 と 149
@@ -43,7 +50,7 @@ RSS フィード: 次の URL をフィード リーダーにコピーして貼�
 
 - **アプリの構成証明**<br>Microsoft Cloud App Security のコンプライアンスとリスク評価では、クラウド プロバイダーが、各自のアプリがクラウド アプリ カタログで最新であることを証明できるようになりました。 このパイロットにより、クラウド プロバイダーは、クラウド アプリ カタログのリスク属性に基づいて自分の構成証明アンケートに記入し、Cloud App Security での各自のリスク評価が正確かつ最新であることを確認できます。 次に、ユーザーは、どのリスク属性がプロバイダーによって証明されたか (Cloud App Security チームによる評価ではなく)、および各属性はいつプロバイダーによって送信されたかに関する表示を取得できます。 詳細については、「[アプリを証明する](attest-your-app.md)」をご覧ください。 
 
-- **Office 365 ワークロードの細分性**<br>Office 365 を Microsoft Cloud App Security に接続するときに、どのワークロードを接続したいか制御できるようになりました。 たとえば、アクティビティの監視用にのみ Office 365 の接続に関心があるお客様は、接続プロセス中に、または既存の Office 365 コネクタを編集することで、これを行えるようになりました。 既存の Office 365 コネクタを使っているお客様は、この変更の影響を受けません。
+- **Office 365 ワークロードの細分性**<br>Office 365 を Microsoft Cloud App Security に接続するときに、どのワークロードを接続したいか制御できるようになりました。 たとえば、アクティビティの監視用にのみ Office 365 の接続に関心があるお客様は、接続プロセス中に、または既存の Office 365 コネクタを編集することで、これを行えるようになりました。 この変更の一環として、OneDrive と SharePoint Online は個別のコネクタとして表示されるのではなく、"_Office 365 ファイル_" ワークロードとして Office 365 コネクタに含まれるようになります。 既存の Office 365 コネクタを使っているお客様は、この変更の影響を受けません。
 
 - **Teams のサポートの強化**<br>機密性の高いコンテンツに基づいてセッション ポリシーを構成することで、Teams Web アプリでのメッセージ送信をリアルタイムで監視およびブロックできるようになりました。 
 
@@ -78,7 +85,7 @@ Microsoft Cloud App Security で、Azure AD のグローバルな閲覧者ロー
 
 - **Microsoft Defender ATP 統合が GA になりました** <br>
 昨年に、[Windows Defender Advanced Threat Protection との統合](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)が発表されました。これにより、組織内でのシャドウ IT の検出が強化され、企業ネットワークを越えて拡張されます。 このユニークな統合の一般提供が開始され、[1 回のクリックで有効化できる](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG)ようになったことをお知らせいたします。
-- **Dynamics 365 のサポート** <br>Cloud App Security に Dynamics 365 のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとこれらのアプリ内に格納された機密コンテンツを保護できるようになりました。 
+- **Dynamics 365 CRM のサポート** <br>Cloud App Security に Dynamics 365 CRM のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとそのアプリ内に格納された機密コンテンツを保護できるようになりました。 
 
 ## <a name="cloud-app-security-release-144"></a>Cloud App Security リリース 144
 
@@ -95,7 +102,7 @@ Cloud App Security のマルウェア検出機能は、高度なサンドボッ�
     - 任意のアプリでのファイルのアップロード - 既知のマルウェアの拡張機能のアップロードを防いだり、ユーザーがアップロード前に AIP でファイルを保護することを保証したりするシナリオなどを実現します。
     - 任意のアプリでのコピーと貼り付け - データ窃盗に対する堅牢な制御を仕上げます。これには既に、ダウンロード、印刷、および共有などのカスタム アクティビティが含まれています。
     - メッセージの送信 - パスワードなどの PII データが、Slack、Salesforce、Workplace by Facebook などの人気のあるコラボレーション ツールで共有されないことを保証します。
-- 人気のあるリアルタイム監視や承認されたアプリの制御を、組織が簡単に実現できるようにするための組み込みのテンプレートが、セッション ポリシーに含まれるようになりました。**[リアルタイムのコンテンツ検査に基づいてアップロードをブロックします]** などです。
+- 人気のあるリアルタイム監視や承認されたアプリの制御を、組織が簡単に実現できるようにするための組み込みのテンプレートが、セッション ポリシーに含まれるようになりました。 **[リアルタイムのコンテンツ検査に基づいてアップロードをブロックします]** などです。
 
 
 
@@ -108,7 +115,7 @@ Cloud App Security のマルウェア検出機能は、高度なサンドボッ�
    - データ管理者およびセキュリティ オペレーターの Office 365 ロールが、Cloud App Security でサポートされるようになりました。 データ管理者ロールを付与されたユーザーは、Cloud Discovery レポートを表示するだけでなく、関連するすべてのファイルを管理することができます。 セキュリティ オペレーターには、アラートを管理し、ポリシーの構成を表示する権限があります。
    - セキュリティ閲覧者ロールで SIEM エージェントを構成できるようになり、アクセス許可のスコープ設定が向上しました。
 - **Microsoft Flow のサポート** Cloud App Security で Microsoft Flow 内のユーザー アクティビティを監視できるようになりました。 サポートされるアクティビティは、Flow により Office 365 監査ログにレポートされるアクティビティです。
-- **アラート エンティティのグループ化** 調査を支援するために、**[アラート]** ページで、アラートに関係していた関連エンティティがグループ化されるようになりました。
+- **アラート エンティティのグループ化** 調査を支援するために、 **[アラート]** ページで、アラートに関係していた関連エンティティがグループ化されるようになりました。
 
 ## <a name="cloud-app-security-release-142"></a>Cloud App Security リリース 142
 
@@ -151,7 +158,7 @@ Cloud App Security では現在 OneDrive ファイルについて、複数の地
 - 異常検出の調査が強化され、アラートに関係するファイルに関連付けられている追加の分析情報を表示できるようになりました。 異常なアクティビティのアラート (ダウンロード、共有、削除) に関係するファイルに対してアラートがトリガーされた場合に、このドリル ダウンを使用できます。 たとえば、影響を受けたファイルのほとんどが同じフォルダーにあったり、同じファイル拡張子を持っていたりする場合、アラートの追加のリスク セクションでこれらの分析情報を確認できます。
 
 **ファイル調査用のクエリ**
-- カスタム クエリを作成および保存する Cloud App Security の機能が、**[ファイル]** ページに拡張されました。 **[ファイル]** ページのクエリを使うと、詳しい調査のために再使用できるフィルター テンプレートを作成できます。 
+- カスタム クエリを作成および保存する Cloud App Security の機能が、 **[ファイル]** ページに拡張されました。 **[ファイル]** ページのクエリを使うと、詳しい調査のために再使用できるフィルター テンプレートを作成できます。 
 
 
 ## <a name="cloud-app-security-release-139-140"></a>Cloud App Security リリース 139、140
@@ -162,7 +169,7 @@ Cloud App Security では現在 OneDrive ファイルについて、複数の地
 SharePoint および One Drive 内ですべての人と共有されているファイルは、[SharePoint および One Drive に対して実施された変更によって](https://support.microsoft.com/help/4089534/how-to-grant-the-everyone-claim-to-external-users-in-office-365)、**内部**と見なされるようになりました。 そのため、すべての人と共有されているファイルが検出された場合、内部ファイルとして処理されることになります。ポリシーによってファイルが処理されてファイル ページ内に表示される方法も、この影響を受けます。
 
 - **ファイル監視における変更点**<br>
-新規顧客およびアイドル状態の顧客に対する既定のファイル監視動作が変更されました。 今後は、**[設定]** > **[ファイル]** から、ファイル監視をオンにして機能を有効にする必要があります。 既存のアクティブな顧客は、この変更の影響を受けません。 
+新規顧客およびアイドル状態の顧客に対する既定のファイル監視動作が変更されました。 今後は、 **[設定]**  >  **[ファイル]** から、ファイル監視をオンにして機能を有効にする必要があります。 既存のアクティブな顧客は、この変更の影響を受けません。 
 
 - **異常検出ポリシーの詳細な調整**<br>
 異常検出エンジンを操作して、ユーザー設定に応じてアラートを抑制または表示させることが可能になりました。 
@@ -385,7 +392,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 リリース日: 2018 年 5 月 13 日
 
-- **異常検出ポリシーのスコープ指定**: <br>
+- **異常検出ポリシーのスコープ指定**:<br>
 異常検出ポリシーに、スコープを指定できるようになりました。 これにより、特定のユーザーまたはグループのみを含めたり、特定のユーザーまたはグループを除外したりするように、各異常検出ポリシーを設定できます。 たとえば、頻度の低い国/地域の検出から頻繁に出張する特定のユーザーを無視するために、アクティビティを設定できます。 
 
 
@@ -393,7 +400,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 リリース日: 2018 年 4 月 29 日
 
 -   段階的なロールアウト:**アプリごとに、Microsoft Cloud App Security 管理者に管理アクセス許可を設定**できるようになりました。 たとえば、G Suite のみの管理者として、特定のユーザーを設定することができます。 これにより、情報が G Suite だけに関連する場合にのみ、ユーザーは Microsoft Cloud App Security でその情報を表示して変更することができます。 詳細については、「[管理アクセス許可の管理](manage-admins.md)」を参照してください。
-- 段階的なロールアウト:Microsoft Cloud App Security で **Okta 管理者ロールが表示される**ようになりました。これらは、**[設定]** > **[ユーザー グループ]** でタグとして、各ロールで利用できます。
+- 段階的なロールアウト:Microsoft Cloud App Security で **Okta 管理者ロールが表示される**ようになりました。これらは、 **[設定]**  >  **[ユーザー グループ]** でタグとして、各ロールで利用できます。
 
 
 ## <a name="cloud-app-security-release-121"></a>Cloud App Security リリース 121
@@ -466,7 +473,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 - バージョン 114 より、カスタム クエリを作成し、アクティビティ ログのページと検出されたアプリのページで保存する機能を徐々にロールアウトします。 カスタム クエリを使用すると、詳しい調査のために再使用できるフィルター テンプレートを作成できます。 また、**クエリ候補**機能が追加されました。調査テンプレートとして直接利用し、アクティビティや検出されたアプリにフィルター処理を適用できます。 **クエリ候補**には、権限借用アクティビティ、管理者アクティビティ、危険な非準拠クラウド ストレージ アプリ、暗号化の弱いエンタープライズ アプリ、セキュリティ上の問題など、リスクを特定するためのカスタム フィルターが含まれます。 **クエリ候補**をテンプレートとして利用して自分に合うように変更し、新しいクエリとして保存できます。 詳細については、「[アクティビティ フィルターとクエリ](activity-filters-queries.md)」と「[検出されたアプリのフィルターとクエリ](discovered-app-queries.md)」を参照してください。
  
-- [status.cloudappsecurity.com](https://status.cloudappsecurity.com) にアクセスするか、ポータル内から直接、**[ヘルプ]**>**[システム ステータス]** の順にクリックすることで、Cloud App Security サービスの現在の状態を確認できます。 
+- [status.cloudappsecurity.com](https://status.cloudappsecurity.com) にアクセスするか、ポータル内から直接、 **[ヘルプ]** > **[システム ステータス]** の順にクリックすることで、Cloud App Security サービスの現在の状態を確認できます。 
  
 
 

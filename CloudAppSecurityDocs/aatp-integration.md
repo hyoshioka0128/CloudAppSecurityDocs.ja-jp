@@ -15,12 +15,12 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3d5563b73c8b813608c5fd5bc0ea9120ba930e61
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: 4ca98ab0cb5655d774c6ee4e7f917a6e9456092a
+ms.sourcegitcommit: a25543c14c35f159dd06f7c0c89d6bc0e36a0413
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837730"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031064"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -63,9 +63,6 @@ Cloud App Security と Azure ATP 統合を有効にします。
  
 Azure Advanced Threat Protection の統合を有効にした後、組織内のすべてのユーザーに対して、オンプレミスのアクティビティが表示できるします。 強化 insights をアラートと不審なアクティビティを組み合わせて、クラウドおよびオンプレミス環境間で、ユーザーにします。
 
-
-
-詳細については[リスクの高いユーザーを調査](tutorial-ueba.md)します。
 
 
 ## <a name="next-steps"></a>次の手順 
