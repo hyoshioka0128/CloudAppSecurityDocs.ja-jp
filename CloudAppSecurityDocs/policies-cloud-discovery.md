@@ -1,8 +1,8 @@
 ---
 title: Cloud Discovery ポリシー - Cloud App Security |Microsoft Docs
-description: このトピックでは、Cloud App Security で Cloud Discovery の多数のポリシーを構成する手順について説明します。
-author: rkarlin
-ms.author: rkarlin
+description: この記事では、Cloud App Security で Cloud Discovery の多数のポリシーを構成する手順について説明します。
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
 ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -10,12 +10,12 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4c9d90852f1dbdf18da285f63abbb46e91595655
-ms.sourcegitcommit: 9f671d5dd5e5da023d598425442d8736546ca183
+ms.openlocfilehash: f301e5796fe408b9c1fb00b859c848bf4b62ba5f
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66837760"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149545"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 
@@ -60,7 +60,7 @@ Cloud App Security を使用すると、検出、組織の環境で使用され�
 
 2.  **ポリシー テンプレート**フィールドで、選択、**新しい危険なアプリ**テンプレートとテンプレートを適用します。
 
-3.  **アプリは、次のすべてに一致する**設定、[リスク スコア](risk-score.md)スライダーとアラートをトリガーしを満たすために、その他のポリシー フィルターを設定するリスクのレベルをカスタマイズするコンプライアンス リスク要因と組織のセキュリティ要件です。
+3.  **アプリは、次のすべてに一致する**設定、[リスク スコア](risk-score.md)スライダーとをカスタマイズするコンプライアンス リスク要因は、アラートをトリガーしを満たすために、その他のポリシー フィルターを設定するリスクのレベル組織のセキュリティ要件です。
 
     1.  省略可能: 意味のある検出を取得するには、アラートをトリガーするトラフィックの量をカスタマイズします。
 
@@ -135,11 +135,11 @@ Cloud App Security を使用すると、検出、組織の環境で使用され�
 
 ## <a name="detect-risky-oauth-apps"></a>危険な OAuth アプリを検出します。
 
-可視性を取得し、制御[OAuth アプリ](investigate-risky-oauth.md)Salesforce、Office 365、G Suite などのアプリ内にインストールされています。 高いアクセス許可を要求し、まれなコミュニティを使用する OAuth アプリは危険と見なされる可能性があります。
+可視性を取得し、制御[OAuth アプリ](investigate-risky-oauth.md)G Suite、Office 365、Salesforce などのアプリ内にインストールされています。 高いアクセス許可を要求し、まれなコミュニティを使用する OAuth アプリは危険と見なされる可能性があります。
 
 ### <a name="prerequisites"></a>前提条件
 
-継続的な Cloud Discovery の構成に自動ログ アップロードを報告する」の説明に従って[継続的レポートの構成に自動ログ アップロード](configure-automatic-log-upload-for-continuous-reports.md)します。
+G Suite、Office 365、または Salesforce アプリを使用して接続する必要があります[アプリ コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)します。
 
 ### <a name="steps"></a>手順
 
@@ -154,7 +154,7 @@ Cloud App Security を使用すると、検出、組織の環境で使用され�
 4.  アラートがトリガーされたときに実行されるアクションを構成します。 たとえば、Office 365、チェック**アプリの取り消し**OAuth アプリがポリシーによって検出されます。
 
 > [!NOTE]
->  Office 365、G Suite、Salesforce のアプリ ストアのサポートされています。
+>  G Suite、Salesforce、Office 365、アプリ ストアのサポートされています。
 
 ## <a name="next-steps"></a>次の手順 
 

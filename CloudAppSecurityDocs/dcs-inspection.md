@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 06/10/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0424af7b50aea3bfe77ae0cb2fe1e7d66f6f1fde
-ms.sourcegitcommit: a5b9089b381bcf8bb48031a5a9141e4e20955aaf
+ms.openlocfilehash: b970a947475b449534ad1ac3d28db2dd1984fc15
+ms.sourcegitcommit: 5c6d41aae2d9ac461917338f4a423f7a2683aca1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66830329"
+ms.lasthandoff: 06/16/2019
+ms.locfileid: "67149522"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
@@ -29,7 +29,7 @@ ms.locfileid: "66830329"
 Microsoft Cloud App Security では、Microsoft データ分類サービスをネイティブに使用して、クラウド アプリのファイルを分類できます。 Microsoft データ分類サービスには、Office 365、Azure Information Protection、および Microsoft Cloud App Security の間での、統合された情報保護エクスペリエンスが用意されています。 分類サービスでは、Microsoft Cloud App Security によって保護されているサード パーティのクラウド アプリにデータ分類を拡張できます。これにより、さらに多くのアプリ間で既存の決定事項を使用できます。
 
 >[!NOTE]
-> この機能は現在、米国、ヨーロッパ (フランスを除く)、および APAC で利用できます。
+> この機能は、米国、ヨーロッパ (フランス) を除く、オーストラリア、インド、カナダ、日本、および APAC で現在使用できません。
 
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>データ分類サービスを使用するコンテンツ検査を有効にする
