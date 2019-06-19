@@ -2,10 +2,10 @@
 title: Flow と Cloud App Security を統合して、カスタム アラート オートメーションを取得する
 description: この記事では、Flow と Cloud App Security を統合することでカスタム アラート オートメーションを取得する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,14 +14,14 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 5a85f97480953951d281bc8e951293310ed29a19
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a9bdc83e18f82f60719e4080aacecdf4eea0580e
+ms.sourcegitcommit: 62778bfbc010b95cdef4c8aed23b0f195f382242
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567762"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67171540"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation---preview"></a>カスタム アラート オートメーションのための Flow との統合 - プレビュー
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>カスタムのアラートの自動化フローと統合します。
 
 *適用対象:Microsoft Cloud App Security*
 
@@ -41,9 +41,9 @@ Cloud App Security 単体で、ポリシーを定義するときに、ユーザ�
 
 1. Cloud App Security で [API トークンを作成](api-tokens.md)します。 
 
-2. [Microsoft Flow ポータル](https://flow.microsoft.com)にアクセスして、[**[Create a new flow from scratch]\(新しいフローを最初から作成する\)**](https://docs.microsoft.com/flow/get-started-logic-flow) を選択します。 
+2. [Microsoft Flow ポータル](https://flow.microsoft.com)にアクセスして、[ **[Create a new flow from scratch]\(新しいフローを最初から作成する\)** ](https://docs.microsoft.com/flow/get-started-logic-flow) を選択します。 
 
-3. 検索コネクタとトリガーに、「**Cloud App Security**」を入力して、**[When an alert is generated]\(アラートの生成時\)** を選択します。
+3. 検索コネクタとトリガーに、「**Cloud App Security**」を入力して、 **[When an alert is generated]\(アラートの生成時\)** を選択します。
 
    ![アラート生成時のフロー](./media/flow-when-alert.png)
 
@@ -53,12 +53,12 @@ Cloud App Security 単体で、ポリシーを定義するときに、ユーザ�
 
    ![Flow ワークフロー](./media/flow-workflow.png)
 
-6. Cloud App Security ポータルで、**[ポリシー]** に移動し、Flow に送信するポリシーのアラートの行で、3 つのドットをクリックして、**[設定]** を選択します。 
-7. **[アラート]** の下で、**[Flow にアラートを送信する]** を選択し、ドロップダウン メニューからプレイブックの名前を選択します。  
+6. Cloud App Security ポータルで、 **[ポリシー]** に移動し、Flow に送信するポリシーのアラートの行で、3 つのドットをクリックして、 **[設定]** を選択します。 
+7. **[アラート]** の下で、 **[Flow にアラートを送信する]** を選択し、ドロップダウン メニューからプレイブックの名前を選択します。  
 
    ![Cloud App Security ポータルで Flow を有効にする](./media/flow-mcas-config.png)
 
-8. 作成した、またはアクセスを許可された Cloud App Security プレイブックは、**[セキュリティ拡張機能]** 画面に表示されます。 
+8. 作成した、またはアクセスを許可された Cloud App Security プレイブックは、 **[セキュリティ拡張機能]** 画面に表示されます。 
 
   
    ![Cloud App Security でプレイブックを表示する](./media/flow-extensions.png)

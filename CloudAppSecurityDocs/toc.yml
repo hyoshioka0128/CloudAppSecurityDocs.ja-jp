@@ -23,6 +23,8 @@
       href: discovered-apps.md
 - name: チュートリアル
   items:
+    - name: 危険性の高いユーザーを調査する
+      href: tutorial-ueba.md
     - name: シャドウ IT の検出および管理
       href: tutorial-shadow-it.md
     - name: 危険な OAuth アプリを調査する
@@ -188,6 +190,8 @@
           href: governance-actions.md
         - name: 検出されたアプリの管理
           href: governance-discovery.md
+        - name: Azure ATP の統合
+          href: aatp-integration.md
         - name: Azure Information Protection の統合
           href: azip-integration.md
         - name: 外部ソリューションと統合する
