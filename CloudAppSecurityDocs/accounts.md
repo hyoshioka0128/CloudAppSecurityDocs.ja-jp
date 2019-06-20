@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 35b9bdf9e1b59bfecefe18f5fcaacd4ce6b73edf
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
+ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565878"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67237166"
 ---
 # <a name="accounts"></a>[アカウント]
 
@@ -28,7 +28,7 @@ ms.locfileid: "65565878"
 
 Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントが Cloud App Security によって検出されると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
-管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
+管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **ユーザーおよびアカウント**ページによって接続されているクラウド アプリケーションから取得されたエンティティの包括的な詳細を提供します。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -56,7 +56,7 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
   
 <!--- **Account name**: The account name is the primary alias of the user, but other identifiers from other Microsoft accounts (Office 365 and Azure Active Directory) such as proxy addresses, aliases, SID are supported and consolidated beneath the primary alias. -->
 
-- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、**[設定]** で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
+- **所属団体**: 所属団体は、**内部**または**外部**のいずれかです。 "内部" とするユーザーおよびアカウントを設定するには、 **[設定]** で、内部組織の**IP アドレス範囲**を必ず設定します。 アカウントに管理者のアクセス許可が割り当てられている場合、[アカウント] テーブル内のアイコンには赤いネクタイが加わります。 ![アカウント管理アイコン](./media/accounts-admin-icon.png)
 
 - **アプリ**: 組織内のアカウントで使用されている API 接続アプリをフィルター処理することができます。
 
