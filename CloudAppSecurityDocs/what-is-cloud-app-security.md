@@ -2,10 +2,10 @@
 title: Cloud App Security とは
 description: この記事では、Microsoft Cloud App Security とそのしくみについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/17/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 525df694492667bf12ceb8a9fe30654f97c19935
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
+ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568779"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157070"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Microsoft Cloud App Security の概要
 
@@ -29,19 +29,23 @@ ms.locfileid: "65568779"
 > [!NOTE]
 > Office 365 Cloud App Security については、「[高度なセキュリティ管理の使用を開始する](https://support.office.com/article/Get-started-with-Advanced-Management-Security-d9ee4d67-f2b3-42b4-9c9e-c4529904990a)」をご覧ください。
 
-クラウドに移行することで、従業員の柔軟性が向上し、IT コストが削減されます。 ただし、組織のセキュリティを確保するための複雑さと課題も新たに生じます。 クラウド アプリケーションの利点を最大限に活用するには、IT チームはアクセスを許可することと、重要なデータを保護するための制御を維持することの間で適切なバランスを見つける必要があります。  
+クラウドに移行することで、従業員と IT の柔軟性が共に向上します。 ただし、組織のセキュリティを確保するための複雑さと課題も新たに生じます。 クラウド アプリとサービスの利点を最大限に活用するために、IT チームは重要なデータを保護するための制御を維持しつつ、バランスよくアクセスを許可する必要があります。
 
-Cloud App Security は、Microsoft Cloud Security スタックの重要なコンポーネントで、 クラウド アプリケーションが約束するメリットをユーザーが十分に受けられるように組織を支援するだけでなく、アクティビティの可視性を強化して制御を維持できる包括的なソリューションです。 また、クラウド アプリケーション全体で重要なデータの保護も強化します。 シャドウ IT の発見、リスクの評価、ポリシーの適用、アクティビティの調査、脅威の防止に役立つツールを使用することで、組織は重要なデータの制御を維持しながらクラウドにより安全に移行できます。 
+Microsoft Cloud App Security は、ログの収集、API コネクタ、リバース プロキシなど、さまざまな展開モードをサポートする Cloud Access Security Broker です。 お使いの Microsoft およびサード パーティ製クラウド サービス全体にわたるサイバー攻撃の脅威を特定し、対処するために、豊富な表示機能、データ送受信の制御、高度な分析を備えています。
+
+Microsoft Cloud App Security は、Microsoft の主要なソリューションとネイティブに統合され、セキュリティの専門家向けに設計されています。 シンプルな展開、一元化された管理、革新的な自動化の機能を備えています。
 
 ライセンスについて詳しくは、[Microsoft Cloud App Security のライセンスのデータシート](https://aka.ms/mcaslicensing)をご覧ください。
 
 ## <a name="the-cloud-app-security-framework"></a>Cloud App Security のフレームワーク  
 
-- **Cloud Discovery**:シャドウ IT のレポート、制御およびリスク評価を含む、組織でのクラウドの使用をすべて検出します。
+- **シャドウ IT の使用を検出し、制御する**:組織で使われているクラウド アプリ、IaaS、および PaaS サービスを特定します。 使用状況パターンを調査し、16,000 を超える SaaS アプリのリスク レベルとビジネス準備状態を、80 を超えるリスクに対して評価します。 それらの管理を開始して、セキュリティとコンプライアンスを確保しましょう。
 
-- **データ保護**:可視化、DLP ポリシーの適用、アラートおよび調査により、クラウド内のデータを監視および制御します。 
+- **クラウド全体で機密情報を保護する**:保存されている機密情報の公開範囲を把握し、分類し、保護します。 すぐに使えるポリシーと自動化されたプロセスを活用して、クラウド アプリ全体をリアルタイムで制御します。
 
-- **脅威保護**:異常な使用とセキュリティ インシデントを検出します。 動作分析および高度な調査ツールを使用して、リスクを軽減し、ポリシーとアラートを設定してクラウドのネットワーク トラフィックを最大限に制御します。
+- **サイバー攻撃の脅威と異常に対する保護**:クラウド アプリ全体で異常な動作を検出し、ランサムウェア、侵害されたユーザー、または悪質なアプリケーションを特定します。危険度の高い使用を分析して自動的に修復し、組織へのリスクを制限します。
+
+- **クラウド アプリのコンプライアンスを評価する**:お客様のクラウド アプリが、法規制や業界標準など、関連するコンプライアンス要件を満たしているかどうか評価します。 非準拠アプリへのデータ漏洩を防ぎ、規制対象となるデータへのアクセスを制限します。
 
 ## <a name="architecture"></a>アーキテクチャ  
 
