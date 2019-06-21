@@ -5,7 +5,7 @@ keywords: ''
 author: rkarlin
 ms.author: rkarlin
 manager: barbkess
-ms.date: 29/04/2019
+ms.date: 04/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0799073e7bd82570fd298c1080960170648b7ac1
-ms.sourcegitcommit: 9553aed06ebb2378d44bb5685439ae5cba605171
+ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
+ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "65048405"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298875"
 ---
 # <a name="attest-your-app"></a>アプリを証明する
 
@@ -30,7 +30,7 @@ Microsoft Cloud App Security をコンプライアンスとセキュリティの
 
 アンケートの送信を正常に完了する以下のサービス属性に従います。
 
-| フィールド | 情報 カテゴリ | 型 | 使用可能な値 | 説明 |
+| フィールド | 情報 カテゴリ | 種類 | 使用可能な値 | 説明 |
 |------|-------|------|---------|----------|
 | アプリ名 | 全般 | 文字列型 | フリー テキスト | アプリケーションの名前は、クラウド アプリ カタログに表示されます。 |
 | 説明 | 全般 | 文字列型 | フリー テキスト | どのような簡単な説明、アプリケーションでは、ユーザーを実現したりしないでくださいができます。 |
