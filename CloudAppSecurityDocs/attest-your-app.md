@@ -2,10 +2,10 @@
 title: Cloud App Security アプリの証明 |Microsoft Docs
 description: この記事では、Cloud App Security でのアプリを証明するための手順を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: barbkess
-ms.date: 04/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e395e0ca1ee0fe0805a37e75a6201c6d9a224cdf
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 6beaeba5c522aacb8a6d0c9612df318b267d2612
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298875"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333567"
 ---
 # <a name="attest-your-app"></a>アプリを証明する
 
@@ -30,7 +30,7 @@ Microsoft Cloud App Security をコンプライアンスとセキュリティの
 
 アンケートの送信を正常に完了する以下のサービス属性に従います。
 
-| フィールド | 情報 カテゴリ | 種類 | 使用可能な値 | 説明 |
+| フィールド | 情報] カテゴリ | 種類 | 使用可能な値 | 説明 |
 |------|-------|------|---------|----------|
 | アプリ名 | 全般 | 文字列型 | フリー テキスト | アプリケーションの名前は、クラウド アプリ カタログに表示されます。 |
 | 説明 | 全般 | 文字列型 | フリー テキスト | どのような簡単な説明、アプリケーションでは、ユーザーを実現したりしないでくださいができます。 |
@@ -47,6 +47,7 @@ Microsoft Cloud App Security をコンプライアンスとセキュリティの
 | 製造元 | 全般 | 文字列型 | フリー テキスト | このアプリを提供するベンダーの名前。 |
 | データ型 | 全般 | 文字列型 | 閉じる一覧 - アンケートの提供 | アプリにユーザーがどの種類のデータをアップロードできますか。|
 | ホーム ページ | 全般 | [URL] | フリー テキスト | プロバイダーのホーム ページの URL。 |
+| ディザスター リカバリー計画 | 全般 | ブール値 | True、False | このアプリには、ディザスター リカバリー計画を含むバックアップと復元の方法がありますか。 |
 | 最新の侵害 | セキュリティ | date | MMM-月-日 | 最新のインシデントをアプリが所有する機密性の高い、プロテクト、または機密のデータが表示、盗難、またはこれを行う人物によって使用されます。 |
 | 保存時のデータの暗号化方法 | セキュリティ | 文字列型 | 閉じる一覧 - アンケートの提供 | 保存時のデータの暗号化の種類は、アプリで実行されます。 |
 | Multi-Factor Authentication | セキュリティ | ブール値 | True、False | このアプリは、multi-factor authentication ソリューションをサポートしますか。 |

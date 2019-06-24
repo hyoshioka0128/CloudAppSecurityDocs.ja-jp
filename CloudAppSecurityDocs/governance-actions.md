@@ -2,10 +2,10 @@
 title: 接続されているアプリを制御するためのガバナンス アクション - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/29/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 3536c0a5-fa56-4931-9534-cc7cc4b4dfb0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12f099db6c23836fbcbb35d17c12a3736b76cf20
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 534ff73e8d68e2422dfb5bbf9a4d94a95026c288
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237150"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333605"
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 
@@ -76,7 +76,7 @@ ms.locfileid: "67237150"
 
   - **親からの権限の継承** - このガバナンス アクションでは、Office 365 でファイルまたはフォルダーに設定されている特定のアクセス許可を削除します。 その後、親フォルダーに設定されているアクセス許可に戻すことができます。
 
-  - **ごみ箱** – ファイルを [ごみ箱] フォルダーに移動します。 (SharePoint および OneDrive)
+  - **ごみ箱** – ファイルを [ごみ箱] フォルダーに移動します。 (ボックスで、Google Drive、OneDrive、SharePoint)
 
    ![policy_create アラート](./media/policy_create-alerts.png "policy_create alerts") 
 
@@ -139,7 +139,7 @@ ms.locfileid: "67237150"
 |[アプリ ダッシュボード] > [アプリの権限] |アクセス許可|アプリを取り消す|Google と Salesforce に対するサードパーティ製アプリのアクセス許可を取り消します。 これは既存のすべてのアクセス許可に対して実行される 1 回限りのアクションですが、以降の接続を禁止することはありません。 | G Suite、Salesforce|
 |[アプリ ダッシュボード] > [アプリの権限] | アカウント | アプリからのユーザーの取り消し|[ユーザー] の数をクリックすると、特定のユーザーを取り消すことができます。 画面に特定のユーザーが表示され、お客様は X を使用して、任意のユーザーのアクセス許可を削除することができます。| G Suite、Salesforce|
 |[検出] > [検出されたアプリ]/[IP アドレス]/[ユーザー]| Cloud Discovery | 探索データのエクスポート | 探索データから CSV を作成します。 | 検出 |
-|[ファイル ポリシー]|ファイル |ごみ箱に入れる|ユーザーのごみ箱にファイルを入れます。| One Drive、SharePoint |
+|[ファイル ポリシー]|ファイル |ごみ箱に入れる|ユーザーのごみ箱にファイルを移動します。| ボックスで、Google Drive、OneDrive、SharePoint |
 |[ファイル ポリシー]|ファイル | ファイルの最終編集者に通知 |メールを送信して、ファイルを編集した最後のユーザーに、そのファイルがポリシーに違反していることを通知します。 |G Suite、Box|
 |[ファイル ポリシー]|ファイル |ファイルの所有者に通知|ファイルがポリシーに違反していると、ファイルの所有者にメールが送信されます。 Dropbox では、所有者がファイルに関連付けられていない場合、通知は設定されている特定のユーザーに送られます。 | すべてのアプリ |
 |[ファイル ポリシー]、[アクティビティ ポリシー] | ファイル、アクティビティ | 特定のユーザーに通知 |メールを送信して、特定のユーザーにポリシーに違反しているファイルについて通知します。| すべてのアプリ |

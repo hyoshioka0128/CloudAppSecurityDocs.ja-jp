@@ -2,10 +2,10 @@
 title: Cloud App Security ポータルへの管理アクセス権を管理する
 description: この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 04/04/2019
+author: ShlomoSagir-MS
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9a086df199107c08481c464fd5a15769b6c00921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568648"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333640"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -49,11 +49,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - ガバナンス ログへのアクセスと表示 
   - [スナップショット レポートの管理] ページへのアクセスと表示 
 
-- **アプリ/インスタンス管理者:** 選択した特定のアプリまたはアプリのインスタンスを排他的に扱う Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、Box European インスタンスへの管理者アクセス許可をユーザーに付与します。 管理者には、ファイル、アクティビティ、ポリシー、アラートのいずれかを問わず、Box European インスタンスに関連するデータのみが表示されます。
+- **アプリ/インスタンス管理者:** 特定のアプリまたはアプリのインスタンスのみでの取引が選択されている Microsoft Cloud App Security ですべてのデータを完全または読み取り専用のアクセスを許可しています たとえば、Box European インスタンスへの管理者アクセス許可をユーザーに付与します。 管理者には、ファイル、アクティビティ、ポリシー、アラートのいずれかを問わず、Box European インスタンスに関連するデータのみが表示されます。
 
   - アクティビティ ページ - 特定のアプリに関するアクティビティのみ
   - アラート - 特定のアプリに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、アプリ/インスタンスを排他的に扱うポリシーのみ編集または作成が可能
+  - ポリシー - すべてのポリシーを表示でき、アクセス許可の編集やアプリ/インスタンスのみを扱うポリシーのみを作成する完全な割り当てられている場合
   - アカウント ページ - 特定のアプリ/インスタンスのアカウントのみ
   - アプリのアクセス許可 - 特定のアプリ/インスタンスのアクセス許可のみ
   - ファイル ページ - 特定のアプリ/インスタンスからのファイルのみ
@@ -62,11 +62,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - ユーザー アクセス許可を持つ API トークンのアクセス許可のみ
   - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ 
 
-- **ユーザー グループの管理者:** ここで選択した特定のグループを排他的に扱う、Microsoft Cloud App Security のすべてのデータに対するアクセス許可があります。 たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
+- **ユーザー グループの管理者:** ここで選択した特定のグループのみで取引を Microsoft Cloud App Security ですべてのデータを完全または読み取り専用のアクセスを許可しています たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
 
   - アクティビティ ページ - グループのユーザーに関するアクティビティのみ
   - アラート - グループのユーザーに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、グループのユーザーを排他的に扱うポリシーのみ編集または作成が可能
+  - ポリシー - すべてのポリシーを表示でき、アクセス許可の編集や作成、グループ内のユーザーのみを扱うポリシーのみ完全な割り当てられている場合
   - アカウント ページ - グループ内の特定のユーザーのアカウントのみ
   - アプリのアクセス許可 – アクセス許可がありません
   - ファイル ページ – アクセス許可がありません
