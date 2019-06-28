@@ -15,12 +15,12 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cea30130ec0f9f548b93fb09250ef8a6a8a3678a
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: 941c72af9a2b5f1b30faf1b6f7bc0e0b12baf389
+ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333640"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411832"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -77,7 +77,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 - **クラウド検出のグローバル管理者:** すべての Cloud Discovery の設定およびデータを表示および編集できます。 グローバル検出管理者には、次のアクセス許可があります。
 
-  - 設定 -  
+  - 設定 - 
      -  システム設定 - 表示のみ
      - Cloud Discovery 設定 - すべて表示および編集可能 (匿名化のアクセス許可は、ロール割り当て時に許可されたかどうかに依存する)
   - Cloud Discovery アクティビティ - フル アクセス許可
@@ -108,8 +108,7 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
    >[!IMPORTANT]
    > 全体管理者かセキュリティ管理者だけが Cloud App Security へのアクセスを他のユーザーに与えることができます。
 
-
-1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、**[管理者アクセス権を管理します]** をクリックします。 
+1. 設定の歯車アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[管理者アクセス権を管理します]** をクリックします。
 
 2. プラス記号をクリックして、Cloud App Security へのアクセス権を付与する管理者を追加します。 内部または外部のメール アドレスを入力して、組織内部、または外部の Managed Security Service Provider (MSSP) の管理者がセキュリティ アラートを管理できるようにします。
   
@@ -122,16 +121,25 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
 
 4. **[管理者の追加]** をクリックします。  
 
+## <a name="admin-activity-auditing"></a>管理者アクティビティの監査
+
+Cloud App Security では、特定のユーザーを調査したり、特定のアラートを表示したり、管理者の監査も含めてすべての管理者のアクティビティのログをエクスポートできます。
+
+ログをエクスポートするには、次の手順を実行します。
+
+1. **管理者のアクセスを管理**] ページで、[**管理者のアクティビティのエクスポート**します。
+
+1. 必要な時間範囲を指定します。
+
+1. クリックして **エクスポート**します。
+
 ## <a name="invite-external-admins"></a>外部管理者を招待する
 
-Microsoft Cloud App Security では、Microsoft Cloud App Security ポータルの管理者として外部の Managed Security Service Provider (MSSP) を招待することができます。 外部ユーザーを管理者として構成し、Microsoft Cloud App Security で使用できるロールのいずれかを割り当てられるようになりました。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。 
+Cloud App Security では、Cloud App Security ポータルの管理者として使用すると、外部管理セキュリティ サービス プロバイダー (Mssp) を招待できます。 外部ユーザーの管理者として構成されているし、Cloud App Security で使用できるロールのいずれかに割り当てられているようになりましたことができます。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。
 
 テナントを切り替えるには、複数のテナントへのアクセス許可を取得してから、ユーザー アイコンをクリックします。 これで、アクセス許可があるテナントのリストが表示されます。 管理するテナントを選択します。
 
 ![テナントの選択](./media/choose-tenant.png "テナントの選択")
 
 ## <a name="next-steps"></a>次の手順  
-[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
-  
-  
-  
+[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
