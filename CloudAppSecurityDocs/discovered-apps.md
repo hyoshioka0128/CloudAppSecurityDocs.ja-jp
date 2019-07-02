@@ -80,7 +80,7 @@ Cloud Discovery では、IaaS と PaaS のリソースをより詳しく調べ�
 
 検出されたリソースを表示するには:
 
-1. Cloud App Security ポータルで **[探索]** 、 **[Discovered resources]\(検出されたリソース\)** の順に選択します。
+1. Cloud App Security ポータルで **[探索]** 、 **[Discovered resources]\(検出されたリソース)** の順に選択します。
 
   ![検出されたリソースのメニュー](./media/discovered-resources-menu.png) 
 
@@ -88,7 +88,7 @@ Cloud Discovery では、IaaS と PaaS のリソースをより詳しく調べ�
  
   ![検出リソース](./media/discovery-resources.png) 
 
-3. カスタム アプリの場合、行の末尾の 3 つのボタンをクリックし、 **[Add custom app]\(カスタム アプリの追加)\** を選択します。 これにより、アプリに名前を付けて Cloud Discovery ダッシュボードに追加するための **[Add custom app]\(カスタム アプリの追加)\** ウィンドウが開きます。
+3. カスタム アプリの場合、行の末尾の 3 つのボタンをクリックし、 **[Add custom app]\(カスタム アプリの追加)\** を選択します。 これにより、アプリに名前を付けて Cloud Discovery ダッシュボードに追加するための **[Add custom app]\(カスタム アプリの追加)** ウィンドウが開きます。
 
 
 ## <a name="generate-cloud-discovery-executive-report"></a>Cloud Discovery エグゼクティブ レポートの生成
