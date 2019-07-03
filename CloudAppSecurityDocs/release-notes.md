@@ -3,9 +3,9 @@ title: Cloud App Security の新機能
 description: この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: shsagir
-manager: shsagir
-ms.date: 06/04/2019
+ms.author: ShlomoSagir-MS
+manager: ShlomoSagir-MS
+ms.date: 6/20/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0d79be7d7ce307f2bc8adfae61c65ec023d715c0
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 3af4f1a18576baf44684c7a6764fed0f1c768c68
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298900"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333624"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -30,12 +30,30 @@ ms.locfileid: "67298900"
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-151"></a>Cloud App Security リリース 151
+
+リリース日: 2019 年 6 月 9 日
+
+- **ハイブリッド UEBA - Azure ATP とのネイティブ統合 (プレビュー)**<br>
+Cloud App Security は Azure ATP とネイティブで統合され、クラウド アプリとオンプレミス ネットワークの両方に ID アクティビティの 1 つのビューが用意されました。 詳細については、「[Azure Advanced Threat Protection integration (Azure Advanced Threat Protection の統合)](aatp-integration.md)」を参照してください。
+- **UEBA の機能強化**<br>
+レーダーで検知されない脅威を特定しやすくするために、Cloud App Security では独自のプロファイリングを使用して個々のアクティビティとアラートのリスク スコアを表示できるようになりました。 リスク スコアを使用すると、単体ではアラートをトリガーするほど疑わしくないアクティビティを特定できます。 ただし、Cloud App Security でリスク スコアをユーザーの**調査の優先順位のスコア**に集計することで、危険な行動を特定し、調査に集中することができます。 これらの新機能は、再設計されたユーザー ページで使用できるようになりました
+- **クラウド アプリ カタログに追加された新しいリスク要因**<br>
+クラウド アプリ カタログにディザスター リカバリー プランのリスク要因が追加されたため、クラウド アプリ カタログのアプリのビジネス継続性のサポートを評価できるようになりました。
+- **Microsoft Flow コネクタの一般提供**<br>
+昨年、プレビュー段階の Microsoft Cloud App Security で Microsoft Flow コネクタがサポートされ、現在、このコネクタは一般提供になりました。
+- **ファイル ポリシーの自動ガバナンスの強化**<br>
+Cloud App Security で、ファイル ポリシーの**ごみ箱**ガバナンス アクションの構成がサポートされるようになりました。このガバナンス アクションを利用すると、ファイルをごみ箱フォルダーに自動的に移動することができます。
+- **Google ドライブのサポートの強化**<br>
+Cloud App Security で、Google ドライブの**ごみ箱**ガバナンス アクションがサポートされるようになりました。このガバナンス アクションを利用すると、Google ドライブのファイルをごみ箱フォルダーに移動することができます。
+- **アプリ管理者とグループ管理者の役割に対する新しいアクセス許可**<br>
+"*アプリ/インスタンス管理者*" と "*ユーザー グループ管理者*" の役割は読み取り専用アクセスをサポートするようになりました。
 
 ## <a name="cloud-app-security-release-150"></a>Cloud App Security リリース 150
 
 リリース日: 2019 年 5 月 26 日
 
-- **アラートのエクスポートの機能強化**<br> **[アラート]** ページから CSV にアラートをエクスポートするとき、そのアラートが解決または無視された日付が結果に追加されるようになりました。
+- **アラートのエクスポートの機能強化**<br>**[アラート]** ページから CSV にアラートをエクスポートするとき、そのアラートが解決または無視された日付が結果に追加されるようになりました。
 
 
 ## <a name="cloud-app-security-release-148-and-149"></a>Cloud App Security リリース 148 と 149

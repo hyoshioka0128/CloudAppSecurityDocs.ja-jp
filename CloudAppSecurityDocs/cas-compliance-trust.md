@@ -15,12 +15,12 @@ ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ff64d0afc590312a877c81797e79ff7a7b05dbf9
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0e85d167300c3102db74092cd4f52afe9c24a21e
+ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568138"
+ms.lasthandoff: 06/23/2019
+ms.locfileid: "67333595"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 
@@ -65,7 +65,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 
 ### <a name="youre-the-owner-of-your-data"></a>お客様のデータはお客様が所有
 - Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
-- 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[**[ユーザーとアカウント]**](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
+- 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[ **[ユーザーとアカウント]** ](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 - お客様のデータはお客様が所有しているため、お客様はいつでもサブスクリプションを取り消してデータの削除を要求できます。 サブスクリプションを更新されない場合、お客様のデータは、 [オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)で指定された期間内に削除されます。
 
@@ -114,6 +114,8 @@ Microsoft Cloud App Security は次のようにデータを保持しています
 - 検出データ:90 日間
 
 - アラート:180 日
+
+- ガバナンス ログ:120 日
 
 Microsoft のデータ管理の実施に関する詳細については、 [オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
