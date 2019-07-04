@@ -123,8 +123,12 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: WebEx の接続
           href: connect-webex-to-microsoft-cloud-app-security.md
-    - name: Azure AD アプリの Conditional Access App Control のデプロイ
-      href: proxy-deployment-aad.md
+    - name: 条件付きアクセス アプリ制御アプリの展開
+      items:
+        - name: フィーチャー アプリでの条件付きアクセス アプリ制御の展開
+          href: proxy-deployment-aad.md
+        - name: 任意のアプリでの条件付きアクセス アプリ制御のオンボードと展開
+          href: proxy-deployment-any-app.md
     - name: 調査
       href: investigate.md
       items:
