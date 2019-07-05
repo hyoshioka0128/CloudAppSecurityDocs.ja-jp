@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: ShlomoSagir-MS
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 6/23/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3af4f1a18576baf44684c7a6764fed0f1c768c68
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.openlocfilehash: 79f4a9c08b43f7b6d62ec1ead27103da3c820752
+ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333624"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67411847"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -30,6 +30,17 @@ ms.locfileid: "67333624"
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-152"></a>Cloud App Security リリース 152
+
+リリース日: 2019 年 6 月 23 日
+
+- **アプリの条件付きアクセス制御がすべてのアプリに展開**<br>
+これまでも[主要なアプリケーション](proxy-intro-aad.md)に対して充実したサポートを提供してきましたが、このたび、ついにアプリの条件付きアクセス制御のサポートがすべての Web アプリに展開されることになりました。 この新機能により、セッションやアクセス ポリシーを処理する Web アプリを展開して強力なリアルタイムの監視と制御ができるようになります。 たとえば、ダウンロードを Azure Information Protection ラベルで保護したり、機密文書のアップロードをブロックしたり、監査を提供したりできます。
+- **ポータルのアクティビティの監査**<br>
+Cloud App Security は実行されたアクティビティの包括的な監視と調査を行うために、ポータル内のすべての管理アクティビティの監査を行います。 さらに、特定のユーザーを調査したり、特定のアラートを確認したりする管理者の監査のような追加の調査と分析のために、最大で 90 日間のアクティビティをエクスポートできるようになりました。 ログをエクスポートするには、 **[管理者のアクセス権管理]** 設定ページに移動してください。
+- **カスタム セッションが Cloud App Security ポータルからサインアウト**<br>
+指定した期間よりも長くアイドル状態にあるポータルから管理セッションが自動的にサインアウトするように構成できるようになりました。
+
 ## <a name="cloud-app-security-release-151"></a>Cloud App Security リリース 151
 
 リリース日: 2019 年 6 月 9 日
@@ -37,7 +48,7 @@ RSS フィード: 次の URL をフィード リーダーにコピーして貼�
 - **ハイブリッド UEBA - Azure ATP とのネイティブ統合 (プレビュー)**<br>
 Cloud App Security は Azure ATP とネイティブで統合され、クラウド アプリとオンプレミス ネットワークの両方に ID アクティビティの 1 つのビューが用意されました。 詳細については、「[Azure Advanced Threat Protection integration (Azure Advanced Threat Protection の統合)](aatp-integration.md)」を参照してください。
 - **UEBA の機能強化**<br>
-レーダーで検知されない脅威を特定しやすくするために、Cloud App Security では独自のプロファイリングを使用して個々のアクティビティとアラートのリスク スコアを表示できるようになりました。 リスク スコアを使用すると、単体ではアラートをトリガーするほど疑わしくないアクティビティを特定できます。 ただし、Cloud App Security でリスク スコアをユーザーの**調査の優先順位のスコア**に集計することで、危険な行動を特定し、調査に集中することができます。 これらの新機能は、再設計されたユーザー ページで使用できるようになりました
+レーダーで検知されない脅威を特定しやすくするために、Cloud App Security では独自のプロファイリングを使用して個々のアクティビティとアラートのリスク スコアを表示できるようになりました。 リスク スコアを使用すると、単体ではアラートをトリガーするほど疑わしくないアクティビティを特定できます。 ただし、Cloud App Security でリスク スコアをユーザーの**調査の優先順位のスコア**に集計することで、危険な行動を特定し、調査に集中することができます。 これらの新機能が、再設計されたユーザー ページで使用できるようになりました。
 - **クラウド アプリ カタログに追加された新しいリスク要因**<br>
 クラウド アプリ カタログにディザスター リカバリー プランのリスク要因が追加されたため、クラウド アプリ カタログのアプリのビジネス継続性のサポートを評価できるようになりました。
 - **Microsoft Flow コネクタの一般提供**<br>
