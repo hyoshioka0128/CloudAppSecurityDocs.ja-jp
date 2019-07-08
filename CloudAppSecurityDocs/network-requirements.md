@@ -2,31 +2,30 @@
 title: ネットワークの要件 - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で作業するために開く必要があるポートと IP アドレスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/17/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
-ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5602e0141b8c9251c0d76d4960361fbea62fb289
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 7dde86b3ee21ca25510cb7e30ed08452d753aa15
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568676"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610734"
 ---
 # <a name="network-requirements"></a>ネットワークの要件
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事では、Microsoft Cloud App Security で作業するために許可し、ホワイトリストに追加する必要があるポートと IP アドレスの一覧を提供します。 
+この記事では、ポートと Microsoft Cloud App Security を使用するリストを許可する必要がある IP アドレスの一覧を示します。
 
 ## <a name="view-your-data-center"></a>データ センターを表示する
 
@@ -34,7 +33,7 @@ ms.locfileid: "65568676"
 
 接続しているデータ センターを表示するには、次の手順を行います。
 
-1. Cloud App Security ポータルで、メニュー バーの**疑問符のアイコン**をクリックします。 次に、**[バージョン情報]** を選択します。 
+1. Cloud App Security ポータルで、メニュー バーの**疑問符のアイコン**をクリックします。 次に、 **[バージョン情報]** を選択します。 
 
     ![[バージョン情報] をクリックします。](./media/about-menu.png)
 
@@ -44,7 +43,7 @@ ms.locfileid: "65568676"
 
 ## <a name="portal-access"></a>ポータル アクセス
 
-Cloud App Security ポータルにアクセスするには、次の IP アドレスと DNS 名について、ファイアウォールのホワイトリストに**発信ポート 443** を追加します。  
+Cloud App Security ポータルにアクセスする追加**発信ポート 443**次の IP アドレスと DNS 名に、ファイアウォールの許可リスト。  
 
     portal.cloudappsecurity.com
     *.portal.cloudappsecurity.com
@@ -64,11 +63,11 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
 > 
 > |データ センター|IP アドレス|DNS 名|
 > |----|----|----|
-> |US1|13.80.125.22<br></br>52.183.75.62<br></br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
-> |US2|13.80.125.22<br></br>52.183.75.62<br></br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br></br>|
-> |US3|13.80.125.22<br></br>52.183.75.62<br></br>40.90.218.198<br></br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br></br>|
-> |EU1|13.80.125.22<br></br>52.183.75.62<br></br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
-> |EU2|13.80.125.22<br></br>52.183.75.62<br></br>40.81.156.154<br></br>40.81.156.156|*.eu2.portal.cloudappsecurity.com|
+> |US1|13.80.125.22<br>52.183.75.62<br>13.91.91.243|\*.us.portal.cloudappsecurity.com|
+> |US2|13.80.125.22<br>52.183.75.62<br>52.184.165.82|\*.us2.portal.cloudappsecurity.com<br>|
+> |US3|13.80.125.22<br>52.183.75.62<br>40.90.218.198<br>40.90.218.196|*.us3.portal.cloudappsecurity.com<br>|
+> |EU1|13.80.125.22<br>52.183.75.62<br>52.174.56.180|\*.eu.portal.cloudappsecurity.com<|
+> |EU2|13.80.125.22<br>52.183.75.62<br>40.81.156.154<br>40.81.156.156<br>40.81.152.172|*.eu2.portal.cloudappsecurity.com|
 
 
 > 
@@ -77,7 +76,7 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
 
 ## <a name="siem-agent-connection"></a>SIEM エージェントの接続
 
-Cloud App Security が SIEM に接続できるようにするには、ファイアウォールのホワイトリストに対する次の IP アドレスに**発信ポート 443** を追加します。  
+Cloud App Security を SIEM に接続を有効にするには追加**発信ポート 443**次の ip アドレスをファイアウォールの許可リスト。  
 
 
 > [!div class="mx-tableFixed"]
@@ -88,10 +87,10 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 > |US2|52.184.165.82|
 > |US3|40.90.218.198<br>40.90.218.196|
 > |EU1|52.174.56.180|
-> |EU2|40.81.156.154<br>40.81.156.156|
+> |EU2|40.81.156.154<br>40.81.156.156<br>40.81.152.172|
 
 > [!NOTE]
-> Http 接続を許可する必要がある場合は、Cloud App Security SIEM エージェントを設定するときは、プロキシを指定していない、 http://ocsp.msocsp.com/とポート 80 で ocsp.digicert.com します。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
+> Http 接続を許可する必要がある場合は、Cloud App Security SIEM エージェントを設定するときは、プロキシを指定していない、 http://ocsp.msocsp.com/ とポート 80 で ocsp.digicert.com します。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
@@ -107,11 +106,11 @@ Cloud App Security が SIEM に接続できるようにするには、ファイ�
 > 
 > |データ センター|IP アドレス|  
 > |----|----|
-> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 
 ## <a name="third-party-dlp-integration"></a>サード パーティ DLP との統合
@@ -125,7 +124,7 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 > [!NOTE] 
 > -  既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。
-> - Cloud App Security は上記の IP アドレスからガバナンス アクションとスキャンを実行するため、ベンダーからのアクティビティ ログにこの IP アドレスが表示される場合があります。 
+> - Cloud App Security は上記の IP アドレスからガバナンス アクションとスキャンを実行するため、ベンダーからのアクティビティ ログにこの IP アドレスが表示される場合があります。
 
 サードパーティ製のアプリに接続し、外部 DLP ソリューションと統合するには、Cloud App Security を有効にして次の IP アドレスから接続します。
 
@@ -133,15 +132,15 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 > 
 > |データ センター|IP アドレス|  
 > |----|----|
-> |US1|13.91.91.243 <br></br> 104.209.35.177 <br></br> 13.91.98.185 <br></br> 40.118.211.172 <br></br> 13.93.216.68 <br></br> 13.91.61.249 <br></br> 13.93.233.42 <br></br> 13.64.196.27 <br></br> 13.64.198.97 <br></br> 13.64.199.41 <br></br> 13.64.198.19|
-> |US2|52.184.165.82<br></br> 40.84.4.93 <br></br> 40.84.4.119 <br></br> 40.84.2.83 |
+> |US1|13.91.91.243 <br> 104.209.35.177 <br> 13.91.98.185 <br> 40.118.211.172 <br> 13.93.216.68 <br> 13.91.61.249 <br> 13.93.233.42 <br> 13.64.196.27 <br> 13.64.198.97 <br> 13.64.199.41 <br> 13.64.198.19|
+> |US2|52.184.165.82<br> 40.84.4.93 <br> 40.84.4.119 <br> 40.84.2.83 |
 > |US3|40.90.218.197<br>40.90.218.203|
-> |EU1|52.174.56.180<br></br>13.80.22.71<br></br>13.95.29.177<br></br>13.95.30.46|
-> |EU2|40.81.156.155<br>40.81.156.153|
+> |EU1|52.174.56.180<br>13.80.22.71<br>13.95.29.177<br>13.95.30.46|
+> |EU2|40.81.156.155<br>40.81.156.153<br>40.81.152.172|
 
 ## <a name="mail-server"></a>メール サーバー
 
-既定のテンプレートと設定から通知が送信されるようにするには、スパム対策のホワイトリストにこれらの IP アドレスを追加します。 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。 
+既定のテンプレートと設定から送信される通知を有効にするには、スパム対策にこれらの IP アドレスの許可リストを追加します。 Cloud App Security 専用の電子メールの IP アドレスは次のとおりです。
 
 - 65.55.234.192/26
 - 207.46.200.0/27
@@ -154,10 +153,9 @@ Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信�
 
 送信者の ID をカスタマイズしない場合、電子メールの通知はすべての既定の設定を使用して送信されます。
 
-MailChimp を使用するには、スパム対策のホワイトリストに次の IP アドレスを追加して、通知の送信を可能にします。198.2.134.139 (mail1.cloudappsecurity.com)
+この IP を追加、MailChimp を使用するには、アドレス、スパム対策には通知の送信を有効にする ボックスの一覧を許可します。198.2.134.139 (mail1.cloudappsecurity.com)
 
-
-## <a name="log-collector"></a>ログ コレクター 
+## <a name="log-collector"></a>ログ コレクター
 
 Cloud Discovery 機能がログ コレクターを使って組織内のシャドウ IT を検出できるようにするには、以下の項目を開きます。
 
@@ -177,7 +175,7 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 > [!NOTE]
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。
 >- ログ コレクターが Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
->- Http 接続を許可する必要がある場合は、ログ コレクターを設定するときは、プロキシを指定していない、 http://ocsp.msocsp.com/とポート 80 で ocsp.digicert.com します。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
+>- Http 接続を許可する必要がある場合は、ログ コレクターを設定するときは、プロキシを指定していない、 http://ocsp.msocsp.com/ とポート 80 で ocsp.digicert.com します。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 ## <a name="next-steps"></a>次の手順
  

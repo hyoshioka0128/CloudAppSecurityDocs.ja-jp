@@ -2,10 +2,10 @@
 title: Cloud App Security で使用可能なファイル データとフィルターを理解する
 description: このリファレンス記事では、Cloud App Security によって使用されるファイルとファイル フィルターの種類について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MSn
+ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ed441d1832ce9f6d0ce070fc58baa058a34bcadc
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237212"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610895"
 ---
 # <a name="files"></a>ファイル
 
@@ -134,6 +134,23 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
+## <a name="authorizing-files"></a>ファイルを承認します。
+
+Cloud App Security がマルウェアやリスクの DLP を読んだりとしてファイルを特定した後は、ファイルを調査することをお勧めします。 ファイルが安全であると判断した場合は、それらを承認できます。 ファイルの承認をマルウェアの検出レポートから削除してこのファイルでの将来の一致を抑制します。
+
+### <a name="to-authorize-files"></a>ファイルを承認するには
+
+1. Cloud App security では、次のようにクリックします。**コントロール**し**ポリシー**します。
+1. 調査をトリガーしたポリシーが表示されるでの行で、ポリシーの一覧で、**カウント**の一致リンクをクリックして、列。
+    > [!TIP]
+    > 種類別のポリシーの一覧をフィルター処理することができます。 フィルターの種類を使用するリスクの種類ごと、次の表に示します。
+    >
+    > | リスクの種類 | フィルターの種類 |
+    > | --- | --- |
+    > | DLP | [ファイル ポリシー] |
+    > | マルウェア | マルウェアの検出ポリシー |
+1. 調査中のファイルが表示されて、一致するファイルの一覧でクリックして**Authorize**します。
+
 ## <a name="working-with-the-file-drawer"></a>ファイル ドロワーの使用
 
 ファイル ログでファイル自体をクリックすることにより、各ファイルに関する詳細情報を見ることができます。 クリックしてが開き、**ファイル ドロワー**ファイルに対して実行できます。 次の操作を提供します。
@@ -152,8 +169,6 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 
 ## <a name="next-steps"></a>次の手順
   
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
+[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
-  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)

@@ -15,14 +15,14 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13ec7114bc38cb44dab2f8728d38b9ba64e67455
-ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
+ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
+ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511396"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610739"
 ---
-# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>Conditional Access App Control をおすすめのアプリを展開します。
+# <a name="deploy-conditional-access-app-control-for-featured-apps"></a>フィーチャー アプリでの条件付きアクセス アプリ制御の展開
 
 *適用対象:Microsoft Cloud App Security*
 
@@ -131,10 +131,9 @@ Cloud App Security では、そのサーバーにサインインする新しい�
 > デプロイ後は、[アプリの条件付きアクセス制御] ページからアプリを削除することはできません。 アプリにセッションやアクセス ポリシーを設定しないかぎり、アプリの条件付きアクセス制御でアプリの動作が変更されることは一切ありません。
 
 >[!div class="step-by-step"]
-[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>
-[次へ: セッション ポリシーを作成する方法 »](session-policy-aad.md)
+[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>[次へ: オンボードのすべてのアプリの Conditional Access App Control のデプロイと»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>次の手順 
-[Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)   
+[Cloud App Security Conditional Access App Control の使用](proxy-intro-aad.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
