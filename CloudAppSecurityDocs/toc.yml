@@ -23,10 +23,10 @@
       href: discovered-apps.md
 - name: チュートリアル
   items:
-    - name: 危険性の高いユーザーを調査する
-      href: tutorial-ueba.md
     - name: シャドウ IT の検出および管理
       href: tutorial-shadow-it.md
+    - name: 危険性の高いユーザーを調査する
+      href: tutorial-ueba.md
     - name: 危険な OAuth アプリを調査する
       href: investigate-risky-oauth.md
     - name: 機密情報のダウンロードのブロック
