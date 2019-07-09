@@ -3,9 +3,9 @@ title: Cloud App Security の新機能
 description: この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/23/2019
+ms.date: 7/7/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 79f4a9c08b43f7b6d62ec1ead27103da3c820752
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: 01ad42b053b6a0cb482f59c7473fbb40ce49f2e8
+ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411847"
+ms.lasthandoff: 07/07/2019
+ms.locfileid: "67610867"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -29,6 +29,24 @@ ms.locfileid: "67411847"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-153"></a>Cloud App Security リリース 153
+
+リリース日: 2019 年 7 月 7 日
+
+- **Dropbox のサポートの強化**<br>
+Cloud App Security で Dropbox の**ごみ箱**ガバナンス アクションがサポートされるようになりました。このガバナンス アクションは、ファイル ポリシーの一部として、手動または自動で使用できます。
+- **アプリのクラウド アクセス制御のための新しいおすすめアプリ**<br>
+以下のおすすめアプリに対するアプリの条件付きアクセス制御の一般提供が開始されました。
+
+    - OneDrive for Business
+    - SharePoint Online
+    - Azure DevOps
+    - Exchange Online
+    - Power BI
+
+- **マルウェアと識別されたファイルの承認**<br>
+Cloud App Security では、接続されているアプリのすべてのファイルから DLP 公開とマルウェアがスキャンされます。 ファイルがマルウェアとして特定されても、調査の結果安全性が確認された場合はそれを承認できるようになりました。 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。
 
 ## <a name="cloud-app-security-release-152"></a>Cloud App Security リリース 152
 
@@ -510,6 +528,4 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 ここに示されるもの以前のリリースについて詳しくは、「[Past releases of Microsoft Cloud App Security](release-note-archive.md)」(Microsoft Cloud App Security の過去のリリース) を参照してください。
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
-  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
