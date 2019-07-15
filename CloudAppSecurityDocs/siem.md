@@ -2,10 +2,10 @@
 title: Cloud App Security と SIEM の統合
 description: この記事では、SIEM と Cloud App Security との統合に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 12/10/2018
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 25968245abd28b6a97cebda85c5092cd0a8d35fe
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 449be026e0c13723f886089cae3c9d2f7a181d78
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568847"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870232"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 
@@ -29,6 +29,11 @@ ms.locfileid: "65568847"
 Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 この機能を長期間無効にしてから再び有効にすると、過去 2 日間分のアラートとアクティビティが転送され、それからそれ以降のすべてのアラートとアクティビティが転送されます。
+
+> [!IMPORTANT]
+> Cloud App Security で Azure Advanced Threat Protection を統合していて、両方のサービスが SIEM にアラート通知を送信するように構成されている場合は、同じアラートに対して重複する SIEM 通知を受け取ることになります。 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 重複や混乱を避けるためには、必ずシナリオに対処してください。 たとえば、アラートの管理を実行する場所を決定し、もう一方のサービスから送信される SIEM 通知を停止します。
+
+
 
 ## <a name="siem-integration-architecture"></a>SIEM 統合アーキテクチャ
 
@@ -66,10 +71,10 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1:Cloud App Security ポータルでセットアップする
 
-1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、**[SIEM エージェント]** タブをクリックします。
+1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、 **[SIEM エージェント]** タブをクリックします。
 
-2. プラス記号アイコンをクリックし、**[SIEM エージェントを追加する]** ウィザードを開始します。
-3. ウィザードで、**[ウィザード起動]** をクリックします。   
+2. プラス記号アイコンをクリックし、 **[SIEM エージェントを追加する]** ウィザードを開始します。
+3. ウィザードで、 **[ウィザード起動]** をクリックします。   
 4. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 
    **[次へ]** をクリックします。
 
@@ -107,8 +112,8 @@ SIEM との統合は次の 3 つの手順で行われます。
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
 > - サーバーの起動時に JAR を実行することをお勧めします。
->   - Windows:スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、**[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
->   - Linux:**&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   - Windows:スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、 **[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
+>   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 例: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
 - DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
@@ -175,7 +180,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3:SIEM エージェントが動作しているか検証します。
 
-1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、**[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
+1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、 **[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
 
    以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
@@ -191,13 +196,13 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 ## <a name="editing-your-siem-agent"></a>SIEM エージェントの編集
 
-SIEM エージェントを編集するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[編集]** を選択します。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はありません。自動的に更新されます。
+SIEM エージェントを編集するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、 **[編集]** を選択します。 SIEM エージェントを編集する場合、.jar ファイルを再実行する必要はありません。自動的に更新されます。
 
 ![SIEM - 編集](./media/siem-edit.png)
 
 ## <a name="deleting-your-siem-agent"></a>SIEM エージェントの削除
 
-SIEM エージェントを削除するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、**[削除]** を選択します。
+SIEM エージェントを削除するには、テーブルの SIEM エージェント行の末尾にある 3 つの点をクリックし、 **[削除]** を選択します。
 
 ![SIEM - 削除](./media/siem-delete.png)
 

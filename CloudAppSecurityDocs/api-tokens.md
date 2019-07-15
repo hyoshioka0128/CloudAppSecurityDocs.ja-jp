@@ -2,9 +2,9 @@
 title: Cloud App Security での API トークンの管理
 description: この記事では、Cloud App Security 用の API トークンの生成に関して説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d474035f1d47e7eb6a751bf79c4e3f948638d7b5
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cfc1579d995f5aeaf2aba56c3b4072791d5d26c5
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567509"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870155"
 ---
 # <a name="api-tokens"></a>API トークン
 
@@ -39,12 +39,11 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 [API トークン] タブでは、テナントのすべての API トークンを管理できます。 
 
-
 ## <a name="generate-a-token"></a>トークンを生成する
 
-1. **[設定]** メニューから **[セキュリティ拡張機能]**、**[API トークン]** の順に選びます。
+1. **[設定]** メニューから **[セキュリティ拡張機能]** 、 **[API トークン]** の順に選びます。
 
-2. プラス アイコン **[新しいトークンの生成]** をクリックし、後でトークンの識別に使う名前を指定して、**[次へ]** をクリックします。
+2. プラス アイコン **[新しいトークンの生成]** をクリックし、後でトークンの識別に使う名前を指定して、 **[次へ]** をクリックします。
    ![Cloud App Security が API トークンを生成する](./media/api-token-gen.png)
 
 3. トークンの値をコピーし、回復するときのためにどこかに保存します。トークンを紛失した場合、再生成する必要があります。 トークンには、それを発行したユーザーの特権が設定されます。 たとえば、セキュリティ閲覧者は、データを変更できるトークンを発行することはできません。
@@ -58,7 +57,10 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
    ![Cloud App Security API トークン](./media/generate-api-token.png)
 
-ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
+    ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
+
+> [!NOTE]
+> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブになると、API トークンが有効になります。 詳細については、「 [PIM での Azure AD ロールのアクティブ化](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
 
 ## <a name="api-token-management"></a>API トークンの管理
 

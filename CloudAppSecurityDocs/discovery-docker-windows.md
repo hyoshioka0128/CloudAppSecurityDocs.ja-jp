@@ -2,10 +2,10 @@
 title: Windows の Docker を使用して Cloud App Security の継続的レポートをロールアウトする | Microsoft Docs
 description: この記事では、オンプレミス サーバーの Windows で Docker を使用して、Cloud App Security で継続的レポートの自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 4/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/10/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 31fba210aeee0796e7ba3e7386348888ce877a1c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568471"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870207"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "65568471"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="technical-requirements"></a>技術要件
+## <a name="prerequisites"></a>前提条件
 
 - OS:**Windows 10** (Fall Creators Update) および Windows Server **バージョン 1709 以降**
 
@@ -40,6 +40,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 - Hyper-V でオペレーティング システム上の仮想化を有効にすることが必要
+
+> [!IMPORTANT]
+> ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインアウトせずに、Docker ユーザーの接続を切断することを勧めることをお勧めします。
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 
@@ -55,7 +58,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 1. **[自動ログ アップロード]** 設定ページに移動します。 
 
-     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、**[ログ コレクター]** をクリックします。
+     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
       ![設定アイコン](./media/settings-icon.png)
 
@@ -73,7 +76,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** に **[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、**[Syslog – TLS]** のいずれかを設定します。
+     e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
      
      >[!NOTE]
      >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
@@ -90,7 +93,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-   d. コレクターに接続するすべての**データ ソース**を選択し、**[更新]** をクリックして構成を保存し、次の展開手順を確認します。
+   d. コレクターに接続するすべての**データ ソース**を選択し、 **[更新]** をクリックして構成を保存し、次の展開手順を確認します。
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -116,7 +119,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 3. PowerShell スクリプトの実行を有効にするには、`Set-ExecutionPolicy RemoteSigned` を実行します。
 
 4. 実行: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-これにより、Docker クライアントがご使用のコンピューターにインストールされます。 ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Linux コンテナーを使用して、Docker クライアントを設定することを確認します。**
+これにより、Docker クライアントがご使用のコンピューターにインストールされます。 ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Docker クライアントが Linux コンテナーを使用するように設定されていることを確認します。**
 
 5. 再起動のたびに、インストーラーを保存したディレクトリから、次を再実行します: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
 
@@ -153,7 +156,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、**[継続的レポート]** を選択します。 
+1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。 
 2. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
 
@@ -162,13 +165,13 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 ### 省略可能: インストーラーの署名の検証 <a name="validate-signature"></a>
 
 Docker のインストーラーが Microsoft によって署名されていることを確認するには:
-1. ファイルを右クリックし、**[プロパティ]** を選択します。
-2. **[デジタル署名]** をクリックして、**[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。  
+1. ファイルを右クリックし、 **[プロパティ]** を選択します。
+2. **[デジタル署名]** をクリックして、 **[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。  
 3. **[署名者名]** で **Microsoft Corporation** が唯一のエントリであることを確認します。  
 
 ![デジタル署名が有効](./media/digital-signature-successful.png)
 
-デジタル署名が有効でない場合は、**[このデジタル署名は有効ではありません]** と表示されます。
+デジタル署名が有効でない場合は、 **[このデジタル署名は有効ではありません]** と表示されます。
 
 ![デジタル署名が無効](./media/digital-signature-unsuccessful.png)
 
