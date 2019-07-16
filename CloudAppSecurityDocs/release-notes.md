@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 01ad42b053b6a0cb482f59c7473fbb40ce49f2e8
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
+ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610867"
+ms.lasthandoff: 07/14/2019
+ms.locfileid: "67870185"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -46,13 +46,13 @@ Cloud App Security で Dropbox の**ごみ箱**ガバナンス アクション�
     - Power BI
 
 - **マルウェアと識別されたファイルの承認**<br>
-Cloud App Security では、接続されているアプリのすべてのファイルから DLP 公開とマルウェアがスキャンされます。 ファイルがマルウェアとして特定されても、調査の結果安全性が確認された場合はそれを承認できるようになりました。 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。
+Cloud App Security では、接続されているアプリのファイルから DLP 公開とマルウェアがスキャンされます。 ファイルがマルウェアとして特定されていても、調査の結果安全性が確認された場合はそれを承認できるようになりました。 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。 マルウェアの検出について詳しくは、[Cloud App Security の異常検出](anomaly-detection-policy.md)に関するページをご覧ください。
 
 ## <a name="cloud-app-security-release-152"></a>Cloud App Security リリース 152
 
 リリース日: 2019 年 6 月 23 日
 
-- **アプリの条件付きアクセス制御がすべてのアプリに展開**<br>
+- **アプリの条件付きアクセス制御がすべてのアプリに展開 (プレビュー)**<br>
 これまでも[主要なアプリケーション](proxy-intro-aad.md)に対して充実したサポートを提供してきましたが、このたび、ついにアプリの条件付きアクセス制御のサポートがすべての Web アプリに展開されることになりました。 この新機能により、セッションやアクセス ポリシーを処理する Web アプリを展開して強力なリアルタイムの監視と制御ができるようになります。 たとえば、ダウンロードを Azure Information Protection ラベルで保護したり、機密文書のアップロードをブロックしたり、監査を提供したりできます。
 - **ポータルのアクティビティの監査**<br>
 Cloud App Security は実行されたアクティビティの包括的な監視と調査を行うために、ポータル内のすべての管理アクティビティの監査を行います。 さらに、特定のユーザーを調査したり、特定のアラートを確認したりする管理者の監査のような追加の調査と分析のために、最大で 90 日間のアクティビティをエクスポートできるようになりました。 ログをエクスポートするには、 **[管理者のアクセス権管理]** 設定ページに移動してください。
