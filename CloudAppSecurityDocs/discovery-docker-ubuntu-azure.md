@@ -2,10 +2,10 @@
 title: Azure での Docker を使用した自動ログ アップロードを構成する
 description: この記事では、Azure での Ubuntu または RHEL 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 1/27/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4799b0f835960d8170d1305406418734b65185d6
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567991"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372306"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -28,9 +28,9 @@ ms.locfileid: "65567991"
 
 Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。 
 
-## <a name="technical-requirements"></a>技術要件
+## <a name="prerequisites"></a>必須コンポーネント
 
-- OS:Ubuntu 14.04 および 16.04 (新しいバージョンについては、サポートにお問い合わせください)、または RHEL 7.2 以降
+- OS:Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
 
 - ディスク領域:250 GB
 
@@ -54,7 +54,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 1. **[自動ログ アップロード]** 設定ページに移動します。 
 
-     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、**[ログ コレクター]** をクリックします。
+     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
       ![設定アイコン](./media/settings-icon.png)
 
@@ -63,16 +63,16 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      」を参照します。 **[データ ソースの追加]** をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
-          
+
      b. プロキシまたはファイアウォールの **[名前]** を付けます。
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** に **[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、**[Syslog – TLS]** のいずれかを設定します。
+     e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
      
      >[!NOTE]
      >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
@@ -90,7 +90,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
      c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-     d. コレクターに接続するすべての**データ ソース**を選択し、**[更新]** をクリックして構成を保存し、次の展開手順を確認します。
+     d. コレクターに接続するすべての**データ ソース**を選択し、 **[更新]** をクリックして構成を保存し、次の展開手順を確認します。
 
       ![ubuntu2](./media/ubuntu2.png)
 
@@ -113,7 +113,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 1. Azure 環境内で新しい Ubuntu マシンを作成します。 
 2. マシンが起動したら、次の手順でポートを開きます。
 
-     」を参照します。 マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
+     」を参照します。 マシン ビューで、 **[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
 
      b. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
 
@@ -132,7 +132,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
       
       ![Ubuntu Azure の規則](./media/inbound-rule.png)
 
-3. マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
+3. マシンに戻って、 **[接続]** をクリックし、マシン上のターミナルを開きます。
 
 4. `sudo -i` を使ってルート権限に変更します。
 
@@ -152,7 +152,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
      ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
 
-8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 次のような結果を受け取ります:**"Finished successfully!" (正常に終了しました)**
+8. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 次のような結果を受け取ります: **"Finished successfully!" (正常に終了しました)**
 
    ![ubuntu8](./media/ubuntu8.png)
 
@@ -176,7 +176,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、**[継続的レポート]** を選択します。 
+1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。 
 2. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
 

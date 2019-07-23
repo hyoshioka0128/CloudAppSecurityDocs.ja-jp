@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 7/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 2490c5e5-e723-4fc2-a5e0-d0a3a7d01fc2
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 511512c6d615f1e0fe09640bb7b02b2df694c6de
-ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
+ms.openlocfilehash: 6f12926e79e7f3311737cc734e2eec8a60bfb752
+ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610739"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68372367"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>フィーチャー アプリでの条件付きアクセス アプリ制御の展開
 
@@ -28,15 +28,15 @@ ms.locfileid: "67610739"
 
 >[!div class="step-by-step"]
 [« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>
-[次へ: セッション ポリシーを作成する方法 »](session-policy-aad.md)
+[次へ: すべてのアプリに対してアプリの条件付きアクセス制御のオンボードとデプロイを行う»](proxy-deployment-any-app.md)
 
-Microsoft Cloud App Security Conditional Access App Control で制御するおすすめアプリを構成するこれらの手順に従います。
+次の手順に従って、Microsoft Cloud App Security アプリの条件付きアクセス制御によって制御されるおすすめアプリを構成します。
 
-**ステップ 1: [Azure AD ポータルに移動してアプリの条件付きアクセス ポリシーを作成し、セッションを Cloud App Security にルーティングします](#add-azure-ad)。**
+**ステップ 1: [Azure AD ポータルにアクセスし、アプリの条件付きアクセスポリシーを作成して、セッションをルーティング Cloud App Security](#add-azure-ad)**
 
-**手順 2:[スコープ ポリシーにユーザーを使用して、各アプリにサインインする](#sign-in-scoped)します。**
+**手順 2:[ポリシーをスコープとするユーザーを使用して、各アプリにサインインします。](#sign-in-scoped)**
 
-**手順 3:Azure AD の組み込みの Cloud App Security ポリシーを選択しなかった場合、またはすべてのアプリにポリシーを適用する場合[Cloud App Security ポータルに移動](#portal)**
+**手順 3:Azure AD で組み込みの Cloud App Security ポリシーを選択しなかった場合、または任意のアプリにポリシーを適用する場合は、 [Cloud App Security ポータルにアクセス](#portal)します。**
 
 [**手順 4: デプロイをテストする**](#test)
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security Conditional Access App Control で制御するお�
 
 ## 手順 1:Azure AD 条件付きアクセスの TEST ポリシーを作成する<a name="add-azure-ad"></a>  
 
-1. Azure Active Directory で [**セキュリティ**、] をクリックして**条件付きアクセス**します。
+1. Azure Active Directory の **[セキュリティ]** で、 **[条件付きアクセス]** をクリックします。
 
 2. **[新しいポリシー]** をクリックして新しいポリシーを作成します。
 
@@ -62,23 +62,23 @@ Microsoft Cloud App Security Conditional Access App Control で制御するお�
       > [!NOTE]
       >アプリの条件付きアクセス制御では、これらのおすすめ以外のアプリを含め、Azure AD のシングル サインオンを利用して構成されている SAML または OpenID 接続のアプリをサポートしています。 おすすめ以外のアプリは、Cloud App Security ポータル内のアクセス制御を利用して、セッション制御を使ってオンボードされているアプリに対して要求を行うことで、構成できます。 
 
-7. クリックして**を有効にする**と**保存**します。
+7. **[有効]** をクリックして**保存**します。
 
-## 手順 2:スコープ ポリシーにユーザーを使用して、各アプリにサインインするには<a name="sign-in-scoped"></a>
+## 手順 2:ポリシーをスコープとするユーザーを使用して、各アプリにサインインします。<a name="sign-in-scoped"></a>
 
 ポリシーを作成したら、そのポリシーで構成されている各アプリにサインインします。 必ずポリシーで構成されているユーザーでサインインしてください。 最初に、既存のセッションからサインアウトしてください。
 
-Cloud App Security では、そのサーバーにサインインする新しいアプリごとに、ポリシーの詳細を同期します。  これには最大 で1 分かかることがあります。
+Cloud App Security によって、サインインする新しい各アプリのポリシーの詳細がサーバーに同期されます。  これには最大 で1 分かかることがあります。
 
-## 手順 3:Cloud App Security ポータルでの高度な制御とすべてのアプリを構成します。<a name="portal"></a>
+## 手順 3:Cloud App Security ポータルでの高度なコントロールとアプリの構成<a name="portal"></a>
 
 上記の手順を利用して、おすすめアプリ用の組み込みの Cloud App Security ポリシーを Azure AD 内に直接作成できました。
 
-高度なポリシーを構成するには、作成、[アクセス ポリシー](access-policy-aad.md)または[セッション ポリシー](session-policy-aad.md) Cloud App Security でします。
+高度なポリシーを構成するには、Cloud App Security で[アクセスポリシー](access-policy-aad.md)または[セッションポリシー](session-policy-aad.md)を作成します。
 
-すべてのアプリにポリシーを適用する画面の指示に従います[セルフ オンボード、用のアプリを使用して条件付きアクセス アプリ制御で](proxy-deployment-any-app.md)します。
+任意のアプリにポリシーを適用するには、手順に従って、[アプリの条件付きアクセス制御で使用する任意のアプリをセルフオンボード](proxy-deployment-any-app.md)します。
 
-すべてのアプリのサポートを要求するには。
+任意のアプリのサポートを要求するには、次のようにします。
 
 1. Cloud App Security ポータルで、設定の歯車アイコンに移動して **[Conditional Access App Control]** を選択します。 新しい Azure AD アプリが Conditional Access App Control で検出されたことを知らせるメッセージが表示されます。
 
@@ -104,7 +104,7 @@ Cloud App Security では、そのサーバーにサインインする新しい�
 
 5. **[要求セッション制御]** をクリックして、アプリがセッション制御にオンボードされるように要求します。 オンボード プロセスは、Microsoft Cloud App Security チームと共に行います。
 
-6. クライアント証明書を使用してデバイスの管理を活用するポリシーを構成するには。
+6. クライアント証明書を使用してデバイス管理を活用するようにポリシーを構成するには:
     1. 設定の歯車アイコンに移動して、 **[デバイスの識別]** を選択します。
     2. 1 つ以上のルート証明書または中間証明書をアップロードします。
     3. 証明書がアップロードされたら、 **[デバイス タグ]** と **[有効なクライアント証明書]** に基づいて、アクセス ポリシーとセッション ポリシーを作成できます。
@@ -131,9 +131,9 @@ Cloud App Security では、そのサーバーにサインインする新しい�
 > デプロイ後は、[アプリの条件付きアクセス制御] ページからアプリを削除することはできません。 アプリにセッションやアクセス ポリシーを設定しないかぎり、アプリの条件付きアクセス制御でアプリの動作が変更されることは一切ありません。
 
 >[!div class="step-by-step"]
-[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>[次へ: オンボードのすべてのアプリの Conditional Access App Control のデプロイと»](proxy-deployment-any-app.md)
+[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>[次へ: すべてのアプリに対してアプリの条件付きアクセス制御のオンボードとデプロイを行う»](proxy-deployment-any-app.md)
 
 ## <a name="next-steps"></a>次の手順 
-[Cloud App Security Conditional Access App Control の使用](proxy-intro-aad.md)
+[Cloud App Security アプリの条件付きアクセス制御の操作](proxy-intro-aad.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
