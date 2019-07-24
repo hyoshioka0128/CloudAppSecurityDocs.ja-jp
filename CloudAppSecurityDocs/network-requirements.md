@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 4de606f2-a09e-4e48-a578-e223de8b5e69
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 48d13da7ca266c8a2a8054bb810aeba3bd50955a
-ms.sourcegitcommit: 0945480ebb18f89b8cc3a3d5ead135ba53b04bfd
+ms.openlocfilehash: 454de33b96ecf657f7a2b7abc971d90cee75c36d
+ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68309067"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68431176"
 ---
 # <a name="network-requirements"></a>ネットワーク要件
 
@@ -160,11 +160,11 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 
   | データ センター |                        URL                        |
   |-------------|---------------------------------------------------|
-  |     US1     | https://adaprodconsole.blob.core.windows.net/     |
-  |     US2     | https://prod03use2console1.blob.core.windows.net/ |
-  |     US3     | https://prod5usw2console1.blob.core.windows.net/  |
-  |     EU1     | https://prod02euwconsole1.blob.core.windows.net/  |
-  |     EU2     | https://prod4uksconsole1.blob.core.windows.net/   |
+  |     US1     | https:\//adaprodconsole.blob.core.windows.net/     |
+  |     US2     | https:\//prod03use2console1.blob.core.windows.net/ |
+  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/  |
+  |     EU1     | https:\//prod02euwconsole1.blob.core.windows.net/  |
+  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/   |
 
 > [!NOTE]
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。

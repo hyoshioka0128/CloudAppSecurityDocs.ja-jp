@@ -1,6 +1,6 @@
 ---
-title: Azure Advanced Threat Protection を Cloud App Security に統合します。
-description: この記事では、ハイブリッド リスク検出の Cloud App Security で Azure Advanced Threat Protection の洞察を活用する方法についての情報を提供します。
+title: Azure Advanced Threat Protection を Cloud App Security と統合する
+description: この記事では、ハイブリッドリスク検出のために Cloud App Security で Azure Advanced Threat Protection インサイトを活用する方法について説明します。
 keywords: ''
 author: rkarlin
 ms.author: rkarlin
@@ -15,51 +15,51 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 99c866a8b2571c9572e042572d0f5160d0ae56e5
-ms.sourcegitcommit: 3938edadc5f89f87cdeba607476cf3983b2413e8
+ms.openlocfilehash: 63da07db9a3fa29c49f08f8082b969adcbda6bca
+ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411922"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68431147"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection との統合
+# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
 
 *適用対象:Microsoft Cloud App Security*
 
-Azure Advanced Threat Protection (ATP) ユーザー エンティティの行動分析 (UEBA) を提供するハイブリッド環境全体にわたる統合 Microsoft Cloud App Security - 両方のクラウド アプリとオンプレミスで、詳細についてを参照してください[チュートリアル。リスクの高いユーザーを調査]()machine learning と Azure ATP によって提供される行動の分析の詳細については、次を参照してください。 [Azure ATP は何ですか?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)します。
+Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) と統合されており、クラウドアプリとオンプレミスの両方のハイブリッド環境でユーザーエンティティ行動分析 (UEBA) を提供[します。詳細については、「チュートリアル:Azure ATP によっ](tutorial-ueba.md)て提供される機械学習と行動分析の詳細については、危険なユーザーを調査してください。 Azure ATP について[は](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)、「」を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 
 ハイブリッド環境全体で完全なユーザー調査を実行するためには、次が必要です。
 
 - ご自身の Active Directory インスタンスに接続されている Azure ATP の有効なライセンス
-- Azure ATP と Microsoft Cloud App Security との統合を有効にするにはグローバル管理者がある必要があります。 
-- 場合はない Azure ATP がある、今すぐ試す
+- Azure ATP と Microsoft Cloud App Security 間の統合を有効にするには、グローバル管理者である必要があります 
+- Azure ATP がない場合は、今すぐ試してみてください
 
 
 >[!NOTE]
->Microsoft Cloud App Security のサブスクリプションを持っていない場合、Cloud App Security ポータルを使用して、Azure ATP の洞察を得ることができます。
+>Microsoft Cloud App Security のサブスクリプションを持っていない場合でも、Cloud App Security ポータルを使用して Azure ATP の洞察を得ることができます。
 
 
-## <a name="enable-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection を有効にします。
+## <a name="enable-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection を有効にする
 
-Cloud App Security と Azure ATP 統合を有効にします。
+Cloud App Security を Azure ATP と統合できるようにするには、次のようにします。
 
-1. Cloud App Security では、[選択] 設定の歯車アイコンで**設定**します。
+1. Cloud App Security の設定歯車で、 **[設定]** を選択します。
     
    ![[設定] メニュー](./media/azip-system-settings.png)
 
-1. **Threat Protection**、 **Azure ATP**します。
+1. **[脅威保護]** で、 **[Azure ATP]** を選択します。
    
-    ![azure の高度な脅威保護を有効にします。](./media/aatp-integration.png)
+    ![azure advanced threat protection を有効にする](./media/aatp-integration.png)
 
-3. チェック ボックスをオン**アラートと Cloud App Security でアクティビティを含む Azure ATP の接続データ**します。
+3. **アラートやアクティビティなどの Azure ATP データを Cloud App Security に接続**するには、チェックボックスをオンにします。
 
 
 > [!NOTE]
-> 統合が反映されるまで、最大 12 時間がかかる場合があります。
+> 統合が有効になるまで、最大で12時間かかることがあります。
  
-Azure Advanced Threat Protection の統合を有効にした後、組織内のすべてのユーザーに対して、オンプレミスのアクティビティが表示できるします。 強化 insights をアラートと不審なアクティビティを組み合わせて、クラウドおよびオンプレミス環境間で、ユーザーにします。
+Azure Advanced Threat Protection 統合を有効にすると、組織内のすべてのユーザーに対してオンプレミスのアクティビティを表示できるようになります。 また、クラウドとオンプレミスの環境でアラートと疑わしいアクティビティを組み合わせることにより、ユーザーに関する高度な洞察も得られます。
 
 
 
