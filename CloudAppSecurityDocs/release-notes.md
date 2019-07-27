@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/7/2019
+ms.date: 7/21/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 96444fd79bebda2b7092e1dbae9a449f0be0bd06
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: c903276df9f2c8bcbfa374cdcb571a26b1c26014
+ms.sourcegitcommit: 66dab812232ff95c67d2b17421ec91b0b1f67400
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870185"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68508154"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -29,6 +29,22 @@ ms.locfileid: "67870185"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-154"></a>Cloud App Security リリース 154
+
+リリース日: 2019 年 7 月 21 日
+
+- **任意のアプリの条件付きアクセス制御のオンボードと展開が GA に**<br>
+先月の任意のアプリについてのアプリの条件付きアクセス制御をプレビューしたことにより、非常に多くのフィードバックを受け取り、GA を発表できることを楽しみにしています。 この新機能により、セッションやアクセス ポリシーを処理する Web アプリを展開して強力なリアルタイムの監視と制御ができるようになります。
+
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
+- **AWS のセキュリティの構成評価**<br>
+Cloud App Security では、お客様の CIS コンプライアンスのアマゾン ウェブ サービス環境のセキュリティ構成の評価を取得し、不足している構成およびセキュリティ制御に関する推奨事項を提供する機能を段階的にロールアウトしています。 この機能により、組織は、接続されているすべての AWS アカウントのコンプライアンス状態を 1 つのビューで監視できます。
+
+- **OAuth アプリの異常検出 (段階的ロールアウト)**<br>
+現在の機能を拡張して、疑わしい OAuth アプリを検出しました。 4 つの新しい検出が、組織で承認されている OAuth アプリのメタデータをプロファイルして、悪意のある可能性があるものを識別するために使用できるようになりました。
 
 ## <a name="cloud-app-security-release-153"></a>Cloud App Security リリース 153
 
