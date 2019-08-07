@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/21/2019
+ms.date: 8/4/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d418ef3d-76ee-45d5-b5ae-21346e5239a3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c903276df9f2c8bcbfa374cdcb571a26b1c26014
-ms.sourcegitcommit: 66dab812232ff95c67d2b17421ec91b0b1f67400
+ms.openlocfilehash: fa721800d7313d2117788b870bab16b29287be8d
+ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68508154"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68782813"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -30,6 +30,19 @@ ms.locfileid: "68508154"
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-155"></a>Cloud App Security リリース 155
+
+リリース日: 2019 年 8 月 4 日
+
+- **新しいポリシー テンプレート**<br>
+Cloud App Security に、AWS のセキュリティ ベスト プラクティスのためのアクティビティ ポリシー テンプレートが新しく組み込まれました。
+
+- **TLS 1.0 と 1.1 のサポートの終了**<br>
+Microsoft は、クラス最高レベルの暗号化を提供するため、すべてのオンライン サービスをトランスポート層セキュリティ (TLS) 1.2 以降に移行しています。 そのため、2019 年 9 月 8 日以降、Cloud App Security では TLS 1.0 と 1.1 がサポートされなくなり、これらのプロトコルを使用した接続はサポートされません。 変更による影響の詳細については、[Microsoft のブログ記事](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507)を参照してください。
+
+<!-- **Workday app connector available (Preview)**<br>
+A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security リリース 154
 
 リリース日: 2019 年 7 月 21 日
@@ -37,13 +50,10 @@ RSS フィード: 次の URL をフィード リーダーにコピーして貼�
 - **任意のアプリの条件付きアクセス制御のオンボードと展開が GA に**<br>
 先月の任意のアプリについてのアプリの条件付きアクセス制御をプレビューしたことにより、非常に多くのフィードバックを受け取り、GA を発表できることを楽しみにしています。 この新機能により、セッションやアクセス ポリシーを処理する Web アプリを展開して強力なリアルタイムの監視と制御ができるようになります。
 
-<!-- **Workday app connector available (Preview)**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
-
 - **AWS のセキュリティの構成評価**<br>
 Cloud App Security では、お客様の CIS コンプライアンスのアマゾン ウェブ サービス環境のセキュリティ構成の評価を取得し、不足している構成およびセキュリティ制御に関する推奨事項を提供する機能を段階的にロールアウトしています。 この機能により、組織は、接続されているすべての AWS アカウントのコンプライアンス状態を 1 つのビューで監視できます。
 
-- **OAuth アプリの異常検出 (段階的ロールアウト)**<br>
+- **OAuth アプリの異常検出**<br>
 現在の機能を拡張して、疑わしい OAuth アプリを検出しました。 4 つの新しい検出が、組織で承認されている OAuth アプリのメタデータをプロファイルして、悪意のある可能性があるものを識別するために使用できるようになりました。
 
 ## <a name="cloud-app-security-release-153"></a>Cloud App Security リリース 153
@@ -148,7 +158,8 @@ Microsoft Cloud App Security で、Azure AD のグローバルな閲覧者ロー
 
 - **Microsoft Defender ATP 統合が GA になりました** <br>
 昨年に、[Windows Defender Advanced Threat Protection との統合](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Cloud-App-Security-and-Windows-Defender-ATP-better/ba-p/263265)が発表されました。これにより、組織内でのシャドウ IT の検出が強化され、企業ネットワークを越えて拡張されます。 このユニークな統合の一般提供が開始され、[1 回のクリックで有効化できる](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWtNmG)ようになったことをお知らせいたします。
-- **Dynamics 365 CRM のサポート** <br>Cloud App Security に Dynamics 365 CRM のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとそのアプリ内に格納された機密コンテンツを保護できるようになりました。 
+- **Dynamics 365 CRM のサポート**<br>
+Cloud App Security に Dynamics 365 CRM のリアルタイムな監視と制御が追加され、ビジネス アプリケーションとそのアプリ内に格納された機密コンテンツを保護できるようになりました。 Dynamics 365 CRM で実行できる操作の詳細については、[こちらの記事](proxy-intro-aad.md#how-it-works)を参照してください。
 
 ## <a name="cloud-app-security-release-144"></a>Cloud App Security リリース 144
 
