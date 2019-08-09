@@ -3,9 +3,9 @@ title: Cloud App Security ポータルへの管理アクセス権を管理する
 description: この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/20/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,58 +15,62 @@ ms.assetid: b718edad-350c-4d90-b045-92529d701dc5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 941c72af9a2b5f1b30faf1b6f7bc0e0b12baf389
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: af713804974ee91b2f1a56b46ebe3d5b4ef3d1ce
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411832"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861517"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
 *適用対象:Microsoft Cloud App Security*
 
-Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。 管理者ロールの割り当ての詳細については、[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) と [Office 365 ](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles) に関する記事を参照してください。
+Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 この記事では、管理者用の Cloud App Security ポータルへのアクセス権を設定する手順について説明します。 管理者ロールの割り当ての詳細については、 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles)と[Office 365](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)の記事を参照してください。
 
 ## <a name="office-365-and-azure-ad-roles-with-access-to-cloud-app-security"></a>Cloud App Security にアクセスできる Office 365 と Azure AD のロール
 
-既定では、Office 365 と [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) の次の管理者ロールで Microsoft Cloud App Security にアクセスできます。
+既定では、次の Office 365 および[Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)の管理者ロールは Cloud App Security にアクセスできます。
 
 - **グローバル管理者とセキュリティ管理者:** **フル アクセス**が可能な管理者には Cloud App Security の完全なアクセス許可があります。 このようなユーザーは管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションの実行ができます。
 
-- **コンプライアンス管理者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 ファイル ポリシーを作成し、変更できます。ファイル ガバナンス アクションを許可できます。[データ管理] で、組み込みレポートをすべて表示できます。 
+- **コンプライアンス管理者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 ファイル ポリシーを作成し、変更できます。ファイル ガバナンス アクションを許可できます。[データ管理] で、組み込みレポートをすべて表示できます。
 
 - **セキュリティ閲覧者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 セキュリティ閲覧者は、以下のアクションの実行が制限されています。
 
-  - ポリシーを作成する、または既存のポリシーを編集および変更する 
-  - ガバナンス アクションを実行する 
+  - ポリシーを作成する、または既存のポリシーを編集および変更する
+  - ガバナンス アクションを実行する
   - 探索ログをアップロードする
   - サードパーティ アプリの禁止または承認
   - IP アドレス範囲設定ページへのアクセスと表示
-  - すべての設定ページへのアクセスと表示 
-  - 探索設定へのアクセスと表示 
+  - すべての設定ページへのアクセスと表示
+  - 探索設定へのアクセスと表示
   - アプリ コネクタ ページへのアクセスと表示
-  - ガバナンス ログへのアクセスと表示 
-  - [スナップショット レポートの管理] ページへのアクセスと表示 
+  - ガバナンス ログへのアクセスと表示
+  - [スナップショット レポートの管理] ページへのアクセスと表示
 
-- **アプリ/インスタンス管理者:** 特定のアプリまたはアプリのインスタンスのみでの取引が選択されている Microsoft Cloud App Security ですべてのデータを完全または読み取り専用のアクセスを許可しています たとえば、Box European インスタンスへの管理者アクセス許可をユーザーに付与します。 管理者には、ファイル、アクティビティ、ポリシー、アラートのいずれかを問わず、Box European インスタンスに関連するデータのみが表示されます。
+- **グローバルリーダー:** Microsoft Cloud App Security のすべての側面に対する完全な読み取り専用アクセス権を持ちます。 設定を変更したり、アクションを実行したりすることはできません。
+
+また、Cloud App Security ポータルでは、次の Cloud App Security 特定の管理者ロールを構成できます。
+
+- **アプリ/インスタンス管理者:** には、選択した特定のアプリまたはインスタンスのみを扱う Microsoft Cloud App Security のすべてのデータに対するフルアクセスまたは読み取り専用のアクセス許可があります。 たとえば、Box European インスタンスへの管理者アクセス許可をユーザーに付与します。 管理者には、ファイル、アクティビティ、ポリシー、アラートのいずれかを問わず、Box European インスタンスに関連するデータのみが表示されます。
 
   - アクティビティ ページ - 特定のアプリに関するアクティビティのみ
   - アラート - 特定のアプリに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、アクセス許可の編集やアプリ/インスタンスのみを扱うポリシーのみを作成する完全な割り当てられている場合
+  - ポリシー-すべてのポリシーを表示できます。割り当てられた完全なアクセス許可では、アプリ/インスタンスを排他的に扱うポリシーのみを編集または作成できます。
   - アカウント ページ - 特定のアプリ/インスタンスのアカウントのみ
   - アプリのアクセス許可 - 特定のアプリ/インスタンスのアクセス許可のみ
   - ファイル ページ - 特定のアプリ/インスタンスからのファイルのみ
   - Conditional Access App Control - アクセス許可なし
   - Cloud Discovery アクティビティ - アクセス許可なし
   - セキュリティ拡張機能 - ユーザー アクセス許可を持つ API トークンのアクセス許可のみ
-  - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ 
+  - ガバナンス アクション - 特定のアプリ/インスタンスの場合のみ
 
-- **ユーザー グループの管理者:** ここで選択した特定のグループのみで取引を Microsoft Cloud App Security ですべてのデータを完全または読み取り専用のアクセスを許可しています たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
+- **ユーザーグループ管理:** ここで選択した特定のグループとのみ関連する Microsoft Cloud App Security のすべてのデータに対するフルアクセスまたは読み取り専用権限を持っています。 たとえば、グループ "ドイツ - すべてのユーザー" に対する管理者のアクセス許可をユーザーに与えた場合、管理者は、そのユーザー グループの Microsoft Cloud App Security での情報を表示したり変更したりできます。
 
   - アクティビティ ページ - グループのユーザーに関するアクティビティのみ
   - アラート - グループのユーザーに関連するアラートのみ
-  - ポリシー - すべてのポリシーを表示でき、アクセス許可の編集や作成、グループ内のユーザーのみを扱うポリシーのみ完全な割り当てられている場合
+  - ポリシー-すべてのポリシーを表示できます。割り当てられた完全なアクセス許可では、グループ内のユーザーのみを処理するポリシーのみを編集または作成できます。
   - アカウント ページ - グループ内の特定のユーザーのアカウントのみ
   - アプリのアクセス許可 – アクセス許可がありません
   - ファイル ページ – アクセス許可がありません
@@ -75,11 +79,11 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - グループのユーザーを含む API トークンのアクセス許可のみ
   - ガバナンス アクション - グループの特定のユーザーの場合のみ
 
-- **クラウド検出のグローバル管理者:** すべての Cloud Discovery の設定およびデータを表示および編集できます。 グローバル検出管理者には、次のアクセス許可があります。
+- **Cloud Discovery グローバル管理者:** すべての Cloud Discovery の設定およびデータを表示および編集できます。 グローバル検出管理者には、次のアクセス許可があります。
 
-  - 設定 - 
-     -  システム設定 - 表示のみ
-     - Cloud Discovery 設定 - すべて表示および編集可能 (匿名化のアクセス許可は、ロール割り当て時に許可されたかどうかに依存する)
+  - 設定
+    - システム設定 - 表示のみ
+    - Cloud Discovery 設定 - すべて表示および編集可能 (匿名化のアクセス許可は、ロール割り当て時に許可されたかどうかに依存する)
   - Cloud Discovery アクティビティ - フル アクセス許可
   - アラート - Cloud Discovery データに関連するアラートのみ
   - ポリシー - すべてのポリシーの表示が可能、Cloud Discovery ポリシーのみ編集または作成が可能
@@ -91,15 +95,13 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - セキュリティ拡張機能 - アクセス許可なし
   - ガバナンス アクション - Cloud Discovery 関連のアクションのみ
 
-- **Cloud Discovery レポート管理者:** 特定の Cloud Discovery レポートのみでの取引が選択されている Microsoft Cloud App Security ですべてのデータを表示する権限があります。 たとえばに付与できますだれかが管理者権限を持って、継続的レポート Microsoft Defender ATP から。 検出の管理とアプリケーション カタログにそのデータ ソースに関連する Cloud Discovery データのみが表示されます。
-この管理者がアクセスするにはない、**アクティビティ**または**ファイル**ページとポリシーへのアクセス制限です。
+- **レポート管理者の Cloud Discovery:** には、選択した特定の Cloud Discovery レポートだけを扱う Microsoft Cloud App Security のすべてのデータを表示する権限があります。 たとえば、Microsoft Defender ATP からの継続的なレポートに対する管理者権限を他のユーザーに与えることができます。 探索管理者には、そのデータソースとアプリカタログに関連する Cloud Discovery データのみが表示されます。
+この管理者は、**アクティビティ**または**ファイル**のページにアクセスしたり、ポリシーへのアクセスを制限したりすることはできません。
 
-- **グローバル リーダー:** Microsoft Cloud App Security のすべての側面を完全に読み取り専用アクセスがあります。 設定を変更、またはアクションを実行できません。
- 
 ## <a name="override-admin-permissions"></a>管理者のアクセス許可をオーバーライドする
 
 Azure Active Directory または Office 365 の管理者のアクセス許可をオーバーライドするには、手動で Cloud App Security にユーザーを追加し、ユーザーにアクセス許可を割り当てます。
-たとえば、Azure Active Directory でセキュリティ閲覧者である佐藤さんに、Cloud App Security では**フル アクセス**権を付与するには、手動で佐藤さんを Cloud App Security に追加し、**フル アクセス**を割り当てて元のロールをオーバーライドして、Cloud App Security で必要なアクセス許可を持たせることができます。 
+たとえば、Azure Active Directory でセキュリティ閲覧者である佐藤さんに、Cloud App Security では**フル アクセス**権を付与するには、手動で佐藤さんを Cloud App Security に追加し、**フル アクセス**を割り当てて元のロールをオーバーライドして、Cloud App Security で必要なアクセス許可を持たせることができます。
 
 ## <a name="add-additional-admins"></a>他の管理者を追加する
 
@@ -119,27 +121,28 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
      >[!NOTE]
       >アクセスが制限されている管理者が制限されているページにアクセスしたり、制限されている操作を実行しようとしたりすると、そのページへのアクセスまたは操作の実行のアクセス許可がないというエラーが表示されます。
 
-4. **[管理者の追加]** をクリックします。  
+4. **[管理者の追加]** をクリックします。
 
-## <a name="admin-activity-auditing"></a>管理者アクティビティの監査
+## <a name="admin-activity-auditing"></a>管理アクティビティの監査
 
-Cloud App Security では、特定のユーザーを調査したり、特定のアラートを表示したり、管理者の監査も含めてすべての管理者のアクティビティのログをエクスポートできます。
+Cloud App Security を使用すると、特定のユーザーを調査したり特定のアラートを表示したりする管理者の監査を含む、すべての管理者アクティビティのログをエクスポートできます。
 
 ログをエクスポートするには、次の手順を実行します。
 
-1. **管理者のアクセスを管理**] ページで、[**管理者のアクティビティのエクスポート**します。
+1. **[管理者アクセスの管理]** ページで、 **[管理者アクティビティのエクスポート]** を選択します。
 
-1. 必要な時間範囲を指定します。
+1. 必要な時間の範囲を指定します。
 
 1. クリックして **エクスポート**します。
 
 ## <a name="invite-external-admins"></a>外部管理者を招待する
 
-Cloud App Security では、Cloud App Security ポータルの管理者として使用すると、外部管理セキュリティ サービス プロバイダー (Mssp) を招待できます。 外部ユーザーの管理者として構成されているし、Cloud App Security で使用できるロールのいずれかに割り当てられているようになりましたことができます。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。
+Cloud App Security を使用すると、Cloud App Security ポータルの管理者として、外部の管理対象セキュリティサービスプロバイダー (MSSPs) を招待することができます。 外部ユーザーを管理者として構成し、Cloud App Security で使用可能な任意のロールを割り当てることができるようになりました。 さらに、MSSP が複数の顧客テナント間でサービスを提供できるように、複数のテナントへのアクセス権を持つ管理者がポータル内で簡単にテナントを切り替えられるようになりました。
 
 テナントを切り替えるには、複数のテナントへのアクセス許可を取得してから、ユーザー アイコンをクリックします。 これで、アクセス許可があるテナントのリストが表示されます。 管理するテナントを選択します。
 
 ![テナントの選択](./media/choose-tenant.png "テナントの選択")
 
 ## <a name="next-steps"></a>次の手順  
+
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)

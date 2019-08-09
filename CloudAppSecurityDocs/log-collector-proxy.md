@@ -2,10 +2,10 @@
 title: プロキシの背後でログ コレクターを有効にする - Cloud App Security | Microsoft Docs
 description: この記事では、プロキシの背後から Cloud App Security の Cloud Discovery ログ コレクターを有効にする方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 2/2/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,19 +15,19 @@ ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: affc3cf96644e6997aa2f49870d33fa93c1484f1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4b468fa4361ed6278845ffad33594bc5543f1a03
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568224"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861539"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを有効にする
 
 ログ コレクターの構成後、プロキシの背後で実行すると、ログ コレクターから Cloud App Security へのデータの送信に問題が発生する場合があります。 これは、プロキシのルート証明機関がログ コレクターに信頼されていないため、Microsoft Cloud App Security に接続してその構成を取得したり、受信したログをアップロードしたりできないことが原因となっている可能性があります。
 
->[!NOTE] 
-> Syslog や FTP 用にログ コレクターで使われる証明書を変更する方法や、ファイアウォールやプロキシからログ コレクターまで、接続に関する問題を解決する方法については、「[Microsoft Cloud App Security の Cloud Discovery の展開に関するトラブルシューティング](troubleshoot-docker.md)」をご覧ください。
+>[!NOTE]
+> Syslog または FTP のログコレクターによって使用される証明書を変更する方法、およびファイアウォールとプロキシからログコレクターへの接続に関する問題を解決する方法については、「[ログコレクターの FTP 構成](log-collector-ftp.md)」を参照してください。
 >
 
 ## <a name="set-up-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを設定する
@@ -41,7 +41,6 @@ Windows または Linux コンピューター上で Docker を実行し、Cloud 
     bash
     docker ps
 
-
 ![docker ps](./media/docker-1.png "docker ps")
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>プロキシのルート CA 証明書をコンテナーにコピーする
@@ -51,7 +50,6 @@ Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナ
 
     bash
     docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
-
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>CA 証明書と連携するよう構成を設定する
 
@@ -70,12 +68,10 @@ Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナ
        bash
        ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
 
-
 4. 次のコマンドを使ってインポート中に指定した別名 (*SelfSignedCert*) を検索することで、証明書が CA キーストアに正しくインポートされたことを確認します。
 
        bash
        ./keytool --list --keystore ../lib/security/cacerts | grep self
-
 
 ![keytool](./media/docker-2.png "keytool")
 
@@ -83,7 +79,7 @@ Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナ
 
 ### <a name="set-the-log-collector-to-run-with-the-new-configuration"></a>新しい構成で実行されるようログ コレクターを設定する
 
-コンテナーの準備が整いました。 
+コンテナーの準備が整いました。
 
 ログ コレクターの作成中に使った API トークンを使って、**collector_config** コマンドを実行します。
 
@@ -104,13 +100,8 @@ Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナ
 >[!NOTE]
 > ログ コレクターの構成を更新する必要がある場合 (たとえば、データ ソースを追加または削除する場合) は、通常はコンテナーを**削除**して、前の手順をもう一度実行する必要があります。 これを回避するために、Cloud App Security ポータルで生成された新しい API トークンを使って *collector_config* ツールを再実行することができます。
 
+## <a name="next-steps"></a>次の手順
 
+[ユーザー アクティビティ ポリシー](user-activity-policies.md)
 
- 
-  
-## <a name="next-steps"></a>次の手順 
-[ユーザー アクティビティ ポリシー](user-activity-policies.md)   
-
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
-  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)

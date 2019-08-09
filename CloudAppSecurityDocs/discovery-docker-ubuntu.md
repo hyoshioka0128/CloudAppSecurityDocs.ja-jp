@@ -2,10 +2,10 @@
 title: オンプレミス Docker を使用して自動ログ アップロードを構成する
 description: この記事では、オンプレミス サーバーの Ubuntu または RHEL で Docker を使用して、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 3/19/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cac1c58bb8985065e4b99f179a544d08c3f31c6b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 4832e73409e0c48a02bb0aff94236b45661acd06
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567819"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861551"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
@@ -30,7 +30,7 @@ ms.locfileid: "65567819"
 
 ## <a name="technical-requirements"></a>技術要件
 
-- OS:Ubuntu 14.04、16.04、および 18.04;RHEL 7.2 以降、または CentOS 7.2 以降 
+- OS:Ubuntu 14.04、16.04、18.04RHEL 7.2 以上、または CentOS 7.2 以降 
 
 - ディスク領域:250 GB
 
@@ -52,9 +52,9 @@ ms.locfileid: "65567819"
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
-1. **[自動ログ アップロード]** 設定ページに移動します。 
+1. **[自動ログ アップロード]** 設定ページに移動します。
 
-     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、**[ログ コレクター]** をクリックします。
+     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
       ![設定アイコン](./media/settings-icon.png)
 
@@ -63,17 +63,17 @@ ms.locfileid: "65567819"
      」を参照します。 **[データ ソースの追加]** をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
-          
+
      b. プロキシまたはファイアウォールの **[名前]** を付けます。
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** に **[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、**[Syslog – TLS]** のいずれかを設定します。
-     
+     e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
+
      >[!NOTE]
      >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
 
@@ -89,7 +89,7 @@ ms.locfileid: "65567819"
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-   d. コレクターに接続するすべての**データ ソース**を選択し、**[更新]** をクリックして構成を保存し、次の展開手順を確認します。
+   d. コレクターに接続するすべての**データ ソース**を選択し、 **[更新]** をクリックして構成を保存し、次の展開手順を確認します。
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -104,6 +104,7 @@ ms.locfileid: "65567819"
    ![ログ コレクターを作成する](./media/windows7.png)
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
+
 次のステップは、Ubuntu での展開を説明しています。 その他のプラットフォームの展開手順は、少し異なります。
 
 1. Ubuntu マシンでターミナルを開きます。
@@ -111,7 +112,7 @@ ms.locfileid: "65567819"
 2. コマンド `sudo -i` を使ってルート権限に変更します。
 
 3. ネットワークのプロキシをバイパスするには、次の 2 つのコマンドを実行します。
-        
+
         export http_proxy='<IP>:<PORT>' (e.g. 168.192.1.1:8888)
         export https_proxy='<IP>:<PORT>'
 
@@ -123,7 +124,7 @@ ms.locfileid: "65567819"
 
     > [!NOTE] 
     > このコマンドでプロキシ証明書の検証に失敗した場合、最初に `curl -k` を使用してコマンドを実行します。
-    
+
    ![ubuntu5](./media/ubuntu5.png)
 
 5. コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 ポータルで生成された実行コマンドをコピーすることで、構成をインポートします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
@@ -158,15 +159,14 @@ ms.locfileid: "65567819"
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、**[継続的レポート]** を選択します。 
+1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。
 2. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
-3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
+3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。
 
 ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>次の手順
 
-[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
+[ログコレクターの FTP 構成](log-collector-ftp.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
-
+[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)

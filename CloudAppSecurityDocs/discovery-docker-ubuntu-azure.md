@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/18/2019
+ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,18 +15,18 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b094682bc0f3b9ae6ebe6f0594a842a5e2e50458
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 9d094c35565b416a8a5c048c09abad90dacb425c
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372306"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861577"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
 *適用対象:Microsoft Cloud App Security*
 
-Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。 
+Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。
 
 ## <a name="prerequisites"></a>必須コンポーネント
 
@@ -52,7 +52,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
-1. **[自動ログ アップロード]** 設定ページに移動します。 
+1. **[自動ログ アップロード]** 設定ページに移動します。
 
      」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
@@ -73,7 +73,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
      e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
-     
+
      >[!NOTE]
      >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
 
@@ -81,7 +81,6 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      - 調査目的で、各デバイスの状態を個別に監視する。
      - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
-     
 3. 画面上部の **[ログ コレクター]** タブに移動します。
 
      」を参照します。 **[ログ コレクターを追加]** をクリックします。
@@ -109,8 +108,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 > [!NOTE]
 > 次の手順は、Ubuntu での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
-
-1. Azure 環境内で新しい Ubuntu マシンを作成します。 
+1. Azure 環境内で新しい Ubuntu マシンを作成します。
 2. マシンが起動したら、次の手順でポートを開きます。
 
      」を参照します。 マシン ビューで、 **[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
@@ -118,9 +116,9 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      b. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
 
      c. **[受信セキュリティ規則]** に移動して **[追加]** をクリックします。
-      
+
       ![Ubuntu Azure](./media/ubuntu-azure.png)
-    
+
      d. 次の規則を追加します (**詳細設定**モード)。
 
       |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
@@ -129,7 +127,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
       |caslogcollector_ftp_passive|20000-20099|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
       |caslogcollector_syslogs_tcp|601-700|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
       |caslogcollector_syslogs_udp|514-600|UDP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
-      
+
       ![Ubuntu Azure の規則](./media/inbound-rule.png)
 
 3. マシンに戻って、 **[接続]** をクリックし、マシン上のターミナルを開きます。
@@ -137,7 +135,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 4. `sudo -i` を使ってルート権限に変更します。
 
 5. [ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862492)に同意したら、古いバージョンをアンインストールし、次のコマンドを実行して Docker CE をインストールします。
-        
+
        curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
 
      ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
@@ -147,7 +145,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
       ![Ubuntu Azure](./media/windows7.png)
 
 7. ログ コレクターを展開するコマンドを実行します。
-     
+
         (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
 
      ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
@@ -183,7 +181,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
      ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>次の手順
-[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
+[ログコレクターの FTP 構成](log-collector-ftp.md)
 
+[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)

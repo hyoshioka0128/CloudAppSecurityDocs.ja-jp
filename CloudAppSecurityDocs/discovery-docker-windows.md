@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/10/2019
+ms.date: 8/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 470b1082a51568aed7018eae2d74afe83d94a071
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: 4d9e8e8f4ba01dba7da8f792315d9aa2f033a157
+ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870207"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861588"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -27,7 +27,7 @@ ms.locfileid: "67870207"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - OS:**Windows 10** (Fall Creators Update) および Windows Server **バージョン 1709 以降**
 
@@ -67,9 +67,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
      」を参照します。 **[データ ソースの追加]** をクリックします。
 
       ![データ ソースを追加する](./media/add-data-source.png)
-          
+
      b. プロキシまたはファイアウォールの **[名前]** を付けます。
-      
+
       ![ubuntu1](./media/ubuntu1.png)
 
      c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
@@ -77,7 +77,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
      d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
      e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
-     
+
      >[!NOTE]
      >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
 
@@ -177,7 +177,6 @@ Docker のインストーラーが Microsoft によって署名されている�
 
 ## <a name="next-steps"></a>次の手順
 
-[Cloud Discovery の Docker の展開に関するトラブルシューティング](troubleshoot-docker.md)
+[ログコレクターの FTP 構成](log-collector-ftp.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
-
