@@ -85,8 +85,8 @@
               href: discovery-docker-ubuntu.md
             - name: Azure での Ubuntu 上の Docker
               href: discovery-docker-ubuntu-azure.md
-            - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
-              href: troubleshoot-docker.md
+            - name: ログ コレクターの FTP 構成
+              href: log-collector-ftp.md
             - name: プロキシの背後にあるログ コレクター
               href: log-collector-proxy.md
             - name: カスタム ログ パーサーの使用
@@ -234,8 +234,6 @@
           href: troubleshooting-content-inspection.md
         - name: SIEM 統合のトラブルシューティング
           href: troubleshooting-siem.md
-        - name: Cloud Discovery の Docker のデプロイに関するトラブルシューティング
-          href: troubleshoot-docker.md
         - name: ポリシーのトラブルシューティング
           href: troubleshoot-policies.md
 - name: リソース
