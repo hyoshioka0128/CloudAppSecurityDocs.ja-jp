@@ -35,6 +35,8 @@
       href: use-case-admin-quarantine.md
     - name: Azure Information Protection ラベルを自動的に適用する
       href: use-case-information-protection.md
+    - name: アラートを自動化してエンドポイントを保護する
+      href: tutorial-flow.md
 - name: 概念
   items:
     - name: アプリの条件付きアクセス制御でのアプリの保護
@@ -147,7 +149,11 @@
         - name: OAuth アプリの管理
           href: manage-app-permissions.md
         - name: セキュリティ構成
-          href: security-config.md
+          items:
+            - name: Azure のセキュリティ構成
+              href: security-config.md
+            - name: AWS のセキュリティ構成
+              href: security-config-aws.md
         - name: アプリの監視
           href: monitor-alerts.md
           items:
