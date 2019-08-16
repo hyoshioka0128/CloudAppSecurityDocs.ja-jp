@@ -14,28 +14,28 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 965abb1f4fe68a7bfb4fc16818ced07b22dcda3f
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 251eec930864bc5baee4b0c7922f5abc8429e867
+ms.sourcegitcommit: 12dfc4c0b8d72aad8cfae9c70f0014ca312b9e4e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298813"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69037406"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>カスタムのアラートの自動化フローと統合します。
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>カスタムアラート自動化のフローとの統合
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 Microsoft Flow で使用可能な[コネクタのエコシステム](https://docs.microsoft.com/connectors/)を使用することで、Cloud App Security がアラートを生成するときに、プレイブックのトリガーを自動化することができます。 たとえば、[ServiceNow コネクタ](https://docs.microsoft.com/connectors/service-now/)を使用してチケット発行システムで問題を自動的に作成したり、Cloud App Security でアラートがトリガーされたときに、カスタム ガバナンス アクションを実行するための承認メールを送信します。  
 
 ## <a name="prerequisites"></a>前提条件 
 
- - 有効な [Microsoft Flow プラン](https://flow.microsoft.com/en-us/pricing)が必要
+ - 有効な [Microsoft Flow プラン](https://flow.microsoft.com/pricing)が必要
 
 ## <a name="how-it-works"></a>しくみ
 
 Cloud App Security 単体で、ポリシーを定義するときに、ユーザーの停止やファイルを非公開にするなどの定義済みのガバナンス オプションを提供します。 Cloud App Security コネクタを使用して Microsoft Flow でプレイブックを作成すると、ワークフローを作成してポリシー用にカスタマイズしたガバナンス オプションを有効にすることができます。 Flow でプレイブックが作成されたら、それを Cloud App Security でポリシーと関連付けて、アラートを Flow に送信するだけです。 Microsoft Flow では、組織用にカスタマイズされたワークフローを作成するために複数のコネクタと条件が用意されています。 
 
-[Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/)のトリガーとアクション フローでサポートを自動化します。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。 
+フロー内の[Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/)は、自動トリガーとアクションをサポートしています。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。 
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Microsoft Flow でプレイブックを作成する方法
 
