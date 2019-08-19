@@ -1,76 +1,70 @@
 ---
 title: Cloud Discovery をデプロイする - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud Discovery を稼働させるためのセットアップ手順について説明します。
-keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 05/23/2019
-ms.topic: conceptual
-ms.collection: M365-security-compliance
-ms.prod: ''
+author: ShlomoSagir-MS
+ms.author: shsagir
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: a9b5bd8d-305b-4e93-9a4c-a4683ea09080
+ms.topic: conceptual
+ms.date: 8/15/2019
+ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6f41d30f14f517e682e2535a908650c898ba13fa
-ms.sourcegitcommit: 235b7d5f1f49075c199b154abc38e51326c0493e
+ms.openlocfilehash: 296abe6a227d6ab6c72e09cc993d8cf413770cec
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66173537"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573045"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 
 *適用対象:Microsoft Cloud App Security*
 
-Cloud Discovery では、16,000 以上のクラウド アプリを掲載した Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 このアプリは 70 を超えるリスク要因に基づいてランクおよびスコア付けされ、クラウドの使用状況、シャドウ IT の状況、およびシャドウ IT の組織に対するリスクを継続して把握できるようになります。
+Cloud Discovery では、16,000 以上のクラウド アプリを掲載した Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 これらのアプリは、80以上のリスク要因に基づいてランク付けおよびスコア付けされ、クラウドの使用状況を継続的に可視化し、シャドウ IT を組織にもたらすリスクシャドウを提供します。
 
-## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットと継続的なリスク評価レポート 
+## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットと継続的なリスク評価レポート
 
-次の 2 種類のレポートを生成できます。 
+次の 2 種類のレポートを生成できます。
 
 - **スナップショット レポート**: ファイアウォールやプロキシから手動でアップロードするトラフィック ログのセットに対するアドホックな可視性を提供します。
 
 - **継続レポート**: Cloud App Security を使用してネットワークから転送されるすべてのログを分析します。 これらにより、すべてのデータの可視性が高まり、Machine Learning 異常検出エンジンまたは定義したカスタム ポリシーが使用され、特異な使用を自動的に検出できるようになります。 これらのレポートは、次の方法で接続することにより作成できます。
 
- - [Microsoft Defender ATP 統合](wdatp-integration.md):Cloud App Security は、Cloud Discovery の展開を簡略化、企業ネットワーク外の Cloud Discovery の機能を拡張およびマシン ベースの調査を有効にする、ネイティブで Microsoft Defender Advanced Threat Protection (ATP) を統合します。
- - [ログ コレクター](discovery-docker.md):ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
- - [Zscaler の統合](zscaler-integration.md):Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
- - [iboss 統合](iboss-integration.md):Cloud App Security と iboss の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 同時に、Cloud App Security と iboss は、Cloud Discovery は、自動承認されていないアプリ、および iboss ポータルで直接リスク評価のブロックのシームレスな導入を提供します。
+     - [Microsoft DEFENDER ATP 統合](wdatp-integration.md):Cloud App Security は、Microsoft Defender Advanced Threat Protection (ATP) にネイティブに統合されており、Cloud Discovery のロールアウトを簡素化し、企業ネットワークを超えて Cloud Discovery 機能を拡張し、コンピューターベースの調査を有効にします。
+     - [ログ コレクター](discovery-docker.md):ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
+     - [Zscaler の統合](zscaler-integration.md):Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
+     - [iboss](iboss-integration.md)との統合:Cloud App Security と iboss の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 また、Cloud App Security と iboss が連携して、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、および iboss ポータルでのリスク評価を直接行うことができます。
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>ログのプロセス フロー: 生データからリスク評価まで
 
-リスク評価を生成するプロセスは、次の手順で構成されています。 この処理には、処理されるデータの量に応じて数分から数時間かかります。 
+リスク評価を生成するプロセスは、次の手順で構成されています。 この処理には、処理されるデータの量に応じて数分から数時間かかります。
 
-- **アップロード** – ネットワークの Web トラフィック ログがポータルにアップロードされます。 
+- **アップロード** – ネットワークの Web トラフィック ログがポータルにアップロードされます。
 
-- **解析** – Cloud App Security で、トラフィック ログからトラフィック データが抽出され、データ ソースごとに専用のパーサーを使用して解析されます。 
+- **解析** – Cloud App Security で、トラフィック ログからトラフィック データが抽出され、データ ソースごとに専用のパーサーを使用して解析されます。
 
-- **分析** – トラフィック データをクラウド アプリ カタログと比較して分析することで、16,000 以上のクラウド アプリを識別できるほか、アプリのリスク スコアの評価もできます。 アクティブ ユーザーと IP アドレスも、分析の一環として識別されます。 
+- **分析** – トラフィック データをクラウド アプリ カタログと比較して分析することで、16,000 以上のクラウド アプリを識別できるほか、アプリのリスク スコアの評価もできます。 アクティブ ユーザーと IP アドレスも、分析の一環として識別されます。
 
 - **レポートの生成** – ログ ファイルから抽出されたデータのリスク評価レポートが生成されます。
 
-
 >[!NOTE]
 > 継続的なレポート データは 1 日に 2 回分析されます。
-
-
 
 ## サポートされているファイアウォールとプロキシ <a name="supported-firewalls-and-proxies"></a>
 
 - Barracuda - Web App Firewall (W3C)
 - Blue Coat Proxy SG - Access ログ (W3C)
 - Check Point
-- Cisco ASA Firewall (Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります)
 - Cisco ASA with FirePOWER
+- Cisco ASA Firewall (Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります)
+- Cisco Cloud Web Security
+- Cisco FWSM
 - Cisco IronPort WSA
-- Cisco ScanSafe
 - Cisco Meraki - URL ログ
 - Clavister NGFW (Syslog)
 - Digital Arts i-FILTER
+- Forcepoint
 - Fortinet Fortigate
 - iboss Secure Cloud Gateway
 - Juniper SRX
@@ -84,6 +78,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 - Sophos Cyberoam
 - Squid (共通)
 - Squid (ネイティブ)
+- Stormshield
 - Websense - Web Security Solutions - 調査の詳細レポート (CSV)
 - Websense - Web Security Solutions - インターネットのアクティビティ ログ (CEF)
 - Zscaler
@@ -93,41 +88,39 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 
 ログがサポートされていない場合は、**データ ソース**として **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは Cloud App Security クラウド アナリスト チームによって確認され、要求したログの種類のサポートが追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
 
-
 データ属性 (ベンダーのドキュメントに従う)
-
 
 | [データ ソース] | ターゲット アプリの URL | ターゲット アプリの IP | Username | 配信元 IP | 総トラフィック | アップロードされたバイト数 |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | いいえ | いいえ |
-| Blue Coat | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Checkpoint | いいえ | <strong>はい</strong> | いいえ | <strong>はい</strong> | いいえ | いいえ |
-| Cisco ASA (Syslog) | いいえ | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | いいえ |
-| Cisco ASA with FirePOWER | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Cisco FWSM | いいえ | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | いいえ |
-| Cisco IronPort WSA | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Cisco Meraki | <strong>はい</strong> | <strong>はい</strong> | いいえ | <strong>はい</strong> | いいえ | いいえ |
-|Cisco ScanSafe|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|
-| Clavister NGFW (Syslog) | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| SonicWall (旧称 Dell) | <strong>はい</strong> | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Digital Arts i-FILTER | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|ForcePoint Web セキュリティ クラウド|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|
-| Fortigate | いいえ | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-|Fortinet FortiOS|<strong>はい</strong>|<strong>はい</strong>|いいえ|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|
-|iboss|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|<strong>はい</strong>|
-| Juniper SRX | いいえ | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Juniper SSG | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| McAfee SWG | <strong>はい</strong> | いいえ | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| MS TMG | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Palo Alto Networks | いいえ | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Sophos | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | いいえ |
-| Squid (共通) | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | いいえ | <strong>はい</strong> |
-| Squid (ネイティブ) | <strong>はい</strong> | いいえ | <strong>はい</strong> | <strong>はい</strong> | いいえ | <strong>はい</strong> |
-| Websense: 調査の詳細レポート (CSV) | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Websense: インターネットのアクティビティ ログ (CEF) | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-| Zscaler | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> | <strong>はい</strong> |
-
-
+| Barracuda | **はい** | **はい** | **はい** | **はい** | いいえ | いいえ |
+| Blue Coat | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
+| Checkpoint | いいえ | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Cisco ASA (Syslog) | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
+| Cisco ASA with FirePOWER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Cisco Cloud Web Security |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+| Cisco FWSM | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
+| Cisco IronPort WSA | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| SonicWall (旧称 Dell) | **はい** | **はい** | いいえ | **はい** | **はい** | **はい** |
+| Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+| ForcePoint Web セキュリティクラウド |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+| Fortigate | いいえ | **はい** | いいえ | **はい** | **はい** | **はい** |
+| Fortinet Fortinet |**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
+| iboss |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+| Juniper SRX | いいえ | **はい** | いいえ | **はい** | **はい** | **はい** |
+| Juniper SSG | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
+| McAfee SWG | **はい** | いいえ | いいえ | **はい** | **はい** | **はい** |
+| MS TMG | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
+| Palo Alto Networks | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Sophos | **はい** | **はい** | **はい** | **はい** | **はい** | いいえ |
+| Squid (共通) | **はい** | いいえ | **はい** | **はい** | いいえ | **はい** |
+| Squid (ネイティブ) | **はい** | いいえ | **はい** | **はい** | いいえ | **はい** |
+| Stormshield | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Websense: 調査の詳細レポート (CSV) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Websense: インターネットのアクティビティ ログ (CEF) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Zscaler | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 
 ## <a name="next-steps"></a>次の手順
 
