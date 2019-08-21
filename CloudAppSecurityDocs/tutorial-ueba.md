@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 8099d38309703b4258d1b8234537d3b172df52b2
-ms.sourcegitcommit: d35baa4f55a3ab4cd8df478adaf10579a00f603d
+ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67622461"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69573011"
 ---
 # <a name="tutorial-investigate-risky-users"></a>チュートリアル: 危険性の高いユーザーを調査する
 
@@ -36,8 +36,7 @@ ms.locfileid: "67622461"
 > * 3:[ユーザーをさらに調査する](#investigate)
 > * 4:[組織を保護する](#protect)
 
-
-## 調査の優先順位のスコアを理解する <a name ="risk-score"></a>
+## 調査の優先順位のスコアを理解する<a name="risk-score"></a>
 
 調査の優先順位のスコアとは、Cloud App Security によって各ユーザーに付けられるスコアのことです。これにより、組織内の他のユーザーに対する、あるユーザーの相対的な危険度がわかります。
     

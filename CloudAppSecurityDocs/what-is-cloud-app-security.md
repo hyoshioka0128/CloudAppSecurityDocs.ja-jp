@@ -3,9 +3,9 @@ title: Cloud App Security とは
 description: この記事では、Microsoft Cloud App Security とそのしくみについて説明します。
 keywords: ''
 author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
+ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 6/17/2019
+ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0271b75da9b9d8e18deb99503e4cfe78660ea704
-ms.sourcegitcommit: b679efee6d54931c6b5f123324b3b4dd791ddca6
+ms.openlocfilehash: bee3eb97503d4ce0da3d7fbe04ea9781d759c5c7
+ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67157070"
+ms.lasthandoff: 08/18/2019
+ms.locfileid: "69572982"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Microsoft Cloud App Security の概要
 
@@ -71,7 +71,7 @@ Cloud Discovery の詳細については、「[Set up Cloud Discovery](set-up-cl
 
 ### <a name="sanctioning-and-unsanctioning-an-app"></a>アプリの承認および却下  
 
-Cloud App Security では、*クラウド アプリ カタログ*を使用して、組織内のアプリを承認または却下することができます。 Microsoft のアナリスト チームでは、16,000 以上のクラウド アプリを掲載した大規模なカタログを作成し、新たなアプリを継続的に追加しています。このカタログのクラウド アプリは、業界標準に基づいてランク付けおよびスコア付けされています。 クラウド アプリ カタログを使用して、規制遵守の認定、業界標準、ベスト プラクティスに基づいて、クラウド アプリのリスクをランク付けできます。 その後、組織のニーズに合わせて、さまざまなパラメーターのスコアと重みをカスタマイズします。 Cloud App Security では、これらのスコアに基づき、アプリの危険度を確認できます。 スコアリングは、環境に影響を与える可能性がある 70 以上のリスク要因に基づきます。  
+Cloud App Security では、*クラウド アプリ カタログ*を使用して、組織内のアプリを承認または却下することができます。 Microsoft のアナリスト チームでは、16,000 以上のクラウド アプリを掲載した大規模なカタログを作成し、新たなアプリを継続的に追加しています。このカタログのクラウド アプリは、業界標準に基づいてランク付けおよびスコア付けされています。 クラウド アプリ カタログを使用して、規制遵守の認定、業界標準、ベスト プラクティスに基づいて、クラウド アプリのリスクをランク付けできます。 その後、組織のニーズに合わせて、さまざまなパラメーターのスコアと重みをカスタマイズします。 Cloud App Security では、これらのスコアに基づき、アプリの危険度を確認できます。 スコアリングは、環境に影響を与える可能性がある 80 以上のリスク要因に基づきます。  
 
 ### <a name="app-connectors"></a>アプリ コネクタ
 
