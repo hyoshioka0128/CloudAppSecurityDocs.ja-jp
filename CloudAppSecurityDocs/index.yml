@@ -2,19 +2,20 @@
 documentType: LandingData
 title: Microsoft Cloud App Security
 metadata:
-  title: Microsoft Cloud App Security
+  title: Microsoft Cloud App Security| Microsoft Docs
   description: Microsoft Cloud App Security はクラウド アプリに、より深い可視性、包括的な制御、およびクラウド セキュリティの問題に対する強力な保護のエンタープライズ グレードのセキュリティを提供します。
-  author: rkarlin
+  author: ShlomoSagir-MS
   manager: angrobe
   ms.prod: cloud-app-security
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 06/05/2019
-  ms.author: rkarlin
+  ms.date: 21/8/2019
+  ms.author: ShlomoSagir-MS
+  ms.service: cloud-app-security
   layout: LandingPage
 abstract:
-  description: Microsoft Cloud App Security は、クラウドへのアクセスのセキュリティ ブローカー (CASB) 複数のクラウドで動作します。 高度な可視性、データの移動、および高度な分析を特定し、すべてのクラウド サービスにおけるに対抗制御を提供します。
+  description: Microsoft Cloud App Security は、複数のクラウドで動作する Cloud Access Security Broker (CASB) です。 お使いのクラウド サービス全体にわたるサイバー攻撃の脅威を特定し、対処するために、豊富な表示機能、データ送受信の制御、高度な分析を備えています。
 sections:
   - title: 詳細情報
     items:
