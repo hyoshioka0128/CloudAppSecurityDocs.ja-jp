@@ -5,22 +5,21 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/11/2019
+ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 4649423b-9289-49b7-8b60-04b61eca1364
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 449be026e0c13723f886089cae3c9d2f7a181d78
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: e387de567dc4eb6dee4f49d3ba95cb803454ba0d
+ms.sourcegitcommit: 9e5d1923113dd7bdd499d57f7508757a1a67801b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870232"
+ms.lasthandoff: 08/25/2019
+ms.locfileid: "70017570"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 
@@ -32,8 +31,6 @@ SIEM を Cloud App Security と初めて統合した場合、過去 2 日間の�
 
 > [!IMPORTANT]
 > Cloud App Security で Azure Advanced Threat Protection を統合していて、両方のサービスが SIEM にアラート通知を送信するように構成されている場合は、同じアラートに対して重複する SIEM 通知を受け取ることになります。 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 重複や混乱を避けるためには、必ずシナリオに対処してください。 たとえば、アラートの管理を実行する場所を決定し、もう一方のサービスから送信される SIEM 通知を停止します。
-
-
 
 ## <a name="siem-integration-architecture"></a>SIEM 統合アーキテクチャ
 
@@ -51,21 +48,20 @@ Cloud App Security は現在、Micro Focus ArcSight と汎用 CEF をサポー�
 ## <a name="how-to-integrate"></a>統合方法
 
 SIEM との統合は次の 3 つの手順で行われます。
-1. Cloud App Security ポータルでセットアップします。 
+
+1. Cloud App Security ポータルでセットアップします。
 2. JAR ファイルをダウンロードし、サーバーで実行します。
 3. SIEM エージェントが動作しているか検証します。
 
 ### <a name="prerequisites"></a>前提条件
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
-- サーバーでは Java 8 を実行する必要があります。これより前のバージョンはサポートされていません。
 - OS:Windows または Linux
 - CPU:2
 - ディスク領域:20 GB
 - RAM:2 GB
 - サーバーは Java 8 を実行している必要があります。 これより古いバージョンはサポートしていません。
 - [ネットワーク要件](network-requirements.md)で説明されているとおりにファイアウォールを設定する
- 
 
 ## <a name="integrating-with-your-siem"></a>SIEM との統合
 
@@ -74,31 +70,25 @@ SIEM との統合は次の 3 つの手順で行われます。
 1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、 **[SIEM エージェント]** タブをクリックします。
 
 2. プラス記号アイコンをクリックし、 **[SIEM エージェントを追加する]** ウィザードを開始します。
-3. ウィザードで、 **[ウィザード起動]** をクリックします。   
-4. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 
-   **[次へ]** をクリックします。
+3. ウィザードで、 **[ウィザード起動]** をクリックします。
+4. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 **[次へ]** をクリックします。
 
    ![SIEM の全般設定](./media/siem1.png)
 
 5. **リモートの Syslog ホスト**の IP アドレスまたはホスト名と **Syslog ポート番号**を入力します。 リモートの Syslog プロトコルとして TCP または UDP を選択します。
-   これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。
-   **[次へ]** をクリックします。
+   これらの詳細がわからない場合は、セキュリティ管理者と協力して取得してださい。 **[次へ]** をクリックします。
 
    ![リモートの Syslog 設定](./media/siem2.png)
 
-6. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 
-   スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。
-   **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 
-   **[次へ]** をクリックします。 
+6. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。 **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 **[次へ]** をクリックします。 
 
    ![データの種類の設定](./media/siem3.png)
 
-7. トークンをコピーし、保存して後で使用できるようにします。 
+7. トークンをコピーし、保存して後で使用できるようにします。
    [完了] をクリックし、ウィザードを終了します。 SIEM ページに戻ると、追加した SIEM エージェントがテーブルに表示されます。 後で接続されるまで **[作成済み]** と表示されます。
 
 > [!NOTE]
 > 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
-
 
 ### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2:JAR ファイルをダウンロードし、サーバーで実行する
 
@@ -116,17 +106,17 @@ SIEM との統合は次の 3 つの手順で行われます。
 >   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 例: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
+
 - DIRNAME は、ローカル エージェント デバッグ ログで使用するディレクトリのパスです。
 - ADDRESS[:PORT] は、サーバーがインターネットに接続する際に使用するプロキシ サーバーのアドレスとポートです。
 - TOKEN は、前の手順でコピーした SIEM エージェント トークンです。
 
 「-h」と入力すれば、いつでもヘルプを表示できます。
 
-
-## アクティビティ ログのサンプル<a name="siem-samples"></a>
-
+#### アクティビティ ログのサンプル<a name="siem-samples"></a>
 
 SIEM に送信されるアクティビティ ログのサンプルを次に示します。
+
 ```
 2017-11-22T17:50:04.000Z CEF:0|MCAS|SIEM_Agent|0.111.85|EVENT_CATEGORY_LOGOUT|Log out|0|externalId=1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0 rt=1511373004000 start=1511373004000 end=1511373004000 msg=Log out suser=admin@contoso.com destinationServiceName=ServiceNow dvc=13.82.149.151 requestClientApplication= cs1Label=portalURL cs1=https://contoso.portal.cloudappsecurity.com/#/audits?activity.id\=eq(1511373015679_167ae3eb-ed33-454a-b548-c2ed6cea6ef0,) cs2Label=uniqueServiceAppIds cs2=APPID_SERVICENOW cs3Label=targetObjects cs3=admin@contoso.com,admin@contoso.com,admin@contoso.com cs4Label=policyIDs cs4= c6a1Label="Device IPv6 Address" c6a1=
 
@@ -156,8 +146,8 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 2017-07-16T09:41:04.369Z CEF:0|MCAS|SIEM_Agent|0.102.17|ALERT_CABINET_EVENT_MATCH_AUDIT|test-activity-policy2|3|externalId=596b34b10c204203a33a5240 start=1500198064369 end=1500198064369 msg=Activity policy ''test-activity-policy2'' was triggered by ''user2@test15-adallom.com'' suser=user2@test15-adallom.com destinationServiceName=Google cn1Label=riskScore cn1= cs1Label=portalURL cs1=https://cloud-app-security.com/#/alerts/596b34b10c204203a33a5240 cs2Label=uniqueServiceAppIds cs2=APPID_33626 cs3Label=relatedAudits cs3=1500197996117_fd71f265-1e46-4f04-b372-2e32ec874cd3 cs4Label=policyIDs cs4=
 ```
-#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
 
+#### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
 
 |   適用対象   |      CEF フィールド名      |                                                   [説明]                                                   |
 |-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -183,10 +173,9 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、 **[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
 
-   以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
+    以下のように接続状態である必要があります。![SIEM が接続されている状態](./media/siem-connected.png)
 
 2. Syslog/SIEM サーバーで、Cloud App Security から送られたアクティビティとアラートが表示されていることを確認します。
-
 
 ## <a name="regenerating-your-token"></a>トークンの再生成
 
@@ -209,11 +198,8 @@ SIEM エージェントを削除するには、テーブルの SIEM エージェ
 > [!NOTE]
 > この機能はパブリック プレビュー段階です。
 
-
-
 ## <a name="next-steps"></a>次の手順
-  
-[SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)
 
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
