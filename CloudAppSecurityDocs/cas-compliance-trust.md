@@ -1,26 +1,20 @@
 ---
-title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼
+title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼 | Microsoft Docs
 description: この記事では、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。
-keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/01/2019
-ms.topic: overview
-ms.collection: M365-security-compliance
-ms.prod: ''
+author: ShlomoSagir-MS
+ms.author: shsagir
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: e456940a-88f1-4767-ae3d-4a57548f4179
-ms.reviewer: reutam
-ms.suite: ems
+ms.topic: overview
+ms.date: 8/21/2019
+ms.collection: M365-security-compliance
 ms.custom: seodec18
-ms.openlocfilehash: 0e85d167300c3102db74092cd4f52afe9c24a21e
-ms.sourcegitcommit: 7a03921f9e337f73ddf812105b72ea260582a3d3
+ms.suite: ems
+ms.openlocfilehash: be012da7233c021751d14f23d32d59c621bbf837
+ms.sourcegitcommit: 9b898458715af3b4056419c1e0df2dc0dc7385fa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/23/2019
-ms.locfileid: "67333595"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69670906"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 
@@ -41,7 +35,6 @@ Microsoft Cloud App Security のツールを使用すると、シャドウ IT �
 ### <a name="compliance-framework-and-offerings"></a>コンプライアンスのフレームワークとコンプライアンス認証
 
 Microsoft Cloud App Security は、次のような (ただし、これらに限定されない) 多くの国際的および業界固有のコンプライアンス基準を満たしています。
-
 
 | |Title|[説明]|
 |----|----|----|
@@ -64,6 +57,7 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 ## <a name="privacy"></a>プライバシー
 
 ### <a name="youre-the-owner-of-your-data"></a>お客様のデータはお客様が所有
+
 - Microsoft Cloud App Security では、管理者はポータルから、検索バーを使用して、サービスに格納されている個人を特定できるデータを閲覧できます。
 - 管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 エンティティをクリックすると、[ **[ユーザーとアカウント]** ](accounts.md) が開きます。 **[ユーザーとアカウント]** ページでは、接続されているクラウド アプリケーションから取得したエンティティに関する包括的な詳細が提供されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
@@ -82,18 +76,21 @@ Microsoft Cloud App Security は、次のような (ただし、これらに限�
 - プライバシー管理は、組織内のどのユーザーがサービスにアクセスでき、それらの各ユーザーが何にアクセスできるかを構成するのに役立ちます。
 
 ## <a name="updating-personal-data"></a>個人データの更新
-ユーザーの個人データは、使用する SaaS アプリケーションのユーザーのオブジェクトから派生します。 このため、これらのアプリケーションのユーザー プロファイルに加えられた変更はすべて、Microsoft Cloud App Security に反映されます。
 
+ユーザーの個人データは、使用する SaaS アプリケーションのユーザーのオブジェクトから派生します。 このため、これらのアプリケーションのユーザー プロファイルに加えられた変更はすべて、Microsoft Cloud App Security に反映されます。
 
 ## <a name="data-location"></a>データの場所
 
-- Microsoft Cloud App Security は現在、米国とヨーロッパのデータセンターで稼働しています (各々が "Geo")。 テナントのアカウントは、サインアップ時に選択した国に基づいて、Geo 内に作成されます。 具体的には、その場所に最も近い Geo 内のデータセンターにデータが格納されます。
+Microsoft Cloud App Security は現在、米国とヨーロッパのデータセンターで稼働しています (各々が "Geo")。 テナントのアカウントは、サインアップ時に選択した国に基づいて、Geo 内に作成されます。 具体的には、その場所に最も近い Geo 内のデータセンターにデータが格納されます。
+
+> [!NOTE]
+> Cloud App Security では、世界中の Azure データ センターが活用され、位置情報によって最適化されたパフォーマンスが提供されます。 つまり、トラフィック パターンとその場所によっては、ユーザーのセッションが特定のリージョンの外部でホストされる可能性があります。 ただし、お客様のプライバシーを保護するために、これらのデータ センターにセッション データが保存されることはありません。
 
 [プライバシーに関する詳細情報](https://www.microsoft.com/en-us/trustcenter/privacy)
 
 ## <a name="transparency"></a>透明度
 
-Microsoft は、その取り組みの透明性を確保します。 
+Microsoft は、その取り組みの透明性を確保します。
 
 - データの保存場所を共有します。
 - 合意済みのサービスを提供する目的にのみデータを使用することを確約します。
@@ -119,12 +116,14 @@ Microsoft Cloud App Security は次のようにデータを保持しています
 
 Microsoft のデータ管理の実施に関する詳細については、 [オンライン サービス条件](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)を参照してください。
 
-[透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency) 
+[透明性に関する詳細情報](https://www.microsoft.com/en-us/trustcenter/about/transparency)
 
 ### <a name="deleting-personal-data"></a>個人データの削除
+
 接続されているクラウド アプリケーションからデータが削除されると、Microsoft Cloud App Security は、そのデータのコピーを 2 年以内に自動的に削除します。
 
 ### <a name="exporting-personal-data"></a>個人データのエクスポート
+
 Microsoft Cloud App Security には、すべてのユーザー アクティビティとセキュリティ通知の情報を CSV に[エクスポート](activity-filters.md#export)する機能が備わっています。
 
 ## <a name="security"></a>セキュリティ
@@ -133,7 +132,10 @@ Microsoft Cloud App Security には、すべてのユーザー アクティビ�
 
 Microsoft は、Microsoft データベースでの保管時、およびユーザー デバイスと Cloud App Security データセンター間でのデータ転送時に、お客様のデータを保護するための暗号化テクノロジを使用します。
 
-### <a name="identity-and-access-management"></a>ID およびアクセスの管理
+> [!NOTE]
+> Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブ クライアント アプリケーションとブラウザーは、セッション制御を使用して構成した場合、アクセスできなくなります。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
+
+### <a name="identity-and-access-management"></a>ID およびアクセス管理
 
 Microsoft Cloud App Security では、Azure Active Directory を使用して、ポータルへの管理者のアクセスを地理的な場所に基づいて制限することができます。 Azure Active Directory を使用して、Microsoft Cloud App Security ポータルへのアクセスに多要素認証を要求することができます。
 
@@ -147,7 +149,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 Microsoft Cloud App Security を使用するとデプロイのスコープを指定できます。 スコープの設定により、Cloud App Security を使用して特定のグループのみを制御することや、Cloud App Security によるガバナンスから特定のグループを除外することができます。 詳細については、「[Scoped deployment](scoped-deployment.md)」(スコープ付きデプロイ) を参照してください。
 
-### <a name="anonymization"></a>匿名化 
+### <a name="anonymization"></a>匿名化
 
 **Cloud Discovery** レポートを匿名化することを選択できます。 ログ ファイルが **Microsoft** Cloud App Security にアップロードされた後、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 特定のセキュリティ調査を行うために、実際のユーザー名を解決することができます。 個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。 [詳細情報](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer)
 
@@ -160,6 +162,3 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 [Cloud App Security へのサインアップ](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
 Cloud App Security の無料試用版を入手して、ビジネスの課題を満たす方法をご確認ください。
-
-
-   
