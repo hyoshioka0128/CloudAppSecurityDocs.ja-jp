@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/26/2019
+ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d6b659fd25e17e2c3e4ac22749057a9e2ec70ac
-ms.sourcegitcommit: 4179e4ad0fbabf08a24a176bbe21cad1f8cc35da
+ms.openlocfilehash: 3c5847c321712b8dfb61aae13521dab1c4b17ce3
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70019477"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70208822"
 ---
 # <a name="connect-apps"></a>アプリを接続する
 
@@ -85,7 +85,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 > |**アプリのアクセス許可の取り消し**|✔||適用できません|✔||✔|適用なし||適用なし|適用なし|
 > |**Azure Information Protection ラベルの適用**|✔|✔||✔|||||適用なし|適用なし|
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - アプリによっては、IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。 詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
 
@@ -108,8 +108,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 | Salesforce | | 管理 |
 | ServiceNow | Eureka 以降 | Admin + RestAPI ロール |
 | Webex | | 管理者 + コンプライアンス管理者 |
-
-<!--| Workday | | Admin |-->
+| Workday | | [接続 Workday の前提条件](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)を確認する |
 
 ### <a name="expressroute"></a>ExpressRoute
 
