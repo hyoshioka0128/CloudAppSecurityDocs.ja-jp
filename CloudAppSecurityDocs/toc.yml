@@ -35,7 +35,7 @@
       href: use-case-admin-quarantine.md
     - name: Azure Information Protection ラベルを自動的に適用する
       href: use-case-information-protection.md
-    - name: アラートを自動化してエンドポイントを保護する
+    - name: エンドポイントの修復までガバナンスを拡張する
       href: tutorial-flow.md
 - name: 概念
   items:
@@ -244,6 +244,10 @@
           href: troubleshoot-policies.md
 - name: リソース
   items:
+    - name: ウェビナーを見る
+      href: webinars.md
+    - name: 電子書籍を読む
+      href: e-books.md
     - name: リリース ノートのアーカイブ
       href: release-note-archive.md
     - name: ライセンスのデータシート
