@@ -125,6 +125,8 @@
           href: connect-servicenow-to-microsoft-cloud-app-security.md
         - name: WebEx の接続
           href: connect-webex-to-microsoft-cloud-app-security.md
+        - name: Workday の接続
+          href: connect-workday-to-microsoft-cloud-app-security.md
     - name: 条件付きアクセス アプリ制御アプリの展開
       items:
         - name: フィーチャー アプリでの条件付きアクセス アプリ制御の展開
