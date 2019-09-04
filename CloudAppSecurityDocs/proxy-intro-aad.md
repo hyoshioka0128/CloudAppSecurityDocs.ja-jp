@@ -5,22 +5,21 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 7/2/2019
+ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 35a43120-bf67-4cf9-9b48-ebe157dbbd18
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 42b8a6be826f68ea60765a53f3a5bec97df7d7b1
-ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
+ms.openlocfilehash: 304c5570d5c81f0f07cebb0af880d3e9b96f377e
+ms.sourcegitcommit: 1da115a5cd9f5cdea568c4ef20c74835bf9669ca
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68782854"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70243846"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -62,7 +61,7 @@ Conditional Access App Control でセッション ポリシーを作成するこ
 この方法では、デバイスに何もインストールする必要はありません。管理されていないデバイスやパートナーユーザーからのセッションを監視または制御する場合に最適です。
 
 > [!NOTE]
-> Cloud App Security は、世界中の Azure データセンターを活用して、位置情報によって最適化されたパフォーマンスを提供します。 これは、トラフィックパターンとその場所によっては、ユーザーのセッションが特定のリージョンの外部でホストされる可能性があることを意味します。 ただし、プライバシーを保護するために、これらのデータセンターにセッションデータは格納されません。
+> Cloud App Security では、世界中の Azure データ センターが活用され、位置情報によって最適化されたパフォーマンスが提供されます。 つまり、トラフィック パターンとその場所によっては、ユーザーのセッションが特定のリージョンの外部でホストされる可能性があります。 ただし、お客様のプライバシーを保護するために、これらのデータ センターにセッション データが保存されることはありません。
 
 ## <a name="managed-device-identification"></a>マネージド デバイスの識別
 
@@ -74,8 +73,10 @@ Conditional Access App Control を使うと、デバイスが管理されてい�
 
 ### <a name="compliant-and-domain-joined-devices"></a>準拠していてドメインに参加済みのデバイス
 
-Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Microsoft Cloud App Security に直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。
-詳しくは、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」をご覧ください。 
+Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Microsoft Cloud App Security に直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。 詳しくは、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」をご覧ください。
+
+> [!NOTE]
+> 一部のブラウザーでは、拡張機能のインストールなどの追加の構成が必要になる場合があります。 詳細については、「[条件付きアクセスブラウザーのサポート](https://go.microsoft.com/fwlink/?linkid=2102732)」を参照してください。
 
 ### <a name="client-certificate-authenticated-devices"></a>クライアント証明書で認証されたデバイス
 
@@ -90,6 +91,9 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 1. 選択されたクライアント証明書は有効で、正しいルート CA または中間 CA の下にあります。
 1. 証明書は失効していません (CRL が有効になっている場合)。
 
+> [!NOTE]
+> ほとんどの主要なブラウザーは、クライアント証明書の確認をサポートしています。 ただし、モバイルアプリとデスクトップアプリは、多くの場合、このチェックをサポートしていないため、これらのアプリの認証に影響を与える組み込みのブラウザーを活用します。
+
 クライアント証明書をデプロイする方法については、「[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)」を参照してください。
 
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
@@ -98,10 +102,13 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 > [!NOTE]
 > アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
-**セッション制御は、あらゆるオペレーティング システム上の、すべての主要なプラットフォーム上のすべてのブラウザーで使用可能です**。 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新)、または Apple Safari (最新) を使用することをお勧めします。 モバイル アプリとデスクトップ アプリは許可またはブロックすることもできます。
+**セッション制御は、あらゆるオペレーティング システム上の、すべての主要なプラットフォーム上のすべてのブラウザーで使用可能です**。 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新)、または Apple Safari (最新) を使用することをお勧めします。 モバイルアプリとデスクトップアプリへのアクセスをブロックまたは許可することもできます。
 
 > [!NOTE]
-> Cloud App security は、トランスポート層セキュリティ (TLS) プロトコル1.2 以降を活用して、クラス最高レベルの暗号化を提供します。 TLS 1.2 以降をサポートしていないネイティブクライアントアプリケーションとブラウザーは、セッション制御を使用して構成した場合にアクセスできません。 ただし、TLS 1.1 以下を使用する SaaS アプリは、Cloud App Security で構成されている場合、TLS 1.2 + を使用してブラウザーに表示されます。
+> アクセスポリシーで**クライアントアプリ**フィルターを使用すると、結果として得られるユーザーセッションが Cloud App Security によってプロキシ化される可能性があります。
+
+> [!NOTE]
+> Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブ クライアント アプリケーションとブラウザーは、セッション制御を使用して構成した場合、アクセスできなくなります。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
 
 Azure AD とネイティブに統合することにより、SAML または Open ID Connect で構成されているすべてのアプリを自己オンボードにすることができます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
 
@@ -140,6 +147,7 @@ Azure AD とネイティブに統合することにより、SAML または Open 
 [次へ:アプリの条件付きアクセス制御の展開 »](proxy-deployment-aad.md)
 
 ## <a name="next-steps"></a>次の手順
+
 [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
