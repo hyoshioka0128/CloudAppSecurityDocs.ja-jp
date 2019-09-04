@@ -4,19 +4,19 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/18/2019
+ms.date: 9/1/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 92caf80bb63f3285cfff3761e274ee6eb76b1041
-ms.sourcegitcommit: 850bf268bcb9fef0fe4870daa7341211d02776ad
+ms.openlocfilehash: 6fe0f633b55a718b9a4b2be8fef2de4be87cd0ca
+ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69577143"
+ms.lasthandoff: 09/01/2019
+ms.locfileid: "70209038"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,28 @@ ms.locfileid: "69577143"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-157"></a>Cloud App Security リリース 157
+
+リリース日: 2019 年 9 月 1 日
+
+- **リマインダー:TLS 1.0 と 1.1 のサポートは 9 月 8 日に終了します**<br>
+Microsoft は、クラス最高レベルの暗号化を提供するため、すべてのオンライン サービスをトランスポート層セキュリティ (TLS) 1.2 以降に移行しています。 そのため、2019 年 9 月 8 日以降、Cloud App Security では TLS 1.0 と 1.1 がサポートされなくなり、これらのプロトコルを使用した接続はサポートされません。 変更による影響の詳細については、[Microsoft のブログ記事](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507)を参照してください。
+
+- **新しい検出 ‐ Microsoft Power BI の疑わしい共有 (プレビュー)**<br>
+新しい Power BI レポートの疑わしい共有ポリシーが既定で利用できるようになり、自動的に有効になっています。これでは、機密である可能性のある Power BI レポートが組織外に不審に共有されている可能性がある場合に、アラートを行います。
+
+- **OAuth アプリの監査の新しいエクスポート機能**<br>
+Cloud App Security では、実行されたアクティビティの包括的な監視および調査を提供できるよう、すべての OAuth 承認アクティビティを監査しています。 現在、特定の OAuth アプリを承認したユーザーの詳細もエクスポートできるので、そのユーザーの追加情報を入手して、さらに分析することできます。
+
+- **強化された Okta のイベント監査**<br>
+Cloud App Security で、Okta によってリリースされた新しいシステム ログ API がサポートされるようになりました。 Okta の接続方法の詳細については、[Okta の接続](connect-okta-to-microsoft-cloud-app-security.md)に関するページを参照してください。
+
+- **Workday コネクタ (プレビュー)**<br>
+Workday 用の新しいアプリ コネクタが利用できるようになりました。 Cloud App Security を Workday に接続して、アクティビティを監視したり、そのユーザーとアクティビティを保護できます。 詳細については、[Workday の接続](connect-workday-to-microsoft-cloud-app-security.md)に関するページをご覧ください。
+
+- **「パスワード ポリシー」のリスク要因の評価の強化**<br>
+クラウド アプリ カタログで、**パスワード ポリシー**のリスク要因をより詳細に評価できるようになりました。 これの情報アイコン上をポイントすると、アプリによって適用される特定のポリシーの詳細を表示できます。
 
 ## <a name="cloud-app-security-release-156"></a>Cloud App Security リリース 156
 
@@ -41,9 +63,6 @@ Cloud App Security では、 **[ユーザーとアカウント]** のページ�
 
 - **アクティビティ ポリシーの機能強化**<br>
 アクティビティ オブジェクトに基づいてアクティビティ ポリシーのアラートを作成できるようになりました。 たとえば、この機能を使用すると、Azure Active Directory 管理者ロールへの変更に関するアラートを作成できます。 アクティビティ オブジェクトの詳細については、「[アクティビティ フィルター](activity-filters-queries.md#activity-filters)」を参照してください。
-
-<!-- **Workday app connector available (Preview)**<br>
-A new app connector is now available for Workday. You can now connect Microsoft Cloud App Security to Workday to monitor activities and protect its users. For more information, see [Connect Workday](connect-workday-to-microsoft-cloud-app-security.md).-->
 
 ## <a name="cloud-app-security-release-155"></a>Cloud App Security リリース 155
 

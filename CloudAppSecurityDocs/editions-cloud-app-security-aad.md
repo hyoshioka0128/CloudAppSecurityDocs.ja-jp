@@ -2,25 +2,23 @@
 title: Cloud App Security と Azure AD の検出機能の相違点
 description: この記事では、Microsoft Cloud App Security と Azure AD の検出機能の相違点について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
-ms.date: 03/25/2019
+author: ShlomoSagir-MS
+ms.author: shsagir
+manager: ShlomoSagir-MS
+ms.date: 8/29/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
-ms.technology: ''
-ms.assetid: 4422e847-9a87-4d60-ad55-346ea50a768c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ccae964e3d8dc264f5e6a8f1165c990a50320e9c
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 811bd97ea687d89032fed1e685e40bcf044d2564
+ms.sourcegitcommit: 36b330b0ac03ccc0ac5b04dbd0f65106b033bd2b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567757"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70134670"
 ---
 # <a name="what-are-the-differences-in-discovery-capabilities-for-azure-active-directory-and-microsoft-cloud-app-security"></a>Azure Active Directory と Microsoft Cloud App Security の検出機能の相違点
 
@@ -30,9 +28,9 @@ ms.locfileid: "65567757"
 
 ライセンスについて詳しくは、[Microsoft Cloud App Security のライセンスのデータシート](https://aka.ms/mcaslicensing)をご覧ください。
 
-## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security 
+## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security は包括的なクロス SaaS ソリューションです。高度な可視化、強力なデータ管理、高性能な脅威防御といった機能をクラウド アプリにもたらします。 Cloud Discovery は、Cloud App Security の機能の 1 つであり、使用中のクラウド アプリを検出することで、シャドウ IT に可視性を確保することができます。 
+Microsoft Cloud App Security は包括的なクロス SaaS ソリューションです。高度な可視化、強力なデータ管理、高性能な脅威防御といった機能をクラウド アプリにもたらします。 Cloud Discovery は、Cloud App Security の機能の 1 つであり、使用中のクラウド アプリを検出することで、シャドウ IT に可視性を確保することができます。
 
 ## <a name="enhanced-cloud-app-discovery-in-azure-active-directory"></a>Azure Active Directory で強化された Cloud App Discovery
 
@@ -52,9 +50,19 @@ Microsoft Cloud App Security と Azure AD の検出機能の比較を次の表�
 ||アプリ、ユーザー、IP アドレス別のクラウド利用状況分析|はい|はい|
 ||継続的な分析とレポート|はい|はい|
 ||検出されたアプリの異常検出|はい||
+|情報の保護|データ損失防止 (DLP) サポート|クロス SaaS DLP およびデータ共有制御||
+||アプリのアクセス許可とアクセスの取り消し機能|はい||
+||ポリシーの設定と適用|はい||
+||Azure Information Protection との統合 |はい||
+||サード パーティの DLP ソリューションとの統合|はい||
+|脅威の検出|異常検出と行動分析|クロス SaaS アプリの場合||
+||手動および自動のアラート修復|はい||
+||SIEM コネクタ|対応 クロス SaaS アプリのアラートとアクティビティ ログ。||
+||Microsoft インテリジェント セキュリティ グラフに統合|はい||
+||アクティビティ ポリシー|はい||
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次の手順
 
-基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。    
+基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください。
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)   
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
