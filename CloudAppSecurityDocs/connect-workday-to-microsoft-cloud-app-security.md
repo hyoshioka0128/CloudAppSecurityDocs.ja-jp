@@ -5,7 +5,7 @@ keywords: ''
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 9/1/2019
+ms.date: 9/5/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b467600661209d299ca5f5f4079a572aa3016c2
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: fefff041971b65d27e4a3409034af0569894dc04
+ms.sourcegitcommit: 24c0dd16c7e8212f614fb6fd66c9f18ce75c0b45
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208912"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70373123"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Workday を Microsoft Cloud App Security に接続する
 
@@ -27,15 +27,17 @@ ms.locfileid: "70208912"
 
 この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-Cloud App Security への接続に使用する Workday アカウントは、次のドメインが有効になっているセキュリティグループのメンバーである必要があります。
+- Cloud App Security への接続に使用する Workday アカウントは、次のドメインが有効になっているセキュリティグループのメンバーである必要があります。
 
-- システム-セキュリティ管理
-- システムシステムの監査
-- スタッフ-ワーカーデータ:パブリックワーカーレポート
+  - システム-セキュリティ管理
+  - システムシステムの監査
+  - スタッフ-ワーカーデータ:パブリックワーカーレポート
 
-Workday 統合システムユーザーを使用することをお勧めします。
+  Workday 統合システムユーザーを使用することをお勧めします。
+
+- Workday 展開で IP アドレス範囲を管理している場合は、すべての Cloud App Security IP アドレスをホワイトリストに登録する必要があります。 IP アドレスの一覧については、「[ネットワーク要件-アプリコネクタ](network-requirements.md#app-connector)」を参照してください。
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>OAuth を使用して Workday を Cloud App Security に接続する方法
 
