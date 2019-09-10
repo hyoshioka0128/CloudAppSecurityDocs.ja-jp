@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d22d5e20ca3ad8f8484fb22f16b595c91d27aa22
-ms.sourcegitcommit: 5929f232232f2c3cba460680d959b121dff1aa3a
+ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
+ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/08/2019
-ms.locfileid: "70803046"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70804889"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Workday を Microsoft Cloud App Security に接続する
 
@@ -27,7 +27,7 @@ ms.locfileid: "70803046"
 
 この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 セキュリティグループには、次のドメインに対して次のアクセス許可が選択されている必要があります。
 
@@ -44,7 +44,7 @@ Workday 統合システムユーザーを使用することをお勧めします
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>OAuth を使用して Workday を Cloud App Security に接続する方法
 
-1. 「前提条件」に記載されているセキュリティグループのメンバーである管理者ユーザーを使用して、Workday アカウントにサインインします。
+1. 「前提条件」に記載されているセキュリティグループのメンバーであるアカウントを使用して、Workday にサインインします。
 
 1. テナント設定の編集–システム を検索し、**ユーザーアクティビティログ** で **ユーザーアクティビティログを有効にする** を選択します。
 
