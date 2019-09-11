@@ -19,8 +19,6 @@
   items:
     - name: はじめに
       href: getting-started-with-cloud-app-security.md
-    - name: 検出されたアプリの処理
-      href: discovered-apps.md
 - name: チュートリアル
   items:
     - name: シャドウ IT の検出および管理
@@ -43,8 +41,10 @@
       href: proxy-intro-aad.md
     - name: ダッシュボードの操作
       href: daily-activities-to-protect-your-cloud-environment.md
-    - name: リスク スコアの操作
+    - name: アプリのリスク スコアの操作
       href: risk-score.md
+    - name: 検出されたアプリの処理
+      href: discovered-apps.md
 - name: 操作方法ガイド
   items:
     - name: 基本設定
