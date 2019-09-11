@@ -4,19 +4,19 @@ description: このクイックスタートでは、クラウド アプリを使
 author: ShlomoSagir-MS
 ms.author: shsagir
 manager: ShlomoSagir-MS
-ms.date: 8/28/2019
+ms.date: 9/9/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 489bdc036d8e2b51303e79509af39d851385aa00
-ms.sourcegitcommit: 0552bfd3f75ed24b2b9de668c0c25bf7be5f5526
+ms.openlocfilehash: fb673cf1e242a80d2b9b4b8a318607ae8f49ebdf
+ms.sourcegitcommit: 07fed3b2d6e926614d33d22d3dbcadf2c97d4fe5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70076436"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70805887"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security の使用を開始する
 
@@ -42,10 +42,15 @@ ms.locfileid: "70076436"
 
 ## <a name="to-access-the-portal"></a>ポータルにアクセスするには
 
-Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) に移動します。
-管理センター アイコンをクリックして、**Microsoft 365 管理センター**からポータルにアクセスすることもできます。 ![O365 管理センター アイコン](./media/o365-admin-centers-icon.png "O365 管理センター アイコン") その後、 **[Cloud App Security]** を選択します。
+Cloud App Security ポータルにアクセスするには、[https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) に移動します。 次のように、**Microsoft 365 管理センター**を使ってポータルにアクセスすることもできます。
 
-![O365 からのアクセス](./media/access-from-o365.png "Access from O365")
+1. Microsoft 365 管理センターで、**アプリ起動ツール** アイコン ![Office 365 アプリ起動ツール アイコン](media/o365-admin-centers-icon.png) をクリックしてから、 **[セキュリティ]** を選択します。
+
+    ![Office 365 からのアクセス](media/access-from-o365.png)
+
+1. [Microsoft 365 セキュリティ] ページで、 **[その他のリソース]** をクリックしてから **[Cloud App Security]** を選択します。
+
+    ![Cloud App Security の選択](media/access-from-o365-s2.png)
 
 ## <a name="step-1-set-instant-visibility-protection-and-governance-actions-for-your-appsenable-instant-visibility-protection-and-governance-actions-for-your-appsmd"></a>手順 1. [アプリのインスタント表示、保護、およびガバナンス アクションの設定](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
 

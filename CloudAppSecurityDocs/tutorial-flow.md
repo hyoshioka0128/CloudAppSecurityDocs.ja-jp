@@ -5,21 +5,27 @@ author: ShlomoSagir-MS
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: tutorial
-ms.date: 8/22/2019
-ms.openlocfilehash: 8aad8262baf985c25b4443d90c1e6ac2ba3b4725
-ms.sourcegitcommit: 33257c7a1017ee0a4ff8f4f8cc7ef018c9be00e5
+ms.date: 9/8/2019
+ms.openlocfilehash: ab9ab1a0e616ec25f7316691e6f747b20226cc10
+ms.sourcegitcommit: e1b3e3b45d39e46734e3a994bd8d0d1459be585a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206540"
+ms.lasthandoff: 09/08/2019
+ms.locfileid: "70800870"
 ---
-# <a name="tutorial-extending-governance-to-endpoint-remediation"></a>チュートリアル: エンドポイントの修復までガバナンスを拡張する
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>チュートリアル: エンドポイントの修復までガバナンスを拡張する
 
 Cloud App Security には、ユーザーを停止したり、ファイルを非公開にするなどの定義済みのポリシーのガバナンス オプションがあります。 ネイティブに統合されている Microsoft Flow を使用すると、サービスとしてのソフトウェア (SaaS) コネクタの大規模なエコシステムを使用して、修復などのプロセスを自動化するワークフローを構築できます。
 
 たとえば、危険なマルウェアである可能性の兆候が検出された場合、ワークフローを使用して、ウイルス対策スキャンの実行やエンドポイントの分離などの Microsoft Defender Advanced Threat Protection (ATP) 修復アクションを開始できます。
 
 このチュートリアルでは、ワークフローを使用するポリシー ガバナンス アクションを構成して、ユーザーが疑わしい動作をしているエンドポイントでウイルス対策スキャンを実行する方法について説明します。
+
+> [!div class="checklist"]
+> * 1:[Cloud App Security の API トークンを生成する](#generate-token)
+> * 2:[ウイルス対策スキャンを実行するフローを作成する](#create-flow)
+> * 3:[フローを構成する](#configure-flow)
+> * 4:[フローを実行するポリシーを設定する](#configure-policy)
 
 > [!NOTE]
 > これらのワークフローは、ユーザー アクティビティを含むポリシーにのみ該当します。 たとえば、Discovery や OAuth のポリシーではこれらのワークフローは使用できません。
@@ -32,9 +38,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 * 有効な Microsoft Defender ATP プランが必要
 * Microsoft Flow 環境が Azure AD と同期され、Defender ATP の監視対象で、ドメイン参加済みである
 
-## <a name="to-configure-an-antivirus-scan-remediation-action"></a>ウイルス対策スキャンの修復アクションを構成するには
-
-### <a name="step-1-generate-a-cloud-app-security-api-token"></a>手順 1.Cloud App Security の API トークンを生成する
+## フェーズ 1:Cloud App Security の API トークンを生成する<a name="generate-token"></a>
 
 > [!NOTE]
 > Cloud App Security コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
@@ -49,7 +53,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![トークンとコピーの手順を示すトークン ウィンドウのスクリーンショット。](media/tutorial-flow-token-copy.png)
 
-### <a name="step-2-create-a-flow-to-run-an-antivirus-scan"></a>手順 2: ウイルス対策スキャンを実行するフローを作成する
+## フェーズ 2:ウイルス対策スキャンを実行するフローを作成する<a name="create-flow"></a>
 
 > [!NOTE]
 > Defender ATP コネクタを使用してフローを作成したことがある場合は、Flow によってコネクタが自動的に再利用されるため、**サインイン**の手順を省略できます。
@@ -65,7 +69,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![サインイン手順を示す Microsoft Flow のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-signin.png)
 
-### <a name="step-3-configure-the-flow"></a>手順 3: フローを構成する
+## フェーズ 3:フローを構成する<a name="configure-flow"></a>
 
 > [!NOTE]
 > Azure AD コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
@@ -92,7 +96,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![スキャンの設定セクションがある Flow ページのスクリーンショット。](media/tutorial-flow-templates-scan.png)
 
-### <a name="step-4-configure-the-policy-to-run-the-flow"></a>手順 4:フローを実行するポリシーを設定する
+## フェーズ 4: フローを実行するポリシーを設定する<a name="configure-policy"></a>
 
 1. Cloud App Security で **[制御]** 、 **[ポリシー]** の順にクリックします。
 
@@ -106,7 +110,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
 このチュートリアルの手順を使用すると、Cloud App Security の修復機能を拡張するさまざまなワークフローを使用したアクションを作成できます。これには、その他の Defender ATP アクションも含まれます。 Microsoft Flow に定義済みの Cloud App Security ワークフローの一覧を表示するには、[「Cloud App Security」を検索](https://go.microsoft.com/fwlink/?linkid=2102574)してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="see-also"></a>参照
 
 > [!div class="nextstepaction"]
 [カスタム アラート オートメーションのための Microsoft Flow との統合](flow-integration.md)
