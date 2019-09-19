@@ -2,7 +2,7 @@
 title: G Suite を Cloud App Security に接続する
 description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に G Suite を接続する方法に関する情報を提供します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 manager: shsagir
 ms.date: 6/17/2019
@@ -15,12 +15,12 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c5b06f08452fb626ee7042ffc3ab6f79f6125604
-ms.sourcegitcommit: ea1c0f7638eaf0601ae476fea0d40e01bf8a6f4d
+ms.openlocfilehash: 94fb1fcb6f66e9abacffca884cb18f7da18a25b0
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298965"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084184"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 
@@ -37,14 +37,14 @@ ms.locfileid: "67298965"
     ![google1](./media/google1.png "google1")  
   
 3. **[新しいプロジェクト]** 画面で、プロジェクトに</br>
-   **Cloud App Security**クリック**作成**です。  
+   **Cloud App Security** 、 **[作成]** をクリックします。  
           ![google2](./media/google2.png "google2")  
   
 4. プロジェクトが作成されたら、ツール バーの **[Google Cloud Platform]** をクリックします。 上部にあるドロップダウン リストで適切なプロジェクトが選択されていることを確認します。
        
       ![google プロジェクト](./media/googleverify-project.png "googleverify プロジェクト")  
 
-5. [ **Api**、] をクリックして**API の概要に移動**します。  
+5. **[Api]** で、[ **api の概要にアクセス] を**クリックします。  
   
      ![google3](./media/google3.png "google3")  
    
@@ -101,27 +101,27 @@ ms.locfileid: "67298965"
   
      ![Google 編集](./media/google11.png "google edit")  
   
-16. クリックして**ビュー ドメイン全体の委任のクライアント ID**します。
+16. [**ドメイン全体の委任クライアント ID を表示**する] をクリックします。
   
      ![google クライアント ID](./media/google12.png "google12") 
 
-    -   コピー、**クライアント ID** -後で必要です。
+    -   **クライアント ID**をコピーします。後で必要になります。
 
     -   [admin.google.com](https://admin.google.com/) にアクセスし、 **[セキュリティ]** を選択します。
 
-    -   選択**詳細を表示する**選び、**詳細設定**します。
+    -   **[詳細表示]** を選択し、 **[詳細設定]** を選択します。
 
-    -   **認証**セクションで、**管理 API のクライアント アクセス**します。
+    -   **[認証]** セクションで、 **[API クライアントアクセスの管理]** を選択します。
 
-    -   **クライアント名**ボックスに、入力、**クライアント ID**先ほどコピーしました。
+    -   **[クライアント名]** ボックスに、前の手順でコピーした**クライアント ID**を入力します。
 
-          ![api のクライアント アクセスを管理](./media/google12-2.png "google12 2")
+          ![api クライアントアクセスの管理](./media/google12-2.png "google12-2")
 
-    -   **1 つまたは複数の API のスコープ**ボックスに、次の必要なスコープの一覧を入力 (テキストをコピーし、ボックスに貼り付けます)。
+    -   **[1 つまたは複数の API スコープ]** ボックスに、次の必要なスコープの一覧を入力します (テキストをコピーし、ボックスに貼り付けます)。
 
         `https://www.googleapis.com/auth/admin.reports.audit.readonly,https://www.googleapis.com/auth/admin.reports.usage.readonly,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/drive.appdata,https://www.googleapis.com/auth/drive.apps.readonly,https://www.googleapis.com/auth/drive.file,https://www.googleapis.com/auth/drive.metadata.readonly,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/drive.scripts,https://www.googleapis.com/auth/admin.directory.user.readonly,https://www.googleapis.com/auth/admin.directory.user.security,https://www.googleapis.com/auth/admin.directory.user.alias,https://www.googleapis.com/auth/admin.directory.orgunit,https://www.googleapis.com/auth/admin.directory.notifications,https://www.googleapis.com/auth/admin.directory.group.member,https://www.googleapis.com/auth/admin.directory.group,https://www.googleapis.com/auth/admin.directory.device.mobile.action,https://www.googleapis.com/auth/admin.directory.device.mobile,https://www.googleapis.com/auth/admin.directory.user`
 
-    -    クリックして**承認**します。
+    -    **[承認]** をクリックします。
 
 17. タイトルバーで Google Cloud Platform の横にある 3 本の水平線をクリックして Google のメニューを開きます。 **[Google Cloud Platform]** をクリックし、左側のメニューの **[APIs and services**]/(API とサービス/) タブをクリックします。  
 
@@ -237,7 +237,7 @@ ms.locfileid: "67298965"
   
     1.  手順 13 でコピーした**サービス アカウント ID**。  
   
-    2.  **プロジェクト番号 (アプリ ID)** 22 の手順でコピーします。  
+    2.  手順 22. でコピーした**プロジェクト番号 (アプリ ID)** 。  
   
     3.  手順 12 で保存した**証明書** P12 をアップロードします。 保存しておいたパスワードがここで必要になります。  
   

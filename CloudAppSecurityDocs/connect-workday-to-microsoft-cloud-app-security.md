@@ -2,9 +2,9 @@
 title: Workday を Cloud App Security に接続する
 description: この記事では、API コネクタを使用して Cloud App Security に Workday アプリを接続し、使用状況を表示して制御する方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/8/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0530cfa93edd96bf805df3ac62b900b50fa5978b
-ms.sourcegitcommit: 6105add524e33adaa389bcf0f5baf4f1fdfd7f7d
+ms.openlocfilehash: 13f9870d2e1fbb9a368510ce715b9bc5c3bfe7c8
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70804889"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083875"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security"></a>Workday を Microsoft Cloud App Security に接続する
 
@@ -27,16 +27,16 @@ ms.locfileid: "70804889"
 
 この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 セキュリティグループには、次のドメインに対して次のアクセス許可が選択されている必要があります。
 
-| 機能領域 | ドメイン | サブ | レポート/タスクの権限 | 統合のアクセス許可 |
+| 機能領域 | ドメイン | サブ | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
 | システム | セットアップ:テナントのセットアップ–全般 | セットアップ:テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
 | システム | セキュリティ管理 | | 表示、変更 | Get、Put |
 | システム | システム監査 | | 表示 | 取得 |
-| リソース | ワーカーデータ:リソース | ワーカーデータ:パブリックワーカーレポート | 表示 | 取得 |
+| スタッフ | ワーカーデータ:スタッフ | ワーカーデータ:パブリックワーカーレポート | 表示 | 取得 |
 
 Workday 統合ユーザー、セキュリティグループ、およびアクセス許可を設定する方法の詳細については、「アクセス[許可の統合または外部エンドポイント](https://go.microsoft.com/fwlink/?linkid=2103212)へのアクセス」の手順 1 ~ 4 を参照してください。
 

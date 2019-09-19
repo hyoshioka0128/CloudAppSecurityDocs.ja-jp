@@ -2,9 +2,9 @@
 title: ServiceNow を Cloud App Security に接続する
 description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に ServiceNow アプリを接続する方法に関する情報を提供します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c626d94d-2ffd-4daf-8fa4-4b6d308cf012
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81272602fcdab13b8a0e5ffff85c4eec8ebf968d
-ms.sourcegitcommit: 8fd13c10c2f66a553a8a8fc413555ca837fc9c56
+ms.openlocfilehash: ce165d2f26b2e6a3d405aebf560b8f9964adcb3e
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610771"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083752"
 ---
 # <a name="connect-servicenow-to-microsoft-cloud-app-security"></a>ServiceNow を Microsoft Cloud App Security に接続する
 
@@ -32,7 +32,7 @@ ms.locfileid: "67610771"
 >  Fuji 以降のリリースで使用可能な OAuth アプリ トークンを使用して ServiceNow を展開することをお勧めします (関連する [ServiceNow ドキュメント](https://wiki.servicenow.com/index.php?title=OAuth_Applications#gsc.tab=0)を参照)。 以前のリリースの場合は、[レガシー接続モード](#legacy-servicenow-connection)がユーザー/パスワードに基づいて使用可能です。 指定したユーザー名/パスワードは、API トークンの生成にのみ使用され、最初の接続処理後に保存されません。
 > 
 > [!NOTE]
->  Cloud App Security には、ジャカルタ、Kingston、Eureka、Fiji、Geneva、ヘルシンキ、イスタンブール、ロンドン、およびマドリッドのバージョンの ServiceNow がサポートしています。 ServiceNow を Cloud App Security に接続するには、**管理者**ロールが必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  詳細については、「[ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)」 (ServiceNow 製品ドキュメント) を参照してください。
+>  Cloud App Security は、ジャカルタ、キングストン、Eureka、フィジー、ジュネーブ、ヘルシンキ、イスタンブール、ロンドン、レアルマドリードの ServiceNow バージョンをサポートしています。 ServiceNow を Cloud App Security に接続するには、**管理者**ロールが必要であるほか、ServiceNow インスタンスが API アクセスをサポートしていることを確認する必要があります。  詳細については、「[ServiceNow Product Documentation](https://wiki.servicenow.com/index.php?title=Base_System_Roles#gsc.tab=0)」 (ServiceNow 製品ドキュメント) を参照してください。
   
 ## <a name="how-to-connect-servicenow-to-cloud-app-security-using-oauth"></a>OAuth を使用して ServiceNow を Cloud App Security に接続する方法
   

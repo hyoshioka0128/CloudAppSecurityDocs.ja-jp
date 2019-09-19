@@ -2,9 +2,9 @@
 title: オンプレミス Docker を使用して自動ログ アップロードを構成する
 description: この記事では、オンプレミス サーバーの Ubuntu または RHEL で Docker を使用して、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cc29a6cb-1c03-4148-8afd-3ad47003a1e3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4832e73409e0c48a02bb0aff94236b45661acd06
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 41abb93298326b20299f6ef4a6c8149e15f3a163
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861551"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084823"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 

@@ -2,9 +2,9 @@
 title: クラウド アプリの危険性および疑わしいアクティビティについて調べる - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security を使用してアラート、問題、疑わしいアクティビティを調査するためのプロセスの概要を説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: a9b00c2a-2f71-499e-8f57-67e560daedc1
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7c39307e1e6a01fe23684eb20b3547cb4437e88c
-ms.sourcegitcommit: fec0fd5fcdd9830f59e69e502902bfb7bc90f5ba
+ms.openlocfilehash: 4ef6132edd549f9d2552932bb9532650719331a4
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2019
-ms.locfileid: "68948559"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084269"
 ---
 # <a name="investigate"></a>調査
 

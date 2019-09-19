@@ -2,9 +2,9 @@
 title: Cloud App Security で使用可能なファイル データとフィルターを理解する
 description: このリファレンス記事では、Cloud App Security によって使用されるファイルとファイル フィルターの種類について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MSn
+manager: shsagirn
 ms.date: 7/7/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82332b70c58f81e5084b3d26394430e429490b54
-ms.sourcegitcommit: 0249f6e4a51240e6e37bc67430304e5a261e340a
+ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2019
-ms.locfileid: "67610895"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084662"
 ---
 # <a name="files"></a>ファイル
 
@@ -134,26 +134,26 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>ファイルを承認します。
+## <a name="authorizing-files"></a>ファイルの承認
 
-Cloud App Security がマルウェアやリスクの DLP を読んだりとしてファイルを特定した後は、ファイルを調査することをお勧めします。 ファイルが安全であると判断した場合は、それらを承認できます。 ファイルの承認をマルウェアの検出レポートから削除してこのファイルでの将来の一致を抑制します。
+マルウェアまたは DLP リスクの原因としてファイルを特定したら、ファイルを調査することをお勧めし Cloud App Security ます。 ファイルが安全であると判断した場合は、それらを承認できます。 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。
 
 ### <a name="to-authorize-files"></a>ファイルを承認するには
 
-1. Cloud App security では、次のようにクリックします。**コントロール**し**ポリシー**します。
-1. 調査をトリガーしたポリシーが表示されるでの行で、ポリシーの一覧で、**カウント**の一致リンクをクリックして、列。
+1. Cloud App Security で、 **[コントロール]** をクリックし、 **[ポリシー]** をクリックします。
+1. ポリシーの一覧で、調査をトリガーしたポリシーが表示されている行の **カウント** 列で 一致 リンクをクリックします。
     > [!TIP]
-    > 種類別のポリシーの一覧をフィルター処理することができます。 フィルターの種類を使用するリスクの種類ごと、次の表に示します。
+    > 種類によってポリシーの一覧をフィルター処理できます。 次の表に、リスクの種類ごとに、使用するフィルターの種類を示します。
     >
     > | リスクの種類 | フィルターの種類 |
     > | --- | --- |
     > | DLP | [ファイル ポリシー] |
-    > | マルウェア | マルウェアの検出ポリシー |
-1. 調査中のファイルが表示されて、一致するファイルの一覧でクリックして**Authorize**します。
+    > | マルウェア | マルウェア検出ポリシー |
+1. 一致するファイルの一覧で、調査対象のファイルが表示されている行の **[承認]** をクリックします。
 
 ## <a name="working-with-the-file-drawer"></a>ファイル ドロワーの使用
 
-ファイル ログでファイル自体をクリックすることにより、各ファイルに関する詳細情報を見ることができます。 クリックしてが開き、**ファイル ドロワー**ファイルに対して実行できます。 次の操作を提供します。
+ファイル ログでファイル自体をクリックすることにより、各ファイルに関する詳細情報を見ることができます。 をクリックすると、ファイル**ドロアー**が開きます。このファイルでは、次の操作を実行できます。
 
 - **URL** - そのファイルの場所に移動します。
 - **ファイル識別子** - ファイル ID と暗号化キーを含むファイルの生データの詳細がポップアップ表示されます。

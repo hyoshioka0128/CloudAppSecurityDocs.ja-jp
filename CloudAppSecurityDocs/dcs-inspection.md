@@ -2,9 +2,9 @@
 title: Microsoft データ分類サービスを使用した Cloud App Security コンテンツ検査
 description: この記事では、Microsoft データ分類サービスを使用して DLP コンテンツ検査を実行する場合に Microsoft Cloud App Security で従うプロセスについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 455f21d2c294d54203057a2cbdaf117de0073eca
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: 30448c71136b238b9a7e1fc2930135201b1bd926
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633123"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083773"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 

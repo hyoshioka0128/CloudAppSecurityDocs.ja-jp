@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security でアクティビティを制御するポリシーを作成する
 description: この記事では、アクティビティ ポリシーを作成および使用する手順について説明します。
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e9e5cc5aeb0e71bb30469176c4580f2f7c11d156
-ms.sourcegitcommit: c2dea6106266f1ef1790797f484914c20c7baffa
+ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69489659"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084868"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 

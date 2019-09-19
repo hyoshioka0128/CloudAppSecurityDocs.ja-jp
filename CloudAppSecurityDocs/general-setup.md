@@ -1,10 +1,10 @@
 ---
-title: Cloud App Security では、組織の設定を設定します。
+title: Cloud App Security で組織の設定をセットアップする
 description: この記事では、Cloud App Security に組織の情報を入力する方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
-ms.author: ShlomoSagir-MS
-manager: ShlomoSagir-MS
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 2e7e57b0-db54-4d75-896c-4700dd9abe48
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a05ea9152c0071ee61b9e5037dd00cb1de328da5
-ms.sourcegitcommit: ae617f23b36be665439dcedfbcf346715a526d7e
+ms.openlocfilehash: 6ca87c02f9eed0bbba8383d46ebb621dc4be31b5
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67411808"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084462"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Cloud App Security の基本セットアップ
 
@@ -28,8 +28,8 @@ ms.locfileid: "67411808"
 
 ここでは、Microsoft Cloud App Security ポータルをカスタマイズする手順について説明します。
 
-## <a name="prerequisites"></a>前提条件 
-ポータルへのアクセスが次の IP アドレスをファイアウォールの許可、Cloud App Security ポータルへのアクセスを提供するリストを追加する必要があります。  
+## <a name="prerequisites"></a>必須コンポーネント 
+ポータルにアクセスするには、次の IP アドレスをファイアウォールの許可一覧に追加して、Cloud App Security ポータルにアクセスできるようにする必要があります。  
   
 - 104.42.231.28  
   
@@ -50,13 +50,13 @@ ms.locfileid: "67411808"
 
     - 内部として構成されていないドメイン内のユーザーは、外部とマークされます。 外部ユーザーについては、アクティビティまたはファイルはスキャンされません。
 
-1. **自動サインアウト**セッションは、セッションが自動的にサインアウトする前に、非アクティブ状態の時間を指定します。
+1. **[自動サインアウト]** で、セッションが自動的にサインアウトされるまでのセッションの非アクティブ状態を継続する時間を指定します。
 
 1. Azure Information Protection の統合により統合を行う場合は、「[Azure Information Protection の統合](azip-integration.md)」を参照してください。 
 
     - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
   
-1. Azure Advanced Threat Protection の統合を統合する場合は、次を参照してください。 [Azure Advanced Threat Protection の統合](azip-integration.md)について。
+1. Azure Advanced Threat Protection 統合と統合する場合は、 [Azure Advanced Threat Protection の統合](azip-integration.md)に関する情報を参照してください。
 
 1. ポータル設定は、この画面からいつでもバックアップできます。 **[ポータル設定をエクスポート]** をクリックすると、ポリシー規則やユーザー グループ、IP アドレス範囲などのポータル設定がすべて記述された json ファイルが作成されます。  
   

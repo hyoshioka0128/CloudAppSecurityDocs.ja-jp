@@ -2,9 +2,9 @@
 title: 接続されているアプリを制御するためのガバナンス アクション - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で実行できるすべてのガバナンス アクションと、それらを追跡するログ メッセージを示して説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f23494744e629990f6bcc68e1c22fb73b2db6033
-ms.sourcegitcommit: a2dd3bcc00d2bd1d2e4c3fd9f8c0fd7ac4a25091
+ms.openlocfilehash: bfd1a91d3226e5a8bbad03f831d998ea0a36f46c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70206670"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084413"
 ---
 # <a name="governing-connected-apps"></a>接続されているアプリを管理する
 

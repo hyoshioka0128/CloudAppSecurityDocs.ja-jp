@@ -2,9 +2,9 @@
 title: Azure Information Protection と Cloud App Security を統合する
 description: この記事では、Cloud App Security で Azure Information Protection タグを使って、組織のクラウド アプリの使用をより強力に制御する方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 16ad39d89a0148d0be5db92f3c0a9d6df0f6a8ae
-ms.sourcegitcommit: 5c8678d44aa73375703fd54fc7e0386b704bd3bc
+ms.openlocfilehash: d9c8385efac05367213fed4bd484509a9ba76a25
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68633109"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083787"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -41,7 +41,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 > [!NOTE]
 > この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P1 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
@@ -93,7 +93,7 @@ Cloud App Security で、分類ラベルを対象にしたコンテンツ検査�
 Azure Information Protection を有効にすると、Cloud App Security 内で分類ラベルのあるファイルを表示し、ラベルごとにフィルターを適用できるようになります。 Cloud App Security がクラウド アプリに接続されたら、Azure Information Protection 統合機能を利用し、Azure Information Protection 分類ラベルを Cloud App Security ポータルで (保護ありまたは保護なしで) 適用できます。ファイルに直接追加するか、ガバナンス アクションとして分類ラベルを自動適用するようにファイル ポリシーを構成できます。
 
 > [!NOTE]
-> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection 分類ラベルの既存のファイルをスキャンするには、コンテンツ検査を含む**ファイルポリシー**が少なくとも1つ必要です。 設定がない場合は、新しい**ファイルポリシー**を作成し、[**検査方法**] の [**組み込み DLP**を選択します] の下にあるすべてのプリセットフィルターを削除します。 [**コンテンツ検査**] フィールドで、[**事前設定された式に一致するファイルを含める**] を選択し、定義済みの値を選択して、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
+> 自動スキャンは、もう一度変更されるまでは既存のファイルをスキャンしません。 Azure Information Protection 分類ラベルの既存のファイルをスキャンするには、コンテンツ検査を含む**ファイルポリシー**が少なくとも1つ必要です。 設定がない場合は、新しい**ファイルポリシー**を作成し、 **[検査方法]** の **[組み込み DLP]** を選択します の下にあるすべてのプリセットフィルターを削除します。 **[コンテンツ検査]** フィールドで、 **[事前設定された式に一致するファイルを含める]** を選択し、定義済みの値を選択して、ポリシーを保存します。 これにより、Azure Information Protection の分類ラベルを自動的に検出するコンテンツ検査が有効になります。
 
 #### <a name="set-internal-and-external-tags"></a>内部タグおよび外部タグを設定する
 

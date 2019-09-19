@@ -2,9 +2,9 @@
 title: Cloud App Security と SIEM の統合
 description: この記事では、SIEM と Cloud App Security との統合に関する情報を提供します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e387de567dc4eb6dee4f49d3ba95cb803454ba0d
-ms.sourcegitcommit: 9e5d1923113dd7bdd499d57f7508757a1a67801b
+ms.openlocfilehash: 89b93b84caff9563e4d19769704abe6cc7c4705e
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2019
-ms.locfileid: "70017570"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084937"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 

@@ -2,9 +2,9 @@
 title: Azure での Docker を使用した自動ログ アップロードを構成する
 description: この記事では、Azure での Ubuntu または RHEL 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 9c51b888-54c0-4132-9c00-a929e42e7792
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9d094c35565b416a8a5c048c09abad90dacb425c
-ms.sourcegitcommit: 39faa183e7d781660d475c79c827adbb4cc635fb
+ms.openlocfilehash: 5d50854460bfce8529d89521eb50ae23f23e0c85
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68861577"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084821"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -28,7 +28,7 @@ ms.locfileid: "68861577"
 
 Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
 - OS:Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
 

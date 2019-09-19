@@ -2,9 +2,9 @@
 title: サードパーティ製のクラウド OAuth アプリでのアクセス許可の取得を制御する - Cloud App Security | Microsoft Docs
 description: この記事では、サードパーティ製の OAuth アプリのアクセス許可を制御、禁止、許可する方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 9/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d65c332cbf464a17fc3919d1a08fd7ff7a7a9493
-ms.sourcegitcommit: 0b78b13bc163bfcd6f2ae13b1f57acee05e5b423
+ms.openlocfilehash: 856acde6b2c0339921b8bd198b2e42cf4e5cfd1b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/01/2019
-ms.locfileid: "70208886"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084213"
 ---
 # <a name="manage-oauth-apps"></a>OAuth アプリの管理
 
@@ -101,7 +101,7 @@ G Suite と Salesforce の場合、アプリのアクセス許可を取り消し
 
 ## <a name="oauth-app-auditing"></a>OAuth アプリの監査
 
-Cloud App Security は、すべての OAuth 承認アクティビティを監査して、実行されたアクティビティの包括的な監視と調査を提供します。 また、特定の OAuth アプリを承認したユーザーの詳細をエクスポートして、ユーザーに関する追加情報を提供することもできます。これを使用すると、さらに詳しい分析を行うことができます。
+Cloud App Security では、実行されたアクティビティの包括的な監視および調査を提供できるよう、すべての OAuth 承認アクティビティを監査しています。 また、特定の OAuth アプリを承認したユーザーの詳細をエクスポートして、ユーザーに関する追加情報を提供することもできます。これを使用すると、さらに詳しい分析を行うことができます。
 
 ログをエクスポートするには、次の手順を実行します。
 

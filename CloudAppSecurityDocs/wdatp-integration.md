@@ -2,9 +2,9 @@
 title: Microsoft Defender ATP を Cloud App Security に統合する
 description: この記事では、Microsoft Defender Advanced Threat Protection を Cloud App Security に統合して、シャドウ IT およびリスク管理の可視性を向上させる方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/11/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 982846a7ada1d2b50c28373c48e635a5fad9ec30
-ms.sourcegitcommit: 1b6b827c149b195a241440929970a2ccbb136b83
+ms.openlocfilehash: 826e28b55471c3e07ebfeaa51b3fa65ee3debb03
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2019
-ms.locfileid: "67870169"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084841"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 

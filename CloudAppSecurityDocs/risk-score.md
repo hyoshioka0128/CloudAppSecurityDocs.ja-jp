@@ -2,9 +2,9 @@
 title: リスク スコアの操作 - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security アプリケーションのリスク スコアの使用およびカスタマイズ方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 1/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ ms.assetid: 9cb3594e-5007-48be-9b4f-e1d23355d86e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1edaddb80719527640308679d45f4b76b0e604bc
-ms.sourcegitcommit: 78693a57e608624cd5c9ad4d0a47f4d5be515858
+ms.openlocfilehash: 5947a83b6a09f5c25b8f3e3cf82318717e9aaca6
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70862262"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085068"
 ---
-# <a name="working-with-app-risk-scores"></a>アプリのリスクスコアの操作
+# <a name="working-with-app-risk-scores"></a>アプリのリスク スコアの操作
 
 *適用対象:Microsoft Cloud App Security*
 
