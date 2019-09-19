@@ -1,62 +1,62 @@
 ---
-title: Conditional Access App Control をトラブルシューティングします。
-description: この記事では、Conditional Access App Control の考えられる問題の一覧を示し、考えられる解決策を提供します。
+title: アプリの条件付きアクセス制御のトラブルシューティング
+description: この記事では、考えられるアプリの条件付きアクセス制御の問題の一覧を示し、考えられる解決策を示します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 6/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: e051d00c118b8e41142f8c0d9cc726675dcea27d
-ms.sourcegitcommit: ee00e0033bf45a5f795bfd3e1d71fa1f70f97acb
+ms.openlocfilehash: 6adcf8038a9e1135edd4663a73260030e08ec373
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67515043"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084879"
 ---
-# <a name="troubleshooting-conditional-access-app-control"></a>Conditional Access App Control のトラブルシューティング
+# <a name="troubleshooting-conditional-access-app-control"></a>アプリの条件付きアクセス制御のトラブルシューティング
 
 *適用対象:Microsoft Cloud App Security*
 
-この記事で prohvides 可能の Conditional Access App Control の一覧は、問題し、考えられる解決策を提供します。
+この記事では、考えられるアプリの条件付きアクセス制御の問題の一覧を示し、考えられる解決策を示します。
 
-## <a name="troubleshooting-onboarded-apps"></a>オンボードのアプリのトラブルシューティング
+## <a name="troubleshooting-onboarded-apps"></a>オンボードアプリのトラブルシューティング
 
 ### <a name="the-sign-in-to-the-app-is-not-working"></a>アプリへのサインインが動作していません
 
-1. Cloud App Security では、メニュー バーで設定の歯車アイコンをクリックして![設定アイコン](./media/settings-icon.png "設定アイコン")選択**Conditional Access App Control**します。
-1. 構成しているアプリが表示されて、アプリの一覧で 行の最後に 3 つのドットを選択し、**編集アプリ**します。
-1. クリックして**Nonce 処理**」セクションを展開し、選択**nonce の処理を有効にする**します。
+1. Cloud App Security のメニューバーで、設定の歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、[**アプリの条件付きアクセス制御**] を選択します。
+1. アプリの一覧で、構成しているアプリが表示されている行で、行の末尾にある3つの点を選択し、[**アプリの編集**] を選択します。
+1. [ **Nonce-処理**] をクリックしてセクションを展開し、[ **Nonce 処理を有効**にする] を選択します。
 
-    ![Nonce 処理オプションのスクリーン ショット。](media/troubleshooing-nonce-handling.png)
-
-    > [!NOTE]
-    > ホーム ページ以外のアプリ ページに移動する問題が発生した場合は、次を参照してください[アプリへの後続アクセスのトラブルシューティングが目的のページに進まないように。](#unexpected-page)
-
-### アプリにアクセスする際は、予想されるページに進まないように<a name="unexpected-page"></a>
-
-次の手順は、Fiddler を使用したトラフィックのログ記録のツールとしてに基づいています。 エクスペリエンスは、その他のツールは異なる場合があります。 Fiddler の使用方法の詳細については、次を参照してください。 [fiddler のログを収集する簡単な方法](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/)します。
-
-1. 予想されるページに移動しないアプリでページの URL をコピーする-後で必要です。
+    ![Nonce 処理オプションのスクリーンショット。](media/troubleshooing-nonce-handling.png)
 
     > [!NOTE]
-    > ドメインに、Cloud App Security URL サフィックスが含まれていないことを確認します (例: *. us2.cas.ms*)
+    > ホームページ以外のアプリページに移動するときに問題が発生した場合は、「[アプリへの後続のアクセスのトラブルシューティング」を](#unexpected-page)参照してください。
 
-1. Fiddler などのトラフィックのログ記録ツールを使用すると、ページを監視できます。
-1. 先ほどコピーした URL に移動し、必要な場合を認証します。
-1. トラフィックのログ記録ツールでは、ドメインおよびパスを使用するプロトコルに基づく一致する要求を検索します。
+### それ以降のアプリへのアクセスは、予期されたページにアクセスしません<a name="unexpected-page"></a>
 
-    | プロトコル | [ドメイン] | パス | 状態のフィールド名 |
+次の手順は、トラフィックログツールとして Fiddler を使用することに基づいています。 他のツールでは、エクスペリエンスが異なる場合があります。 Fiddler の使用方法の詳細については、「 [Fiddler log を簡単に収集する方法](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/)」を参照してください。
+
+1. アプリ内のページの URL をコピーします。このページは、予想されるページには表示されません。後で必要になります。
+
+    > [!NOTE]
+    > ドメインに Cloud App Security URL サフィックス (例: *us2.cas.ms*) が含まれていないことを確認します。
+
+1. ページを監視するには、Fiddler などのトラフィックログツールを使用します。
+1. 前の手順でコピーした URL にアクセスし、必要に応じて認証します。
+1. トラフィックログツールで、使用しているプロトコルに基づいて、ドメインとパスに一致する要求を検索します。
+
+    | プロトコル | ドメイン | パス | 状態フィールド名 |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
 
-1. 要求を選択し、**インスペクター** ] タブで [ **WebForms**します。
-1. に基づいて、正規表現文字列を作成します 
+1. 要求を選択し、[**インスペクター** ] タブで [ **WebForms**] を選択します。
+1. に基づく regex 文字列を作成します。 
 
 ## <a name="next-steps"></a>次の手順
 

@@ -2,9 +2,9 @@
 title: すべてのアプリに Cloud App Security アプリの条件付きアクセス制御をデプロイする
 description: この記事では、すべてのアプリのリバースプロキシ機能アプリの条件付きアクセス制御 Microsoft Cloud App Security を展開する方法について説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/18/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: 7b86bc5f344f097c4c4e45c9d25123c5b361ebb2
-ms.sourcegitcommit: e9c93f69f280a929b2802619d24f59ea830b783f
+ms.openlocfilehash: 1621b8626c5c934bf607c652b6949b2b8a31ec0d
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68782877"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71085056"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>アプリのアプリの条件付きアクセス制御をオンボードしてデプロイする
 
@@ -53,7 +53,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 **手順 4:[アプリのドメインを追加する](#add-domains)**
 
-**手順 5:[アプリが正常に動作していることを確認する](#verify-app)**
+**手順 5: [アプリが正常に動作していることを確認する](#verify-app)**
 
 **手順 6:[組織で使用するアプリを有効にする](#enable-app)**
 
@@ -86,7 +86,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 1. Cloud App Security のメニューバーで、設定の歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、[**設定**] を選択します。
 
-1. **アプリの条件付きアクセス制御**で、**アプリのオンボード/メンテナンス** を選択します。
+1. **アプリの条件付きアクセス制御**で、[**アプリのオンボード/メンテナンス**] を選択します。
 
 1. アプリをオンボードするユーザーのユーザープリンシパル名または電子メールアドレスを入力し、[**保存**] をクリックします。
 
@@ -133,7 +133,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
     > アプリで構成されているドメインの一覧を表示するには、[**アプリドメインの表示**] をクリックします。
 1. [**ユーザー定義ドメイン**] で、このアプリに関連付けるすべてのドメインを入力し、[**保存**] をクリックします。
     > [!NOTE]
-    > \* ワイルドカード文字は、任意の文字のプレースホルダーとして使用できます。 ドメインを追加するときに、特定のドメイン (`sub1.contoso.com`、`sub2.contoso.com`) または複数のドメイン (`*.contoso.com`) のどちらを追加するかを決定します。
+    > * ワイルドカード文字は、任意の文字のプレースホルダーとして使用できます。 ドメインを追加するときに、特定のドメイン (`sub1.contoso.com`、`sub2.contoso.com`) または複数のドメイン (`*.contoso.com`) のどちらを追加するかを決定します。
 
 ## 手順 5:アプリが正常に動作していることを確認する<a name="verify-app"></a>
 

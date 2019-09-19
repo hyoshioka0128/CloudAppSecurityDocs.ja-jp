@@ -2,9 +2,9 @@
 title: Cloud App Security で継続的なレポートのために自動ログ アップロードを構成する
 description: この記事では、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/22/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: c75ba963-ad5a-48e6-8d5d-610fc6e0b990
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9fb6b01bfa9dbe54c219ef3ff2061e1470483e95
-ms.sourcegitcommit: cad2ead82bb76e4749c75eb7a0594e97f40545db
+ms.openlocfilehash: 288493abd926e68e73124f46aed8a0d774a3c17c
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68372301"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084639"
 ---
 # <a name="configure-automatic-log-upload-for-continuous-reports"></a>継続的なレポートのために自動ログ アップロードを構成する
 
@@ -28,7 +28,7 @@ ms.locfileid: "68372301"
 
 ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。 各ログは自動的に処理および圧縮されてから、ポータルに送信されます。 FTP ログは、ログ コレクターへのファイルの FTP 転送が完了した後に、Microsoft Cloud App Security にアップロードされます。 Syslog の場合、ログ コレクターは受信したログをディスクに書き込みます。 その後、コレクターは、ファイル サイズが 40 KB を超えると、Cloud App Security にファイルをアップロードします。 
 
-Cloud App Security にアップロードされたログは、バックアップ ディレクトリに移動されます。 バックアップ ディレクトリには、最新の 20 個のログが格納されます。 新しいログが移動されると、古いログは削除されます。 ログ コレクターのディスク領域がいっぱいになると常に、空きディスク領域が増えるまで、ログ コレクターは新しいログを破棄します。 これが発生すると、 **[ログを自動的にアップロード]** 設定の **[ログ コレクター]** タブに警告が表示されます。
+Cloud App Security にアップロードされたログは、バックアップ ディレクトリに移動されます。 バックアップ ディレクトリには、最新の 20 個のログが格納されます。 新しいログが移動されると、古いログは削除されます。 ログ コレクターのディスク領域がいっぱいになると常に、空きディスク領域が増えるまで、ログ コレクターは新しいログを破棄します。 これが発生すると、**[ログを自動的にアップロード]** 設定の **[ログ コレクター]** タブに警告が表示されます。
 
 自動ログ ファイル コレクションを設定する前に、ログが予想されるログの種類と一致することを確認します。 Cloud App Security が特定のファイルを解析できることを確認します。 詳細については、「[Cloud Discovery に対するトラフィック ログの使用](create-snapshot-cloud-discovery-reports.md#log-format)」をご覧ください。
 
