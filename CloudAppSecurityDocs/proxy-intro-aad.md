@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/25/2019
+ms.date: 9/23/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 10f17632f5b611b86b1555ff50be5237c103ea88
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d26be7ba74d2eaf7d6f2baeb66ae9824a387ad02
+ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085031"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185167"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -71,6 +71,17 @@ Conditional Access App Control を使うと、デバイスが管理されてい�
 - ドメインに参加しているデバイス
 - クライアント証明書のデプロイ
 
+クライアント証明書を使用してデバイス管理を活用するようにポリシーを構成するには:
+
+1. 設定の歯車アイコンに移動して、 **[デバイスの識別]** を選択します。
+1. 1 つ以上のルート証明書または中間証明書をアップロードします。
+1. 証明書がアップロードされたら、**デバイスタグ**と**有効なクライアント証明書**に基づいて、[アクセスポリシー](access-policy-aad.md)と[セッションポリシー](session-policy-aad.md)を作成できます。
+
+    ![アプリの条件付きアクセス制御のデバイス ID](./media/caac-device-id.png)
+
+> [!NOTE]
+> 証明書がユーザーから要求されるのは、セッションが有効なクライアント証明書フィルターを使用するポリシーと一致する場合だけです。
+
 ### <a name="compliant-and-domain-joined-devices"></a>準拠していてドメインに参加済みのデバイス
 
 Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Microsoft Cloud App Security に直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。 詳しくは、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」をご覧ください。
@@ -106,11 +117,15 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 
 > [!NOTE]
 > アクセスポリシーで**クライアントアプリ**フィルターを使用すると、結果として得られるユーザーセッションが Cloud App Security によってプロキシ化される可能性があります。
+>
+> [アクセスポリシー] では、**クライアントアプリ**フィルターを使用すると、既定で**Mobile と desktop**が使用されます。 これにより、Cloud App Security によって、結果のユーザーセッションがプロキシ化される可能性があります。 この動作を無効にするには、値を**Browser**に設定します。
+>
+> 既定では、アプリがモバイルとデスクトップのどちらであるかを評価すると、結果として得られるユーザーセッションが Cloud App Security によってプロキシ化される可能性があります。 この動作を回避するには、アクセスポリシーのクライアントアプリフィルターを**ブラウザー**と同じに設定します。
 
 > [!NOTE]
 > Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブ クライアント アプリケーションとブラウザーは、セッション制御を使用して構成した場合、アクセスできなくなります。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
 
-Azure AD とネイティブに統合することにより、SAML または Open ID Connect で構成されているすべてのアプリを自己オンボードにすることができます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
+<a name="featured-apps"></a>Azure AD とネイティブに統合することにより、SAML または Open ID Connect で構成されているすべてのアプリを自己オンボードにすることができます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -119,7 +134,7 @@ Azure AD とネイティブに統合することにより、SAML または Open 
 - Concur
 - CornerStone on Demand
 - DocuSign
-- Dropbox
+- ドロップボックス
 - Dynamics 365 CRM (プレビュー)
 - Egnyte
 - Exchange Online
