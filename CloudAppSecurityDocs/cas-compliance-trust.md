@@ -1,7 +1,7 @@
 ---
 title: Cloud App Security のコンプライアンス、データ セキュリティ、プライバシー、信頼 | Microsoft Docs
 description: この記事では、Cloud App Security のコンプライアンス認証、セキュリティ センター、プライバシー、データ セキュリティについて説明します。
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
@@ -9,12 +9,12 @@ ms.date: 8/21/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: be012da7233c021751d14f23d32d59c621bbf837
-ms.sourcegitcommit: 9b898458715af3b4056419c1e0df2dc0dc7385fa
+ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69670906"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71083816"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 

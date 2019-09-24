@@ -2,9 +2,9 @@
 title: Cloud App Security の管理者検疫でファイルを保護する
 description: このチュートリアルでは、管理者検疫を使用してデータの違反を制御するシナリオについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 7/30/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6756ee0043ce99f3323c03a0f43bab3ba6d0cce9
-ms.sourcegitcommit: 1801e4c65222b215fb62471854f4c501d4cd6c93
+ms.openlocfilehash: 6a147b9db857ee3e8c791f193be4b84e29c3c148
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70104496"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084907"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>チュートリアル: 管理者検疫によるファイルの保護
 

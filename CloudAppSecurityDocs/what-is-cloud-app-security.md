@@ -2,9 +2,9 @@
 title: Cloud App Security とは
 description: この記事では、Microsoft Cloud App Security とそのしくみについて説明します。
 keywords: ''
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
+manager: shsagir
 ms.date: 8/15/2019
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: d46756b1-7dd8-4190-9799-3a97688f1266
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bee3eb97503d4ce0da3d7fbe04ea9781d759c5c7
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: 5976d520187ba9e76c314bcddae5dd8c9b5f553b
+ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69572982"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71084798"
 ---
 # <a name="microsoft-cloud-app-security-overview"></a>Microsoft Cloud App Security の概要
 
