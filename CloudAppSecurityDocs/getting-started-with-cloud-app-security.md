@@ -1,22 +1,22 @@
 ---
 title: Cloud App Security の展開
 description: このクイックスタートでは、クラウド アプリを使用、洞察、制御できるように、Cloud App Security を準備して使用を開始するプロセスの概要について説明します。
-author: ShlomoSagir-MS
+author: shsagir
 ms.author: shsagir
-manager: ShlomoSagir-MS
-ms.date: 9/9/2019
+manager: shsagir
+ms.date: 9/23/2019
 ms.topic: quickstart
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fb673cf1e242a80d2b9b4b8a318607ae8f49ebdf
-ms.sourcegitcommit: 07fed3b2d6e926614d33d22d3dbcadf2c97d4fe5
+ms.openlocfilehash: c6e185d3c2b6cc6d18468f97981233b9f0756f29
+ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70805887"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71185123"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security の使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "70805887"
      テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。
 - Cloud App Security のライセンスを入手すると、ライセンス認証情報と Cloud App Security ポータルへのリンクが記載されたメールが送信されます。
 
-- Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者、コンプライアンス管理者、またはセキュリティ閲覧者である必要があります。 管理者ロールを割り当てられたユーザーは、組織がサブスクライブしているすべてのクラウド アプリについて同じアクセス許可を持つことを理解しておくことが重要です。 これは、ロールの割り当てを、Microsoft 365 管理センター、Azure クラシック ポータル、または [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 用 Azure AD モジュールのいずれで行った場合でも同じです。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。
+- Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者またはセキュリティ管理者である必要があります。 管理者ロールを割り当てられたユーザーは、組織がサブスクライブしているすべてのクラウド アプリについて同じアクセス許可を持つことを理解しておくことが重要です。 これは、ロールの割り当てを、Microsoft 365 管理センター、Azure クラシック ポータル、または [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 用 Azure AD モジュールのいずれで行った場合でも同じです。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。
 
 - Cloud App Security ポータルを実行するには、Internet Explorer 11、Microsoft Edge (最新版)、Google Chrome (最新版)、Mozilla Firefox (最新版)、Apple Safari (最新版) のいずれかを使用してください。
 
