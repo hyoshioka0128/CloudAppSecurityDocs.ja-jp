@@ -16,10 +16,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 34e1c361d5b1a49093f927dfde1ae2391570b958
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "71083828"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
@@ -155,7 +155,7 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 
     ![AWS で既存のポリシーをアタッチ]する(media/aws-attach-policy.png "AWS で既存のポリシーをアタッチ")する
 
-1. 省略可能:ユーザーにタグを追加します。
+1. 省略可能: ユーザーにタグを追加します。
 
     ![AWS のユーザーにタグを追加する](media/aws-add-tags.png)
 

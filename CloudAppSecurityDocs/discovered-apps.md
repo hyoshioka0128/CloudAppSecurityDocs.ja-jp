@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 9/3/2019
+ms.date: 09/25/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 58c35f83f20dbc81d051f488d70ecf64ccfd186f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
+ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083686"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71263268"
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
@@ -97,7 +97,9 @@ Cloud Discovery では、IaaS と PaaS のリソースをより詳しく調べ�
 
 Cloud Discovery エグゼクティブ レポートを生成するには:
 
-**Cloud Discovery ダッシュボード**で、メニューの右上隅にある 3 つのドットをクリックし、 **[Cloud Discovery エグゼクティブ レポートの生成]** を選択します。
+1. **Cloud Discovery ダッシュボード**で、ダッシュボードの右上隅にある3つのドットをクリックし、 **[Cloud Discovery エグゼクティブレポートの生成]** を選択します。
+1. 必要に応じて、レポート名を変更します。
+1. **[生成]** をクリックします。
 
 ## <a name="exclude-entities"></a>エンティティの除外
 
