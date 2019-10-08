@@ -4,19 +4,19 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 09/25/2019
+ms.date: 10/06/2019
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6c78fc716caa1c43c0d0b1a24f5dfaa8adcd72e1
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307724"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997422"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,28 @@ ms.locfileid: "71307724"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-159"></a>Cloud App Security リリース 159
+
+リリース日: 2019 年 10 月 6 日
+
+- **新しい Cloud Discovery の ContentKeeper ログ パーサー**  
+Cloud App Security の Cloud Discovery では、さまざまなトラフィック ログを分析して、アプリの順位付けとスコア付けを行います。 今回、ContentKeeper のログ形式をサポートする組み込みのログ パーサーが Cloud Discovery に追加されました。 サポートされているログ パーサーの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」をご覧ください。
+
+- **新しい検出**  
+次の新しい異常検出ポリシーは、すぐに使用でき、自動的に有効になります。
+
+  - **疑わしいメール削除アクティビティ (プレビュー)**  
+    ユーザーが異常なメール削除アクティビティを実行したときにアラートが生成されます。 このポリシーは、メールを使ったコマンド アンド コントロール通信 (C&C/C2) などの潜在的な攻撃ベクトルによって侵害された可能性のあるユーザーのメールボックスを検出するのに役立ちます。
+
+  - **複数の Power BI レポートの共有 (プレビュー)**  
+    ユーザーが、学習済みのベースラインと比較して異常な数の Power BI レポート共有アクティビティを実行した場合にアラートが生成されます。
+
+  - **複数の VM 作成アクティビティ (プレビュー)**  
+    ユーザーが、学習済みのベースラインと比較して異常な数の VM 作成アクティビティを実行した場合にアラートが生成されます。 現時点では、Azure に適用されます。
+
+  - **複数のストレージ削除アクティビティ (プレビュー)**  
+    ユーザーが、学習済みのベースラインと比較して異常な数のストレージ削除アクティビティを実行した場合にアラートが生成されます。 現時点では、Azure に適用されます。
 
 ## <a name="cloud-app-security-release-158"></a>Cloud App Security リリース 158
 

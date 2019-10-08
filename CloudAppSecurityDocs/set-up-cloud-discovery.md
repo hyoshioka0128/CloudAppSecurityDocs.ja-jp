@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 838676a48aa92016f6ff3fc198423668f0ecaf77
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
+ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084913"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71997398"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 
@@ -63,6 +63,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 - Cisco IronPort WSA
 - Cisco Meraki - URL ログ
 - Clavister NGFW (Syslog)
+- ContentKeeper
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet Fortigate
@@ -102,6 +103,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 | Cisco IronPort WSA | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | いいえ |
 | Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| ContentKeeper | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | SonicWall (旧称 Dell) | **はい** | **はい** | いいえ | **はい** | **はい** | **はい** |
 | Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|

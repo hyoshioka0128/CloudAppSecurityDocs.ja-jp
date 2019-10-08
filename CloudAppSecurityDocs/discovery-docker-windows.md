@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 724ff32cbdf4d3d81d60ac1359b5c07fe22bb6e1
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: ab709236d98ee33fbf6ebf7b2f9d5cdfcb5a32ab
+ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084742"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71996004"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -27,9 +27,9 @@ ms.locfileid: "71084742"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>前提条件
 
-- OS:**Windows 10** (Fall Creators Update) および Windows Server **バージョン 1709 以降**
+- OS:**Windows 10** (作成者の更新プログラム) または windows Server**バージョン1709以降**
 
 - ディスク領域:250 GB
 
