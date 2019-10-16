@@ -2,9 +2,9 @@
 title: Cloud App Security でのポリシー テンプレートのリファレンス
 description: この記事では、クラウド アプリの使用を制御するためにポリシーを使用および設定する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e75ee880c2d198c3665c3e1271e71a351e973ec
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 0cdb9fbc855f957c579d3a62f8120a96bdd8a1c0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568923"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336279"
 ---
 # <a name="policy-template-reference"></a>ポリシー テンプレート リファレンス
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、Microsoft Cloud App Security に含まれるポリシー テンプレートに関する情報を提供します。 
 
@@ -55,7 +55,7 @@ ms.locfileid: "65568923"
 |DLP|File containing PCI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PCI を含むファイル)|承認されたクラウド アプリで、Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって支払いカード情報 (PCI) を含むファイルが検出されたときに、アラートを生成します。|
 |DLP|File containing PHI detected in the cloud (クラウド (組み込みの DLP エンジン) で検出された PHI を含むファイル)|承認されたクラウド アプリで、保護されている医療情報 (PHI) を含むファイルが Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって検出されたときに、アラートを生成します。|
 |DLP|クラウド (組み込みの DLP エンジン) で検出された個人情報を含むファイル|承認されたクラウド アプリで、個人データを含むファイルが Microsoft Cloud App Security の組み込みデータ損失防止 (DLP) エンジンによって検出されたときに、アラートを生成します。|
-|脅威の検出|Administrative activity from a non-corporate IP address (企業以外の IP アドレスからの管理アクティビティ)|管理者が、企業 IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 最初に、[設定] ページに移動し、**[IP アドレスの範囲]** を設定することで、企業 IP アドレスを構成します。|
+|脅威の検出|Administrative activity from a non-corporate IP address (企業以外の IP アドレスからの管理アクティビティ)|管理者が、企業 IP アドレスの範囲カテゴリに含まれない IP アドレスから管理アクティビティを実行したときにアラートを生成します。 最初に、[設定] ページに移動し、 **[IP アドレスの範囲]** を設定することで、企業 IP アドレスを構成します。|
 |脅威の検出|General anomaly detection (一般的な異常検出)|承認済みのアプリのいずれかで異常なセッション (不可能な場所移動、サインイン パターン、非アクティブなアカウントなど) が検出されたときにアラートを生成します。|
 |脅威の検出|危険な IP アドレスからのログオン|承認済みアプリに危険な IP アドレスのユーザーがサインインすると、アラートを生成します。 危険な IP アドレスのカテゴリには、既定で、匿名プロキシ、TOR、またはボットネットの IP アドレス タグを持つアドレスが含まれます。 IP アドレスの範囲設定ページで、このカテゴリに IP アドレスを追加することができます。|
 |脅威の検出|Mass download by a single user (1 人のユーザーによる大量ダウンロード)|1 人のユーザーが 5 分以内に 50 回を超えるダウンロードを実行したときにアラートを生成します。|
@@ -70,7 +70,7 @@ ms.locfileid: "65568923"
 
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

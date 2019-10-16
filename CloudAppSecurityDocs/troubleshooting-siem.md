@@ -2,9 +2,9 @@
 title: SIEM の統合のトラブルシューティング - Cloud App Security | Microsoft Docs
 description: この記事では、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 08/30/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: de64d9ca-eaed-4243-bcf7-adca5aff18c8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 356cfd84d72ecfe74bc0b5c1575af4858b1f6084
-ms.sourcegitcommit: 566e79f4d92349b0158c8b7e6b06b4915d6f21cb
+ms.openlocfilehash: 0612f759fbefa8880386b881277ad3cbff1896cd
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/31/2019
-ms.locfileid: "70206267"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336034"
 ---
 # <a name="troubleshooting-the-siem-agent"></a>SIEM エージェントのトラブルシューティング
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、SIEM を Cloud App Security に接続するときに考えられる問題とその解決方法について説明します。
 
@@ -65,7 +65,7 @@ Microsoft Cloud App Security ポータルの SIEM エージェントの状態が
 
 エージェントを実行しているときにコマンド プロンプト ウィンドウに次のようなエラーのいずれかが表示された場合は、以下の手順を使用して問題を修正します。
 
-|Error|説明|解決策|
+|Error|[説明]|解決方法|
 |----|----|----|
 |General error during bootstrap|エージェントのブートストラップ中の予期しないエラーです。|サポートにお問い合わせください。|
 |Too many critical errors|コンソールの接続中に発生する重大なエラーが多すぎます。 シャットダウンします。|サポートにお問い合わせください。|
@@ -75,16 +75,16 @@ Microsoft Cloud App Security ポータルの SIEM エージェントの状態が
 
 エージェントを作成したら、Cloud App Security ポータルで SIEM エージェント ページを確認してください。 次の**エージェントの通知**のいずれかが表示された場合は、以下の手順を使用して問題を修正します。
 
-|Error|説明|解決策|
+|Error|[説明]|解決方法|
 |----|----|----|
 |**内部エラー**|SIEM エージェントで不明なエラーが発生しました。|サポートにお問い合わせください。|
-|**データ サーバー送信エラー**|TCP 経由で Syslog サーバーを使用している場合、このエラーが発生することがあります。 SIEM エージェントが Syslog サーバーに接続できません。  このエラーが発生した場合、エージェントはエラーが修正されるまで新しいアクティビティを取得しません。 エラーが表示されなくなるまで修正手順に従ってください。|1. Syslog サーバーが正しく定義されていることを確認する: Cloud App Security UI で、上記の説明のとおり、SIEM エージェントを編集します。 サーバー名を正しく記述したことを確認して、正しいポートを設定します。 </br>2. Syslog サーバーへの接続を確認する: ファイアウォールで通信がブロックされていないことを確認します。| 
-|**データ サーバー接続エラー**| TCP 経由で Syslog サーバーを使用している場合、このエラーが発生することがあります。 SIEM エージェントが Syslog サーバーに接続できません。  このエラーが発生した場合、エージェントはエラーが修正されるまで新しいアクティビティを取得しません。 エラーが表示されなくなるまで修正手順に従ってください。|1. Syslog サーバーが正しく定義されていることを確認する: Cloud App Security UI で、上記の説明のとおり、SIEM エージェントを編集します。 サーバー名を正しく記述したことを確認して、正しいポートを設定します。 </br>2. Syslog サーバーへの接続を確認する: ファイアウォールで通信がブロックされていないことを確認します。|
+|**データ サーバー送信エラー**|TCP 経由で Syslog サーバーを使用している場合、このエラーが発生することがあります。 SIEM エージェントが Syslog サーバーに接続できません。  このエラーが発生した場合、エージェントはエラーが修正されるまで新しいアクティビティを取得しません。 エラーが表示されなくなるまで修正手順に従ってください。|1. Syslog サーバーが正しく定義されていることを確認します。 Cloud App Security UI で、前述のように SIEM エージェントを編集します。 サーバー名を正しく記述したことを確認して、正しいポートを設定します。 </br>2. Syslog サーバーへの接続を確認します。ファイアウォールが通信をブロックしていないことを確認してください。| 
+|**データ サーバー接続エラー**| TCP 経由で Syslog サーバーを使用している場合、このエラーが発生することがあります。 SIEM エージェントが Syslog サーバーに接続できません。  このエラーが発生した場合、エージェントはエラーが修正されるまで新しいアクティビティを取得しません。 エラーが表示されなくなるまで修正手順に従ってください。|1. Syslog サーバーが正しく定義されていることを確認します。 Cloud App Security UI で、前述のように SIEM エージェントを編集します。 サーバー名を正しく記述したことを確認して、正しいポートを設定します。 </br>2. Syslog サーバーへの接続を確認します。ファイアウォールが通信をブロックしていないことを確認してください。|
 |**SIEM エージェント エラー**|SIEM エージェントの接続が X 時間以上切断されている|Cloud App Security ポータルで SIEM 構成を変更していないことを確認します。 変更していない場合、このエラーは Cloud App Security と SIEM エージェントを実行しているコンピューターとの間で接続の問題が発生している可能性があることを示します。|
 |**SIEM エージェント通知エラー**|SIEM エージェント通知エラーが SIEM エージェントから受信されました。|このエラーは、SIEM エージェントと SIEM サーバー間の接続に関するエラーを受信したことを示します。 SIEM サーバーまたは SIEM エージェントを実行しているコンピューターでファイアウォールがブロックしていないことを確認します。 SIEM サーバーの IP アドレスが変更されていないことも確認してください。|
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 

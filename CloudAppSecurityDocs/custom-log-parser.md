@@ -2,9 +2,9 @@
 title: サポートされていないログのための Cloud App Security カスタム ログ パーサー
 description: この記事では、カスタム ログ パーサーを使用して、サポートされていないデバイスのログを Cloud App Security にアップロードする方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: a612d87e-5471-4add-b4b1-dbbb530f2b61
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 15d1e8ce0ceff2c4d3e77fdfc522df777a583041
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 3f1e38f31a125dcad562f321aa8eac87a0a0fd31
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567948"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335687"
 ---
 # <a name="use-a-custom-log-parser"></a>カスタム ログ パーサーの使用
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud App Security を使用すると、ログの書式のマッチングと処理を実行するようにカスタム パーサーを構成できるため、Cloud Discovery で使用することができます。 ファイアウォールまたはデバイスが Cloud App Security によって明示的にサポートされていない場合、通常はカスタム パーサーを使用します。 これは、CSV パーサーまたはカスタムのキー値パーサーになります。
 
@@ -33,7 +33,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 
  
 カスタム パーサーを構成するには
-1. Cloud App Security ポータルで **[探索]** をクリックし、**[新しいスナップショット レポートの作成]** をクリックします。  
+1. Cloud App Security ポータルで **[探索]** をクリックし、 **[新しいスナップショット レポートの作成]** をクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
@@ -57,7 +57,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
    ![カスタム ログ パーサー](./media/custom-log-parser.png) 
 
 
-7. **[Save]**(保存) をクリックします。 構成したカスタム ログの書式は、既定のカスタム パーサーとして保存されます。 いつでも **[編集]** をクリックして編集できます。
+7. **[Save]** (保存) をクリックします。 構成したカスタム ログの書式は、既定のカスタム パーサーとして保存されます。 いつでも **[編集]** をクリックして編集できます。
 
 8. **[トラフィックのログの選択]** で、変更したログ ファイルを選択してアップロードします。 一度に最大 20 個のファイルをアップロードできます。 圧縮された ZIP 形式のファイルもサポートされます。  
   
@@ -85,7 +85,7 @@ Cloud App Security を使用すると、ログの書式のマッチングと処�
 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  
 [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 

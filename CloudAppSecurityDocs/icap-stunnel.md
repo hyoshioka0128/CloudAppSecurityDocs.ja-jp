@@ -2,9 +2,9 @@
 title: Cloud App Security の安全な ICAP による外部 DLP 統合
 description: この記事では、Cloud App Security と stunnel セットアップで ICAP 接続を構成するために必要な手順について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 731a2593972754ac95dd39b16b0c7529783c2636
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 13e1aad4a3ad2b8a93e291e019b637866acabffc
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568235"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335762"
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は既存の DLP ソリューションと統合し、コントロールをクラウドに拡張できます。同時に、オンプレミスとクラウドを問わず、アクティビティ全体で一貫性のある統合ポリシーが維持されます。 このプラットフォームは、REST API や ICAP など、使いやすいインターフェイスをエクスポートします。Symantec Data Loss Prevention (以前の Vontu Data Loss Prevention) や Forcepoint DLP など、コンテンツ分類システムと統合できます。 
 
@@ -40,24 +40,24 @@ Cloud App Security はクラウド環境をスキャンします。ファイル 
 
 Cloud App Security は Azure で実行されます。Azure での展開により高いパフォーマンスが一時停止されます。 ただし、他のクラウドやオンプレミスでの展開など、他の選択肢もあります。 他の環境で展開する場合、待機時間が長く、スループットが低いため、パフォーマンスが低下することがあります。 トラフィックを暗号化するために、ICAP サーバーと stunnel を同じネットワークに展開する必要があります。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、Cloud App Security で使用される外部 IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
 
-1.  ソース アドレス:「アプリを接続する」の「[前提条件](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)」を参照
-2.  ソース TCP ポート:動的
+1.  ソース アドレス: [「前提条件」の「アプリを接続する」](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)を参照
+2.  ソース TCP ポート: 動的
 3.  宛先アドレス: 後続の手順で構成する外部 ICAP サーバーに接続されている stunnel の 1 または 2 つの IP アドレス
-4.  宛先 TCP ポート:お使いのネットワークで定義されているもの
+4.  宛先 TCP ポート: ネットワークに定義されている宛先 TCP ポート
 
 > [!NOTE] 
 > 既定では、stunnel ポート番号は 11344 に設定されます。 これは必要に応じて別のポートに変更できますが、新しいポート番号を必ず書き留めてください。次の手順で入力する必要があります。
 
-## <a name="step-1--set-up-icap-server"></a>手順 1:ICAP サーバーを設定する
+## <a name="step-1--set-up-icap-server"></a>手順 1: ICAP サーバーを設定する
 
-ICAP サーバーを設定します。ポート番号を書き留め、**[モード]** を **[ブロック]** に設定します。 ブロック モードでは、分類判定を Cloud App Security に戻すように ICAP サーバーが設定されます。
+ICAP サーバーを設定します。ポート番号を書き留め、 **[モード]** を **[ブロック]** に設定します。 ブロック モードでは、分類判定を Cloud App Security に戻すように ICAP サーバーが設定されます。
 
-このセットアップを行う方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A:ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B:Symantec 展開ガイド](#symantec)」をご覧ください。
+このセットアップを行う方法については、外部 DLP 製品のマニュアルを参照してください。 例については、「[付録 A: ForcePoint ICAP サーバー セットアップ](#forcepoint)」および「[付録 B: Symantec 展開ガイド](#symantec)」をご覧ください。
 
-## <a name="step-2--set-up-your-stunnel-server"></a>手順 2:stunnel サーバーを設定する 
+## <a name="step-2--set-up-your-stunnel-server"></a>手順 2: stunnel サーバーを設定する 
 
 この手順では、ICAP サーバーに接続される stunnel を設定します。 
 
@@ -66,7 +66,7 @@ ICAP サーバーを設定します。ポート番号を書き留め、**[モー
 
 ### <a name="install-stunnel-on-a-server"></a>サーバーに stunnel をインストールする
 
-**前提条件**
+**必要条件**
 
 - **サーバー** - Windows Server または Linux サーバー (メジャー ディストリビューション)。
 
@@ -106,7 +106,7 @@ stunnel インストール対応のサーバーの種類については、[stunn
 
 10. `c:\Program Files (x86)\stunnel\bin\stunnel.exe` を実行し、stunnel アプリケーションを開きます。 
 
-11. **[構成]** をクリックし、**[構成の編集]** をクリックします。
+11. **[構成]** をクリックし、 **[構成の編集]** をクリックします。
 
     ![Windows Server 構成を編集する](./media/stunnel-windows.png)
  
@@ -119,7 +119,7 @@ stunnel インストール対応のサーバーの種類については、[stunn
         CAfile = C:\Program Files (x86)\stunnel\config\**MCASCAfile**.pem
         TIMEOUTclose = 0
         client = no
-13. ファイルを保存し、**[構成の再読み込み]** をクリックします。
+13. ファイルを保存し、 **[構成の再読み込み]** をクリックします。
 
 14. 予想どおり動作していることを確認するには、コマンド プロンプトから次を実行します。 `netstat -nao  | findstr 11344`
  
@@ -211,9 +211,9 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
 プロセスが終わらない場合、[stunnel マニュアル](https://www.stunnel.org/docs.html)を参照して問題を解決してください。
 
 
-## <a name="step-3--connect-to-cloud-app-security"></a>手順 3:Cloud App Security に接続する
+## <a name="step-3--connect-to-cloud-app-security"></a>手順 3:  Cloud App Security に接続する
 
-1. Cloud App Security の **[設定]** で、**[セキュリティ拡張機能]** を選択し、**[外部 DLP]** タブを選択します。
+1. Cloud App Security の **[設定]** で、 **[セキュリティ拡張機能]** を選択し、 **[外部 DLP]** タブを選択します。
 
 2. プラス記号をクリックし、新しい接続を追加します。 
 
@@ -234,53 +234,53 @@ IP 表の更新を永続にするには、次のコマンドを使用します�
 5. **[サーバー構成]** 画面で、手順 2 で設定した stunnel サーバーの **[IP アドレス]** と **[ポート]** を指定します。 負荷分散が目的の場合は、追加のサーバーの **[IP アドレス]** と **[ポート]** を構成できます。 指定する IP アドレスは、サーバーの外部静的 IP アドレスになります。
 
    ![Cloud App Security ICAP 接続](./media/icap-wizard2.png)
-6. **[次へ]** をクリックします。 Cloud App Security により、構成したサーバーへの接続がテストされます。 エラーが発生した場合、マニュアルとネットワーク設定を見直してください。 正常に接続されたら、**[終了]** をクリックします。
+6. **[次へ]** をクリックします。 Cloud App Security により、構成したサーバーへの接続がテストされます。 エラーが発生した場合、マニュアルとネットワーク設定を見直してください。 正常に接続されたら、 **[終了]** をクリックします。
 
-7. 次に、この外部 DLP サーバーにトラフィックを送るために、**[コンテンツ検査方法]** で**ファイル ポリシー**を作成するときに、先ほど作成した接続を選択します。 ファイル ポリシーの作成方法については[こちら](data-protection-policies.md)をご覧ください。
+7. 次に、この外部 DLP サーバーにトラフィックを送るために、 **[コンテンツ検査方法]** で**ファイル ポリシー**を作成するときに、先ほど作成した接続を選択します。 ファイル ポリシーの作成方法については[こちら](data-protection-policies.md)をご覧ください。
 
 
-## 付録 A:ForcePoint ICAP サーバー セットアップ <a name="forcepoint"></a>
+## 付録 A: ForcePoint ICAP サーバー セットアップ <a name="forcepoint"></a>
 
 ForcePoint で、次の手順でアプライアンスを設定します。
 
-1.  DLP アプライアンスで、**[展開]** > **[システム モジュール]** の順に移動します。 
+1.  DLP アプライアンスで、 **[展開]**  >  **[システム モジュール]** の順に移動します。 
 
     ![ICAP 展開](./media/icap-system-modules.png)
 
-2.  **[全般]** タブで **[ICAP サーバー]** が **[有効]** になっていること、**[ポート]** が **[1344]** に設定されていることを確認します。 また、**[Allow connection to this ICAP Server from the following IP addresses]\(次の IP アドレスからこの ICAP サーバーへの接続を許可する\)** で **[任意の IP アドレス]** を選択します。
+2.  **[全般]** タブで **[ICAP サーバー]** が **[有効]** になっていること、 **[ポート]** が **[1344]** に設定されていることを確認します。 また、 **[Allow connection to this ICAP Server from the following IP addresses]\(次の IP アドレスからこの ICAP サーバーへの接続を許可する\)** で **[任意の IP アドレス]** を選択します。
  
     ![ICAP 構成](./media/icap-ip-address.png)
 
-3.  HTTP/HTTPS タブで、**[モード]** を **[ブロック]** に設定します。
+3.  HTTP/HTTPS タブで、 **[モード]** を **[ブロック]** に設定します。
  
     ![ICAP ブロック](./media/icap-blocking.png)
  
 
-## 付録 B:Symantec 展開ガイド<a name="symantec"></a>
+## 付録 B: Symantec 展開ガイド <a name="symantec"></a>
 
 サポートされている Symantec DLP のバージョンは、11 以降です。 
 
-前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを使用して Enforce Server と同期します。 
+前述のように、Cloud App Security テナントが存在するのと同じ Azure データセンターに検出サーバーを展開する必要があります。 検出サーバーは、専用の IPSec トンネルを通して適用サーバーと同期します。 
  
 ### <a name="detection-server-installation"></a>検出サーバーのインストール 
-Cloud App Security で使用する検出サーバーは、標準の Network Prevent for Web サーバーです。 一部の構成オプションでは変更が必要です。
+Cloud App Security によって使われる検出サーバーは、Web サーバーの標準的な Network Prevent です。 いくつかの構成オプションを変更する必要があります。
 1. **[Trial Mode]\(トライアル モード\)** を無効にします。
-   1. **[System]\(システム\)**  > **[Servers and Detectors]\(サーバーと検出ツール\)** で、対象の ICAP をクリックします。 
+   1. **[System]\(システム\)**  >  **[Servers and Detectors]\(サーバーとディテクター\)** で、ICAP ターゲットをクリックします。 
     
       ![ICAP ターゲット](./media/icap-target.png)
     
    2. **[Configure]\(構成\)** をクリックします。 
     
-      ![ICAP ターゲットの構成](./media/configure-icap-target.png)
+      ![ICAP ターゲットを構成する](./media/configure-icap-target.png)
     
    3. **[Trial Mode]\(トライアル モード\)** を無効にします。
     
-      ![トライアル モードの無効化](./media/icap-disable-trial-mode.png)
+      ![トライアル モードを無効にする](./media/icap-disable-trial-mode.png)
     
-2. **[ICAP]** > **[Response Filtering]\(応答フィルタリング\)** で、**[Ignore Responses Smaller Than]\(次の値より小さい応答を無視する\)** の値を 1 に変更します。
+2. **[ICAP]**  >  **[Response Filtering]\(応答フィルタリング\)** で、 **[Ignore Responses Smaller Than]\(次の値より小さい応答を無視する\)** の値を 1 に変更します。
 
 
-3. そして、**[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/\*" を追加します。
+3. そして、 **[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/\*" を追加します。
      ![コンテンツ タイプを調べる](./media/icap-inspect-content-type.png)
 
 4. **[Save]\(保存\)** をクリックします。
@@ -289,21 +289,21 @@ Cloud App Security で使用する検出サーバーは、標準の Network Prev
 ### <a name="policy-configuration"></a>ポリシーの構成
 Cloud App Security は Symantec DLP に含まれるすべての検出ルール タイプをシームレスにサポートするので、既存のルールを変更する必要はありません。 ただし、完全な統合を可能にするために既存と新規のすべてのポリシーに適用する必要がある構成の変更があります。 特定の応答ルールに加えて、すべてのポリシーでこの変更を行います。 
 
-この構成の変更を、お使いの Vontu に追加します。
+構成の変更を Vontu に追加します。
 
-1.  **[Manage]\(管理\)** > **[Policies]\(ポリシー\)** > **[Response Rules]\(応答ルール\)** の順に移動し、**[Add Response Rule]\(応答ルールの追加\)** をクリックします。
+1.  **[Manage]\(管理\)**  >  **[Policies]\(ポリシー\)**  >  **[Response Rules]\(応答ルール\)** に移動し、 **[Add Response Rule]\(応答ルールの追加\)** をクリックします。
     
-    ![応答ルールの追加](./media/icap-add-response-rule.png)
+    ![応答ルールを追加する](./media/icap-add-response-rule.png)
 
-2.  **[Automated Response]\(自動応答\)** が選択されていることを確認して、**[Next]\(次へ\)** をクリックします。
+2.  **[Automated Response]\(自動応答\)** が選ばれていることを確認し、 **[Next]\(次へ\)** をクリックします。
 
     ![自動応答](./media/icap-automated-response.png)
 
-3. ルール名を入力します (例: **Block HTTP/HTTPS**)。 **[Actions]\(アクション\)** で **[Block HTTP/HTTPS]\(HTTP/HTTPS をブロック\)** を選び、**[Save]\(保存\)** をクリックします。
+3. ルール名を入力します (例: **Block HTTP/HTTPS**)。 **[Actions]\(アクション\)** で **[Block HTTP/HTTPS]\(HTTP/HTTPS をブロック\)** を選び、 **[Save]\(保存\)** をクリックします。
 
     ![http をブロック](./media/icap-block-http.png)
 
-作成したルールを既存の任意のポリシーに追加します。
+作成したルールをすべての既存ポリシーに追加します。
 
 1. [Policy]\(ポリシー\) で **[Response]\(応答\)** タブに移動します。
 
@@ -313,13 +313,13 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
    
     ![トライアル モードを無効にする](./media/icap-add-policy.png)
 
-このルールは、既存のすべてのポリシーに追加する必要があります。
+既存のすべてのポリシーにこのルールを追加する必要があります。
 
 >[!NOTE]
-> Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に次の URL からのものとして表示されます:http://misc/filename。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
+> Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に http://misc/filename から始まる URL で表示されます。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

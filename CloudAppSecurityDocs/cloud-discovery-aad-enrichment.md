@@ -2,9 +2,9 @@
 title: Azure AD ユーザー名を利用し、Cloud App Security Discovery データを強化する
 description: この記事では、Azure AD ユーザー名を使用して、Cloud App Security Discovery データを強化する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 45295c2c-3e4d-4482-bf95-2e47072f9236
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7e1e2b9035711d0f12f23da8809f470bb2da557
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b3c595b1d45ee378eccace39ca4cf27f8a5f8867
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567712"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335425"
 ---
 # <a name="cloud-discovery-enrichment"></a>Cloud Discovery を強化する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery のデータを、Azure Active Directory のユーザー名データを使用して強化できるようになりました。 この機能を有効にすると、検出トラフィック ログで受け取ったユーザー名が Azure AD のユーザー名と照合され、置き換えられます。 Cloud Discovery の強化により、次の機能が有効になります。
 - Azure Active Directory のユーザーによるシャドウ IT の使用を調査できます。
@@ -40,16 +40,16 @@ Cloud Discovery のデータを、Azure Active Directory のユーザー名デ�
     
 1. 「設定」 (歯車アイコン) の **[Cloud Discovery 設定]** を選択します。
      
-2. **[ユーザー エンリッチメント]** タブで、**[Enrich discovered user identifiers with Azure Active Directory usernames]\(検出されたユーザー ID を Azure Active Directory のユーザー名で強化する\)** を選択します。 このオプションにより、Cloud App Security で Azure Active Directory データを使用して、既定のユーザー名を強化できます。
+2. **[ユーザー エンリッチメント]** タブで、 **[Enrich discovered user identifiers with Azure Active Directory usernames]\(検出されたユーザー ID を Azure Active Directory のユーザー名で強化する\)** を選択します。 このオプションにより、Cloud App Security で Azure Active Directory データを使用して、既定のユーザー名を強化できます。
 
-3. **[保存]** をクリックします。
+3. **[Save]** (保存) をクリックします。
  
 ![Azure AD ユーザー名を利用し、Cloud App Security Discovery を強化する](./media/discovery-enrichment.png)
   
 
   
       
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 

@@ -2,9 +2,9 @@
 title: 検出されたアプリのブロック - Cloud App Security | Microsoft Docs
 description: この記事では、検出されたアプリのブロック スクリプトをエクスポートする手順について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,23 +15,23 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f760c3481877a91f5395bc00d613bb72bb995e1
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568153"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335794"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 お使いの環境で検出されたアプリの一覧を確認したら、次の方法で、望ましくないアプリの使用から環境を守ることができます。
 
 
 ## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認 
 
-特定の危険なアプリを非承認にすることができます。それには、行の終わりにある 3 つの点をクリックします。 次に、**[Unsanction]\(非承認\)** を選択します。 アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にしたアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
+特定の危険なアプリを非承認にすることができます。それには、行の終わりにある 3 つの点をクリックします。 次に、 **[Unsanction]\(非承認\)** を選択します。 アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にしたアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
 
 ![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)  
 
@@ -66,7 +66,7 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
 
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

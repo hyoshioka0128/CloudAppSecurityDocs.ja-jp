@@ -2,9 +2,9 @@
 title: 電子メールの通知の基本設定 - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security によって送信された電子メール通知を個人用に設定する方法について情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/4/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 8402cdc9-4969-4150-b567-ccc9d75e5370
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5ad87ebe283aa5bdd6b19766bfa76a2424015291
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 5bdf183c62329a2282881a341abd78e9126393d6
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568215"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335842"
 ---
 # <a name="email-notification-preferences"></a>電子メールの通知の基本設定
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、侵害が検出された場合に、Cloud App Security によってエンド ユーザーに送信された電子メール通知を個人用に設定する方法についての情報を提供します。
 
@@ -35,11 +35,11 @@ ms.locfileid: "65568215"
 
  Microsoft Cloud App Security では、侵害に関係するエンド ユーザーに送信される電子メール通知をカスタマイズすることができます。 メール通知のパラメーターを設定するには、次の手順のようにします。 迷惑メール対策サービスにホワイトリスト登録すべきMicrosoft Cloud App Security 電子メール サーバーの IP アドレスの詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
 
-1. メニュー バーで設定の歯車アイコンをクリックし、**[設定]** を選択して、**[メールの設定]** タブを選択します。  
+1. メニュー バーで設定の歯車アイコンをクリックし、 **[設定]** を選択して、 **[メールの設定]** タブを選択します。  
 
    ![メールの設定](./media/mail-settings-config.png)
 
-2. **[メール送信者の ID]**: 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次の項目のいずれか、またはすべてを変更することができます。**[送信元表示名]**、**[送信元メール アドレス]**、**[返信用メール アドレス]**。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを使用することで、カスタマイズを実現します。 カスタマイズを有効にするには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります。 そうしないと、Microsoft Cloud App Security では既定の設定を使用して通知が送信されます。
+2. **[メール送信者の ID]** : 既定の電子メール設定を使用する予定の場合、このセクションでは何も変更する必要はありません。 メール送信者の ID をカスタマイズするには、変更するフィールドをカスタマイズする設定をここで行います。 次の項目のいずれか、またはすべてを変更することができます。 **[送信元表示名]** 、 **[送信元メール アドレス]** 、 **[返信用メール アドレス]** 。 Microsoft Cloud App Security では、これを実現するために、MailChimp® というサード パーティのメール サービスを使用することで、カスタマイズを実現します。 カスタマイズを有効にするには、MailChimp のサービス利用規約とプライバシーに関する声明を確認して同意する必要があります。 そうしないと、Microsoft Cloud App Security では既定の設定を使用して通知が送信されます。
  
    > [!NOTE]
    > [rfc822 標準](https://www.rfc-editor.org/rfc/rfc822.txt)に従い、表示名と電子メール アドレスには Unicode 文字のみがサポートされています。
@@ -124,7 +124,7 @@ ms.locfileid: "65568215"
           </html>  
 ```
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 

@@ -2,9 +2,9 @@
 title: Dropbox を Cloud App Security に接続する
 description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に Dropbox アプリを接続する方法に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8fd87bf68e4c694089bd859b2b47e1b38ef912da
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 711c0cdf6a9678a63a19987f2c84101acf9de5ba
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568106"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334468"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、コネクタ API を使用して Microsoft Cloud App Security を既存の Dropbox アカウントに接続する方法を説明します。 この接続により、Dropbox の使用状況を視覚化して制御できるようになります。 
  
@@ -33,9 +33,9 @@ Dropbox ではサインインしなくても共有リンクからファイルに
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Dropbox を Cloud App Security に接続する方法  
   
-1.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
+1.  Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。  
   
-2.  **[アプリ コネクタ]** ページで、[+] ボタン、**[Dropbox]** の順にクリックします。  
+2.  **[アプリ コネクタ]** ページで、[+] ボタン、 **[Dropbox]** の順にクリックします。  
   
      ![Dropbox の接続](./media/connect-dropbox.png "Dropbox の接続")  
   
@@ -47,20 +47,20 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
      Dropbox のサインイン ページが開きます。 Cloud App Security がチームの Dropbox インスタンスにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、**[許可]** をクリックします。  
+6.  Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、 **[許可]** をクリックします。  
   
 7.  Cloud App Security コンソールに戻ると、Dropbox が正常に接続されたことを通知するメッセージが届いています。  
   
 8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、**[閉じる]** をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
 Dropbox を接続すると、接続までの 60 日間のイベントを受け取ります。
 
 > [!NOTE] 
 > ファイルを追加する Dropbox のすべてのイベントは、アップロード ファイルとして Cloud App Security に表示され、Cloud App Security に接続された他のすべてのアプリと並べられます。 
  
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

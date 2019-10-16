@@ -2,9 +2,9 @@
 title: Azure Advanced Threat Protection を Cloud App Security と統合する
 description: この記事では、ハイブリッドリスク検出のために Cloud App Security で Azure Advanced Threat Protection インサイトを活用する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 6/27/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,20 +15,20 @@ ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 63da07db9a3fa29c49f08f8082b969adcbda6bca
-ms.sourcegitcommit: 4861a99debc71f266de738d5db78b711590b5e88
+ms.openlocfilehash: cd52e120f20e6b8ebaeacdd5a30a7c98d883fec9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68431147"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334884"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) と統合されており、クラウドアプリとオンプレミスの両方のハイブリッド環境でユーザーエンティティ行動分析 (UEBA) を提供[します。詳細については、「チュートリアル:Azure ATP によっ](tutorial-ueba.md)て提供される機械学習と行動分析の詳細については、危険なユーザーを調査してください。 Azure ATP について[は](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)、「」を参照してください。
+Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) と統合して、ハイブリッド環境 (クラウドアプリとオンプレミスの両方) でユーザーエンティティ行動分析 (UEBA) を提供します。詳細については、「チュートリアル: 危険度の調査」を参照してください[。](tutorial-ueba.md)Azure ATP によって提供される機械学習と行動分析の詳細については、「 [Azure ATP とは](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 ハイブリッド環境全体で完全なユーザー調査を実行するためには、次が必要です。
 
@@ -63,7 +63,7 @@ Azure Advanced Threat Protection 統合を有効にすると、組織内のす�
 
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

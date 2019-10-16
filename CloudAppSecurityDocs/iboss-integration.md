@@ -2,9 +2,9 @@
 title: Cloud App Security を iboss と統合する
 description: この記事では、シームレスな Cloud Discovery と承認されていないアプリの自動ブロックのために Microsoft Cloud App Security と iboss Secure Cloud Gateway を統合する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 2/2/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 920d4272-685b-4c4d-9b31-94a2c6f3503e
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 31316c4a8902ed85489e03a82dde3fb3ec7962b8
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 344fe833f5684de7bd944f3825c393bc9c02f021
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568186"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335784"
 ---
 # <a name="integrate-cloud-app-security-with-iboss"></a>Cloud App Security を iboss と統合する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud App Security と iboss の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 iboss は、組織のトラフィックを監視し、トランザクションをブロックするポリシーを設定することができる、スタンドアロンのセキュリティで保護されたクラウド ゲートウェイです。 Cloud App Security と iboss を同時に使用することで、次の機能が提供されます。
 
@@ -32,7 +32,7 @@ Cloud App Security と iboss の両方を使用する場合、2 つの製品を�
 - iboss のブロック機能は、Cloud App Security で "承認されていない" として設定したアプリに自動的に適用されます。
 - Cloud App Security の、組織内の上位 100 個のクラウド アプリのリスク評価を使用して、iboss 管理ポータルを強化します。これは、iboss の管理ポータルで直接表示できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Microsoft Cloud App Security の有効なライセンス
 - iboss Secure Cloud Gateway (リリース 9.1.100.0 以降) の有効なライセンス
@@ -40,8 +40,8 @@ Cloud App Security と iboss の両方を使用する場合、2 つの製品を�
 ## <a name="deployment"></a>展開
 
 1. Cloud App Security ポータルで、次の統合の手順を実行します。
-    1. 設定の歯車アイコンをクリックして、**[Cloud Discovery 設定]** を選択します。 
-    2. **[ログの自動アップロード]** タブを選択した後、**[データ ソースの追加]** を選択します。
+    1. 設定の歯車アイコンをクリックして、 **[Cloud Discovery 設定]** を選択します。 
+    2. **[ログの自動アップロード]** タブを選択した後、 **[データ ソースの追加]** を選択します。
     3. **[データ ソースの追加]** ページで、次の設定を入力します。
 
        - 名前 = iboss
@@ -58,7 +58,7 @@ Cloud App Security と iboss の両方を使用する場合、2 つの製品を�
 
 5. Microsoft Cloud App Security にトラフィック ログを送信するように iboss を構成するには、iboss のサポートにお問い合わせください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

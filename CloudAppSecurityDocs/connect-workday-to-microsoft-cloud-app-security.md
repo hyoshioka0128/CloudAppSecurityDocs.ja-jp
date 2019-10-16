@@ -1,5 +1,5 @@
 ---
-title: Workday を Cloud App Security に接続する
+title: Workday を Cloud App Security に接続する (プレビュー)
 description: この記事では、API コネクタを使用して Cloud App Security に Workday アプリを接続し、使用状況を表示して制御する方法について説明します。
 keywords: ''
 author: shsagir
@@ -14,29 +14,29 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13f9870d2e1fbb9a368510ce715b9bc5c3bfe7c8
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: da2f55e9f3be36d34bc7398258d96e28aae9b4b5
+ms.sourcegitcommit: 3996c1fe9a258c925e18c744447cb1574cce85d1
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083875"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72323876"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security"></a>Workday を Microsoft Cloud App Security に接続する
+# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 セキュリティグループには、次のドメインに対して次のアクセス許可が選択されている必要があります。
 
-| 機能領域 | ドメイン | サブ | レポート/タスクの権限 | 統合権限 |
+| 機能領域 | Domain | サブ | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
-| システム | セットアップ:テナントのセットアップ–全般 | セットアップ:テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
-| システム | セキュリティ管理 | | 表示、変更 | Get、Put |
-| システム | システム監査 | | 表示 | 取得 |
-| スタッフ | ワーカーデータ:スタッフ | ワーカーデータ:パブリックワーカーレポート | 表示 | 取得 |
+| System (システム) | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
+| System (システム) | セキュリティ管理 | | 表示、変更 | Get、Put |
+| System (システム) | システム監査 | | 表示 | 取得 |
+| スタッフ | Worker データ: スタッフ | Worker データ: パブリックワーカーレポート | 表示 | 取得 |
 
 Workday 統合ユーザー、セキュリティグループ、およびアクセス許可を設定する方法の詳細については、「アクセス[許可の統合または外部エンドポイント](https://go.microsoft.com/fwlink/?linkid=2103212)へのアクセス」の手順 1 ~ 4 を参照してください。
 
@@ -102,7 +102,7 @@ Workday 統合システムユーザーを使用することをお勧めします
 > [!NOTE]
 > Workday に接続すると、接続する7日間のイベントが表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

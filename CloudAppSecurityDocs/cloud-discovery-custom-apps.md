@@ -2,9 +2,9 @@
 title: Cloud App Security で Cloud Discovery にカスタム アプリを追加する
 description: このトピックでは、シャドウ IT を監視するために Cloud App Security で Cloud Discovery にカスタム アプリを追加する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c44772dc46d04c46eb1d22b2440d06d338d448db
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: b3d8fe254888eb442479c9d4ef5f328898a97dfb
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567568"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335534"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery にカスタム アプリを追加する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
     
 Cloud Discovery では、Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 クラウド アプリ カタログには、16,000 以上のクラウド アプリが掲載されています。 このカタログには、公開されているクラウド アプリのみが含まれています。それらのアプリに対して、Cloud App Security で可視性とリスク情報が提供されます。
 
@@ -34,11 +34,11 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 
 ## <a name="add-a-new-custom-cloud-app"></a>新しいカスタム クラウド アプリを追加する
 
-1. Cloud App Security ポータルで、**[検出]**、**[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。 
+1. Cloud App Security ポータルで、 **[検出]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。 
   
    ![Cloud Discovery ダッシュボード メニュー](./media/cloud-discovery-dashboard-menu.png)
 
-2. 右上隅にある 3 つの点をクリックし、**[カスタム アプリの新規追加]** を選択します。 
+2. 右上隅にある 3 つの点をクリックし、 **[カスタム アプリの新規追加]** を選択します。 
 
    ![カスタム アプリの新規追加メニュー](./media/add-custom-app-menu.png)
 
@@ -57,11 +57,11 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 
 >[!NOTE]
 > 追加したカスタム アプリには、"**カスタム アプリ**" タグが自動的にタグ付けされます。 このアプリ タグを削除することはできません。
-すべてのカスタム アプリを表示するには、**[アプリ タグ]** フィルターを "カスタム アプリ" に等しくなるように設定します。 
+すべてのカスタム アプリを表示するには、 **[アプリ タグ]** フィルターを "カスタム アプリ" に等しくなるように設定します。 
 <!-- -  By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

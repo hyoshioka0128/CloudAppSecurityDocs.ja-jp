@@ -15,16 +15,16 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fc9c45a20e59c7dd4591cbeda53df6951c3cac44
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e8be0a2cd23a23d223fff12e956eb7152fa9fa14
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084062"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335620"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、App Connector API を使用して Microsoft Cloud App Security を既存の Microsoft Office 365 アカウントに接続する手順について説明します。  この接続により、Office 365 の使用状況を視覚化して制御できるようになります。
   
@@ -54,6 +54,7 @@ Cloud App Security は、次の Office 365 アプリをサポートしていま�
 >- そこからログを取得するには [PowerBI で監査を有効にする](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)必要があります。 監査を有効にすると、Cloud App Security はログの取得を開始します (24 時間から 72 時間の遅延があります)。
 >- そこからログを取得するには、 [Dynamincs 365 の監査を有効](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing-in-dynamics-365-for-customer-engagement/)にする必要があります。 監査を有効にすると、Cloud App Security はログの取得を開始します (24 時間から 72 時間の遅延があります)。
 >- Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定が Azure AD 設定をオーバーライドし、 **[ユーザーの停止]** というガバナンス アクションが元に戻されます。
+>- Azure AD サインインアクティビティの場合、Cloud App Security には、ActiveSync などのレガシプロトコルからの対話型サインインアクティビティとサインインアクティビティのみが含まれます。 非対話型のサインインアクティビティは、Azure AD 監査ログで確認できます。
 
 1. **[接続]** アプリページで、[+] ボタン、 **[Office 365]** の順にクリックします。  
 
@@ -68,7 +69,7 @@ Cloud App Security は、次の Office 365 アプリをサポートしていま�
 > [!NOTE]
 > Office 365 を接続すると、API をプルしている Office 365 に接続されたすべてのサードパーティ製アプリケーションを含む、1 週間前のデータが表示されます。 接続前に API をプルしていなかったサードパーティ製アプリについては、既定で無効になっていたすべての API が Cloud App Security によって有効になるため、Office 365 に接続した時点からイベントが表示されるようになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

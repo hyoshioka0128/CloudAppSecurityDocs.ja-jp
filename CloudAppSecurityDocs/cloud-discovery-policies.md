@@ -2,9 +2,9 @@
 title: Cloud Discovery アプリに対するポリシーを作成する - Cloud App Security | Microsoft ドキュメント
 description: この記事では、Cloud Discovery ポリシーの使用に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,23 +15,23 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bf54021007d891b78577bd646c43ec5377421bfd
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567525"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335564"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 新しいアプリが検出されたときに通知する、アプリの検出ポリシーを作成できます。 Cloud App Security では、Cloud Discovery 内のすべてのログの異常も検索されます。 
 
 ## <a name="creating-an-app-discovery-policy"></a>アプリの検出ポリシーの作成  
 検出ポリシーを使用すると、組織内で新しいアプリが検出されたことを知らせる警告を設定することができます。  
   
-1. コンソールで、**[制御]**、**[ポリシー]** の順にクリックします。  
+1. コンソールで、 **[制御]** 、 **[ポリシー]** の順にクリックします。  
   
 2. **[ポリシーの作成]** をクリックしてから **[アプリの検出]** ポリシーを選択します。  
   
@@ -54,9 +54,9 @@ ms.locfileid: "65567525"
   
 7. **[アラート]** の **[日次アラート制限]** を設定します。 アラートを電子メール、テキスト メッセージ、またはその両方で送信するかどうかを選択します。 その後、必要に応じて、電話番号とメール アドレスを入力します。
      - **[Save alert settings as the default for your organization]** \(アラートの設定を組織の既定として保存\) をクリックすると、設定を使用するための将来のポリシーが有効になります。
-     - 既定の設定がある場合は、**[Use your organization's default settings]** \(組織の既定の設定を使用する\) を選択できます。
+     - 既定の設定がある場合は、 **[Use your organization's default settings]** \(組織の既定の設定を使用する\) を選択できます。
   
-8. アプリがこのポリシーと一致したときに適用する、**ガバナンス** アクションを選択します。 これによって、ポリシーに **[承認された]**、**[承認されていない]**、またはカスタム タグを付けることができます。 
+8. アプリがこのポリシーと一致したときに適用する、**ガバナンス** アクションを選択します。 これによって、ポリシーに **[承認された]** 、 **[承認されていない]** 、またはカスタム タグを付けることができます。 
 
 9. **[作成]** をクリックします。  
   
@@ -73,7 +73,7 @@ ms.locfileid: "65567525"
 
 Cloud App Security では、Cloud Discovery 内のすべてのログを対象に異常が検索されます。 たとえば、これまでに Dropbox を使用したことのないユーザーが突然 600 GB のファイルを Dropbox にアップロードしたり、特定のアプリで通常よりもはるかに多くのトランザクションが発生していたりする場合などに通知します。 異常検出ポリシーは、既定で有効になっています。 新しいポリシーを構成しなくても動作します。 ただし、既定のポリシーの通知する異常の種類を微調整することができます。  
   
-1. コンソールで、**[制御]**、**[ポリシー]** の順にクリックします。  
+1. コンソールで、 **[制御]** 、 **[ポリシー]** の順にクリックします。  
   
 2. **[ポリシーの作成]** をクリックしてから **[Cloud Discovery 異常検出ポリシー]** を選択します。  
   
@@ -81,23 +81,23 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 3. ポリシーに名前と説明を指定します。 必要に応じて、ポリシー テンプレートを使用することもできます。ポリシー テンプレートの詳細については、「[Control cloud apps with policies](control-cloud-apps-with-policies.md)」(ポリシーによるクラウド アプリの制御) を参照してください。  
   
-4. どのアプリが検出されたらこのポリシーがトリガーされるかを設定するには、**[フィルターの追加]** をクリックします。  
+4. どのアプリが検出されたらこのポリシーがトリガーされるかを設定するには、 **[フィルターの追加]** をクリックします。  
   
      フィルターをドロップダウン リストから選択します。 フィルターを追加するには、[+] ボタンをクリックします。 フィルターを削除するには、[X] をクリックします。 
   
-5. **[Apply to]** \(適用の対象\) で、このポリシーを **[All continuous reports]** \(すべての継続的レポート\) と **[Specific continuous reports]** \(特定の継続的レポート\) のどちらに適用するかを選択します。 ポリシーを **[ユーザー]**、**[IP アドレス]**、またはその両方に適用するかどうかを選択します。  
+5. **[Apply to]** \(適用の対象\) で、このポリシーを **[All continuous reports]** \(すべての継続的レポート\) と **[Specific continuous reports]** \(特定の継続的レポート\) のどちらに適用するかを選択します。 ポリシーを **[ユーザー]** 、 **[IP アドレス]** 、またはその両方に適用するかどうかを選択します。  
   
 6. **[指定の日付後に生じた疑わしいアクティビティに関してのみアラートを出す]** で、異常なアクティビティに対してアラートをトリガーする期間を選択します。  
   
 7. **[アラート]** の **[日次アラート制限]** を設定します。 アラートを電子メール、テキスト メッセージ、またはその両方で送信するかどうかを選択します。 その後、必要に応じて、電話番号とメール アドレスを入力します。
      - **[Save alert settings as the default for your organization]** \(アラートの設定を組織の既定として保存\) をクリックすると、設定を使用するための将来のポリシーが有効になります。
-     - 既定の設定がある場合は、**[Use your organization's default settings]** \(組織の既定の設定を使用する\) を選択できます。
+     - 既定の設定がある場合は、 **[Use your organization's default settings]** \(組織の既定の設定を使用する\) を選択できます。
   
 8. **[作成]** をクリックします。  
   
 ![新しい異常検出ポリシー](./media/new-discovery-anomaly-policy.png "新しい異常検出ポリシー")  
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

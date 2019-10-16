@@ -2,9 +2,9 @@
 title: 脅威保護シナリオの概要 - Cloud App Security | Microsoft Docs
 description: このトピックでは、クラウド環境における脅威から組織を保護するシナリオについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 7a06a243-9ec2-4a11-8db2-bc065cdfef64
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c9ee65a3a4aef6d6ef200597405642a0fde15c68
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ce6abab8e9790119b02dc80e5dcf63625e1dcf4b
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568775"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336088"
 ---
 # <a name="protecting-your-organization-from-ransomware"></a>ランサムウェアから組織を保護する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 最近の大規模なランサムウェア攻撃で、サイバー世界は WannaCry の大きな打撃を受け、150 か国で推定 200,000 台のコンピューターが感染しました。 過去数年間のランサムウェア攻撃の増加により、毎月平均で 2015 年は 25,000 件、2016 年は 56,000 件の攻撃がありました。ネットワークとクラウドが危険な状態にならないように事前に対処することがサイバーセキュリティの必須事項になっています。 この記事では、Cloud App Security を使用してクラウドを監視し、脅威を軽減し、ベスト プラクティスを適用して、ランサムウェアから環境を保護する方法について説明します。
 
@@ -51,7 +51,7 @@ ms.locfileid: "65568775"
 
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 

@@ -2,9 +2,9 @@
 title: Box を Cloud App Security に接続する
 description: この記事では、使用状況を視覚化して制御できるように、API コネクタを使用して Cloud App Security に Box アプリを接続する方法に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5d9a5835473eb6a6012c315a1313fbf05cd9ced5
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: bcef6b51eac8b9ddf0f348bfa42b2936a4ad85e8
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568120"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334575"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、App Connector API を使用して Microsoft Cloud App Security を既存の Box アカウントに接続する方法を説明します。 この接続により、Box の使用状況を視覚化して制御できるようになります。
   
@@ -43,7 +43,7 @@ ms.locfileid: "65568120"
   
          ![Box アプリ](./media/box-apps.png "Box アプリ")  
   
-    -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、**[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。
+    -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、 **[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。
      
          |データ センター|Microsoft Cloud App Security のシリアル番号|
          |----|----|    
@@ -53,24 +53,24 @@ ms.locfileid: "65568120"
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        **[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
+        次に、 **[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
   
          ![Box の [次を除く] 設定](./media/box-settings-except-for.png "Box の [次を除く] 設定")  
   
     > [!NOTE]  
     >  既存の Adallom ユーザーの方でコンソールの URL が Cloud App Security ではなく Adallom のものである場合、このアプリのシリアル番号には bwahmilhdlpbqy2ongkl119o3lrkoshc を使用します。  
   
-2.  Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。  
+2.  Cloud App Security ポータルで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。  
   
-3.  **[アプリ コネクター]** ページで、[+]、**[Box]** の順にクリックします。  
+3.  **[アプリ コネクター]** ページで、[+]、 **[Box]** の順にクリックします。  
   
      ![Box の接続](./media/connect-box.png "Box の接続")  
   
-4.  **[Box の設定]** ポップアップで、**[リンクに移動]** をクリックします。  
+4.  **[Box の設定]** ポップアップで、 **[リンクに移動]** をクリックします。  
   
 5.  Box のサインイン ページが開きます。 Cloud App Security がチームの Box アプリにアクセスできるように、資格情報を入力します。  
   
-6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、**[許可]** をクリックします。  
+6.  Cloud App Security からチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうかを確認するメッセージが Box で表示されます。 続行するには、 **[許可]** をクリックします。  
   
 7.  Cloud App Security ポータルに戻ると、Box と正常に接続されたことを示すメッセージが届いています。  
   
@@ -84,7 +84,7 @@ Box を接続すると、接続までの 60 日間のイベントを受け取り
   
 Box を接続すると、Cloud App Security がフル スキャンを実行します。 所有するファイルとユーザーの数に応じて、フル スキャンの実行に時間がかかる場合があります。 ほぼリアルタイムのスキャンを有効にするために、アクティビティが検出されたファイルはスキャン キューの先頭に移動されます。 たとえば、編集、更新、または共有するファイルは、通常のスキャン プロセスを待たずにすぐスキャンされます。 ほぼリアルタイムのスキャンは、本質的に変更されていないファイルには適用されません。 たとえば、表示、プレビュー、印刷、またはエクスポートされたファイルは、定期的にスケジュールされたスキャンの一部としてスキャンされます。
   
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

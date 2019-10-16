@@ -2,9 +2,9 @@
 title: Cloud Discovery クラウド アプリの使用に関するスナップショット レポートの作成
 description: この記事では、ログを手動でアップロードして Cloud Discovery アプリのスナップショット レポートを作成する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/07/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a06200e0256bac49f8a4a4e169898dcb3a09aa7b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65567996"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335667"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 自動ログ コレクターの使用を試みる前に、手動でログをアップロードし、Microsoft Cloud App Security でログ解析することが重要です。 ログ コレクターのしくみと予想されるログの形式については、「[Cloud Discovery に対するトラフィック ログの使用](#log-format)」をご覧ください。
 
@@ -35,7 +35,7 @@ ms.locfileid: "65567996"
   
 1. 組織のユーザーがインターネット アクセスに使用するファイアウォールとプロキシからログ ファイルを収集します。 組織内のすべてのユーザー アクティビティを示す、トラフィック ピーク時のログを収集するようにしてください。  
   
-2. Cloud App Security ポータルで、**[探索]**、**[スナップショット レポートの作成]** の順にクリックします。  
+2. Cloud App Security ポータルで、 **[探索]** 、 **[スナップショット レポートの作成]** の順にクリックします。  
   
    ![新しいスナップショット レポートを作成する](./media/create-new-snapshot-report.png)
      
@@ -45,7 +45,7 @@ ms.locfileid: "65567996"
 
 4. ログ ファイルのアップロード元にする **[データソース]** を選択します。  
   
-5. ログの形式を調べ、ダウンロードできるサンプル ログに従ってログが正しく書式設定されているかどうかを確認します。 **[View and verify]\(表示して確認\)**、**[サンプル ログのダウンロード]** の順にクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
+5. ログの形式を調べ、ダウンロードできるサンプル ログに従ってログが正しく書式設定されているかどうかを確認します。 **[View and verify]\(表示して確認\)** 、 **[サンプル ログのダウンロード]** の順にクリックします。 自分のログとサンプルを比較し、互換性があることを確認します。 
 
    ![ログの書式を確認する](./media/cloud-discovery-snapshot-verify.png)  
 
@@ -91,14 +91,14 @@ Cloud Discovery で、ログに含まれていない属性の表示や分析は�
 
 
 Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たす必要があります。
-1. [データ ソースがサポートされている](set-up-cloud-discovery.md#supported-firewalls-and-proxies)します。
+1. [データソースはサポートされて](set-up-cloud-discovery.md#supported-firewalls-and-proxies)います。
 2. ログの形式が期待されている標準の形式と一致する (形式はログ ツールのアップロードで確認されます)。
 3. イベントが 90 日以上経過していない。
 4. ログ ファイルが有効で、送信トラフィック情報を含む。
 
 
  
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

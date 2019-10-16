@@ -2,9 +2,9 @@
 title: コンテンツ検査ポリシーに Cloud App Security の RegEx エンジンを使用する
 description: この記事では、Cloud App Security ポリシーのパターン マッチングに正規表現を使用する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fe3e2659c27e69959b7c68d92f42a07b7984a7d0
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: fee654b84f7149fa15be23d99d7b8f675a900599
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237193"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336066"
 ---
 # <a name="working-with-the-regex-engine"></a>RegEx エンジンの操作
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
  
 この記事では、Cloud App Security ポリシーのパターン マッチングに正規表現を使用する方法について説明します。
 
@@ -67,16 +67,16 @@ Microsoft Cloud App Security のコンテンツ検査ポリシーでは、パタ
 |                                                               |                                                               |                                    |
 |---------------------------------------------------------------|---------------------------------------------------------------|------------------------------------|
 |              <strong>正規表現</strong>              |                     <strong>データ</strong>                     |      <strong>一致する</strong>      |
-|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | はい<br /><br /> [はい]<br /><br /> いいえ |
-|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | はい<br /><br /> [はい]<br /><br /> いいえ |
-| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | はい<br /><br /> [はい]<br /><br /> いいえ |
-|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | はい<br /><br /> [はい]<br /><br /> いいえ |
+|            Colou?r (?:black&#124;blue&#124;white)             |   Color black<br /><br /> Color white<br /><br /> Color red   | [はい]<br /><br /> [はい]<br /><br /> [いいえ] |
+|           [a-z0-9]{1,9}@[a-z0-9]{1,9}\\.[a-z]{2,3}            | Some1@abc.com<br /><br /> user@host.org<br /><br /> @bad.com  | [はい]<br /><br /> [はい]<br /><br /> [いいえ] |
+| 20\d{2}-(?:0[1-9]&#124;1[0-2])-(?:[0-2][0-9]&#124;30&#124;31) |   2015-12-31<br /><br /> 2015-01-09<br /><br /> 1999-12-31    | [はい]<br /><br /> [はい]<br /><br /> [いいえ] |
+|                       d.n't\s{0,10}c.r.                       | Don't     care<br /><br /> D!n'tcor0<br /><br /> Doesn't care | [はい]<br /><br /> [はい]<br /><br /> [いいえ] |
 
 ## <a name="check-out-this-video"></a>このビデオをご覧ください。
 
 [RegEx エンジンの操作](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security-Working-with-the-Regex-Engine)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 

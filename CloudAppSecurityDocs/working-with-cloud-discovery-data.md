@@ -2,8 +2,8 @@
 title: Cloud Discovery データを使用して危険な動作を検出する - Cloud App Security | Microsoft Docs
 description: このトピックでは、アプリ リスク スコアの操作方法など、Cloud Discovery データの操作方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 manager: angrobe
 ms.date: 05/06/2019
 ms.topic: conceptual
@@ -15,16 +15,16 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8d3c5d1dc7c2f3a1b4d36db94198adc910879921
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568378"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335943"
 ---
 # <a name="working-with-discovery-data"></a>探索データでの作業
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 使用されているアプリ、未処理のアラート、組織のアプリのリスク レベルをひとめで確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
 
@@ -38,7 +38,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 
 2. 次に、1 段階詳細なレベルに下がり、さまざまな使用状況パラメーター別に組織で**最も使用されているカテゴリ**を確認します。 その中でアプリの使用が許可されている割合を確認できます。
 
-3. さらに詳細なレベルに進み、**[検出されたアプリ]** タブで特定のカテゴリのすべてのアプリを確認します。
+3. さらに詳細なレベルに進み、 **[検出されたアプリ]** タブで特定のカテゴリのすべてのアプリを確認します。
 
 4. アプリを**最も多く使用しているユーザーやソース IP アドレス**を表示し、組織でクラウド アプリを最も頻繁に使用しているユーザーを特定できます。
 5. **アプリの本社地図**では、検出されたアプリの本社が地理的にどのように散らばっているのかを確認できます。
@@ -53,7 +53,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
   
 1. ポータルで、設定アイコンの下に表示される **[Cloud Discovery 設定]** を選択します。  
 2. **[エンティティの除外]** タブをクリックします。  
-3. **[除外されたユーザー]**、**[除外された IP アドレス]**、**[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
+3. **[除外されたユーザー]** 、 **[除外された IP アドレス]** 、 **[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
      ![ユーザーを除外する](./media/exclude-user.png "exclude user")  
@@ -78,7 +78,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
   
 5. 含めるデータ ソースを選択します (全部または一部)。  
   
-6. データに必要なフィルターを設定します。 これらのフィルターには、**[ユーザー グループ]**、**[IP アドレス タグ]**、**[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
+6. データに必要なフィルターを設定します。 これらのフィルターには、 **[ユーザー グループ]** 、 **[IP アドレス タグ]** 、 **[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。  
   
     ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png) 
 
@@ -112,7 +112,7 @@ Cloud Discovery データを削除するには:
 
 
  
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 

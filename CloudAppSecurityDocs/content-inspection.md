@@ -2,9 +2,9 @@
 title: Cloud App Security でコンテンツの検査を実施する方法
 description: この記事では、クラウド内のデータに対して DLP コンテンツ検査を実行する場合に Cloud App Security が従うプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/6/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: c67a387f-8c88-4018-9e80-0fb1455cf768
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b0cdcca52b8be95e146af09595849b7c9dc1129
-ms.sourcegitcommit: 0303627fb0ceb460c50071d0b20e33aa94ccff8d
+ms.openlocfilehash: e267f0c80d21f7aaec91ca43152fbba58d89feaf
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66491586"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335576"
 ---
 # <a name="content-inspection"></a>コンテンツ検査
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 
 コンテンツ検査を有効にすると、現在の式を使用するか、またはそれ以外のカスタマイズされた式を検索することを選択できます。  
@@ -49,7 +49,7 @@ Cloud App Security の必要なアクセス許可を付与するには、次の�
 
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

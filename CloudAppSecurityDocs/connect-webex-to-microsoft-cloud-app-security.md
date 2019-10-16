@@ -1,10 +1,10 @@
 ---
-title: Cloud App Security に WebEx を接続します。
-description: この記事では、可視性と制御を使用するより、API コネクタを使用して、WebEx アプリケーションを Cloud App Security に接続する方法についての情報を提供します。
+title: WebEx を Cloud App Security に接続する
+description: この記事では、使用状況を表示および制御するために、API コネクタを使用して Cloud App Security に WebEx アプリを接続する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 04/16/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,49 +15,49 @@ ms.assetid: c43271fd-9a61-4727-9945-de1c6ea5422c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: be23b571e25ba283bd661f647cf38d462b37882b
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: ef2614a2c7c2b328e3cc3510786d05684785fa62
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568173"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335638"
 ---
-# <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco WebEx を Microsoft Cloud App Security に接続します。
+# <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco WebEx を Microsoft Cloud App Security に接続する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-この記事では、Microsoft Cloud App Security を既存の Api コネクタを使用して Cisco WebEx アカウントに接続するための手順を提供します。 この接続を可視化と WebEx ユーザー、アクティビティ、およびファイルの制御を提供します。 
+この記事では、コネクタ Api を使用して、既存の Cisco WebEx アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、WebEx のユーザー、アクティビティ、ファイルを可視化し、制御できます。 
  
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
-- 接続専用のサービス アカウントを作成することをお勧めします。 これにより、ように、このアカウントから実行中として WebEx で実行されたガバナンス アクションが WebEx で送信されるメッセージを削除することを確認することができます。 それ以外の場合、Cloud App Security を WebEx に接続した管理者の名前は、操作を実行したユーザーとして表示されます。  
-- 完全な管理者を持っている必要があります**と**WebEx でのコンプライアンス管理者のアクセス許可。
+- 接続用に専用のサービスアカウントを作成することをお勧めします。 これにより、WebEx で送信されたメッセージの削除など、WebEx で実行されるガバナンスアクションがこのアカウントから実行されていることを確認できます。 それ以外の場合は、WebEx に Cloud App Security 接続した管理者の名前が、アクションを実行したユーザーとして表示されます。  
+- WebEx で、完全な管理者**と**コンプライアンス管理者のアクセス許可を持っている必要があります。
 
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>WebEx を Cloud App Security に接続する方法  
   
-1.  Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。  
+1.  Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。  
   
-2.  **アプリ コネクタ** ページで、続けて + ボタンをクリックします。 **Cisco WebEx**します。  
+2.  **[アプリコネクタ]** ページで、プラスボタンをクリックし、続いて**Cisco WebEx**をクリックします。  
   
-     ![接続 WebEx](./media/cisco-webex.png "WebEx の接続")  
+     ![webex](./media/cisco-webex.png "connect を webex")に接続する  
   
 3.  ポップアップで、このコネクタのインスタンス名を入力します。  
   
-4.  クリックして**接続 Cisco Webex**します。 WebEx サインイン ページが開きます。 チームの WebEx インスタンスに Cloud App Security へのアクセスを許可するための資格情報を入力します。  
+4.  **[Cisco Webex に接続]** をクリックします。 WebEx サインインページが開きます。 チームの WebEx インスタンスへの Cloud App Security アクセスを許可するための資格情報を入力します。  
   
-6.  WebEx は、チームの情報やアクティビティ ログを Cloud App Security のアクセスを許可し、チーム メンバーと同様のアクティビティを実行するかどうかを確認します。 続行するには、**[許可]** をクリックします。  
+6.  WebEx は、チームの情報やアクティビティログへの Cloud App Security アクセスを許可し、チームメンバーとしてアクティビティを実行できるようにするかどうかをたずねます。 続行するには、 **[許可]** をクリックします。  
   
-7.  Cloud App Security コンソールに戻る WebEx が正常に接続されているメッセージが表示されます。  
+7.  Cloud App Security コンソールに戻ると、WebEx が正常に接続されたことを示すメッセージが表示されます。  
   
 8.  **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
   
-     テストには数分かかる場合があります。 成功通知を受信したら、**[閉じる]** をクリックします。  
+     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。  
   
-WebEx を接続すると、接続までの 7 日間のイベントが表示されます。 Cloud App Security では、過去 3 か月間のイベントをスキャンします。 を増やすには、Cisco WebEx pro ライセンスがあるし、を Cloud App Security のサポート チケットを開く必要があります。
+WebEx に接続すると、接続する7日間のイベントを受け取ります。 Cloud App Security は過去3か月にわたってイベントをスキャンします。 これを増やすには、Cisco WebEx pro ライセンスを所有し、Cloud App Security サポートでチケットを開く必要があります。
 
  
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

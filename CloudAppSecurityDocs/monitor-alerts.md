@@ -2,9 +2,9 @@
 title: Cloud App Security で発生するアラートを監視する
 description: この記事では、すべてのアラートの一覧を示して説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e5b144b4c260aa55f3bd6546f76c1802c10631e0
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 9e697d86bd7279e445a8fa40bf9fd5000081e469
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568904"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335905"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Cloud App Security のアラートを監視する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 アラートは、クラウド環境をより深く理解するための最初のステップです。 この記事では、すべてのアラートの一覧を示して説明します。
 
@@ -32,7 +32,7 @@ ms.locfileid: "65568904"
 
 すべてのアラートを確認することは良い考えです。 アラートの発生理由を理解することで、ポリシーを修正するための道具としてアラートを利用できます。 
 
-**アラートを表示するには:** Microsoft Cloud App Security ポータルで **[アラート]** をクリックします。
+**アラートを表示するには:** Microsoft Cloud App Security ポータルで、 **[アラート]** をクリックします。
 
 
 ![[アラート] メニュー](./media/alert-menu.png)
@@ -52,7 +52,7 @@ ms.locfileid: "65568904"
 
 次のアラートの種類が表示されます。 
 
-|アラート名|アラート ID|説明|
+|アラート名|アラート ID|[説明]|
 |----|----|----|
 |新しい場所|ALERT_GEOLOCATION_NEW_COUNTRY|スキャン開始以降に新しい場所が検出されました (6 か月)。 このアラートは、組織全体で国ごとに 1 回のみ表示されます。 |
 |新しい管理ユーザー|ALERT_ADMIN_USER|特定のアプリに対して新しい管理者が検出されました。 あるアプリケーションの管理者が別のアプリケーションの管理者になったのがこの管理者である可能性があります。 このアラートは特定の管理者の種類に関するものなので、管理者の種類が変わるたびに表示されます。 ユーザーが管理者権限が失ってから再び権限を得ると、このアラートが表示されます。|
@@ -64,9 +64,9 @@ ms.locfileid: "65568904"
 
 次のアラートの種類が表示されます。 
 
-|アラート名|アラート ID|説明|
+|アラート名|アラート ID|[説明]|
 |----|----|----|
-|不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 新しい場所からか)。これらの条件がすべて計算され、以下のリスク要因に基づいてリスク スコアが提供されます。 <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
+|不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 新しい場所からのものですか)。これらの条件はすべて、次のリスク要因に基づいてリスクスコアを提供するためにまとめられています。 <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
 |不審なクラウド使用アラート|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery の異常検出は、通常の動作のパターンを検出し、普通ではない方法で使用されたユーザーまたはアプリを発見します。 |
 |アクティビティ ポリシー違反|ALERT_CABINET_EVENT_MATCH_AUDIT|このアラートを使うと、ポリシー一致が検出されたことを把握できます。|
 |ファイル ポリシー違反|ALERT_CABINET_EVENT_MATCH_FILE|このアラートを使うと、ポリシー一致が検出されたことを把握できます。|
@@ -75,7 +75,7 @@ ms.locfileid: "65568904"
 |新しいサービスの検出|ALERT_CABINET_DISCOVERY_NEW_SERVICE|新しいアプリが検出されました。|
 |個人アカウントの使用|ALERT_PERSONAL_USER_SAGE|ファイル共有およびユーザー名に基づいて、検出エンジンは個人アカウントを検索します。 |
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 

@@ -2,9 +2,9 @@
 title: 管理者の基本設定を設定する - Cloud App Security | Microsoft Docs
 description: この記事では、Cloud App Security で管理者の基本設定を設定する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 85cae50d-f571-4907-9600-da4cc187b43b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fc31a86e7ea2c0e4086417a5362befbd04d16da2
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: bfd81bc490b0620a9dfdf8534017feb0c6003ed0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65565859"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72334833"
 ---
 # <a name="admin-user-settings"></a>管理者ユーザー設定
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security では、ご利用の管理者ユーザー設定をカスタマイズすることができます。 通知設定により、管理者はアラートに対して電子メールまたはテキスト通知のいずれの受信を希望するかを指定できます。 
 
@@ -48,7 +48,7 @@ Microsoft Cloud App Security の管理者としての設定をセットアップ
  
   
     
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

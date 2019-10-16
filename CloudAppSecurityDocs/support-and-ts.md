@@ -2,9 +2,9 @@
 title: Cloud App Security に関するサポートおよびトラブルシューティング情報
 description: この記事では、Microsoft Cloud App Security に関するサポートとトラブルシューティングのオプションについて説明します
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/28/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,24 +15,24 @@ ms.assetid: 86204ff4-dc1d-489f-b5fd-a43930fd49d3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1a64f46730e5c9cec50acab6750305ce9004c410
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: a8a8570cfa27bdc9e05af3a8917bf0ce55a56be9
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568480"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336196"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security のサポートとトラブルシューティング
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、Cloud App Security に関して利用できるサポートとトラブルシューティングのオプションについて説明します。
 
 ## <a name="manage-support-requests-for-cloud-app-security"></a>Cloud App Security に対するサポート リクエストを管理する
 
-Microsoft では、Microsoft Cloud App Security 向けに、全体的な技術、プリセールス、課金、およびサブスクリプションに関するサポートが用意されています。 有料および試用版サブスクリプションの両方について、オンラインと電話によるサポートを利用できます。 オンライン テクニカル サポートは、英語と日本語で提供されています。 電話によるサポートとオンライン課金サポートは、他の言語でも利用できます。
+Microsoft では、Microsoft Cloud App Security 向けに、全体的な技術、プリセールス、課金、およびサブスクリプションに関するサポートが用意されています。 有料および試用版サブスクリプションの両方について、オンラインと電話によるサポートを利用できます。 オンラインのテクニカル サポートは英語と日本語で利用できます。 電話によるサポートとオンラインでの課金のサポートは、さらに多くの言語で利用できます。
 
-管理者は、**[ヘルプとサポート]** オプションを使って、Azure portal から Cloud App Security に関するオンラインのサポート リクエストを送信できます。 サポート リクエストを作成するためには、次の [Azure Active Directory の管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のいずれかがご自分のアカウントに割り当てられている必要があります。
+管理者は、 **[ヘルプとサポート]** オプションを使って、Azure portal から Cloud App Security に関するオンラインのサポート リクエストを送信できます。 サポート リクエストを作成するためには、次の [Azure Active Directory の管理者ロール](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)のいずれかがご自分のアカウントに割り当てられている必要があります。
 
 -   全体管理者
 
@@ -46,35 +46,35 @@ Microsoft では、Microsoft Cloud App Security 向けに、全体的な技術�
 
 ### <a name="create-an-online-support-request"></a>オンラインのサポート リクエストを作成する
 
-1.  ご自身の管理者資格情報を使って Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインし、**?** アイコン (ポータルの右上隅) を選択します。次に、**[ヘルプとサポート]** を選択して [Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ページに移動します。
+1.  ご自身の管理者資格情報を使って Azure portal [https://portal.azure.com](https://portal.azure.com/) にサインインし、 **?** アイコン (ポータルの右上隅) を選択します。次に、 **[ヘルプとサポート]** を選択して [Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ページに移動します。
 
-2.  Azure の **[ヘルプとサポート]** ページで、**[新しいサポート リクエスト]** を選択します。
+2.  Azure の **[ヘルプとサポート]** ページで、 **[新しいサポート リクエスト]** を選択します。
 
-3.  サポートに関する問題のほとんどでは、**[基本]** タブで次のオプションを選択します。
+3.  サポートに関する問題のほとんどでは、 **[基本]** タブで次のオプションを選択します。
 
-    -   **[問題の種類]**:**[技術]**
+    -   **[問題の種類]** : **[技術]**
 
     -   **[サブスクリプション]** : \<"*ご自分のサブスクリプション*"\>
 
-    -   **[サービス]**:**[Cloud Application Security]\(クラウド アプリケーション セキュリティ\)**
+    -   **サービス**:**クラウドアプリケーションのセキュリティ**
 
-    -   **[問題の種類]**: ドロップダウン メニューから該当する問題の種類を選択します
+    -   **問題の種類**: ドロップダウンメニューから問題の種類を選択します
 
-    -   **[問題のサブタイプ]**:ドロップダウン メニューから問題のサブタイプを選択します
+    -   **問題のサブタイプ**: ドロップダウンメニューから [問題のサブタイプ] を選択します。
 
-    -   **[件名]**:発生している問題の簡単な説明を入力します
+    -   **件名**: 発生している問題を簡単に説明します。
 
-4.  **[詳細]** タブで、問題、サポート方法、ご自身の連絡先情報に関する詳細を入力してから、**[Next:Review + create]\(次へ: 確認と作成\)** をクリックします。
+4.  **[詳細]** タブで、問題の詳細、サポート方法、連絡先情報を入力し、次へ をクリックします。 **[レビュー + 作成]** 。
 
-5.  情報を確認し、それが正しいことを確かめたら、**[作成]** を選択してサポート リクエストを送信します。
+5.  情報を確認し、それが正しいことを確かめたら、 **[作成]** を選択してサポート リクエストを送信します。
 
-**注:** 課金やサブスクリプションの質問があれば、サポートを取得し、ケースを開くことができます、 [Microsoft 365 管理センター](https://admin.microsoft.com/Support/SupportEntry.aspx)します。
+**注:** 課金またはサブスクリプションの質問がある場合は、 [Microsoft 365 管理センター](https://admin.microsoft.com/Support/SupportEntry.aspx)からサポートを受けるケースを開くことができます。
 
 ### <a name="view-open-support-requests"></a>未解決のサポート リクエストを確認する
 
-Azure portal 内からサポート リクエストを確認できます。 そのためには次を行います。
+Azure portal 内からサポート リクエストを確認できます。 これを実行するには、次のようにします。
 
-1.  ご自身の管理者資格情報を使って Azure [https://portal.azure.com](https://portal.azure.com/) にサインインし、**?** アイコン (ポータルの右上隅) を選択します。次に、**[ヘルプとサポート]** を選択して [Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ページに移動します。
+1.  ご自身の管理者資格情報を使って Azure [https://portal.azure.com](https://portal.azure.com/) にサインインし、 **?** アイコン (ポータルの右上隅) を選択します。次に、 **[ヘルプとサポート]** を選択して [Azure のヘルプとサポート](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ページに移動します。
 
 2.  **[ヘルプとサポート]** ページで **[最近のサポート リクエスト]** の一覧を確認できます。これらを選択すると追加の詳細が表示されます。
 
@@ -105,6 +105,6 @@ Cloud App Security チームは、製品に関するお客様のご意見を常�
 
 
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 
 基本については、「[Cloud App Security の使用を開始する](getting-started-with-cloud-app-security.md)」をご覧ください 

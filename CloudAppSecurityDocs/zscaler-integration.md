@@ -2,9 +2,9 @@
 title: Cloud App Security を Zscaler と統合する
 description: この記事では、シームレスな Cloud Discovery と承認されていないアプリの自動ブロックのために Microsoft Cloud App Security と Zscaler を統合する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 1/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 8abeab8e-3b7a-46a7-bbec-9aaf26f778a8
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 82bd7721d29d212c03342b0d016fe8c245a88625
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 687570ff372da79822715d40a3eb3220147610d0
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568342"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335960"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Cloud App Security を Zscaler と統合する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 Zscaler は、スタンドアロン クラウド プロキシとして、組織のトラフィックを監視します。これによりトランザクションをブロックするためのポリシーの設定が可能になります。 Cloud App Security と Zscaler を同時に使用することで、次の機能が提供されます。
 
@@ -32,7 +32,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 - Zscaler のブロック機能は、Cloud App Security で "承認されていない" として設定したアプリに自動的に適用されます。
 - Cloud App Security のリスク評価を使用して Zscaler のポータルが強化されます。200 の主要なクラウド アプリに対するリスク評価を、Zscaler のポータルで直接表示できます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
 - Microsoft Cloud App Security の有効なライセンス
 - Zscaler Cloud 5.6 の有効なライセンス
@@ -42,8 +42,8 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 
 1. Zscaler のポータルで、[Zscaler パートナーの Microsoft Cloud App Security との統合](https://help.zscaler.com/zia/configuring-mcas-integration)を完了するための手順を実行します。
 2. Cloud App Security ポータルで、次の統合の手順を行います。
-    1. 設定の歯車アイコンをクリックして、**[Cloud Discovery 設定]** を選択します。 
-    2. **[ログの自動アップロード]** タブをクリックした後、**[データ ソースの追加]** をクリックします。
+    1. 設定の歯車アイコンをクリックして、 **[Cloud Discovery 設定]** を選択します。 
+    2. **[ログの自動アップロード]** タブをクリックした後、 **[データ ソースの追加]** をクリックします。
     3. **[データ ソースの追加]** ページで、次の設定を入力します。
 
        - 名前 = NSS
@@ -58,7 +58,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 
 4. Cloud App Security で "承認されていない" として設定したすべてのアプリは、2 時間ごとに Zscaler によって ping され、Zscaler によって自動的にブロックされます。 承認されていないアプリについて詳しくは、「[アプリの承認/非承認](governance-discovery.md#BKMK_SanctionApp)」をご覧ください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

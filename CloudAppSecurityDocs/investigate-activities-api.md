@@ -1,10 +1,10 @@
 ---
-title: Cloud App Security の API を使用してアクティビティの調査 |Microsoft Docs
-description: この記事では、API を使用して Cloud App Security でのユーザー アクティビティを調査する方法について説明します。
+title: API を使用してアクティビティを調査する-Cloud App Security |Microsoft Docs
+description: この記事では、API を使用して Cloud App Security のユーザーアクティビティを調査する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 03/26/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,47 +15,47 @@ ms.assetid: 0f2f971d-10e3-496d-8004-96d9fad71cae
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db4e10c7ecc8e82795d3a75fb915757bfada6bb9
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 98b1811fb17b0ade9a7901761e10c9dbb28d01f3
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568290"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335746"
 ---
-# <a name="investigate-activities-using-the-api"></a>API を使用してアクティビティを調査します。
+# <a name="investigate-activities-using-the-api"></a>API を使用してアクティビティを調査する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は、プログラムでサービスと対話できるように完全にサポートされている REST API を提供します。
+Microsoft Cloud App Security には、サービスをプログラムで操作できるようにするための完全にサポートされた REST API が用意されています。
 
-Microsoft Cloud App Security Api を使用して、接続されているクラウド アプリ間で、ユーザーによって実行されたアクティビティを調査することができます。 
+Microsoft Cloud App Security Api を使用して、接続されたクラウドアプリ全体でユーザーが実行するアクティビティを調査できます。 
 
-大量のデータ (5,000 を超えるアクティビティ) の取得とスキャンは、Cloud App Security アクティビティ API のモードが最適化されます。 API は、すべての結果のスキャンが完了するまで繰り返しクエリ アクティビティ データをスキャンします。 
+Cloud App Security アクティビティ API モードは、大量のデータ (5000 アクティビティを超える) のスキャンと取得のために最適化されています。 API スキャンは、すべての結果がスキャンされるまで、アクティビティデータに対して繰り返しクエリを実行します。 
 
 > [!NOTE] 
-> 大量のアクティビティと大規模な展開は、私たちにを使用することを推奨、 [SIEM エージェント](siem.md)アクティビティをスキャンします。
+> 大量のアクティビティと大規模なデプロイの場合は、アクティビティのスキャンに[SIEM エージェント](siem.md)を使用することをお勧めします。
 
-**アクティビティのスキャン API を使用するには。**
+**アクティビティスキャン API を使用するには:**
 
-1. データに対するクエリを実行します。
-1. 単一のスキャンで扱われることよりも多くのレコードがある場合は、戻り値を持つコマンドが表示されます`nextQueryFilters`実行する必要があります。 このコマンドは、クエリのすべての結果が返されるまでをスキャンするたびに表示されます。
+1. データに対してクエリを実行します。
+1. 1回のスキャンで一覧表示されているよりも多くのレコードがある場合は、@no__t 0 の return コマンドを実行する必要があります。 このコマンドは、クエリがすべての結果を返すまでスキャンするたびに取得されます。
  
  
 **要求本文のパラメーター**:
-- 「フィルター」:フィルターは、要求は、すべての検索フィルターを使用してオブジェクトを参照してください[アクティビティ フィルター](activity-filters.md)詳細についてはします。 調整する、クエリの制限を含めることを確認要求を避けるには、最後の日のアクティビティをクエリや、特定のアプリをフィルター処理などです。
-- "isScan":ブール値。 スキャン モードを有効にします。
-- "sortDirection":並べ替え方向を指定できる値は"asc"と"desc" 
-- "sortField":フィールドは、アクティビティの並べ替えに使用します。 有効な値は次のとおりです。 
-    - 日付 - アクティビティが発生し、日付 (これは、既定値です)。
-    - 作成したアクティビティが保存されたときのタイムスタンプ。
-- "limit":整数。 500 ~ 5000 で、スキャン モード (既定値は 500)。 すべてのデータをスキャンするために使用するイテレーションの数を制御します。 
+- "filters": 要求のすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、「[アクティビティフィルター](activity-filters.md) 」を参照してください。 要求が調整されないようにするには、クエリに制限を含めてください。たとえば、最後の日のアクティビティに対してクエリを実行したり、特定のアプリをフィルター処理したりすることができます。
+- "isScan": Boolean。 スキャンモードを有効にします。
+- "sortDirection": 並べ替えの方向、可能な値は "asc" と "desc" です。 
+- "sortField": アクティビティの並べ替えに使用されるフィールドです。 次の値をとります。 
+    - 日付-アクティビティが発生した日付 (既定値)。
+    - created-アクティビティが保存されたときのタイムスタンプ。
+- "limit": 整数。 スキャンモードでは、500と 5000 (既定値は 500) です。 すべてのデータをスキャンするために使用する反復処理の回数を制御します。 
 
 **応答パラメーター**:
-- "data": 返されるデータ。 最大レコード数が"limit"各反復処理されます。 多くのレコードがプルされることがある場合 (hasNext = true)、最後にいくつかのレコードをすべてのデータが 1 回だけ表示されていることを確実に削除されます。
-- "hasNext":ブール値。 データを別のイテレーションが必要かどうかを示します。
-- “nextQueryFilters”:別のイテレーションが必要な場合、連続する JSON クエリ実行するにはが含まれています。 これは、次回の要求に「フィルター」パラメーターとして使用します。
+- "data": 返されるデータ。 には、各反復処理のレコード数が "制限" されます。 プルするレコードが多い場合 (hasNext = true)、すべてのデータが1回だけ表示されるように、最後のいくつかのレコードが削除されます。
+- "hasNext": Boolean。 データの別の反復処理が必要かどうかを示します。
+- "nextQueryFilters": 別のイテレーションが必要な場合は、実行する連続する JSON クエリが含まれています。 次の要求では、これを "filters" パラメーターとして使用します。
 
-次の Python の例では、Exchange Online から過去 1 日からすべてのアクティビティを取得します。
+次の Python の例では、Exchange Online から過去1日のすべてのアクティビティを取得します。
 
       import requests
       import json
@@ -89,7 +89,7 @@ Microsoft Cloud App Security Api を使用して、接続されているクラ�
         print('Got {} records in total'.format(len(records)))
         
  
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  

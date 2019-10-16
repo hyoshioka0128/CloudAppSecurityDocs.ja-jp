@@ -2,9 +2,9 @@
 title: クラウド アプリのアカウントの表示 - Cloud App Security | Microsoft Docs
 description: この記事では、接続されたアプリからのアカウントの確認に関する情報を提供します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/10/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,20 +15,20 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 86dad8f925f3ffd95a36787112482625c10c23d1
-ms.sourcegitcommit: 917d8cf85ac0b58a3b1788067c2ff92101eb3ccf
+ms.openlocfilehash: dd496f1aacaffedf16bc409f31fcc28a24c4ba68
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67237166"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335550"
 ---
 # <a name="accounts"></a>[アカウント]
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントが Cloud App Security によって検出されると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
-管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **ユーザーおよびアカウント**ページによって接続されているクラウド アプリケーションから取得されたエンティティの包括的な詳細を提供します。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
+管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **[ユーザーとアカウント]** ページには、接続されたクラウドアプリケーションからプルされたエンティティに関する包括的な詳細情報が表示されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -79,7 +79,7 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
 - **ユーザー名**: 特定のユーザーにフィルター処理することができます。 
 
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しい問題を作成することもできます。](https://premier.microsoft.com/)  

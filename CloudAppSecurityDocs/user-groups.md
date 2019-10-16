@@ -2,9 +2,9 @@
 title: Cloud App Security で接続されているアプリからユーザー グループをインポートする
 description: この記事では、接続されているアプリから Cloud App Security にユーザー グループをインポートする方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 12/14/2018
 ms.topic: conceptual
 ms.collection: M365-security-compliance
@@ -15,16 +15,16 @@ ms.assetid: 87b831ef-5977-4df8-bed3-3ee54a8adbb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7b5ec7e2ce37442b81838f7577cf4e11b260b09d
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: cef7e5743d591cd1a9b4bf7912eddb598dbfb148
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568746"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72335988"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>接続されているアプリからユーザー グループをインポートする
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 API コネクタを使用してアプリを接続するとき、Microsoft Cloud App Security を使用し、たとえば、Office 365 や Azure Active Directory からユーザー グループをインポートできます。
 2 種類のユーザー グループがあります。 
@@ -46,7 +46,7 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 ## <a name="how-to-import-user-groups"></a>ユーザー グループをインポートする方法
 
-1. メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、**[ユーザー グループ]** を選択します。
+1. メニュー バーで設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックし、 **[ユーザー グループ]** を選択します。
 2. **[ユーザー グループのインポート]** をクリックします。
 
    ![ユーザー グループのインポート](./media/user-groups-add.png)
@@ -55,9 +55,9 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 4. インポートするグループを選択します。 利用できるグループの一覧は、アプリ自体のすべての既存ユーザー グループの一覧になります。 新しいグループを追加する場合、アプリ自体でそれを直接追加する必要があります。 その後、グループがここのリストに表示されたら、それを選択します。
 5. グループのサイズによっては、インポートに最大 1 時間かかることがあります。 インポート プロセスがかんりょうしたときにメールで通知するオプションを選択できます。
 6. クリックして **インポート**します。 グループをインポートすると、Cloud App Security は Active Directory Connect と同様にグループ メンバーを自動同期します。
-7. インポートが完了すると、**[ユーザー グループ]** ページから、特定のグループをクリックし、グループのすべてのメンバーの一覧を表示できます。 グループのメンバーをクリックして、特定のアカウントの詳細にドリルダウンします。 ユーザーやユーザーのアクティビティのグラフなど、ユーザーが使用しているアプリや、アカウントの概要を見ることができます。
+7. インポートが完了すると、 **[ユーザー グループ]** ページから、特定のグループをクリックし、グループのすべてのメンバーの一覧を表示できます。 グループのメンバーをクリックして、特定のアカウントの詳細にドリルダウンします。 ユーザーやユーザーのアクティビティのグラフなど、ユーザーが使用しているアプリや、アカウントの概要を見ることができます。
 
-グループをインポートすると、**[アクティビティ ログ]** で調査したり、ポリシーを作成したりするときのフィルターとしてグループを選択できます。 
+グループをインポートすると、 **[アクティビティ ログ]** で調査したり、ポリシーを作成したりするときのフィルターとしてグループを選択できます。 
 
 > [!NOTE]
 > - あるユーザー グループのインポート後に実行されたアクティビティにのみ、そのユーザー グループのメンバーにより実行されているというタグが付けられます。
@@ -66,7 +66,7 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 ユーザー グループ フィルターの使用方法については、「[アクティビティ](activity-filters.md)」を参照してください。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
