@@ -2,20 +2,20 @@
 title: 危険性の高いユーザーを調査する | Microsoft Docs
 description: このチュートリアルでは、ハイブリッド環境全体で、Azure ATP を統合することで Microsoft Cloud App Security で危険性の高いユーザーを調査するプロセスについて説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
+author: shsagir
+ms.author: shsagir
 ms.date: 07/02/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 284470013b01b7af96f2e8b0b271b00bf7a7ff4b
-ms.sourcegitcommit: 7eecf2f863c410abe0ba6eafd65777973de011cb
+ms.openlocfilehash: d7373fb53984b84095fb08522f2f1922c9a0b947
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/18/2019
-ms.locfileid: "69573011"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336132"
 ---
 # <a name="tutorial-investigate-risky-users"></a>チュートリアル: 危険性の高いユーザーを調査する
 

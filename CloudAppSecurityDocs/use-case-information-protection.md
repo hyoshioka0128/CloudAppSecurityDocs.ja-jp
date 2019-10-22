@@ -2,9 +2,9 @@
 title: Azure Information Protection 分類ラベルを自動的に適用する
 description: このチュートリアルでは、Microsoft Cloud App Security で Azure Information Protection 分類ラベルを自動的に適用する方法について説明します。
 keywords: ''
-author: rkarlin
-ms.author: rkarlin
-manager: rkarlin
+author: shsagir
+ms.author: shsagir
+manager: shsagir
 ms.date: 3/5/2019
 ms.topic: tutorial
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f3c3afbf03acca812b47388c956ab22dbffd5dd0
-ms.sourcegitcommit: 9f0c562322394a3dfac7f1d84286e673276a28b1
+ms.openlocfilehash: 2bf268c1591a66dd19d933a62d94807ddbbb2cc1
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65568714"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336124"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>チュートリアル: Azure Information Protection 分類ラベルを自動的に適用する
 
@@ -60,18 +60,18 @@ Box アカウントに格納されているファイルでクレジット カー
 
 1. Box に格納されているすべての機密データを暗号化するポリシーを設定して、Box に格納するデータの保護を開始します。
 
-    1. **[コントロール]** タブの [**[ポリシー]**](control-cloud-apps-with-policies.md) をクリックします。 
+    1. **[コントロール]** タブの [ **[ポリシー]** ](control-cloud-apps-with-policies.md) をクリックします。 
 
     2. **[ポリシーの作成]** をクリックして **[ファイル ポリシー]** を選択します。
 
     3. *Box データ保護* ポリシーを呼び出します。
 
     4. **[このポリシーの対象となるファイルのためのフィルターを作成]** で、個人の機密データを対象に設定します。
-        - たとえば、**[親フォルダー]** を Box の**顧客データ**と同じになるように選択し、**[所有者]** を財務チームと同じになるように選択します。
+        - たとえば、 **[親フォルダー]** を Box の**顧客データ**と同じになるように選択し、 **[所有者]** を財務チームと同じになるように選択します。
 
-    5. そのフォルダー内で、クレジット カード情報を含むファイルを探します。 **[コンテンツ検査方法]** で、**[組み込み DLP]**、**[事前設定した式に一致するファイルを含める]**、**[すべての国: ファイナンス: クレジット カード番号]** の順に選択します。
+    5. そのフォルダー内で、クレジット カード情報を含むファイルを探します。 **[コンテンツ検査方法]** で、 **[組み込み DLP]** 、 **[事前設定した式に一致するファイルを含める]** 、 **[すべての国: ファイナンス: クレジット カード番号]** の順に選択します。
 
-    6. **[ガバナンス]** で、**[Box]** セクションを開き、**[分類ラベルの適用]** を選択します。 適用するラベルを選択します。
+    6. **[ガバナンス]** で、 **[Box]** セクションを開き、 **[分類ラベルの適用]** を選択します。 適用するラベルを選択します。
 
     7. [Cloud App Security は Azure Information Protection と統合されている](azip-integration.md)ため、データの保護に使用される分類ラベルを既存の一覧から選択できます。
 
