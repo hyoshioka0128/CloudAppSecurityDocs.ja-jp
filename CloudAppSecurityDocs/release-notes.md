@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 97d006399582e653322910803aaeec04f74582d0
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: f9aa6d02b22719fa23d76ef619461a273e267740
+ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997422"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72336216"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -106,6 +106,9 @@ Cloud App Security に、AWS のセキュリティ ベスト プラクティス�
 - **注意: TLS 1.0 と 1.1 のサポートは 9 月 8 日に終了します**  
 Microsoft は、クラス最高レベルの暗号化を提供するため、すべてのオンライン サービスをトランスポート層セキュリティ (TLS) 1.2 以降に移行しています。 そのため、2019 年 9 月 8 日以降、Cloud App Security では TLS 1.0 と 1.1 がサポートされなくなり、これらのプロトコルを使用した接続はサポートされません。 変更による影響の詳細については、[Microsoft のブログ記事](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/End-of-support-for-TLS-1-0-and-1-1-in-Microsoft-Cloud-App/ba-p/770507)を参照してください。
 
+- **強化された対話型サインイン アクティビティのロジック (段階的なロールアウト)**  
+Azure Active Directory のサインイン アクティビティが対話型であるかどうかを識別する新しいロジックを段階的にロールアウトしています。 新しいロジックでは、Cloud App Security の機能が強化され、ユーザーが開始したサインイン アクティビティのみを表示するようになっています。
+
 ## <a name="cloud-app-security-release-154"></a>Cloud App Security リリース 154
 
 リリース日: 2019 年 7 月 21 日
@@ -166,6 +169,8 @@ Cloud App Security で、ファイル ポリシーの**ごみ箱**ガバナン�
 Cloud App Security で、Google ドライブの**ごみ箱**ガバナンス アクションがサポートされるようになりました。このガバナンス アクションを利用すると、Google ドライブのファイルをごみ箱フォルダーに移動することができます。
 - **アプリ管理者とグループ管理者の役割に対する新しいアクセス許可**  
 "*アプリ/インスタンス管理者*" と "*ユーザー グループ管理者*" の役割は読み取り専用アクセスをサポートするようになりました。
+- **レガシ認証のサインイン アクティビティ (段階的なロールアウト)**  
+Cloud App Security で、ActiveSync などの従来のプロトコルを使用する Azure Active Directory のサインイン アクティビティが表示されるようになりました。 これらのサインイン アクティビティは、アクティビティ ログに表示され、ポリシーの構成時に使用できます。
 
 ## <a name="cloud-app-security-release-150"></a>Cloud App Security リリース 150
 
