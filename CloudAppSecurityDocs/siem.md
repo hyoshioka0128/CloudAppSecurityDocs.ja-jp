@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 89b93b84caff9563e4d19769704abe6cc7c4705e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: aaef9d6ed48cffb92aa7e83c0ae11788a37c9e1e
+ms.sourcegitcommit: 0826dd4ddc17258c0ef4baaec06cee1d05fd2115
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084937"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749632"
 ---
 # <a name="siem-integration"></a>SIEM の統合
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security と SIEM サーバーを統合し、接続されたアプリからアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
@@ -37,7 +37,7 @@ SIEM を Cloud App Security と初めて統合した場合、過去 2 日間の�
 SIEM エージェントは組織のネットワークに展開されます。 展開と構成が行われると、Cloud App Security RESTful API を使用して構成を行ったデータの種類 (アラートとアクティビティ) がプルされます。
 ポーリングされるトラフィックはポート 443 の暗号化された HTTPS チャネルを通じて送信されます。
 
-SIEM エージェントは Cloud App Security からデータを取得すると、ローカル SIEM に Syslog メッセージを送信します。 Cloud App Security では、セットアップ中に指定されたネットワーク公正が使用されます (TCP または UDP とカスタム ポート)。 
+SIEM エージェントは Cloud App Security からデータを取得すると、ローカル SIEM に Syslog メッセージを送信します。 Cloud App Security では、セットアップ中に指定されたネットワーク公正が使用されます (TCP または UDP とカスタム ポート)。
 
 ![SIEM 統合アーキテクチャ](./media/siem-architecture.png)
 
@@ -53,19 +53,19 @@ SIEM との統合は次の 3 つの手順で行われます。
 2. JAR ファイルをダウンロードし、サーバーで実行します。
 3. SIEM エージェントが動作しているか検証します。
 
-### <a name="prerequisites"></a>前提条件
+### <a name="prerequisites"></a>必要条件
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
-- OS:Windows または Linux
-- CPU:2
-- ディスク領域:20 GB
-- RAM:2 GB
+- OS: Windows または Linux
+- CPU: 2
+- ディスク領域: 20 GB
+- RAM: 2 GB
 - サーバーは Java 8 を実行している必要があります。 これより古いバージョンはサポートしていません。
 - [ネットワーク要件](network-requirements.md)で説明されているとおりにファイアウォールを設定する
 
 ## <a name="integrating-with-your-siem"></a>SIEM との統合
 
-### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1:Cloud App Security ポータルでセットアップする
+### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1: Cloud App Security ポータルでセットアップする
 
 1. Cloud App Security ポータルの設定歯車の下で [セキュリティ拡張機能] をクリックし、 **[SIEM エージェント]** タブをクリックします。
 
@@ -80,7 +80,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 
    ![リモートの Syslog 設定](./media/siem2.png)
 
-6. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。 **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 **[次へ]** をクリックします。 
+6. **[アラート]** と **[アクティビティ]** に対して、SIEM サーバーにエクスポートするデータの種類を選択します。 スライダーを使用してこれらを有効および無効にします。既定では、すべて選択されます。 **[適用先]** ドロップダウンを使用して、SIEM サーバーに特定のアラートとアクティビティのみを送信するようにフィルターを設定することができます。 **[結果の編集とプレビュー]** をクリックし、フィルターが予期したとおりに動作していることを確認します。 **[次へ]** をクリックします。
 
    ![データの種類の設定](./media/siem3.png)
 
@@ -90,7 +90,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 > [!NOTE]
 > 作成した任意のトークンは作成した管理者に属します。 つまり、管理者ユーザーが Cloud App Security から削除されると、トークンが無効になります。
 
-### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2:JAR ファイルをダウンロードし、サーバーで実行する
+### <a name="step-2-download-the-jar-file-and-run-it-on-your-server"></a>手順 2: JAR ファイルをダウンロードし、サーバーで実行する
 
 1. [Microsoft ダウンロード センター](https://go.microsoft.com/fwlink/?linkid=838596) で、[ソフトウェア ライセンス条項](https://go.microsoft.com/fwlink/?linkid=862491)に同意した後、.zip ファイルをダウンロードして解凍します。
 
@@ -102,8 +102,8 @@ SIEM との統合は次の 3 つの手順で行われます。
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
 > - サーバーの起動時に JAR を実行することをお勧めします。
->   - Windows:スケジュールされたタスクとして実行して、**ユーザーがログオンしているかどうかにかかわらず実行する**ようにタスクを構成し、 **[タスクを停止するまでの時間]** チェック ボックスをオフにしたことを確認します。
->   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 例: `java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
+>   - Windows: スケジュールされたタスクとして実行し、**ユーザーがログオンしているかどうかにかかわらず**タスクを実行するように構成し、[次の時間**より長く実行する場合はタスクを停止**する] チェックボックスをオフにします。
+>   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
 
@@ -168,7 +168,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 |      アラート       |          <name>          |                                             一致するポリシー名                                             |
 |      アラート       |        externalId        |                                                    アラート ID                                                     |
 
-### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3:SIEM エージェントが動作しているか検証します。
+### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する
 
 1. Cloud App Security ポータルの SIEM エージェントの状態が **[接続エラー]** または **[切断]** ではないことと、エージェント通知がないことを確認します。 接続が 2 時間以上停止した場合、 **[接続エラー]** と表示されます。 接続の停止時間が 12 時間を超えると、状態が **[切断]** と表示されます。
  ![SIEM が切断されている状態](./media/siem-not-connected.png)
@@ -198,7 +198,7 @@ SIEM エージェントを削除するには、テーブルの SIEM エージェ
 > [!NOTE]
 > この機能はパブリック プレビュー段階です。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)
 
