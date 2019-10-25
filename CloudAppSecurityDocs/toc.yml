@@ -19,6 +19,8 @@
   items:
     - name: はじめに
       href: getting-started-with-cloud-app-security.md
+    - name: ベスト プラクティス
+      href: best-practices.md
 - name: チュートリアル
   items:
     - name: シャドウ IT の検出および管理

@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 2256a6ea3afda0856bd4ec6b088ec64c1cf61b73
-  ms.sourcegitcommit: dc0063b35fe22476581cd5e70c8dbd1e2e2b5c0d
+  ms.openlocfilehash: fd20bf2a372c934f0603ba6cf709a5220c3f91a8
+  ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 09/26/2019
-  ms.locfileid: "71310739"
+  ms.lasthandoff: 10/24/2019
+  ms.locfileid: "72887885"
 landingContent:
 - title: Cloud App Security について
   linkLists:
@@ -67,6 +67,30 @@ landingContent:
       url: risk-score.md
     - text: 検出されたアプリの処理
       url: discovered-apps.md
+- title: ベスト プラクティス
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: クラウド アプリの検出と評価
+      url: best-practices.md#discover-and-assess-cloud-apps
+    - text: クラウド ガバナンス ポリシーを適用する
+      url: best-practices.md#apply-cloud-governance-policies
+    - text: 共有データの公開を制限し、コラボレーション ポリシーを適用する
+      url: best-practices.md#limit-exposure-of-shared-data-and-enforce-collaboration-policies
+    - text: クラウドに格納されている規制対象の機密データを検出、分類、ラベル付け、保護する
+      url: best-practices.md#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud
+    - text: クラウドに格納されているデータに DLP ポリシーとコンプライアンス ポリシーを適用する
+      url: best-practices.md#enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud
+    - text: 管理されていないデバイスまたは危険なデバイスへの機密データのダウンロードをブロックおよび保護する
+      url: best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices
+    - text: リアルタイム セッション制御を適用することにより、外部ユーザーとの共同作業をセキュリティで保護する
+      url: best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls
+    - text: クラウドの脅威、侵害されたアカウント、悪意のある内部関係者、ランサムウェアを検出する
+      url: best-practices.md#detect-cloud-threats-compromised-accounts-malicious-insiders-and-ransomware
+    - text: フォレンジック調査のためにアクティビティの監査証跡を使用する
+      url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
+    - text: IaaS サービスとカスタム アプリをセキュリティで保護する
+      url: best-practices.md#secure-iaas-services-and-custom-apps
 - title: その他のリソース
   linkLists:
   - linkListType: learn
