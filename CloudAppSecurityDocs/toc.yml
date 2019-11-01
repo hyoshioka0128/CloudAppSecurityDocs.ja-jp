@@ -210,8 +210,10 @@
           href: azip-integration.md
         - name: 外部ソリューションと統合する
           items:
-            - name: SIEM の統合
+            - name: 汎用 SIEM の統合
               href: siem.md
+            - name: Azure Sentinel の統合
+              href: siem-sentinel.md
             - name: 外部 DLP 統合
               href: icap-stunnel.md
         - name: プロセスとワークフローを自動化する
