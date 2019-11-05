@@ -14,6 +14,8 @@
           href: editions-cloud-app-security-o365.md
         - name: Azure AD
           href: editions-cloud-app-security-aad.md
+        - name: US Government GCC High
+          href: editions-cloud-app-security-gcc.md
 - name: クイックスタート
   expanded: true
   items:
@@ -117,6 +119,8 @@
           href: connect-dropbox-to-microsoft-cloud-app-security.md
         - name: G Suite の接続
           href: connect-google-apps-to-microsoft-cloud-app-security.md
+        - name: GCP の接続
+          href: connect-google-gcp-to-microsoft-cloud-app-security.md
         - name: Office 365 の接続
           href: connect-office-365-to-microsoft-cloud-app-security.md
         - name: Okta の接続
