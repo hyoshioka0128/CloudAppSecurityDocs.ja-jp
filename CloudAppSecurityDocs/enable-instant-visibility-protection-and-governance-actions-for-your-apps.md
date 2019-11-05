@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9de8c36beed2ffb83152f2ff58da36b897c7026f
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d435d8b12e5cc90de2c8d4816d1f1b93ddb5d0a8
+ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084575"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73463618"
 ---
 # <a name="connect-apps"></a>アプリを接続する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 アプリ コネクタではアプリ プロバイダーの API が使用されるため、Microsoft Cloud App Security による接続先アプリの表示および制御がしやすくなります。
 
@@ -68,24 +68,24 @@ Cloud App Security はシステム管理者権限で展開されているため�
 
 > [!div class="mx-tableFixed"]
 >
-> ||**Office 365**|**Box**|**Okta**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**仕事**|
-> |-|-|-|-|-|-|-|-|-|-|-|
-> |**アカウントの一覧表示**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**グループ**|✔|✔|✔|✔|✔|✔|✔|✔|適用なし|適用なし|
-> |**権限**|✔|✔|プロバイダーはサポートしていません|✔|✔|✔|✔||✔|適用なし|
-> |**ユーザー ガバナンス**|✔|✔||✔|近日中にご利用になれます|近日中にご利用になれます|近日中にご利用になれます||近日中にご利用になれます|近日中にご利用になれます|
-> |**ログオン アクティビティ**|✔|✔|✔|✔|✔|✔|✔|✔|✔|✔|
-> |**ユーザーの利用状況**|✔*|✔|✔|✔ - Google の Business または Enterprise が必要|Partial|Salesforce Shield でサポート|✔|適用できません|✔|✔|
-> |**管理者アクティビティ**|✔|✔|✔|✔|一部|✔|✔|✔|✔|✔|
-> |**定期的なファイル スキャン**|✔|✔|適用できません|✔|✔|✔|✔|適用できません|||
-> |**ほぼリアルタイムのファイル スキャン**|✔|✔|適用なし|✔ - Google の Business または Enterprise が必要|||近日中にご利用になれます||✔||
-> |**コントロールの共有**|✔|✔|適用できません|✔|適用できません||✔||✔||
-> |**検疫**|✔|✔|適用できません|近日中にご利用になれます|||近日中にご利用になれます||適用なし|適用なし|
-> |**アプリのアクセス許可の表示**|✔|プロバイダーはサポートしていません|適用できません|✔||✔|プロバイダーはサポートしていません||適用なし|適用なし|
-> |**アプリのアクセス許可の取り消し**|✔||適用できません|✔||✔|適用なし||適用なし|適用なし|
-> |**Azure Information Protection ラベルの適用**|✔|✔||✔|||||適用なし|適用なし|
+> ||**Office 365**|**Box**|**Okta**|**GCP**|**G Suite**|**Service Now**|**Salesforce**|**Dropbox**|**AWS**|**Webex**|**仕事**|
+> |-|-|-|-|-|-|-|-|-|-|-|-|
+> |**アカウントの一覧表示**|✔|✔|✔|G Suite の接続に関する件名|✔|✔|✔|✔|✔|✔|✔|
+> |**グループ**|✔|✔|✔|G Suite の接続に関する件名|✔|✔|✔|✔|✔|適用できません|適用できません|
+> |**権限**|✔|✔|プロバイダーはサポートしていません|G Suite の接続に関する件名|✔|✔|✔|✔||✔|適用できません|
+> |**ユーザー ガバナンス**|✔|✔||G Suite の接続に関する件名|✔|近日中にご利用になれます|✔|近日中にご利用になれます||近日中にご利用になれます|近日中にご利用になれます|
+> |**ログオン アクティビティ**|✔|✔|✔|G Suite の接続に関する件名|✔|✔|✔|✔|✔|✔|✔|
+> |**ユーザーの利用状況**|✔*|✔|✔|✔|✔ - Google の Business または Enterprise が必要|一部サポート|Salesforce Shield でサポート|✔|適用できません|✔|✔|
+> |**管理者アクティビティ**|✔|✔|✔|✔|✔|一部サポート|✔|✔|✔|✔|✔|
+> |**定期的なファイル スキャン**|✔|✔|適用できません||✔|✔|✔|✔|適用できません|||
+> |**ほぼリアルタイムのファイル スキャン**|✔|✔|適用できません||✔ - Google の Business または Enterprise が必要|||近日中にご利用になれます||✔||
+> |**コントロールの共有**|✔|✔|適用できません||✔|適用できません||✔||✔||
+> |**検疫**|✔|✔|適用できません||近日中にご利用になれます|||近日中にご利用になれます||適用できません|適用できません|
+> |**アプリのアクセス許可の表示**|✔|プロバイダーはサポートしていません|適用できません||✔||✔|プロバイダーはサポートしていません||適用できません|適用できません|
+> |**アプリのアクセス許可の取り消し**|✔||適用できません||✔||✔|適用できません||適用できません|適用できません|
+> |**Azure Information Protection ラベルの適用**|✔|✔|||✔|||||適用できません|適用できません|
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - アプリによっては、IP アドレスをホワイト リストに追加して Cloud App Security によるログ収集や、Cloud App Security コンソールへのアクセスを可能にする必要がある場合があります。 詳細については、「[ネットワーク要件](network-requirements.md)」をご覧ください。
 
@@ -96,16 +96,17 @@ Cloud App Security はシステム管理者権限で展開されているため�
 
 アプリ コネクタを使用するには、特定のアプリごとに、次のものがあることを確認する必要があります。
 
-| アプリ | ライセンスの種類 | ユーザー |
+| アプリ | ライセンスの種類 | User |
 |-----|--------------|------|
 | Azure | | グローバル管理者 |
 | AWS | | 新しく作成されたユーザー |
-| ボックス | Enterprise | 管理者として Box に接続することを強くお勧めします。共同管理者として接続すると、部分的なデータしか表示されません。 共同管理者として接続する場合は、すべてのアクセス許可を選択してください。 |
-| Dropbox | Business/Enterprise | 管理 |
-| G Suite | G Suite Business または Enterprise を推奨<br /><br /> G Suite Enterprise (最低必要) | スーパー管理者 |
+| ボックス | Enterprise | Box に管理者として接続することを強くお勧めします。Coadmin として接続すると、データの部分的な可視性だけが得られます。 共同管理者として接続する場合は、すべてのアクセス許可を選択してください。 |
+| ドロップボックス | Business/Enterprise | [管理] |
+| GCP | | 「 [Connect GCP の前提条件](connect-google-gcp-to-microsoft-cloud-app-security.md#prerequisites)」を参照してください。 |
+| G Suite | G Suite Business または Enterprise を推奨<br /><br />G Suite Enterprise (最低必要) | スーパー管理者 |
 | Office 365 | | グローバル管理者 |
-| Okta | Enterprise (評価版ではない) | 管理 |
-| Salesforce | | 管理 |
+| Okta | Enterprise (評価版ではない) | [管理] |
+| Salesforce | | [管理] |
 | ServiceNow | Eureka 以降 | Admin + RestAPI ロール |
 | Webex | | 管理者 + コンプライアンス管理者 |
 | Workday | | [接続 Workday の前提条件](connect-workday-to-microsoft-cloud-app-security.md#prerequisites)を確認する |
@@ -115,7 +116,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 Cloud App Security は Azure に展開され、[ExpressRoute](https://azure.microsoft.com/documentation/articles/expressroute-introduction/) に完全に統合されます。 検出ログのアップロードを含む、Cloud App Security アプリとのすべての通信、および Cloud App Security に送信されるトラフィックは、ExpressRoute の**パブリック ピアリング**経由でルーティングされるため、待機時間、パフォーマンス、およびセキュリティが改善されます。 お客様側で設定を行う必要はありません。
 パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 

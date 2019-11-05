@@ -15,12 +15,12 @@ ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e8be0a2cd23a23d223fff12e956eb7152fa9fa14
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ba9c6c4251942214cd6a88fa697d431105eb4abc
+ms.sourcegitcommit: daddb755a7eb4e26df11e2f8f1c6bafd7e37e578
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335620"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73591859"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 
@@ -52,7 +52,7 @@ Cloud App Security は、次の Office 365 アプリをサポートしていま�
 >- Exchange メールボックスの監査ログは、Exchange Online のユーザー アクティビティをログに記録する前に、ユーザーのメールボックスごとに有効にする必要があります ([Exchange メールボックスのアクティビティ](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)に関するページをご覧ください)。
 >- Office アプリが有効になっている場合、Office 365 の一部であるグループも、特定の Office アプリから Cloud App Security にインポートされます。たとえば、SharePoint が有効になっている場合、Office 365 グループは SharePoint グループとしてもインポートされます。
 >- そこからログを取得するには [PowerBI で監査を有効にする](https://powerbi.microsoft.com/documentation/powerbi-admin-auditing/)必要があります。 監査を有効にすると、Cloud App Security はログの取得を開始します (24 時間から 72 時間の遅延があります)。
->- そこからログを取得するには、 [Dynamincs 365 の監査を有効](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing-in-dynamics-365-for-customer-engagement/)にする必要があります。 監査を有効にすると、Cloud App Security はログの取得を開始します (24 時間から 72 時間の遅延があります)。
+>- そこからログを取得するには、 [Dynamics 365 で監査を有効](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing#enable-auditing)にする必要があります。 監査を有効にすると、Cloud App Security はログの取得を開始します (24 時間から 72 時間の遅延があります)。
 >- Active Directory オンプレミス環境のユーザーと自動的に同期するように Azure Active Directory が設定されている場合、オンプレミス環境の設定が Azure AD 設定をオーバーライドし、 **[ユーザーの停止]** というガバナンス アクションが元に戻されます。
 >- Azure AD サインインアクティビティの場合、Cloud App Security には、ActiveSync などのレガシプロトコルからの対話型サインインアクティビティとサインインアクティビティのみが含まれます。 非対話型のサインインアクティビティは、Azure AD 監査ログで確認できます。
 
