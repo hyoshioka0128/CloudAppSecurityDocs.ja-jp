@@ -15,19 +15,18 @@ ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ab6a8d276cdd3ce1963be2e5a0c28b42bc8eeaa6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a5b75eb8a376a83791f44986b446b8a22ed8d832
+ms.sourcegitcommit: 474cc4e6874224295931089af0cc8c5d93916627
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335794"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612230"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
 *適用対象: Microsoft Cloud App Security*
 
-お使いの環境で検出されたアプリの一覧を確認したら、次の方法で、望ましくないアプリの使用から環境を守ることができます。
-
+環境内で検出されたアプリの一覧を確認したら、次の方法で安全な**アプリ (承認** **済み) を**承認するか、望ましくないアプリを禁止することで、環境をセキュリティで保護することができます。
 
 ## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認 
 
