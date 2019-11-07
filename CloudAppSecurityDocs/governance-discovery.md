@@ -5,22 +5,21 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: e451031e-4764-411a-b366-73a49d4f25df
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a5b75eb8a376a83791f44986b446b8a22ed8d832
-ms.sourcegitcommit: 474cc4e6874224295931089af0cc8c5d93916627
+ms.openlocfilehash: 49fb3555da13a013655850b089f590821e3e7cb3
+ms.sourcegitcommit: 2a52a0f00d2c8317964d4e15aca8925ccd107a38
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612230"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73650917"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
@@ -28,18 +27,18 @@ ms.locfileid: "73612230"
 
 環境内で検出されたアプリの一覧を確認したら、次の方法で安全な**アプリ (承認** **済み) を**承認するか、望ましくないアプリを禁止することで、環境をセキュリティで保護することができます。
 
-## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認 
+## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認
 
 特定の危険なアプリを非承認にすることができます。それには、行の終わりにある 3 つの点をクリックします。 次に、 **[Unsanction]\(非承認\)** を選択します。 アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にしたアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
 
-![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)  
+![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)
 
 承認または非承認にするアプリが一覧になっている場合、チェックボックスを使用して管理するアプリを選択してから、アクションを選択します。
 
 承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
 
 > [!NOTE]
-> テナントで Zscaler NSS を使用している場合、承認されていないとマークされているアプリはすべて自動的に Cloud App Security によってブロックされます。このため、ブロッキング スクリプトの作成に関する以下のセクションは必要ありません。 詳細については、[Zscaler との統合](zscaler-integration.md)に関するページをご覧ください。
+> テナントで Zscaler NSS または iboss が使用されている場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Zscaler との統合](zscaler-integration.md)」と「 [Cloud App Security を iboss と統合](iboss-integration.md)する」を参照してください。
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
 
@@ -47,27 +46,25 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
 1. Cloud Discovery ダッシュボードで、ブロックするすべてのアプリに **[承認されていない]** のタグを付けます。
 
-   ![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)  
+    ![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)
 
-2. タイトル バーで 3 つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。 
+2. タイトル バーで 3 つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。
 
-   ![ブロック スクリプトを生成する](./media/generate-block-script.png)  
+    ![ブロック スクリプトを生成する](./media/generate-block-script.png)
 
-3. **[Generate block script (ブロック スクリプトの生成)]** で、ブロック スクリプトを生成するアプライアンスを選択します。 
+3. **[Generate block script (ブロック スクリプトの生成)]** で、ブロック スクリプトを生成するアプライアンスを選択します。
 
-   ![ブロック スクリプトのポップ アップを生成する](./media/generate-block-script-popup.png)  
+    ![ブロック スクリプトのポップ アップを生成する](./media/generate-block-script-popup.png)
 
-4. その後、[スクリプトの生成] ボタンをクリックして、承認されていないすべてのアプリに対してブロック スクリプトを作成します。 既定では、エクスポートされた日付と選択したアプライアンス タイプを基にファイルの名前が付けられます。 *2017-02-19_CAS_Fortigate_block_script.txt* はファイル名の例です。 
+4. その後、[スクリプトの生成] ボタンをクリックして、承認されていないすべてのアプリに対してブロック スクリプトを作成します。 既定では、エクスポートされた日付と選択したアプライアンス タイプを基にファイルの名前が付けられます。 *2017-02-19_CAS_Fortigate_block_script.txt* はファイル名の例です。
 
-   ![ブロック スクリプトのボタンを生成する](./media/generate-block-script-button.png)  
+   ![ブロック スクリプトのボタンを生成する](./media/generate-block-script-button.png)
 
 5. アプライアンスに作成されたファイルをインポートします。
 
+## <a name="next-steps"></a>次のステップ
 
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>次のステップ  
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
-  
+[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)

@@ -5,37 +5,36 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/7/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: ff73a393-da43-4954-8b02-38d2a48d39b3
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: ab709236d98ee33fbf6ebf7b2f9d5cdfcb5a32ab
-ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
+ms.openlocfilehash: ee4e89108ecb6e7db6e95f4d5c0a7730fc1ee07c
+ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71996004"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73649266"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必要条件
 
-- OS:**Windows 10** (作成者の更新プログラム) または windows Server**バージョン1709以降**
+- OS: **windows 10** (作成者の更新プログラム) または windows Server**バージョン1709以降**
 
-- ディスク領域:250 GB
+- ディスク領域: 250 GB
 
-- CPU:2
+- CPU: 2
 
-- RAM:4 GB
+- RAM: 4 GB
 
 - [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
@@ -52,48 +51,47 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 - 仮想マシンの I/O パフォーマンス - ログ コレクターのディスクにログが書き込まれる速度が決まります。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 1 時間あたり 50 GB を超えるのが普通である場合は、複数のログ コレクターにトラフィックを分割することをお勧めします。
 
-## <a name="set-up-and-configuration"></a>セットアップと構成  
+## <a name="set-up-and-configuration"></a>セットアップと構成
 
 ### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
-1. **[自動ログ アップロード]** 設定ページに移動します。 
+1. **[自動ログ アップロード]** 設定ページに移動します。
 
-     」を参照します。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
+    に設定する必要があります。 Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
-      ![設定アイコン](./media/settings-icon.png)
+    ![設定アイコン](./media/settings-icon.png)
 
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-     」を参照します。 **[データ ソースの追加]** をクリックします。
+    に設定する必要があります。 **[データ ソースの追加]** をクリックします。
 
-      ![データ ソースを追加する](./media/add-data-source.png)
+    ![データ ソースを追加する](./media/add-data-source.png)
 
-     b. プロキシまたはファイアウォールの **[名前]** を付けます。
+    b. プロキシまたはファイアウォールの **[名前]** を付けます。
 
-      ![ubuntu1](./media/ubuntu1.png)
+        ![ubuntu1](./media/ubuntu1.png)
 
-     c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+    c. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
 
-     d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
+    d. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
 
-     e. **[レシーバーの種類]** に **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、 **[Syslog – TLS]** のいずれかを設定します。
+    e. **[レシーバーの種類]** を、 **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、または **[Syslog – TLS]** に設定します。
 
-     >[!NOTE]
-     >多くの場合、セキュリティで保護された転送プロトコル (FTPS および Syslog – TLS) と統合するには、追加の設定またはファイアウォールやプロキシが必要です。
+    >[!NOTE]
+    >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
 
-      f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。 ネットワーク デバイスごとに専用のデータ ソースを設定することをお勧めします。これにより、次のことができるようになります。
-     - 調査目的で、各デバイスの状態を個別に監視する。
-     - 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
+    f. ネットワークのトラフィックを検出するために使用できるログの取得先であるファイアウォールおよびプロキシそれぞれに対して、この手順を繰り返します。 ネットワークデバイスごとに専用のデータソースを設定して、調査を目的として、各デバイスの状態を個別に監視することをお勧めします。
+        - 各デバイスが異なるユーザー セグメントで使用されている場合に、デバイスごとのシャドウ IT の検出を行う。
 
 3. 画面上部の **[ログ コレクター]** タブに移動します。
 
-   」を参照します。 **[ログ コレクターを追加]** をクリックします。
+   に設定する必要があります。 **[ログ コレクターを追加]** をクリックします。
 
    b. ログ コレクターに **[名前]** を付けます。
 
    c. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
 
-   d. コレクターに接続するすべての**データ ソース**を選択し、 **[更新]** をクリックして構成を保存し、次の展開手順を確認します。
+   d. コレクターに接続するすべての**データ ソース**を選び、 **[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
 
    ![ubuntu2](./media/ubuntu2.png)
 
@@ -101,44 +99,44 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
    > - 1 つのログ コレクターで複数のデータ ソースを処理できます。
    > - Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
 
-4. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](./media/copy-icon.png)。 これは後で必要になります。
+4. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピーアイコン、![クリップボードにコピー アイコン](./media/copy-icon.png)を使用できます。 これは後で必要になります。
 
-5. 予想されるデータ ソースの構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
+5. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
 
    ![ログ コレクターを作成する](./media/windows7.png)
 
-### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – マシンのオンプレミス展開
-次の手順は、Windows での展開について説明したものです。 その他のプラットフォームの展開手順は、少し異なります。
+### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
+
+次の手順は、Windows での展開について説明したものです。 他のプラットフォームの展開手順は若干異なります。
 
 1. 管理者として Windows コンピューターで PowerShell ターミナルを開きます。
 
-2. Windows Docker インストーラーをダウンロードするには、次のコマンドを使用します。<br>
- `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
-<br>インストーラーが Microsoft によって署名されていることを検証する場合は、[インストーラーの署名の検証](#validate-signature)に関するページを参照してください。
+2. 次のコマンドを実行して、Windows Docker インストーラーの PowerShell スクリプトファイルをダウンロードします。 `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-3. PowerShell スクリプトの実行を有効にするには、`Set-ExecutionPolicy RemoteSigned` を実行します。
+    インストーラーが Microsoft によって署名されていることを確認するには、「[インストーラー署名の検証](#validate-signature)」を参照してください。
 
-4. 実行: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>
-これにより、Docker クライアントがご使用のコンピューターにインストールされます。 ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Docker クライアントが Linux コンテナーを使用するように設定されていることを確認します。**
+3. PowerShell スクリプトの実行を有効にするには、`Set-ExecutionPolicy RemoteSigned` を実行します
 
-5. 再起動のたびに、インストーラーを保存したディレクトリから、次を再実行します: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`<br>  
+4. 実行: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` します。これにより、Docker クライアントがコンピューターにインストールされます。 ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Docker クライアントが Linux コンテナーを使用するように設定されていることを確認します。**
+
+5. 再起動が完了したら、コンピューターの管理者として PowerShell ターミナルを開き、次のように再実行します。 `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 6. インストールが完了する前に、先ほどコピーした実行コマンドを貼り付ける必要があります。
 
 7. コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 ポータルで生成された実行コマンドをコピーすることで、構成をインポートします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
 
-           (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
+    `(echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter`
 
    ![ログ コレクターを作成する](./media/windows7.png)
 8. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-次のメッセージが表示されるはずです: **"Finished successfully!" (正常に終了しました)**
+"**Finished successfully!** " というメッセージが表示される必要があります。
 
   ![ubuntu8](./media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のように入力します。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
 
     BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
@@ -148,7 +146,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
  ![ubuntu9](./media/ubuntu9.png)
 
-**[ガバナンス ログ]** に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
+**ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
 展開中に問題が発生した場合は、「[Troubleshooting Cloud Discovery](troubleshooting-cloud-discovery.md)」(Cloud Discovery のトラブルシューティング) を参照してください。
 
@@ -156,27 +154,29 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。 
+1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。
 2. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
-3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
+3. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。
 
-![カスタムの継続的レポート](./media/custom-continuous-report.png)
+    ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
 ### 省略可能: インストーラーの署名の検証 <a name="validate-signature"></a>
 
 Docker のインストーラーが Microsoft によって署名されていることを確認するには:
-1. ファイルを右クリックし、 **[プロパティ]** を選択します。
-2. **[デジタル署名]** をクリックして、 **[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。  
-3. **[署名者名]** で **Microsoft Corporation** が唯一のエントリであることを確認します。  
 
-![デジタル署名が有効](./media/digital-signature-successful.png)
+1. ファイルを右クリックし、 **[プロパティ]** を選択します。
+2. **[デジタル署名]** をクリックして、 **[This digital signature is OK]\(このデジタル署名は問題ありません\)** となっていることを確認します。
+3. **[署名者名]** で **Microsoft Corporation** が唯一のエントリであることを確認します。
+
+    ![デジタル署名が有効](./media/digital-signature-successful.png)
 
 デジタル署名が有効でない場合は、 **[このデジタル署名は有効ではありません]** と表示されます。
 
 ![デジタル署名が無効](./media/digital-signature-unsuccessful.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ログコレクターの FTP 構成](log-collector-ftp.md)
+> [!div class="nextstepaction"]
+> [ログコレクターの FTP 構成](log-collector-ftp.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
