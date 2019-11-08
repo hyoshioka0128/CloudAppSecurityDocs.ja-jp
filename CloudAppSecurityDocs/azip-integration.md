@@ -15,16 +15,16 @@ ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d9c8385efac05367213fed4bd484509a9ba76a25
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e9f6fe5bd55f94777901748778e40b7e00ba07ae
+ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083787"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73732009"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security を利用すれば、ファイル ポリシーのガバナンス アクションとして Azure Information Protection 分類ラベルをファイルに自動的に適用できます。保護は適用することも、適用しないこともできます。 その適用した分類ラベルを Cloud App Security ポータル内でフィルター処理して、ファイルを詳しく調べることもできます。 分類を使用すると、クラウド内の機密データが確認しやすくなり、管理しやすくなります。 Cloud App Security への Azure Information Protection の統合は、1 つのチェックボックスを選択するだけで簡単に行うことができます。
 
@@ -41,11 +41,11 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 > [!NOTE]
 > この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P1 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
-Cloud App Security でラベルを使用するには、ラベルをグローバルポリシーの一部として発行する必要があります。 Azure Information Protection を使用している場合は、Azure Information Protection ポータルを使用してラベルを発行する必要があります。 統合ラベルに移行した場合は、Office 365 のセキュリティとコンプライアンスセンターを使用してラベルを発行する必要があります。
+Cloud App Security でラベルを使用するには、ラベルをポリシーの一部として公開する必要があります。 Azure Information Protection を使用している場合は、Azure Information Protection ポータルを使用してラベルを発行する必要があります。 統合ラベルに移行した場合は、Office 365 のセキュリティとコンプライアンスセンターを使用してラベルを発行する必要があります。
 
 Cloud App Security では現在、次の種類のファイルに Azure Information Protection 分類ラベルを適用できます。
 
@@ -137,7 +137,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
    ![ラベルを適用する](./media/aip-gov-action.png)
 
 > [!NOTE]
-> ファイル ポリシーを介して、Azure Information Protection のラベルを自動的に適用する機能は強力です。 お客様が多数のファイルに誤ってラベルを適用することを防ぐための安全策として、アプリごと、テナントごとに 1 日に実行できる**ラベルの適用**操作は 100 回に制限されています。 1 日の上限に達すると、ラベルの適用操作は一時的に停止し、翌日 (UTC 12 時 00分 を過ぎてから) に自動的に再開します。 テナントの上限を引き上げるには、サポートチケットを開きます。
+> ファイル ポリシーを介して Azure Information Protection のラベルを自動的に適用する機能は、強力な機能です。 多数のファイルにラベルを誤って適用することを防ぐための安全対策として、各テナントでアプリごとに 1 日に実行できる**ラベルの適用**アクションに 100 回という上限があります。 1 日の上限に達すると、ラベルの適用アクションは一時的に停止し、次の日 (UTC 12:00 を過ぎた時点) になると自動的に続行します。 テナントの上限を引き上げるには、サポートチケットを開きます。
 
 ### <a name="control-file-exposure"></a>ファイルの公開を制限する
 
@@ -186,7 +186,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 
 [Cloud App Security と Azure Information Protection の統合](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
