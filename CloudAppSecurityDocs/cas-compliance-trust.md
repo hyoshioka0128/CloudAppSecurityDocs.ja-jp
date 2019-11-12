@@ -5,16 +5,16 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: overview
-ms.date: 8/21/2019
+ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 84c33ba29a0d63e5476186a417aae749f6f97825
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: de625987873d60b99f39579ea6694dacccfd4479
+ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71083816"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462097"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータのセキュリティとプライバシー
 
@@ -141,7 +141,7 @@ Microsoft Cloud App Security では、Azure Active Directory を使用して、�
 
 ### <a name="permissions"></a>アクセス許可
 
-Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 Office 365 および Azure Active Directory のグローバル管理者ロールとセキュリティ管理者ロールには、Cloud App Security へのフル アクセス権があります。Cloud App Security の閲覧者には読み取りアクセス権があります。 [詳細情報](https://docs.microsoft.com/cloud-app-security/manage-admins)
+Microsoft Cloud App Security はロール ベースのアクセス制御に対応しています。 Office 365 および Azure Active Directory のグローバル管理者ロールとセキュリティ管理者ロールには、Cloud App Security へのフル アクセス権があります。Cloud App Security の閲覧者には読み取りアクセス権があります。 [詳細情報](/cloud-app-security/manage-admins)
 
 ## <a name="customer-controls-for-organizational-compliance"></a>組織のコンプライアンスを確保するためのお客様独自のコントロール
 
@@ -151,13 +151,17 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 ### <a name="anonymization"></a>匿名化
 
-**Cloud Discovery** レポートを匿名化することを選択できます。 ログ ファイルが **Microsoft** Cloud App Security にアップロードされた後、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 特定のセキュリティ調査を行うために、実際のユーザー名を解決することができます。 個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。 [詳細情報](https://docs.microsoft.com/cloud-app-security/cloud-discovery-anonymizer)
+**Cloud Discovery** レポートを匿名化することを選択できます。 ログ ファイルが **Microsoft** Cloud App Security にアップロードされた後、すべてのユーザー名情報が暗号化されたユーザー名に置き換えられます。 特定のセキュリティ調査を行うために、実際のユーザー名を解決することができます。 個人データは、テナントごとに専用のキーで AES-128 を使用して暗号化されます。 [詳細情報](/cloud-app-security/cloud-discovery-anonymizer)
+
+## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Cloud App Security 米国政府機関 GCC High のお客様に対するセキュリティとプライバシー
+
+米国政府機関 GCC High のお客様に対する Cloud App Security のコンプライアンス基準とデータの場所について詳しくは、「[米国政府機関サービス向け Enterprise Mobility + Security の説明](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 
 [Cloud App Security 概要](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-[Cloud App Security ドキュメント](https://docs.microsoft.com/cloud-app-security/)
+[Cloud App Security ドキュメント](/cloud-app-security/)
 
 [Cloud App Security へのサインアップ](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1)
 
