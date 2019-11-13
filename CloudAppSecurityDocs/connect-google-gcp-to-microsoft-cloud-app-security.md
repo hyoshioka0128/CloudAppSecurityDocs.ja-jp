@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 80bc690185f9161137bc34c59e307894b05969a3
-ms.sourcegitcommit: 7c8e798e1a15a0b37899fa5e3f8ea29f6721d0a8
+ms.openlocfilehash: 27d32ca6daf7221d84b0cb0942d42c3555049e43
+ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73536732"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73934482"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Microsoft Cloud App Security への Google Cloud Platform の接続 (プレビュー)
 
@@ -53,11 +53,10 @@ ms.locfileid: "73536732"
 
     ![GCP のプロジェクトの作成ダイアログを示すスクリーンショット](media/connect-gcp-create-project.png)
 
-> [!NOTE]
-> プロジェクトが作成されたら、次のことを確認します。
->
-> * 上部のドロップダウンで専用のプロジェクトが選択されます。
-> * Pub/Sub API が有効になっています。 を有効にするには、[Pub/Sub] タブにアクセスします。
+### <a name="enable-the-pubsub-api"></a>Pub/Sub API を有効にする
+
+1. 専用プロジェクトに切り替えます。
+1. [Pub/Sub] タブにアクセスします。サービスアクティベーションメッセージが表示されます。
 
 ### <a name="create-a-dedicated-service-account-for-the-integration"></a>統合用の専用サービスアカウントを作成する
 
