@@ -7,16 +7,16 @@ ms.service: cloud-app-security
 ms.topic: conceptual
 ms.date: 8/25/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8c9421ae5eee4dee6518b12a7a2023a46bf14b51
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: b1dd96caca407472bcb00dff744d7bafeba3e69d
+ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085107"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74153242"
 ---
 # <a name="microsoft-cloud-app-security-webinars"></a>ウェビナーの Microsoft Cloud App Security
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この6部構成のウェビナーシリーズでは、クラウド環境のセキュリティを強化するために役立つ Microsoft Cloud App Security 主なユースケースと展開のベストプラクティスについて説明します。
 
@@ -31,11 +31,12 @@ ms.locfileid: "71085107"
 | **Information Protection**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2101487) | -クラウドデータの保護<br>-リアルタイムの監視と制御<br>-アプリの接続、データの種類の識別、環境の監査、ガバナンスアクションを使用した修復に関するベストプラクティス |
 | **脅威の検出**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2101574) | -クラウドの脅威からの保護<br>-クラウドアプリ間の脅威の検出<br>-マルウェアの検出<br>-OAuth アプリのアクセス許可<br>-ポリシーでのアラートの構成 |
 | **アプリの条件付きアクセス制御**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2102100) | -アプリの条件付きアクセス制御<br>-Azure Active Directory 条件付きアクセスの統合<br>-環境の保護 |
+| **リアルタイム監視 & コントロールの拡張**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2110389) | -セッション制御 & リバースプロキシインフラストラクチャ<br>-おすすめアプリとすぐに使えるコントロール<br>-アプリのオンボード (新規、カスタム、オンプレミスのアプリ)<br>-任意のアプリのコントロールを拡張する |
 | **アプリ検出とログコレクターの構成**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2102101) | -検出のしくみ<br>-シャドウ IT 検出ライフサイクル<br>-セキュリティで保護された web ゲートウェイとの統合の拡張<br>-ログコレクターを使用した検出 |
 | **サードパーティ製アプリの接続**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2102200) | サードパーティ製アプリの接続に使用するもの:<br>-Api<br>-OAuth<br>-アプリの条件付きアクセス制御<br>-Azure Active Directory アプリケーションプロキシ |
 | **Microsoft Flow との自動化と統合**<br>[今すぐ見る](https://go.microsoft.com/fwlink/?linkid=2102102) | Microsoft Flow による Cloud App Security の拡張による高度な修復シナリオの自動化 |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 [電子書籍を読む](e-books.md)

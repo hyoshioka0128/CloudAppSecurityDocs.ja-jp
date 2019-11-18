@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/17/2019
+ms.date: 11/17/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: b938e1e0-356d-4cc6-ba4a-862c0c59d709
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c8381ef44b428994fca0ac4e71cef2deae8cf3c0
-ms.sourcegitcommit: b592226ec8a07b4bc87720ea8611cd6edc8d7f8c
+ms.openlocfilehash: ce2668847523ac63ef014202def3a72e959a0b7f
+ms.sourcegitcommit: c47d26b9628079e8c7e73ff0182fdafb75e600e7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463651"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143390"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
 
@@ -38,6 +38,7 @@ ms.locfileid: "73463651"
 
 1. **[新しいプロジェクト]** 画面で、プロジェクトに  
 **Cloud App Security** 、 **[作成]** をクリックします。
+
     ![google2](media/google2.png)
 
 1. プロジェクトが作成されたら、ツール バーの **[Google Cloud Platform]** をクリックします。 上部にあるドロップダウン リストで適切なプロジェクトが選択されていることを確認します。

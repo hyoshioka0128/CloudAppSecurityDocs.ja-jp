@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9e505044d94ce633bdba5f2b684873391d57f772
-ms.sourcegitcommit: 3a44f020c6ae7f6c4956bf53727dfb0e82fd7cf0
+ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
+ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72887944"
+ms.lasthandoff: 11/17/2019
+ms.locfileid: "74143467"
 ---
 # <a name="cloud-app-security-best-practices"></a>Cloud App Security のベストプラクティス
 
@@ -34,7 +34,7 @@ ms.locfileid: "72887944"
 > * [フォレンジック調査のためにアクティビティの監査証跡を使用する](#use-the-audit-trail-of-activities-for-forensic-investigations)
 > * [IaaS サービスとカスタムアプリをセキュリティで保護する](#secure-iaas-services-and-custom-apps)
 
-## <a name="discover-and-assess-cloud-apps"></a>クラウドアプリの検出と評価
+## <a name="discover-and-assess-cloud-apps"></a>クラウド アプリの検出と評価
 
 Cloud App Security と Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) を統合することで、企業ネットワークやセキュリティで保護された web ゲートウェイ以外で Cloud Discovery を使用できるようになります。 ユーザーとコンピューターの情報を組み合わせることで、危険なユーザーやコンピューターを特定し、使用しているアプリを確認し、Microsoft Defender ATP ポータルでさらに調査することができます。
 
@@ -72,7 +72,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 ---
 ---
 
-## <a name="apply-cloud-governance-policies"></a>クラウドガバナンスポリシーを適用する
+## <a name="apply-cloud-governance-policies"></a>クラウド ガバナンス ポリシーを適用する
 
 **ベストプラクティス**: アプリにタグを付けて、ブロックスクリプトをエクスポートする  
 **詳細**: 組織内で検出されたアプリの一覧を確認した後、不要なアプリの使用に対して環境をセキュリティで保護することができます。 承認**済みタグは、組織**によって承認されているアプリと **、未承認のタグが**アプリに適用できます。 検出フィルターを使用して承認されていないアプリを監視したり、オンプレミスのセキュリティアプライアンスを使用して承認されていないアプリをブロックするスクリプトをエクスポートしたりできます。 タグとエクスポートスクリプトを使用すると、安全なアプリへのアクセスのみを許可することで、アプリを整理し、環境を保護することができます。  
@@ -85,7 +85,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 ---
 ---
 
-## <a name="limit-exposure-of-shared-data-and-enforce-collaboration-policies"></a>共有データの公開を制限し、コラボレーションポリシーを適用する
+## <a name="limit-exposure-of-shared-data-and-enforce-collaboration-policies"></a>共有データの公開を制限し、コラボレーション ポリシーを適用する
 
 **ベストプラクティス**: Office 365 に接続する  
 **詳細**: office 365 を Cloud App Security に接続すると、ユーザーのアクティビティ、アクセスしているファイル、および office 365、SharePoint、OneDrive、Teams、Power BI、Exchange、および Dynamics のガバナンスアクションをすぐに確認できます。  
@@ -167,7 +167,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 ---
 ---
 
-## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>クラウドに格納されているデータに DLP ポリシーとコンプライアンスポリシーを適用する
+## <a name="enforce-dlp-and-compliance-policies-for-data-stored-in-the-cloud"></a>クラウドに格納されているデータに DLP ポリシーとコンプライアンス ポリシーを適用する
 
 **ベストプラクティス**: 外部ユーザーと共有されないように機密データを保護する  
 **詳細**: ユーザーが**機密**分類ラベルを持つファイルを組織の外部のユーザーと共有しようとしたときに、そのガバナンスアクションを構成して外部ユーザーを削除しようとしたときに検出するファイルポリシーを作成します。 このポリシーにより、機密データが組織の外に出ることがなくなり、外部ユーザーはアクセスできなくなります。  
@@ -194,7 +194,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 ---
 ---
 
-## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>リアルタイムセッション制御を適用することにより、外部ユーザーとの共同作業をセキュリティで保護する
+## <a name="secure-collaboration-with-external-users-by-enforcing-real-time-session-controls"></a>リアルタイム セッション制御を適用することにより、外部ユーザーとの共同作業をセキュリティで保護する
 
 **ベストプラクティス**: アプリの条件付きアクセス制御を使用して外部ユーザーとのセッションを監視する  
 **詳細**: 環境内のコラボレーションをセキュリティで保護するために、内部ユーザーと外部ユーザーの間のセッションを監視するためのセッションポリシーを作成できます。 これにより、ユーザー間のセッションを監視し、セッションのアクティビティが監視されていることを通知できるだけでなく、特定のアクティビティも制限することができます。 アクティビティを監視するためのセッションポリシーを作成する場合は、監視するアプリとユーザーを選択できます。  
@@ -267,7 +267,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 ---
 ---
 
-## <a name="secure-iaas-services-and-custom-apps"></a>IaaS サービスとカスタムアプリをセキュリティで保護する
+## <a name="secure-iaas-services-and-custom-apps"></a>IaaS サービスとカスタム アプリをセキュリティで保護する
 
 **ベストプラクティス**: AZURE と AWS に接続する  
 **詳細**: これらのクラウドストレージアプリを Cloud App Security に接続することで、脅威検出機能を向上させることができます。 これらのサービスの管理およびサインインアクティビティを監視することで、ブルートフォース攻撃の可能性、特権を持つユーザーアカウントの悪意のある使用、および環境内のその他の脅威について、検出され、通知を受けることができます。 たとえば、Vm の異常な削除や、これらのアプリでの偽装アクティビティなどのリスクを識別できます。  
@@ -278,7 +278,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 
 ---
 
-**ベストプラクティス**: cspm for AZURE と AWS を確認する  
+**ベストプラクティス**: AZURE と AWS のセキュリティ構成の評価を確認する  
 **詳細**: Azure Security Center との統合により、Azure 環境のセキュリティ構成を評価できます。 この評価では、不足している構成とセキュリティ制御に関する推奨事項が提供されます。 これらの推奨事項を確認することで、環境内の異常や潜在的な脆弱性を特定し、Azure セキュリティポータルで関連する場所に直接移動して解決することができます。
 
 AWS を使用すると、セキュリティ構成に関する推奨事項を把握して、クラウドのセキュリティを向上させることができます。 これらの推奨事項を使用して、AWS アカウントのコンプライアンス対応状態を監視できます。  

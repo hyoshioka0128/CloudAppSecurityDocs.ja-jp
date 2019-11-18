@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f9aa6d02b22719fa23d76ef619461a273e267740
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: ac326458d6e0f38c6ae9f8d21adcc0b31d412eed
+ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336216"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73732025"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,47 @@ ms.locfileid: "72336216"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード: 次の URL をフィード リーダーにコピーして貼り付け、このページが更新されたときに通知を受け取ります: `https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-160-and-161"></a>Cloud App Security リリース 160 と 161
+
+リリース日: 2019 年 11 月 3 日
+
+- **Azure Sentinel でのデータの検出 (プレビュー)**  
+Cloud App Security は、Azure Sentinel と統合されました。 アラートと検出データを Azure Sentinel と共有することで、次のような利点があります。
+
+  - より詳細な分析のために、検出データと他のデータ ソースとの相関関係を有効にする。
+
+  - Power BI で、すぐに使えるダッシュボードを使ってデータを表示したり、独自の視覚化を作成したりする。
+
+  - Log Analytics の保持期間が長くなる。
+
+  詳細については、[Azure Sentinel の統合](siem-sentinel.md)に関する記事をご覧ください。
+
+- **Google Cloud Platform コネクタ (プレビュー)**  
+Cloud App Security による IaaS 監視機能は拡張中であり、アマゾン ウェブ サービスと Azure だけでなく、Google Cloud Platform がサポートされるようになりました。 これにより、Cloud App Security ですべての GCP ワークロードをシームレスに接続し、監視できます。 この接続では、次のような、GCP 環境を保護するための一連の強力なツールが提供されます。
+
+  - 管理コンソールと API 呼び出しを通じて実行されるすべてのアクティビティの表示。
+
+  - カスタム ポリシーを作成し、定義済みのテンプレートを使って危険なイベントに対してアラートを生成する機能。
+
+  - 異常検出エンジンは GCP のすべてのアクティビティをカバーしており、あり得ない移動、大量の不審なアクティビティ、新しい国からのアクティビティなど、疑わしい動作を検出すると自動的にアラートが生成されます。
+
+  詳細については、[Microsoft Cloud App Security への Google Cloud Platform の接続](connect-google-gcp-to-microsoft-cloud-app-security.md)に関する記事をご覧ください。
+
+- **新しいポリシー テンプレート**  
+Cloud App Security に、Google Cloud Platform のセキュリティ ベスト プラクティスのためのアクティビティ ポリシー テンプレートが新しく組み込まれました。
+
+- **強化された Cloud Discovery ログ パーサー**  
+Cloud App Security の Cloud Discovery では、さまざまなトラフィック ログを分析して、アプリの順位付けとスコア付けを行います。 Cloud Discovery の組み込みログ パーサーで、Ironport WSA 10.5.1 ログ形式がサポートされるようになりました。
+
+- **セッション制御のカスタマイズ可能なユーザー ランディング ページ**  
+セッション ポリシーが適用されているアプリにユーザーが移動したときに表示されるランディング ページを、管理者がカスタマイズする機能が発表されました。 ご自分の組織のロゴを表示し、表示されるメッセージをカスタマイズできるようになりました。 カスタマイズを開始するには、 **[設定]** ページにアクセスし、 **[Cloud Access App Control]\(クラウド アクセス アプリの制御\)** で **[ユーザーの監視]** を選択します。
+
+- **新しい検出**  
+
+  - **疑わしい AWS ログ サービスの変更 (プレビュー)** :CloudTrail ログ サービスに対してユーザーが変更を加えたときに、アラートを生成します。 たとえば、攻撃者は、その攻撃の痕跡を隠すために、CloudTrail の監査を無効にすることがよくあります。
+
+  - **複数の VM 作成アクティビティ**:ユーザーが、学習済みのベースラインと比較して異常な数の VM 作成アクティビティを実行した場合にアラートが生成されます。 AWS に適用されるようになりました。
 
 ## <a name="cloud-app-security-release-159"></a>Cloud App Security リリース 159
 
@@ -183,7 +224,7 @@ Cloud App Security で、ActiveSync などの従来のプロトコルを使用�
 
 リリース日: 2019 年 5 月 12 日
 
-- **WebEx アプリ コネクタの使用**  Cisco WebEx Teams の新しいアプリ コネクタがパブリック プレビューで使用できるようになりました。 Microsoft Cloud App Security を Cisco WebEx Teams と接続して、そのユーザー、アクティビティ、およびファイルを監視および保護できるようになりました。 詳細については、[WebEx の接続](connect-webex-to-microsoft-cloud-app-security.md)に関するページをご覧ください。
+- **Webex アプリ コネクタの使用**  Cisco Webex Teams の新しいアプリ コネクタがパブリック プレビューで使用できるようになりました。 Microsoft Cloud App Security を Cisco Webex Teams と接続して、そのユーザー、アクティビティ、およびファイルを監視および保護できるようになりました。 詳細については、[Webex の接続](connect-webex-to-microsoft-cloud-app-security.md)に関するページをご覧ください
 
 - **Microsoft データ分類サービスの新しい場所**  [Microsoft データ分類サービス](dcs-inspection.md)が、4 つの新しい場所で利用できるようになりました。オーストラリア、インド、カナダ、日本です。 ご自身の Office テナントがこれらの場所にある場合は、Microsoft Cloud App Security のファイル ポリシーのコンテンツ検査方法として Microsoft データ分類サービスを利用できるようになりました。
 
@@ -266,7 +307,7 @@ Cloud App Security のマルウェア検出機能は、高度なサンドボッ�
 OAuth アプリのページにクエリ候補機能が追加されました。調査テンプレートとして直接利用し、OAuth アプリにフィルター処理を適用できます。 クエリ候補には、管理者によって承認されたアプリなど、危険なアプリを識別するためのカスタム フィルターが含まれています。 保存されたクエリ機能では、アクティビティ ログと検出ページで現在利用可能な保存済みのクエリと同様に、カスタム クエリを将来使用するために保存することができます。
 
 - **Office 365 監査の既定の構成**  
-現在、Cloud App Security で Office 365 アクティビティの監視を有効にするには、[Office のセキュリティ/コンプライアンス センター](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search)での監視を有効にする必要があります。これは、[Office 365 監査機能の変更](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api)によるものです。 この変更は、Cloud App Security で Office 365 の監視をまだ有効にしていない場合にのみ、必要となります。
+現在、Cloud App Security で Office 365 アクティビティの監視を有効にするには、[Office のセキュリティ/コンプライアンス センター](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search)での監視を有効にする必要があります。これは、[Office 365 監査機能の変更](/office/office-365-management-api/office-365-management-activity-api-faq#what-happens-if-i-disable-auditing-for-my-office-365-organization-will-i-still-get-events-via-the-management-activity-api)によるものです。 この変更は、Cloud App Security で Office 365 の監視をまだ有効にしていない場合にのみ、必要となります。
 
 - **Box のサポートの強化**  
 Cloud App Security では、Box に関して 2 つの新しいガバナンス アクションがサポートされるようになりました。
@@ -315,7 +356,7 @@ SharePoint および One Drive 内ですべての人と共有されているフ�
 
 - **新しい Cloud Discovery ロール** (段階的なロールアウト) Cloud App Security では、Cloud Discovery ユーザーに新しい管理者ロールを提供できるようになりました。 管理者ユーザーのアクセス範囲を Cloud App Security ポータル内にある Cloud Discovery の設定とデータのみに設定するために、このロールを使用できます。
 
-- **Microsoft Information Protection の統合ラベルのサポート** (段階的なロールアウト) Cloud App Security では、Microsoft Information Protection の統合ラベルがサポートされるようになりました。 既に [Office 365 Security およびコンプライアンス センターに分類ラベルを移行](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)した顧客に対して、Cloud App Security では、「[Azure Information Protection の統合](azip-integration.md)」に説明されているように、これらのラベルを特定して処理します。
+- **Microsoft Information Protection の統合ラベルのサポート** (段階的なロールアウト) Cloud App Security では、Microsoft Information Protection の統合ラベルがサポートされるようになりました。 既に [Office 365 Security およびコンプライアンス センターに分類ラベルを移行](/azure/information-protection/configure-policy-migrate-labels)した顧客に対して、Cloud App Security では、「[Azure Information Protection の統合](azip-integration.md)」に説明されているように、これらのラベルを特定して処理します。
 
 **PDF ファイルのラベル付けのサポート** (段階的なロールアウト) 統合ラベルを使用している顧客に対して、Cloud App Security では PDF ファイルの自動ラベル付けをサポートするようになりました。
 
@@ -325,7 +366,7 @@ SharePoint および One Drive 内ですべての人と共有されているフ�
 
 - **Windows 上の Docker を使用した自動ログ アップロード**  Cloud App Security で、Docker for Windows を使用して、Windows 10 (Fall Creators Update) および Windows Server バージョン 1709 以降の自動ログ アップロードがサポートされるようになりました。
 詳細およびこの構成の手順については、「[Docker on Windows on-premises](discovery-docker-windows.md)」 (オンプレミスの Windows の Docker) を参照してください。
-- Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 詳細と統合の手順については、[Microsoft Flow との統合](flow-integration.md)に関するページを参照してください。
+- Cloud App Security は [Microsoft Flow](/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 詳細と統合の手順については、[Microsoft Flow との統合](flow-integration.md)に関するページを参照してください。
 
 ## <a name="cloud-app-security-release-137"></a>Cloud App Security リリース 137
 
@@ -349,7 +390,7 @@ Cloud App Security によって、Azure Information Protection の保護ラベ�
 - **アプリのアクセス許可ポリシーでのグループのサポート**  
 Cloud App Security では、アプリを承認したユーザーのグループ メンバーシップに基づいて、より細かくアプリのアクセス許可ポリシーを定義できるようになりました。 たとえば、管理者は、アクセス許可を承認したユーザーが管理者グループのメンバーである場合にのみ、アプリで高いアクセス許可を求める場合に一般的ではないアプリを無効にするポリシーを設定するように決定することができます。
 - **アプリの条件付きアクセス制御では、Azure Active Directory アプリケーション プロキシによってご利用のオンプレミスのアプリと統合できるようになりました**
-  - [Azure AD アプリケーション プロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)では、オンプレミスでホストされている Web アプリにシングル サインオンとセキュリティで保護されたリモート アクセスを提供します。
+  - [Azure AD アプリケーション プロキシ](/azure/active-directory/manage-apps/application-proxy)では、オンプレミスでホストされている Web アプリにシングル サインオンとセキュリティで保護されたリモート アクセスを提供します。
   - これらのオンプレミスの Web アプリは、Azure AD の条件付きアクセスによって Microsoft Cloud App Security にルーティングされ、[アクセス](access-policy-aad.md) ポリシーと[セッション](session-policy-aad.md) ポリシーによってリアルタイムの監視と制御が提供されます。
 
 ## <a name="cloud-app-security-release-133-134-135"></a>Cloud App Security リリース 133、134、135
@@ -573,7 +614,7 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 ## <a name="cloud-app-security-release-116"></a>Cloud App Security リリース 116
 
 2018 年 2 月 4 日のリリース
-- Cloud App Security の異常検出ポリシーが拡張され、ありえない移動、疑わしい IP アドレスからのアクティビティ、複数回のログイン試行の失敗など、新しい**シナリオ ベースの検出**が追加されました。 新しいポリシーは自動的に有効になり、設定不要の脅威検出機能がクラウド環境全体で利用できます。 また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 詳細については、「[行動分析と異常検出を瞬時に取得する](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy)」を参照してください。
+- Cloud App Security の異常検出ポリシーが拡張され、ありえない移動、疑わしい IP アドレスからのアクティビティ、複数回のログイン試行の失敗など、新しい**シナリオ ベースの検出**が追加されました。 新しいポリシーは自動的に有効になり、設定不要の脅威検出機能がクラウド環境全体で利用できます。 また、この新しいポリシーは、調査プロセスを加速し、進行中の脅威を阻止するのに役立つ Cloud App Security 検出エンジンからのさらに多くのデータを公開します。 詳細については、「[行動分析と異常検出を瞬時に取得する](/cloud-app-security/anomaly-detection-policy)」を参照してください。
 
 - 段階的なロールアウト:Cloud App Security では、SaaS アプリをまたいでユーザーとユーザー アカウントが関連付けられるようになりました。 これにより、関連するさまざまな SaaS アプリすべてで、使用したアプリやアカウントに関係なく、ユーザーのすべてのアクティビティを簡単に調査できます。
 
