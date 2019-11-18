@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: e998c613f893791e089c27a5f75daaa579bd3ea6
-  ms.sourcegitcommit: b0361f470e6bdcd0a8a502c5bf1f8a09533eaa14
+  ms.openlocfilehash: 4e09b5a658ad60b5cf38f8f94528469ca6add6fd
+  ms.sourcegitcommit: 02f1992367d6de5c1b2c49935ada3c54167ff757
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/06/2019
-  ms.locfileid: "73649255"
+  ms.lasthandoff: 11/17/2019
+  ms.locfileid: "74153269"
 landingContent:
 - title: Cloud App Security について
   linkLists:
@@ -45,8 +45,6 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: ネットワーク内のシャドウ IT の検出と管理
-      url: tutorial-shadow-it.md
     - text: 危険性の高いユーザーを調査する
       url: tutorial-ueba.md
     - text: 危険な OAuth アプリを調査する
@@ -73,7 +71,7 @@ landingContent:
       url: discovered-apps.md
 - title: ベスト プラクティス
   linkLists:
-  - linkListType: quickstart
+  - linkListType: get-started
     links:
     - text: クラウド アプリの検出と評価
       url: best-practices.md#discover-and-assess-cloud-apps
@@ -95,6 +93,42 @@ landingContent:
       url: best-practices.md#use-the-audit-trail-of-activities-for-forensic-investigations
     - text: IaaS サービスとカスタム アプリをセキュリティで保護する
       url: best-practices.md#secure-iaas-services-and-custom-apps
+- title: シャドウ IT の検出と制御
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: シャドウ IT の検出と特定
+      url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
+    - text: 評価と分析
+      url: tutorial-shadow-it.md##phase-2-evaluate-and-analyze
+    - text: アプリの管理
+      url: tutorial-shadow-it.md#phase-3-manage-your-apps
+  - linkListType: concept
+    links:
+    - text: ダッシュボードの操作
+      url: daily-activities-to-protect-your-cloud-environment.md
+    - text: 検出されたアプリの操作
+      url: discovered-apps.md
+    - text: アプリのリスク スコアの操作
+      url: risk-score.md
+  - linkListType: deploy
+    links:
+    - text: Cloud Discovery のデプロイ
+      url: set-up-cloud-discovery.md
+  - linkListType: how-to-guide
+    links:
+    - text: Microsoft Defender Advanced Threat Protection との統合
+      url: wdatp-integration.md
+    - text: Cloud Discovery を強化する
+      url: cloud-discovery-aad-enrichment.md
+  - linkListType: reference
+    links:
+    - text: クラウド アプリの検出と評価
+      url: best-practices.md#discover-and-assess-cloud-apps
+  - linkListType: video
+    links:
+    - text: 企業ネットワークを超えたシャドウ IT の検出
+      url: https://www.youtube.com/watch?v=f8hbvbY1Hnc
 - title: その他のリソース
   linkLists:
   - linkListType: learn
