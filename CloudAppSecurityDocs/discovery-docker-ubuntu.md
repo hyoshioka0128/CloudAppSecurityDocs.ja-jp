@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2f83f10a3158881a35efa845a8cefe85df64146
-ms.sourcegitcommit: b39dbead19ac8b81e6aad93cf6c454032eeb0858
+ms.openlocfilehash: 12e09ac4a3f7e15aecbdac15c781e59f618850ac
+ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73906612"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203514"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
@@ -29,7 +29,7 @@ ms.locfileid: "73906612"
 
 ## <a name="technical-requirements"></a>技術要件
 
-* OS: Ubuntu 14.04、16.04、18.04RHEL 7.2 以上、または CentOS 7.2 以降 
+* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
 
 * ディスク領域: 250 GB
 
@@ -40,7 +40,7 @@ ms.locfileid: "73906612"
 * [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 > [!NOTE]
-> 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 >
 > ```console
 > docker stop <collector_name>
@@ -63,14 +63,14 @@ ms.locfileid: "73906612"
 
     1. Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
-    ![設定アイコン](./media/settings-icon.png)
+    ![設定アイコン](media/settings-icon.png)
 
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    1. **[データ ソースの追加]** をクリックします。
-    データソース](./media/add-data-source.png) を追加 ![には
-    1. プロキシまたはファイアウォールの **[名前]** を付けます。
-    ![ubuntu1](./media/ubuntu1.png)
+    1. **[データ ソースの追加]** をクリックします。  
+    ![Add a data source](media/add-data-source.png)
+    1. プロキシまたはファイアウォールの **[名前]** を付けます。  
+    ![ubuntu1](media/ubuntu1.png)
     1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
     1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
     1. **[レシーバーの種類]** を、 **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、または **[Syslog – TLS]** に設定します。
@@ -88,20 +88,21 @@ ms.locfileid: "73906612"
     1. **[ログ コレクターを追加]** をクリックします。
     1. ログ コレクターに **[名前]** を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. コレクターに接続するすべての**データ ソース**を選び、 **[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
+    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
-    ![ubuntu2](./media/ubuntu2.png)
+    ![ubuntu2](media/ubuntu2.png)
+
+1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](media/copy-icon.png)
+
+1. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
+
+    ![ログ コレクターを作成する](media/windows7.png)
 
     > [!NOTE]
     >
     > * 1 つのログ コレクターで複数のデータ ソースを処理できます。
     > * Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
-
-1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](./media/copy-icon.png)
-
-1. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
-
-    ![ログ コレクターを作成する](./media/windows7.png)
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
@@ -127,7 +128,7 @@ ms.locfileid: "73906612"
     > [!NOTE]
     > このコマンドでプロキシ証明書の検証に失敗した場合、最初に `curl -k` を使用してコマンドを実行します。
 
-    ![ubuntu5](./media/ubuntu5.png)
+    ![ubuntu5](media/ubuntu5.png)
 
 1. コレクターの構成をインポートすることにより、ホスト マシンにコレクター イメージを展開します。 ポータルで生成された実行コマンドをコピーすることで、構成をインポートします。 プロキシを構成する必要がある場合は、プロキシ IP アドレスとポート番号を追加します。 たとえば、プロキシの詳細が 192.168.10.1:8080 の場合は、次のように実行コマンドを更新します。
 
@@ -135,12 +136,12 @@ ms.locfileid: "73906612"
     (echo 6f19225ea69cf5f178139551986d3d797c92a5a43bef46469fcc997aec2ccc6f) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.2.2.2'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=tenant2.eu1-rs.adallom.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
     ```
 
-    ![ログ コレクターを作成する](./media/windows7.png)
+    ![ログ コレクターを作成する](media/windows7.png)
 
 1. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-「**正常に完了**しました!
-![ubuntu8」というメッセージが表示され](./media/ubuntu8.png)
+You should see the message: **Finished successfully!** 
+![ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
 
@@ -154,7 +155,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 **[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
 
-![ubuntu9](./media/ubuntu9.png)
+![ubuntu9](media/ubuntu9.png)
 
 **ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
@@ -168,11 +169,11 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 1. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 1. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。
 
-![カスタムの継続的レポート](./media/custom-continuous-report.png)
+![カスタムの継続的レポート](media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ログコレクターの FTP 構成](log-collector-ftp.md)
+> [Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)

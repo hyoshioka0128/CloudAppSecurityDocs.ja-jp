@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/11/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 51dccf7966ce34882900124f96557948f7adb69b
-ms.sourcegitcommit: b39dbead19ac8b81e6aad93cf6c454032eeb0858
+ms.openlocfilehash: 4ad5620aaa7ae1643de731d6d4d254be058991ee
+ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/11/2019
-ms.locfileid: "73906618"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203498"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -29,7 +29,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ## <a name="prerequisites"></a>必要条件
 
-* OS: Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
+* OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
 
 * ディスク領域: 250 GB
 
@@ -40,7 +40,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 * [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 > [!NOTE]
-> 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 >
 > ```console
 > docker stop <collector_name>
@@ -63,14 +63,14 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     1. Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
 
-    ![設定アイコン](./media/settings-icon.png)
+    ![設定アイコン](media/settings-icon.png)
 
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    1. **[データ ソースの追加]** をクリックします。
-    データソース](./media/add-data-source.png) を追加 ![には
-    1. プロキシまたはファイアウォールの **[名前]** を付けます。
-      ![ubuntu1](./media/ubuntu1.png)
+    1. **[データ ソースの追加]** をクリックします。  
+    ![Add a data source](media/add-data-source.png)
+    1. プロキシまたはファイアウォールの **[名前]** を付けます。  
+      ![ubuntu1](media/ubuntu1.png)
     1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
     1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
     1. **[レシーバーの種類]** を、 **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、または **[Syslog – TLS]** に設定します。
@@ -88,19 +88,20 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     1. **[ログ コレクターを追加]** をクリックします。
     1. ログ コレクターに **[名前]** を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. コレクターに接続するすべての**データ ソース**を選び、 **[更新]** をクリックして構成を保存します。次の展開手順を参照してください。
-    ![ubuntu2](./media/ubuntu2.png)
+    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.  
+    ![ubuntu2](media/ubuntu2.png)
+
+1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](media/copy-icon.png)
+
+1. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
+
+    ![ログ コレクターを作成する](media/windows7.png)
 
     > [!NOTE]
     >
     > * 1 つのログ コレクターで複数のデータ ソースを処理できます。
     > * Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
-
-1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](./media/copy-icon.png)
-
-1. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
-
-    ![ログ コレクターを作成する](./media/windows7.png)
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--deployment-of-your-machine-in-azure"></a>ステップ 2 – Azure でのマシンの展開
 
@@ -112,7 +113,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     1. マシン ビューで、 **[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
     1. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
-    1. **[受信セキュリティ規則]** にアクセスし、 **[追加]** をクリックして、![Ubuntu Azure](./media/ubuntu-azure.png)
+    1. Go to **Inbound security rules** and click **Add**, ![Ubuntu Azure](media/ubuntu-azure.png)
     1. 次の規則を追加します (**詳細設定**モード)。
 
     |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
@@ -122,7 +123,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     |caslogcollector_syslogs_tcp|601-700|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
     |caslogcollector_syslogs_udp|514-600|UDP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
 
-    ![Ubuntu Azure の規則](./media/inbound-rule.png)
+    ![Ubuntu Azure の規則](media/inbound-rule.png)
 
 1. マシンに戻って、 **[接続]** をクリックし、マシン上のターミナルを開きます。
 
@@ -134,11 +135,11 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     curl -o /tmp/MCASInstallDocker.sh https://adaprodconsole.blob.core.windows.net/public-files/MCASInstallDocker.sh && chmod +x /tmp/MCASInstallDocker.sh; /tmp/MCASInstallDocker.sh
     ```
 
-    ![Ubuntu Azure のコマンド](./media/ubuntu-azure-command.png)
+    ![Ubuntu Azure のコマンド](media/ubuntu-azure-command.png)
 
 1. Cloud App Security ポータルの **[Create new log collector] \(新しいログ コレクターの作成\)** ウィンドウで、ホスト マシンでコレクター構成をインポートするコマンドをコピーします。
 
-    ![Ubuntu Azure](./media/windows7.png)
+    ![Ubuntu Azure](media/windows7.png)
 
 1. ログ コレクターを展開するコマンドを実行します。
 
@@ -146,11 +147,11 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     (echo db3a7c73eb7e91a0db53566c50bab7ed3a755607d90bb348c875825a7d1b2fce) | docker run --name MyLogCollector -p 21:21 -p 20000-20099:20000-20099 -e "PUBLICIP='192.168.1.1'" -e "PROXY=192.168.10.1:8080" -e "CONSOLE=mod244533.us.portal.cloudappsecurity.com" -e "COLLECTOR=MyLogCollector" --security-opt apparmor:unconfined --cap-add=SYS_ADMIN --restart unless-stopped -a stdin -i microsoft/caslogcollector starter
     ```
 
-    ![Ubuntu プロキシ](./media/ubuntu-proxy.png)
+    ![Ubuntu プロキシ](media/ubuntu-proxy.png)
 
 1. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!** ” という結果を受け取ります。
 
-    ![ubuntu8](./media/ubuntu8.png)
+    ![ubuntu8](media/ubuntu8.png)
 
 ### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
 
@@ -164,7 +165,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 **[ログ コレクター]** の表でコレクターの状態をチェックし、状態が **[接続済み]** であることを確認します。 **[作成済み]** の場合は、ログ コレクターの接続と解析が完了していない可能性があります。
 
-![ubuntu9](./media/ubuntu9.png)
+![ubuntu9](media/ubuntu9.png)
 
 **ガバナンス ログ**に移動して、ログがポータルに定期的にアップロードされていることを確認することもできます。
 
@@ -178,11 +179,11 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 1. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 1. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
 
-     ![カスタムの継続的レポート](./media/custom-continuous-report.png)
+     ![カスタムの継続的レポート](media/custom-continuous-report.png)
 
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ログコレクターの FTP 構成](log-collector-ftp.md)
+> [Log collector FTP configuration](log-collector-ftp.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
