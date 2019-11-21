@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: da2f55e9f3be36d34bc7398258d96e28aae9b4b5
-ms.sourcegitcommit: 3996c1fe9a258c925e18c744447cb1574cce85d1
+ms.openlocfilehash: 3ce27d2efc4535d8ee594145c27ce3948c6be90d
+ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72323876"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74203814"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
 
@@ -29,18 +29,22 @@ ms.locfileid: "72323876"
 
 ## <a name="prerequisites"></a>必要条件
 
-Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 セキュリティグループには、次のドメインに対して次のアクセス許可が選択されている必要があります。
+Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 Workday 統合システムユーザーを使用することをお勧めします。 セキュリティグループには、次のドメインセキュリティポリシーに対して次のアクセス許可を選択する必要があります。
 
-| 機能領域 | Domain | サブ | レポート/タスクの権限 | 統合権限 |
+| 機能領域 | ドメインセキュリティポリシー | サブドメインのセキュリティポリシー | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
-| System (システム) | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
-| System (システム) | セキュリティ管理 | | 表示、変更 | Get、Put |
-| System (システム) | システム監査 | | 表示 | 取得 |
+| システム | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
+| システム | セキュリティ管理 | | 表示、変更 | Get、Put |
+| システム | システム監査 | | 表示 | 取得 |
 | スタッフ | Worker データ: スタッフ | Worker データ: パブリックワーカーレポート | 表示 | 取得 |
 
-Workday 統合ユーザー、セキュリティグループ、およびアクセス許可を設定する方法の詳細については、「アクセス[許可の統合または外部エンドポイント](https://go.microsoft.com/fwlink/?linkid=2103212)へのアクセス」の手順 1 ~ 4 を参照してください。
+> [!NOTE]
+>
+> * セキュリティグループのアクセス許可を設定するために使用するアカウントは、Workday 管理者である必要があります。
+> * アクセス許可を設定するには、「機能領域のドメインセキュリティポリシー」を検索し、各機能領域 ("システム"/"スタッフ") を検索して、表に記載されているアクセス許可を付与します。
+> * すべてのアクセス許可が設定されたら、"保留中のセキュリティポリシーの変更をアクティブにする" を検索し、変更を承認します。
 
-Workday 統合システムユーザーを使用することをお勧めします。
+Workday 統合ユーザー、セキュリティグループ、およびアクセス許可を設定する方法の詳細については、「アクセス[許可の統合または外部エンドポイント](https://go.microsoft.com/fwlink/?linkid=2103212)へのアクセス」の手順 1 ~ 4 を参照してください。
 
 ## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>OAuth を使用して Workday を Cloud App Security に接続する方法
 
@@ -69,11 +73,11 @@ Workday 統合システムユーザーを使用することをお勧めします
 
 1. 登録したら、次のパラメーターをメモして、 **[完了]** をクリックします。
 
-    - クライアント ID
-    - クライアントシークレット
-    - Workday REST API エンドポイント
-    - トークンエンドポイント
-    - 承認エンドポイント
+    * クライアント ID
+    * クライアントシークレット
+    * Workday REST API エンドポイント
+    * トークンエンドポイント
+    * 承認エンドポイント
 
     ![API クライアントの登録を確認するスクリーンショット](media/connect-workday-register-api-client-confirm.png)
 
@@ -102,7 +106,7 @@ Workday 統合システムユーザーを使用することをお勧めします
 > [!NOTE]
 > Workday に接続すると、接続する7日間のイベントが表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

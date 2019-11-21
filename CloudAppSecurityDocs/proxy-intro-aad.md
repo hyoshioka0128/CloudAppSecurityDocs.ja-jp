@@ -14,25 +14,26 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d26be7ba74d2eaf7d6f2baeb66ae9824a387ad02
-ms.sourcegitcommit: 37e7568ae5b78fb52bc7bd66261a2d2fbf50c1dd
+ms.openlocfilehash: 6e15775be1435c47b9f2df1cc73f3e4b5aa0ddd4
+ms.sourcegitcommit: 4fb014e3563b8254635440f24e10b250af66c7f2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185167"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239945"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[次へ:アプリの条件付きアクセス制御の展開 »](proxy-deployment-aad.md)
+[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
 
 現代の職場では、多くの場合、犯行後にご利用のクラウド環境の状態を把握できるだけでは十分ではありません。 従業員が意図的に、あるいは不注意からデータや組織を危険にさらす前に、違反や漏洩をリアルタイムで防止することが望まれます。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
 
 > [!NOTE]
-> Cloud App Security のアプリの条件付きアクセス制御を使用するには、[Azure Active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)と Microsoft Cloud App Security のアクティブなサブスクリプションが必要です。
->
+> Cloud App Security アプリの条件付きアクセス制御を使用するには、 [Azure Active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)、およびアクティブな Microsoft Cloud App Security サブスクリプションまたは Office 365 E5 ライセンスが必要です。 Office 365 E5 に含まれるおすすめアプリの一覧については、「 [office 365 のおすすめアプリ](#O365-apps)」を参照してください。
+
+Office 365 E5 ライセンス。 サポートされている Office 365 E5 に含まれるアプリの一覧については、「Office 365 のおすすめアプリ」を参照してください。
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -40,17 +41,17 @@ ms.locfileid: "71185167"
 
 Conditional Access App Control では、アクセスおよびセッション ポリシーに基づいて、ユーザー アプリのアクセスとセッションをリアルタイムで監視して制御できます。 Cloud App Security ポータル内では、フィルターをさらに調整し、ユーザーに対して実行されるアクションを設定するために、アクセス ポリシーとセッション ポリシーが利用されます。 アクセス ポリシーとセッション ポリシーでは次のことができます。
 
-- **データを禁止する**:管理されていないデバイスなど、機密性の高いドキュメントのダウンロード、切り取り、コピー、および印刷をブロックできます。
+- **データを禁止**する: 管理されていないデバイスなど、機密性の高いドキュメントのダウンロード、切り取り、コピー、および印刷をブロックできます。
 
-- **ダウンロードの保護**:機密性の高いドキュメントのダウンロードをブロックするのではなく、ドキュメントにラベルを付け、Azure Information Protection で保護するように要求することができます。 この操作により、ドキュメントが保護され、ユーザーアクセスが危険な可能性のあるセッションで制限されます。
+- **ダウンロード時の保護**: 機密性の高いドキュメントのダウンロードをブロックするのではなく、ドキュメントにラベルを付けて Azure Information Protection で保護するように要求できます。 この操作により、ドキュメントが保護され、ユーザーアクセスが危険な可能性のあるセッションで制限されます。
 
-- **ラベルのないファイルをアップロードできないようにする**:機密ファイルがアップロードされ、配布されて、他のユーザーによって使用される前に、ファイルに適切なラベルと保護が設定されていることを確認することが重要です。 機密コンテンツが含まれているラベルのないファイルが、ユーザーがコンテンツを分類するまでアップロードされないようにすることができます。
+- ラベルが付けられてい**ないファイルのアップロードを禁止**する: 機密性の高いファイルがアップロード、配布、および使用される前に、ファイルに適切なラベルと保護が設定されていることを確認することが重要です。 機密コンテンツが含まれているラベルのないファイルが、ユーザーがコンテンツを分類するまでアップロードされないようにすることができます。
 
-- **コンプライアンス対応のユーザーセッションの監視**:危険性の高いユーザーはアプリにサインインするときに監視され、アクションはセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。
+- **コンプライアンス対応のためにユーザーセッションを監視**する: 危険なユーザーがアプリにサインインすると、そのアクションがセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。
 
-- **[アクセスのブロック]** : いくつかのリスク要因に応じて、特定のアプリとユーザーのアクセスを細かくブロックできます。 たとえば、デバイス管理の形式としてクライアント証明書を使用している場合は、ブロックできます。
+- **アクセスをブロック**する: いくつかのリスク要因に応じて、特定のアプリとユーザーのアクセスを細かくブロックできます。 たとえば、デバイス管理の形式としてクライアント証明書を使用している場合は、ブロックできます。
 
-- **カスタムアクティビティをブロック**する:アプリケーションによっては、Microsoft Teams や余裕のようなアプリケーションで機密性の高いコンテンツを含むメッセージを送信するなど、リスクを伴う固有のシナリオがあります。 このようなシナリオでは、機密性の高いコンテンツのメッセージをスキャンし、リアルタイムでブロックできます。
+- **カスタムアクティビティをブロック**する: アプリケーションによっては、Microsoft Teams や余裕のようなアプリケーションで機密性の高いコンテンツを含むメッセージを送信するなど、リスクを伴う固有のシナリオがあります。 このようなシナリオでは、機密性の高いコンテンツのメッセージをスキャンし、リアルタイムでブロックできます。
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
@@ -109,7 +110,7 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
 
-アプリの条件付きアクセス制御では現在のところ、シングル サインオンで構成された SAML アプリと Open ID Connect アプリ、[Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) で構成され、オンプレミスでホストされている Web アプリがサポートされています。
+アプリの条件付きアクセス制御は、シングルサインオンで構成された SAML および Open ID Connect アプリと、 [Azure AD アプリプロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)で構成されたオンプレミスでホストされている web アプリを現在サポートしています。
 > [!NOTE]
 > アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
@@ -125,7 +126,7 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 > [!NOTE]
 > Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブ クライアント アプリケーションとブラウザーは、セッション制御を使用して構成した場合、アクセスできなくなります。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
 
-<a name="featured-apps"></a>Azure AD とネイティブに統合することにより、SAML または Open ID Connect で構成されているすべてのアプリを自己オンボードにすることができます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
+<a name="featured-apps"></a>SAML または Open ID Connect を使用して構成されているすべてのアプリを Azure AD とネイティブに統合することにより、自分で任意のアプリをオンボードできます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -147,7 +148,7 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 - Power BI
 - Salesforce
 - ServiceNow
-- SharePoint Online
+- SharePo条件付きアクセスt Onl条件付きアクセスe
 - Slack
 - Tableau
 - Microsoft Teams (プレビュー)
@@ -156,13 +157,25 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 - Workplace by Facebook
 - Yammer (プレビュー)
 
+### <a name="a-ido365-apps-office-365-featured-apps"></a>Office 365 のおすすめアプリの <a id="O365-apps" />
+
+Office 365 Cloud App Security でサポートされているおすすめアプリの一覧を次に示します。
+
+- Exchange Online
+- OneDrive for Business
+- Power BI
+- SharePo条件付きアクセスt Onl条件付きアクセスe
+- Microsoft Teams (プレビュー)
+- Yammer (プレビュー)
+
 おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 関心をお持ちのオンボード ユース ケースもお送りください。
 
->[!div class="step-by-step"]
-[次へ:アプリの条件付きアクセス制御の展開 »](proxy-deployment-aad.md)
+> [!div class="step-by-step"]
+> [次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
 
 ## <a name="next-steps"></a>次の手順
 
-[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
+> [!div class="nextstepaction"]
+> [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
 
 [Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
