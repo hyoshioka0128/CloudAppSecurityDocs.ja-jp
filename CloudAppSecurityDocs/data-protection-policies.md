@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7391832b1be0ed9b50d54f22ee324879fd588d38
-ms.sourcegitcommit: 207543b3f7d0489b1275d20c3543964bc6525d1a
+ms.openlocfilehash: 1689bccc5c2dd55ca719159697986f7c317be1af
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71995987"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461374"
 ---
 # <a name="file-policies"></a>ファイル ポリシー
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 ファイル ポリシーでは、クラウド プロバイダーの API を使用して、さまざまな自動プロセスを適用できます。 ポリシーを設定することにより、継続的なコンプライアンスのスキャン、法的な電子情報開示タスク、一般公開された機密コンテンツの DLP、その他多数のユース ケースを実現できます。 Cloud App Security は、20 を超えるメタデータ フィルター (アクセス レベルやファイルの種類など) に基づいてファイルの種類を監視できます。
 
@@ -41,7 +41,7 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 
 * 自動化されたガバナンスおよび修復アクション。 詳細については、「[制御](control.md)」を参照してください。
     > [!NOTE]
-    > ファイルごとに適用できるガバナンスアクションは1つだけです。このため、ファイルに複数のファイルポリシー一致がある場合、最初にトリガーされたポリシーのガバナンスアクションが適用されます。 たとえば、ファイルポリシーによってファイルに AIP ラベルが既に適用されている場合、2番目のファイルポリシーでは、ファイルを管理者検疫に移動することはできません。
+    > Only one governance action can be applied per file; hence, where there are multiple file policy matches for a file, the governance action of the first triggered policy will be applied. For example, if a file policy has already applied an AIP label to a file, a second file policy cannot move the file to admin quarantine.
 
 ポリシーを有効化すると、クラウド環境を継続的にスキャンし、コンテンツおよびコンテキスト フィルターに一致するファイルを特定して、要求された自動アクションを適用します。 これらのポリシーは、保存中の情報や新しいコンテンツの作成時に違反を検出して修復します。 ポリシーは、リアルタイムのアラートまたはコンソールから生成されたレポートを使用して監視できます。
 
@@ -92,7 +92,7 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 
 1. Cloud App Security で一致が検出された場合に実行する **[ガバナンス]** アクションを選択します。
 
-1. 作成したポリシーは、 **[ファイル ポリシー]** タブに表示されます。ポリシーはいつでも編集して、フィルターを調整したり、自動アクションを変更したりできます。 ポリシーは作成時に自動的に有効化され、すぐにクラウド ファイルのスキャンを開始します。  ガバナンス アクションを設定する場合には十分に注意してください。ファイルへのアクセス許可が失われ、元に戻せなくなる可能性があります。 複数の検索フィールドを使用して、ポリシーを実行する対象ファイルのみが表示されるようにフィルター条件を絞り込むことをお勧めします。 フィルター条件を絞り込むほど、適切な結果が得られます。 フィルター セクションの **結果の編集とプレビュー** ボタンを使用すると結果を確認できます。
+1. Once you’ve created your policy, you can view it in the **File policy** tab. You can always edit a policy, calibrate its filters, or change the automated actions. ポリシーは作成時に自動的に有効化され、すぐにクラウド ファイルのスキャンを開始します。  ガバナンス アクションを設定する場合には十分に注意してください。ファイルへのアクセス許可が失われ、元に戻せなくなる可能性があります。 複数の検索フィールドを使用して、ポリシーを実行する対象ファイルのみが表示されるようにフィルター条件を絞り込むことをお勧めします。 フィルター条件を絞り込むほど、適切な結果が得られます。 フィルター セクションの **結果の編集とプレビュー** ボタンを使用すると結果を確認できます。
 
     ![ファイル ポリシーの編集とプレビュー結果](./media/file-policy-edit-and-preview-results.png)
 
@@ -114,11 +114,11 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 
 * **拡張機能** - コンテンツ検査はサードパーティ エンジン経由で実行でき、DLP またはマルウェア対策機能が向上します。
 
-## <a name="file-queries"></a>ファイルクエリ
+## <a name="file-queries"></a>File queries
 
 調査をさらに簡単にするために、カスタム クエリを作成し、それを後で使用するために保存できるようになりました。
 
-1. **[ファイル]** ページで、前述のフィルターを使用して、必要に応じてアプリにドリルダウンします。
+1. In the **File** page, use the filters as described above to drill down into your apps as necessary.
 
 1. クエリのビルドが終了したら、フィルターの右上隅にある **[名前を付けて保存]** ボタンをクリックします。
 
@@ -126,8 +126,8 @@ Cloud App Security に組み込まれている DLP エンジンは、Office、Op
 
 1. このクエリを今後もう一度使用するには、 **[クエリ]** の下で、下方向にスクロールして **[保存されたクエリ]** を表示し、クエリを選択します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

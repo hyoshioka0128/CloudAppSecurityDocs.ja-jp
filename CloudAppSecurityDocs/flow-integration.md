@@ -14,20 +14,20 @@ ms.technology: ''
 ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 15a1f64077671b1ec703a967f04638098aa531dd
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: d9922f1b905e57cd43c9e4e8d25d2224e3f32c64
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084621"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459188"
 ---
-# <a name="integrate-with-flow-for-custom-alert-automation"></a>カスタムアラート自動化のフローとの統合
+# <a name="integrate-with-flow-for-custom-alert-automation"></a>Integrate with Flow for custom alert automation
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 Microsoft Flow で使用可能な[コネクタのエコシステム](https://docs.microsoft.com/connectors/)を使用することで、Cloud App Security がアラートを生成するときに、プレイブックのトリガーを自動化することができます。 たとえば、[ServiceNow コネクタ](https://docs.microsoft.com/connectors/service-now/)を使用してチケット発行システムで問題を自動的に作成したり、Cloud App Security でアラートがトリガーされたときに、カスタム ガバナンス アクションを実行するための承認メールを送信します。  
 
-## <a name="prerequisites"></a>必須コンポーネント 
+## <a name="prerequisites"></a>必要条件 
 
  - 有効な [Microsoft Flow プラン](https://flow.microsoft.com/pricing)が必要
 
@@ -65,7 +65,7 @@ Flow の [Cloud App Security コネクタ](https://docs.microsoft.com/connectors
  
  
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

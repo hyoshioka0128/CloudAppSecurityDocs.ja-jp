@@ -15,12 +15,12 @@ ms.assetid: 4b6ac04a-4653-4c4a-bd6f-5926743475cc
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b34df27a523584a4d0581b06fba64de76e333cf8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2691be1e80bbeebf3c36f7cd25b2cb1df0dbc560
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336170"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460014"
 ---
 # <a name="troubleshooting-app-connectors-using-error-messages"></a>エラー メッセージを使用したアプリ コネクタのトラブルシューティング
 
@@ -69,5 +69,5 @@ API アプリ コネクタを使用してクラウド アプリに接続しよ�
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 

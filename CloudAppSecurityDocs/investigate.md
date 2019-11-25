@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 390a9d5e9bff785b67f21802d4d0800af5640193
-ms.sourcegitcommit: 748c6f8cb234b303770814d8e63406a0bad36cd1
+ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74154879"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461317"
 ---
 # <a name="investigate"></a>調査
 
@@ -33,31 +33,31 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 |[ダッシュボード]|[説明]|
 |---------------|-----------------|
-|メイン ダッシュボード|クラウドの状態 (ユーザー、ファイル、アクティビティ) と必要なアクション (アラート、アクティビティの違反、コンテンツの違反) の概要。|
-|アプリダッシュボード: 概要|場所ごとのアプリの使用状況の概要、ユーザー数ごとの使用状況グラフ。|
-|アプリダッシュボード: 情報|アプリの詳細、セキュリティ、およびコンプライアンスに関する情報。|
-|アプリダッシュボード: 洞察  
-*(該当する場合)*|ファイルの種類とファイル共有レベルによって分類された、アプリに格納されているデータの分析。|
-|アプリダッシュボード: ファイル  
-*(該当する場合)*|ファイルにドリルダウンします。所有者、共有レベルなどに基づいてフィルター処理できます。 検疫などのガバナンスアクションを実行します。|
-|アプリダッシュボード: アカウント|アプリにリンクされているすべてのアカウント/ユーザーの概要。|
-|アプリダッシュボード: OAuth アプリ  
-*(該当する場合)*|G Suite など、現在デプロイされている OAuth アプリにドリルダウンし、ポリシーを定義します。|
-|アプリダッシュボード: アクティビティログ|すべてのアプリアクティビティをドリルダウンします。ユーザーや ip アドレスなどに基づいてフィルター処理できます。|
-|アプリダッシュボード: アラート|すべてのアプリアラートにドリルダウンします。状態、カテゴリ、重要度などに基づいてフィルター処理できます。|
-|アプリダッシュボード: 特別な特権アカウント  
-*(Salesforce のみ)*|特権のあるユーザーの種類別のユーザーの概要。|
-|ユーザー ダッシュボード|クラウド、場所、最近のアクティビティ、関連するアラートのユーザープロファイルの完全な概要。|
+|メイン ダッシュボード|Overview of cloud status (users, files, activities) and required actions (alerts, activity violations, and content violations).|
+|App dashboard: overview|Overview of app usage per location, usage graphs per number of users.|
+|App dashboard: info|Information about app details, security, and compliance.|
+|App dashboard: insights  
+*(where applicable)*|Analysis of data stored in the app, broken down by file type and file-sharing level.|
+|App dashboard: files  
+*(where applicable)*|Drill down into files; ability to filter according to owner, sharing level, and more. Perform governance actions like quarantine.|
+|App dashboard: accounts|Overview of all accounts/users linked to the app.|
+|App dashboard: OAuth apps  
+*(where applicable)*|Drill down into OAuth apps currently deployed, like G Suite, and define policies.|
+|App dashboard: activity log|Drill down into all app activity; ability to filter according to users, ip address, and more.|
+|App dashboard: alerts|Drill down into all app alerts; ability to filter according to status, category, severity, and more.|
+|App dashboard: special privileged accounts  
+*(Salesforce only)*|Overview of users by privileged user type.|
+|ユーザー ダッシュボード|A complete overview of the user profile in the cloud, locations, recent activities, related alerts.|
 
-## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a>アプリを承認済みまたは未承認としてタグ付け <a name="sanctionapp" />
+## <a name="a-namesanctionapp-tag-apps-as-sanctioned-or-unsanctioned"></a><a name="sanctionapp" />Tag apps as sanctioned or unsanctioned
 
 クラウドを把握するために重要な手順は、アプリに承認または非承認のタグを付けることです。 アプリを承認したら、承認されていないアプリをフィルタリングして、同じ種類の承認されたアプリへの移行を開始できます。
 
 - Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。
 
-- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認されるドットとしてタグ付け")] (Tag as sanctioned dots) を選択し、 **[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。
+- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "Tag as sanctioned dots")] (Tag as sanctioned dots) を選択し、 **[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。
 
-    ![承認済みとしてタグ付け](./media/mark-as-sanctioned.png "承認済みとしてタグ付け")
+    ![Tag as sanctioned](./media/mark-as-sanctioned.png "tag as sanctioned")
 
 ## <a name="use-the-investigation-tools"></a>調査ツールの使用
 
@@ -113,7 +113,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
     - それらのアプリをデプロイしているユーザーの数 それらのアプリの一般的な普及率
 
-    ![アプリダッシュボード](./media/investigate-app.png "アプリの調査")
+    ![App dashboard](./media/investigate-app.png "アプリの調査")
 
 5. **Cloud Discovery ダッシュボード**に移動して、次の項目を確認します。
 
@@ -143,7 +143,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 5. **[次のすべてに一致するアクティビティ]** で、 **+** を選択してフィルターを追加します。 **[IP タグ]** までスクロール ダウンして、 **[Tor]** を選択します。
 
-    ![危険な Ip のポリシーの例](./media/example-policy-risky-ips.png "ポリシーの危険な IP の例")
+    ![Example policy for risky IPs](./media/example-policy-risky-ips.png "ポリシーの危険な IP の例")
 
 ポリシーを設定したところ、仮定に反してポリシー違反のアラートが表示されました。
 
@@ -163,4 +163,4 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 組織のクラウド アプリを制御する方法については、「[Control](control.md)」を参照してください。
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)] の順にクリックします。

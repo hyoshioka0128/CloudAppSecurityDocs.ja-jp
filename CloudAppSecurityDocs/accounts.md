@@ -15,12 +15,12 @@ ms.assetid: 7811f23b-6100-427f-93b1-44f5f81f6c76
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: dd496f1aacaffedf16bc409f31fcc28a24c4ba68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: e6559c68b3b958eb9a989153d5f1e4ec011fea49
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335550"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460949"
 ---
 # <a name="accounts"></a>[アカウント]
 
@@ -28,7 +28,7 @@ ms.locfileid: "72335550"
 
 Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントが Cloud App Security によって検出されると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
-管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **[ユーザーとアカウント]** ページには、接続されたクラウドアプリケーションからプルされたエンティティに関する包括的な詳細情報が表示されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
+管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -82,6 +82,6 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
 ## <a name="next-steps"></a>次のステップ  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しい問題を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

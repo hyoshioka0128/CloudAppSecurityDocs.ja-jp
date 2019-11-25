@@ -15,12 +15,12 @@ ms.assetid: 4acd93f4-b885-4e1f-a385-43b5db02a3ee
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 711c0cdf6a9678a63a19987f2c84101acf9de5ba
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0cd3952207ebc863000243f0eb78661fe9622fd5
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334468"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461427"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 
@@ -37,7 +37,7 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
 2.  **[アプリ コネクタ]** ページで、[+] ボタン、 **[Dropbox]** の順にクリックします。  
   
-     ![Dropbox の接続](./media/connect-dropbox.png "Dropbox の接続")  
+     ![connect dropbox](./media/connect-dropbox.png "Dropbox を接続する")  
   
 3.  ポップアップで、管理者アカウントの電子メール アドレスを入力します。  
   
@@ -63,6 +63,6 @@ Dropbox を接続すると、接続までの 60 日間のイベントを受け�
 ## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

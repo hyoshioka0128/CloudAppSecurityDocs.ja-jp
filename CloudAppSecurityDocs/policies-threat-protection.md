@@ -1,6 +1,6 @@
 ---
-title: 脅威保護ポリシー-Cloud App Security |Microsoft Docs
-description: このトピックでは、Cloud App Security で多くの脅威保護ポリシーを構成する手順について説明します。
+title: Threat protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many threat protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
@@ -10,293 +10,293 @@ ms.service: cloud-app-security
 ms.assetid: 7c8d5bfd-194e-40ba-b0b0-dfae80f45ecb
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 91bbcc622c32dccf8eec997adeac4080164c53e8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b5c2ecdc6093c955448faa3a603d4f4ce6bdf6f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335858"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460576"
 ---
 # <a name="threat-protection-policies"></a>脅威保護に関するポリシー
 
 *適用対象: Microsoft Cloud App Security*
 
 
-Cloud App Security を使用すると、リスクの高い使用とクラウドのセキュリティの問題を特定し、異常なユーザー動作を検出して、承認されたクラウドアプリでの脅威を防ぐことができます。 ユーザーと管理者のアクティビティの可視性を取得し、リスクがあると考えられる疑わしい動作または特定のアクティビティが検出されたときに自動的にアラートを作成するポリシーを定義します。 Microsoft の脅威インテリジェンスおよびセキュリティ研究に関する膨大な量のデータから、承認されたアプリに必要なすべてのセキュリティ制御を確実に提供し、管理を維持することができます。
+Cloud App Security enables you to identify high-risk use and cloud security issues, detect abnormal user behavior, and prevent threats in your sanctioned cloud apps. Get visibility into user and admin activities and define policies to automatically alert when suspicious behavior or specific activities that you consider risky are detected. Draw from the vast amount of Microsoft threat intelligence and security research data to help ensure that your sanctioned apps have all the security controls you need in place and help you maintain control over them.
 
-## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>不明な場所からのユーザーアクティビティの検出と制御
+## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>Detect and control user activity from unfamiliar locations
 
-組織内の他のユーザーによって閲覧されていない不明な場所からのユーザーアクセスまたはアクティビティの自動検出。
+Automatic detection of user access or activity from unfamiliar locations that were never visited by anyone else in your organization.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>手順
 
-この検出は、新しい場所からのアクセスがある場合に自動的に警告するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
+This detection is automatically configured out-of-the-box to alert you when there is access from new locations. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
 
-## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>危険な場所によって侵害されたアカウントを検出する (不可能な移動)
+## <a name="detect-compromised-account-by-impossible-location-impossible-travel"></a>Detect compromised account by impossible location (impossible travel)
 
-2つの場所の間の移動にかかる時間よりも短い、2つの異なる場所からのユーザーアクセスまたはアクティビティの自動検出。
+Automatic detection of user access or activity from 2 different locations within a time period that is shorter than the time it takes to travel between the two.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 ### <a name="steps"></a>手順
 
-1.  この検出は、不可能な場所からのアクセスが発生した場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
-2. 省略可能:[異常検出ポリシーをカスタマイズ](anomaly-detection-policy.md#scope-anomaly-detection-policies)できます。 
-    - ユーザーとグループの観点から検出スコープをカスタマイズする
+1.  This detection is automatically configured out-of-the-box to alert you when there is access from impossible locations. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
+2. Optional: you can [customize anomaly detection policies](anomaly-detection-policy.md#scope-anomaly-detection-policies): 
+    - Customize the detection scope in terms of users and groups
 
-    - 考慮するサインインの種類を選択する
+    - Choose the types of sign-ins to consider
 
-    - アラートの秘密度を設定する
+    - Set your sensitivity preference for alerting
 
-3.  異常検出ポリシーを作成します。
+3.  Create the anomaly detection policy.
 
-## <a name="detect-suspicious-activity-from-an-on-leave-employee"></a>"休暇中" の従業員からの不審なアクティビティの検出
+## <a name="detect-suspicious-activity-from-an-on-leave-employee"></a>Detect suspicious activity from an “on-leave” employee
 
-退職したユーザーが組織のリソースでアクティブにならないと、組織のクラウドリソースのいずれかにアクセスしていることを検出します。
-
-### <a name="prerequisites"></a>必要条件
-
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-- Azure Active Directory にセキュリティグループを作成し、そのユーザーに対して、[欠勤] をクリックして、監視するすべてのユーザーを追加します。
-
-### <a name="steps"></a>手順
-
-1.  [[ユーザーグループ](user-groups.md)] 画面で、 **[ユーザーグループの作成]** をクリックし、関連する Azure AD グループをインポートします。
-
-2.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
-
-3.  [**ユーザーグループ**のフィルター] は、"Azure AD" で作成したユーザーグループの名前に等しくなります。
-
-4.  省略可能: 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 [ユーザーの**中断**] を選択できます。
-
-6.  ファイルポリシーを作成します。
-
-## <a name="detect-and-notify-when-outdated-browser-os-is-used"></a>古いブラウザー OS が使用されたときに検出して通知する
-
-組織に対してコンプライアンスやセキュリティ上のリスクをもたらす可能性がある、期限切れのクライアントバージョンのブラウザーをユーザーが使用していることを検出します。
+Detect when a user, who is on unpaid leave and should not be active on any organizational resource, is accessing any of your organization's cloud resources.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- Create a security group in Azure Active Directory for the users on unpaid leave and add all the users you want to monitor.
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
+1.  On the [User groups](user-groups.md) screen, click **Create user group** and import the relevant Azure AD group.
 
-2.  **[ユーザーエージェントタグ]** のフィルター を **[古いブラウザー]** と **[古いオペレーティングシステム]** に設定します。
+2.  On the **Policies** page, create a new **Activity policy**.
 
-3. 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 **[すべてのアプリ]** で、ユーザーへの **[通知]** を選択して、ユーザーがアラートに対して操作し、必要なコンポーネントを更新できるようにします。
+3.  Set the filter **User group** equals to the name of the user groups you created in Azure AD for the unpaid leave users.
 
-5.  アクティビティポリシーを作成します。
+4.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. You can choose **Suspend user**.
 
-## <a name="detect-and-alert-when-admin-activity-is-detected-on-risky-ip-addresses"></a>危険な IP アドレスで管理者アクティビティが検出されたときに検出してアラートを行う
+6.  Create the file policy.
 
-リスクの高い IP アドレスと見なされる、から実行された管理者のアクティビティを検出し、詳細な調査を行うか、管理者のアカウントにガバナンスアクションを設定します。
+## <a name="detect-and-notify-when-outdated-browser-os-is-used"></a>Detect and notify when outdated browser OS is used
+
+Detect when a user is using a browser with an outdated client version that might pose compliance or security risks to your organization.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+
+### <a name="steps"></a>手順
+
+1.  On the **Policies** page, create a new **Activity policy**.
+
+2.  Set the filter **User agent tag** equals to **Outdated browser** and **Outdated operating system**.
+
+3. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components.
+
+5.  Create the Activity policy.
+
+## <a name="detect-and-alert-when-admin-activity-is-detected-on-risky-ip-addresses"></a>Detect and alert when Admin activity is detected on risky IP addresses
+
+Detect admin activities performed from and IP address that is considered a risky IP address, and notify the system admin for further investigation or set a governance action on the admin’s account.
+
+### <a name="prerequisites"></a>必要条件
+
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
  
-- 設定の歯車から **ip アドレスの範囲** を選択し、+ をクリックして、内部サブネットとその送信パブリック ip アドレスの ip アドレスの範囲を追加します。 カテゴリを [**内部** **]** に設定します。
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  **Act**を**1 つのアクティビティ**に設定します。
+2.  Set **Act on** to **Single activity**.
 
-3.  フィルターの**IP アドレス**をカテゴリとして [**危険** **]** に設定します。
+3.  Set the filter **IP address** to **Category** equals **Risky**
 
-4.  **管理アクティビティ**のフィルターを**True**に設定する。
+4.  Set the filter **Administrative activity** to **True**
 
-5.  違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 **[すべてのアプリ]** の下で **[ユーザー]** への通知 を選択し、ユーザーがアラートに対して操作を実行し、必要なコンポーネントを更新して、**ユーザーのマネージャーを CC**にします。
+5.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. Under **All apps**, select **Notify user**, so that your users can act upon the alert and update the necessary components **CC the user’s manager**.
 
-7.  アクティビティポリシーを作成します。
+7.  Create the activity policy.
 
-## <a name="detect-activities-by-service-account-from-external-ip-addresses"></a>外部 IP アドレスからサービスアカウントを使ってアクティビティを検出する
+## <a name="detect-activities-by-service-account-from-external-ip-addresses"></a>Detect activities by service account from external IP addresses
 
-内部 IP アドレス以外から発生したサービスアカウントアクティビティを検出します。 これは、疑わしい動作または侵害されたアカウントを示している可能性があります。
+Detect service account activities originating from a non-internal IP addresses. This could indicate suspicious behavior or a compromised account.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-- 設定の歯車から **ip アドレスの範囲** を選択し、+ をクリックして、内部サブネットとその送信パブリック ip アドレスの ip アドレスの範囲を追加します。 カテゴリを [**内部** **]** に設定します。
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+- From the Settings cog, select **IP address ranges** and click the + to add IP address ranges for your internal subnets and their egress public IP addresses. Set the **Category** to **Internal**.
 
-- 環境内のサービスアカウントの名前付け規則を標準化します。たとえば、すべてのアカウント名を "svc" で始まるように設定します。
+- Standardize a naming conventions for service accounts in your environment, for example, set all account names to start with “svc”.
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  フィルター**ユーザー**を **[名前]** に設定し、 **[開始]** をクリックして、名前付け規則 (svc など) を入力します。
+2.  Set the filter **User** to **Name** and then **Starts with** and enter your naming convention, such as svc.
 
-3.  **[IP アドレス]** をカテゴリにフィルター を **[その他]** および [**会社** **]** と等しくないように設定します。
+3.  Set the filter **IP address** to **Category** does not equal **Other** and **Corporate**.
 
-4.  違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。
+4.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5.  ポリシーを作成します。
+5.  Create the policy.
 
-## <a name="detect-mass-download-data-exfiltration"></a>大量ダウンロードの検出 (データ exfiltration)
+## <a name="detect-mass-download-data-exfiltration"></a>Detect mass download (data exfiltration)
 
-特定のユーザーが短時間に大量のファイルにアクセスしたりダウンロードしたりするタイミングを検出します。
+Detect when a certain user accesses or downloads a massive number of files in a short period of time.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
+1.  On the **Policies** page, create a new **Activity policy**.
 
-2.  **IP アドレス**のフィルターを **タグ**に一致しない**Microsoft Azure**に設定します。 これにより、非対話型のコンピューターベースのアクティビティは除外されます。
+2.  Set the filter **IP addresses** to **Tag** does not equal **Microsoft Azure**. This will exclude non-interactive machine-based activities.
 
-3.  [フィルター**アクティビティの種類**] をに設定し、関連するすべてのダウンロードアクティビティを選択します。
+3.  Set the filter **Activity types** equals to and then select all relevant download activities.
 
-4. 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。
-5.  ポリシーを作成します。
+4. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+5.  Create the policy.
 
-## <a name="detect-potential-ransomware-activity"></a>ランサムウェアアクティビティの検出
+## <a name="detect-potential-ransomware-activity"></a>Detect potential Ransomware activity
 
-ランサムウェアアクティビティの可能性を自動検出します。
+Automatic detection of potential Ransomware activity.
 
 ### <a name="prerequisites"></a>必要条件
 
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-- この検出は、自動で設定された機能によって自動的に構成され、発生する可能性のあるマルウェアのリスクが検出された場合にアラートを送信します。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+- This detection is automatically configured out-of-the-box to alert you when there is a potential ransomeware risk detected. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
 
-- 検出の**範囲**を構成し、アラートがトリガーされたときに実行されるガバナンスアクションをカスタマイズすることができます。 ランサムウェアを識別 Cloud App Security 方法の詳細については、「[ランサムウェアから組織を保護](use-case-ransomware.md)する」を参照してください。
+- It is possible to configure the **Scope** of the detection and to customize the Governance actions to be taken when an alert is triggered. For more information about how Cloud App Security identifies Ransomware, see [Protecting your organization from ransomware](use-case-ransomware.md).
 
 > [!NOTE]
-> これは、Office 365、G Suite、Box、Dropbox に適用されます。
+> This applies to Office 365, G Suite, Box, and Dropbox.
 
-## <a name="detect-malware-in-the-cloud"></a>クラウド内のマルウェアを検出する
+## <a name="detect-malware-in-the-cloud"></a>Detect malware in the cloud
 
-Microsoft の脅威インテリジェンスエンジンと Cloud App Security の統合を利用して、クラウド環境内のマルウェアを含むファイルを検出します。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-### <a name="steps"></a>手順
-
-- この検出は、マルウェアが含まれている可能性があるファイルがある場合に自動的に警告するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-
-## <a name="detect-rogue-admin-takeover"></a>悪意のある管理者の引き継ぎの検出
-
-悪意のある意図を示す可能性がある、繰り返される管理アクティビティを検出します。
+Detect files containing malware in your cloud environments by utilizing Cloud App Security’s integration with the Microsoft’s Threat Intelligence engine.
 
 ### <a name="prerequisites"></a>必要条件
 
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
+- This detection is automatically configured out-of-the-box to alert you when there is a file that may contain malware. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
 
-2.  **[Act** ] を **[反復活動]** に設定し、**反復活動の最小**数をカスタマイズして、組織のポリシーに準拠する**期間**を設定します。
+## <a name="detect-rogue-admin-takeover"></a>Detect rogue admin takeover
 
-3.  **[ユーザー]** のフィルター を **[グループ]** equals に設定し、関連するすべての管理者グループを **[アクターのみ]** として選択します。
-
-4.  フィルターアクティビティの**種類**を、パスワードの更新、変更、およびリセットに関連するすべての活動に設定します。
-
-5. 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。
-6.  ポリシーを作成します。
-
-## <a name="detect-suspicious-inbox-manipulation-rules"></a>疑わしい受信トレイ操作ルールの検出
-
-疑わしい受信トレイの規則がユーザーの受信トレイに設定されている場合は、ユーザーアカウントが侵害されていること、およびメールボックスが組織内のスパムおよびマルウェアの配布に使用されていることを示している可能性があります。
+Detect repeated admin activity that might indicate malicious intentions.
 
 ### <a name="prerequisites"></a>必要条件
 
-- 電子メールに Microsoft Exchange を使用します。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-- この検出は、疑わしい受信トレイの規則が設定されている場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+1.  On the **Policies** page, create a new **Activity policy**.
+
+2.  Set **Act on** to **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy..
+
+3.  Set the filter **User** to **From group** equals and select all the related admin group as **Actor only**.
+
+4.  Set the filter **Activity type** equals to all activities that relate to password updates, changes, and resets.
+
+5. Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
+6.  Create the policy.
+
+## <a name="detect-suspicious-inbox-manipulation-rules"></a>Detect suspicious inbox manipulation rules
+
+If a suspicious inbox rule was set on a user's inbox, it may indicate that the user account is compromised, and that the mailbox is being used to distribute spam and malware in your organization.
+
+### <a name="prerequisites"></a>必要条件
+
+- Use of Microsoft Exchange for email.
+
+### <a name="steps"></a>手順
+
+- This detection is automatically configured out-of-the-box to alert you when there is a suspicious inbox rule set. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
 
 
-## <a name="detect-leaked-credentials"></a>漏洩した資格情報の検出
+## <a name="detect-leaked-credentials"></a>Detect leaked credentials
   
-サイバー犯罪者が正当なユーザーの有効なパスワードを侵害すると、多くの場合、これらの資格情報が共有されます。 通常、これを行うには、ダーク web または貼り付けサイトに公開するか、ブラック市場で資格情報を売買または販売します。
+When cyber criminals compromise valid passwords of legitimate users, they often share those credentials. This is usually done by posting them publicly on the dark web or paste sites or by trading or selling the credentials on the black market.
 
-Cloud App Security は、Microsoft の脅威インテリジェンスを利用して、このような資格情報を組織内で使用されているものと照合します。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-### <a name="steps"></a>手順
-
-この検出は、資格情報の漏洩の可能性が検出された場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-
-
-## <a name="detect-anomalous-file-downloads"></a>異常なファイルダウンロードの検出
-
-学習したベースラインを基準として、ユーザーが1つのセッションで複数のファイルダウンロードアクティビティを実行したことを検出します。 これは、侵害の試行を示している可能性があります。
+Cloud App Security utilizes Microsoft’s Threat intelligence to match such credentials to the ones used inside your organization.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-- この検出は、異常なダウンロードが発生した場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-- 検出の範囲を構成し、アラートがトリガーされたときに実行されるアクションをカスタマイズすることができます。
+This detection is automatically configured out-of-the-box to alert you when a possible credential leak is detected. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
 
-## <a name="detect-anomalous-file-shares-by-a-user"></a>ユーザーによる異常なファイル共有の検出
 
-学習したベースラインに関して、ユーザーが1つのセッションで複数のファイル共有アクティビティを実行したことを検出します。これは、侵害の試行を示している可能性があります。
+## <a name="detect-anomalous-file-downloads"></a>Detect anomalous file downloads
 
-### <a name="prerequisites"></a>必要条件
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
-### <a name="steps"></a>手順
-
-- この検出は、ユーザーが複数のファイル共有を実行するときにアラートを通知するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-- 検出の範囲を構成し、アラートがトリガーされたときに実行されるアクションをカスタマイズすることができます。
-
-## <a name="detect-anomalous-activities-from-infrequent-country"></a>頻度の低い国からの異常なアクティビティの検出
-
-ユーザーまたは組織内のユーザーによって最近使用されていない、またはユーザーによって閲覧されていない場所からのアクティビティを検出します。
+Detect when users perform multiple file download activities in a single session, relative to the baseline learned. This could indicate an attempted breach.
 
 ### <a name="prerequisites"></a>必要条件
 
-アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
 
 ### <a name="steps"></a>手順
 
-- この検出は、頻度の低い国から異常なアクティビティが発生した場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-- 検出の範囲を構成し、アラートがトリガーされたときに実行されるアクションをカスタマイズすることができます。
+- This detection is automatically configured out-of-the-box to alert you when an anomalous download occurs. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+
+## <a name="detect-anomalous-file-shares-by-a-user"></a>Detect anomalous file shares by a user
+
+Detect when users perform multiple file-sharing activities in a single session with respect to the baseline learned, which could indicate an attempted breach.
+
+### <a name="prerequisites"></a>必要条件
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+### <a name="steps"></a>手順
+
+- This detection is automatically configured out-of-the-box to alert you when users perform multiple file sharing. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
+
+## <a name="detect-anomalous-activities-from-infrequent-country"></a>Detect anomalous activities from infrequent country
+
+Detect activities from a location that was not recently or was never visited by the user or by any user in your organization.
+
+### <a name="prerequisites"></a>必要条件
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md) or on-boarded using [Conditional Access app control with session controls](proxy-deployment-aad.md).
+
+### <a name="steps"></a>手順
+
+- This detection is automatically configured out-of-the-box to alert you when an anomalous activity occurs from an infrequent country. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 > [!NOTE]
-> 異常な場所を検出するには、7日間の初期学習期間があります。 学習期間中は、Cloud App Security は新しい場所のアラートを生成しません。
+> Detecting anomalous locations necessitates an initial learning period of 7 days. During the learning period, Cloud App Security does not generate alerts for new locations.
 
-## <a name="detect-activity-performed-by-a-terminated-user"></a>終了したユーザーによって実行されたアクティビティを検出する
+## <a name="detect-activity-performed-by-a-terminated-user"></a>Detect activity performed by a terminated user
 
-組織の従業員ではなくなったユーザーが承認されたアプリでアクティビティを実行したことを検出します。 これは、退職した従業員が会社のリソースに引き続きアクセスできることを示している可能性があります。
+Detect when a user who is no longer an employee of your organization performs an activity in a sanctioned app. This may indicate malicious activity by a terminated employee who still has access to corporate resources.
 
 ### <a name="prerequisites"></a>必要条件
 
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-- この検出は、終了した従業員によって活動が実行されたときにアラートを通知するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
-- 検出の範囲を構成し、アラートがトリガーされたときに実行されるアクションをカスタマイズすることができます。
+- This detection is automatically configured out-of-the-box to alert you when an activity is performed by a terminated employee. You do not need to take any action to configure this policy. 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。  
+- It is possible to configure the scope of the detection and to customize the action to be taken when an alert is triggered.
 
 
 ## <a name="next-steps"></a>次のステップ 
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

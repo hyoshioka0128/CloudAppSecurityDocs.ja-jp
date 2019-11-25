@@ -1,6 +1,6 @@
 ---
-title: アプリの条件付きアクセス制御のトラブルシューティング
-description: この記事では、考えられるアプリの条件付きアクセス制御の問題の一覧を示し、考えられる解決策を示します。
+title: Troubleshoot Conditional Access App Control
+description: This article provides a list of possible Conditional Access App Control issues and provides possible resolutions.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -11,55 +11,55 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 6adcf8038a9e1135edd4663a73260030e08ec373
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 71126072096d9a2ba156c6c3e6b3c17dc0d619b3
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084879"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460114"
 ---
-# <a name="troubleshooting-conditional-access-app-control"></a>アプリの条件付きアクセス制御のトラブルシューティング
+# <a name="troubleshooting-conditional-access-app-control"></a>Troubleshooting Conditional Access App Control
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-この記事では、考えられるアプリの条件付きアクセス制御の問題の一覧を示し、考えられる解決策を示します。
+This article prohvides a list of possible Conditional Access App Control issues and provides possible resolutions.
 
-## <a name="troubleshooting-onboarded-apps"></a>オンボードアプリのトラブルシューティング
+## <a name="troubleshooting-onboarded-apps"></a>Troubleshooting onboarded apps
 
-### <a name="the-sign-in-to-the-app-is-not-working"></a>アプリへのサインインが動作していません
+### <a name="the-sign-in-to-the-app-is-not-working"></a>The sign in to the app is not working
 
-1. Cloud App Security のメニューバーで、設定の歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、[**アプリの条件付きアクセス制御**] を選択します。
-1. アプリの一覧で、構成しているアプリが表示されている行で、行の末尾にある3つの点を選択し、[**アプリの編集**] を選択します。
-1. [ **Nonce-処理**] をクリックしてセクションを展開し、[ **Nonce 処理を有効**にする] を選択します。
+1. In Cloud App Security, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "設定アイコン") and select **Conditional Access App Control**.
+1. In the list of apps, on the row in which the app you are configuring appears, choose the three dots at the end of the row, and then choose **Edit app**.
+1. Click **Nonce-handling** to expand the section and then select **Enable nonce handling**.
 
-    ![Nonce 処理オプションのスクリーンショット。](media/troubleshooing-nonce-handling.png)
-
-    > [!NOTE]
-    > ホームページ以外のアプリページに移動するときに問題が発生した場合は、「[アプリへの後続のアクセスのトラブルシューティング」を](#unexpected-page)参照してください。
-
-### それ以降のアプリへのアクセスは、予期されたページにアクセスしません<a name="unexpected-page"></a>
-
-次の手順は、トラフィックログツールとして Fiddler を使用することに基づいています。 他のツールでは、エクスペリエンスが異なる場合があります。 Fiddler の使用方法の詳細については、「 [Fiddler log を簡単に収集する方法](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/)」を参照してください。
-
-1. アプリ内のページの URL をコピーします。このページは、予想されるページには表示されません。後で必要になります。
+    ![Screenshot of nonce-handling option.](media/troubleshooing-nonce-handling.png)
 
     > [!NOTE]
-    > ドメインに Cloud App Security URL サフィックス (例: *us2.cas.ms*) が含まれていないことを確認します。
+    > If you experience problem navigating to app pages other than the home page, see [Troubleshooting subsequent visits to the app do not go to the expected page](#unexpected-page)
 
-1. ページを監視するには、Fiddler などのトラフィックログツールを使用します。
-1. 前の手順でコピーした URL にアクセスし、必要に応じて認証します。
-1. トラフィックログツールで、使用しているプロトコルに基づいて、ドメインとパスに一致する要求を検索します。
+### Subsequent visits to the app do not go to the expected page<a name="unexpected-page"></a>
 
-    | プロトコル | ドメイン | パス | 状態フィールド名 |
+The following steps are based on using Fiddler as the traffic logging tool. The experience may be different for other tools. For more information about using Fiddler, see [Easy way to collect fiddler log](https://blogs.msdn.microsoft.com/maheshk/2016/05/03/easy-way-to-collect-fiddler-log-fiddlercap/).
+
+1. Copy the URL of page in the app that doesn't go to the expected page - you need it later.
+
+    > [!NOTE]
+    > Ensure that the domain doesn't include the Cloud App Security URL suffix (e.g. *.us2.cas.ms*)
+
+1. Use a traffic logging tool such as Fiddler to monitor the page.
+1. Go to the URL that you copied earlier, and authenticate if required.
+1. In the traffic logging tool, search for the request matching the domain and path based on to the protocol you are using.
+
+    | プロトコル | Domain | パス | State field name |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
 
-1. 要求を選択し、[**インスペクター** ] タブで [ **WebForms**] を選択します。
-1. に基づく regex 文字列を作成します。 
+1. Select the request, and then in the **Inspectors** tab, select **WebForms**.
+1. Create a regex string based on the 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Cloud Discovery の展開](set-up-cloud-discovery.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

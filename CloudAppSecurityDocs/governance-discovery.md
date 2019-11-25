@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 49fb3555da13a013655850b089f590821e3e7cb3
-ms.sourcegitcommit: 2a52a0f00d2c8317964d4e15aca8925ccd107a38
+ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73650917"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461357"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
 *適用対象: Microsoft Cloud App Security*
 
-環境内で検出されたアプリの一覧を確認したら、次の方法で安全な**アプリ (承認** **済み) を**承認するか、望ましくないアプリを禁止することで、環境をセキュリティで保護することができます。
+After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
 
 ## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認
 
@@ -38,7 +38,7 @@ ms.locfileid: "73650917"
 承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
 
 > [!NOTE]
-> テナントで Zscaler NSS または iboss が使用されている場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Zscaler との統合](zscaler-integration.md)」と「 [Cloud App Security を iboss と統合](iboss-integration.md)する」を参照してください。
+> If your tenant uses Zscaler NSS or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md) and [Integrate Cloud App Security with iboss](iboss-integration.md) respectively.
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
 
@@ -67,4 +67,4 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

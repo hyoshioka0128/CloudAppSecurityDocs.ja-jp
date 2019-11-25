@@ -1,6 +1,6 @@
 ---
-title: Cloud App Security への Google Cloud Platform の接続
-description: この記事では、API コネクタを使用して Cloud App Security に Google Cloud Platform を接続する方法について説明します。これにより、使用状況を表示して制御できます。
+title: Connect Google Cloud Platform to Cloud App Security
+description: This article provides information about how to connect your Google Cloud Platform to Cloud App Security using the API connector for visibility and control over use.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -9,153 +9,153 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 27d32ca6daf7221d84b0cb0942d42c3555049e43
-ms.sourcegitcommit: b48842b6622bd45af66afbffc70f92d31ec232a8
+ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/12/2019
-ms.locfileid: "73934482"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461209"
 ---
-# <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Microsoft Cloud App Security への Google Cloud Platform の接続 (プレビュー)
+# <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Connect Google Cloud Platform to Microsoft Cloud App Security (Preview)
 
 *適用対象: Microsoft Cloud App Security*
 
-この記事では、コネクタ Api を使用して Microsoft Cloud App Security を既存の Google Cloud Platform (GCP) アカウントに接続する手順について説明します。 この接続により、GCP の使用を可視化し、制御することができます。
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Google Cloud Platform (GCP) account using the connector APIs. This connection gives you visibility into and control over GCP use.
 
 > [!NOTE]
-> GCP 環境を接続するための手順は、集計されたログを使用するための[Google の推奨事項](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging)に従います。 統合は Google StackDriver を活用し、課金に影響する可能性のある追加のリソースを消費します。 消費されたリソースは次のとおりです。
+> The instructions for connecting your GCP environment follow [Google’s recommendations](https://cloud.google.com/blog/products/gcp/best-practices-for-working-with-google-cloud-audit-logging) for consuming aggregated logs. The integration leverages Google StackDriver and will consume additional resources that might impact your billing. The consumed resources are:
 >
-> * [集約されたエクスポートシンク-組織レベル](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
-> * [Pub/Sub トピック– GCP プロジェクトレベル](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
-> * [Pub/Sub サブスクリプション– GCP プロジェクトレベル](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+> * [Aggregated export sink – Organization level](https://cloud.google.com/logging/docs/export/aggregated_exports#concept)
+> * [Pub/Sub topic – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
+> * [Pub/Sub subscription – GCP project level](https://cloud.google.com/logging/docs/export/using_exported_logs#pubsub-overview)
 >
-> 現時点では、Cloud App Security 管理アクティビティの監査ログのみをインポートします。データアクセスとシステムイベントの監査ログはインポートされません。 GCP ログの詳細については、「[クラウド監査ログ](https://go.microsoft.com/fwlink/?linkid=2109230)」を参照してください。
+> Currently, Cloud App Security only imports Admin Activity audit logs; Data Access and System Event audit logs are not imported. For more information about GCP logs, see [Cloud Audit Logs](https://go.microsoft.com/fwlink/?linkid=2109230).
 
-統合には専用のプロジェクトを使用し、安定した統合を維持し、セットアッププロセスが削除または変更されないように、プロジェクトへのアクセスを制限することをお勧めします。 また、GCP インスタンスが既に Cloud App Security に接続されている G Suite インスタンスの一部である場合は、GCP 接続の詳細を追加するときに、**接続された g suite 組織の手順に含まれる GCP インスタンス**のに従うことをお勧めします。
+We recommend that you use a dedicated project for the integration and restrict access to the project to maintain stable integration and prevent deletions/modifications of the setup process. Also, if your GCP instance is part of an G Suite instance already connected to Cloud App Security, we recommend following the **For a GCP instance that is part of a connected G Suite organization** steps when you add the GCP connection details.
 
 ## <a name="prerequisites"></a>必要条件
 
-統合 GCP ユーザーには、次のアクセス許可が必要です。
+The integrating GCP user must have the following permissions:
 
-* **IAM と管理者**による編集–組織レベル
-* **プロジェクトの作成と編集**
+* **IAM and Admin edit** – Organization level
+* **Project creation and edit**
 
-## <a name="configure-google-cloud-platform"></a>Google Cloud Platform の構成
+## <a name="configure-google-cloud-platform"></a>Configure Google Cloud Platform
 
-* 統合 GCP ユーザーアカウントを使用して、GCP ポータルにサインインします。
+* Sign in to your GCP portal using your integrating GCP user account.
 
-### <a name="create-a-dedicated-project"></a>専用プロジェクトを作成する
+### <a name="create-a-dedicated-project"></a>Create a dedicated project
 
-組織で GCP に専用のプロジェクトを作成して、統合の分離と安定性を実現する
+Create a dedicated project in GCP under your organization to enable integration isolation and stability
 
-1. **[プロジェクトの作成]** をクリックして、新しいを開始します。
-1. **[新しいプロジェクト]** 画面で、プロジェクトに名前を指定し、 **[作成]** をクリックします。
+1. Click **Create Project** to start a new.
+1. In the **New project** screen, name your project and click **Create**.
 
-    ![GCP のプロジェクトの作成ダイアログを示すスクリーンショット](media/connect-gcp-create-project.png)
+    ![Screenshot showing GCP create project dialog](media/connect-gcp-create-project.png)
 
-### <a name="enable-the-pubsub-api"></a>Pub/Sub API を有効にする
+### <a name="enable-the-pubsub-api"></a>Enable the Pub/Sub API
 
-1. 専用プロジェクトに切り替えます。
-1. [Pub/Sub] タブにアクセスします。サービスアクティベーションメッセージが表示されます。
+1. Switch to the dedicated project.
+1. Go to the Pub/Sub tab. A service activation message should appear.
 
-### <a name="create-a-dedicated-service-account-for-the-integration"></a>統合用の専用サービスアカウントを作成する
+### <a name="create-a-dedicated-service-account-for-the-integration"></a>Create a dedicated service account for the integration
 
-1. **[IAM & admin]** で、 **[サービスアカウント]** をクリックします。
-1. **[サービスアカウントの作成]** をクリックして、専用のサービスアカウントを作成します。
-1. アカウント名を入力し、 **[作成]** をクリックします。
-1. **ロール**として「 **Pub/Sub Admin** 」と指定し、 **[保存]** をクリックします。
+1. Under **IAM & admin**, click **Service accounts**.
+1. Click **CREATE SERVICE ACCOUNT** to create a dedicated service account.
+1. Enter an account name, and then click **Create**.
+1. Specify the **Role** as **Pub/Sub Admin** and then click **Save**.
 
-    ![GCP add IAM ロールを示すスクリーンショット](media/connect-gcp-iam-role.PNG)
+    ![Screenshot showing GCP add IAM role](media/connect-gcp-iam-role.PNG)
 
-1. **電子メール**の値をコピーします。後で必要になります。
+1. Copy the **Email** value, you'll need this later.
 
-    ![GCP サービスアカウントダイアログを示すスクリーンショット](media/connect-gcp-create-service-account.png)
+    ![Screenshot showing GCP service account dialog](media/connect-gcp-create-service-account.png)
 
-1. **[Iam & admin]** で、 **[iam]** をクリックします。
+1. Under **IAM & admin**, click **IAM**.
 
-    1. 組織レベルに切り替えます。
-    1. **[追加]** をクリックします。
-    1. **[新しいメンバー]** ボックスに、前の手順でコピーした**電子メール**の値を貼り付けます。
-    1. **[ロール]** として「 **Logs Configuration Writer** 」と指定し、 **[保存]** をクリックします。
+    1. Switch to organization level.
+    1. Click **ADD**.
+    1. In the **New members** box, paste the **Email** value you copied earlier.
+    1. Specify the **Role** as **Logs Configuration Writer** and then click **Save**.
 
-        ![[メンバーの追加] ダイアログを示すスクリーンショット](media/connect-gcp-add-member.png)
+        ![Screenshot showing add member dialog](media/connect-gcp-add-member.png)
 
-### <a name="create-a-private-key-for-the-dedicated-service-account"></a>専用サービスアカウントの秘密キーを作成する
+### <a name="create-a-private-key-for-the-dedicated-service-account"></a>Create a private key for the dedicated service account
 
-1. プロジェクトレベルに切り替えます。
-1. **[IAM & admin]** で、 **[サービスアカウント]** をクリックします。
-1. 専用サービスアカウントを開き、 **[編集]** をクリックします。
-1. **[キーの作成]** をクリックします。
-1. **[秘密キーの作成]** 画面で、 **[JSON]** を選択し、 **[作成]** をクリックします。
+1. Switch to project level.
+1. Under **IAM & admin**, click **Service accounts**.
+1. Open the dedicated service account and click **Edit**.
+1. Click **CREATE KEY**.
+1. In the **Create private key** screen, select **JSON**, and then click **CREATE**.
 
-    ![秘密キーの作成ダイアログを示すスクリーンショット](media/connect-gcp-create-private-key.png)
+    ![Screenshot showing create private key dialog](media/connect-gcp-create-private-key.png)
 
     > [!NOTE]
-    > 後でコンピューターにダウンロードされる JSON ファイルが必要になります。
+    > You'll need the JSON file that is downloaded to your machine later.
 
-### <a name="retrieve-your-organization-id"></a>組織 ID を取得する
+### <a name="retrieve-your-organization-id"></a>Retrieve your Organization ID
 
-**組織 ID**をメモしておきます。後で必要になります。 詳細については、「[組織 ID を取得する](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id)」を参照してください。
-    ![組織 ID ダイアログ](media/connect-gcp-org-id.png) を示すスクリーンショット
+Make a note of your **Organization ID**, you'll need this later. For more information, see [Getting your organization ID](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id).
+    ![Screenshot showing organization ID dialog](media/connect-gcp-org-id.png)
 
 ## <a name="configure-cloud-app-security"></a>Cloud App Security の設定
 
 * Cloud App Security ポータルで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
-### <a name="add-the-gcp-connection-details"></a>GCP 接続の詳細を追加する
+### <a name="add-the-gcp-connection-details"></a>Add the GCP connection details
 
-GCP 接続の詳細を指定するには、 **[アプリコネクタ]** の下で、次のいずれかの操作を行います。
+To provide the GCP connection details, under **App connectors**, do one of the following:
 
-**接続された G Suite 組織の一部ではない GCP インスタンスの場合**
+**For a GCP instance that is not part of a connected G Suite organization**
 
-1. プラス記号をクリックし、次に**Google Cloud Platform**をクリックします。
+1. Click the plus sign followed by **Google Cloud Platform**.
 
-    ![[Add GCP] メニューを示すスクリーンショット](media/connect-gcp-add.png)
+    ![Screenshot showing add GCP menu](media/connect-gcp-add.png)
 
-1. ポップアップで、コネクタの名前を指定し、 **[Google Cloud Platform の接続]** をクリックします。
+1. In the pop-up, provide a name for the connector, and then click **Connect Google Cloud Platform**.
 
-1. [Google Cloud Platform] ページで、次の操作を行います。
-    1. **[組織 ID]** ボックスに、事前にメモしておいた組織を入力します。
-    1. **[秘密キーファイル]** ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
-    1. **[接続 Google Cloud Platform]** をクリックします。
-
-    > [!NOTE]
-    > ユーザー管理とガバナンスを統合するには、G Suite インスタンスを接続することをお勧めします。 これは、G Suite 製品を使用せず、GCP ユーザーが G Suite ユーザー管理システムを介して管理されている場合でも推奨されます。
-
-**接続された G Suite 組織の一部である GCP インスタンスの場合**
-
-1. 接続されたインスタンスの一覧で、G Suite コネクタが表示されている行の末尾にある3つのドットをクリックし、 **[Google Cloud Platform の追加]** をクリックします。
-
-1. [Google Cloud Platform] ページで、次の操作を行います。
-    1. **[組織 ID]** ボックスに、事前にメモしておいた組織を入力します。
-    1. **[秘密キーファイル]** ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
-    1. **[接続 Google Cloud Platform]** をクリックします。
+1. On the Google Cloud Platform page, do the following:
+    1. In the **Organization ID** box, enter the organization you made a note of earlier.
+    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
+    1. Click **Connect Google Cloud Platform**.
 
     > [!NOTE]
-    > これにより、G Suite ユーザー id 領域を使用して、統合されたユーザー管理とガバナンスを実現できます。
+    > We recommended that you connect your G Suite instance to get unified user management and governance. This is the recommended even if you do not use any G Suite products and the GCP users are managed via the G Suite user management system.
 
-### <a name="test-the-connection"></a>接続をテストする
+**For a GCP instance that is part of a connected G Suite organization**
+
+1. In the list of connected instances, at the end of row in which the G Suite connector appears, click the three dots and then click **Add Google Cloud Platform**.
+
+1. On the Google Cloud Platform page, do the following:
+    1. In the **Organization ID** box, enter the organization you made a note of earlier.
+    1. In the **Private key file** box, browse to the JSON file you downloaded earlier.
+    1. Click **Connect Google Cloud Platform**.
+
+    > [!NOTE]
+    > This enables unified user management and governance via the G Suite user identity realm.
+
+### <a name="test-the-connection"></a>Test the connection
 
 **[API のテスト]** をクリックして、正常に接続されたことを確認します。
 
 テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
 
-## <a name="aggregated-export-sink"></a>集計されたエクスポートシンク
+## <a name="aggregated-export-sink"></a>Aggregated export sink
 
-現時点では、集計エクスポートシンクの無効化は Google Cloud Shell 経由でのみ可能です。
+Disabling aggregated export sink is currently only possible via Google Cloud Shell.
 
-### <a name="to-disable-aggregated-export-sink"></a>集計されたエクスポートシンクを無効にするには
+### <a name="to-disable-aggregated-export-sink"></a>To disable aggregated export sink
 
 | 手順 | スクリプト | 詳細情報 |
 |-|-|-|
-| 1. Google Cloud Shell セッションを開始します。 | | [Cloud Shell の使用](https://cloud.google.com/shell/docs/using-cloud-shell) |
-| 2. 現在のプロジェクトを設定します。 | `gcloud config set project {PROJECT_ID}` | [gcloud 構成セット](https://cloud.google.com/sdk/gcloud/reference/config/set) |
-| 3. 組織レベルのシンクを一覧表示します。 | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud ログシンクの一覧](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
-| 4. 関連するシンクを削除します。 | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud ログシンクの削除](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
+| 1. Start a Google Cloud Shell session. | | [Using Cloud Shell](https://cloud.google.com/shell/docs/using-cloud-shell) |
+| 2. Set the current project. | `gcloud config set project {PROJECT_ID}` | [gcloud config set](https://cloud.google.com/sdk/gcloud/reference/config/set) |
+| 3. List the organization-level sinks. | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud logging sinks list](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
+| 4. Delete the relevant sink. | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud logging sinks delete](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

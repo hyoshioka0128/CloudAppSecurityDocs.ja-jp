@@ -15,12 +15,12 @@ ms.assetid: f3af2d25-9286-4e9b-b2ad-35653bec72ff
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ce5cd7c341a6d255572763b879181ef2ca8f0cd6
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 0b0db06ebce6bb5757adbdc1439d332a20f063e6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334962"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461172"
 ---
 # <a name="activities"></a>アクティビティ
 
@@ -72,10 +72,10 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
  - 同一種類のアクティビティを表示する
  - 同一ユーザーのすべてのアクティビティを表示する
  - 同一 IP アドレスのアクティビティを表示する
- - 同じ地理的な場所からのアクティビティを表示する
+ - View activities from the same geographic location
  - 同一期間 (48 時間) のアクティビティを表示する
  
-![アクティビティ ドロワー](./media/activity-drawer.png "アクティビティ ドロワー")  
+![activity drawer](./media/activity-drawer.png "アクティビティ ドロワー")  
   
 使用できるガバナンス アクションのリストについては、「[アクティビティ ガバナンス アクション](governance-actions.md#activity-governance-actions)」を参照してください。
 
@@ -136,6 +136,6 @@ IP アドレスの洞察を表示するには:
 ## <a name="next-steps"></a>次のステップ  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

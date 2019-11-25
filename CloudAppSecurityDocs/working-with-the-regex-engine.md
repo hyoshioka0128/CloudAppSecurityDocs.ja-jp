@@ -15,12 +15,12 @@ ms.assetid: dc8b87e5-e6c1-4a65-ab8c-067fb527fce4
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: fee654b84f7149fa15be23d99d7b8f675a900599
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 803fa93c683acaaf7dac3e2705836973a898f839
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336066"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459225"
 ---
 # <a name="working-with-the-regex-engine"></a>RegEx エンジンの操作
 
@@ -80,7 +80,7 @@ Microsoft Cloud App Security のコンテンツ検査ポリシーでは、パタ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
 
 ## <a name="check-out-this-video"></a>このビデオをご覧ください。

@@ -15,12 +15,12 @@ ms.assetid: bbf54f66-4ce2-428c-afc8-b5a64277014f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ef9645a99e7fde05b2bcc801744fb19489d26a29
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 1b033c2d228d3c7b117c960ffb68b7d778c5629d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335819"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461306"
 ---
 #  <a name="IPtagsandRanges"></a> IP の範囲とタグを使用する
 
@@ -79,12 +79,12 @@ Cloud App Security には、Azure や Office 365 などの一般的なクラウ�
  
 7. 完了したら、 **[作成]** をクリックします。  
   
-     ![新しい IP アドレス範囲](./media/newipaddress-range.png "新しい IP アドレス範囲")  
+     ![newipaddress range](./media/newipaddress-range.png "newipaddress の範囲")  
 
 
 ## <a name="next-steps"></a>次のステップ
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

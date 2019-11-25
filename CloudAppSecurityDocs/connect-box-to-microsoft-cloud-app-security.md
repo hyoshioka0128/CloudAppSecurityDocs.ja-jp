@@ -15,12 +15,12 @@ ms.assetid: b3e4713e-986f-4a5e-9fcc-f8de94dd0df7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bcef6b51eac8b9ddf0f348bfa42b2936a4ad85e8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 414af03fbef72ed7647013732355bdcce5846ad9
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334575"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458361"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続する
 
@@ -37,11 +37,11 @@ ms.locfileid: "72334575"
   
     -   Box 管理コンソールで設定アイコンをクリックし、次に **[Business settings]\(ビジネス設定\)** または **[エンタープライズ設定]** をクリックします。  
   
-         ![Box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
+         ![box business settings](./media/box-business-settings.png "Box のビジネス設定")  
   
     -   **[アプリ]** タブをクリックします。  
   
-         ![Box アプリ](./media/box-apps.png "Box アプリ")  
+         ![box apps](./media/box-apps.png "Box アプリ")  
   
     -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、 **[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。
      
@@ -55,7 +55,7 @@ ms.locfileid: "72334575"
 
         次に、 **[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
   
-         ![Box の [次を除く] 設定](./media/box-settings-except-for.png "Box の [次を除く] 設定")  
+         ![box settings except for](./media/box-settings-except-for.png "Box の次を除くの設定")  
   
     > [!NOTE]  
     >  既存の Adallom ユーザーの方でコンソールの URL が Cloud App Security ではなく Adallom のものである場合、このアプリのシリアル番号には bwahmilhdlpbqy2ongkl119o3lrkoshc を使用します。  
@@ -64,7 +64,7 @@ ms.locfileid: "72334575"
   
 3.  **[アプリ コネクター]** ページで、[+]、 **[Box]** の順にクリックします。  
   
-     ![Box の接続](./media/connect-box.png "Box の接続")  
+     ![connect box](./media/connect-box.png "Box を接続する")  
   
 4.  **[Box の設定]** ポップアップで、 **[リンクに移動]** をクリックします。  
   
@@ -87,6 +87,6 @@ Box を接続すると、Cloud App Security がフル スキャンを実行し�
 ## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

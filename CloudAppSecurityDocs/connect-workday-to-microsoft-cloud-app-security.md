@@ -1,6 +1,6 @@
 ---
-title: Workday を Cloud App Security に接続する (プレビュー)
-description: この記事では、API コネクタを使用して Cloud App Security に Workday アプリを接続し、使用状況を表示して制御する方法について説明します。
+title: Connect Workday to Cloud App Security (Preview)
+description: This article provides information about how to connect your Workday app to Cloud App Security using the API connector for visibility and control over use.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -14,100 +14,100 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3ce27d2efc4535d8ee594145c27ce3948c6be90d
-ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
+ms.openlocfilehash: 3a0756e8e2ffc9d351013b03e037fa996cbf341f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203814"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460994"
 ---
-# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
+# <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Connect Workday to Microsoft Cloud App Security (Preview)
 
 *適用対象: Microsoft Cloud App Security*
 
-この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
+This article provides instructions for connecting Microsoft Cloud App Security to your existing Workday account using the app connector API. This connection gives you visibility into and control over Workday use.
 
 ## <a name="prerequisites"></a>必要条件
 
-Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 Workday 統合システムユーザーを使用することをお勧めします。 セキュリティグループには、次のドメインセキュリティポリシーに対して次のアクセス許可を選択する必要があります。
+The Workday account used for connecting to Cloud App Security must be a member of a security group (new or existing). We recommended using a Workday Integration System User. The security group must have the following permissions selected for the following domain security policies:
 
-| 機能領域 | ドメインセキュリティポリシー | サブドメインのセキュリティポリシー | レポート/タスクの権限 | 統合権限 |
+| Functional area | Domain Security policy | Subdomain Security policy | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
-| システム | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
-| システム | セキュリティ管理 | | 表示、変更 | Get、Put |
-| システム | システム監査 | | 表示 | 取得 |
-| スタッフ | Worker データ: スタッフ | Worker データ: パブリックワーカーレポート | 表示 | 取得 |
+| System (システム) | Set Up: Tenant Setup – General | Set Up: Tenant Setup –  Security | View, Modify | Get, Put |
+| System (システム) | セキュリティ管理 | | View, Modify | Get, Put |
+| System (システム) | System auditing | | 表示 | 取得 |
+| スタッフ | Worker Data: Staffing | Worker Data: Public Worker Reports | 表示 | 取得 |
 
 > [!NOTE]
 >
-> * セキュリティグループのアクセス許可を設定するために使用するアカウントは、Workday 管理者である必要があります。
-> * アクセス許可を設定するには、「機能領域のドメインセキュリティポリシー」を検索し、各機能領域 ("システム"/"スタッフ") を検索して、表に記載されているアクセス許可を付与します。
-> * すべてのアクセス許可が設定されたら、"保留中のセキュリティポリシーの変更をアクティブにする" を検索し、変更を承認します。
+> * The account that is used to set up permissions for the security group must be a Workday Administrator.
+> * To set permissions, search for "Domain Security Policies for Functional Area", then search for each functional area ("System"/"Staffing") and grant the permissions listed in the table.
+> * Once all permissions have been set, search for "Activate Pending Security Policy Changes" and approve the changes.
 
-Workday 統合ユーザー、セキュリティグループ、およびアクセス許可を設定する方法の詳細については、「アクセス[許可の統合または外部エンドポイント](https://go.microsoft.com/fwlink/?linkid=2103212)へのアクセス」の手順 1 ~ 4 を参照してください。
+For more information about setting up Workday integration users, security groups, and permissions, see steps 1 to 4 of the [Grant Integration or External Endpoint Access to Workday](https://go.microsoft.com/fwlink/?linkid=2103212) guide (accessible with Workday documentation/community credentials).
 
-## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>OAuth を使用して Workday を Cloud App Security に接続する方法
+## <a name="how-to-connect-workday-to-cloud-app-security-using-oauth"></a>How to connect Workday to Cloud App Security using OAuth
 
-1. 「前提条件」に記載されているセキュリティグループのメンバーであるアカウントを使用して、Workday にサインインします。
+1. Sign in to Workday with an account that is a member of the security group mentioned in the prerequisites.
 
-1. テナント設定の編集–システム を検索し、**ユーザーアクティビティログ** で **ユーザーアクティビティログを有効にする** を選択します。
+1. Search for "Edit tenant setup – system", and under **User Activity Logging**, select **Enable User Activity Logging**.
 
-    ![ユーザーアクティビティログの許可のスクリーンショット](media/connect-workday-enable-logging.png)
+    ![Screenshot of allowing user activity logging](media/connect-workday-enable-logging.png)
 
-1. 「Edit tenant setup – security」を検索し、 **[oauth 2.0 設定]** で **[Oauth 2.0 Clients Enabled]** を選択します。
+1. Search for "Edit tenant setup – security", and under **OAuth 2.0 Settings**, select **OAuth 2.0 Clients Enabled**.
 
-1. "API クライアントの登録" を検索し、 **[Api クライアントの登録-タスク]** を選択します。
+1. Search for "Register API Client" and select **Register API Client – Task**.
 
-1. **[API クライアントの登録]** ページで、次の情報を入力し、 **[OK]** をクリックします。
+1. On the **Register API Client** page, fill out the following information, and then click **OK**.
 
     | フィールド名 | 値 |
     | ---- | ---- |
-    | クライアント名 | Microsoft Cloud App Security |
-    | クライアント許可の種類 | 認証コード付与 |
-    | アクセストークンの種類 | Bearer |
-    | リダイレクト URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
-    | OAuth2 スコープ | **スタッフ**と**システム** |
-    | スコープ (機能領域) | **スタッフ**と**システム** |
+    | Client Name | Microsoft Cloud App Security |
+    | Client Grant Type | Authorization Code Grant |
+    | Access Token Type | Bearer |
+    | Redirection URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | OAuth2 Scopes | **Staffing** and **System** |
+    | Scope (Functional Areas) | **Staffing** and **System** |
 
-    ![API クライアントの登録のスクリーンショット](media/connect-workday-register-api-client.png)
+    ![Screenshot of registering API client](media/connect-workday-register-api-client.png)
 
-1. 登録したら、次のパラメーターをメモして、 **[完了]** をクリックします。
+1. Once registered, make a note for the following parameters, and then click **Done**.
 
     * クライアント ID
-    * クライアントシークレット
-    * Workday REST API エンドポイント
-    * トークンエンドポイント
-    * 承認エンドポイント
+    * Client Secret
+    * Workday REST API Endpoint
+    * Token Endpoint
+    * Authorization Endpoint
 
-    ![API クライアントの登録を確認するスクリーンショット](media/connect-workday-register-api-client-confirm.png)
+    ![Screenshot of confirming registration of API client](media/connect-workday-register-api-client-confirm.png)
 
-1. Cloud App Security ポータルで、 **[調査]** をクリックし、 **[接続さ]** れたアプリ をクリックします。
+1. In the Cloud App Security portal, click **Investigate** and then click **Connected Apps**.
 
-1. **[アプリコネクタ]** ページで、プラスボタンをクリックし、 **[Workday]** をクリックします。
+1. In the **App connectors** page, click the plus button and then **Workday**.
 
-    ![アプリコネクタの追加のスクリーンショット](media/connect-workday-add-app.png)
+    ![Screenshot of adding app connector](media/connect-workday-add-app.png)
 
-1. ポップアップでインスタンス名を追加し、[Workday に**接続**] をクリックします。
+1. In the popup, add your instance name and then click **Connect Workday**.
 
-    ![インスタンス名の追加のスクリーンショット](media/connect-workday-add-app-connect.png)
+    ![Screenshot of adding instance name](media/connect-workday-add-app-connect.png)
 
-1. 次のページで、メモしておいた情報を詳細に入力し、 **[Workday で接続]** をクリックします。
+1. On the next page, fill out the details with the information you noted earlier, and then click **Connect in Workday**.
 
-    ![アプリの詳細を入力したスクリーンショット](media/connect-workday-add-app-connect-details.png)
+    ![Screenshot of filling out app details](media/connect-workday-add-app-connect-details.png)
 
-1. Workday では、Workday アカウントへの Cloud App Security アクセスを許可するかどうかを確認するポップアップが表示されます。 続行するには、 **[許可]** をクリックします。
+1. In Workday, a popup will ask you if you want to allow Cloud App Security access to your Workday account. 続行するには、 **[許可]** をクリックします。
 
-    ![アプリへのアクセスの承認のスクリーンショット](media/connect-workday-add-app-allow.png)
+    ![Screenshot of authorizing access to app](media/connect-workday-add-app-allow.png)
 
-1. Cloud App Security ポータルに戻ると、Workday が正常に接続されたことを示すメッセージが表示されます。 **[API のテスト]** をクリックして、正常に接続されたことを確認します。
+1. Back in the Cloud App Security portal, you should see a message that Workday was successfully connected. **[API のテスト]** をクリックして、正常に接続されたことを確認します。
 
     テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。
 
 > [!NOTE]
-> Workday に接続すると、接続する7日間のイベントが表示されます。
+> After connecting Workday, you'll receive events for seven days prior to connection.
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

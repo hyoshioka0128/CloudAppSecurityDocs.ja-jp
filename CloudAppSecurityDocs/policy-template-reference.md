@@ -15,12 +15,12 @@ ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0cdb9fbc855f957c579d3a62f8120a96bdd8a1c0
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 09a5702f5a1e1d28dc64172bf6a8204d2bfce5d0
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336279"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460551"
 ---
 # <a name="policy-template-reference"></a>ポリシー テンプレート リファレンス
 
@@ -73,5 +73,5 @@ ms.locfileid: "72336279"
 ## <a name="next-steps"></a>次のステップ 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   

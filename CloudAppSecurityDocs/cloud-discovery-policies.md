@@ -15,12 +15,12 @@ ms.assetid: 45446111-ed1a-4699-9df5-840cc6664a6b
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 719d09c3d35f14e66862718e19562c7a16c18bf8
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 274dace6a7d6c4b1e083f689568d4e9247f3c44a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335564"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461237"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 
@@ -35,7 +35,7 @@ ms.locfileid: "72335564"
   
 2. **[ポリシーの作成]** をクリックしてから **[アプリの検出]** ポリシーを選択します。  
   
-     ![アプリ検出ポリシーのメニュー](./media/app-discovery-policy-menu.png "アプリ検出ポリシーのメニュー")  
+     ![app discovery policy menu](./media/app-discovery-policy-menu.png "アプリ検出ポリシーのメニュー")  
   
 3. ポリシーに名前と説明を指定します。 必要に応じて、テンプレートを使用することができます。 ポリシー テンプレートの詳細については、「[Control cloud apps with policies](control-cloud-apps-with-policies.md)」(ポリシーによるクラウド アプリの制御) を参照してください。  
   
@@ -67,7 +67,7 @@ ms.locfileid: "72335564"
  下部にある特定の検出されたアプリに対してアラートをトリガーするしきい値を設定します。 たとえば、環境内でアプリを使用したユーザーが 100 名を超えた場合や、サービスから特定のデータ量がダウンロードされた場合にのみ通知することができます。
 さらに、1 日に受信するアラート数を設定することもできます。  
   
-![アプリ検出ポリシーの例](./media/app-discovery-policy-example.png "アプリ検出ポリシーの例")  
+![app discovery policy example](./media/app-discovery-policy-example.png "アプリ検出ポリシーの例")  
   
 ## <a name="cloud-discovery-anomaly-detection"></a>Cloud Discovery の異常検出
 
@@ -77,7 +77,7 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 2. **[ポリシーの作成]** をクリックしてから **[Cloud Discovery 異常検出ポリシー]** を選択します。  
   
-     ![Cloud Discovery 異常検出ポリシーのメニュー](./media/cloud-discovery-anomaly-detection-policy-menu.png "Cloud Discovery 異常検出ポリシーのメニュー")  
+     ![cloud discovery anomaly detection policy menu](./media/cloud-discovery-anomaly-detection-policy-menu.png "Cloud Discovery 異常検出ポリシーのメニュー")  
   
 3. ポリシーに名前と説明を指定します。 必要に応じて、ポリシー テンプレートを使用することもできます。ポリシー テンプレートの詳細については、「[Control cloud apps with policies](control-cloud-apps-with-policies.md)」(ポリシーによるクラウド アプリの制御) を参照してください。  
   
@@ -95,11 +95,11 @@ Cloud App Security では、Cloud Discovery 内のすべてのログを対象に
   
 8. **[作成]** をクリックします。  
   
-![新しい異常検出ポリシー](./media/new-discovery-anomaly-policy.png "新しい異常検出ポリシー")  
+![new discovery anomaly policy](./media/new-discovery-anomaly-policy.png "新しい異常検出ポリシー")  
   
 ## <a name="next-steps"></a>次のステップ 
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

@@ -15,16 +15,16 @@ ms.assetid: 776e834f-3c20-4d5f-9fab-4c5b975edb06
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 457d2cfd0a5b1c25b8463a8d48e3172c044a673e
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 4dabcc39d9688b8595b574b6806bcc7eb3e8780b
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084137"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458739"
 ---
 # <a name="log-collector-ftp-configuration"></a>ログ コレクターの FTP 構成
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、Cloud App Security の Cloud Discovery の Docker 構成を変更する方法について説明します。
 
@@ -36,7 +36,7 @@ Cloud App Security の Cloud Discovery の Docker 構成を変更する必要が
 
 1. ログ コレクター ホストに接続します。
 
-2. `docker exec -it <collector name> pure-pw passwd <ftp user>`を実行します。
+2. `docker exec -it <collector name> pure-pw passwd <ftp user>` を実行します。
 
     1. 新しいパスワードを入力します。
     2. 確認のために、新しいパスワードをもう一度入力します。
@@ -59,14 +59,14 @@ Cloud App Security の Cloud Discovery の Docker 構成を変更する必要が
     ![FTP パスワードの変更](./media/new-certs.png)
 
     - **FTP:** 1 ファイルのみが必要です。 このファイルは、キーと証明書データをこの順序で含む、**pure-ftpd.pem** という名前です。
-    - **Syslog:** **ca.pem**、\*\*server-key.pem、**server-cert.pem** という 3 つのファイルが必要です。 いずれかのファイルが欠けていると、更新は行われません。
+    - **Syslog:** **ca.pem**、**server-key.pem、**server-cert.pem** という 3 つのファイルが必要です。 いずれかのファイルが欠けていると、更新は行われません。
 
 4. ターミナルでの実行: `docker exec -t <collector name> update_certs` このコマンドにより、次のスクリーンショットと同様の出力が表示されます。
 
     ![FTP パスワードの変更](./media/update-certs.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [Cloud Discovery の展開](set-up-cloud-discovery.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

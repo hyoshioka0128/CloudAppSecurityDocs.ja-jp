@@ -15,12 +15,12 @@ ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7496acb186a2da664e4a91e596d16b5e8551ff10
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: c7f73e64ed6934563012e244f6f0db0bd3569859
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336023"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459934"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Microsoft Cloud App Security 状態のトラブルシューティング
 
@@ -39,6 +39,6 @@ Microsoft Cloud App Security サービスの現在の状態は、次の手順で
  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a0fd462818e843556820a1a54a6c1d3a0b9c90ea
-ms.sourcegitcommit: be21e0f68f5e4d23bde661485bd9338e74bd6e45
+ms.openlocfilehash: 7b333509cd00b2a17b3a3984da30e4e8142daf88
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/26/2019
-ms.locfileid: "71307696"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460751"
 ---
 # <a name="control-cloud-apps-with-policies"></a>ポリシーにるクラウド アプリの制御
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 ポリシーを使用すると、クラウド内のユーザーの動作を定義できます。 クラウド環境内の危険な動作、違反、または疑わしいデータ ポイントやアクティビティを検出できます。 必要に応じて、修復ワーク フローを統合し、完全なリスク軽減を実現できます。 収集するクラウド環境の情報の種類や実行する修復アクションの種類ごとに、さまざまな種類のポリシーが関連付けられています。
 
@@ -173,28 +173,28 @@ Cloud App Security では、クラウド内のさまざまなリスクを軽減�
 
 既定では、新しく作成されたポリシーは有効になっています。
 
-## <a name="policies-overview-report"></a>ポリシーの概要レポート
+## <a name="policies-overview-report"></a>Policies overview report
 
-Cloud App Security を使用すると、ポリシーごとに集計されたアラートメトリックを示すポリシーの概要レポートをエクスポートして、組織をより効果的に保護するためのポリシーの監視、理解、およびカスタマイズを行うことができます。
+Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
 
-ログをエクスポートするには、次の手順を実行します。
+To export a log, perform the following steps:
 
-1. **[ポリシー]** ページで、 **[エクスポート]** ボタンをクリックします。
+1. In the **Policies** page, click the **Export** button.
 
-1. 必要な時間の範囲を指定します。
+1. Specify the required time range.
 
 1. クリックして **エクスポート**します。 この処理には時間がかかる場合があります。
 
-エクスポートされたレポートをダウンロードするには:
+To download the exported report:
 
 1. レポートの準備ができたら、 **[設定]** 、 **[エクスポートされたレポート]** の順に移動します。
 
-1. テーブルで、ポリシーの一覧の**概要レポート**から関連するレポートを選択し、[ダウンロード] をクリックします。
+1. In the table, select the relevant report from the list of **Policies overview report** and click download.
 
     ![[ダウンロード] ボタン](./media/download-button.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 81555a0839090af293cc58ce1bde9c70a2a82aac
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336044"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459983"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 
@@ -28,9 +28,9 @@ ms.locfileid: "72336044"
 
 この記事では、Cloud Discovery のエラー一覧と、各エラーの推奨される解決策について説明します。
 
-## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP 統合
+## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP integration
 
-Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が表示されない場合は、 **Win10 エンドポイントユーザー**のレポートがないため、接続先のコンピューターが Windows 10 バージョン1809以降であること、およびデータにアクセスできるようになるまでに必要な2時間を待機していることを確認してください。
+If you integrated Microsoft Defender ATP with Cloud App Security, and you don't see the results of the integration - there's not a **Win10 endpoint users** report - make sure the machines you're connecting to are Windows 10 version 1809 or later, and that you waited the necessary two hours that it takes before your data is accessible.
 
 
 ## <a name="log-parsing-errors"></a>ログ解析エラー
@@ -39,10 +39,10 @@ Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が�
 
 ### <a name="governance-log-errors"></a>ガバナンス ログ エラー
 
-|エラー|説明|解決方法|
+|Error|[説明]|解決方法|
 |----|----|----|
 |サポートされていないファイルの種類|アップロードしたファイルが有効なログ ファイルではありません (画像ファイルなど)。|ファイアウォールまたはプロキシから直接エクスポートされた **text**、**zip、または **gzip** ファイルをアップロードします。|
-|ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しませんでした。|1. ログが破損していないことを確認します。 <br /> 2. [アップロード] ページに表示されるサンプル形式にログを比較して照合します。|
+|ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しませんでした。|1. Verify that the log isn't corrupt. <br /> 2. Compare and match your log to the sample format shown in the upload page.|
 |Transactions are more than 90 days old (トランザクションは 90 日より前のものです)|すべてのトランザクションは 90 日よりも前のもので、無視されます。|最近のイベントが含まれる新しいログをエクスポートし、アップロードし直します。|
 |No transactions to cataloged cloud apps (カタログ化されたクラウド アプリに対するトランザクションがありません)|認識されているクラウド アプリに対するトランザクションがログに見つかりません。|ログに送信トラフィック情報が含まれていることを確認します。|
 |サポートされていないログの種類|**[データ ソース] = [その他 (サポートされていません)]** の場合、ログは解析されません。 代わりに、Cloud App Security テクニカル チームに送信され、レビューされます。|Cloud App Security テクニカル チームは、データ ソースごとに専用のパーサーを構築しています。 よく使用されているデータ ソースは、[既にサポートされています](set-up-cloud-discovery.md)。 サポートされないデータ ソースの各アップロードはレビューされ、新しいデータ ソース パーサーのパイプラインに追加されます。 新しいパーサーの通知は、Cloud App Security [リリース ノート](release-notes.md)の一部として公開されます。|
@@ -51,12 +51,12 @@ Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が�
 
 |問題 | 解決方法 |
 |--------|--|
-|FTP でログ コレクターに接続できません| 1. SSH 資格情報ではなく、FTP 資格情報を使用していることを確認します。 <br />2. 使用している FTP クライアントが SFTP に設定されていないことを確認します。  |
-|コレクター構成を更新できませんでした | 1. 最新のアクセストークンを入力したことを確認します。 <br />2. ログコレクターがポート443で送信トラフィックを開始できることをファイアウォールで確認します。|
-|コレクターに送信されたログがポータルに表示されません | 1. ガバナンスログに失敗した解析タスクがあるかどうかを確認します。  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2. 見つからない場合は、ポータルでデータソースとログコレクターの構成を確認します。 <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3. オンプレミスのログコレクターコンピューターのローカル構成を確認します。  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4. log collector がポート443で送信トラフィックを開始できることを確認します。 |
+|FTP でログ コレクターに接続できません| 1. Verify that you are using FTP credentials and not SSH credentials. <br />2. Verify that the FTP client you are using is not set to SFTP.  |
+|コレクター構成を更新できませんでした | 1. Verify that you entered the latest access token. <br />2. Verify in your firewall that the log collector is allowed to initiate outbound traffic on port 443.|
+|コレクターに送信されたログがポータルに表示されません | 1.  Check to see if there are failed parsing tasks in the Governance log.  <br />  &nbsp;&nbsp;&nbsp;&nbsp;ある場合は、上記のログ解析エラー一覧を参照してエラーを解決してください。<br /> 2. If not, check the data sources and Log collector configuration in the portal. <br /> &nbsp;&nbsp;&nbsp;&nbsp;a. [データ ソース] ページで、使用しているデータ ソースが正確に構成されていることを確認します。 <br />&nbsp;&nbsp;&nbsp;&nbsp;b. [ログ コレクター] ページで、データ ソースが正しいログ コレクターにリンクされていることを確認します。 <br /> 3. Check the local configuration of the on-premises log collector machine.  <br />&nbsp;&nbsp;&nbsp;&nbsp;a. SSH でログ コレクターにログインし、collector_config ユーティリティを実行します。<br/>&nbsp;&nbsp;&nbsp;&nbsp;b. 定義したプロトコル (Syslog/TCP、Syslog/UDP、または FTP) を使用してファイアウォールまたはプロキシがログをログ コレクターに送信していること、および正しいポートとディレクトリに送信していることを確認します。<br /> &nbsp;&nbsp;&nbsp;&nbsp;c. コンピューターで netstat を実行し、ファイアウォールまたはプロキシからの接続を受信していることを確認します <br /> 4.   Verify that the log collector is allowed to initiate outbound traffic on port 443. |
 |ログ コレクターの状態: 作成済み | ログ コレクターの展開が完了していませんでした。 展開ガイドに従って、オンプレミスの展開手順を完了します。|
 |ログ コレクターの状態: 切断 | リンクされているどのデータ ソースからも、過去 24 時間以内にデータを受信していません。 |
-|最新のコレクターイメージをプルできませんでした| Docker の展開中にこのエラーが発生した場合は、ホストコンピューターに十分なメモリがない可能性があります。 これを確認するには、ホスト: `docker pull microsoft/caslogcollector`で次のコマンドを実行します。 このエラーが返された場合は、ホストコンピューターの管理者に連絡して、より多くの領域を提供 `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device`。|
+|Failed pulling latest collector image| If you get this error during Docker deployment, it could be that you don't have enough memory ont he host machine. To check this, run this command on the host: `docker pull microsoft/caslogcollector`. If it returns this error: `failed to register layer: Error processing tar file(exist status 1): write /opt/jdk/jdk1.8.0_152/src.zip: no space left on device` contact your host machine administrator to provide more space.|
 
 ## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー
 
@@ -64,9 +64,9 @@ Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が�
 |----|----|
 |Discovery データのアップロードと解析は成功しましたが、Cloud Discovery ダッシュボードの表示が空です|ダッシュボードは、ログに含まれていないデータでフィルターされているため、表示されるデータがない場合があります。 Cloud Discovery ダッシュボードのフィルターを変更して、別の種類のデータが結果に表示されるようにします。|
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
 

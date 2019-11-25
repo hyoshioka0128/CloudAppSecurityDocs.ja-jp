@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ad5620aaa7ae1643de731d6d4d254be058991ee
-ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
+ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203498"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460812"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -186,4 +186,4 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 > [!div class="nextstepaction"]
 > [Log collector FTP configuration](log-collector-ftp.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

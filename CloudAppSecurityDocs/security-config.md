@@ -1,5 +1,5 @@
 ---
-title: Azure のセキュリティ構成に関する推奨事項を取得する-Cloud App Security |Microsoft Docs
+title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
 description: この記事では、Azure Security Center を統合することによって Cloud App Security で セキュリティ構成の推奨事項を取得する方法について説明します。
 keywords: ''
 author: shsagir
@@ -15,16 +15,16 @@ ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c68cf2cb1df5c61a2f3685818320cd3ffd30eb15
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1e53dcc94b6ca96aeefcfd511e4ae4e9557e5a21
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084975"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460493"
 ---
 # <a name="security-configuration-for-azure"></a>Azure のセキュリティ構成
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security では、ご利用の Azure 環境におけるセキュリティ構成の評価を提供します。 Azure Security Center で提供される評価には、不足している構成とセキュリティ制御に対する推奨事項が示されます。
 
@@ -45,7 +45,7 @@ Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効
 
 2. 変更を有効にするには、必ず <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> を開く必要があります。
 
-3. Cloud App Security で、[**セキュリティ構成**の**調査** > ] を参照し、 **[Azure]** タブを選択します。
+3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
     - Microsoft Cloud App Security が提供するのは、上位 50 個のサブスクリプションに向けた推奨事項のみです。
     - 変更が有効になるまでに、最大 15 分かかる場合があります。
 
@@ -57,8 +57,8 @@ Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効
 
    ![セキュリティ構成](media/security-configuration-azure.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

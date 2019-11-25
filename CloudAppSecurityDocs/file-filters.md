@@ -15,16 +15,16 @@ ms.assetid: cadcd6db-05b2-4974-91fe-cfac3d57aecd
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7c7912a0b9363ce7f5375038914ea62d4606262
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: c7c42715eeb5aed583e85372b4560b61cc917be4
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084662"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74458830"
 ---
 # <a name="files"></a>ファイル
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Microsoft Cloud App Security は、データ保護を提供するため、接続しているアプリのすべてのファイルを表示します。 アプリ コネクターを使用して Microsoft Cloud App Security をアプリを接続すると、Microsoft Cloud App Security は OneDrive や Salesforce などに格納されたすべてのファイルをスキャンします。 その後、Cloud App Security では、ファイルが変更されるたびに再スキャンが行われます。内容、メタデータ、共有アクセス許可の変更を対象にできます。 スキャン時間は、アプリに格納されたファイルの数によって異なります。 **[ファイル]** ページでは、ファイルをフィルターしてクラウド アプリにどのような種類のデータが保存されているかを調べることもできます。
 
@@ -107,7 +107,7 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 - **ファイルの種類** – Cloud App Security は、サービスから受信した MIME タイプとファイルのスキャンの両方を基にして、実際のファイルの種類を判断します。 このスキャンは、データ スキャンに関連するファイルに対して行われます (ドキュメント、画像、プレゼンテーション、スプレッドシート、テキスト、ZIP/アーカイブ ファイル)。 フィルターは、ファイル/フォルダーの種類ごとに機能します。 たとえば、"... であるすべてのフォルダー" や、"... であるすべてのスプレッドシート ファイル" などです。
 
 
-   ![policy_file filters trash](./media/policy_file-filters-trash.png "policy_file filters trash")  
+   ![policy_file filters trash](./media/policy_file-filters-trash.png "policy_file フィルターのごみ箱")  
 
   
 - **ごみ箱** – ごみ箱フォルダー内のファイルを除外するか、または含めます。 これらのファイルは引き続き共有できる場合があるため、危険性があります。  
@@ -128,32 +128,32 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
   
 **[適用対象]** フィルターを設定することにより、特定のファイルに対して実行されるようにポリシーを設定することもできます。 **[すべてのファイル]** 、 **[選ばれたフォルダー]** 、または **[選ばれたフォルダーを除くすべてのファイル]** でフィルターします。 その後、関連するファイルまたはフォルダーを選択します。  
   
-![フィルターに適用](./media/apply-to-filter.png "フィルターに適用")  
+![apply to filter](./media/apply-to-filter.png "フィルターへの適用")  
 <!-- 
 >[!NOTE]
 > If at any point you want to clear the filters, you can do so by clicking the clear filters icon ![clear filters icon](./media/clear-filters.png).
 -->
 
-## <a name="authorizing-files"></a>ファイルの承認
+## <a name="authorizing-files"></a>Authorizing files
 
-マルウェアまたは DLP リスクの原因としてファイルを特定したら、ファイルを調査することをお勧めし Cloud App Security ます。 ファイルが安全であると判断した場合は、それらを承認できます。 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。
+After Cloud App Security has identified files as posing a malware or DLP risk, we recommend that you investigate the files. If you determine that the files are safe, you can authorize them. 承認したファイルはマルウェアの検出レポートから削除され、このファイルに対する今後の一致が抑制されます。
 
-### <a name="to-authorize-files"></a>ファイルを承認するには
+### <a name="to-authorize-files"></a>To authorize files
 
-1. Cloud App Security で、 **[コントロール]** をクリックし、 **[ポリシー]** をクリックします。
-1. ポリシーの一覧で、調査をトリガーしたポリシーが表示されている行の **カウント** 列で 一致 リンクをクリックします。
+1. In Cloud App Security, click **Control** and then **Policies**.
+1. In the list of policies, on the row in which the policy that triggered the investigation appears, in the **Count** column, click the matches link.
     > [!TIP]
-    > 種類によってポリシーの一覧をフィルター処理できます。 次の表に、リスクの種類ごとに、使用するフィルターの種類を示します。
+    > You can filter the list of policies by type. The following table lists, per risk type, which filter type to use:
     >
-    > | リスクの種類 | フィルターの種類 |
+    > | Risk type | Filter type |
     > | --- | --- |
     > | DLP | [ファイル ポリシー] |
-    > | マルウェア | マルウェア検出ポリシー |
-1. 一致するファイルの一覧で、調査対象のファイルが表示されている行の **[承認]** をクリックします。
+    > | マルウェア | Malware detection policy |
+1. In the list of matched files, on the row in which the file under investigation appears, click **Authorize**.
 
 ## <a name="working-with-the-file-drawer"></a>ファイル ドロワーの使用
 
-ファイル ログでファイル自体をクリックすることにより、各ファイルに関する詳細情報を見ることができます。 をクリックすると、ファイル**ドロアー**が開きます。このファイルでは、次の操作を実行できます。
+ファイル ログでファイル自体をクリックすることにより、各ファイルに関する詳細情報を見ることができます。 Clicking opens the **File drawer** that provides the following additional actions you can take on the file:
 
 - **URL** - そのファイルの場所に移動します。
 - **ファイル識別子** - ファイル ID と暗号化キーを含むファイルの生データの詳細がポップアップ表示されます。
@@ -163,12 +163,12 @@ Cloud App Security に組み込まれている DLP エンジンは、一般的�
 
 ファイル ドロワーのフィールドでは、その他のファイルへのコンテキスト リンクが提供されており、ドリルダウンしてドロワーから直接実行することができます。 たとえば、 **[所有者]** フィールドの横にカーソルを移動すると、[フィルターに追加] アイコン ![フィルターに追加](./media/add-to-filter-icon.png) を使用して、現在のページのフィルターに所有者をすぐに追加できます。 歯車の [設定] アイコン ![settings icon](./media/contextual-settings-icon.png) を使用して、設定ページを直接ポップアップで開き、 **[分類ラベル]** などのフィールドの構成を変更することもできます。
 
-![ファイル ドロワー](./media/file-drawer.png "ファイル ドロワー")  
+![File drawer](./media/file-drawer.png "ファイル ドロワー")  
   
 使用できるガバナンス アクションの一覧については、「[ガバナンス ログ](governance-actions.md#file-governance-actions)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
   
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

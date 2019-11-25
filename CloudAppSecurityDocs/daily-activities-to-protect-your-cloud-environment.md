@@ -15,12 +15,12 @@ ms.assetid: a835fa24-15c5-4bbb-a25a-688444040f1f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b5c87765b8a87beec784fb580b90d21d2c5e4596
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: f184081a9911cb04a281419ae5c8f2048c7a690d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335723"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461397"
 ---
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
 
@@ -48,10 +48,10 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 
 トリガーされた新しいアラートを確認するため、毎日ダッシュボードを確認することをお勧めします。 これは、クラウド環境の正常性を監視するのに適しています。 ダッシュボードは、何が起こっているかを把握するのに役立ちます。  
 
-![Cloud App Security ダッシュボード](./media/dashboard.png "ダッシュボード")  
+![Cloud App Security dashboard](./media/dashboard.png "ダッシュボード")  
 
 
 ## <a name="next-steps"></a>次のステップ  
 アラートの調査の詳細については、「[調査](investigate.md)」を参照してください。  
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

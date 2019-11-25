@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bb91534942fd95f04ebf1f87ac5582a14aed6a55
-ms.sourcegitcommit: 474c052a3f705973ebe83da3a03be3008fdf85ff
+ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203838"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459454"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>接続されているアプリからユーザー グループをインポートする
 
@@ -48,7 +48,7 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 ## <a name="how-to-import-user-groups"></a>ユーザー グループをインポートする方法
 
-1. メニューバーで、設定アイコン![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[ユーザーグループ]** を選択します。
+1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "設定アイコン") and select **User groups**.
 1. **[ユーザー グループのインポート]** をクリックします。
 
     ![ユーザー グループのインポート](./media/user-groups-add.png)
@@ -56,22 +56,22 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 1. ユーザー グループのインポート元にするアプリを選択します。 アプリの一覧は、展開したアプリ コネクタによって変わります。
 1. インポートするグループを選択します。 利用できるグループの一覧は、アプリ自体のすべての既存ユーザー グループの一覧になります。 新しいグループを追加する場合、アプリ自体でそれを直接追加する必要があります。 その後、グループがここのリストに表示されたら、それを選択します。
 1. グループのサイズによっては、インポートに最大 1 時間かかることがあります。 インポート プロセスがかんりょうしたときにメールで通知するオプションを選択できます。
-1. **[インポート]** をクリックします。 グループをインポートすると、Cloud App Security は Active Directory Connect と同様にグループ メンバーを自動同期します。
+1. クリックして **インポート**します。 グループをインポートすると、Cloud App Security は Active Directory Connect と同様にグループ メンバーを自動同期します。
 1. インポートが完了すると、 **[ユーザー グループ]** ページから、特定のグループをクリックし、グループのすべてのメンバーの一覧を表示できます。 グループのメンバーをクリックして、特定のアカウントの詳細にドリルダウンします。 ユーザーやユーザーのアクティビティのグラフなど、ユーザーが使用しているアプリや、アカウントの概要を見ることができます。
 
 グループをインポートすると、 **[アクティビティ ログ]** で調査したり、ポリシーを作成したりするときのフィルターとしてグループを選択できます。
 
 > [!NOTE]
 >
-> - インポートされたユーザーグループをフィルターで使用できるようになるまで、少し時間がかかる場合があります。
+> - There may be a short delay until imported user groups are available in filters.
 > - あるユーザー グループのインポート後に実行されたアクティビティにのみ、そのユーザー グループのメンバーにより実行されているというタグが付けられます。
 > - 初回の同期後は、1 時間ごとにグループが更新されます。
 
 ユーザー グループ フィルターの使用方法については、「[アクティビティ](activity-filters.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: cf94b290-b7ef-4fee-854e-c8ff8d11dea9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 34127140ac088352b35ffedd03c53f9b046e07a7
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5e289a3eea5bbc3306bfe6fa07c5a9084145e6d1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335943"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459255"
 ---
 # <a name="working-with-discovery-data"></a>探索データでの作業
 
@@ -56,7 +56,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 3. **[除外されたユーザー]** 、 **[除外された IP アドレス]** 、 **[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
-     ![ユーザーを除外する](./media/exclude-user.png "exclude user")  
+     ![exclude user](./media/exclude-user.png "ユーザーを除外する")  
 
 ## <a name="manage-continuous-reports"></a>継続的レポートの管理
 
@@ -105,7 +105,7 @@ Cloud Discovery データを削除するには:
   
 3. **[削除]** ボタンをクリックします。  
   
-    ![データを削除する](./media/delete-data.png "delete data")  
+    ![delete data](./media/delete-data.png "データを削除する")  
   
    > [!NOTE]  
    >  すぐには削除されず、削除処理には数分かかります。
@@ -116,6 +116,6 @@ Cloud Discovery データを削除するには:
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

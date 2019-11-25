@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 12e09ac4a3f7e15aecbdac15c781e59f618850ac
-ms.sourcegitcommit: aa227a88d09eff15953d10663386f85ff68095b3
+ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74203514"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460776"
 ---
 # <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
 
@@ -29,7 +29,7 @@ ms.locfileid: "74203514"
 
 ## <a name="technical-requirements"></a>技術要件
 
-* OS: Ubuntu 14.04、16.04、18.04RHEL 7.2 以上、または CentOS 7.2 以降 
+* OS: Ubuntu 14.04, 16.04, and 18.04; RHEL 7.2 or higher, or CentOS 7.2 or higher 
 
 * ディスク領域: 250 GB
 
@@ -40,7 +40,7 @@ ms.locfileid: "74203514"
 * [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 > [!NOTE]
-> 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
+> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
 >
 > ```console
 > docker stop <collector_name>
@@ -57,7 +57,7 @@ ms.locfileid: "74203514"
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
 1. **[自動ログ アップロード]** 設定ページに移動します。
 
@@ -68,7 +68,7 @@ ms.locfileid: "74203514"
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
     1. **[データ ソースの追加]** をクリックします。  
-    データソース](media/add-data-source.png) を追加 ![には
+    ![Add a data source](media/add-data-source.png)
     1. プロキシまたはファイアウォールの **[名前]** を付けます。  
     ![ubuntu1](media/ubuntu1.png)
     1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
@@ -88,7 +88,7 @@ ms.locfileid: "74203514"
     1. **[ログ コレクターを追加]** をクリックします。
     1. ログ コレクターに **[名前]** を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. コレクターに接続するすべての**データソース**を選択し、 **[更新]** をクリックして構成を保存します。
+    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
 
     ![ubuntu2](media/ubuntu2.png)
 
@@ -102,7 +102,7 @@ ms.locfileid: "74203514"
     >
     > * 1 つのログ コレクターで複数のデータ ソースを処理できます。
     > * Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
-    > * FTP を使用して初めてログデータを送信するユーザーについては、FTP ユーザーのパスワードを変更することをお勧めします。 詳細については、「 [FTP パスワードの変更](log-collector-ftp.md#changing-the-ftp-password)」を参照してください。
+    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
@@ -140,12 +140,12 @@ ms.locfileid: "74203514"
 
 1. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-「**正常に完了**しました!
-![ubuntu8」というメッセージが表示され](media/ubuntu8.png)
+You should see the message: **Finished successfully!** 
+![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 次に例を示します。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -171,9 +171,9 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ![カスタムの継続的レポート](media/custom-continuous-report.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ログコレクターの FTP 構成](log-collector-ftp.md)
+> [Log collector FTP configuration](log-collector-ftp.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接 Cloud App Security を選択することもできます](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

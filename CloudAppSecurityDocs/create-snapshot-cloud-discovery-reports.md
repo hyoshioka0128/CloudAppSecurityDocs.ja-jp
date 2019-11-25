@@ -15,12 +15,12 @@ ms.assetid: ecc1949d-c861-4636-952a-c3a260719bb5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af9db528ae9e3c3c21e67d502baf2f026d722f68
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 05e579a46bc8367f8968f7a5028bae42e840844c
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335667"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459014"
 ---
 # <a name="create-snapshot-cloud-discovery-reports"></a>Cloud Discovery のスナップショット レポートを作成する
 
@@ -91,7 +91,7 @@ Cloud Discovery で、ログに含まれていない属性の表示や分析は�
 
 
 Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たす必要があります。
-1. [データソースはサポートされて](set-up-cloud-discovery.md#supported-firewalls-and-proxies)います。
+1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
 2. ログの形式が期待されている標準の形式と一致する (形式はログ ツールのアップロードで確認されます)。
 3. イベントが 90 日以上経過していない。
 4. ログ ファイルが有効で、送信トラフィック情報を含む。
@@ -101,7 +101,7 @@ Cloud Discovery レポートを正しく生成するには、トラフィック 
 ## <a name="next-steps"></a>次のステップ  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
     
       
   

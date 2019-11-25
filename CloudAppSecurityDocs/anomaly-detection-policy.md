@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f63c05f9584b960ee5ac7b01bd06a4971e02bfe0
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 710c42d0fa307c30919ac8383e7e46881ae0b131
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334811"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461158"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -55,57 +55,57 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * この検出では、地理的に離れた場所からの 2 回のユーザー アクティビティ (1 つまたは複数のセッション) が、最初の場所から 2 番目の場所に移動するのにかかると予想される時間よりも短い期間に発生する場合、別のユーザーが同じ資格情報を使用しているものとして識別します。 この検出では、あり得ない移動で使用される、組織内の他のユーザーが普通に使用している VPN や場所などの明らかな "誤検知" を無視する機械学習アルゴリズムが使用されています。 この検出には 7 日間の初期学習期間があり、その期間に新しいユーザーのアクティビティ パターンが学習されます。 あり得ない移動の検出では、2 つの場所の間での異常なあり得ないユーザー アクティビティが識別されます。 アクティビティには、侵害のインジケーターでありアラートの価値があるとみなすのに十分な異常性がある必要があります。 このため、VPN アクティビティなど誤検出の原因となるシナリオに対応できるよう、検出ロジックにはさまざまな抑制レベルが含まれています。 機密度スライダーを使用すると、アルゴリズムを制御し、検出ロジックの厳密度を定義することができます。
 機密度のレベルが高いほど、検出ロジックの一部として適用される抑制レベルが低下します。 このように、防御のニーズと SNR ターゲットに応じて検出を制御することができます。
 
-### <a name="activity-from-infrequent-country"></a>頻度の低い国からのアクティビティ
+### <a name="activity-from-infrequent-country"></a>Activity from infrequent country
 
 * この検出では、過去にアクティビティがあった場所を考慮し、新規の場所とあまり使用されない場所が判別されます。 この異常検出エンジンでは、組織のユーザーが以前に使用した場所の情報が保持されます。 組織内の任意のユーザーによって最近使用されていない場所や使用されたことがない場所からアクティビティが発生すると、アラートがトリガーされます。
 
-### <a name="malware-detection"></a>マルウェアの検出
+### <a name="malware-detection"></a>Malware detection
 
 * この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
     > [!NOTE]
-    >- Office 365 のマルウェア検出の場合は、Office 365 Advanced Threat Protection P1 の有効なライセンスが必要です。
-    >- Cloud App Security は、次のアプリのマルウェア検出をサポートしています。
+    >- For Office 365 malware detection, you need a valid license for Office 365 Advanced Threat Protection P1.
+    >- Cloud App Security supports malware detection the following apps:
     >    - ボックス
     >    - ドロップボックス
     >    - G Suite
     >    - Office 365
 
-### <a name="activity-from-anonymous-ip-addresses"></a>匿名 IP アドレスからのアクティビティ
+### <a name="activity-from-anonymous-ip-addresses"></a>Activity from anonymous IP addresses
 
 * この検出では、匿名のプロキシ IP アドレスと認識されている IP アドレスからユーザーがアクティブであったことが識別されます。 これらのプロキシは、デバイスの IP アドレスを隠したいユーザーによって使用されますが、悪意のある目的で使用されることもあります。 この検出には、組織内のユーザーに広く使用されている誤ってタグ付けされた IP アドレスなどの "誤検知" を減らす機械学習アルゴリズムが使用されています。
 
-### <a name="ransomware-activity"></a>ランサムウェアアクティビティ
+### <a name="ransomware-activity"></a>Ransomware activity
 
 * Cloud App Security は、異常検出を含むようにランサムウェア検出機能を拡張し、高度なランサムウェア攻撃に対する包括的な防御を強化しました。 Cloud App Security は、弊社のセキュリティ調査の専門技術を使用して、ランサムウェア アクティビティを反映する行動パターンを識別し、総体的で堅牢な保護を実現します。 たとえば、Cloud App Security によってファイル アップロードまたはファイル削除のアクティビティが高い確率で識別される場合、それは暗号化プロセスを表している可能性があります。 このデータは、接続された API から受け取ってログに収集され、その後、学習した行動パターンおよび脅威インテリジェンス (既知のランサムウェアの拡張子など) と組み合わされます。 Cloud App Security がランサムウェアを検出する方法について詳しくは、「[ランサムウェアから組織を保護する](use-case-ransomware.md)」をご覧ください。
 
-### <a name="activity-performed-by-terminated-user"></a>終了したユーザーによって実行されるアクティビティ
+### <a name="activity-performed-by-terminated-user"></a>Activity performed by terminated user
 
 * この検出では、解雇された従業員が SaaS アプリ上でアクションを実行し続けるときに識別できます。 内部からの脅威で最大のリスクは円満退職しなかった従業員から生じることがデータから明らかであるため、解雇された従業員のアカウントでのアクティビティに注目することが重要です。 従業員が会社を辞めるとき、そのアカウントが企業アプリからプロビジョニング解除されることもありますが、多くのケースでは、特定の企業リソースへのアクセスを維持しています。 特権アカウントを考慮するとき重要性がさらに増します。かつての管理者が引き起こす可能性がある潜在的な損害はその性質上大きくなるためです。
 この検出は、複数のアプリに対するユーザーの行動を監視する Cloud App Security の機能を利用しています。この機能によって、ユーザーの通常のアクティビティ、アカウントが終了させられているという事実、および他のアプリ上での実際のアクティビティを識別できます。 たとえば、あるユーザーが、Azure AD アカウントは終了させられたが、企業の AWS インフラストラクチャへのアクセスをまだ保持している場合、大規模な損害をもたらす恐れがあります。
 
 検出では、Azure AD 内ではアカウントを終了させられているが、AWS や Salesforce などの他のプラットフォーム内では引き続きアクティビティを実行しているユーザーを検索します。 これには、もう 1 つのアカウント (ユーザーの主要なシングル サインオン アカウントではない) を使用してリソースを管理しているユーザーが、特に該当します。これらのアカウントは多くの場合、ユーザーが会社を辞したときに終了されないためです。
 
-### <a name="activity-from-suspicious-ip-addresses"></a>疑わしい IP アドレスからのアクティビティ
+### <a name="activity-from-suspicious-ip-addresses"></a>Activity from suspicious IP addresses
 
 * この検出では、Microsoft 脅威インテリジェンスによってリスクがあると判断された IP アドレスからユーザーがアクティブであったことが識別されます。 これらの IP アドレスは、ボットネット C & C などの悪意のあるアクティビティに関係しており、危険な状態のアカウントである可能性があります。 この検出には、組織内のユーザーに広く使用されている誤ってタグ付けされた IP アドレスなどの "誤検知" を減らす機械学習アルゴリズムが使用されています。
 
-### <a name="suspicious-inbox-forwarding"></a>疑わしい受信トレイの転送
+### <a name="suspicious-inbox-forwarding"></a>Suspicious inbox forwarding
 
 * この検出では疑わしい電子メール転送ルールが検索されます。たとえば、すべての電子メールのコピーを外部アドレスに転送する受信トレイのルールをユーザーが作成した場合などです。
 
 > [!NOTE]
 > Cloud App Security では、ユーザーの一般的な動作に基づき、疑わしいものとして識別される各転送ルールについてのみアラートが表示されます。
 
-### <a name="suspicious-inbox-manipulation-rules"></a>疑わしい受信トレイの操作規則
+### <a name="suspicious-inbox-manipulation-rules"></a>Suspicious inbox manipulation rules
 
 * この検出では、環境がプロファイリングされて、メッセージやフォルダーを削除または移動する疑わしいルールがユーザーの受信トレイに設定されていると、アラートがトリガーされます。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に非表示にされていること、または組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを示す可能性があります。
 
-### <a name="suspicious-email-deletion-activity-preview"></a>疑わしい電子メール削除アクティビティ (プレビュー)
+### <a name="suspicious-email-deletion-activity-preview"></a>Suspicious email deletion activity (Preview)
 
-* このポリシーは、ユーザーが1つのセッションで疑わしい電子メール削除アクティビティを実行したときに、環境をプロファイルし、アラートをトリガーします。 このポリシーは、ユーザーのメールボックスが、電子メールでのコマンドと制御通信 (C & C/C2) などの潜在的な攻撃ベクトルによって侵害される可能性があることを示している可能性があります。
+* This policy profiles your environment and triggers alerts when a user performs suspicious email deletion activities in a single session. This policy may indicate that a user mailboxes may be compromised by potential attack vectors such as command-and-control communication (C&C/C2) over email.
 
-### <a name="unusual-activities-by-user"></a>通常とは異なるアクティビティ (ユーザーによる)
+### <a name="unusual-activities-by-user"></a>Unusual activities (by user)
 
 これらの検出では、以下を行うユーザーを識別します。
 
@@ -114,21 +114,21 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * 異常なファイル削除アクティビティ
 * 異常な偽装されたアクティビティ
 * 異常な管理アクティビティ
-* 通常とは異なる Power BI レポート共有アクティビティ (プレビュー)
-* 通常とは異なる複数の VM 作成アクティビティ (プレビュー)
-* 通常とは異なる複数のストレージ削除アクティビティ (プレビュー)
+* Unusual Power BI report sharing activities (preview)
+* Unusual multiple VM creation activities (preview)
+* Unusual multiple storage deletion activities (preview)
 
 これらのポリシーでは、学習したベースラインを基に 1 セッション内の複数のアクティビティを探します。このようなアクティビティは侵害行為が行われたことを示している可能性があります。 これらの検出では、ユーザーのログオン パターンをプロファイルして誤検出を減らす機械学習アルゴリズムが使用されています。 これらの検出は、ユーザーの環境をプロファイルし、組織のアクティビティから学習したベースラインを基にアラートをトリガーするヒューリスティック異常検出エンジンの一部です。
 
-### <a name="multiple-failed-login-attempts"></a>ログイン試行が複数回失敗しました
+### <a name="multiple-failed-login-attempts"></a>Multiple failed login attempts
 
 * この検出は、1 つのセッションで複数回ログインを試行して失敗した、学習したベースラインからセキュリティ違反を試みている可能性のあるユーザーを識別します。
 
-### <a name="data-exfiltration-to-unsanctioned-apps"></a>承認されるアプリに対するデータの除外
+### <a name="data-exfiltration-to-unsanctioned-apps"></a>Data exfiltration to unsanctioned apps
 
 * ユーザーまたは IP アドレスによって、組織からの情報流出の試みの可能性があるアクティビティを実行することを承認されていないアプリが使用されると、このポリシーが自動的に有効になり、アラートが表示されます。
 
-### <a name="multiple-delete-vm-activities"></a>複数の VM の削除活動
+### <a name="multiple-delete-vm-activities"></a>Multiple delete VM activities
 
 * このポリシーでは使用環境をプロファイルし、ユーザーが単一セッションで複数の VM を削除したときに、組織のベースラインを基にアラートをトリガーします。 これは、侵害の試行を示している可能性があります。
 
@@ -144,7 +144,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 異常検出エンジンを調整するには、次の方法でユーザー設定に応じてアラートを抑制または表示します。
 
-* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
+* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に、必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
 
 * また、アクセス頻度の低い国、異常な IP アドレス、不審な IP アドレス、あり得ない移動によるアラートでは、失敗および成功した両方のログインを分析するか、または成功したログインのみを分析するかを構成できます。
 
@@ -167,9 +167,9 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 新しい異常検出ポリシーによってトリガーされたさまざまなアラートを即座にトリアージし、最初に処理すべきアラートはどれかを決定できます。 これを行うにはアラートのコンテキストが必要になるため、ユーザーは全体像を確認し、実際に悪意のある操作が行われているかどうかを把握できます。
 
-1. **[アクティビティ ログ]** で、アクティビティ ドロワーを表示するアクティビティを開くことができます。 **[ユーザー]** をクリックして、[ユーザーの洞察] タブを表示します。このタブには、アラートの数、アクティビティ、接続した場所などの情報が表示されます。これは調査において重要です。
+1. **[アクティビティ ログ]** で、アクティビティ ドロワーを表示するアクティビティを開くことができます。 Click on **User** to view the user insights tab. This tab includes information like number of alerts, activities, and where they've connected from, which is important in an investigation.
 
-    ![異常検出アラート 1](./media/anomaly-alert-user1.png) ![異常検出アラート 1](./media/anomaly-alert-user2.png)
+    ![anomaly detection alert1](./media/anomaly-alert-user1.png) ![anomaly detection alert1](./media/anomaly-alert-user2.png)
 
 1. これにより、ユーザーが実行した不審なアクティビティはどれかを把握し、アカウントが侵害されたかどうかについて確信を深めることができます。 たとえば、複数回失敗したログインに関するアラートは疑わしいもので、ブルート フォース攻撃の可能性を示すこともありますが、アプリケーションの不適切な構成を示すこともあり、この場合アラートは正しい反応の真陽性となります。 ただし、さらに不審なアクティビティを伴う複数回失敗したログイン アラートがある場合には、アカウントが侵害されている確率は高くなります。 次の例では、 **[複数回失敗したログイン試行]** アラートの後、 **[TOR の IP アドレスからのアクティビティ]** と **[あり得ない移動アクティビティ]** (どちらもそれ自体が大きな侵害の痕跡 (IOC)) が続いています。 これがそれほど疑わしくなかったとしても、次に、同じユーザーが**大量ダウンロード アクティビティ**を実行していることが示されています。このアクティビティは多くの場合、攻撃者がデータの取り出しを行ったことを示すものです。
 
@@ -177,8 +177,8 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 1. マルウェアに感染したファイルの場合、ファイルの検出後に、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

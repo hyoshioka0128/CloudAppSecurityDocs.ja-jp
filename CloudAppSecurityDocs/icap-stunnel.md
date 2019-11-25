@@ -15,12 +15,12 @@ ms.assetid: 9656f6c6-7dd4-4c4c-a0eb-f22afce78071
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 13e1aad4a3ad2b8a93e291e019b637866acabffc
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 26046b25636523aab8494dcb122660d94e3182b9
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335762"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460730"
 ---
 # <a name="external-dlp-integration"></a>外部 DLP 統合
 
@@ -322,4 +322,4 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
 ## <a name="next-steps"></a>次のステップ 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

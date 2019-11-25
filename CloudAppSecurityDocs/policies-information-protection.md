@@ -1,6 +1,6 @@
 ---
-title: Information protection ポリシー-Cloud App Security |Microsoft Docs
-description: このトピックでは、Cloud App Security で多くの情報保護ポリシーを構成する手順の概要を説明します。
+title: Information protection policies - Cloud App Security | Microsoft Docs
+description: This topic outlines the steps to configure many information protection policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
@@ -10,338 +10,338 @@ ms.service: cloud-app-security
 ms.assetid: 9a616767-4558-46f1-9da8-aa337920ae45
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 98ae6e5c4646ce59a9681a13043ba6f27d7ca3c5
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 89cf851ec023d7ad2ebeaf4698df6e060a98b7c2
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336254"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460593"
 ---
 # <a name="information-protection-policies"></a>情報保護に関するポリシー
 
 *適用対象: Microsoft Cloud App Security*
 
-Cloud App Security ファイルポリシーを使用すると、幅広い自動プロセスを適用できます。 ポリシーを設定して、継続的なコンプライアンススキャン、法的な電子情報開示タスク、一般公開されている機密コンテンツの DLP などの情報保護を提供できます。
+Cloud App Security file policies allow you to enforce a wide range of automated processes. Policies can be set to provide information protection, including continuous compliance scans, legal eDiscovery tasks, and DLP for sensitive content shared publicly.
 
-Cloud App Security は、アクセスレベルやファイルの種類など、20を超えるメタデータフィルターに基づいて任意のファイルの種類を監視できます。 詳細については、「[ファイルポリシー](data-protection-policies.md)」を参照してください。
+Cloud App Security can monitor any file type based on more than 20 metadata filters, for example, access level, and file type. For more information, see [File policies](data-protection-policies.md).
 
-## <a name="detect-and-prevent-external-sharing-of-sensitive-data"></a>機密データの外部共有を検出して防止する
+## <a name="detect-and-prevent-external-sharing-of-sensitive-data"></a>Detect and prevent external sharing of sensitive data
 
-個人情報またはその他の機密データが含まれているファイルがクラウドサービスに保存され、社内のセキュリティポリシーに違反している組織の外部のユーザーと共有し、潜在的なコンプライアンス違反を作成することを検出します。
+Detect when files with personally identifying information or other sensitive data are stored in a Cloud service and shared with users who are external to your organization that violates your company's security policy and creates a potential compliance breach.
 
 ### <a name="prerequisites"></a>必要条件
 
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
  
 ### <a name="steps"></a>手順
 
-1. **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
+1. On the **Policies** page, create a new **File policy**.
 
-2. **[アクセスレベル]** を [**パブリック (インターネット)]、[パブリック/外部**] の順に選択します。
+2. Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-3. **[検査方法]** で、 **[データ分類サービス (dc)]** を選択し、 **[種類の選択]** で、DCS で検査する機密情報の種類を選択します。
+3. Under **Inspection method**, select **Data Classification Service (DCS)** , and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-6. アラートがトリガーされたときに実行される**ガバナンス**アクションを構成します。 たとえば、G Suite で検出されたファイル違反に対して実行されるガバナンスアクションを作成できます。この場合、**外部ユーザーを削除**し、**パブリックアクセスを削除**するオプションを選択します。
+6. Configure the **Governance** actions to be take when an alert is triggered. For example, you can create a governance action that runs on detected file violations in G Suite in which you select the option to **Remove external users** and **Remove public access**.
 
-7. ファイルポリシーを作成します。
+7. Create the file policy.
 
-## <a name="detect-externally-shared-confidential-data"></a>外部共有の機密データを検出する
+## <a name="detect-externally-shared-confidential-data"></a>Detect externally shared confidential data
 
-"**社外秘**" というラベルが付けられ、クラウドサービスに保存されているファイルが外部ユーザーと共有され、会社のポリシーに違反していることを検出します。
+Detect when files that are labeled **Confidential** and are stored in a cloud service are shared with external users, violating company policies.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Azure Information Protection 統合](azip-integration.md)を有効にします。
+- Enable [Azure Information Protection integration](azip-integration.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  **分類ラベル**のフィルター を **社外秘** または 会社の同等 の**Azure Information Protection**に設定します。
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-3.  **[アクセスレベル]** を [**パブリック (インターネット)]、[パブリック/外部**] の順に選択します。
+3.  Set the filter **Access Level** equals **Public (Internet) / Public / External**.
 
-1.  省略可能: 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。
+1.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services.
 
-5.  ファイルポリシーを作成します。
+5.  Create the file policy.
 
-## <a name="detect-and-encrypt-sensitive-data-at-rest"></a>保存データの機密データを検出して暗号化する
+## <a name="detect-and-encrypt-sensitive-data-at-rest"></a>Detect and encrypt sensitive data at rest
 
-個人を特定する情報や、クラウドアプリで共有されているその他の機密データを含むファイルを検出し、分類ラベルを適用して、社内の従業員のみにアクセスを制限します。
+Detect files containing personally identifying information and other sensitive data that is share in a cloud app and apply classification labels to limit access only to employees in your company.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
-- [Azure Information Protection 統合](azip-integration.md)を有効にします。
+- Enable [Azure Information Protection integration](azip-integration.md).
  
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  **[検査方法]** で、 **[データ分類サービス (dc)]** を選択し、 **[種類の選択]** で、dcs で検査する機密情報の種類を選択します。
+2.  Under **Inspection method**, select **Data Classification Service (DCS)** and under **Select type** select the type of sensitive information you want DCS to inspect.
 
-5.  **[アラート]** で、 **[分類ラベルガバナンスの適用]** チェックボックスをオンにし、会社が会社の従業員へのアクセスを制限するために使用する分類ラベルを選択します。 
+5.  Under **Alert**, check **Apply classification label governance** and select the classification label that your company uses to restrict access to company employees. 
 
-6.  ファイルポリシーを作成します。
-
-> [!NOTE]
-> Cloud App Security に分類ラベルを直接適用する機能は、現在、Box、G Suite、SharePoint online、OneDrive for business でのみサポートされています。
-
-## <a name="detect-stale-externally-shared-data"></a>古い外部共有データを検出する
-
-使用されていないファイル、最近更新されなかったファイル、直接パブリックリンク、web 検索、または特定の外部ユーザーによってパブリックにアクセスできるファイルを検出します。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-### <a name="steps"></a>手順
-
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
-
-2.  ポリシーテンプレートを選択して、**古い外部共有ファイル**に適用します。
-
-3.  組織のポリシーに合わせて、**最後に変更**されたフィルターをカスタマイズします。
-
-4.  省略可能: 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 たとえば、次のようになります。
-
-    - G Suite: ファイルをプライベートにして、最後のファイルエディターに通知する
-
-    - Box: 最後のファイルエディターに通知します
-
-    - SharePoint online: ファイルをプライベートにして、ポリシー一致ダイジェストをファイル所有者に送信する
-
-6.  ファイルポリシーを作成します。
-
-## <a name="detect-data-access-from-an-unauthorized-location"></a>不正な場所からのデータアクセスの検出
-
-組織の一般的な場所に基づいて、未承認の場所からファイルがアクセスされたことを検出して、潜在的なデータリークまたは悪意のあるアクセスを特定します。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-### <a name="steps"></a>手順
-
-1. **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
-
-2. フィルターアクティビティの**種類**を、**表示**、**ダウンロード**、**アクセス**、**変更**など、関心のあるファイルおよびフォルダーのアクティビティに設定します。
-
-3. [フィルターの**場所**] を [次の値と等しくない] に設定し、組織が活動を想定している国を入力します。 
-
-    1.  省略可能: 逆の方法を使用して、組織が特定の国からのアクセスをブロックする場合は、 **[場所]** にフィルターを設定できます。
-
-4.  省略可能: **[ユーザーの中断]** など、検出された違反に適用される**ガバナンス**アクションを作成します (可用性はサービス間で異なります)。
-
-6.  アクティビティポリシーを作成します。
-
-## <a name="detect-and-protect-confidential-data-store-in-a-non-compliant-sp-site"></a>準拠していない SP サイトでの機密データストアの検出と保護
-
-機密情報としてラベル付けされ、非対応の SharePoint サイトに格納されているファイルを検出します。
-
-### <a name="prerequisites"></a>必要条件
-
-Azure Information Protection ラベルは、組織内で構成および使用されます。
-
-### <a name="steps"></a>手順
-
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
-
-2.  **分類ラベル**のフィルター を **社外秘** または 会社の同等 の**Azure Information Protection**に設定します。
-
-3.  **[親フォルダー]** のフィルター が 次の値と等しくない に設定されている場合は、 **[フォルダーの選択]** で組織内のすべての準拠フォルダーを選択します。
-
-6.  **[アラート]** で **、[一致するファイルごとにアラートを作成**する] を選択します。
-
-7.  省略可能: 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 たとえば、**ポリシー一致ダイジェストをファイル所有者に送信**し、**管理者検疫に配置**するように**Box**を設定します。
-
-8.  ファイルポリシーを作成します。
-
-## <a name="detect-externally-shared-source-code"></a>外部共有のソースコードの検出
-
-ソースコードである可能性があるコンテンツを含むファイルがパブリックに共有されているか、組織外のユーザーと共有されているかを検出します。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-### <a name="steps"></a>手順
-
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
-
-2.  ポリシーテンプレートを選択して**外部共有ソースコード**を適用する
-
-3.  省略可能: 組織のソースコードファイル拡張子に一致するようにファイル**拡張子**の一覧をカスタマイズします。
-
-4. 省略可能: 違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 たとえば、Box で、**ポリシー一致ダイジェストをファイル所有者に送信**し、**管理者検疫に配置**します。
-
-5. ポリシーテンプレートを選択して適用する
-
-## <a name="detect-unauthorized-access-to-group-data"></a>グループデータへの不正アクセスを検出する
-
-特定のユーザーグループに属する特定のファイルが、グループに属していないユーザーによって過度にアクセスされていることを検出します。これは、内部的な脅威の可能性があります。
-
-### <a name="prerequisites"></a>必要条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
-
-### <a name="steps"></a>手順
-
-1. **[ポリシー]** ページで、新しい**アクティビティポリシー**を作成します。
-
-2.  [ **Act on] で** **[反復活動]** を選択し、**繰り返し活動の最小**数をカスタマイズして、組織のポリシーに準拠する**期間**を設定します。
-
-3.  フィルターアクティビティの**種類**を、**表示**、**ダウンロード**、**アクセス**、**変更**など、関心のあるファイルおよびフォルダーのアクティビティに設定します。
-
-4.  [**ユーザー**のフィルター] を [**グループの**次の値と等しい] に設定し、関連するユーザーグループを選択します。 
+6.  Create the file policy.
 
 > [!NOTE]
-> [ユーザーグループは、](user-groups.md)サポートされているアプリから手動でインポートできます。
+> The ability to apply a classification label directly in Cloud App Security is currently only supported for Box, G Suite, SharePoint online and OneDrive for business.
 
-6.  **ファイルとフォルダー**のフィルターを **[特定のファイルまたはフォルダー]** に設定し、監査対象のユーザーグループに属するファイルとフォルダーを選択します。
+## <a name="detect-stale-externally-shared-data"></a>Detect stale externally shared data
 
-9.  違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 たとえば、**ユーザーを中断**するように選択できます。
-
-11. ファイルポリシーを作成します。
-
-## <a name="detect-publicly-accessible-s3-buckets"></a>パブリックにアクセス可能な S3 バケットの検出
-
-AWS S3 バケットからのデータリークの可能性を検出し、保護します。
+Detect unused and stale files, files that were not updated recently, that are accessible publicly via direct public link, web search, or to specific external users.
 
 ### <a name="prerequisites"></a>必要条件
 
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、AWS インスタンスが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  ポリシーテンプレートに**パブリックにアクセスできる S3 バケット (AWS)** を選択して適用します。
+2.  Select and apply the policy template **Stale externally shared files**.
 
-3.  違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。 使用できるガバナンスアクションは、サービスによって異なります。 たとえば、AWS を**プライベート**に設定して、S3 バケットをプライベートにします。
+3.  Customize the filter **Last modified** to match your organization’s policy.
 
-5.  ファイルポリシーを作成します。
+4.  Optional: Set **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. たとえば、次のようになります。
 
-## <a name="detect-and-protect-gdpr-related-data-across-file-storage-apps"></a>ファイルストレージアプリ間で GDPR 関連データを検出して保護する 
+    - G Suite: Make the file private and notify the last file editor
 
-クラウドストレージアプリで共有されているファイルを検出し、個人を特定する情報や、GDPR コンプライアンスポリシーによってバインドされているその他の機密データを含みます。 次に、承認された担当者のみにアクセスを制限する分類ラベルを自動的に適用します。
+    - Box: Notify the last file editor
+
+    - SharePoint online: Make the file private and send a policy-match digest to the file owner
+
+6.  Create the file policy.
+
+## <a name="detect-data-access-from-an-unauthorized-location"></a>Detect data access from an unauthorized location
+
+Detect when files are accessed from an unauthorized location, based on your organization’s common locations, to identify a potential data leak or malicious access.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+### <a name="steps"></a>手順
 
-- [Azure Information Protection 統合](azip-integration.md)が有効になり、AIP で GDPR ラベルが構成されます。
+1. On the **Policies** page, create a new **Activity policy**.
+
+2. Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+
+3. Set the filter **Location** does not equal, and then enter the countries from which your organization expects activity. 
+
+    1.  Optional: You can use the opposite approach and set the filter to **Location** equals if your organization blocks access from specific countries.
+
+4.  Optional: Create **Governance** actions to be applied to detected violation (availability varies between services), such as  **Suspend user**.
+
+6.  Create the Activity policy.
+
+## <a name="detect-and-protect-confidential-data-store-in-a-non-compliant-sp-site"></a>Detect and protect confidential data store in a non-compliant SP site
+
+Detect files that are labeled as confidential and are stored in a non-compliant SharePoint site.
+
+### <a name="prerequisites"></a>必要条件
+
+Azure Information Protection labels are configured and used inside the organization.
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**ファイルポリシー**を作成します。
+1.  On the **Policies** page, create a new **File policy**.
 
-2.  **[検査方法]** で、 **[データ分類サービス (dc)]** を選択し、 **[種類の選択]** で、GDPR コンプライアンスに準拠している1つ以上の情報の種類を選択します。たとえば、eu デビットカード番号、EU 運転免許証番号、eunational id 番号、EU passport 番号、EU SSN、SU の課税番号。
+2.  Set the filter **Classification label** to **Azure Information Protection** equals the **Confidential** label, or your company's equivalent.
 
-5.  違反が検出されたときにファイルに対して実行される**ガバナンス**アクションを設定します。サポートされているアプリごとに **[分類ラベルガバナンスを適用]** を選択します。
+3.  Set the filter **Parent folder** does not equal, and then under **Select a folder** choose all the compliant folders in your organization.
 
-7.  ファイルポリシーを作成する
+6.  Under **Alerts** select **Create an alert for each matching file**.
+
+7.  Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, Set **Box** to **Send policy-match digest to file owner** and **Put in admin quarantine**.
+
+8.  Create the file policy.
+
+## <a name="detect-externally-shared-source-code"></a>Detect externally shared source code
+
+Detect when files that contain content that might be source code are shared publicly or are shared with users outside of your organization.
+
+### <a name="prerequisites"></a>必要条件
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>手順
+
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Select and apply the policy template **Externally shared source code**
+
+3.  Optional: Customize the list of file **Extensions** to match your organization's source code file extensions.
+
+4. Optional: Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, in Box, **Send policy-match digest to file owner** and **Put in admin quarantine**.
+
+5. Select and apply the policy template
+
+## <a name="detect-unauthorized-access-to-group-data"></a>Detect unauthorized access to group data
+
+Detect when certain files that belong to a specific user group are being accessed excessively by a user who is not part of the group, which could be a potential insider threat.
+
+### <a name="prerequisites"></a>必要条件
+
+You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>手順
+
+1. On the **Policies** page, create a new **Activity policy**.
+
+2.  Under **Act on** select **Repeated activity** and customize the **Minimum repeated activities** and set a **Timeframe** to comply with your organization's policy.
+
+3.  Set the filter **Activity type** to the file and folder activities that interest you, such as **View**, **Download**, **Access**, and **Modify**.
+
+4.  Set the filter **User** to **From group** equals and then select the relevant user groups. 
 
 > [!NOTE]
->  現在、**分類ラベルの適用**は、Box、G Suite、SharePoint Online、OneDrive for business でのみサポートされています。
+> [User groups can be imported manually](user-groups.md) from supported apps.
 
-## <a name="block-downloads-for-external-users-in-real-time"></a>リアルタイムで外部ユーザーのダウンロードをブロックする
+6.  Set the filter **Files and folders** to **Specific files or folders** equals and then choose the files and folders that belong to the audited user group.
 
-Cloud App Security の[セッション制御](proxy-intro-aad.md)を使用して、リアルタイムでファイルのダウンロードをブロックすることで、会社のデータが外部ユーザーによって exfiltrated されないようにします。
+9.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, you can choose to **Suspend user**.
+
+11. Create the file policy.
+
+## <a name="detect-publicly-accessible-s3-buckets"></a>Detect publicly accessible S3 buckets
+
+Detect and protect against potential data leaks from AWS S3 buckets.
 
 ### <a name="prerequisites"></a>必要条件
 
-- [Azure AD アプリの条件付きアクセスアプリコントロールをデプロイ](proxy-deployment-aad.md)します。
-
-- アプリがシングルサインオンに Azure AD を利用する SAML ベースのアプリであることを確認します。 サポートされるアプリの詳細については、「[サポートされているアプリとクライアント](proxy-intro-aad.md#supported-apps-and-clients)」を参照してください。
+You must have an AWS instance connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
 
 ### <a name="steps"></a>手順
 
-1. **[ポリシー]** ページで、新しい**セッションポリシー**を作成します。
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Select and apply the policy template **Publicly accessible S3 buckets (AWS)** .
+
+3.  Set the **Governance** actions to be taken on files when a violation is detected. The governance actions available vary between services. For example, set AWS to **Make private** which would make the S3 buckets private.
+
+5.  Create the file policy.
+
+## <a name="detect-and-protect-gdpr-related-data-across-file-storage-apps"></a>Detect and protect GDPR related data across file storage apps 
+
+Detect files that are shared in cloud storage apps and contain personally identifying information and other sensitive data that is bound by a GDPR compliance policy. Then, automatically apply classification labels to limit access only to authorized personnel.
+
+### <a name="prerequisites"></a>必要条件
+
+- You must have at least one app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+- [Azure Information Protection integration](azip-integration.md) is enabled and GDPR label is configured in AIP.
+
+### <a name="steps"></a>手順
+
+1.  On the **Policies** page, create a new **File policy**.
+
+2.  Under **Inspection method**, select **Data Classification Service (DCS)** , and under **Select type** select one or more information types that comply with the GDPR compliance, for example: EU debit card number, EU drivers license number, EU national identification number, EU passport number, EU SSN, SU tax identification number.
+
+5.  Set the **Governance** actions to be taken on files when a violation is detected, by selecting **Apply Classification label governance** for each supported app.
+
+7.  Create the file policy
+
+> [!NOTE]
+>  Currently, **Apply classification label** is only supported for Box, G Suite, SharePoint online and OneDrive for business.
+
+## <a name="block-downloads-for-external-users-in-real-time"></a>Block downloads for external users in real time
+
+Prevent company data from being exfiltrated by external users, by blocking file downloads in real time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
+
+### <a name="prerequisites"></a>必要条件
+
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
+
+### <a name="steps"></a>手順
+
+1. On the **Policies** page, create a new **Session policy**.
 
 2. **[セッション制御の種類]** で、 **[ファイル ダウンロードの制御 (DLP 使用)]** を選択します。
 
-3. **[アクティビティフィルター]** で **[ユーザー]** を選択し、 **[グループ]** を **[外部ユーザー]** に設定します。
+3. Under **Activity filters**, select **User** and set it to **From group** equals **External users**.
 
    >[!NOTE]
-   > このポリシーをすべてのアプリに適用するには、アプリフィルターを設定する必要はありません。
+   > You don't need to set any app filters to enable this policy to apply to all apps.
 
-1. ファイル**フィルター**を使用して、ファイルの種類をカスタマイズできます。 これにより、セッションポリシーで制御されるファイルの種類をより細かく制御できます。
+1. You can use the **File filter** to customize the file type. This gives you more granular control over what type of files the session policy controls.
 
-2. **[アクション]** で、 **[ブロック]** を選択します。 **[ブロックメッセージのカスタマイズ]** を選択すると、ユーザーに送信されるカスタムメッセージを設定できます。これにより、コンテンツがブロックされる理由と、適切な分類ラベルを適用することによってコンテンツを有効にする方法がわかります。
+2. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 3. **[作成]** をクリックします。
 
   
-## <a name="enforce-read-only-mode-for-external-users-in-real-time"></a>外部ユーザーにリアルタイムで読み取り専用モードを適用する
+## <a name="enforce-read-only-mode-for-external-users-in-real-time"></a>Enforce read-only mode for external users in real time
 
-Cloud App Security の[セッション制御](proxy-intro-aad.md)を使用して、印刷操作やコピー/貼り付け操作をリアルタイムでブロックすることによって、会社のデータが外部ユーザーによって exfiltrated されないようにします。
+Prevent company data from being exfiltrated by external users, by blocking print and copy/paste activities in real-time, utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
 
 ### <a name="prerequisites"></a>必要条件
 
--   [Azure AD アプリの条件付きアクセスアプリコントロールをデプロイ](proxy-deployment-aad.md)します。
--   アプリがシングルサインオンに Azure AD を利用する SAML ベースのアプリであることを確認します。 サポートされるアプリの詳細については、「[サポートされているアプリとクライアント](proxy-intro-aad.md#supported-apps-and-clients)」を参照してください。
+-   [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
+-   Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
  
 ### <a name="steps"></a>手順
 
-1. **[ポリシー]** ページで、新しい**セッションポリシー**を作成します。
+1. On the **Policies** page, create a new **Session policy**.
 
-2. **[セッション制御の種類]** で、 **[アクティビティのブロック]** を選択します。
+2. Under **Session control type**, select **Block activities**.
 
-3. **アクティビティソース**フィルター:
+3. In the **Activity source** filter:
    
-    1. **[ユーザー]** を選択し、[**グループ] から** **[外部ユーザー]** に設定します。
+    1. Select **User** and set **From group** to **External users**.
 
-    2. **活動の種類**として **[印刷]** 、 **[項目の切り取り/コピー]** を選択します。
+    2. Select **Activity type** equals **Print** and **Cut/copy item**.
 
     > [!NOTE]
-    > このポリシーをすべてのアプリに適用するには、アプリフィルターを設定する必要はありません。
+    > You don't need to set any app filters to enable this policy to apply to all apps.
 
-4. 省略可能: **[検査方法]** で、適用する検査の種類を選択し、DLP スキャンに必要な条件を設定します。
+4. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-5. **[アクション]** で、 **[ブロック]** を選択します。 **[ブロックメッセージのカスタマイズ]** を選択すると、ユーザーに送信されるカスタムメッセージを設定できます。これにより、コンテンツがブロックされる理由と、適切な分類ラベルを適用することによってコンテンツを有効にする方法がわかります。
+5. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 6. **[作成]** をクリックします。
 
-## <a name="block-upload-of-unclassified-documents-in-real-time"></a>未分類のドキュメントをリアルタイムでアップロードすることをブロックする
+## <a name="block-upload-of-unclassified-documents-in-real-time"></a>Block upload of unclassified documents in real time
 
-Cloud App Security の[セッション制御](proxy-intro-aad.md)を利用して、保護されていないデータをユーザーがクラウドにアップロードできないようにします。
+Prevent users from uploading unprotected data to the cloud, by utilizing Cloud App Security’s [session controls](proxy-intro-aad.md).
 
 ### <a name="prerequisites"></a>必要条件
 
-- [Azure AD アプリの条件付きアクセスアプリコントロールをデプロイ](proxy-deployment-aad.md)します。
+- [Deploy conditional access app control for Azure AD apps](proxy-deployment-aad.md).
 
-- アプリがシングルサインオンに Azure AD を利用する SAML ベースのアプリであることを確認します。 サポートされるアプリの詳細については、「[サポートされているアプリとクライアント](proxy-intro-aad.md#supported-apps-and-clients)」を参照してください。
+- Make sure your app is a SAML-based apps that utilizes Azure AD for single sign-on. For more information on supported apps, see [Supported apps and clients](proxy-intro-aad.md#supported-apps-and-clients).
 
-- Azure Information Protection 分類ラベルを組織内で構成して使用する必要があります。
+- Azure Information Protection classification labels must be configured and used inside your organization.
 
 ### <a name="steps"></a>手順
 
-1. **[ポリシー]** ページで、新しい**セッションポリシー**を作成します。
+1. On the **Policies** page, create a new **Session policy**.
 
-2. **[セッション制御の種類]** で、 **[ファイルのアップロードを制御する (dlp 付き)]** または **[ファイルのダウンロードを制御する (dlp を使用)]** を選択します。
+2. Under **Session control type**, select **Control file upload (with DLP)** or **Control file download (with DLP)** .
 
    >[!NOTE]
-   > このポリシーを有効にして、すべてのユーザーとアプリに適用するフィルターを設定する必要はありません。
+   > You don't need to set any filters to enable this policy to apply to all users and apps.
 
-3. ファイルフィルター**分類ラベル**が [次の値と等しくない] を選択し、会社が分類されたファイルにタグを付けるために使用するラベルを選択します。
+3. Select the file filter **Classification label** does not equal and then select the labels your company uses to tag classified files.
 
-2. 省略可能: **[検査方法]** で、適用する検査の種類を選択し、DLP スキャンに必要な条件を設定します。
+2. Optional: Under **Inspection method**, select the type of inspection to apply and set the necessary conditions for the DLP scan.
 
-3. **[アクション]** で、 **[ブロック]** を選択します。 **[ブロックメッセージのカスタマイズ]** を選択すると、ユーザーに送信されるカスタムメッセージを設定できます。これにより、コンテンツがブロックされる理由と、適切な分類ラベルを適用することによってコンテンツを有効にする方法がわかります。
+3. Under **Actions**, select **Block**. You can select **Customize block message** to set a custom message to be sent to your users so they understand the reason the content is blocked and how they can enable it by applying the right classification label.
 
 4. **[作成]** をクリックします。
 
 > [!NOTE]
-> Azure Information Protection 分類ラベルの Cloud App Security 現在サポートされているファイルの種類の一覧については、「 [Azure Information Protection 統合の前提条件](azip-integration.md#prerequisites)」を参照してください。
+> For the list of file types that Cloud App Security currently supports for Azure Information Protection classification labels, see [Azure Information Protection integration prerequisites](azip-integration.md#prerequisites).
 
 
 ## <a name="next-steps"></a>次のステップ 
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

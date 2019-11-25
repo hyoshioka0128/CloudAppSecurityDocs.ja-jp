@@ -1,6 +1,6 @@
 ---
-title: Azure Sentinel と Cloud App Security の統合
-description: この記事では、汎用 SIEM と Cloud App Security の統合に関する情報を提供します。
+title: Azure Sentinel integration with Cloud App Security
+description: This article provides information integrating your generic SIEM with Cloud App Security.
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -13,133 +13,133 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c64952b7d760dfc124f9e64b2bd75d4520b36274
-ms.sourcegitcommit: 2c2a14a58492990be5bbac88ff9beb071d556c80
+ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73198796"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460392"
 ---
-# <a name="azure-sentinel-integration-preview"></a>Azure Sentinel 統合 (プレビュー)
+# <a name="azure-sentinel-integration-preview"></a>Azure Sentinel integration (preview)
 
 *適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security を Azure Sentinel (スケーラブルでクラウドネイティブの SIEM と非常) と統合することにより、アラートと検出データを一元的に監視できます。 Azure Sentinel との統合により、通常のセキュリティワークフローを維持しながら、セキュリティ手順を自動化し、クラウドベースのイベントとオンプレミスのイベントを相互に関連付けることができ、クラウドアプリケーションをより効果的に保護できます。
+You can integrate Microsoft Cloud App Security with Azure Sentinel (a scalable, cloud-native SIEM and SOAR) to enable centralized monitoring of alerts and discovery data. Integrating with Azure Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
 
-Azure Sentinel を使用する利点は次のとおりです。
+Benefits of using Azure Sentinel include:
 
-* Log Analytics によって提供されるデータ保有期間が長くなります。
-* すぐに使える視覚エフェクト。
-* Microsoft Power BI や Azure Sentinel ブックなどのツールを使用して、組織のニーズに合わせて独自の探索データの視覚化を作成します。
+* Longer data retention provided by Log Analytics.
+* Out-of-the-box visualizations.
+* Use tools such as Microsoft Power BI or Azure Sentinel workbooks to create your own discovery data visualizations that fit your organizational needs.
 
-追加の統合ソリューションには次のものがあります。
+Additional integration solutions include:
 
-* **汎用 SIEMs** -Cloud App Security と汎用 SIEM サーバーを統合します。 ジェネリック SIEM との統合の詳細については、「 [GENERIC SIEM integration](siem.md)」を参照してください。
-* **Microsoft security GRAPH API** -複数のセキュリティプロバイダーに接続するための単一のプログラムインターフェイスを提供する仲介サービス (またはブローカー) です。 詳細については、「 [Microsoft Graph セキュリティ API を使用したセキュリティソリューションの統合](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft)」を参照してください。
+* **Generic SIEMs** - Integrate Cloud App Security with your generic SIEM server. For information in integrating with a Generic SIEM, see [Generic SIEM integration](siem.md).
+* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
 
 ## <a name="how-to-integrate"></a>統合方法
 
-SIEM との統合は、次の2つの手順で行われます。
+Integrating with your SIEM is accomplished in two steps:
 
-1. Cloud App Security に設定します。
-1. Azure Sentinel で設定します。
+1. Set it up in Cloud App Security.
+1. Set it up in Azure Sentinel.
 
 ### <a name="prerequisites"></a>必要条件
 
-Azure Sentinel と統合するには:
+To integrate with Azure Sentinel:
 
-* 有効な Azure Sentinel ライセンスが必要です
-* テナントのグローバル管理者またはセキュリティ管理者である必要があります。
+* You must have a valid Azure Sentinel license
+* You must be a Global Administrator or a Security Administrator in your tenant.
 
-### <a name="integrating-with-azure-sentinel"></a>Azure Sentinel との統合
+### <a name="integrating-with-azure-sentinel"></a>Integrating with Azure Sentinel
 
-1. Cloud App Security ポータルの**設定**歯車で、 **[セキュリティ拡張機能]** をクリックします。
+1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
 
-1. **[SIEM エージェント]** タブで、[追加 ( **+** )] をクリックし、 **[Azure Sentinel]** を選択します。
+1. On the **SIEM agents** tab, click add ( **+** ), and then choose **Azure Sentinel**.
 
-    ![SIEM 統合の追加メニューを示すスクリーンショット](media/siem0.png)
+    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
 
-1. ウィザードで、Azure Sentinel に転送するデータの種類を選択します。 統合を構成するには、次の手順を実行します。
-    1. **アラート**: Azure Sentinel が有効になると、アラートは自動的に有効になります。 <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
-    1. **検出ログ**: スライダーを使用して有効または無効にします。既定ではすべて選択されています。次に、 **[適用先]** ドロップダウンを使用して、Azure Sentinel に送信する探索ログをフィルター処理します。
+1. In the wizard, select the data types you want to forward to Azure Sentinel. You can configure the integration, as follows:
+    1. **Alerts**: Alerts are automatically turned on once Azure Sentinel is enabled. <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
+    1. **Discovery logs**: Use the slider to enable and disable them, by default, everything is selected, and then use the **Apply to** drop-down to filter which discovery logs are sent to Azure Sentinel.
 
-    ![Azure Sentinel 統合の構成の開始ページを示すスクリーンショット](media/siem-sentinel-configuration.png)
+    ![Screenshot showing start page of Configure Azure Sentinel integration](media/siem-sentinel-configuration.png)
 
-1. **[次へ]** をクリックし、Azure Sentinel に進み、統合を完了します。 Azure Sentinel の構成の詳細については、「 [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security)」を参照してください。
+1. Click **Next**, and continue to Azure Sentinel to finalize the integration. For information on configuring Azure Sentinel, see [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security).
 
-    ![Azure Sentinel 統合の構成の完了ページを示すスクリーンショット](media/siem-sentinel-configuration-complete.png)
+    ![Screenshot showing finish page of Configure Azure Sentinel integration](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> 検出ログは、Cloud app Security ポータルでの構成後、15分以内に Azure Sentinel への転送を開始します。
+> Discovery logs will start forwarding to Azure Sentinel within 15 minutes of configuring them in the Cloud app Security portal.
 
-## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Azure Sentinel のアラートと検出ログ
+## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Alerts and discovery logs in Azure Sentinel
 
-統合が完了すると、Azure Sentinel で Cloud App Security アラートと検出ログを表示できます。
+Once the integration is completed, you can view Cloud App Security alerts and discovery logs in Azure Sentinel.
 
-Azure Sentinel の **[ログ]** の下にある **[Security Insights]** で、次のように Cloud App Security データ型のログを確認できます。
+In Azure Sentinel, under **Logs**, under **Security Insights**, you can find the logs for the Cloud App Security data types, as follows:
 
 | ［データの種類］ | Table |
 | --- | --- |
-| 検出ログ | McasShadowItReporting |
+| Discovery logs | McasShadowItReporting |
 | アラート | SecurityAlert |
 
-次の表では、 **McasShadowItReporting**スキーマの各フィールドについて説明します。
+The following table describes each field in the **McasShadowItReporting** schema:
 
 | フィールド | 種類 | [説明] | 例 |
 | --- | --- | --- | --- |
-| TenantId | 文字列型 | ワークスペース ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
-| SourceSystem | 文字列型 | ソースシステム-静的な値 | Azure |
-| TimeGenerated [UTC] | DateTime | 探索データの日付 | 2019-07-23T11:00: 35.858 Z |
-| StreamName | 文字列型 | 特定のストリームの名前 | マーケティング部門 |
-| TotalEvents | 整数型 | セッションあたりのイベントの合計数 | 122 |
-| BlockedEvents | 整数型 | ブロックされたイベントの数 | 0 |
-| UploadedBytes | 整数型 | アップロードされたデータの量 | 1514874 |
-| TotalBytes | 整数型 | データの合計量 | 4067785 |
-| ダウンロードバイト数 | 整数型 | ダウンロードされたデータの量 | 2552911 |
-| IpAddress | 文字列型 | 送信元 IP アドレス | 127.0.0.0 |
+| TenantId | 文字列型 | Workspace ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| SourceSystem | 文字列型 | Source system – static value | Azure |
+| TimeGenerated [UTC] | DateTime | Date of discovery data | 2019-07-23T11:00:35.858Z |
+| StreamName | 文字列型 | Name of the specific stream | Marketing Department |
+| TotalEvents | 整数型 | Total number of events per session | 122 |
+| BlockedEvents | 整数型 | Number of blocked events | 0 |
+| UploadedBytes | 整数型 | Amount of uploaded data | 1,514,874 |
+| TotalBytes | 整数型 | Total amount of data | 4,067,785 |
+| DownloadedBytes | 整数型 | Amount of downloaded data | 2,552,911 |
+| IpAddress | 文字列型 | Source IP address | 127.0.0.0 |
 | UserName | 文字列型 | [ユーザー名] | `Raegan@contoso.com` |
-| EnrichedUserName | 文字列型 | Azure AD ユーザー名を使用してユーザー名を拡充する | `Raegan@contoso.com` |
-| AppName | 文字列型 | クラウドアプリの名前 | Microsoft OneDrive for Business |
-| AppId | 整数型 | クラウドアプリ識別子 | 15600 |
-| AppCategory | 文字列型 | クラウドアプリのカテゴリ | クラウドの記憶域 |
-| AppTags | 文字列配列 | アプリに対して定義されている組み込みタグとカスタムタグ | [承認済みの "] |
-| AppScore | 整数型 | アプリケーションのリスクスコアがスケール0-10、10は危険度が低いアプリのスコアである | 10 |
-| 種類 | 文字列型 | ログの種類-静的な値 | McasShadowItReporting |
+| EnrichedUserName | 文字列型 | Enriched user name with Azure AD username | `Raegan@contoso.com` |
+| AppName | 文字列型 | Name of cloud app | Microsoft OneDrive for Business |
+| AppId | 整数型 | Cloud app identifier | 15600 |
+| AppCategory | 文字列型 | Category of cloud app | Cloud storage |
+| AppTags | 文字列配列 | Built-in and custom tags defined for the app | ["sanctioned"] |
+| AppScore | 整数型 | The risk score of the app in a scale 0-10, 10 being  a score for a non-risky app | 10 |
+| 種類 | 文字列型 | Type of logs – static value | McasShadowItReporting |
 
-## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Azure Sentinel で Cloud App Security データと共に Power BI を使用する
+## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Use Power BI with Cloud App Security data in Azure Sentinel
 
-統合が完了したら、他のツールで Azure Sentinel に格納されている Cloud App Security データを使用することもできます。
+Once the integration is completed, you can also use the Cloud App Security data stored in Azure Sentinel in other tools.
 
-このセクションでは、Microsoft Power BI (Power BI) を使用して、組織のニーズを満たすレポートとダッシュボードを構築するために、データの整形と結合を簡単に行う方法について説明します。
+This section describes how you can use Microsoft Power BI (Power BI) to easily shape and combine data to build reports and dashboards that meet the needs of your organization.
 
-すぐに開始するには、次の手順を実行します。
+You can get started quickly by using the following steps:
 
-1. Power BI では、Cloud App Security データに対して Azure Sentinel からクエリをインポートします。 詳細については、「 [Power BI に Azure Monitor ログデータをインポート](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi)する」を参照してください。
-1. [Cloud App Security Shadow IT Discovery アプリをインストール](https://aka.ms/MCASShadowITReporting)し、検出ログデータに[接続](#connect-the-cloud-app-security-app)して、組み込みの Shadow IT Discovery ダッシュボードを表示します。
+1. In Power BI, import queries from Azure Sentinel for Cloud App Security data. For more information, see [Import Azure Monitor log data into Power BI](https://docs.microsoft.com/azure/azure-monitor/platform/powerbi).
+1. [Install the Cloud App Security Shadow IT Discovery app](https://aka.ms/MCASShadowITReporting) and [connect it](#connect-the-cloud-app-security-app) to your discovery log data to view the built-in Shadow IT Discovery dashboard.
 
     > [!NOTE]
-    > 現時点では、アプリは Microsoft AppSource で公開されていません。 そのため、アプリをインストールするためのアクセス許可について、Power BI 管理者に連絡する必要がある場合があります。
+    > Currently, the app is not published on Microsoft AppSource. Therefore, you may need to contact your Power BI admin for permissions to install the app.
 
-    ![Shadow IT Discovery ダッシュボードを示すスクリーンショット](media/siem-sentinel-configuration-powerbi-dashboard.png)
+    ![Screenshot showing the Shadow IT Discovery dashboard](media/siem-sentinel-configuration-powerbi-dashboard.png)
 
-1. 必要に応じて Power BI Desktop でカスタムダッシュボードを作成し、組織のビジュアル分析やレポートの要件に合わせて調整します。
+1. Optionally, build custom dashboards in Power BI Desktop and tweak it to fit the visual analytics and reporting requirements of your organization.
 
-### <a name="connect-the-cloud-app-security-app"></a>Cloud App Security アプリを接続する
+### <a name="connect-the-cloud-app-security-app"></a>Connect the Cloud App Security app
 
-1. Power BI で、 **[アプリ]** をクリックし、 **Shadow IT Discovery**アプリをクリックします。
+1. In Power BI, click **Apps**, and then click on the **Shadow IT Discovery** app.
 
-1. **[新しいアプリの使用を開始]** します ページで、 **[接続]** をクリックします。
+1. On the **Get started with your new app** page, click **Connect**.
 
-    ![[アプリデータの接続] ページを示すスクリーンショット](media/siem-sentinel-powerbi-connect.png)
+    ![Screenshot showing connect app data page](media/siem-sentinel-powerbi-connect.png)
 
-1. ワークスペース ID ページで、log analytics の 概要 ページに表示される Azure Sentinel ワークスペース ID を入力し、**次へ** をクリックします。
+1. On the workspace ID page, enter your Azure Sentinel workspace ID as displayed in your log analytics overview page, and then click **Next**.
 
-    ![ワークスペース ID の要求を示すスクリーンショット](media/siem-sentinel-powerbi-workspace-id.png)
+    ![Screenshot showing request for workspace ID](media/siem-sentinel-powerbi-workspace-id.png)
 
-1. 認証 ページで、認証方法とプライバシーレベルを指定し、**サインイン** をクリックします。
+1. On the authentication page, specify the authentication method and privacy level, and then click **Sign in**.
 
-    ![認証ページを示すスクリーンショット](media/siem-sentinel-powerbi-authentication.png)
+    ![Screenshot showing the authentication page](media/siem-sentinel-powerbi-authentication.png)
 
-1. データを接続したら、ワークスペースの **[データセット]** タブにアクセスし、最新の情報に **[更新]** をクリックします。 これにより、レポートが独自のデータで更新されます。
+1. After connecting your data, go to the workspace **Datasets** tab and click **Refresh**. This will update the report with your own data.
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

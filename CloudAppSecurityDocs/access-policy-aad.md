@@ -15,12 +15,12 @@ ms.assetid: 9095cff1-f8b0-44a7-b1df-a83e674abbc6
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 081ecac67dac14443a85bc103294974607e3e106
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 9a74d63d62809860479110c26def76873c66c8dd
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335448"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460985"
 ---
 # <a name="access-policies"></a>アクセス ポリシー
 
@@ -92,6 +92,6 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 ## <a name="next-steps"></a>次のステップ  
 [Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

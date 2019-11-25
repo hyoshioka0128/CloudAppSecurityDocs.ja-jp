@@ -15,19 +15,19 @@ ms.assetid: 745df28a-654c-4abf-9c90-203841169f90
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0288d0f5e570f8b129c7706fa29ad5c4d361c8bf
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5fec505aa7397c2eaa733de750b6030f81daa633
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336236"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460429"
 ---
 # <a name="session-policies"></a>セッション ポリシー 
 
 *適用対象: Microsoft Cloud App Security*
 
 >[!div class="step-by-step"]
-[« PREVIOUS: 任意のアプリのオンボードとデプロイアプリの条件付きアクセス制御»](proxy-deployment-any-app.md)<br>
+[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
 [次へ: アクセス ポリシーを作成する方法 »](access-policy-aad.md)
 
 
@@ -161,13 +161,13 @@ Cloud App Security セッション ポリシーで実行する **[アクショ�
 Cloud App Security のセッション ポリシーで実行する **[アクション]** として **[保護]** が設定されていると、アプリの条件付きアクセス制御はポリシーのファイル フィルターによって、ファイルのラベル付けとその後の保護を適用します。 ラベルは Azure Information Protection コンソールで構成され、Cloud App Security ポリシーのオプションとしてそのラベルが表示されるためには、ラベル内で **[保護]** が選ばれている必要があります。 ラベルが選ばれていて、Cloud App Security ポリシーの条件 (ラベル) に一致するファイルがダウンロードされると、アクセス許可がある対応する保護が、ダウンロード時にファイルに適用されます。 元のファイルはクラウド アプリ内にそのまま残っていますが、ダウンロードされるファイルは保護されています。 ファイルにアクセスしようとするユーザーは、適用された保護によって決定されるアクセス許可要件を満たす必要があります。  
  
 >[!div class="step-by-step"]
-[« PREVIOUS: 任意のアプリのオンボードとデプロイアプリの条件付きアクセス制御»](proxy-deployment-any-app.md)<br>
+[« PREVIOUS: Onboard and deploy Conditional Access App Control for any app »](proxy-deployment-any-app.md)<br>
 [次へ: アクセス ポリシーを作成する方法 »](access-policy-aad.md)
 
 ## <a name="next-steps"></a>次のステップ
  
 [Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

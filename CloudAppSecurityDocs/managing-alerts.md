@@ -15,21 +15,21 @@ ms.assetid: 1b1dbcc6-472f-43ea-af59-2aa926e3e5a9
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 340e1919afc9ce5c72efb82825ddc6cd9579dbd3
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 0e0142cfaa91197084636cf1c3b9064f0fce021a
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084112"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460867"
 ---
 # <a name="manage-alerts"></a>アラートの管理
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 この記事では、Cloud App Security のポータルで発生したアラートを操作する方法について説明します。
 
 > [!NOTE]
-> アラートはそれぞれのポリシーで管理され、電子メール、テキストメッセージ、またはその両方として送信されるように構成できます。
+> Alerts are managed in their respective policies and can be configured to be sent as an email, text message, or both.
 
 ## <a name="manage-your-alerts"></a>アラートの管理
 
@@ -70,8 +70,8 @@ ms.locfileid: "71084112"
 3. アラートを無視するとき、無視する理由についてフィードバックを送信することが重要です。 Cloud App Security チームはこのフィードバックをアラートの精度を示すものとして利用し、 今後のアラートの機械学習モデルを調整する際に役立てます。 アラートを分類する方法を決定するとき、次のガイドラインを利用できます。
    - 正しく使用してアラートがトリガーされ、セキュリティ問題ではない場合、次のいずれかに該当する可能性があります。 
 
-     - 無害な陽性: アラートは的確であるが、アクティビティにも問題ありません。 アラートを消去し、理由を **[実際の重要度は低いです]** か **[興味なし]** に設定できます。
-     -  誤検知: アラートが間違って作動しました。 アラートを消去し、理由を **[アラートが正確ではありません]** に設定してください。
+     - Benign positive: The alert is accurate but the activity is legitimate. アラートを消去し、理由を **[実際の重要度は低いです]** か **[興味なし]** に設定できます。
+     -  偽陽性: アラートが間違って作動しました。 アラートを消去し、理由を **[アラートが正確ではありません]** に設定してください。
    - 無意味な情報が多すぎてアラートの妥当性や精度を判断できない場合、理由を **[類似のアラートが多すぎます]** に設定してください。
    - 真陽性: 悪意により行われたか、内部または外部の人間が意図せずに行った実際に危険なイベントにアラートが関連している場合、適切なイベント修繕措置をすべて取った後、イベントを **[解決]** に設定してください。
 
@@ -94,7 +94,7 @@ ms.locfileid: "71084112"
 |個人アカウントの使用|このアラートは、新しい個人アカウントが接続中のアプリのリソースへのアクセス許可を取得するとトリガーされます。|外部アカウントでユーザーの共同作業者を削除します。|  
 
 
-## <a name="next-steps"></a>次の手順  
+## <a name="next-steps"></a>次のステップ  
 アラートの調査の詳細については、「[調査](investigate.md)」を参照してください。  
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

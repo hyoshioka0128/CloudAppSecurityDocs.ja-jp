@@ -15,12 +15,12 @@ ms.assetid: 081c2cf4-2750-4546-9490-4b65e87ae48c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f2d2fc6ef5753cbca977e785249ddf61a3664eb5
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 6e2464988eb075e3dd3bd345716b5ec71dec8ba6
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334440"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460843"
 ---
 # <a name="frequently-asked-questions"></a>よく寄せられる質問
 
@@ -48,4 +48,4 @@ Azure Active Directory での全体管理者、コンプライアンス管理者
 ## <a name="next-steps"></a>次のステップ  
 クラウド アプリの使用を制御するポリシーを設定して使用する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」をご覧ください。   
 
-Premier サポートをご利用のお客様は、[Premier ポータル](https://premier.microsoft.com/)から直接 Cloud App Security を選択することもできます。  
+[!INCLUDE [Open support ticket](includes/support.md)]  

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6e15775be1435c47b9f2df1cc73f3e4b5aa0ddd4
-ms.sourcegitcommit: 4fb014e3563b8254635440f24e10b250af66c7f2
+ms.openlocfilehash: d4b800afa927b8a9151837cfbff76478c98bf71f
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239945"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460540"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -31,9 +31,9 @@ ms.locfileid: "74239945"
 現代の職場では、多くの場合、犯行後にご利用のクラウド環境の状態を把握できるだけでは十分ではありません。 従業員が意図的に、あるいは不注意からデータや組織を危険にさらす前に、違反や漏洩をリアルタイムで防止することが望まれます。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
 
 > [!NOTE]
-> Cloud App Security アプリの条件付きアクセス制御を使用するには、 [Azure Active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)、およびアクティブな Microsoft Cloud App Security サブスクリプションまたは Office 365 E5 ライセンスが必要です。 Office 365 E5 に含まれるおすすめアプリの一覧については、「 [office 365 のおすすめアプリ](#O365-apps)」を参照してください。
+> To use Cloud App Security Conditional Access App Control, you need an [Azure Active Directory P1 license](https://azure.microsoft.com/pricing/details/active-directory/), and an active Microsoft Cloud App Security subscription or Office 365 E5 license. For a list of featured apps included with Office 365 E5, see [Office 365 featured apps](#O365-apps).
 
-Office 365 E5 ライセンス。 サポートされている Office 365 E5 に含まれるアプリの一覧については、「Office 365 のおすすめアプリ」を参照してください。
+Office 365 E5 license. For a list of apps included with supported Office 365 E5, see Office 365 featured apps
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -41,25 +41,25 @@ Office 365 E5 ライセンス。 サポートされている Office 365 E5 に�
 
 Conditional Access App Control では、アクセスおよびセッション ポリシーに基づいて、ユーザー アプリのアクセスとセッションをリアルタイムで監視して制御できます。 Cloud App Security ポータル内では、フィルターをさらに調整し、ユーザーに対して実行されるアクションを設定するために、アクセス ポリシーとセッション ポリシーが利用されます。 アクセス ポリシーとセッション ポリシーでは次のことができます。
 
-- **データを禁止**する: 管理されていないデバイスなど、機密性の高いドキュメントのダウンロード、切り取り、コピー、および印刷をブロックできます。
+- **Prevent data exfiltration**: You can block the download, cut, copy, and print of sensitive documents on, for example, unmanaged devices.
 
-- **ダウンロード時の保護**: 機密性の高いドキュメントのダウンロードをブロックするのではなく、ドキュメントにラベルを付けて Azure Information Protection で保護するように要求できます。 この操作により、ドキュメントが保護され、ユーザーアクセスが危険な可能性のあるセッションで制限されます。
+- **Protect on download**: Instead of blocking the download of sensitive documents, you can require documents to be labeled and protected with Azure Information Protection. This action ensures the document is protected and user access is restricted in a potentially risky session.
 
-- ラベルが付けられてい**ないファイルのアップロードを禁止**する: 機密性の高いファイルがアップロード、配布、および使用される前に、ファイルに適切なラベルと保護が設定されていることを確認することが重要です。 機密コンテンツが含まれているラベルのないファイルが、ユーザーがコンテンツを分類するまでアップロードされないようにすることができます。
+- **Prevent upload of unlabeled files**: Before a sensitive file is uploaded, distributed, and used by others, it’s important to make sure that the file has the right label and protection. You can ensure that unlabeled files with sensitive content are blocked from being uploaded until the user classifies the content.
 
-- **コンプライアンス対応のためにユーザーセッションを監視**する: 危険なユーザーがアプリにサインインすると、そのアクションがセッション内からログに記録されます。 ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。
+- **Monitor user sessions for compliance**: Risky users are monitored when they sign into apps and their actions are logged from within the session. ユーザーの行動を調査して分析し、将来的に、どこで、どのような状況において、セッション ポリシーを適用する必要があるかを理解できます。
 
-- **アクセスをブロック**する: いくつかのリスク要因に応じて、特定のアプリとユーザーのアクセスを細かくブロックできます。 たとえば、デバイス管理の形式としてクライアント証明書を使用している場合は、ブロックできます。
+- **Block access**: You can granularly block access for specific apps and users depending on several risk factors. For example, you can block them if they are using client certificates as a form of device management.
 
-- **カスタムアクティビティをブロック**する: アプリケーションによっては、Microsoft Teams や余裕のようなアプリケーションで機密性の高いコンテンツを含むメッセージを送信するなど、リスクを伴う固有のシナリオがあります。 このようなシナリオでは、機密性の高いコンテンツのメッセージをスキャンし、リアルタイムでブロックできます。
+- **Block custom activities**: Some applications have unique scenarios that carry risk, for example, sending messages with sensitive content in applications like Microsoft Teams or Slack. In these kinds of scenarios, you can scan messages for sensitive content and block them in real time.
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
-Conditional Access App Control でセッション ポリシーを作成することで、直接アプリにではなく、リバース プロキシ経由でユーザーをリダイレクトして、ユーザー セッションを制御できます。 その後、ユーザーの要求と応答は、アプリに直接ではなく Cloud App Security 経由で実行されます。
+Conditional Access App Control でセッション ポリシーを作成することで、直接アプリにではなく、リバース プロキシ経由でユーザーをリダイレクトして、ユーザー セッションを制御できます。 From then on, user requests and responses go through Cloud App Security rather than directly to the app.
 
-セッションがプロキシによって保護されている場合、関連するすべての Url と cookie が Cloud App Security に置き換えられます。 たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、そのリンクは myapp.com.us.cas.ms などで終わるドメインに置き換えられます。
+When a session is protected by proxy, all the relevant URLs and cookies are replaced by Cloud App Security. たとえば、ドメインが myapp.com で終わるリンクを含むページをアプリが返した場合、そのリンクは myapp.com.us.cas.ms などで終わるドメインに置き換えられます。
 
-この方法では、デバイスに何もインストールする必要はありません。管理されていないデバイスやパートナーユーザーからのセッションを監視または制御する場合に最適です。
+This method doesn't require you to install anything on the device making it ideal when monitoring or controlling sessions from unmanaged devices or partner users.
 
 > [!NOTE]
 > Cloud App Security では、世界中の Azure データ センターが活用され、位置情報によって最適化されたパフォーマンスが提供されます。 つまり、トラフィック パターンとその場所によっては、ユーザーのセッションが特定のリージョンの外部でホストされる可能性があります。 ただし、お客様のプライバシーを保護するために、これらのデータ センターにセッション データが保存されることはありません。
@@ -72,11 +72,11 @@ Conditional Access App Control を使うと、デバイスが管理されてい�
 - ドメインに参加しているデバイス
 - クライアント証明書のデプロイ
 
-クライアント証明書を使用してデバイス管理を活用するようにポリシーを構成するには:
+To configure a policy to leverage device management via client certificates:
 
 1. 設定の歯車アイコンに移動して、 **[デバイスの識別]** を選択します。
 1. 1 つ以上のルート証明書または中間証明書をアップロードします。
-1. 証明書がアップロードされたら、**デバイスタグ**と**有効なクライアント証明書**に基づいて、[アクセスポリシー](access-policy-aad.md)と[セッションポリシー](session-policy-aad.md)を作成できます。
+1. After the certificate is uploaded, you can create [access policies](access-policy-aad.md) and [session policies](session-policy-aad.md) based on **Device tag** and **Valid client certificate**.
 
     ![アプリの条件付きアクセス制御のデバイス ID](./media/caac-device-id.png)
 
@@ -88,45 +88,45 @@ Conditional Access App Control を使うと、デバイスが管理されてい�
 Azure AD の条件付きアクセスでは、準拠しているデバイスとドメインに参加しているデバイスの情報を、Microsoft Cloud App Security に直接渡すことができます。 その情報から、デバイスの状態をフィルターとして使うアクセス ポリシーまたはセッション ポリシーを開発できます。 詳しくは、「[Azure Active Directory のデバイス管理の概要](https://docs.microsoft.com/azure/active-directory/device-management-introduction)」をご覧ください。
 
 > [!NOTE]
-> 一部のブラウザーでは、拡張機能のインストールなどの追加の構成が必要になる場合があります。 詳細については、「[条件付きアクセスブラウザーのサポート](https://go.microsoft.com/fwlink/?linkid=2102732)」を参照してください。
+> Some browsers may require additional configuration such as installing an extension. For more information, see [Conditional Access browser support](https://go.microsoft.com/fwlink/?linkid=2102732).
 
 ### <a name="client-certificate-authenticated-devices"></a>クライアント証明書で認証されたデバイス
 
 デバイス識別メカニズムでは、クライアント証明書を使って関連するデバイスに認証を要求することができます。 組織で既に展開されている既存のクライアント証明書を使用するか、新しいクライアント証明書をマネージド デバイスにロールアウトできます。 それらの証明書の存在を利用し、アクセスやセッションのポリシーを設定します。
 
-SSL クライアント証明書は、信頼チェーンによって検証されます。 PEM 証明書形式でフォーマットされた x.509 ルートまたは中間証明機関 (CA) をアップロードできます。 これらの証明書には、CA の公開キーが含まれている必要があります。これは、セッション中に提示されたクライアント証明書の署名に使用されます。
+SSL client certificates are verified via a trust chain. You can upload an X.509 root or intermediate certificate authority (CA) formatted in the PEM certificate format. These certificates must contain the public key of the CA, which is then used to sign the client certificates presented during a session.
 
-証明書がアップロードされ、関連するポリシーが構成されている場合、該当するセッションがアプリの条件付きアクセス制御になると、Cloud App Security エンドポイントはブラウザーに SSL クライアント証明書を提示するように要求します。 ブラウザーは、秘密キーと共にインストールされる SSL クライアント証明書を提供します。 この証明書と秘密キーの組み合わせは、PKCS #12 ファイル形式 (通常は p12 または .pfx) を使用して行われます。
+Once the certificate is uploaded and a relevant policy is configured, when an applicable session traverses Conditional Access App Control, the Cloud App Security endpoint requests the browser to present the SSL client certificates. The browser serves the SSL client certificates that are installed with a private key. This combination of certificate and private key is done by using the PKCS #12 file format, typically .p12 or .pfx.
 
-クライアント証明書の確認を実行すると、Cloud App Security によって次の条件が確認されます。
+When a client certificate check is performed, Cloud App Security checks for the following conditions:
 
-1. 選択されたクライアント証明書は有効で、正しいルート CA または中間 CA の下にあります。
-1. 証明書は失効していません (CRL が有効になっている場合)。
+1. The selected client certificate is valid and is under the correct root or intermediate CA.
+1. The certificate is not revoked (if CRL is enabled).
 
 > [!NOTE]
-> ほとんどの主要なブラウザーは、クライアント証明書の確認をサポートしています。 ただし、モバイルアプリとデスクトップアプリは、多くの場合、このチェックをサポートしていないため、これらのアプリの認証に影響を与える組み込みのブラウザーを活用します。
+> Most major browsers support performing a client certificate check. However, mobile and desktop apps often leverage built-in browsers that may not support this check and therefore affect authentication for these apps.
 
 クライアント証明書をデプロイする方法については、「[Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)」を参照してください。
 
 ## <a name="supported-apps-and-clients"></a>サポートされているアプリとクライアント
 
-アプリの条件付きアクセス制御は、シングルサインオンで構成された SAML および Open ID Connect アプリと、 [Azure AD アプリプロキシ](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)で構成されたオンプレミスでホストされている web アプリを現在サポートしています。
+Conditional Access App Control currently supports SAML and Open ID Connect apps configured with single sign-on, along with web apps hosted on-premises configured with the [Azure AD App Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 > [!NOTE]
 > アプリの条件付きアクセス制御では、Azure AD 以外の ID プロバイダーで構成されたアプリもサポートされます。 このシナリオの詳細については、mcaspreview@microsoft.com に電子メールをお送りください。
 
-**セッション制御は、あらゆるオペレーティング システム上の、すべての主要なプラットフォーム上のすべてのブラウザーで使用可能です**。 Internet Explorer 11、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新)、または Apple Safari (最新) を使用することをお勧めします。 モバイルアプリとデスクトップアプリへのアクセスをブロックまたは許可することもできます。
+**セッション制御は、あらゆるオペレーティング システム上の、すべての主要なプラットフォーム上のすべてのブラウザーで使用可能です**。 We recommend using Internet Explorer 11, Microsoft Edge (latest), Google Chrome (latest), Mozilla Firefox (latest), or Apple Safari (latest). Access to mobile and desktop apps can also be blocked or allowed.
 
 > [!NOTE]
-> アクセスポリシーで**クライアントアプリ**フィルターを使用すると、結果として得られるユーザーセッションが Cloud App Security によってプロキシ化される可能性があります。
+> Using the **Client app** filter in access policies can cause the resulting user session to be proxied by Cloud App Security.
 >
-> [アクセスポリシー] では、**クライアントアプリ**フィルターを使用すると、既定で**Mobile と desktop**が使用されます。 これにより、Cloud App Security によって、結果のユーザーセッションがプロキシ化される可能性があります。 この動作を無効にするには、値を**Browser**に設定します。
+> In access policies, when using the **Client app** filter it defaults to **Mobile and desktop**. This can cause the resulting user session to be proxied by Cloud App Security. To void this behavior, set the value to **Browser**.
 >
-> 既定では、アプリがモバイルとデスクトップのどちらであるかを評価すると、結果として得られるユーザーセッションが Cloud App Security によってプロキシ化される可能性があります。 この動作を回避するには、アクセスポリシーのクライアントアプリフィルターを**ブラウザー**と同じに設定します。
+> By default, evaluating whether an app is mobile or desktop can cause the resulting user session to be proxied by Cloud App Security. To avoid this behavior, set the Client App filter in your Access policies to be equal to **Browser**.
 
 > [!NOTE]
 > Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブ クライアント アプリケーションとブラウザーは、セッション制御を使用して構成した場合、アクセスできなくなります。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
 
-<a name="featured-apps"></a>SAML または Open ID Connect を使用して構成されているすべてのアプリを Azure AD とネイティブに統合することにより、自分で任意のアプリをオンボードできます。 さらに、次のアプリは Cloud App Security によって機能しており、既にオンボードで、任意のテナントで使用する準備ができています。
+<a name="featured-apps"></a>By natively integrating with Azure AD, any app that is configured with SAML or Open ID Connect you can onboard any app yourself. In addition, the following apps are featured by Cloud App Security and are already onboarded and ready to use in any tenant:
 
 - AWS
 - Azure DevOps (Visual Studio Team Services)
@@ -136,7 +136,7 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 - CornerStone on Demand
 - DocuSign
 - ドロップボックス
-- Dynamics 365 CRM (プレビュー)
+- Dynamics 365 CRM (preview)
 - Egnyte
 - Exchange Online
 - G Suite
@@ -157,9 +157,9 @@ SSL クライアント証明書は、信頼チェーンによって検証され�
 - Workplace by Facebook
 - Yammer (プレビュー)
 
-### <a name="a-ido365-apps-office-365-featured-apps"></a>Office 365 のおすすめアプリの <a id="O365-apps" />
+### <a name="a-ido365-apps-office-365-featured-apps"></a><a id="O365-apps" />Office 365 featured apps
 
-Office 365 Cloud App Security でサポートされているおすすめアプリの一覧を次に示します。
+The following is a list of featured apps that are supported in Office 365 Cloud App Security:
 
 - Exchange Online
 - OneDrive for Business
@@ -168,14 +168,14 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 - Microsoft Teams (プレビュー)
 - Yammer (プレビュー)
 
-おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 関心をお持ちのオンボード ユース ケースもお送りください。
+If you're interested in a specific app being featured, [send us details about the app](mailto:casfeedback@microsoft.com). 関心をお持ちのオンボード ユース ケースもお送りください。
 
 > [!div class="step-by-step"]
 > [次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

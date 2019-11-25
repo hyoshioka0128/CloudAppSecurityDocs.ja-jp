@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 490a2f56090973991fcb7e236310bd83b3012806
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084868"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459583"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 アクティビティ ポリシーでは、アプリ プロバイダーの API を使用してさまざまな自動プロセスを適用できます。 これらのポリシーでは、さまざまなユーザーが実行する特定のアクティビティを監視したり、予想外に実行率の高い特定種類のアクティビティを追跡したりできます。
 
@@ -47,9 +47,9 @@ ms.locfileid: "71084868"
 
 4. このポリシーをトリガーするアクションまたはその他のメトリックを設定するには、**アクティビティ フィルター**を使用します。
     > [!NOTE]
-    > 指定されたフィルターフィールドに値がある場合にのみ結果を含めるようにするに**は、is set** test を使用して同じフィールドを再度追加することをお勧めします。 たとえば、**位置**によるフィルター処理が指定した国の一覧と*等しくない*場合、[**場所**のフィルターを追加する] も*設定さ*れます。 **[結果の編集とプレビュー]** を選択して、フィルターの結果をプレビューすることもできます。
+    > To ensure you only include results where the specified filter field has a value, we recommend adding the same field again using the **is set** test. For example, when filtering by **Location** *does not equal* a specified list of countries, also add a filter for **Location** *is set*. You can also preview the filter results by selecting **Edit and preview results**.
     >
-    > ![場所フィールドが設定されているフィルター設定のスクリーンショット](media/activity-example-location-isset.png)
+    > ![Screenshot of filter settings, showing location field is set](media/activity-example-location-isset.png)
 
 5. **[Activity match parameters]\(アクティビティ一致パラメーター\)** で、ポリシー違反がトリガーされるタイミングを選択します。 1 つのアクティビティがフィルターと一致したらトリガーするか、または指定した数の**反復アクティビティ**が検出されたときにだけトリガーするかを選択します。
     - **反復アクティビティ**を選択する場合は、 **[1 つのアプリで]** を設定できます。 これを設定すると、反復アクティビティが同じアプリで起きた場合にのみ、ポリシー一致がトリガーされます。 たとえば、Box から 30 分以内に 5 回ダウンロードが行われると、ポリシー一致がトリガーされます。
@@ -64,13 +64,13 @@ ms.locfileid: "71084868"
 
      **[アクティビティ フィルター]** フィールドの下で、アラートがトリガーされるパラメーターを設定します。
 
-     ![複数のサインイン試行失敗のポリシーの例](./media/multiple-failed-log-on-attempts-policy-example.png "複数のログオン試行失敗のポリシーの例")
+     ![Policy example for multiple failed sign-in attempts](./media/multiple-failed-log-on-attempts-policy-example.png "複数回失敗したログオン試行ポリシーの例")
 
 - 高いダウンロード率
 
      ダウンロード アクティビティが予想を上回るまたは通常レベルを超える場合にアラートを受け取るようにポリシーを設定できます。 この種のポリシーを構成するには、 **[Rate]\(レート\)** パラメーターで、アラートをトリガーするパラメーターを選択します。
 
-     ![高いダウンロード率の例](./media/high-download-rate-example.png "high download rate example")
+     ![high download rate example](./media/high-download-rate-example.png "高いダウンロード率の例")
 
 ## <a name="activity-policy-reference"></a>アクティビティ ポリシーの参照
 
@@ -87,8 +87,8 @@ ms.locfileid: "71084868"
 
 - アクション - 違反が検出された場合に自動的に適用される一連のガバナンス アクションをポリシーに設定します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [データ保護ポリシー](data-protection-policies.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -15,12 +15,12 @@ ms.assetid: 185c3a46-ede8-4d58-b232-111807845c8f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9d411860fcaf3d261d815b2f6ba1c0b31f26d99
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: da7783c7ca1ee206de62be369df2b3059a35aa18
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335873"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460511"
 ---
 # <a name="past-release-archive-of-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の過去のリリースのアーカイブ
 
@@ -221,7 +221,7 @@ ms.locfileid: "72335873"
 
 **新機能:**
 
-- セキュリティ閲覧者の RBAC がロールアウトを完了しました。この機能を使用すると、Cloud App Security コンソール内で管理者に付与するアクセス許可を管理できます。 既定では、すべての Azure Active Directory 管理者、Office 365 グローバル管理者、セキュリティ管理者にはポータルの完全アクセス許可が与えられます。 Azure Active Directory と Office 365 のすべてのセキュリティ閲覧者に Cloud App Security の読み取り専用アクセスが与えられます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可をオーバーライドしたりできます。 詳細については、[管理者のアクセス許可の管理](manage-admins.md)に関するページを参照してください。
+- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. 既定では、すべての Azure Active Directory 管理者、Office 365 グローバル管理者、セキュリティ管理者にはポータルの完全アクセス許可が与えられます。 Azure Active Directory と Office 365 のすべてのセキュリティ閲覧者に Cloud App Security の読み取り専用アクセスが与えられます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可をオーバーライドしたりできます。 詳細については、[管理者のアクセス許可の管理](manage-admins.md)に関するページを参照してください。
 - Microsoft は現在、Microsoft インテリジェント セキュリティ グラフによって検出された危険な IP アドレスに関する詳細な脅威インテリジェンス レポートをロールアウトしています。 ボットネットによりアクティビティが実行されると、特定のボットネットに関する詳細レポートのリンクと共にボットネットの名前が表示されます (表示できる場合)。
  
 ### <a name="cloud-app-security-release-97"></a>Cloud App Security リリース 97
@@ -314,7 +314,7 @@ ms.locfileid: "72335873"
 - ServiceNow 用 Cloud App Security アプリ コネクタは、ジュネーブ、ヘルシンキ、イスタンブールで導入されているのと同様に、OAuth トークンについてもサポートされるようになりました。 この変更により、ServiceNow への API 接続がより堅牢になり、ユーザーのデプロイに依存することがなくなりました。 詳細については、「[ServiceNow を Microsoft Cloud App Security に接続する](connect-servicenow-to-microsoft-cloud-app-security.md)」を参照してください。 既存のお客様は、ServiceNow App コネクタのページで設定を更新できます。
 - サード パーティ製の DLP を追加で構成した場合は、各コネクタの状態が独立して表示され、DLP のスキャン状態が見やすくなっています。
 - Cloud App Security で、Office 365 監査ログでサポートされている Microsoft Teams アクティビティがサポートされるようになりました。 この機能は、徐々にロール アウトされていきます。
-- Exchange Online の権限借用イベントの場合、権限レベルで [委任]、[管理者]、または [代理管理者] を使用してフィルター処理できるようになりました。アクティビティ**ログ**に表示される偽装レベルを示すイベントを検索するには、**アクティビティオブジェクト** > **項目**を検索します。
+- For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin, or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
 - Office 365 アプリの **[アプリの権限]** タブのアプリ ドロワーで、各アプリの**発行元**を確認できるようになりました。 また、発行元をフィルターとして使用して、同一の発行元からアプリが追加された際に、そのアプリを調査することもできます。
 - 危険な IP アドレスが、一般的な**場所**のリスク要因として重み付けされるのではなく、独立したリスク要因として表示されるようになりました。 
 - Azure Information Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効であると表示されます。 削除されたラベルは表示されません。
@@ -684,6 +684,6 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 
 ### <a name="next-steps"></a>次のステップ 
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

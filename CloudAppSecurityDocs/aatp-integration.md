@@ -1,70 +1,78 @@
 ---
-title: Azure Advanced Threat Protection を Cloud App Security と統合する
-description: この記事では、ハイブリッドリスク検出のために Cloud App Security で Azure Advanced Threat Protection インサイトを活用する方法について説明します。
+title: Integrate Azure Advanced Threat Protection with Cloud App Security
+description: This article provides information about how to leverage Azure Advanced Threat Protection insights in Cloud App Security for hybrid risk detection.
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 6/27/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 63e82b47-bb08-4614-af55-f85d04edfc5a
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd52e120f20e6b8ebaeacdd5a30a7c98d883fec9
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72334884"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460932"
 ---
-# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
+# <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection integration
 
 *適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) と統合して、ハイブリッド環境 (クラウドアプリとオンプレミスの両方) でユーザーエンティティ行動分析 (UEBA) を提供します。詳細については、「チュートリアル: 危険度の調査」を参照してください[。](tutorial-ueba.md)Azure ATP によって提供される機械学習と行動分析の詳細については、「 [Azure ATP とは](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)」を参照してください。
+Microsoft Cloud App Security integrates with Azure Advanced Threat Protection (Azure ATP) to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises, for more information, see [Tutorial: Investigate risky users](tutorial-ueba.md) For more information about the machine learning and behavioral analytics provided by Azure ATP, see [What is Azure ATP?](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp).
 
 ## <a name="prerequisites"></a>必要条件
 
 ハイブリッド環境全体で完全なユーザー調査を実行するためには、次が必要です。
 
 - ご自身の Active Directory インスタンスに接続されている Azure ATP の有効なライセンス
-- Azure ATP と Microsoft Cloud App Security 間の統合を有効にするには、グローバル管理者である必要があります 
-- Azure ATP がない場合は、今すぐ試してみてください
-
+- You must be a global admin to enable integration between Azure ATP and Microsoft Cloud App Security
+- If do not have Azure ATP, try it now
 
 >[!NOTE]
->Microsoft Cloud App Security のサブスクリプションを持っていない場合でも、Cloud App Security ポータルを使用して Azure ATP の洞察を得ることができます。
+>If you don't have a subscription for Microsoft Cloud App Security, you will still be able to use the Cloud App Security portal to get Azure ATP insights.
 
+## <a name="enable-azure-advanced-threat-protection"></a>Enable Azure Advanced Threat Protection
 
-## <a name="enable-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection を有効にする
+To enable Cloud App Security integration with Azure ATP:
 
-Cloud App Security を Azure ATP と統合できるようにするには、次のようにします。
+1. In Cloud App Security, under the settings cog, select **Settings**.
 
-1. Cloud App Security の設定歯車で、 **[設定]** を選択します。
-    
-   ![[設定] メニュー](./media/azip-system-settings.png)
+   ![Settings menu](media/azip-system-settings.png)
 
-1. **[脅威保護]** で、 **[Azure ATP]** を選択します。
-   
-    ![azure advanced threat protection を有効にする](./media/aatp-integration.png)
+1. Under **Threat Protection**, select **Azure ATP**.
 
-3. **アラートやアクティビティなどの Azure ATP データを Cloud App Security に接続**するには、チェックボックスをオンにします。
+    ![enable azure advanced threat protection](media/aatp-integration.png)
 
+1. Select **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
 
 > [!NOTE]
-> 統合が有効になるまで、最大で12時間かかることがあります。
- 
-Azure Advanced Threat Protection 統合を有効にすると、組織内のすべてのユーザーに対してオンプレミスのアクティビティを表示できるようになります。 また、クラウドとオンプレミスの環境でアラートと疑わしいアクティビティを組み合わせることにより、ユーザーに関する高度な洞察も得られます。
+> It may take up to 12 hours until the integration takes effect.
 
+After enabling Azure Advanced Threat Protection integration, you'll be able to see on-premises activities for all the users in your organization. You will also get advanced insights on your users that combine alerts and suspicious activities across your cloud and on-premises environments.
 
+## <a name="disable-azure-advanced-threat-protection"></a>Disable Azure Advanced Threat Protection
 
-## <a name="next-steps"></a>次のステップ 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
+To disable Cloud App Security integration with Azure ATP:
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
-  
+1. In Cloud App Security, under the settings cog, select **Settings**.
+
+1. Under **Threat Protection**, select **Azure ATP**.
+
+1. Clear **Connect Azure ATP data including alerts and activities with Cloud App Security** and then click **Save**.
+
+> [!NOTE]
+> Existing azure ATP data is kept in accordance with Cloud App Security retention policies but the Identity Security Posture assessments are removed.
+
+## <a name="next-steps"></a>次のステップ
+
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

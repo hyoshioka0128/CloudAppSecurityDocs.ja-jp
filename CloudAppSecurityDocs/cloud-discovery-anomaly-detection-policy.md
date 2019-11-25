@@ -15,12 +15,12 @@ ms.assetid: eaf73af0-7610-4903-b656-8d90b1d2b18c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: af1f264152beae38ed0d5369bea890509b979b95
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: b1ab3959b35532dd4c9060d4e2084ff60f4ca85d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335405"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74461453"
 ---
 # <a name="cloud-discovery-anomaly-detection-policy"></a>Cloud Discovery 異常検出ポリシー
 
@@ -75,6 +75,6 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
 ## <a name="next-steps"></a>次のステップ  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   

@@ -15,12 +15,12 @@ ms.assetid: f118a3bf-1663-46ba-884f-b1b03a84ab66
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e697d86bd7279e445a8fa40bf9fd5000081e469
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: 2980fa8d9d784ce0e3169ed42359522885fcf320
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335905"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460657"
 ---
 # <a name="monitor-alerts-in-cloud-app-security"></a>Cloud App Security のアラートを監視する
 
@@ -32,7 +32,7 @@ ms.locfileid: "72335905"
 
 すべてのアラートを確認することは良い考えです。 アラートの発生理由を理解することで、ポリシーを修正するための道具としてアラートを利用できます。 
 
-**アラートを表示するには:** Microsoft Cloud App Security ポータルで、 **[アラート]** をクリックします。
+**To view alerts:** In the Microsoft Cloud App Security portal, click on **Alerts**.
 
 
 ![[アラート] メニュー](./media/alert-menu.png)
@@ -66,7 +66,7 @@ ms.locfileid: "72335905"
 
 |アラート名|アラート ID|[説明]|
 |----|----|----|
-|不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 新しい場所からのものですか)。これらの条件はすべて、次のリスク要因に基づいてリスクスコアを提供するためにまとめられています。 <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
+|不審なアクティビティのアラート|ALERT_SUSPICIOUS_ACTIVITY|異常なアクティビティがどの程度疑わしいかに従って不審なアクティビティがスコア付けされます (非アクティブなアカウントが関連するか、 Is it from a new location?) These criteria are all calculated together to provide a risk score based on the following risk factors: <br>ユーザーは管理者である <br>完全にリモートなユーザー<br>匿名プロキシ<br> セッション全体がログインに失敗した<br>多数のログイン失敗<br>新規 (管理者)<br>IP/ISP/国/ユーザーのユーザー エージェント/テナント<br> IP/ISP/国/(管理者) ユーザーのみが使用するユーザー エージェント<br>しばらくの間で最初の (管理者) ユーザー アクティビティ<br>しばらくの間で始めて実行されたこの特定の管理アクティビティ<br>この特定の管理アクティビティが一般的ではない/これまで実行されたことがない<br>過去にこの IP だけがログインに失敗した<br>あり得ない移動|
 |不審なクラウド使用アラート|ALERT_DISCOVERY_ANOMALY_DETECTION|Cloud Discovery の異常検出は、通常の動作のパターンを検出し、普通ではない方法で使用されたユーザーまたはアプリを発見します。 |
 |アクティビティ ポリシー違反|ALERT_CABINET_EVENT_MATCH_AUDIT|このアラートを使うと、ポリシー一致が検出されたことを把握できます。|
 |ファイル ポリシー違反|ALERT_CABINET_EVENT_MATCH_FILE|このアラートを使うと、ポリシー一致が検出されたことを把握できます。|
@@ -79,4 +79,4 @@ ms.locfileid: "72335905"
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

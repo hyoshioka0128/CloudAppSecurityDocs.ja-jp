@@ -1,6 +1,6 @@
 ---
-title: Cloud Discovery ポリシー-Cloud App Security |Microsoft Docs
-description: この記事では、Cloud App Security で多数の Cloud Discovery ポリシーを構成する手順について説明します。
+title: Cloud Discovery policies - Cloud App Security | Microsoft Docs
+description: This article outlines the steps to configure many Cloud Discovery policies in Cloud App Security.
 author: shsagir
 ms.author: shsagir
 ms.date: 06/13/2019
@@ -10,156 +10,156 @@ ms.service: cloud-app-security
 ms.assetid: 570da960-771d-484f-932d-b086f2ec2978
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ffcb2b67c03cf93843faf8255af86f4cb1c80a53
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: 1d8d7b5f9225728b4a9cb059b8a12b83dab8240d
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71085084"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460643"
 ---
 # <a name="cloud-discovery-policies"></a>Cloud Discovery ポリシー
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
-この記事では、Cloud Discovery を使用して組織全体の可視性を向上させるために Cloud App Security の使用を開始する方法の概要について説明します。
+This article provides an overview of how to get started using Cloud App Security to gain visibility across your organization into Shadow IT using Cloud Discovery.
 
-Cloud App Security を使用すると、組織の環境で使用されているクラウドアプリを検出して分析することができます。 Cloud Discovery ダッシュボードには、環境内で実行されているすべてのクラウドアプリが表示され、機能別およびエンタープライズ対応に分類されます。 アプリごとに、エンドポイントデバイスにエージェントをインストールしなくても、関連付けられているユーザー、IP アドレス、コンピューター、トランザクションを検出し、リスク評価を実行します。
+Cloud App Security enables you to discover and analyze cloud apps that are in use in your organization’s environment. The Cloud Discovery dashboard shows all the cloud apps running in the environment and categorizes them by function and enterprise readiness. For each app, discover the associated users, IP addresses, machines, transactions, and conducts risk assessment without needing to install an agent on your endpoint devices.
 
-## 新しい大量または大規模なアプリの使用を検出する<a name= "detect-volume"></a>
+## Detect new high-volume or wide app use <a name= "detect-volume"></a>
 
-ユーザー数または組織内のトラフィック量に関して、使用率が高い新しいアプリを検出します。
+Detect new apps that are highly used, in terms of number of users or amount of traffic in your organization.
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>必要条件
 
-「[継続的なレポートの自動ログアップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)」の説明に従って、継続的 Cloud Discovery レポートの自動ログアップロードを構成します。
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**アプリ検出ポリシー**を作成します。
+1.  On the **Policies** page, create a new **App discovery policy**
 
-2.  **[ポリシーテンプレート]** フィールドで、 **[新しい高ボリュームアプリ]** または **[新しい人気]** のあるアプリ を選択し、テンプレートを適用します。
+2.  In the **Policy template** field, select **New high volume app** or **New popular app** and apply the template.
 
-3.  組織の要件を満たすようにポリシーフィルターをカスタマイズします。
+3.  Customize policy filters to meet your organization’s requirements.
 
-4.  アラートがトリガーされたときに実行するアクションを構成します。
+4.  Configure the actions to be take when an alert is triggered.
 
 > [!NOTE]
->  過去90日以内に検出されなかった新しいアプリごとにアラートが生成されます。
+>  An alert is generated once for each new app that was not discovered in the last 90 days.
 
-## <a name="detect-new-risky-or-non-compliant-app-use"></a>新しい危険または非準拠のアプリの使用を検出する
+## <a name="detect-new-risky-or-non-compliant-app-use"></a>Detect new risky or non-compliant app use
 
-セキュリティ標準を満たしていないクラウドアプリで組織が公開される可能性を検出します。
+Detect potential exposure of your organization in cloud apps that do not meet your security standards.
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>必要条件
 
-「[継続的なレポートの自動ログアップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)」の説明に従って、継続的 Cloud Discovery レポートの自動ログアップロードを構成します。
-
-### <a name="steps"></a>手順
-
-1.  **[ポリシー]** ページで、新しい**アプリ検出ポリシー**を作成します。
-
-2.  **[ポリシーテンプレート]** フィールドで、**新しい危険なアプリ**テンプレートを選択し、テンプレートを適用します。
-
-3.  **[次のすべてに一致するアプリ]** で、[リスクスコア](risk-score.md)スライダーとコンプライアンスリスク要因を設定して、アラートをトリガーするリスクのレベルを選択し、組織のセキュリティ要件を満たすように他のポリシーフィルターを設定します。
-
-    1.  省略可能:より有意義な検出を行うには、アラートをトリガーするトラフィックの量をカスタマイズします。
-
-        1.  **次のすべてが同じ日に発生する場合は、[ポリシーの一致をトリガーする**] チェックボックスをオンにします。
-
-        2.  **1 日あたり**2000 GB (またはそれ以外) を超えるトラフィックを選択します。
-
-4.  アラートがトリガーされたときに実行されるガバナンスアクションを構成します。 **[ガバナンス]** で、承認さ **[れていないアプリにタグ]** を付ける を選択します。<br>ポリシーが一致すると、アプリへのアクセスが自動的にブロックされます。
-
-5.  省略可能:セキュリティで保護された Web ゲートウェイを使用して[Cloud App Security ネイティブ統合](set-up-cloud-discovery.md)を利用し、アプリのアクセスをブロックします。
-
-## <a name="detect-use-of-unsanctioned-business-apps"></a>未承認のビジネスアプリの使用を検出する
-
-承認されたビジネス対応アプリの代わりとして、承認されていないアプリを従業員が引き続き使用するタイミングを検出できます。
-
-### <a name="prerequisites"></a>必須コンポーネント
-
--   「[継続的なレポートの自動ログアップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)」の説明に従って、継続的 Cloud Discovery レポートの自動ログアップロードを構成します。
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>手順
 
-1.  クラウドアプリカタログで、ビジネス対応アプリを検索し、[カスタムアプリタグ](discovered-app-queries.md#creating-and-managing-custom-app-tags)でマークします。
+1.  On the **Policies** page, create a new **App discovery policy.**
 
-2.  「[新しい大量または大規模なアプリの使用状況を検出](#detect-volume)する」の手順に従います。
+2.  In the **Policy template** field, select the **New risky app** template and apply the template.
 
-3.  **アプリタグ**フィルターを追加し、ビジネス対応アプリ用に作成したアプリタグを選択します。
+3.  Under **App matching all of the following** set the [Risk Score](risk-score.md) slider and the Compliance risk factor to customize you are the level of risk you want to trigger an alert, and set the other policy filters to meet your organization’s security requirements.
 
-4.  アラートがトリガーされたときに実行されるガバナンスアクションを構成します。 [ガバナンス] で、[承認されていない**アプリにタグ**を付ける] を選択します。<br>ポリシーが一致すると、アプリへのアクセスが自動的にブロックされます。
+    1.  Optional: To get more meaningful detections, customize the amount of traffic that will trigger an alert.
 
-5.  省略可能:セキュリティで保護された Web ゲートウェイを使用して[Cloud App Security ネイティブ統合](set-up-cloud-discovery.md)を利用し、アプリのアクセスをブロックします。
+        1.  Check the **Trigger a policy match if all the following occur on the same day** checkbox.
 
-## <a name="detect-unusual-usage-patterns-on-your-network"></a>ネットワーク上の通常とは異なる使用パターンを検出する
+        2.  Select **Daily traffic** greater than 2000 GB (or other).
 
-組織のネットワーク内のユーザーまたは IP アドレスから発生する、クラウドアプリでの異常なトラフィックの使用パターン (アップロード/ダウンロード) を検出します。
+4.  Configure governance actions to be taken when an alert is triggered. Under **Governance**, select **Tag app as unsanctioned.**<br>Access to the app will be automatically blocked when the policy is matched.
 
-### <a name="prerequisites"></a>前提条件
+5.  Optional: Leverage [Cloud App Security native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
 
-「[継続的なレポートの自動ログアップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)」の説明に従って、継続的 Cloud Discovery レポートの自動ログアップロードを構成します。
+## <a name="detect-use-of-unsanctioned-business-apps"></a>Detect use of unsanctioned business apps
+
+You can detect when your employees continue to use unsanctioned apps as a replacement for approved business-ready apps.
+
+### <a name="prerequisites"></a>必要条件
+
+-   Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**Cloud Discovery 異常検出ポリシー**を作成します。
+1.  In the Cloud app catalog, search for your business-ready apps and mark them with a [custom app tag](discovered-app-queries.md#creating-and-managing-custom-app-tags).
 
-2.  **[ポリシーテンプレート]** フィールドで、検出された **[ユーザーの異常な動作]** または 検出された **[IP アドレスの異常な動作]** を選択します。
+2.  Follow the steps in [Detect new high volume or wide app usage](#detect-volume).
 
-3.  組織の要件に合わせてフィルターをカスタマイズします。
+3.  Add an **App tag** filter and choose the app tags you created for your business-ready apps.
 
-4. 危険なアプリが関係している場合にのみ警告を表示するには、**リスクスコア**フィルターを使用し、アプリが危険と見なされる範囲を設定します。
+4.  Configure governance actions to be taken when an alert is triggered. Under Governance, select **Tag app as unsanctioned**.<br>Access to the app will be automatically blocked when the policy is matched.
 
-4.  スライダーを使用して、**異常検出の感度を選択**します。
+5.  Optional: Leverage [Cloud App Security native integrations](set-up-cloud-discovery.md) with Secure Web Gateways to block app access.
+
+## <a name="detect-unusual-usage-patterns-on-your-network"></a>Detect unusual usage patterns on your network
+
+Detect anomalous traffic use patterns (uploads/downloads) in your cloud apps, that originate from users or IP addresses inside your organization’s network.
+
+### <a name="prerequisites"></a>必要条件
+
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
+
+### <a name="steps"></a>手順
+
+1.  On the **Policies** page, create a new **Cloud Discovery anomaly detection policy**.
+
+2.  In the **Policy template** field, select **Anomalous behavior in discovered users** or **Anomalous behavior in discovered IP addresses**.
+
+3.  Customize the filters to meet your organization's requirements.
+
+4. If you want to be alerted only when there are anomalies involving risky apps, use the **Risk score** filters and set the range in which apps are considered risky.
+
+4.  Use the slider to **Select anomaly detection sensitivity**.
 
 > [!NOTE]
->  継続的なログアップロードを確立した後、異常検出エンジンは、組織内の想定される動作に対してベースライン (学習期間) が確立されるまでに数日かかります。 ベースラインが確立されると、ユーザーまたは IP アドレスから実行されたクラウドアプリ全体における予想されるトラフィックの動作とは異なることに基づいて、アラートの受信を開始します。
+>  After continuous log upload is established, the anomaly detection engine takes a few days until a baseline (learning period), is established for the expected behavior in your organization. After a baseline is established, you start receiving alerts based on discrepancies from the expected traffic behavior across cloud apps made by users or from IP addresses.
 
-## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>承認されるストレージアプリのデータを検出する
+## <a name="detect-data-exfiltration-to-unsanctioned-storage-apps"></a>Detect data exfiltration to unsanctioned storage apps
 
-ユーザーが承認されていないクラウドストレージアプリに対して潜在的なデータを検出します。
+Detect potential data exfiltration by a user to an unsanctioned cloud storage app.
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>必要条件
 
-「[継続的なレポートの自動ログアップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)」の説明に従って、継続的 Cloud Discovery レポートの自動ログアップロードを構成します。
-
-### <a name="steps"></a>手順
-
-1.  **[ポリシー]** ページで、組み込みポリシーのデータを編集して、承認されていない**アプリを**作成します。
-
-2.  [アプリのフィルター **] カテゴリ**が **[クラウドストレージ]** と同じであることを選択します。
-
-3.  **ポリシーの重大度が一致するイベントごとにアラートを作成**するには、チェックボックスをオンにします。
-
-4.  アラートがトリガーされたときに実行するアクションを構成します。
-
-## <a name="detect-risky-oauth-apps"></a>危険な OAuth アプリの検出
-
-G Suite、Office 365、Salesforce などのアプリ内にインストールされている[OAuth アプリ](investigate-risky-oauth.md)の可視性と制御を実現します。 高いアクセス許可を要求し、まれにコミュニティを使用している OAuth アプリは危険であると見なされる場合があります。
-
-### <a name="prerequisites"></a>前提条件
-
-[アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、G Suite、Office 365、または Salesforce アプリを接続している必要があります。
+Configure automatic log upload for continuous Cloud Discovery reports, as described in [Configure automatic log upload for continuous reports](configure-automatic-log-upload-for-continuous-reports.md).
 
 ### <a name="steps"></a>手順
 
-1.  **[ポリシー]** ページで、新しい**OAuth アプリポリシー**を作成します。
+1.  On the **Policies** page, edit the built-in policy **Data exfiltration to unsanctioned apps**.
 
-2.  フィルター**アプリ**を選択し、ポリシーでカバーするアプリ (G Suite、Office 365、または Salesforce) を設定します。
+2.  Select the filter **App category** equals **Cloud storage**.
 
-3.  **[アクセス許可レベル]** フィルター が **[高]** (G Suite および O365 で使用可能) を選択します。
+3.  Select the checkbox to **Create an alert for each matching event with the policy's severity**.
 
-4.  フィルターコミュニティの**使用**頻度が**低い**ことを追加します。
+4.  Configure the actions to take when an alert is triggered.
 
-4.  アラートがトリガーされたときに実行するアクションを構成します。 たとえば、Office 365 の場合は、ポリシーによって検出された OAuth アプリの**失効アプリ**を確認します。
+## <a name="detect-risky-oauth-apps"></a>Detect risky OAuth apps
+
+Get visibility and control over [OAuth apps](investigate-risky-oauth.md) that are installed inside apps like G Suite, Office 365, and Salesforce. OAuth apps that request high permissions and have rare community use might be considered risky.
+
+### <a name="prerequisites"></a>必要条件
+
+You must have the G Suite, Office 365, or Salesforce app connected using [app connectors](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md).
+
+### <a name="steps"></a>手順
+
+1.  On the **Policies** page, create a new **OAuth app policy**.
+
+2.  Select the filter **App** and set the app the policy should cover, G Suite, Office 365, or Salesforce.
+
+3.  Select **Permission level** filter equals **High** (available for G Suite and O365).
+
+4.  Add the filter **Community use** equals **Rare**.
+
+4.  Configure the actions to take when an alert is triggered. For example, for Office 365, check **Revoke app** for OAuth apps detected by the policy.
 
 > [!NOTE]
->  G Suite、Office 365、Salesforce アプリストアでサポートされています。
+>  Supported for G Suite, Office 365, and Salesforce app stores.
 
-## <a name="next-steps"></a>次の手順 
+## <a name="next-steps"></a>次のステップ 
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
