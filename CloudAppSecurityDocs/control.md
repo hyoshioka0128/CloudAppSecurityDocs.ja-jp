@@ -15,12 +15,12 @@ ms.assetid: bc11bbfe-ec6c-458c-8302-8112c383199d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8830e76a266d9ab5fb0e552cccd6e73cbf2bc700
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: d6c535c0ae8abb280265d5ae2f9b5c92fe462905
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72335646"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460906"
 ---
 # <a name="control"></a>Control
 
@@ -39,11 +39,11 @@ ms.locfileid: "72335646"
 
      コンプライアンス違反を見つけるようにポリシーが設定されていて、誰かがクレジット カード番号を OneDrive 上のファイルに保存する場合、ポリシーに一致します。  
 
-     ![PCI との一致](./media/pci-matches.png "PCI との一致")  
+     ![PCI matches](./media/pci-matches.png "pci 一致")  
 
 -   一致を選択して、ポリシーに違反しているファイルを参照します。  
 
-     ![PCI コンテンツとの一致](./media/pci-content-matches.png "PCI コンテンツとの一致")  
+     ![PCI content matches](./media/pci-content-matches.png "pci コンテンツ一致")  
 
      ファイル自体を選択すると、そのファイルに関する情報を取得できます。  
 
@@ -51,14 +51,14 @@ ms.locfileid: "72335646"
 
      **[一致]** をクリックすると、実際のクレジット カード番号が表示されます。  
 
-     ![[コンテンツの一致] のクレジット カード番号](./media/content-matches-ccn.png "[コンテンツの一致] のクレジット カード番号")  
+     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-**[設定]** 歯車アイコンで **[ガバナンス ログ]** を選択すると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。 ![設定アイコン](./media/settings-icon.png "設定アイコン")
+**[設定]** 歯車アイコンで **[ガバナンス ログ]** を選択すると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。 ![settings icon](./media/settings-icon.png "settings icon")
 
-ガバナンス アクションが失敗した場合は、 **[再試行]** を選択して再度適用できます。 ![再試行アイコン](./media/retry-icon.png "再試行アイコン")   
+ガバナンス アクションが失敗した場合は、 **[再試行]** を選択して再度適用できます。 ![Retry icon](./media/retry-icon.png "retry icon")   
 
 ポリシー、違反、アプリの種類に応じて、さまざまなガバナンス アクションを使用できます。  
 
@@ -72,7 +72,7 @@ ms.locfileid: "72335646"
 >   
 >  **[フィルター]** セクションの **[結果の編集とプレビュー]** ボタンを使用すると結果を確認できます。  
 
-![ファイル ポリシーの編集と結果のプレビュー](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集と結果のプレビュー")  
+![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集とプレビュー結果")  
 
 ## <a name="migration"></a>移行  
 Cloud App Security では、組織内のどのユーザーがどのアプリを使用しているかを把握できると共に、新しいアプリの導入を監視するツールを提供することで、移行のロールアウトをサポートします。 また、組織内でどのような種類のアプリを提供する必要があるかを理解できるように、すべてのユーザーが既に使用しているアプリを表示するツールが提供されます。  
@@ -86,7 +86,7 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 
    1. **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、 **[IP アドレス]** または **[ユーザー]** タブを選びます。  
 
-   2. **[エクスポート]** 矢印アイコンを選択して、エクスポートのオプションを選択します。 ![矢印アイコン](./media/arrow-icon.png "矢印アイコン")
+   2. **[エクスポート]** 矢印アイコンを選択して、エクスポートのオプションを選択します。 ![Arrow icon](./media/arrow-icon.png "arrow icon")
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  
@@ -104,4 +104,4 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 ## <a name="next-steps"></a>次のステップ
 クラウド アプリの使用を制御するポリシーを設定する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
