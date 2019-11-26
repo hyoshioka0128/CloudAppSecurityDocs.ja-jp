@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: adb9c8cceaab8158c194256ccd1e5cb0ecbaaa8a
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: e27aa1efc0abfa5af6d7005015062b7d8c43dcac
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084356"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460695"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>チュートリアル: 危険な OAuth アプリを調査する
 
@@ -100,4 +100,4 @@ OAuth アプリが特定の条件を満たした場合に自動的に通知を�
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

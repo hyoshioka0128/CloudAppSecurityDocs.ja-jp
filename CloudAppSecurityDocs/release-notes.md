@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ac326458d6e0f38c6ae9f8d21adcc0b31d412eed
-ms.sourcegitcommit: 1d5e5a5c418d698ba624660abf2873fce47da999
+ms.openlocfilehash: f8388a63aafc72981ae304c74e9ab545a4cb90fe
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73732025"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74460476"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -643,4 +643,4 @@ Microsoft Cloud App Security には、企業がどのユーザーを監視し、
 
 ここに示されるもの以前のリリースについて詳しくは、「[Past releases of Microsoft Cloud App Security](release-note-archive.md)」(Microsoft Cloud App Security の過去のリリース) を参照してください。
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)
+[!INCLUDE [Open support ticket](includes/support.md)]

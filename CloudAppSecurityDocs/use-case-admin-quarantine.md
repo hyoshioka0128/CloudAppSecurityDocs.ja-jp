@@ -15,12 +15,12 @@ ms.assetid: 3fc04cfb-ad4c-4ac2-980a-ee9f4c740d88
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6a147b9db857ee3e8c791f193be4b84e29c3c148
-ms.sourcegitcommit: 8a49c166424fea83853b0a6895212367526abe78
+ms.openlocfilehash: bd4788bfa165a709c22d388dc521e65b6fd405e1
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71084907"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459781"
 ---
 # <a name="tutorial-protect-files-with-admin-quarantine"></a>チュートリアル: 管理者検疫によるファイルの保護
 
@@ -106,4 +106,4 @@ ms.locfileid: "71084907"
 ## <a name="next-steps"></a>次の手順 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  

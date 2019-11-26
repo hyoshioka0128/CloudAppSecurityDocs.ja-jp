@@ -15,12 +15,12 @@ ms.assetid: 06238ebc-2088-4372-9412-96cceaf3b145
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b7f4bc220c7643d8aaca34f409ceeb262d5358e4
-ms.sourcegitcommit: c342abeec95359ddabdabcc3a081a0f91d52407c
+ms.openlocfilehash: a0c1699c3626e7582a3099b4481fce06ae5635d2
+ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72336096"
+ms.lasthandoff: 11/24/2019
+ms.locfileid: "74459576"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>チュートリアル: 機密情報のダウンロードのブロック 
 
@@ -122,6 +122,6 @@ Cloud App Security セッション ポリシーでは、デバイス状態に基
   
 [セッション ポリシーを作成する](session-policy-aad.md)   
 
-[Premier サポートをご利用のお客様は、Premier ポータルから直接新しいサポート要求を作成することもできます。](https://premier.microsoft.com/)  
+[!INCLUDE [Open support ticket](includes/support.md)]  
   
   
