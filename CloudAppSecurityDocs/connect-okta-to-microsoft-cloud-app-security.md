@@ -43,21 +43,21 @@ ms.locfileid: "74461096"
 
     - **[トークンを作成します]** をクリックします。
 
-         ![Okta create token](./media/okta-createtoken.jpg "Okta create token")
+         ![Okta のトークンの作成](./media/okta-createtoken.jpg "Okta のトークンの作成")
 
     - **[トークンを作成します]** ポップアップで、Cloud App Security トークンに名前を付けてから **[トークンを作成します]** をクリックします。
 
-         ![Okta token popup](./media/okta-token-popup.png "Okta token popup")
+         ![Okta トークンのポップアップ](./media/okta-token-popup.png "Okta トークンのポップアップ")
 
     - **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、 **[Token value (トークン値)]** をコピーします。
 
-         ![Okta token value](./media/okta-token-value.png "Okta token value")
+         ![Okta トークン値](./media/okta-token-value.png "Okta トークン値")
 
 1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
 1. **[アプリ コネクター]** ページで、[+] ボタン、 **[Okta]** の順にクリックします。
 
-    ![connect Okta](./media/connect-okta.png "connect Okta")
+    ![Okta の接続](./media/connect-okta.png "Okta の接続")
 
 1. 表示されたポップアップの **[ドメイン]** フィールドに Okta ドメインを入力し、トークンを **[トークン]** フィールドに貼り付けます。
 
@@ -69,7 +69,7 @@ ms.locfileid: "74461096"
 
 Okta を接続すると、接続までの 60 日間のイベントを受け取ります。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

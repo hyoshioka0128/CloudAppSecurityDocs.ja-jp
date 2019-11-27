@@ -91,14 +91,14 @@ Cloud Discovery で、ログに含まれていない属性の表示や分析は�
 
 
 Cloud Discovery レポートを正しく生成するには、トラフィック ログで次の要件を満たす必要があります。
-1. [Data source is supported](set-up-cloud-discovery.md#supported-firewalls-and-proxies).
+1. [データソースはサポートされて](set-up-cloud-discovery.md#supported-firewalls-and-proxies)います。
 2. ログの形式が期待されている標準の形式と一致する (形式はログ ツールのアップロードで確認されます)。
 3. イベントが 90 日以上経過していない。
 4. ログ ファイルが有効で、送信トラフィック情報を含む。
 
 
  
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

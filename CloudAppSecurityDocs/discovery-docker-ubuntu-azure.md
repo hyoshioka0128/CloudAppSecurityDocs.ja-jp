@@ -27,9 +27,9 @@ ms.locfileid: "74460812"
 
 Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-* OS: Ubuntu 14.04 and 16.04 (for newer versions, contact support), RHEL 7.2 or higher, or CentOS 7.2 or higher
+* OS: Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
 
 * ディスク領域: 250 GB
 
@@ -40,7 +40,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 * [ネットワーク要件](network-requirements.md#log-collector)で説明されているとおりにファイアウォールを設定する
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
 >
 > ```console
 > docker stop <collector_name>
@@ -57,7 +57,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
 1. **[自動ログ アップロード]** 設定ページに移動します。
 
@@ -68,7 +68,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
     1. **[データ ソースの追加]** をクリックします。  
-    ![Add a data source](media/add-data-source.png)
+    データソース](media/add-data-source.png) を追加 ![には
     1. プロキシまたはファイアウォールの **[名前]** を付けます。  
       ![ubuntu1](media/ubuntu1.png)
     1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
@@ -88,7 +88,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     1. **[ログ コレクターを追加]** をクリックします。
     1. ログ コレクターに **[名前]** を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.  
+    1. コレクターに接続するすべての**データソース**を選択し、 **[更新]** をクリックして構成を保存します。  
     ![ubuntu2](media/ubuntu2.png)
 
 1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](media/copy-icon.png)
@@ -101,7 +101,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     >
     > * 1 つのログ コレクターで複数のデータ ソースを処理できます。
     > * Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * FTP を使用して初めてログデータを送信するユーザーについては、FTP ユーザーのパスワードを変更することをお勧めします。 詳細については、「 [FTP パスワードの変更](log-collector-ftp.md#changing-the-ftp-password)」を参照してください。
 
 ### <a name="step-2--deployment-of-your-machine-in-azure"></a>ステップ 2 – Azure でのマシンの展開
 
@@ -113,10 +113,10 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     1. マシン ビューで、 **[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
     1. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
-    1. Go to **Inbound security rules** and click **Add**, ![Ubuntu Azure](media/ubuntu-azure.png)
+    1. **[受信セキュリティ規則]** にアクセスし、 **[追加]** をクリックして、![Ubuntu Azure](media/ubuntu-azure.png)
     1. 次の規則を追加します (**詳細設定**モード)。
 
-    |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
+    |名前|宛先ポートの範囲|プロトコル|ソース|[Destination]|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
@@ -153,9 +153,9 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     ![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 次に例を示します。
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -181,9 +181,9 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
      ![カスタムの継続的レポート](media/custom-continuous-report.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [ログコレクターの FTP 構成](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

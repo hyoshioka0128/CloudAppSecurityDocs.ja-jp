@@ -1,6 +1,6 @@
 ---
-title: Investigate activities using the API - Cloud App Security | Microsoft Docs
-description: This article provides information on how to use the API to investigate user activity in Cloud App Security.
+title: API を使用してアクティビティを調査する-Cloud App Security |Microsoft Docs
+description: この記事では、API を使用して Cloud App Security のユーザーアクティビティを調査する方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -22,40 +22,40 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460705"
 ---
-# <a name="investigate-activities-using-the-api"></a>Investigate activities using the API
+# <a name="investigate-activities-using-the-api"></a>API を使用してアクティビティを調査する
 
 *適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security provides you with a fully supported REST API to enable you to programmatically interact with the service.
+Microsoft Cloud App Security には、サービスをプログラムで操作できるようにするための完全にサポートされた REST API が用意されています。
 
-You can use the Microsoft Cloud App Security APIs to investigate the activities performed by your users across connected cloud apps. 
+Microsoft Cloud App Security Api を使用して、接続されたクラウドアプリ全体でユーザーが実行するアクティビティを調査できます。 
 
-The Cloud App Security activities API mode is optimized for scanning and retrieval of large quantities of data (over 5,000 activities). The API scan queries the activity data repeatedly until all the results have been scanned. 
+Cloud App Security アクティビティ API モードは、大量のデータ (5000 アクティビティを超える) のスキャンと取得のために最適化されています。 API スキャンは、すべての結果がスキャンされるまで、アクティビティデータに対して繰り返しクエリを実行します。 
 
 > [!NOTE] 
-> For large quantities of activities and large scale deployments, we recommended that you use the [SIEM agent](siem.md) for activity scanning.
+> 大量のアクティビティと大規模なデプロイの場合は、アクティビティのスキャンに[SIEM エージェント](siem.md)を使用することをお勧めします。
 
-**To use the activity scan API:**
+**アクティビティスキャン API を使用するには:**
 
-1. Run the query on your data.
-1. If there are more records than could be listed in a single scan, you will get a return command with `nextQueryFilters` that you should run. You will get this command each time you scan until the query has returned all the results.
+1. データに対してクエリを実行します。
+1. 1回のスキャンで一覧表示されているよりも多くのレコードがある場合は、実行する必要がある `nextQueryFilters` を含むリターンコマンドが表示されます。 このコマンドは、クエリがすべての結果を返すまでスキャンするたびに取得されます。
  
  
-**Request body parameters**:
-- “filters”: Filter objects with all the search filters for the request, see [Activity filters](activity-filters.md) for more information. To avoid having your requests be throttled, make sure to include a limitation on your query, for example, query the last day’s activities, or filter for a particular app.
-- “isScan”: Boolean. Enables the scanning mode.
-- “sortDirection”: The sorting direction, possible values are “asc” and “desc” 
-- “sortField”: Fields used to sort activities. 次の値をとります。 
-    - date - The date when then the activity occurred (this is the default).
-    - created - The timestamp when the activity was saved.
-- “limit”: Integer. In scan mode, between 500 and 5000 (defaults to 500). Controls the number of iterations used for scanning all the data. 
+**要求本文のパラメーター**:
+- "filters": 要求のすべての検索フィルターを使用してオブジェクトをフィルター処理します。詳細については、「[アクティビティフィルター](activity-filters.md) 」を参照してください。 要求が調整されないようにするには、クエリに制限を含めてください。たとえば、最後の日のアクティビティに対してクエリを実行したり、特定のアプリをフィルター処理したりすることができます。
+- "isScan": Boolean。 スキャンモードを有効にします。
+- "sortDirection": 並べ替えの方向、可能な値は "asc" と "desc" です。 
+- "sortField": アクティビティの並べ替えに使用されるフィールドです。 指定できる値は次のとおりです。 
+    - 日付-アクティビティが発生した日付 (既定値)。
+    - created-アクティビティが保存されたときのタイムスタンプ。
+- "limit": 整数。 スキャンモードでは、500と 5000 (既定値は 500) です。 すべてのデータをスキャンするために使用する反復処理の回数を制御します。 
 
-**Response parameters**:
-- “data”: the returned data. Will contain up to “limit” number of records each iteration. If there are more records to be pulled (hasNext=true), the last few records will be dropped to ensure that all data is listed only once.
-- “hasNext”: Boolean. Denotes whether another iteration on the data is needed.
-- “nextQueryFilters”: If another iteration is needed, it contains the consecutive JSON query to be run. Use this as the “filters” parameter in the next request.
+**応答パラメーター**:
+- "data": 返されるデータ。 には、各反復処理のレコード数が "制限" されます。 プルするレコードが多い場合 (hasNext = true)、すべてのデータが1回だけ表示されるように、最後のいくつかのレコードが削除されます。
+- "hasNext": Boolean。 データの別の反復処理が必要かどうかを示します。
+- "nextQueryFilters": 別のイテレーションが必要な場合は、実行する連続する JSON クエリが含まれています。 次の要求では、これを "filters" パラメーターとして使用します。
 
-The following Python example gets all the activities from the past day from Exchange Online.
+次の Python の例では、Exchange Online から過去1日のすべてのアクティビティを取得します。
 
       import requests
       import json
@@ -89,7 +89,7 @@ The following Python example gets all the activities from the past day from Exch
         print('Got {} records in total'.format(len(records)))
         
  
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

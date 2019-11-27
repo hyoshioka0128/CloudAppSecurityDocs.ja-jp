@@ -89,7 +89,7 @@ Azure Active Directory の条件付きアクセス ポリシーと Cloud App Sec
 [次へ: 人気のあるユース ケースを参照する »](use-case-proxy-block-session-aad.md)
 
  
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [Azure AD の Conditional Access App Control 機能を使って管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

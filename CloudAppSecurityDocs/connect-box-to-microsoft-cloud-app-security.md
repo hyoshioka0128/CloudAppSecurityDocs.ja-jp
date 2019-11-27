@@ -37,11 +37,11 @@ ms.locfileid: "74458361"
   
     -   Box 管理コンソールで設定アイコンをクリックし、次に **[Business settings]\(ビジネス設定\)** または **[エンタープライズ設定]** をクリックします。  
   
-         ![box business settings](./media/box-business-settings.png "Box のビジネス設定")  
+         ![box のビジネス設定](./media/box-business-settings.png "Box のビジネス設定")  
   
     -   **[アプリ]** タブをクリックします。  
   
-         ![box apps](./media/box-apps.png "Box アプリ")  
+         ![box アプリ](./media/box-apps.png "Box アプリ")  
   
     -   **[Unpublished Applications]\(未公開のアプリケーション\)** が選択されている場合は、 **[Except for]\(次を除く\)** テキスト ボックスに Cloud App Security アプリのシリアル番号を追加します。
      
@@ -53,9 +53,9 @@ ms.locfileid: "74458361"
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
          |EU2|`uwdy5r40t7jprdlzo85v8suw1l4cdsbf`|
 
-        次に、 **[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
+        **[保存]** をクリックします。 接続先の Cloud App Security データ センターの確認方法については、「[API トークン](api-tokens.md)」を参照してください。 
   
-         ![box settings except for](./media/box-settings-except-for.png "Box の次を除くの設定")  
+         ![box の設定 (を除く)](./media/box-settings-except-for.png "Box の次を除くの設定")  
   
     > [!NOTE]  
     >  既存の Adallom ユーザーの方でコンソールの URL が Cloud App Security ではなく Adallom のものである場合、このアプリのシリアル番号には bwahmilhdlpbqy2ongkl119o3lrkoshc を使用します。  
@@ -64,7 +64,7 @@ ms.locfileid: "74458361"
   
 3.  **[アプリ コネクター]** ページで、[+]、 **[Box]** の順にクリックします。  
   
-     ![connect box](./media/connect-box.png "Box を接続する")  
+     ![接続ボックス](./media/connect-box.png "Box を接続する")  
   
 4.  **[Box の設定]** ポップアップで、 **[リンクに移動]** をクリックします。  
   
@@ -84,7 +84,7 @@ Box を接続すると、接続までの 60 日間のイベントを受け取り
   
 Box を接続すると、Cloud App Security がフル スキャンを実行します。 所有するファイルとユーザーの数に応じて、フル スキャンの実行に時間がかかる場合があります。 ほぼリアルタイムのスキャンを有効にするために、アクティビティが検出されたファイルはスキャン キューの先頭に移動されます。 たとえば、編集、更新、または共有するファイルは、通常のスキャン プロセスを待たずにすぐスキャンされます。 ほぼリアルタイムのスキャンは、本質的に変更されていないファイルには適用されません。 たとえば、表示、プレビュー、印刷、またはエクスポートされたファイルは、定期的にスケジュールされたスキャンの一部としてスキャンされます。
   
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

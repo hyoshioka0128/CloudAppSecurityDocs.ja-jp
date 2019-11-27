@@ -1,5 +1,5 @@
 ---
-title: Get security configuration recommendations for Azure - Cloud App Security | Microsoft Docs
+title: Azure のセキュリティ構成に関する推奨事項を取得する-Cloud App Security |Microsoft Docs
 description: この記事では、Azure Security Center を統合することによって Cloud App Security で セキュリティ構成の推奨事項を取得する方法について説明します。
 keywords: ''
 author: shsagir
@@ -45,7 +45,7 @@ Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効
 
 2. 変更を有効にするには、必ず <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> を開く必要があります。
 
-3. In Cloud App Security, browse to **Investigate** > **Security configuration**, and then select the **Azure** tab.
+3. Cloud App Security で、を参照して > **セキュリティ構成**を**調査**し、 **[Azure]** タブを選択します。
     - Microsoft Cloud App Security が提供するのは、上位 50 個のサブスクリプションに向けた推奨事項のみです。
     - 変更が有効になるまでに、最大 15 分かかる場合があります。
 
@@ -57,7 +57,7 @@ Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効
 
    ![セキュリティ構成](media/security-configuration-azure.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

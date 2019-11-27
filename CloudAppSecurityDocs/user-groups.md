@@ -48,7 +48,7 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 ## <a name="how-to-import-user-groups"></a>ユーザー グループをインポートする方法
 
-1. In the menu bar, click the settings icon ![settings icon](./media/settings-icon.png "設定アイコン") and select **User groups**.
+1. メニューバーで、設定アイコン![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[ユーザーグループ]** を選択します。
 1. **[ユーザー グループのインポート]** をクリックします。
 
     ![ユーザー グループのインポート](./media/user-groups-add.png)
@@ -63,13 +63,13 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 > [!NOTE]
 >
-> - There may be a short delay until imported user groups are available in filters.
+> - インポートされたユーザーグループをフィルターで使用できるようになるまで、少し時間がかかる場合があります。
 > - あるユーザー グループのインポート後に実行されたアクティビティにのみ、そのユーザー グループのメンバーにより実行されているというタグが付けられます。
 > - 初回の同期後は、1 時間ごとにグループが更新されます。
 
 ユーザー グループ フィルターの使用方法については、「[アクティビティ](activity-filters.md)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)

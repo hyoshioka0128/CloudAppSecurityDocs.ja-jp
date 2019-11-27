@@ -78,7 +78,7 @@ ms.locfileid: "74460511"
 
 リリース日: 2017 年 10 月 29 日 
 
-- Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。 Microsoft Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内におけるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 たとえば、次のようになります。
+- Microsoft Cloud App Security プロキシ機能のロールアウトが開始されました。 Microsoft Cloud App Security プロキシでは、クラウド環境へのアクセスとクラウド環境内におけるアクティビティのリアルタイムの表示と制御を行うのに必要なツールが提供されます。 次に例を示します。
 
   - データのダウンロードをブロックして、事前にデータ リークを防ぎます。
   - 暗号化によって保護されるように、クラウドでのデータの格納とクラウドからのデータのダウンロードを強制するルールを設定します。
@@ -132,7 +132,7 @@ ms.locfileid: "74460511"
 
 - IP アドレスの情報はほぼすべての調査にとって非常に重要であるため、アクティビティ ドロワーでは IP アドレスについての詳細情報を見ることができます。 特定のアクティビティ内から、IP アドレス タブをクリックすることで IP アドレスに関する連結データを表示できるようになりました。 このデータには、特定の IP アドレスに対して有効になっているアラートの数、最近のアクティビティの傾向グラフ、場所マップなどがあります。 この機能では、簡単にドリルダウンできます。 たとえば、あり得ない移動アラートを調査するとき、IP アドレスが使われた場所や不審なアクティビティに関係しているかを簡単に把握できます。 IP アドレス ドロワーでアクションを直接実行し、IP アドレスに危険、VPN、または企業のタグを付けて、後で簡単に調査やポリシー作成を行えるようにすることができます。 詳しくは、「[IP アドレスの洞察](activity-filters.md#ip-address-insights)」のセクションをご覧ください。
 
-- Cloud Discovery では、[自動ログ アップロード](discovery-docker.md)用に[カスタム ログ形式](custom-log-parser.md)を使えるようになりました。 カスタム ログ形式により、Splunk サーバーなどの SIEM または他のサポートされない形式からのログのアップロードを簡単に自動化できます。
+- Cloud Discovery では、[自動ログ アップロード](custom-log-parser.md)用に[カスタム ログ形式](discovery-docker.md)を使えるようになりました。 カスタム ログ形式により、Splunk サーバーなどの SIEM または他のサポートされない形式からのログのアップロードを簡単に自動化できます。
 
 - 新しいユーザー調査アクションでは、ユーザー調査への追加レベルのドリルダウンを使用できます。 **[調査]** ページから、アクティビティ、ユーザー、またはアカウントを右クリックし、新しいフィルター **[関連アクティビティの表示]** 、 **[関連するガバナンスの表示]** 、 **[関連するアラートの表示]** 、 **[所有しているファイルを表示する]** 、 **[このユーザーと共有しているファイルを表示する]** のいずれかを適用して、さらに調査とフィルター処理を行うことができます。
 
@@ -221,7 +221,7 @@ ms.locfileid: "74460511"
 
 **新機能:**
 
-- RBAC for Security Readers completed roll out. This feature enables you to manage the permissions you grant to your admins inside the Cloud App Security console. 既定では、すべての Azure Active Directory 管理者、Office 365 グローバル管理者、セキュリティ管理者にはポータルの完全アクセス許可が与えられます。 Azure Active Directory と Office 365 のすべてのセキュリティ閲覧者に Cloud App Security の読み取り専用アクセスが与えられます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可をオーバーライドしたりできます。 詳細については、[管理者のアクセス許可の管理](manage-admins.md)に関するページを参照してください。
+- セキュリティ閲覧者の RBAC がロールアウトを完了しました。この機能を使用すると、Cloud App Security コンソール内で管理者に付与するアクセス許可を管理できます。 既定では、すべての Azure Active Directory 管理者、Office 365 グローバル管理者、セキュリティ管理者にはポータルの完全アクセス許可が与えられます。 Azure Active Directory と Office 365 のすべてのセキュリティ閲覧者に Cloud App Security の読み取り専用アクセスが与えられます。 [アクセスの管理] オプションを使用することで、管理者を追加したり、アクセス許可をオーバーライドしたりできます。 詳細については、[管理者のアクセス許可の管理](manage-admins.md)に関するページを参照してください。
 - Microsoft は現在、Microsoft インテリジェント セキュリティ グラフによって検出された危険な IP アドレスに関する詳細な脅威インテリジェンス レポートをロールアウトしています。 ボットネットによりアクティビティが実行されると、特定のボットネットに関する詳細レポートのリンクと共にボットネットの名前が表示されます (表示できる場合)。
  
 ### <a name="cloud-app-security-release-97"></a>Cloud App Security リリース 97
@@ -314,7 +314,7 @@ ms.locfileid: "74460511"
 - ServiceNow 用 Cloud App Security アプリ コネクタは、ジュネーブ、ヘルシンキ、イスタンブールで導入されているのと同様に、OAuth トークンについてもサポートされるようになりました。 この変更により、ServiceNow への API 接続がより堅牢になり、ユーザーのデプロイに依存することがなくなりました。 詳細については、「[ServiceNow を Microsoft Cloud App Security に接続する](connect-servicenow-to-microsoft-cloud-app-security.md)」を参照してください。 既存のお客様は、ServiceNow App コネクタのページで設定を更新できます。
 - サード パーティ製の DLP を追加で構成した場合は、各コネクタの状態が独立して表示され、DLP のスキャン状態が見やすくなっています。
 - Cloud App Security で、Office 365 監査ログでサポートされている Microsoft Teams アクティビティがサポートされるようになりました。 この機能は、徐々にロール アウトされていきます。
-- For Exchange Online impersonation events, you can now filter by the permission level used - delegated, admin, or delegated admin. You can search for events displaying the impersonation level that interests you in the **Activity log** by searching for **Activity objects** > **Item**.
+- Exchange Online の権限借用イベントの場合、権限レベルで [委任]、[管理者]、または [代理管理者] を使用してフィルター処理できるようになりました。アクティビティ**ログ**に表示される偽装レベルを示すイベントを検索するには、**アクティビティオブジェクト** > **項目**を検索します。
 - Office 365 アプリの **[アプリの権限]** タブのアプリ ドロワーで、各アプリの**発行元**を確認できるようになりました。 また、発行元をフィルターとして使用して、同一の発行元からアプリが追加された際に、そのアプリを調査することもできます。
 - 危険な IP アドレスが、一般的な**場所**のリスク要因として重み付けされるのではなく、独立したリスク要因として表示されるようになりました。 
 - Azure Information Protection ラベルがファイルで無効になると、無効になったラベルは Cloud App Security でも無効であると表示されます。 削除されたラベルは表示されません。
@@ -682,7 +682,7 @@ Cloud App Security が、ISO、HIPAA、CSA STAR、EU モデル条項などの Mi
 - 異常検出ポリシーの低リスク スコアを構成する機能が追加されました。
 - ポリシーに違反したときに送信されるようにアラートを設定した場合、警告する必要のある最低限のセキュリティ レベルを設定できます。 これに組織の既定の設定を使用するように選択し、組織の既定値として特定のアラート設定を設定できます。
 
-### <a name="next-steps"></a>次のステップ 
+### <a name="next-steps"></a>次の手順 
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
   

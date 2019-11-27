@@ -37,7 +37,7 @@ Dropbox ではサインインしなくても共有リンクからファイルに
   
 2.  **[アプリ コネクタ]** ページで、[+] ボタン、 **[Dropbox]** の順にクリックします。  
   
-     ![connect dropbox](./media/connect-dropbox.png "Dropbox を接続する")  
+     ![dropbox の接続](./media/connect-dropbox.png "Dropbox を接続する")  
   
 3.  ポップアップで、管理者アカウントの電子メール アドレスを入力します。  
   
@@ -60,7 +60,7 @@ Dropbox を接続すると、接続までの 60 日間のイベントを受け�
 > [!NOTE] 
 > ファイルを追加する Dropbox のすべてのイベントは、アップロード ファイルとして Cloud App Security に表示され、Cloud App Security に接続された他のすべてのアプリと並べられます。 
  
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

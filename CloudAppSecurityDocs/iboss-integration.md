@@ -32,7 +32,7 @@ Cloud App Security と iboss の両方を使用する場合、2 つの製品を�
 - iboss のブロック機能は、Cloud App Security で "承認されていない" として設定したアプリに自動的に適用されます。
 - Cloud App Security の、組織内の上位 100 個のクラウド アプリのリスク評価を使用して、iboss 管理ポータルを強化します。これは、iboss の管理ポータルで直接表示できます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - Microsoft Cloud App Security の有効なライセンス
 - iboss Secure Cloud Gateway (リリース 9.1.100.0 以降) の有効なライセンス
@@ -58,7 +58,7 @@ Cloud App Security と iboss の両方を使用する場合、2 つの製品を�
 
 5. Microsoft Cloud App Security にトラフィック ログを送信するように iboss を構成するには、iboss のサポートにお問い合わせください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

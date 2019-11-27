@@ -61,7 +61,7 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 <!-- -  By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
   
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ユーザー アクティビティ ポリシー](user-activity-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

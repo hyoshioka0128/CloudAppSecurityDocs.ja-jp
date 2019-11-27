@@ -28,7 +28,7 @@ ms.locfileid: "74460949"
 
 Microsoft Cloud App Security は、接続されたアプリのアカウントを表示します。 アプリ コネクターを使用して Cloud App Security をアプリに接続すると、Cloud App Security は接続されたアプリに関連付けられたアカウントの情報を読み取ります。 [アカウント] ページでは、アカウント、アクセス許可、アカウントが属しているグループ、エイリアス、および使用アプリを調査することができます。 さらに、接続されたいずれかのアプリ (アクティビティやファイル共有など) で以前は存在しなかった新しいアカウントが Cloud App Security によって検出されると、アカウントはそのアプリのアカウント リストに追加されます。 これにより、クラウド アプリと対話する外部ユーザーのアクティビティを把握できます。
 
-管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 The **Users and accounts** page provides you with comprehensive details about the entities that are pulled from connected cloud applications. また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
+管理者は、特定のユーザーのメタデータまたはユーザーのアクティビティを検索できます。 **[ユーザーとアカウント]** ページには、接続されたクラウドアプリケーションからプルされたエンティティに関する包括的な詳細情報が表示されます。 また、ユーザーのアクティビティ履歴とユーザーに関連するセキュリティ通知も表示されます。
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
@@ -79,7 +79,7 @@ Microsoft Cloud App Security は、接続されたアプリのアカウントを
 - **ユーザー名**: 特定のユーザーにフィルター処理することができます。 
 
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

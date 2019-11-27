@@ -79,10 +79,10 @@ Cloud App Security には、Azure や Office 365 などの一般的なクラウ�
  
 7. 完了したら、 **[作成]** をクリックします。  
   
-     ![newipaddress range](./media/newipaddress-range.png "newipaddress の範囲")  
+     ![新しい ip アドレスの範囲](./media/newipaddress-range.png "newipaddress の範囲")  
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

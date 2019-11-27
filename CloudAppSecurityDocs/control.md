@@ -22,7 +22,7 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74460906"
 ---
-# <a name="control"></a>Control
+# <a name="control"></a>コントロール
 
 *適用対象: Microsoft Cloud App Security*
 
@@ -39,11 +39,11 @@ ms.locfileid: "74460906"
 
      コンプライアンス違反を見つけるようにポリシーが設定されていて、誰かがクレジット カード番号を OneDrive 上のファイルに保存する場合、ポリシーに一致します。  
 
-     ![PCI matches](./media/pci-matches.png "pci 一致")  
+     ![PCI 一致](./media/pci-matches.png "pci 一致")  
 
 -   一致を選択して、ポリシーに違反しているファイルを参照します。  
 
-     ![PCI content matches](./media/pci-content-matches.png "pci コンテンツ一致")  
+     ![PCI コンテンツの一致](./media/pci-content-matches.png "pci コンテンツ一致")  
 
      ファイル自体を選択すると、そのファイルに関する情報を取得できます。  
 
@@ -51,14 +51,14 @@ ms.locfileid: "74460906"
 
      **[一致]** をクリックすると、実際のクレジット カード番号が表示されます。  
 
-     ![Content matches credit card numbers](./media/content-matches-ccn.png "content matches credit card numbers")  
+     ![クレジットカード番号と一致するコンテンツ](./media/content-matches-ccn.png "クレジットカード番号と一致するコンテンツ")  
 
 ## <a name="apply-governance-actions"></a>ガバナンス アクションの適用  
 ガバナンス アクションは、ポリシー内、アラート内、**ファイル** ログから適用できます。  
 
-**[設定]** 歯車アイコンで **[ガバナンス ログ]** を選択すると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。 ![settings icon](./media/settings-icon.png "settings icon")
+**[設定]** 歯車アイコンで **[ガバナンス ログ]** を選択すると、以前に適用されたすべてのガバナンス アクションの状態をいつでも表示して確認することができます。 ![設定アイコン](./media/settings-icon.png "settings アイコン ")
 
-ガバナンス アクションが失敗した場合は、 **[再試行]** を選択して再度適用できます。 ![Retry icon](./media/retry-icon.png "retry icon")   
+ガバナンス アクションが失敗した場合は、 **[再試行]** を選択して再度適用できます。 ![再試行アイコン](./media/retry-icon.png "retry アイコン ")   
 
 ポリシー、違反、アプリの種類に応じて、さまざまなガバナンス アクションを使用できます。  
 
@@ -72,7 +72,7 @@ ms.locfileid: "74460906"
 >   
 >  **[フィルター]** セクションの **[結果の編集とプレビュー]** ボタンを使用すると結果を確認できます。  
 
-![File policy edit and preview results](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集とプレビュー結果")  
+![ファイルポリシーの編集と結果のプレビュー](./media/file-policy-edit-and-preview-results.png "ファイル ポリシーの編集とプレビュー結果")  
 
 ## <a name="migration"></a>移行  
 Cloud App Security では、組織内のどのユーザーがどのアプリを使用しているかを把握できると共に、新しいアプリの導入を監視するツールを提供することで、移行のロールアウトをサポートします。 また、組織内でどのような種類のアプリを提供する必要があるかを理解できるように、すべてのユーザーが既に使用しているアプリを表示するツールが提供されます。  
@@ -86,7 +86,7 @@ Cloud App Security では、組織内のどのユーザーがどのアプリを�
 
    1. **Cloud Discovery ダッシュボード**で **[Dropbox]** を選び、 **[IP アドレス]** または **[ユーザー]** タブを選びます。  
 
-   2. **[エクスポート]** 矢印アイコンを選択して、エクスポートのオプションを選択します。 ![Arrow icon](./media/arrow-icon.png "arrow icon")
+   2. **[エクスポート]** 矢印アイコンを選択して、エクスポートのオプションを選択します。 ![矢印アイコン](./media/arrow-icon.png "arrow アイコン ")
 
 ### <a name="find-more-secure-alternatives"></a>安全な代替アプリの検索  
 Cloud App Security サービス カタログを使用すると、ユーザーが使用している危険なアプリの代わりに、組織に最適な代替アプリを検索できます。  
@@ -101,7 +101,7 @@ Cloud App Security サービス カタログを使用すると、ユーザーが
 
 4.   組織全体のエンタープライズ ライセンスを購入しようと考えている場合は、 **[ユーザー]** 列もチェックしてください。 この列では、決定を行う前に、現在最も多くのユーザーが使用しているアプリ、そのアプリの信頼性、そのアプリに備わっているセキュリティ機能を確認することができます。  
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 クラウド アプリの使用を制御するポリシーを設定する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

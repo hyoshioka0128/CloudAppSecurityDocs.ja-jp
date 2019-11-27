@@ -79,7 +79,7 @@ Cloud App Security コンテンツ検査のエンジンは、次のようにな�
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
