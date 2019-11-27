@@ -47,21 +47,21 @@ OAuth アプリに関するポリシーでは、Office 365、G Suite、Salesforc
 
    ![新しい OAuth アプリ ポリシー](./media/app-permissions-policy.png)
 
-## <a name="oauth-app-anomaly-detection-policies"></a>OAuth app anomaly detection policies
+## <a name="oauth-app-anomaly-detection-policies"></a>OAuth アプリの異常検出ポリシー
 
-In addition to OAuth app policies you can create, there are the following out-of-the-box anomaly detection policies that profile metadata of OAuth apps to identify ones that are potentially malicious:
+作成できる OAuth アプリポリシーに加えて、次のようなすぐに使用できる異常検出ポリシーがあります。これは、悪意のある可能性があるものを識別するために OAuth アプリのメタデータをプロファイルします。
 
 | ポリシー名 | ポリシーの説明 |
 | --- | --- |
-| Misleading OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading name is detected. Misleading names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Suspicious OAuth app name | Scans OAuth apps connected to your environment and triggers an alert when an app with a suspicious name is detected. Suspicious names, such as names of known apps published by unknown publishers, could indicate an attempt to disguise a malicious app as a known and trusted app. |
-| Non-secure redirect URL is used by an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app uses a non-secure redirect URL (for example, does not use the HTTPS protocol), which exposes sensitive data to interception. |
-| Misleading publisher name for an OAuth app | Scans OAuth apps connected to your environment and triggers an alert when an app with a misleading publisher name is detected. Misleading publisher names, such as foreign letters that resemble Latin letters, could indicate an attempt to disguise a malicious app as an app coming from a known and trusted publisher. |
+| 紛らわしい OAuth アプリ名 | 環境に接続されている OAuth アプリをスキャンし、誤った名前のアプリが検出されたときにアラートをトリガーします。 ラテン文字に似た形式でない名前は、悪意のあるアプリを既知の信頼できるアプリとして偽装しようとしている可能性があります。 |
+| 疑わしい OAuth アプリ名 | 環境に接続されている OAuth アプリをスキャンし、疑わしい名前のアプリが検出されたときにアラートをトリガーします。 不明な発行元によって発行された既知のアプリの名前などの疑わしい名前は、悪意のあるアプリを既知の信頼できるアプリとして偽装しようとしている可能性があります。 |
+| セキュリティで保護されていないリダイレクト URL が OAuth アプリによって使用されている | 環境に接続されている OAuth アプリをスキャンし、アプリケーションがセキュリティで保護されていないリダイレクト URL (たとえば、HTTPS プロトコルを使用しない) を使用する場合にアラートをトリガーします。これにより、機密データが傍受に公開されます。 |
+| OAuth アプリの発行者名の誤用 | 環境に接続されている OAuth アプリをスキャンし、発行者名が誤っているアプリが検出されたときにアラートをトリガーします。 ラテン文字に似た外部文字などの正規の発行者名は、信頼されている既知の発行元からのアプリとして悪意のあるアプリを偽装しようとしている可能性があります。 |
 
 > [!NOTE]
-> Anomaly detection policies are only available for OAuth apps that are authorized in your Azure Active Directory.
+> 異常検出ポリシーは、Azure Active Directory で承認されている OAuth アプリでのみ使用できます。
 
-  ## <a name="next-steps"></a>次のステップ 
+  ## <a name="next-steps"></a>次の手順 
   [データ保護ポリシー](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

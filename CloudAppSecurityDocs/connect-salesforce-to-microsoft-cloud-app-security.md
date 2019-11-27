@@ -45,19 +45,19 @@ ms.locfileid: "74461403"
 
     * **[Manage Users]\(ユーザーの管理\)** で、 **[User Profiles]\(ユーザー プロファイル\)** ページに移動します。
 
-        ![salesforce manage users profiles](./media/salesforce-manageusers-profiles.png "salesforce manage users profiles")
+        ![salesforce のユーザープロファイルの管理](./media/salesforce-manageusers-profiles.png "salesforce のユーザープロファイルの管理")
 
     * **[New]\(新規\)** をクリックして、新しいプロファイルを作成します。
-    * Cloud App Security のデプロイ用に作成したプロファイルを選び、 **[Edit]\(編集\)** をクリックします。 This profile will be used for the Cloud App Security service account to set up the App connector.
+    * Cloud App Security のデプロイ用に作成したプロファイルを選び、 **[Edit]\(編集\)** をクリックします。 このプロファイルは、アプリコネクタをセットアップするために Cloud App Security サービスアカウントに使用されます。
 
-         ![salesforce edit profile](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")
+         ![salesforce のプロファイルの編集](./media/salesforce-edit-profile.png "Salesforce のプロファイルの編集")
 
     * 次のチェックボックスをオンにします。
       * **[API Enabled]\(API 有効化\)**
       * **[View All Data]\(すべてのデータを表示する\)**
       * **[Manage Salesforce CRM Content]\(Salesforce CRM コンテンツを管理する\)**
       * **[ユーザーを管理する]**
-      * **[Query All Files](https://go.microsoft.com/fwlink/?linkid=2106480)**
+      * **[すべてのファイルを照会する](https://go.microsoft.com/fwlink/?linkid=2106480)**
 
       チェックボックスがオフになっている場合は、Salesforce に連絡して自分のアカウントに追加する必要があります。
 
@@ -65,11 +65,11 @@ ms.locfileid: "74461403"
 
     1. Salesforce の設定ページに移動します。
 
-        ![salesforce setup](./media/salesforce-setup.png "Salesforce の設定")
+        ![salesforce のセットアップ](./media/salesforce-setup.png "Salesforce の設定")
 
     1. サイド メニューから **[ユーザーの管理]** を選択し、 **[ユーザー]** をクリックします。
 
-        ![salesforce menu users](./media/salesforce-menu-users.png "Salesforce メニューのユーザー")
+        ![salesforce メニューユーザー](./media/salesforce-menu-users.png "Salesforce メニューのユーザー")
 
     1. 専用の Cloud App Security ユーザーの現在の管理ユーザーを選択します。
 
@@ -77,21 +77,21 @@ ms.locfileid: "74461403"
 
         オフになっている場合は、 **[編集]** をクリックしてチェックボックスをオンにします。
 
-        ![salesforce crm content user](./media/salesforce-crm-content-user.png "Salesforce CRM Content ユーザー")
+        ![salesforce crm コンテンツユーザー](./media/salesforce-crm-content-user.png "Salesforce CRM Content ユーザー")
 
-    1. **[Save]** (保存) をクリックします。
+    1. **[保存]** をクリックします。
 
 1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
 1. **[アプリ コネクター]** ページで、[+] ボタン、 **[Salesforce]** の順にクリックします。
 
-    ![connect salesforce](./media/connect-salesforce.png "Salesforce を接続する")
+    ![salesforce の接続](./media/connect-salesforce.png "Salesforce を接続する")
 
 1. Salesforce の設定ページの API タブで、インストールするインスタンスに応じて **Follow this link (このリンクに移動)** をクリックします。
 
 1. これで Salesforce のサインイン ページが開きます。 Cloud App Security がチームの Salesforce アプリにアクセスできるように、資格情報を入力します。
 
-    ![salesforce sign-in](./media/salesforce-logon.png "Salesforce のログオン")
+    ![salesforce のサインイン](./media/salesforce-logon.png "Salesforce のログオン")
 
 1. Cloud App Security からチームの情報やアクティビティ ログにアクセスし、任意のチーム メンバーと同様に任意のアクティビティを実行することを許可するかどうかを確認するメッセージが Salesforce で表示されます。 続行するには、 **[許可]** をクリックします。
 
@@ -115,7 +115,7 @@ Salesforce イベントは Cloud App Security により次のように処理さ�
 * 15 分ごとにセットアップ監査証跡
 * Salesforce のログは、利用状況を 24 時間 (UTC 時刻の午前 00 時 00 分から 午後 11 時 59 分まで ) 追跡します。 Salesforce のイベントは、リアルタイムにログ データを生成します。 ただし、ログ ファイルは、イベントが発生した翌日の非ピーク時に、Salesforce によって生成されます。 そのため、ログ ファイル データはイベントが発生してから少なくとも 1 日は利用できません。 Salesforce のイベントについて詳しくは、「[Using event monitoring](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_event_log_files.htm)」(イベント監視の使用) をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

@@ -53,7 +53,7 @@ Microsoft Cloud App Security では、クラウド アプリ内のファイル�
 
 
   
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [制御](control.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

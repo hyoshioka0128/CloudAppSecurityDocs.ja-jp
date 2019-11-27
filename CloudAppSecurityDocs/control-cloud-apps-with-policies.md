@@ -35,7 +35,7 @@ ms.locfileid: "74460751"
 
 以下の種類のポリシーを作成できます。
 
-|ポリシーの種類アイコン|ポリシーの種類|vmmblue_2|
+|ポリシーの種類アイコン|ポリシーの種類|新しく使用する機能|
 |-----|-----------------|---------|
 |![アクセス ポリシー アイコン](./media/proxy-policy.png)|アクセス ポリシー|アクセス ポリシーは、リアルタイムの監視と、クラウド アプリへのユーザー ログインの制御を提供します。|
 |![アクティビティ ポリシー アイコン](./media/activity_policy.png)|アクティビティ ポリシー|アクティビティ ポリシーでは、アプリ プロバイダーの API を使用してさまざまな自動プロセスを適用できます。 これらのポリシーを使用すると、さまざまなユーザーによって実行される特定のアクティビティを監視したり、特定の種類のアクティビティの割合が異常に高い場合に追跡したりできます。|
@@ -173,27 +173,27 @@ Cloud App Security では、クラウド内のさまざまなリスクを軽減�
 
 既定では、新しく作成されたポリシーは有効になっています。
 
-## <a name="policies-overview-report"></a>Policies overview report
+## <a name="policies-overview-report"></a>ポリシーの概要レポート
 
-Cloud App Security lets you export a policies overview report showing aggregated alert metrics per policy to help you monitor, understand, and customize your policies to better protect your organization.
+Cloud App Security を使用すると、ポリシーごとに集計されたアラートメトリックを示すポリシーの概要レポートをエクスポートして、組織をより効果的に保護するためのポリシーの監視、理解、およびカスタマイズを行うことができます。
 
-To export a log, perform the following steps:
+ログをエクスポートするには、次の手順を実行します。
 
-1. In the **Policies** page, click the **Export** button.
+1. **[ポリシー]** ページで、 **[エクスポート]** ボタンをクリックします。
 
-1. Specify the required time range.
+1. 必要な時間の範囲を指定します。
 
 1. クリックして **エクスポート**します。 この処理には時間がかかる場合があります。
 
-To download the exported report:
+エクスポートされたレポートをダウンロードするには:
 
 1. レポートの準備ができたら、 **[設定]** 、 **[エクスポートされたレポート]** の順に移動します。
 
-1. In the table, select the relevant report from the list of **Policies overview report** and click download.
+1. テーブルで、ポリシーの一覧の**概要レポート**から関連するレポートを選択し、[ダウンロード] をクリックします。
 
     ![[ダウンロード] ボタン](./media/download-button.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 

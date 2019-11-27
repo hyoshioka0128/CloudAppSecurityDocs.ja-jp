@@ -27,7 +27,7 @@ ms.locfileid: "74461011"
 
 組織内のビジネス ユーザーがインストールするサード パーティ製の生産性アプリの多くでは、ユーザー情報とデータにアクセスし、Office 365、G Suite、Salesforce などの他のクラウド アプリにユーザーの代理としてサインインするためのアクセス許可が要求されます。 ユーザーは、こうしたアプリをインストールする場合、アプリへのアクセス許可の付与などの詳細を厳密に確認せずに、承認の操作を行いがちです。 IT 部門がこうしたアプリケーションのセキュリティ上のリスクと生産性のメリットとを比較検討するための十分な知識を持っていない場合、この問題はさらに重大になります。 サード パーティ製アプリのアクセス許可を承認することは、組織にとって潜在的なセキュリティ リスクになるため、ユーザーが付与するアプリのアクセス許可を監視することで、ユーザーとアプリケーションの保護に欠かせない可視性と制御が得られます。 Microsoft Cloud App Security アプリのアクセス許可によって、Office 365 データ、G Suite データ、および Salesforce データへのアクセス権がある、ユーザーがインストールした OAuth アプリケーションを表示できます。 Cloud App Security では、アプリに備わっているアクセス許可、およびこれらのアプリに Office 365、G Suite、および Salesforce のアカウントへのアクセス権を付与したユーザーが示されます。 アプリのアクセス許可は、ユーザーのアクセスを許可するアプリと、禁止するアプリを判断するのに役立ちます。
 
-For more information on investigating OAuth apps, see [Investigate risky OAuth apps](investigate-risky-oauth.md).
+OAuth アプリの調査の詳細については、「リスクのある[oauth アプリの調査](investigate-risky-oauth.md)」を参照してください。
 
 ## <a name="working-with-the-oauth-apps-page"></a>OAuth アプリ ページでの操作
 
@@ -41,7 +41,7 @@ Cloud App Security ポータルで、 **[調査]** 、 **[OAuth アプリ]** の
 
 [OAuth アプリ] ページでは、アクセス許可が付与されている各 OAuth アプリについて、下記の情報が表示されます。
 
-|Item|意味|適用対象|
+|アイテム|意味|対象|
 |-------|-------|-------|
 |アプリ クエリ バーの [基本] アイコン  |基本ビューでのクエリに切り替えます。|Office 365、G Suite、Salesforce|
 |アプリ クエリ バーの [詳細] アイコン  |詳細ビューでのクエリに切り替えます。|Office 365、G Suite、Salesforce|
@@ -53,7 +53,7 @@ Cloud App Security ポータルで、 **[調査]** 、 **[OAuth アプリ]** の
 |アプリの状態|管理者は、承認済みまた禁止としてマークするか、未確定のままにすることができます。|Office 365、G Suite、Salesforce|
 |コミュニティの利用状況|すべてのユーザーとの間でアプリがどれくらい使われいてるか (一般的、一般的でない、ほとんど使われていない) を示します。|Office 365、G Suite、Salesforce|
 |最終承認日|ユーザーがこのアプリにアクセス許可を付与した最新の日付。|Office 365、Salesforce|
-|発行者|アプリを提供するベンダーの名前。|Office 365|
+|パブリッシャー|アプリを提供するベンダーの名前。|Office 365|
 |最終使用日|組織内のだれかがこのアプリを使用した最新の日付。|Salesforce|
 
 ## <a name="ban-or-approve-an-app"></a>アプリを禁止または承認する
@@ -84,9 +84,9 @@ Cloud App Security ポータルで、 **[調査]** 、 **[OAuth アプリ]** の
 
 ## <a name="revoke-app-and-notify-user"></a>アプリを取り消し、ユーザーに通知する
 
-G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、アクセス許可を変更する必要があることをユーザーに通知したりすることができます。 When you revoke permission it removes all permissions that were granted to the application under “Enterprise Applications” in Azure AD.
+G Suite と Salesforce の場合、アプリのアクセス許可を取り消したり、アクセス許可を変更する必要があることをユーザーに通知したりすることができます。 アクセス許可を取り消すと、Azure AD の [エンタープライズアプリケーション] で、アプリケーションに付与されたすべてのアクセス許可が削除されます。
 
-1. **[OAuth アプリ]** ページで、アプリの行の末尾にある 3 つの点をクリックし、 **[ユーザーに通知]** を選択します。 By default, the user will be notified as follows: *You authorized the app to access your G Suite account. This app conflicts with your organization's security policy. Reconsider giving or revoking the permissions you gave this app in your G Suite account. To revoke app access, go to: https://security.google.com/settings/security/permissions?hl=en&pli=1  Select the app and click 'Revoke access' on the right menu bar.* 送信メッセージはカスタマイズできます。
+1. **[OAuth アプリ]** ページで、アプリの行の末尾にある 3 つの点をクリックし、 **[ユーザーに通知]** を選択します。 既定では、ユーザーには次の通知が表示されます。 *G Suite アカウントへのアクセスをアプリに許可した。このアプリは、組織のセキュリティポリシーと競合しています。G Suite アカウントにこのアプリを付与したアクセス許可を付与するか取り消すことを再検討します。アプリのアクセスを取り消すには、: https://security.google.com/settings/security/permissions?hl=en&pli=1 アプリを選択し、右側のメニューバーの [アクセスの取り消し] をクリックします。* 送信メッセージはカスタマイズできます。
 2. また、ユーザーのためにそのアプリを使用するアクセス許可を取り消すこともできます。 テーブル内のアプリ行の末尾にあるアイコンをクリックして、 **[アプリを取り消す]** を選択します。
 
     ![アプリを取り消す](./media/revoke-app.png)
@@ -99,17 +99,17 @@ G Suite と Salesforce の場合、アプリのアクセス許可を取り消し
 
 - フィルターを削除するには、そのフィルターの横にある **フィルターの削除**アイコンをクリックします。
 
-## <a name="oauth-app-auditing"></a>OAuth app auditing
+## <a name="oauth-app-auditing"></a>OAuth アプリの監査
 
-Cloud App Security では、実行されたアクティビティの包括的な監視および調査を提供できるよう、すべての OAuth 承認アクティビティを監査しています。 You can also export the details of users that authorized a specific OAuth app, providing you with additional information on the users, which you can then use for further analysis.
+Cloud App Security では、実行されたアクティビティの包括的な監視および調査を提供できるよう、すべての OAuth 承認アクティビティを監査しています。 また、特定の OAuth アプリを承認したユーザーの詳細をエクスポートして、ユーザーに関する追加情報を提供することもできます。これを使用すると、さらに詳しい分析を行うことができます。
 
-To export the log, perform the following steps:
+ログをエクスポートするには、次の手順を実行します。
 
-1. On the **OAuth apps** page, on the row where the relevant app appears, under **Authorized by**, click the link showing the number of users that authorized the app.
+1. **[OAuth アプリ]** ページで、関連するアプリが表示されている行の **[承認者]** の下で、アプリを承認したユーザーの数を示すリンクをクリックします。
 
-1. In the pop-up window, click **Export**.
+1. ポップアップウィンドウで、 **[エクスポート]** をクリックします。
 
-    ![Screenshot showing export of OAuth app auditing](media/oauth-export-users.png)
+    ![OAuth アプリの監査のエクスポートを示すスクリーンショット](media/oauth-export-users.png)
 
 ## <a name="send-feedback"></a>フィードバックを送信
 
@@ -120,7 +120,7 @@ To export the log, perform the following steps:
     ![アプリの報告](./media/report-app.png)
 2. **[このアプリの報告]** 画面では、悪意があるアプリとして報告するか、Cloud App Security でアプリを認識する方法についてのその他の問題を報告するか選択できます。 たとえば、 **[不適切なパブリッシャー]** 、 **[不適切なアクセス許可]** 、または **[その他]** を使用できます。 送信するデータは、アプリのリスク スコアやアプリに関するその他の分析を更新するために使用されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

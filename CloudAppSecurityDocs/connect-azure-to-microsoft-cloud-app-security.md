@@ -47,7 +47,7 @@ ms.locfileid: "74461439"
 > Azure を接続すると、データがプルされます。 以降のデータが表示されます。
 
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

@@ -25,7 +25,7 @@ ms.locfileid: "74461357"
 
 *適用対象: Microsoft Cloud App Security*
 
-After you've reviewed the list of discovered apps in your environment, you can secure your environment by approving safe apps (**Sanctioned**) or prohibiting unwanted apps (**Unsanctioned**) in the following ways.
+環境内で検出されたアプリの一覧を確認したら、次の方法で安全な**アプリ (承認** **済み) を**承認するか、望ましくないアプリを禁止することで、環境をセキュリティで保護することができます。
 
 ## <a name="BKMK_SanctionApp"></a> アプリの承認/非承認
 
@@ -38,7 +38,7 @@ After you've reviewed the list of discovered apps in your environment, you can s
 承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
 
 > [!NOTE]
-> If your tenant uses Zscaler NSS or iboss, any app you mark as unsanctioned is automatically blocked by Cloud App Security, and the following sections regarding creating blocking scripts are unnecessary. For more information, see [Integrating with Zscaler](zscaler-integration.md) and [Integrate Cloud App Security with iboss](iboss-integration.md) respectively.
+> テナントで Zscaler NSS または iboss が使用されている場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Zscaler との統合](zscaler-integration.md)」と「 [Cloud App Security を iboss と統合](iboss-integration.md)する」を参照してください。
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
 
@@ -62,7 +62,7 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
 5. アプライアンスに作成されたファイルをインポートします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)

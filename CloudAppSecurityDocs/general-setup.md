@@ -1,5 +1,5 @@
 ---
-title: Set up your organization's settings in Cloud App Security
+title: Cloud App Security で組織の設定をセットアップする
 description: この記事では、Cloud App Security に組織の情報を入力する方法について説明します。
 keywords: ''
 author: shsagir
@@ -27,13 +27,13 @@ ms.locfileid: "74458755"
 
 ここでは、Microsoft Cloud App Security ポータルをカスタマイズする手順について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-For portal access, it's necessary to add the following IP addresses to your Firewall's allow list to provide access for the Cloud App Security portal:
+ポータルにアクセスするには、次の IP アドレスをファイアウォールの許可一覧に追加して、Cloud App Security ポータルにアクセスできるようにする必要があります。
 
 * 104.42.231.28
 
-For US Government GCC High customers, it's also necessary to add the following IP addresses to your Firewall’s allow list to provide access for the Cloud App Security GCC High portal:
+米国政府の GCC 高のお客様については、次の IP アドレスをファイアウォールの許可一覧に追加して、Cloud App Security GCC High ポータルにアクセスできるようにする必要もあります。
 
 * 52.227.143.223
 * 13.72.19.4
@@ -43,7 +43,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ
 
-1. In the Cloud App Security portal, in the menu bar, click the settings cog ![settings icon](./media/settings-icon.png "設定アイコン") and select **Settings** to configure your organization's details.
+1. Cloud App Security ポータルのメニューバーで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[設定]** を選択して組織の詳細を構成します。
 
 1. **[組織の詳細]** に自社の**組織の表示名**を指定することは重要です。 これは、システムから送信される電子メールや Web ページに表示されます。
 
@@ -55,13 +55,13 @@ For US Government GCC High customers, it's also necessary to add the following I
 
     * 内部として構成されていないドメイン内のユーザーは、外部とマークされます。 外部ユーザーについては、アクティビティまたはファイルはスキャンされません。
 
-1. Under **Auto sign out**, specify the amount of time a session can remain inactive before the session is automatically signed out.
+1. **[自動サインアウト]** で、セッションが自動的にサインアウトされるまでのセッションの非アクティブ状態を継続する時間を指定します。
 
 1. Azure Information Protection の統合により統合を行う場合は、「[Azure Information Protection の統合](azip-integration.md)」を参照してください。
 
     * Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
-1. If you're integrating with Azure Advanced Threat Protection integration, see [Azure Advanced Threat Protection Integration](azip-integration.md) for information.
+1. Azure Advanced Threat Protection 統合と統合する場合は、 [Azure Advanced Threat Protection の統合](azip-integration.md)に関する情報を参照してください。
 
 1. ポータル設定は、この画面からいつでもバックアップできます。 **[ポータル設定をエクスポート]** をクリックすると、ポリシー規則やユーザー グループ、IP アドレス範囲などのポータル設定がすべて記述された json ファイルが作成されます。
 
@@ -70,7 +70,7 @@ For US Government GCC High customers, it's also necessary to add the following I
 >
 > パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 

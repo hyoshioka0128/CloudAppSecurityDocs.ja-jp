@@ -39,13 +39,13 @@ Azure Active Directory での全体管理者、コンプライアンス管理者
  Add-MsolRoleMember -RoleName "Compliance Administrator" -RoleMemberEmailAddress "XX@XX.XX"
 ```
 
- または
+ OR
 
 ```powershell
  Add-MsolRoleMember -RoleName "Security Administrator" -RoleMemberEmailAddress “XX@XX.XX”
 ```
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 クラウド アプリの使用を制御するポリシーを設定して使用する方法については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」をご覧ください。   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

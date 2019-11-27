@@ -32,7 +32,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 - Zscaler のブロック機能は、Cloud App Security で "承認されていない" として設定したアプリに自動的に適用されます。
 - Cloud App Security のリスク評価を使用して Zscaler のポータルが強化されます。200 の主要なクラウド アプリに対するリスク評価を、Zscaler のポータルで直接表示できます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - Microsoft Cloud App Security の有効なライセンス
 - Zscaler Cloud 5.6 の有効なライセンス
@@ -58,7 +58,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 
 4. Cloud App Security で "承認されていない" として設定したすべてのアプリは、2 時間ごとに Zscaler によって ping され、Zscaler によって自動的にブロックされます。 承認されていないアプリについて詳しくは、「[アプリの承認/非承認](governance-discovery.md#BKMK_SanctionApp)」をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 

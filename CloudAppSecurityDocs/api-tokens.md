@@ -60,7 +60,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
     ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
 
 > [!NOTE]
-> If you are using Azure Active Directory Privileged Identity Management role activation, your API token will only be effective once the role is activated. For more information, see [Activate my Azure AD roles in PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role).
+> Azure Active Directory Privileged Identity Management ロールのアクティブ化を使用している場合は、ロールがアクティブになると、API トークンが有効になります。 詳細については、「 [PIM での Azure AD ロールのアクティブ化](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-activate-role)」を参照してください。
 
 ## <a name="api-token-management"></a>API トークンの管理
 
@@ -79,7 +79,7 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

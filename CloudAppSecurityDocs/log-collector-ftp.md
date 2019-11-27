@@ -65,7 +65,7 @@ Cloud App Security の Cloud Discovery の Docker 構成を変更する必要が
 
     ![FTP パスワードの変更](./media/update-certs.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Cloud Discovery の展開](set-up-cloud-discovery.md)
 

@@ -35,7 +35,7 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
     - **アプリケーション** ユーザー グループ - Office 365 アプリケーションと Azure AD アプリケーションによって実行されるアクティビティの表示を可能にする組み込みのグループ。
 
-    - **External users** group - All users who aren't members of any of the managed domains you configured for your organization.
+    - **External users** group-組織用に構成した管理対象ドメインのメンバーではないすべてのユーザー。
 
 - 包含ルールを設定すると、包含されるグループのうちに入らないすべてのグループが自動的に除外されます。 たとえば、米国オフィス グループのすべてのメンバーを含めるルールを設定すると、そのグループの一部でないグループは監視されません。
 
@@ -43,7 +43,7 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 1. メニュー バーで設定歯車をクリックし、 **[スコープ付きの展開]** を選択します。  
 
-    ![settings icon](./media/settings-icon.png "設定アイコン")
+    ![設定アイコン](./media/settings-icon.png "設定アイコン")
 
 2. デプロイのスコープを指定して特定のグループを包含または除外するためには、最初に Microsoft Cloud App Security に[ユーザー グループをインポートする](user-groups.md)必要があります。
 
@@ -60,13 +60,13 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 5. 特定のグループを監視から除外するよう設定するには、 **[含まない]** タブでプラス アイコンをクリックします。
 
-   ![アイコン](./media/plus-icon.png)
+   ![アイコン●あいこん○](./media/plus-icon.png)
 
 6. **[新しい除外ルールの作成]** ダイアログ ボックスで、次のパラメーターを設定します。
 
     1. **[Type rule name]\(ルール名を入力してください\)** の下に、ルールの内容を表す名前を入力します。
     **[ユーザー グループの選択]** の下で、Cloud App Security に監視させないグループをすべて選択します。
-    2. このルールを、接続されたすべてのアプリに適用するのか、**特定のアプリ**にのみ適用するのか選択します。 **特定のアプリ**を選択した場合、Cloud App Security は選択したアプリに対してのみ選択したグループの監視を停止します。 That means that if you select the group **UI team users** and **Active Directory**, Cloud App Security will monitor all user activity except Active Directory activities that are performed by UI team users.
+    2. このルールを、接続されたすべてのアプリに適用するのか、**特定のアプリ**にのみ適用するのか選択します。 **特定のアプリ**を選択した場合、Cloud App Security は選択したアプリに対してのみ選択したグループの監視を停止します。 つまり、グループ**ui チームユーザー**と**Active Directory**を選択した場合、Cloud App Security は、ui チームユーザーによって実行される Active Directory アクティビティを除くすべてのユーザーアクティビティを監視します。
 
        ![除外ルール](./media/exclude-rule.png)
 
@@ -83,9 +83,9 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 次のユーザー アクティビティが監視されます。
 
-|User|グループのメンバーシップ|監視されるアクティビティ|
+|ユーザー|グループのメンバーシップ|監視されるアクティビティ|
 |----|----|----|
-|Adriana|ドイツのすべてのユーザー<br>グローバル営業<br>営業部長|None|
+|Adriana|ドイツのすべてのユーザー<br>グローバル営業<br>営業部長|なし|
 |Alain|グローバル営業|Office 365 と Power BI を除くすべてのサブ アプリ|
 |Cornel|グローバル営業<br>営業部長|Office 365 とすべてのサブ アプリ|
 |Raymond|営業部長|Power BI のみ|
@@ -94,7 +94,7 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 > このルールで、他のアプリがグループのスコープによる影響を受けることはありません。
 > 例では、Salesforce の場合、すべてのユーザー グループのすべてのアクティビティが監視されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 

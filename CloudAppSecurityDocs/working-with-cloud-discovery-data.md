@@ -56,7 +56,7 @@ Cloud Discovery アプリの概要を得るために最初にすべきことは�
 3. **[除外されたユーザー]** 、 **[除外された IP アドレス]** 、 **[除外されたマシン]** タブのいずれかを選択し、[+] ボタンをクリックして除外対象を追加します。
 4. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
   
-     ![exclude user](./media/exclude-user.png "ユーザーを除外する")  
+     ![ユーザーを除外する](./media/exclude-user.png "ユーザーを除外する")  
 
 ## <a name="manage-continuous-reports"></a>継続的レポートの管理
 
@@ -105,14 +105,14 @@ Cloud Discovery データを削除するには:
   
 3. **[削除]** ボタンをクリックします。  
   
-    ![delete data](./media/delete-data.png "データを削除する")  
+    ![データの削除](./media/delete-data.png "データを削除する")  
   
    > [!NOTE]  
    >  すぐには削除されず、削除処理には数分かかります。
 
 
  
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 

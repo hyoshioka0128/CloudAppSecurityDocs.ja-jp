@@ -32,7 +32,7 @@ ms.locfileid: "74460551"
 
 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。 この表は、Microsoft Cloud App Security に存在するポリシー テンプレートをまとめたものです。
 
-|リスク カテゴリ|テンプレート名|[説明]|
+|リスク カテゴリ|テンプレート名|説明|
 |-----|----|----|
 |Cloud Discovery|Anomalous behavior in discovered users (検出されたユーザーの異常な動作)|検出されたユーザーとアプリで異常な動作 (他のユーザーと比較して大量のアップロード データ、ユーザーの履歴と比較して大量のユーザー トランザクションなど) が検出されたときにアラートを生成します。|
 |Cloud Discovery|Anomalous behavior of discovered IP addresses (検出された IP アドレスの異常な動作)|検出された IP アドレスとアプリで異常な動作が検出されたときにアラートを生成します。たとえば、他の IP アドレスに比べて大量のデータがアップロードされている場合や、IP アドレスの履歴に比べてアプリ トランザクションが大きい場合などです。|
@@ -70,7 +70,7 @@ ms.locfileid: "74460551"
 
 
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

@@ -1,6 +1,6 @@
 ---
-title: Integrate Microsoft Defender ATP with Cloud App Security
-description: This article describes how to integrate Microsoft Defender Advanced Threat Protection with Cloud App Security for enhanced visibility into Shadow IT and risk management.
+title: Microsoft Defender ATP を Cloud App Security に統合する
+description: この記事では、Microsoft Defender Advanced Threat Protection を Cloud App Security に統合して、シャドウ IT およびリスク管理の可視性を向上させる方法について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -22,41 +22,41 @@ ms.contentlocale: ja-JP
 ms.lasthandoff: 11/24/2019
 ms.locfileid: "74459434"
 ---
-# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection integration with Microsoft Cloud App Security
+# <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
 *適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security integrates with Microsoft Defender Advanced Threat Protection (ATP) natively. 統合により、Cloud Discovery のロールアウトが簡単になり、Cloud Discovery の機能が企業ネットワークの範囲を超えて拡張され、マシンベースの調査が可能になりします。 [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) is a security platform for intelligent protection, detection, investigation, and response. Microsoft Defender ATP protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
+Microsoft Cloud App Security は、Microsoft Defender Advanced Threat Protection (ATP) とネイティブに統合されます。 統合により、Cloud Discovery のロールアウトが簡単になり、Cloud Discovery の機能が企業ネットワークの範囲を超えて拡張され、マシンベースの調査が可能になりします。 [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)は、インテリジェントな保護、検出、調査、および対応を行うためのセキュリティプラットフォームです。 Microsoft Defender ATP は、サイバー脅威からのエンドポイントを保護し、高度な攻撃とデータ侵害を検出し、セキュリティインシデントを自動化し、セキュリティ体制を強化します。
 
-Microsoft Cloud App Security uses the traffic information collected by Microsoft Defender ATP about the cloud apps and services being accessed from IT-managed Windows 10 machines. 統合により、ローミングおよびリモート アクセスの間にパブリック Wi-Fi を使用して、企業ネットワーク内のマシンで Cloud Discovery を実行できます。 また、マシンベースの調査も可能になります。
+Microsoft Cloud App Security は、IT が管理する Windows 10 コンピューターからアクセスされるクラウドアプリとサービスについて、Microsoft Defender ATP によって収集されたトラフィック情報を使用します。 統合により、ローミングおよびリモート アクセスの間にパブリック Wi-Fi を使用して、企業ネットワーク内のマシンで Cloud Discovery を実行できます。 また、マシンベースの調査も可能になります。
 
-リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。 リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを検出できます。 Cloud App Security にルーティングされたエンドポイントからのログでは、トラフィック アクティビティに関するユーザー情報が提供されます。 Microsoft Defender ATP network activity provides device context. デバイス コンテキストとユーザー名を組み合わせると、ネットワーク全体でどのユーザーがどのマシンからどのアクティビティを実行したかが詳細にわかります。
+リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。 リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを検出できます。 Cloud App Security にルーティングされたエンドポイントからのログでは、トラフィック アクティビティに関するユーザー情報が提供されます。 Microsoft Defender ATP ネットワークアクティビティは、デバイスコンテキストを提供します。 デバイス コンテキストとユーザー名を組み合わせると、ネットワーク全体でどのユーザーがどのマシンからどのアクティビティを実行したかが詳細にわかります。
 
-Microsoft Cloud App Security uses the native integration with Microsoft Defender ATP to tap into data about cloud app and service traffic from managed Windows devices. 統合では、標準以外の追加の展開と作業は必要ありません。 エンドポイントからトラフィックをルーティングまたはミラーリングする必要も、複雑な統合の手順を行う必要もありません。
+Microsoft Cloud App Security は、Microsoft Defender ATP とのネイティブ統合を使用して、管理された Windows デバイスからクラウドアプリとサービストラフィックに関するデータをタップします。 統合では、標準以外の追加の展開と作業は必要ありません。 エンドポイントからトラフィックをルーティングまたはミラーリングする必要も、複雑な統合の手順を行う必要もありません。
 
 > [!NOTE]
-> Want to experience Microsoft Defender ATP? [無料試用版にサインアップしてください](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
+> Microsoft Defender ATP を体験する場合は、 [無料試用版にサインアップしてください](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 >
 
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - Microsoft Cloud App Security ライセンス
-- Microsoft Defender ATP license
-- Windows 10 version 1709 (OS Build 16299.1085 with KB4493441), Windows 10 version 1803 (OS Build 17134.704 with KB4493464), Windows 10 version 1809 (OS Build 17763.379 with KB4489899) or later Windows 10 versions
+- Microsoft Defender ATP ライセンス
+- Windows 10 バージョン 1709 (OS Build 16299.1085 with KB4493441)、Windows 10 version 1803 (OS Build 17134.704 with KB4493464)、Windows 10 version 1809 (OS Build 17763.379 with KB4489899)、またはそれ以降のバージョンの Windows 10
 - **[プレビュー機能]** をオンに切り替え、Cloud App Security でこの機能を有効にする
 
 ## <a name="how-it-works"></a>しくみ
 
-Cloud App Security は自動的に、[ユーザーがアップロードしたログ](create-snapshot-cloud-discovery-reports.md)を使用するか、または[自動ログ アップロードを構成する](discovery-docker.md)ことにより、エンドポイントからログを収集します。 Native integration enables you to take advantage of the logs Microsoft Defender ATP's agent creates when it runs on Windows and monitors network transactions. この情報を、ネットワーク上の Windows マシンでのシャドウ IT の検出に使用できます。
+Cloud App Security は自動的に、[ユーザーがアップロードしたログ](create-snapshot-cloud-discovery-reports.md)を使用するか、または[自動ログ アップロードを構成する](discovery-docker.md)ことにより、エンドポイントからログを収集します。 ネイティブ統合を使用すると、Windows で実行されるときに Microsoft Defender ATP のエージェントが作成するログを利用し、ネットワークトランザクションを監視できます。 この情報を、ネットワーク上の Windows マシンでのシャドウ IT の検出に使用できます。
 
-To enable you to perform Cloud Discovery across other platforms, it's best to use both the Cloud App Security [log collector](discovery-docker.md), along with Microsoft Defender ATP integration to monitor your Windows 10 machines.
+他のプラットフォーム間で Cloud Discovery を実行できるようにするには、Windows 10 コンピューターを監視するために、Cloud App Security [log collector](discovery-docker.md)と MICROSOFT Defender ATP 統合の両方を使用することをお勧めします。
 
-## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>How to integrate Microsoft Defender ATP with Cloud App Security
+## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Microsoft Defender ATP を Cloud App Security に統合する方法
 
-To enable integration with Cloud App Security from Microsoft Defender ATP:
+Microsoft Defender ATP から Cloud App Security との統合を有効にするには:
 
-1. In the Microsoft Defender ATP portal, from the navigation pane, select **Preferences setup**.
+1. Microsoft Defender ATP ポータルのナビゲーションウィンドウで、設定 **セットアップ** の順番に選択します。
 2. **[設定]** メニューの **[全般]** の **[高度な機能]** を選択します。
 3. **[Microsoft Cloud App Security]** を **[オン]** に切り替えます。
 4. **[Save preferences]\(基本設定の保存\)** をクリックします。
@@ -69,7 +69,7 @@ To enable integration with Cloud App Security from Microsoft Defender ATP:
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Cloud App Security でマシンを調査する
 
-After you integrate Microsoft Defender ATP with Cloud App Security, you can investigate discovered machine data in the Cloud Discovery dashboard.
+Microsoft Defender ATP を Cloud App Security に統合したら、Cloud Discovery ダッシュボードで検出されたマシンデータを調査できます。
 
 1. Cloud App Security ポータルで、 **[Cloud Discovery]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。
 2. 上部のナビゲーション バーで、 **[継続的レポート]** の **[Win10 endpoint users]\(Win10 エンドポイント ユーザー\)** を選択します。
@@ -78,10 +78,10 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
 4. **[マシン]** タブをクリックします。
 5. リストの各マシンにドリルダウンし、タブを使用して、調査データを表示します。 インシデントに関係したマシン、ユーザー、IP アドレス、アプリの間の相関関係を検索します。
    - **概要**
-      - Transactions: Information about the number of transactions that took place on the machine over the selected period of time.
-      - Total traffic: Information about the total amount of traffic (in MB) over the selected period of time.
-     - Uploads: Information about the total amount of traffic (in MB) uploaded by the machine over the selected period of time.
-     - Downloads: Information about the total amount of traffic (in MB) downloaded by the machine over the selected period of time.
+      - トランザクション: 選択した期間にコンピューターで発生したトランザクションの数に関する情報。
+      - 合計トラフィック数: 選択した期間のトラフィックの総量 (MB 単位) に関する情報。
+     - アップロード: 選択した期間にマシンによってアップロードされたトラフィックの総量 (MB 単位) に関する情報。
+     - ダウンロード: 選択した期間にコンピューターによってダウンロードされたトラフィックの総量 (MB 単位) に関する情報。
    - **検出されたアプリ**<br>
   マシンによってアクセスされたすべての検出されたアプリの一覧が表示されます。
    - **ユーザーの履歴**<br>
@@ -93,14 +93,14 @@ After you integrate Microsoft Defender ATP with Cloud App Security, you can inve
 他の Cloud Discovery ソースと同様、Win10 エンドポイント ユーザー レポートからデータをエクスポートして、さらに詳しく調査できます。 
 
 > [!NOTE]
-> - Defender ATP forwards data to Cloud App Security in chunks of ~4 MB (~4000 endpoint transactions)
-> - If the 4 MB limit isn't reached within 1 hour, Defender ATP reports all the transactions performed over the last hour.
+> - Defender ATP は、最大 4 MB のチャンク単位で Cloud App Security にデータを転送します (約4000エンドポイントトランザクション)
+> - 1時間以内に 4 MB の制限に達していない場合、Defender ATP は過去1時間に実行されたすべてのトランザクションを報告します。
 
 ## <a name="related-videos"></a>関連ビデオ
 
-[Shadow IT discovery beyond the corporate network with Microsoft Defender ATP and Cloud App Security](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+[Microsoft Defender ATP および Cloud App Security を使用した企業ネットワークを超えたシャドウ IT 検出](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md) 
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

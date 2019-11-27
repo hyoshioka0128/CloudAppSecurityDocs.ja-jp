@@ -1,6 +1,6 @@
 ---
-title: Generic SIEM integration with Cloud App Security
-description: This article provides information integrating your generic SIEM with Cloud App Security.
+title: Cloud App Security との汎用 SIEM の統合
+description: この記事では、汎用 SIEM と Cloud App Security の統合に関する情報を提供します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -24,19 +24,19 @@ ms.locfileid: "74460349"
 
 *適用対象: Microsoft Cloud App Security*
 
-You can integrate Microsoft Cloud App Security with your generic SIEM server to enable centralized monitoring of alerts and activities from connected apps. 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
+Microsoft Cloud App Security を汎用 SIEM サーバーと統合することで、接続されているアプリからのアラートとアクティビティを一元的に監視できます。 新しいアクティビティとイベントは接続されたアプリでサポートされているため、Microsoft Cloud App Security でも確認できます。 SIEM サービスとの統合により、通常のセキュリティ ワークフローを維持し、セキュリティ手順を自動化してクラウドベースのイベントとオンプレミス イベントを関連付けた状態で、クラウド アプリケーションの保護を強化することができます。 Microsoft Cloud App Security SIEM エージェントはサーバー上で実行され、Microsoft Cloud App Security からアラートとアクティビティを取得し、SIEM サーバーに送ります。
 
 SIEM を Cloud App Security と初めて統合した場合、過去 2 日間のアクティビティとアラートは SIEM に転送され、以降のすべてのアクティビティとアラートも (選択したフィルターに基づいて) 転送されます。 この機能を長期間無効にしてから再び有効にすると、過去 2 日間分のアラートとアクティビティが転送され、それからそれ以降のすべてのアラートとアクティビティが転送されます。
 
-Additional integration solutions include:
+追加の統合ソリューションには次のものがあります。
 
-* **Azure Sentinel** - A scalable, cloud-native SIEM and SOAR for native integration. For information about integrating with Azure Sentinel, see [Azure Sentinel integration](siem-sentinel.md).
-* **Microsoft security graph API** - An intermediary service (or broker) that provides a single programmatic interface to connect multiple security providers. For more information, see [Security solution integrations using the Microsoft Graph Security API](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft).
+* **Azure Sentinel** -ネイティブ統合のためのスケーラブルなクラウドネイティブ SIEM と非常。 Azure Sentinel との統合の詳細については、「 [Azure sentinel の統合](siem-sentinel.md)」を参照してください。
+* **Microsoft security GRAPH API** -複数のセキュリティプロバイダーに接続するための単一のプログラムインターフェイスを提供する仲介サービス (またはブローカー) です。 詳細については、「 [Microsoft Graph セキュリティ API を使用したセキュリティソリューションの統合](https://docs.microsoft.com/graph/security-integration#list-of-connectors-from-microsoft)」を参照してください。
 
 > [!IMPORTANT]
-> If you are integrating Azure Advanced Threat Protection in Cloud App Security and both services are configured to send alert notifications to a SIEM, you'll start to receive duplicate SIEM notifications for the same alert. 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 To avoid duplication and confusion, make sure to handle the scenario. For example, decide where you intend to perform alert management, and then stop SIEM notifications being sent from the other service.
+> Cloud App Security で Azure Advanced Threat Protection を統合していて、両方のサービスが SIEM にアラート通知を送信するように構成されている場合は、同じアラートに対して重複する SIEM 通知を受け取ることになります。 各サービスからはアラートが 1 つ発行され、異なるアラート ID が与えられます。 重複や混乱を避けるためには、必ずシナリオに対処してください。 たとえば、アラートの管理を実行する場所を決定し、もう一方のサービスから送信される SIEM 通知を停止します。
 
-## <a name="generic-siem-integration-architecture"></a>Generic SIEM integration architecture
+## <a name="generic-siem-integration-architecture"></a>汎用 SIEM 統合アーキテクチャ
 
 SIEM エージェントは組織のネットワークに展開されます。 展開と構成が行われると、Cloud App Security RESTful API を使用して構成を行ったデータの種類 (アラートとアクティビティ) がプルされます。
 ポーリングされるトラフィックはポート 443 の暗号化された HTTPS チャネルを通じて送信されます。
@@ -57,7 +57,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 2. JAR ファイルをダウンロードし、サーバーで実行します。
 3. SIEM エージェントが動作しているか検証します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>必須コンポーネント
 
 - 標準的な Windows または Linux サーバー (仮想マシンを使用可)。
 - OS: Windows または Linux
@@ -71,11 +71,11 @@ SIEM との統合は次の 3 つの手順で行われます。
 
 ### <a name="step-1-set-it-up-in-the-cloud-app-security-portal"></a>手順 1: Cloud App Security ポータルでセットアップする
 
-1. In the Cloud App Security portal, under the **Settings** cog, click **Security extensions**.
+1. Cloud App Security ポータルの**設定**歯車で、 **[セキュリティ拡張機能]** をクリックします。
 
-1. On the **SIEM agents** tab, click add ( **+** ), and then choose **Generic SIEM**.
+1. **[SIEM エージェント]** タブで、[追加 ( **+** )] をクリックし、 **[Generic SIEM]** を選択します。
 
-    ![Screenshot showing Add SIEM integration menu](media/siem0.png)
+    ![SIEM 統合の追加メニューを示すスクリーンショット](media/siem0.png)
 
 1. ウィザードで、 **[ウィザード起動]** をクリックします。
 1. ウィザードで、名前を入力し、**SIEM 形式を選択**して、その形式に関する**詳細設定**をすべて設定します。 **[次へ]** をクリックします。
@@ -110,7 +110,7 @@ SIEM との統合は次の 3 つの手順で行われます。
 > - ファイル名は、SIEM エージェントのバージョンによって異なる場合があります。
 > - 角かっこ [  ] で囲まれたパラメーターは省略可能です。関係する場合にのみ使用してください。
 > - サーバーの起動時に JAR を実行することをお勧めします。
->   - Windows: Run as a scheduled task and make sure that you configure the task to **Run whether the user is logged on or not** and that you uncheck the **Stop the task if it runs longer than** checkbox.
+>   - Windows: スケジュールされたタスクとして実行し、**ユーザーがログオンしているかどうかにかかわらず**タスクを実行するように構成し、[次の時間**より長く実行する場合はタスクを停止**する] チェックボックスをオフにします。
 >   - Linux: **&** を使用して実行コマンドを rc.local ファイルに追加します。 たとえば次のようになります。`java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &`
 
 各変数の使用方法:
@@ -157,7 +157,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 
 #### <a name="sample-cloud-app-security-alerts-in-cef-format"></a>CEF フォーマットの Cloud App Security アラートのサンプル
 
-|   適用対象   |      CEF フィールド名      |                                                   [説明]                                                   |
+|   適用対象   |      CEF フィールド名      |                                                   説明                                                   |
 |-------------------|--------------------------|-----------------------------------------------------------------------------------------------------------------|
 | アクティビティ/アラート |          start           |                                           アクティビティまたはアラートのタイムスタンプ                                           |
 | アクティビティ/アラート |           end            |                                           アクティビティまたはアラートのタイムスタンプ                                           |
@@ -206,7 +206,7 @@ SIEM エージェントを削除するには、テーブルの SIEM エージェ
 > [!NOTE]
 > この機能はパブリック プレビュー段階です。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)
 

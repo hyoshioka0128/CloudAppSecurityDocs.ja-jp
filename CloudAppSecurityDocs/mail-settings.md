@@ -124,7 +124,7 @@ ms.locfileid: "74458380"
           </html>  
 ```
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 

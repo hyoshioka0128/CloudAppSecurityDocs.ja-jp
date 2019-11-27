@@ -72,10 +72,10 @@ Microsoft Cloud App Security は、接続しているアプリのすべてのア
  - 同一種類のアクティビティを表示する
  - 同一ユーザーのすべてのアクティビティを表示する
  - 同一 IP アドレスのアクティビティを表示する
- - View activities from the same geographic location
+ - 同じ地理的な場所からのアクティビティを表示する
  - 同一期間 (48 時間) のアクティビティを表示する
  
-![activity drawer](./media/activity-drawer.png "アクティビティ ドロワー")  
+![アクティビティドロワー](./media/activity-drawer.png "アクティビティ ドロワー")  
   
 使用できるガバナンス アクションのリストについては、「[アクティビティ ガバナンス アクション](governance-actions.md#activity-governance-actions)」を参照してください。
 
@@ -133,7 +133,7 @@ IP アドレスの洞察を表示するには:
 
 
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

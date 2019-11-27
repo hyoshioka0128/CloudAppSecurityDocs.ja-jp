@@ -48,10 +48,10 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 
 トリガーされた新しいアラートを確認するため、毎日ダッシュボードを確認することをお勧めします。 これは、クラウド環境の正常性を監視するのに適しています。 ダッシュボードは、何が起こっているかを把握するのに役立ちます。  
 
-![Cloud App Security dashboard](./media/dashboard.png "ダッシュボード")  
+![Cloud App Security ダッシュボード](./media/dashboard.png "ダッシュボード")  
 
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 アラートの調査の詳細については、「[調査](investigate.md)」を参照してください。  
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

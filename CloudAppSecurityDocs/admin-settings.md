@@ -33,14 +33,14 @@ Microsoft Cloud App Security の管理者としての設定をセットアップ
   
 1.  **[アカウント設定]** をクリックします。 ここで、Cloud App Security ポータルにアクセスするためのパスワードを設定または更新できます。  
   
-     ![custom user settings](./media/custom-user-settings.png "カスタム ユーザー設定")  
+     ![カスタムユーザー設定](./media/custom-user-settings.png "カスタム ユーザー設定")  
   
 2.  **[通知]** をクリックすると、システムから送信される電子メールやテキスト通知の受信設定を変更できます。  重要度を設定して、電子メールで受信するアラートや違反を決めることができます。 重大度はポリシーごとに設定されます。 違反がトリガーされると、ここでの設定および違反が発生したポリシー内の重大度設定に基づいて、電子メール通知が届きます。 電子メールは、Cloud App Security へのサインインに使用する管理者のユーザー アカウントに関連付けられたエイリアスに送信されます。 電話番号を入力してアラートや通知が送信された場合に Cloud App Security からテキスト メッセージを受信できるようにし、テキスト メッセージで通知を受信する重要度レベルを設定します。  
   
     > [!NOTE] 
     > テキスト メッセージで送信されるアラートの最大数は、1 つの電話番号につき 1 日あたり 10 件です。 日は UTC タイム ゾーンに従って計算されます。 
   
-    ![notification settings](./media/notification-settings.png "通知の設定")  
+    ![通知の設定](./media/notification-settings.png "通知の設定")  
   
 3. 完了したら **[保存]** をクリックします。  
   
@@ -48,7 +48,7 @@ Microsoft Cloud App Security の管理者としての設定をセットアップ
  
   
     
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

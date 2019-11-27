@@ -26,9 +26,9 @@ ms.locfileid: "74458501"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-* OS: **Windows 10** (fall creators update) or Windows Server **version 1709+**
+* OS: **windows 10** (作成者の更新プログラム) または windows Server**バージョン1709以降**
 
 * ディスク領域: 250 GB
 
@@ -41,10 +41,10 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 * Hyper-V でオペレーティング システム上の仮想化を有効にすることが必要
 
 > [!IMPORTANT]
-> A user must be signed in for Docker to collect logs. We recommend advising your Docker user's to disconnect without signing out.
+> ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインアウトせずに、Docker ユーザーの接続を切断することを勧めることをお勧めします。
 
 > [!NOTE]
-> If you have an existing log collector and want to remove it before deploying it again, or if you simply want to remove it, run the following commands:
+> 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
 >
 > ```console
 > docker stop <collector_name>
@@ -61,7 +61,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成
 
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする
 
 1. **[自動ログ アップロード]** 設定ページに移動します。
 
@@ -72,7 +72,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
     1. **[データ ソースの追加]** をクリックします。  
-    ![Add a data source](media/add-data-source.png)
+    データソース](media/add-data-source.png) を追加 ![には
     1. プロキシまたはファイアウォールの **[名前]** を付けます。  
     ![ubuntu1](media/ubuntu1.png)
     1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
@@ -92,10 +92,10 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
     1. **[ログ コレクターを追加]** をクリックします。
     1. ログ コレクターに **[名前]** を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. Select all **Data sources** that you want to connect to the collector, and click **Update** to save the configuration.
+    1. コレクターに接続するすべての**データソース**を選択し、 **[更新]** をクリックして構成を保存します。
     ![ubuntu2](media/ubuntu2.png)
 
-1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 You can use the copy to clipboard icon, ![copy to clipboard icon](media/copy-icon.png). これは後で必要になります。
+1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 クリップボードにコピーアイコン、![クリップボードにコピー アイコン](media/copy-icon.png)を使用できます。 これは後で必要になります。
 
 1. 予想されるデータ ソース構成を**エクスポート**します。 この構成では、アプライアンスでログのエクスポートを設定する方法を記述します。
 
@@ -105,7 +105,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
     >
     > * 1 つのログ コレクターで複数のデータ ソースを処理できます。
     > * Cloud App Security と通信するようにログ コレクターを構成するときに情報が必要になるため、画面の内容をコピーします。 Syslog を選択した場合、この情報には、Syslog リスナーがリッスンするポートに関する情報が含まれます。
-    > * For users sending log data via FTP for the first time, we recommend changing the password for the FTP user. For more information, see [Changing the FTP password](log-collector-ftp.md#changing-the-ftp-password).
+    > * FTP を使用して初めてログデータを送信するユーザーについては、FTP ユーザーのパスワードを変更することをお勧めします。 詳細については、「 [FTP パスワードの変更](log-collector-ftp.md#changing-the-ftp-password)」を参照してください。
 
 ### <a name="step-2--on-premises-deployment-of-your-machine"></a>ステップ 2 – コンピューターのオンプレミスの展開
 
@@ -113,15 +113,15 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 1. 管理者として Windows コンピューターで PowerShell ターミナルを開きます。
 
-1. Run the following command to download the Windows Docker installer PowerShell script file: `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. 次のコマンドを実行して、Windows Docker インストーラーの PowerShell スクリプトファイルをダウンロードします。 `Invoke-WebRequest https://adaprodconsole.blob.core.windows.net/public-files/LogCollectorInstaller.ps1 -OutFile (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
-    To validate that the installer is signed by Microsoft, see [Validate installer signature](#validate-signature)
+    インストーラーが Microsoft によって署名されていることを確認するには、「[インストーラー署名の検証](#validate-signature)」を参照してください。
 
-1. To enable PowerShell script execution, run `Set-ExecutionPolicy RemoteSigned`
+1. PowerShell スクリプトの実行を有効にするには、`Set-ExecutionPolicy RemoteSigned` を実行します
 
-1. Run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` This installs the Docker client on your machine. ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Make sure the Docker client is set to use Linux containers.**
+1. 実行: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)` します。これにより、Docker クライアントがコンピューターにインストールされます。 ログ コレクター コンテナーのインストール中に、コンピューターが 2 回再起動され、もう一度ログインする必要があります。 **Docker クライアントが Linux コンテナーを使用するように設定されていることを確認します。**
 
-1. After each restart, open a PowerShell terminal as an administrator on your machine, re-run: `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
+1. 再起動が完了したら、コンピューターの管理者として PowerShell ターミナルを開き、次のように再実行します。 `& (Join-Path $Env:Temp LogCollectorInstaller.ps1)`
 
 1. インストールが完了する前に、先ほどコピーした実行コマンドを貼り付ける必要があります。
 
@@ -139,9 +139,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 次に例を示します。
 
 ```console
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -181,9 +181,9 @@ Docker のインストーラーが Microsoft によって署名されている�
 
 ![デジタル署名が無効](media/digital-signature-unsuccessful.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [Log collector FTP configuration](log-collector-ftp.md)
+> [ログコレクターの FTP 構成](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

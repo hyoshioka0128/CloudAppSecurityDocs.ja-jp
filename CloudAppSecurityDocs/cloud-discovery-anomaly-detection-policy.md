@@ -72,7 +72,7 @@ Cloud Discovery の異常検出ポリシーを使用すると、クラウド ア
 
 7. 他のポリシーと同じように、 **[ポリシー]** ページの行の末尾にある 3 つの点をクリックし、ポリシーを**編集**、**無効**および**有効**にすることができます。 既定では、ポリシーを作成すると、そのポリシーが有効になります。
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

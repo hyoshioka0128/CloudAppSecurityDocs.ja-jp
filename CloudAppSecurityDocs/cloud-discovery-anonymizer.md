@@ -42,7 +42,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
      ![スナップショット データの匿名化](./media/anonymize-log.png)
 
-   - 新しいデータ ソースを追加するときに **「Anonymize private information」** (個人情報の匿名化) を選択し、[新しいデータ ソースの自動アップロード](configure-automatic-log-upload-for-continuous-reports.md)に関するページを参照してデータを匿名化するように設定できます。  
+   - 新しいデータ ソースを追加するときに [「Anonymize private information」](configure-automatic-log-upload-for-continuous-reports.md) (個人情報の匿名化) を選択し、**新しいデータ ソースの自動アップロード**に関するページを参照してデータを匿名化するように設定できます。  
   
      ![ログ データの匿名化](./media/anonymize-autolog.png)
 
@@ -53,7 +53,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
      2. 既定でユーザー名が匿名化されるようにするには、[匿名化] タブで、 **「Anonymize private information by default in new reports and data sources」** (新しいレポートとデータ ソースの個人情報を既定で匿名化する) を選択します。 **[Anonymize machine information by default in 'Win10 Endpoint Users' report]\('Win10 エンドポイント ユーザー' レポートのマシンの情報を既定で匿名化する\)** を選択することもできます。
 
      3. [暗号化キー] で、 **[Use the dedicated key generated for your portal (ポータル用に生成された専用キーを使用する)]** か、 **[Use a custom key (カスタム キーを使用する)]** かを選択します。 **[Use a custom key (カスタム キーを使用する)]** を選択した場合は、16 バイト UTF8 暗号化キーを入力します。
-     4. **[Save]** (保存) をクリックします。
+     4. **[保存]** をクリックします。
  
         ![匿名化](./media/anonymizer1.png)
   
@@ -82,7 +82,7 @@ Cloud Discovery データを匿名化することで、ユーザーのプライ�
 
   
       
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

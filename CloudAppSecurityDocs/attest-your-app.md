@@ -1,6 +1,6 @@
 ---
-title: Attest your apps - Cloud App Security | Microsoft Docs
-description: This article provides instructions for attesting your apps in Cloud App Security.
+title: アプリを証明する-Cloud App Security |Microsoft Docs
+description: この記事では Cloud App Security でアプリを証明する手順について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
@@ -24,111 +24,111 @@ ms.locfileid: "74460766"
 ---
 # <a name="attest-your-app"></a>アプリを証明する
 
-Microsoft Cloud App Security enables you to attest your app, so that you make sure that the compliance and security details we use to rate your app in our Cloud App Catalog are up to date.
+Microsoft Cloud App Security を使用すると、クラウドアプリカタログのアプリを評価するために使用するコンプライアンスとセキュリティの詳細が最新であることを確認することができます。
 
-Whether your app is already listed in the Cloud App Catalog, or it's new, submit a [self-attestation questionnaire](https://go.microsoft.com/fwlink/?linkid=2106624). For details on the self-attestation process, contact casfeedback@microsoft.com.
+アプリが既にクラウドアプリカタログに一覧表示されているか、それとも新しいものであるかにかかわらず、[自己構成証明のアンケート](https://go.microsoft.com/fwlink/?linkid=2106624)を送信します。 自己構成証明プロセスの詳細については、casfeedback@microsoft.comにお問い合わせください。
 
-Follow the service attributes described below to successfully complete the submission of the questionnaire:
+次に示すサービス属性に従って、アンケートの送信を正常に完了します。
 
-| フィールド | Info category | 種類 | 使用可能な値 | [説明] |
+| フィールド | 情報カテゴリ | 型 | 使用可能な値 | 説明 |
 |------|-------|------|---------|----------|
-| アプリ名 | 全般 | 文字列型 | Free text | The name for your application as it should appear in the Cloud App Catalog. |
-| [説明] | 全般 | 文字列型 | Free text | Short explanation of what your application enables users to do or achieve. |
-| Category| 全般 | 文字列型 | Close list - provided in questionnaire | Classification of the app according to the field to which it relates. |
-| 本社 | 全般 | 国コード | Close list - provided in questionnaire | The country of the provider's headquarters.|
-| データ センター| 全般 | Country code array* | Close list - provided in questionnaire (Multi selection) | The country in which your data center resides (can be multiple locations) |
-| Hosting company | 全般 | 文字列型 | Free text | The name of the company that provides server hosting for the app. |
-| Founded | 全般 | 整数型 | YYYY (no later than 2019) | The year in which the provider was founded. |
-| Holding | 全般 | 文字列型 | Private, Public | Displays whether the provider is a publicly or privately held company |
-| App domain | 全般 | URL array* | Free text | The list of domains that are used to interact with the service (for example, 'teams.microsoft.com' for Microsoft Teams) |
-| Terms of service | 全般 | [URL] | Free text | Does this app provide a set of regulations that users must agree to follow in order to use the app? |
-| Privacy policy | 全般 | [URL] | Free text | A link to a legally binding document relating to how this provider handles customer, client, or employee information gathered as part of the app. |
-| Logon URL | 全般 | URL array* | Free text | The URL through which users log on to the app. |
-| ベンダー | 全般 | 文字列型 | Free text | The name of the vendor who provides this app. |
-| データ型 | 全般 | 文字列型 | Close list - provided in questionnaire | Which data types can be uploaded by the user to the app?|
-| Homepage | 全般 | [URL] | Free text | The provider's home page URL. |
-| Disaster recovery plan | 全般 | ブール型 | True、False | Does this app have a disaster recovery plan that includes a backup and restore strategy? |
-| Latest breach | セキュリティ | 日付 | MMM-dd-YYYY | Most recent incident in which sensitive, protected, or confidential data owned by the app was viewed, stolen, or used by an individual unauthorized to do so. |
-| Data-at-rest encryption method | セキュリティ | 文字列型 | Close list - provided in questionnaire | The type of encryption of data-at-rest performed on the app. |
-| Multi-Factor Authentication | セキュリティ | ブール型 | True、False | Does this app support multi-factor authentication solutions? |
-| IP address restriction | セキュリティ | ブール型 | True、False | Does this app support restriction of specific IP addresses by the app? |
-| User audit trail | セキュリティ | ブール型 | True、False | Does this app support availability of audit trail per user account? |
-| Admin audit trail | セキュリティ | ブール型 | True、False | Does this app support availability of an admin audit trail in the app? |
-| Data audit trail | セキュリティ | ブール型 | True、False | Does this app support availability of a data audit trail in the app? |
-| User can upload data | セキュリティ | ブール型 | True、False | Does this app support user uploaded data? |
-| データ分類 | セキュリティ | ブール型 | True、False | Does this app enable the option for classification of the data uploaded to the app? |
-| パスワードの記録 | セキュリティ | ブール型 | True、False | Does this app enable the option for remembering and saving user passwords in the app? |
-| User-roles support | セキュリティ | ブール型 | True、False | Does this app support distribution of users by roles and levels of permission? |
-| File sharing | セキュリティ | ブール型 | True、False | Does this app include features that allow file sharing between users? |
-| Valid certificate name | セキュリティ | ブール型 | True、False | Does the server provide an SSL certificate matching the domain name? |
-| 信頼された証明書 | セキュリティ | ブール型 | True、False | Does the server provide a trusted SSL certificate (not expired, verified, and trusted signature chain, etc.)? |
-| Encryption protocol | セキュリティ | 文字列型 | Close list - provided in questionnaire | The latest version of Transport Layer Security (TLS) encryption protocol supported between user endpoint and app provider. If the server's certificate is non-existent or not valid, encryption is considered unsupported.|
-| Heartbleed patched | セキュリティ | ブール型 | True、False | Is the SSL implementation of the server patched for the Heartbleed bug to reduce vulnerability? |
-| HTTP security headers: Strict-Transport-Security | セキュリティ | ブール型 | True、False | Are HTTP Strict-Transport-Security headers implemented by the app on its website? |
-| HTTP security headers: Content-Security-Policy | セキュリティ | ブール型 | True、False | Are HTTP Content-Security-Policy headers implemented by the app on its website? |
-| HTTP security headers: X-Frame-Options | セキュリティ | ブール型 | True、False | Are HTTP X-Frame-Options headers implemented by the app on its website? |
-| HTTP security headers: X-Content-Type-Options | セキュリティ | ブール型 | True、False | Are HTTP X-Content-Type-Options headers implemented by the app on its website? |
-| HTTP security headers: X-XSS-Protection | セキュリティ | ブール型 | True、False | Are HTTP X-XSS-Protection headers implemented by the app on its website? |
-| Supports SAML | セキュリティ | ブール型 | True、False | Does this app support the SAML standard for exchanging authentication and authorization data? |
-| Protected against DROWN | セキュリティ | ブール型 | True、False | Are the application servers protected from DROWN attacks? |
-| Penetration Testing | セキュリティ | ブール型 | True、False | Does this app carry out penetration testing to detect and assess network vulnerabilities? |
-| Requires user authentication | セキュリティ | ブール型 | True、False | Does this app require authentication and disallow anonymous use? |
-| Password policy: Password length limit | セキュリティ | ブール型 | True、False | Does this app enforce a length limit on password creation? |
-| Password policy: Character combination | セキュリティ | ブール型 | True、False | Does this app enforce a character combination on password creation? |
-| Password policy: Change password period | セキュリティ | ブール型 | True、False | Does this app enforce users to reset their password periodically? |
-| Password policy: Password history and reuse | セキュリティ | ブール型 | True、False | Does this app disallow the reuse of old passwords? |
-| Password policy: Personal information use | セキュリティ | ブール型 | True、False | Does this app disallow the use of personal information in passwords? |
-| Password policy | セキュリティ | ブール型 | True、False | Does this app enforce a password policy that complies with best practices? |
-| FINRA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with FINRA, a standard set for not-for-profit organizations authorized by Congress that regulates and enforces the enhancement of investor safeguards and market integrity? |
-| FISMA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with FISMA, the US legislation that defines a comprehensive framework to protect government information, operations and assets within federal agencies, against threats? |
-| GAAP | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with GAAP, a collection of commonly-followed accounting rules and standards for financial reporting? |
-| HIPAA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with HIPAA, the US legislation that sets standards for protecting the confidentiality and security of individually identifiable health information? |
-| ISAE 3402 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with ISAE 3402, the global standard providing assurance that a service organization has appropriate controls in place? |
-| ISO 27001 | コンプライアンス | ブール型 | True, False, N/A | Is this app ISO 27001 certified, a certificate given to companies upholding internationally recognized guidelines and general principles for initiating, implementing, maintaining, and improving information security management within an organization? |
-| ITAR | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with ITAR, regulations controlling the export and import of defense-related articles and services found on the US Munitions List? |
-| SOC 1 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with SOC 1, reporting on controls at a service organization which are relevant to user entities' internal control over financial reporting? |
-| SOC 2 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with SOC 2, reporting on non-financial processing based on one or more of the Trust service criteria on security, privacy, availability, confidentiality, and processing integrity? |
-| SOC 3 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with SOC 3, reporting based on the Trust service criteria, that may be distributed freely and only contain management's assertion that they have met the requirements of the chosen criteria? |
-| SOX | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with SOX, US legislation aimed at protecting shareholders and the general public from accounting errors and frauds, as well as improving the accuracy of corporate disclosures? |
-| SP 800-53 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with SP80053, recommended security controls for federal information systems and organizations? |
-| SSAE 16 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with the SSAE 16 standard for auditing a service organization's internal compliance controls and reporting processes? |
-| PCI DSS version | コンプライアンス | 文字列型 | 1, 2, 3, 3.1, 3.2, N/A | The version of the PCI-DSS protocol supported by this app. |
-| ISO 27018 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with ISO 27018, which establishes commonly accepted controls and guidelines for processing and protecting Personally Identifiable Information (PII) in a public cloud computing environment? |
-| GLBA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with the Gramm-Leach-Bliley Act (GLBA), which requires financial institutions to establish standards for protecting the security and confidentiality of customers' personal information? |
-| FedRAMP level | コンプライアンス | 文字列型 | High, Moderate, Low, N/A | The level of the FedRAMP-compliant solution provided by this app. |
-| CSA STAR level | コンプライアンス | 文字列型 | Self-assessment, Certification, Attestation, C-STAR assessment, Continuous monitoring, N/A | The level of CSA STAR program at which the app is certified |
-| Privacy Shield | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with the EU-US Privacy Shield Framework, which imposes stronger obligations on US companies to protect Europeans' personal data? |
-| ISO 27017 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with ISO 27017, which establishes commonly accepted controls and guidelines for processing and protecting user information in a public cloud-computing environment? |
-| COBIT | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with COBIT, which sets best practices for the governance and control of information systems and technology, and aligns IT with business principles? |
-| COPPA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with COPPA, which defines requirements on website and online services operators that provide content to children under 13 years of age? |
-| FERPA | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with FERPA, a federal law that protects the privacy of student education records? |
-| GAPP | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with GAPP, a collection of commonly-followed rules that address privacy risks in an organization? |
-| HITRUST CSF | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with HITRUST CSF, a set of controls that harmonizes the requirements of information security regulations and standards? |
-| Jericho Forum Commandments | コンプライアンス | ブール型 | True, False, N/A | Does this app follow Jericho Forum Commandments, a set if principles to be observed when architecting systems for secure operation in de-perimeterized environments? |
-| ISO 27002 | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with ISO 27002, which establishes common guidelines for organizational information security standards and information security management practices? |
-| FFIEC | コンプライアンス | ブール型 | True, False, N/A | Does this app comply with the Federal Financial Institutions Examination Council’s guidance on the risk management controls necessary to authenticate services in an Internet banking environment? |
-| データ所有権 | 法務 | ブール型 | True、False | Does this app fully preserve the user's ownership of uploaded data? |
-| DMCA | 法務 | ブール型 | True、False | Does this app comply with the Digital Millennium Copyright Act (DMCA), which criminalizes any attempt to unlawfully access copyrighted material? |
-| データ リテンション期間ポリシー | 法務 | ブール型 | True、False | What is the app’s policy for user data retention after account termination? |
-| GDPR readiness statement | 法務 | [URL] | Free text | A link to your website, when relevant, relating how this provider plans to handle GDPR compliance. |
-| GDPR - Right to erasure | 法務 | ブール型 | True, False, N/A | Does this app stop processing and delete an individual’s personal data upon request? |
-| GDPR - Report data breaches | 法務 | ブール型 | True, False, N/A | Does this app report data breaches to supervisory authorities and individuals affected by the breach, within 72 hours of breach detection? |
-| GDPR - Impact assessment | 法務 | ブール型 | True, False, N/A | Does this app conduct data protection impact assessments to identify risk to individuals? |
-| GDPR - Secure cross border data control | 法務 | ブール型 | True, False, N/A | Does this app securely transfer data across borders? |
-| GDPR - Data protection officer | 法務 | ブール型 | True, False, N/A | Does this app appoint a data protection officer to oversee data security strategy and GDPR compliance? |
-| GDPR - Right to object | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to object to the processing of their personal data in certain circumstances? |
-| GDPR - Right to access | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to know, upon request, what personal data a company is using and how it is being used? |
-| GDPR - Right to data Portablility | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to obtain and reuse their personal data for their own purposes across different services upon request? |
-| GDPR - Right to be informed | 法務 | ブール型 | True, False, N/A | Does this app inform individuals of the appropriate safeguards it takes when personal data is transferred to a non-EU country or to an international organization? |
-| GDPR - Right to restriction of processing | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to block or suppress processing of personal data? |
-| GDPR - Rights related to automated decision making | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to choose not to be subject to a decision that is based solely on automated processing? This includes profiling, which may have legal ramifications. |
-| GDPR - lawful basis for processing | 法務 | ブール型 | True, False, N/A | Does this app process personal data lawfully in accordance with consent, contract, legal obligation, vital interests, legitimate interests, special category, data, and criminal offense data? |
-| GDPR - Right to rectification | 法務 | ブール型 | True, False, N/A | Does this app provide individuals with the ability to rectify their personal data? The controller must respond to all requests from its data subjects within one month. |
+| アプリ名 | 全般 | String | フリーテキスト | クラウドアプリカタログに表示されるアプリケーションの名前。 |
+| 説明 | 全般 | String | フリーテキスト | アプリケーションでユーザーが実行できるものとその実現方法についての簡単な説明。 |
+| カテゴリ| 全般 | String | アンケートに記載されているリストを閉じる | 関連するフィールドによるアプリの分類。 |
+| 本社 | 全般 | 国番号 | アンケートに記載されているリストを閉じる | プロバイダーの本社の国。|
+| データ センター| 全般 | 国コード配列 * | アンケートで提供されているリストを閉じる (複数選択) | データセンターが存在する国 (複数の場所を指定できます) |
+| ホスティング会社 | 全般 | String | フリーテキスト | アプリをホストするサーバーを提供する会社の名前。 |
+| 設立 | 全般 | Integer | YYYY (2019 以降) | プロバイダーが設立された年。 |
+| 保留 | 全般 | String | プライベート、パブリック | プロバイダーがパブリックまたはプライベートに保持された会社であるかどうかを表示します |
+| アプリドメイン | 全般 | URL 配列 * | フリーテキスト | サービスとの対話に使用されるドメインの一覧 (Microsoft Teams の場合は "teams.microsoft.com" など) |
+| サービス利用規約 | 全般 | URL | フリーテキスト | このアプリは、ユーザーがアプリを使用するために従うことに同意する必要がある一連の規則を提供しますか。 |
+| プライバシーポリシー | 全般 | URL | フリーテキスト | このプロバイダーが、アプリの一部として収集された顧客、クライアント、または従業員の情報をどのように処理するかに関連する、法的なバインドドキュメントへのリンク。 |
+| ログオン URL | 全般 | URL 配列 * | フリーテキスト | ユーザーがアプリにログオンするときに使用する URL。 |
+| 製造元 | 全般 | String | フリーテキスト | このアプリを提供するベンダーの名前。 |
+| データ型 | 全般 | String | アンケートに記載されているリストを閉じる | ユーザーがアプリにアップロードできるデータの種類を教えてください。|
+| ページ | 全般 | URL | フリーテキスト | プロバイダーのホームページの URL。 |
+| ディザスターリカバリー計画 | 全般 | ブール値 | True、False | このアプリには、バックアップと復元の戦略を含むディザスターリカバリー計画がありますか。 |
+| 最新の侵害 | Security | date | MMM-dd-YYYY | アプリによって所有されている機密データ、保護されたデータ、または機密データが、許可されていない個人によって表示、盗難、または使用された最新のインシデント。 |
+| 保存データの暗号化方法 | Security | String | アンケートに記載されているリストを閉じる | アプリで実行された保存データの暗号化の種類。 |
+| Multi-Factor Authentication | Security | ブール値 | True、False | このアプリは multi-factor authentication ソリューションをサポートしていますか。 |
+| IP アドレスの制限 | Security | ブール値 | True、False | このアプリは、アプリによる特定の IP アドレスの制限をサポートしていますか。 |
+| ユーザー監査証跡 | Security | ブール値 | True、False | このアプリは、ユーザーアカウントごとの監査証跡の可用性をサポートしていますか。 |
+| 管理者監査証跡 | Security | ブール値 | True、False | このアプリは、アプリの管理者監査証跡の可用性をサポートしていますか。 |
+| データ監査証跡 | Security | ブール値 | True、False | このアプリは、アプリ内のデータ監査証跡の可用性をサポートしていますか。 |
+| ユーザーはデータをアップロードできます | Security | ブール値 | True、False | このアプリでは、ユーザーがアップロードしたデータをサポートしていますか? |
+| データ分類 | Security | ブール値 | True、False | このアプリでは、アプリにアップロードされたデータの分類のオプションを有効にしますか? |
+| パスワードの記録 | Security | ブール値 | True、False | このアプリでは、アプリのユーザーパスワードを記憶して保存するオプションが有効になっていますか。 |
+| ユーザーロールのサポート | Security | ブール値 | True、False | このアプリでは、ロールとアクセス許可のレベルによってユーザーの配布がサポートされますか。 |
+| ファイルの共有 | Security | ブール値 | True、False | このアプリには、ユーザー間のファイル共有を可能にする機能が含まれていますか。 |
+| 有効な証明書名 | Security | ブール値 | True、False | サーバーは、ドメイン名と一致する SSL 証明書を提供しますか。 |
+| 信頼された証明書 | Security | ブール値 | True、False | サーバーは、信頼された SSL 証明書 (期限切れ、検証済み、信頼された署名チェーンなど) を提供しますか。 |
+| 暗号化プロトコル | Security | String | アンケートに記載されているリストを閉じる | ユーザーエンドポイントとアプリプロバイダーの間でサポートされているトランスポート層セキュリティ (TLS) 暗号化プロトコルの最新バージョン。 サーバーの証明書が存在しないか無効である場合、暗号化はサポートされていないと見なされます。|
+| Heartbleed パッチ | Security | ブール値 | True、False | 脆弱性を軽減するために、サーバーの SSL 実装に Heartbleed バグが適用されているかどうか。 |
+| HTTP セキュリティヘッダー: Strict-Transport-Security | Security | ブール値 | True、False | HTTP Strict-Transport-Security ヘッダーは、web サイト上のアプリによって実装されていますか。 |
+| HTTP セキュリティヘッダー: コンテンツ-セキュリティ-ポリシー | Security | ブール値 | True、False | Web サイトにアプリによって実装されている HTTP コンテンツ-セキュリティポリシーヘッダーはありますか。 |
+| HTTP セキュリティヘッダー: X フレームオプション | Security | ブール値 | True、False | Web サイトにアプリによって実装されている HTTP X フレームオプションヘッダーはありますか。 |
+| HTTP セキュリティヘッダー: X Content-type-オプション | Security | ブール値 | True、False | Web サイトのアプリによって実装されている HTTP X Content-type のオプションヘッダーはありますか。 |
+| HTTP セキュリティヘッダー: X-XSS-保護 | Security | ブール値 | True、False | HTTP X-XSS 保護ヘッダーは、web サイトのアプリによって実装されていますか。 |
+| SAML のサポート | Security | ブール値 | True、False | このアプリでは、認証と承認データを交換するための SAML 標準がサポートされていますか。 |
+| DROWN に対して保護 | Security | ブール値 | True、False | アプリケーションサーバーは DROWN 攻撃から保護されていますか。 |
+| 侵入テスト | Security | ブール値 | True、False | このアプリは、ネットワークの脆弱性を検出して評価するために侵入テストを実行しますか。 |
+| ユーザー認証が必要 | Security | ブール値 | True、False | このアプリは認証を必要とし、匿名での使用を許可しませんか。 |
+| パスワードポリシー: パスワードの長さの制限 | Security | ブール値 | True、False | このアプリはパスワードの作成に長さの制限を適用しますか。 |
+| パスワードポリシー: 文字の組み合わせ | Security | ブール値 | True、False | このアプリはパスワードの作成時に文字の組み合わせを適用しますか。 |
+| パスワードポリシー: パスワード期間の変更 | Security | ブール値 | True、False | このアプリでは、ユーザーがパスワードを定期的にリセットすることを強制しますか。 |
+| パスワードポリシー: パスワードの履歴と再利用 | Security | ブール値 | True、False | このアプリで古いパスワードの再利用が許可されていないか。 |
+| パスワードポリシー: 個人情報の使用 | Security | ブール値 | True、False | このアプリでは、パスワードに個人情報を使用することは許可されていませんか。 |
+| パスワードポリシー | Security | ブール値 | True、False | このアプリでは、ベストプラクティスに準拠したパスワードポリシーが適用されますか。 |
+| FINRA | コンプライアンス | ブール値 | True、False、N/A | このアプリが、議会によって承認された非営利組織のための標準セットである FINRA に準拠しているかどうかを確認します。 |
+| FISMA | コンプライアンス | ブール値 | True、False、N/A | このアプリが FISMA に準拠しているかどうか。米国の法律では、連邦政府機関内の政府情報、運用、資産を脅威から保護する包括的なフレームワークを定義していますか。 |
+| 営業 | コンプライアンス | ブール値 | True、False、N/A | このアプリが、財務報告のための一般的な会計ルールと標準のコレクションである GAAP に準拠しているかどうか。 |
+| HIPAA | コンプライアンス | ブール値 | True、False、N/A | このアプリが、個人を特定できる正常性情報の機密性とセキュリティを保護するための標準を設定する米国の法律である HIPAA に準拠しているかどうか。 |
+| ISAE 3402 | コンプライアンス | ブール値 | True、False、N/A | このアプリは ISAE 3402 に準拠しています。これは、サービス組織が適切な制御を実施していることを保証するグローバル標準です。 |
+| ISO 27001 | コンプライアンス | ブール値 | True、False、N/A | このアプリは ISO 27001 認定を受けています。企業に対して指定された証明書は、組織内での情報セキュリティ管理の開始、実装、維持、および向上のために、国際的に認識されるガイドラインおよび一般的な原則を遵守していますか。 |
+| ITAR | コンプライアンス | ブール値 | True、False、N/A | このアプリは、米国の Munitions の一覧にある防御関連の記事とサービスのエクスポートとインポートを制御する規制に準拠していますか? |
+| SOC 1 | コンプライアンス | ブール値 | True、False、N/A | このアプリが SOC 1 に準拠しているかどうか、および財務報告に対するユーザーエンティティの内部制御に関連するサービス組織のコントロールに関するレポートはありますか。 |
+| SOC 2 | コンプライアンス | ブール値 | True、False、N/A | このアプリが SOC 2 に準拠しているかどうかは、セキュリティ、プライバシー、可用性、機密性、および処理の整合性に関する1つ以上の信頼サービス条件に基づいて、非財務処理に関するレポートを作成しますか。 |
+| SOC 3 | コンプライアンス | ブール値 | True、False、N/A | このアプリは、信頼されたサービス条件に基づくレポートに準拠しており、自由に配布できます。また、選択した条件の要件を満たしている場合にのみ、管理のアサーションを含みますか。 |
+| 法 | コンプライアンス | ブール値 | True、False、N/A | このアプリが、企業の開示の精度を向上させるだけでなく、お客様に対して、株主や、一般公開を会計エラーと突いから守ることを目的とした SOX、米国の法律に準拠しているかどうか。 |
+| SP 800-53 | コンプライアンス | ブール値 | True、False、N/A | このアプリは、連邦情報システムと組織の SP80053、推奨されるセキュリティ制御に準拠していますか。 |
+| SSAE 16 | コンプライアンス | ブール値 | True、False、N/A | このアプリは、サービス組織の内部コンプライアンス制御とレポートプロセスを監査するための SSAE 16 標準に準拠していますか。 |
+| PCI DSS のバージョン | コンプライアンス | String | 1、2、3、3.1、3.2、N/A | このアプリでサポートされている PCI DSS プロトコルのバージョン。 |
+| ISO 27018 | コンプライアンス | ブール値 | True、False、N/A | このアプリが、パブリッククラウドコンピューティング環境での個人を特定できる情報 (PII) を処理および保護するために一般的に受け入れられる制御とガイドラインを確立する ISO 27018 に準拠しているかどうか。 |
+| GLBA | コンプライアンス | ブール値 | True、False、N/A | このアプリが Leach-ブライリー法 Act (GLBA) に準拠しているかどうか、お客様の個人情報のセキュリティと機密性を保護するための標準を金融機関が確立する必要がありますか。 |
+| FedRAMP レベル | コンプライアンス | String | 高、中、低、N/A | このアプリによって提供される FedRAMP 準拠ソリューションのレベル。 |
+| CSA STAR レベル | コンプライアンス | String | 自己評価、認定、構成証明、C スター評価、継続的な監視、N/A | アプリが認定される CSA STAR プログラムのレベル |
+| Privacy Shield | コンプライアンス | ブール値 | True、False、N/A | このアプリが EU-US Privacy シールドフレームワークに準拠しているかどうかは、米国の企業が Europeans の個人データを保護するために強い義務を課していますか。 |
+| ISO 27017 | コンプライアンス | ブール値 | True、False、N/A | このアプリが、パブリッククラウドコンピューティング環境でのユーザー情報の処理と保護に関して一般的に受け入れられている制御とガイドラインを確立する ISO 27017 に準拠しているかどうか。 |
+| COBIT | コンプライアンス | ブール値 | True、False、N/A | このアプリが COBIT に準拠しているかどうかは、情報システムとテクノロジのガバナンスと制御に関するベストプラクティスを設定し、ビジネスの原則に沿って配置しますか。 |
+| COPPA | コンプライアンス | ブール値 | True、False、N/A | このアプリは COPPA に準拠しています。これは、web サイトの要件と、13歳以内に子にコンテンツを提供するオンラインサービス演算子を定義していますか。 |
+| FERPA | コンプライアンス | ブール値 | True、False、N/A | このアプリは、生徒の教育記録のプライバシーを保護する連邦法である、このアプリに準拠していますか。 |
+| GAPP | コンプライアンス | ブール値 | True、False、N/A | このアプリが、組織内のプライバシーリスクに対処する一般的な規則のコレクションである GAPP に準拠しているかどうか。 |
+| HITRUST CSF | コンプライアンス | ブール値 | True、False、N/A | このアプリが HITRUST CSF に準拠しているかどうかは、情報セキュリティ規制と標準の要件を harmonizes するコントロールのセットですか。 |
+| Jericho フォーラムコマンド | コンプライアンス | ブール値 | True、False、N/A | このアプリが Jericho フォーラムコマンドに従うかどうかを指定します。これは、セキュリティで保護された環境でシステムを設計するときに、原則を理解する必要がある場合に設定されます。 |
+| ISO 27002 | コンプライアンス | ブール値 | True、False、N/A | このアプリが ISO 27002 に準拠しているかどうかは、組織の情報セキュリティ標準と情報セキュリティ管理のプラクティスに関する一般的なガイドラインを定めていますか。 |
+| FFIEC | コンプライアンス | ブール値 | True、False、N/A | このアプリは、インターネットバンキング環境でサービスを認証するために必要なリスク管理制御の指針として、連邦金融機関の調査委員会に準拠していますか。 |
+| データ所有権 | 法務 | ブール値 | True、False | このアプリでは、アップロードされたデータのユーザーの所有権は完全に保持されますか。 |
+| DMCA | 法務 | ブール値 | True、False | このアプリがデジタル Millennium Copyright Act (DMCA) に準拠しているかどうかを確認します |
+| データ リテンション期間ポリシー | 法務 | ブール値 | True、False | アカウントの終了後のユーザーデータの保持に関するアプリのポリシーはどのようなものですか? |
+| GDPR readiness ステートメント | 法務 | URL | フリーテキスト | Web サイトへのリンク (該当する場合)。このプロバイダーがどのように GDPR コンプライアンスを処理するかを計画します。 |
+| GDPR-消去する権限 | 法務 | ブール値 | True、False、N/A | このアプリは、要求に応じて個人の個人データの処理と削除を停止しますか? |
+| GDPR-レポートデータの違反 | 法務 | ブール値 | True、False、N/A | このアプリでは、侵害の検出から72時間以内に、監督機関および侵害の影響を受ける個人にデータの侵害が報告されますか。 |
+| GDPR の影響の評価 | 法務 | ブール値 | True、False、N/A | このアプリは、個人に対するリスクを特定するために、データ保護の影響の評価を実施しますか。 |
+| GDPR-セキュリティで保護されたクロス罫線データコントロール | 法務 | ブール値 | True、False、N/A | このアプリでは、境界を越えてデータを安全に転送しますか? |
+| GDPR-データ保護責任者 | 法務 | ブール値 | True、False、N/A | このアプリは、データセキュリティ戦略と GDPR コンプライアンスを監視するデータ保護責任者を指名していますか。 |
+| GDPR-オブジェクトに対する権限 | 法務 | ブール値 | True、False、N/A | このアプリでは、特定の状況で個人データを処理する機能をユーザーに提供していますか。 |
+| GDPR-アクセスする権限 | 法務 | ブール値 | True、False、N/A | このアプリは、会社が使用している個人データとその使用方法を知らせる機能を個人に提供しますか。 |
+| GDPR-データ Portablility に対する権限 | 法務 | ブール値 | True、False、N/A | このアプリは、個人データを取得して、要求に応じてさまざまなサービスで独自の目的のために再利用できることをユーザーに提供しますか。 |
+| GDPR-通知を受け取る権限 | 法務 | ブール値 | True、False、N/A | このアプリは、個人データが EU 以外の国または国際的な組織に転送されるときに、適切な保護対策を担当者に通知しますか。 |
+| GDPR-処理の制限に対する権限 | 法務 | ブール値 | True、False、N/A | このアプリは個人データの処理をブロックまたは抑制する機能をユーザーに提供しますか。 |
+| GDPR-自動的な意思決定に関連する権利 | 法務 | ブール値 | True、False、N/A | このアプリでは、自動化された処理のみに基づく意思決定の対象にならないことをユーザーに許可しますか。 これには、法的な影響を与える可能性のあるプロファイルが含まれます。 |
+| GDPR-永住権の処理の基礎 | 法務 | ブール値 | True、False、N/A | このアプリでは、同意、契約、法的義務、重要な関心事、正当な利益、特別なカテゴリ、データ、刑事攻撃データに従って、個人データの合法的を処理しますか。 |
+| GDPR-Right to 訂正 | 法務 | ブール値 | True、False、N/A | このアプリは個人データを修正する機能をユーザーに提供しますか。 コントローラーは、1か月以内にデータのサブジェクトからのすべての要求に応答する必要があります。 |
 
 
-\* Fields of type *Array* should be separated with semicolon (;).
+*Array*型の \* フィールドは、セミコロン (;) で区切る必要があります。
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)] 

@@ -40,7 +40,7 @@ Cloud App Security はクラウド環境をスキャンします。ファイル 
 
 Cloud App Security は Azure で実行されます。Azure での展開により高いパフォーマンスが一時停止されます。 ただし、他のクラウドやオンプレミスでの展開など、他の選択肢もあります。 他の環境で展開する場合、待機時間が長く、スループットが低いため、パフォーマンスが低下することがあります。 トラフィックを暗号化するために、ICAP サーバーと stunnel を同じネットワークに展開する必要があります。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>必須コンポーネント
 Cloud App Security で stunnel 経由でデータを ICAP サーバーに送信するには、Cloud App Security で使用される外部 IP アドレスに DMZ ファイアウォールを開きます。このとき、動的ソース ポート番号を使用します。 
 
 1.  ソース アドレス: [「前提条件」の「アプリを接続する」](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md#prerequisites)を参照
@@ -66,7 +66,7 @@ ICAP サーバーを設定します。ポート番号を書き留め、 **[モ�
 
 ### <a name="install-stunnel-on-a-server"></a>サーバーに stunnel をインストールする
 
-**必要条件**
+**前提条件**
 
 - **サーバー** - Windows Server または Linux サーバー (メジャー ディストリビューション)。
 
@@ -155,7 +155,7 @@ ICAP サーバーと Cloud App Security では、stunnel 全体でのサーバ�
 
 ### <a name="download-the-cloud-app-security-stunnel-client-public-key"></a>Cloud App Security stunnel クライアントの公開キーをダウンロードする
 
-から公開キーをダウンロードして、 https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem **/etc/ssl/certs/MCASCAfile.pem** に保存します
+https://adaprodconsole.blob.core.windows.net/icap/publicCert.pem から公開キーをダウンロードして、 **/etc/ssl/certs/MCASCAfile.pem** に保存します
 
 ### <a name="configure-stunnel"></a>stunnel を構成する 
 
@@ -269,7 +269,7 @@ Cloud App Security によって使われる検出サーバーは、Web サーバ
     
       ![ICAP ターゲット](./media/icap-target.png)
     
-   2. **[Configure]\(構成\)** をクリックします。 
+   2. **[構成]** をクリックします。 
     
       ![ICAP ターゲットを構成する](./media/configure-icap-target.png)
     
@@ -280,10 +280,10 @@ Cloud App Security によって使われる検出サーバーは、Web サーバ
 2. **[ICAP]**  >  **[Response Filtering]\(応答フィルタリング\)** で、 **[Ignore Responses Smaller Than]\(次の値より小さい応答を無視する\)** の値を 1 に変更します。
 
 
-3. そして、 **[Inspect Content Type]\(コンテンツ タイプを調べる\)</em>** のリストに "application/\*" を追加します。
+3. そして、\*[Inspect Content Type]\(コンテンツ タイプを調べる\) **</em> のリストに "application/** " を追加します。
      ![コンテンツ タイプを調べる](./media/icap-inspect-content-type.png)
 
-4. **[Save]\(保存\)** をクリックします。
+4. **[保存]** をクリックします。
 
 
 ### <a name="policy-configuration"></a>ポリシーの構成
@@ -319,7 +319,7 @@ Cloud App Security は Symantec DLP に含まれるすべての検出ルール �
 > Symantec vontu を使用して Dropbox のファイルをスキャンした場合、ファイルは CAS によって自動的に http://misc/filename から始まる URL で表示されます。このプレースホルダー URL は、実際にはどこにもつながっておらず、ログ目的で使用されます。
 
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

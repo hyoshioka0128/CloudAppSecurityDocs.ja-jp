@@ -46,16 +46,16 @@ ms.locfileid: "74460797"
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
   
-### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1: Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
+### <a name="step-1--web-portal-configuration-define-data-sources-and-link-them-to-a-log-collector"></a>ステップ 1 – Web ポータルの構成: データ ソースを定義し、それをログ コレクターにリンクする  
   
 1. 自動アップロードの設定ページに移動します。  
    Cloud App Security ポータルで、設定アイコン ![設定アイコン](./media/settings-icon.png "設定アイコン") をクリックしてから **[ログ コレクター]** をクリックします。  
   
 2. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。  
   
-   に設定する必要があります。  **[データ ソースの追加]** をクリックします。  
+   a.  **[データ ソースの追加]** をクリックします。  
   
-   b.  プロキシまたはファイアウォールの **[名前]** を付けます。  
+   B.  プロキシまたはファイアウォールの **[名前]** を付けます。  
   
    c.  **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
   
@@ -67,9 +67,9 @@ ms.locfileid: "74460797"
   
 3. 画面上部の **[ログ コレクター]** タブに移動します。  
   
-   に設定する必要があります。  **[ログ コレクターを追加]** をクリックします。  
+   a.  **[ログ コレクターを追加]** をクリックします。  
   
-   b.  ログ コレクターに**名前**を付けます。  
+   B.  ログ コレクターに**名前**を付けます。  
   
    c.  コレクターに接続するすべての**データ ソース**を選択します。 **[更新]** をクリックして構成を保存し、アクセス トークンを生成します。  
    ![データ ソースの検出](./media/discovery-data-sources.png)
@@ -87,9 +87,9 @@ ms.locfileid: "74460797"
 1. Hyper-V マネージャーを開きます。  
   
 2. **[新規]** を選択してから **[仮想マシン]** を選択し、 **[次へ]** をクリックします。  
-   ![discovery Hyper-V virtual machine](./media/discovery-hyperv-virtual-machine.png "discovery Hyper-V virtual machine")  
+   ![Hyper-v 仮想マシンの検出](./media/discovery-hyperv-virtual-machine.png "Hyper-v 仮想マシンの検出")  
   
-3. 仮想マシンに、たとえば CloudAppSecurityLogCollector01.という **[名前]** を付けてから **[次へ]** をクリックします。  
+3. 仮想マシンに、たとえば CloudAppSecurityLogCollector01. という **[名前]** を付けてから **[次へ]** をクリックします。  
   
 4. **[生成 1]** を選択してから **[次へ]** をクリックします。  
   
@@ -119,7 +119,7 @@ ms.locfileid: "74460797"
 ### <a name="step-3--on-premises-configuration-of-the-log-collection"></a>ステップ 3: ログ収集のオンプレミス構成 
 初めてログ コレクターにサインインし、ポータルからログ コレクターの構成をインポートする場合は、次のようにします。 
 
-1.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。 (コンソールに初めてログインする場合は、パスワードを変更してからもう一度サインインする必要があります。 ターミナル セッションを使用している場合は、ターミナル セッションの再起動が必要になることがあります。 )です。
+1.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。 (コンソールに初めてログインする場合は、パスワードを変更してからもう一度サインインする必要があります。 ターミナル セッションを使用している場合は、ターミナル セッションの再起動が必要になることがあります。 )
 2.  ログ コレクターの作成時に提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config <access token> ```
 3. たとえば、```contoso.portal.cloudappsecurity.com``` のようなコンソールのドメインを入力します。これは、Cloud App Security ポータルへのログイン後に表示される URL から入手できます。 
 
@@ -127,9 +127,9 @@ ms.locfileid: "74460797"
 
 5.  次のように、ポータルからログ コレクターの構成をインポートします。  
   
-      に設定する必要があります。  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。  
+      a.  ポータルで提供された対話型の管理者資格情報を使用して SSH 経由でログ コレクターにサインインします。  
   
-      b.  次のコマンドで提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config \<access token>```  
+      B.  次のコマンドで提供されたアクセス トークンを使用して、コレクターの構成ユーティリティを実行します。```sudo collector_config \<access token>```  
      
       c.  たとえば、次に示すようなコンソールのドメインを入力します。``` contoso.portal.cloudappsecurity.com ```
   
@@ -166,7 +166,7 @@ ms.locfileid: "74460797"
 
 ![カスタムの継続的レポート](./media/custom-continuous-report.png)
 
-## <a name="next-steps"></a>次のステップ 
+## <a name="next-steps"></a>次の手順 
 [Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)   
 
 [!INCLUDE [Open support ticket](includes/support.md)]  
