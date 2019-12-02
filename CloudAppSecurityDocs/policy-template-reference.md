@@ -5,34 +5,33 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6658937-57a2-484a-85cb-5a4cdbeeb002
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09a5702f5a1e1d28dc64172bf6a8204d2bfce5d0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 79b4bbd6e73a07820524df571ddf9cebe407c5af
+ms.sourcegitcommit: d6ba570c9fbb3c176dab2004c5712c889c759eeb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460551"
+ms.lasthandoff: 12/01/2019
+ms.locfileid: "74666753"
 ---
 # <a name="policy-template-reference"></a>ポリシー テンプレート リファレンス
 
 *適用対象: Microsoft Cloud App Security*
 
-この記事では、Microsoft Cloud App Security に含まれるポリシー テンプレートに関する情報を提供します。 
+この記事では、Microsoft Cloud App Security に含まれるポリシー テンプレートに関する情報を提供します。
 
 ## <a name="policy-templates"></a>ポリシー テンプレート
 
 簡単に使用できるように、可能な限り既存のテンプレートに基づいてポリシーの作成を始めることをお勧めします。 この表は、Microsoft Cloud App Security に存在するポリシー テンプレートをまとめたものです。
 
-|リスク カテゴリ|テンプレート名|説明|
+|リスク カテゴリ|テンプレート名|[説明]|
 |-----|----|----|
 |Cloud Discovery|Anomalous behavior in discovered users (検出されたユーザーの異常な動作)|検出されたユーザーとアプリで異常な動作 (他のユーザーと比較して大量のアップロード データ、ユーザーの履歴と比較して大量のユーザー トランザクションなど) が検出されたときにアラートを生成します。|
 |Cloud Discovery|Anomalous behavior of discovered IP addresses (検出された IP アドレスの異常な動作)|検出された IP アドレスとアプリで異常な動作が検出されたときにアラートを生成します。たとえば、他の IP アドレスに比べて大量のデータがアップロードされている場合や、IP アドレスの履歴に比べてアプリ トランザクションが大きい場合などです。|
@@ -66,12 +65,11 @@ ms.locfileid: "74460551"
 |コントロールの共有|File shared with unauthorized domain (未承認ドメインとのファイル共有)|ファイルが未承認ドメイン (競合他社など) と共有されたときにアラートを生成します。|
 |コントロールの共有|Shared digital certificates (file extensions) (デジタル証明書の共有 (ファイル拡張子))|デジタル証明書を含むファイルが公に共有されたときにアラートを生成します。 このテンプレートを使用して、AWS ストレージを管理します。|
 |コントロールの共有|パブリックにアクセス可能な S3 バケット (AWS)|AWS S3 バケットが公開共有されたときにアラートを生成します。|
-|コントロールの共有|Stale externally shared files (外部と共有した古いファイル)|外部と共有したファイルのうち、過去 6 か月間に開かれたり、変更されたりしていないファイルを検索します。|
+|コントロールの共有|Stale externally shared files (外部と共有した古いファイル)|外部共有ファイルが少なくとも6か月以上変更されていない場合にアラートを出します。|
 
+## <a name="next-steps"></a>次のステップ
 
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>次の手順 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
