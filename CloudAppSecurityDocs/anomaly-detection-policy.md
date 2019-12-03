@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 10/06/2019
+ms.date: 12/1/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 710c42d0fa307c30919ac8383e7e46881ae0b131
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
-ms.translationtype: MT
+ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
+ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461158"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74669320"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -35,7 +35,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * ログイン エラー
 * 管理者のアクティビティ
 * 非アクティブなアカウント
-* Location
+* インストール先
 * あり得ない移動
 * デバイスとユーザー エージェント
 * アクティビティ率
@@ -144,9 +144,12 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 異常検出エンジンを調整するには、次の方法でユーザー設定に応じてアラートを抑制または表示します。
 
-* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
+* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に、必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
 
 * また、アクセス頻度の低い国、異常な IP アドレス、不審な IP アドレス、あり得ない移動によるアラートでは、失敗および成功した両方のログインを分析するか、または成功したログインのみを分析するかを構成できます。
+
+> [!NOTE]
+> 既定では、多要素認証 (WS-TRUST など) を使用しない従来のサインインプロトコルは、不可能な移動ポリシーでは監視されません。 組織でレガシプロトコルを使用していて、関連するアクティビティが見つからないようにするには、ポリシーを編集し、 **[詳細構成]** で [**サインインアクティビティ**を**すべてのサインイン**に分析する] を設定します。
 
 ## <a name="scope-anomaly-detection-policies"></a>異常検出ポリシーのスコープ指定
 
@@ -177,7 +180,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 1. マルウェアに感染したファイルの場合、ファイルの検出後に、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
