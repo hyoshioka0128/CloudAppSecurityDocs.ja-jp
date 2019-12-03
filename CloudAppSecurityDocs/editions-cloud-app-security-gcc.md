@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
-ms.openlocfilehash: d37b1da63547bf775648832374ef022464fc9c6b
-ms.sourcegitcommit: e7af22892c56d03490d1e6241c0a74d2e11e9fe2
+ms.openlocfilehash: 8b9c8d975176ff3d8fe4200316b8e3446e830414
+ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462629"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74553620"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>米国政府機関 GCC High の Microsoft Cloud App Security
 
@@ -26,7 +26,7 @@ Microsoft Cloud App Security GCC High オファリングは、Microsoft Azure Go
 
 Microsoft Cloud App Security 米国政府機関のサービスの説明は、GCC High 環境におけるサービス内容の概要として利用できるように設計されており、商用オファリングとの機能上の相違点が説明されています。
 
-米国政府機関 GCC High の Microsoft Cloud App Security オファリングについて詳しくは、「[米国政府機関向け Microsoft Cloud App Security のサービスの説明](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description)」をご覧ください。
+米国政府機関 GCC High の Microsoft Cloud App Security オファリングについて詳しくは、「[米国政府機関向け Microsoft Cloud App Security のサービスの説明](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description)」をご覧ください。
 
 ## <a name="next-steps"></a>次の手順
 
