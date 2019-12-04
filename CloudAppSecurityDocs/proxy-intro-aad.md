@@ -14,19 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d4b800afa927b8a9151837cfbff76478c98bf71f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460540"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720468"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
 *適用対象: Microsoft Cloud App Security*
-
->[!div class="step-by-step"]
-[次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
 
 現代の職場では、多くの場合、犯行後にご利用のクラウド環境の状態を把握できるだけでは十分ではありません。 従業員が意図的に、あるいは不注意からデータや組織を危険にさらす前に、違反や漏洩をリアルタイムで防止することが望まれます。 組織内のユーザーが、クラウド アプリのほとんどのサービスとツールを利用できるようにし、個人所有デバイスで作業できるようにすることが重要です。 同時に、データ リークとデータ盗難から組織をリアルタイムで保護するのに役立つツールが必要です。 Azure Active Directory と共に、Microsoft Cloud App Security は Conditional Access App Control を使用する包括的な統合エクスペリエンスでこれらの機能を提供します。
 
@@ -78,7 +75,7 @@ Conditional Access App Control を使うと、デバイスが管理されてい�
 1. 1 つ以上のルート証明書または中間証明書をアップロードします。
 1. 証明書がアップロードされたら、**デバイスタグ**と**有効なクライアント証明書**に基づいて、[アクセスポリシー](access-policy-aad.md)と[セッションポリシー](session-policy-aad.md)を作成できます。
 
-    ![アプリの条件付きアクセス制御のデバイス ID](./media/caac-device-id.png)
+    ![アプリの条件付きアクセス制御のデバイス ID](media/caac-device-id.png)
 
 > [!NOTE]
 > 証明書がユーザーから要求されるのは、セッションが有効なクライアント証明書フィルターを使用するポリシーと一致する場合だけです。
@@ -170,12 +167,12 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 
 おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 関心をお持ちのオンボード ユース ケースもお送りください。
 
-> [!div class="step-by-step"]
-> [次へ: Conditional Access App Control の展開 »](proxy-deployment-aad.md)
-
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [Azure AD アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
+> [おすすめアプリ用にアプリの条件付きアクセス制御をデプロイする](proxy-deployment-aad.md)
+
+> [!div class="nextstepaction"]
+> [任意のアプリにアプリの条件付きアクセス制御をデプロイする»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

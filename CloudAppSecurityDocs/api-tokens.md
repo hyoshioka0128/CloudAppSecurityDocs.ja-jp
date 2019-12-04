@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 4f5e6b1e-6b2c-4358-98f0-945e2993d5fe
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: bcb98ccaad997a0d98df6d7ecb6eee876c64622e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 07141cbd39c7ceaa8d7a3bb1d324634ec4fbe595
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461280"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719293"
 ---
 # <a name="api-tokens"></a>API トークン
 
@@ -37,25 +36,26 @@ API の完全なドキュメントを見るには、Cloud App Security ポータ
 
 API にアクセスするには、API トークンを作成し、ソフトウェアでそれを使って Cloud App Security API に接続する必要があります。
 
-[API トークン] タブでは、テナントのすべての API トークンを管理できます。 
+[API トークン] タブでは、テナントのすべての API トークンを管理できます。
 
 ## <a name="generate-a-token"></a>トークンを生成する
 
 1. **[設定]** メニューから **[セキュリティ拡張機能]** 、 **[API トークン]** の順に選びます。
 
 2. プラス アイコン **[新しいトークンの生成]** をクリックし、後でトークンの識別に使う名前を指定して、 **[次へ]** をクリックします。
-   ![Cloud App Security が API トークンを生成する](./media/api-token-gen.png)
+  ![Cloud App Security が API トークンを生成する](media/api-token-gen.png)
 
 3. トークンの値をコピーし、回復するときのためにどこかに保存します。トークンを紛失した場合、再生成する必要があります。 トークンには、それを発行したユーザーの特権が設定されます。 たとえば、セキュリティ閲覧者は、データを変更できるトークンを発行することはできません。
 
-4. 状態 (アクティブ、非アクティブ、生成済み) でトークンをフィルター処理できます。 
+4. 状態 (アクティブ、非アクティブ、生成済み) でトークンをフィルター処理できます。
 
-   - 生成済みは、まだ使われていないトークンです。 
-   - アクティブは、生成されて過去 7 日以内に使われたトークンです。 
-   - 非アクティブは、使われたことはあるが、過去 7 日以内にアクティビティがなかったトークンです。
-5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が与えられます。 
+    - 生成済みは、まだ使われていないトークンです。
+    - アクティブは、生成されて過去 7 日以内に使われたトークンです。
+    - 非アクティブは、使われたことはあるが、過去 7 日以内にアクティビティがなかったトークンです。
 
-   ![Cloud App Security API トークン](./media/generate-api-token.png)
+5. 新しいトークンを生成すると、Cloud App Security ポータルへのアクセスに使用する新しい URL が与えられます。
+
+    ![Cloud App Security API トークン](media/generate-api-token.png)
 
     ジェネリック ポータル URL は引き続き機能しますが、トークンで与えられるカスタム URL に比べてかなり遅くなります。 URL を忘れた場合、メニューの **?** アイコンに移動し、 **[バージョン情報]** を選択すると表示できます。
 
@@ -68,21 +68,20 @@ API にアクセスするには、API トークンを作成し、ソフトウェ
 
 完全な権限を持つ管理者には、このテナントに対して生成されたすべてのトークンが表示されます。 他のユーザーには、自分で生成したトークンだけが表示されます。
 
-表では、トークンが生成された日時と最後に使われた日時に関する詳細がわかり、トークンを取り消すこともできます。 
+表では、トークンが生成された日時と最後に使われた日時に関する詳細がわかり、トークンを取り消すこともできます。
 
-取り消されたトークンは表から削除され、そのトークンを使っていたソフトウェアは、新しいトークンが提供されるまで API を呼び出すことができません。 
+取り消されたトークンは表から削除され、そのトークンを使っていたソフトウェアは、新しいトークンが提供されるまで API を呼び出すことができません。
 
 > [!NOTE]
-> SIEM コネクタとログ コレクターも API トークンを使います。 これらのトークンは、ログ コレクターおよび SIEM エージェントのセクションから管理する必要があり、この表には表示されません。 
+> SIEM コネクタとログ コレクターも API トークンを使います。 これらのトークンは、ログ コレクターおよび SIEM エージェントのセクションから管理する必要があり、この表には表示されません。
 
+## <a name="next-steps"></a>次のステップ
 
+> [!div class="nextstepaction"]
+> [SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)
 
-
-
-## <a name="next-steps"></a>次の手順
-[SIEM 統合問題のトラブルシューティング](troubleshooting-siem.md)   
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
+[!INCLUDE [Open support ticket](includes/support.md)]
 
 ## <a name="check-out-this-video"></a>このビデオをご覧ください。
-[Microsoft Cloud App Security – REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)  
+
+[Microsoft Cloud App Security – REST API とトークン](https://channel9.msdn.com/Shows/Microsoft-Security/Microsoft-Cloud-App-Security--REST-APIs-and-Tokens)

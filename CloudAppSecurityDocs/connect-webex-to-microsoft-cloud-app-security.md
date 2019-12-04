@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2f35d499398f6d538b552678d5c30740e2f5d5ea
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e3a3f99dd64526439c9c5f4967a2918c33dfdde9
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460832"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719755"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco Webex を Microsoft Cloud App Security に接続する
 
@@ -27,7 +27,7 @@ ms.locfileid: "74460832"
 
 この記事では、コネクタ Api を使用して、既存の Cisco Webex アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Webex のユーザー、アクティビティ、ファイルを可視化し、制御できます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - 接続用に専用のサービスアカウントを作成することをお勧めします。 これにより、Webex で送信されたメッセージの削除など、Webex で実行されるガバナンスアクションがこのアカウントから実行されていることを確認できます。 それ以外の場合は、Webex に Cloud App Security 接続した管理者の名前が、アクションを実行したユーザーとして表示されます。
 - Webex で、完全な管理者**と**コンプライアンス管理者のアクセス許可を持っている必要があります。
@@ -38,7 +38,7 @@ ms.locfileid: "74460832"
 
 1. **[アプリコネクタ]** ページで、プラスボタンをクリックし、続いて**Cisco Webex**をクリックします。
 
-    ![Webex に接続する](./media/cisco-webex.png "Webex に接続する")
+    ![Webex に接続する](media/cisco-webex.png "Webex に接続する")
 
 1. ポップアップで、このコネクタのインスタンス名を入力します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "74460832"
 
 Webex に接続すると、接続する7日間のイベントを受け取ります。 Cloud App Security は過去3か月にわたってイベントをスキャンします。 これを増やすには、Cisco Webex pro ライセンスを所有し、Cloud App Security サポートでチケットを開く必要があります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 0eac8ac2-c8bc-4719-b45d-30a1da4e3424
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c7f73e64ed6934563012e244f6f0db0bd3569859
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 56434a38c0eef24c9581db36c16b47ef7694dc1d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459934"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721185"
 ---
 # <a name="troubleshooting-microsoft-cloud-app-security-status"></a>Microsoft Cloud App Security 状態のトラブルシューティング
 
@@ -33,12 +32,11 @@ ms.locfileid: "74459934"
 Microsoft Cloud App Security サービスの現在の状態は、次の手順で確認できます。
 
 - [status.cloudappsecurity.com](https://status.cloudappsecurity.com) にアクセスします。
-- ポータル内から直接 **[ヘルプ]** > **[システムの状態]** の順にクリックします。
+- ポータル内から直接 **[ヘルプ]**  >  **[システムの状態]** の順にクリックします。
 
-## <a name="next-steps"></a>次の手順
- 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

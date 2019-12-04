@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 359eb77f-e719-4c50-9b62-6ef64149a5a5
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 127ec9675d6be000a90931be596de0b267513213
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: be3c76516217e9cc36a06c85d778a717609ba254
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459994"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721140"
 ---
 # <a name="troubleshooting-content-inspection"></a>コンテンツ検査のトラブルシューティング
 
@@ -32,10 +31,10 @@ ms.locfileid: "74459994"
 
 この表には、各コンテンツ検査の状態とその説明を示します。
 
-|コンテンツ検査の状態|説明|
+|コンテンツ検査の状態|[説明]|
 |----|----|
-|完了|コンテンツ検査は正常に完了しました。|
-|適用なし|コンテンツ検査をこのファイルに適用できませんでした。 この状態は、このファイルのコンテンツ検査が必要なポリシーがないか、ファイルの種類がサポートされていないことが原因で表示されることがあります。|
+|Completed|コンテンツ検査は正常に完了しました。|
+|適用できません|コンテンツ検査をこのファイルに適用できませんでした。 この状態は、このファイルのコンテンツ検査が必要なポリシーがないか、ファイルの種類がサポートされていないことが原因で表示されることがあります。|
 |Pending|ファイルは現在、コンテンツ検査キュー内にあります。|
 |失敗: ダウンロード エラー|Microsoft Cloud App Security が検査用のファイルをダウンロードできませんでした。|
 |失敗: ファイルが暗号化されています|このファイルの暗号化を解除できませんでした。|
@@ -50,12 +49,9 @@ ms.locfileid: "74459994"
 > [!NOTE]
 > スキャンの状態にダッシュが表示される場合、そのファイルはスキャン対象としてキューに登録されていません。 コンテンツ検査ポリシーの詳細については、「[データ保護ポリシー](data-protection-policies.md)」を参照してください。
 
-## <a name="see-also"></a>関連項目  
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-## <a name="next-steps"></a>次の手順
- 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
-
+[!INCLUDE [Open support ticket](includes/support.md)]

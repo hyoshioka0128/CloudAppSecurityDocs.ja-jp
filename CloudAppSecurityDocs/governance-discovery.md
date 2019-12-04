@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8464851432d8fce81baa624738c6f73da1d68413
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461357"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720746"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
@@ -31,7 +31,7 @@ ms.locfileid: "74461357"
 
 特定の危険なアプリを非承認にすることができます。それには、行の終わりにある 3 つの点をクリックします。 次に、 **[Unsanction]\(非承認\)** を選択します。 アプリを却下しても使用がブロックされることはありませんが、Cloud Discovery フィルターで使用状況を監視する作業が簡単になります。 非承認にしたアプリのユーザーに通知し、代わりに安全なアプリの使用を提案できます。
 
-![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)
+![[承認されていない] のタグを付ける](media/tag-as-unsanctioned.png)
 
 承認または非承認にするアプリが一覧になっている場合、チェックボックスを使用して管理するアプリを選択してから、アクションを選択します。
 
@@ -46,23 +46,23 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
 1. Cloud Discovery ダッシュボードで、ブロックするすべてのアプリに **[承認されていない]** のタグを付けます。
 
-    ![[承認されていない] のタグを付ける](./media/tag-as-unsanctioned.png)
+    ![[承認されていない] のタグを付ける](media/tag-as-unsanctioned.png)
 
 2. タイトル バーで 3 つのドットをクリックして **[Generate block script... (ブロック スクリプトの生成...)]** を選択します。
 
-    ![ブロック スクリプトを生成する](./media/generate-block-script.png)
+    ![ブロック スクリプトを生成する](media/generate-block-script.png)
 
 3. **[Generate block script (ブロック スクリプトの生成)]** で、ブロック スクリプトを生成するアプライアンスを選択します。
 
-    ![ブロック スクリプトのポップ アップを生成する](./media/generate-block-script-popup.png)
+    ![ブロック スクリプトのポップ アップを生成する](media/generate-block-script-popup.png)
 
 4. その後、[スクリプトの生成] ボタンをクリックして、承認されていないすべてのアプリに対してブロック スクリプトを作成します。 既定では、エクスポートされた日付と選択したアプライアンス タイプを基にファイルの名前が付けられます。 *2017-02-19_CAS_Fortigate_block_script.txt* はファイル名の例です。
 
-   ![ブロック スクリプトのボタンを生成する](./media/generate-block-script-button.png)
+   ![ブロック スクリプトのボタンを生成する](media/generate-block-script-button.png)
 
 5. アプライアンスに作成されたファイルをインポートします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)

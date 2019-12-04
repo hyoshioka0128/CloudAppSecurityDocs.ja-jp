@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5e5d6c141777c2e6351d8a98448a29f6d36dca5d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 777e672436220642df6ea739c0f2e381487dd9ee
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459454"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720363"
 ---
 # <a name="importing-user-groups-from-connected-apps"></a>接続されているアプリからユーザー グループをインポートする
 
@@ -48,10 +48,10 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 ## <a name="how-to-import-user-groups"></a>ユーザー グループをインポートする方法
 
-1. メニューバーで、設定アイコン![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[ユーザーグループ]** を選択します。
+1. メニューバーで、設定アイコン![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[ユーザーグループ]** を選択します。
 1. **[ユーザー グループのインポート]** をクリックします。
 
-    ![ユーザー グループのインポート](./media/user-groups-add.png)
+    ![ユーザー グループのインポート](media/user-groups-add.png)
 
 1. ユーザー グループのインポート元にするアプリを選択します。 アプリの一覧は、展開したアプリ コネクタによって変わります。
 1. インポートするグループを選択します。 利用できるグループの一覧は、アプリ自体のすべての既存ユーザー グループの一覧になります。 新しいグループを追加する場合、アプリ自体でそれを直接追加する必要があります。 その後、グループがここのリストに表示されたら、それを選択します。
@@ -69,7 +69,7 @@ API コネクタを使用してアプリを接続するとき、Microsoft Cloud 
 
 ユーザー グループ フィルターの使用方法については、「[アクティビティ](activity-filters.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)

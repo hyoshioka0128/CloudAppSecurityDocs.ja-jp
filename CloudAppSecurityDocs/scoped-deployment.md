@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9075aeedfb21f074bcbde1e9bf5ea136bb5d948
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 433488b7302d3f66255bb1bfa04b630d8dbb1b7d
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460433"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721053"
 ---
 # スコープ付きデプロイ <a name="scoped-deployment"></a> 
 
@@ -33,22 +33,22 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 - デプロイのスコープを指定するには、最初に Microsoft Cloud App Security に[ユーザー グループをインポートする](user-groups.md)必要があります。 既定では、次のグループが表示されます。
 
-    - **アプリケーション** ユーザー グループ - Office 365 アプリケーションと Azure AD アプリケーションによって実行されるアクティビティの表示を可能にする組み込みのグループ。
+  - **アプリケーション** ユーザー グループ - Office 365 アプリケーションと Azure AD アプリケーションによって実行されるアクティビティの表示を可能にする組み込みのグループ。
 
-    - **External users** group-組織用に構成した管理対象ドメインのメンバーではないすべてのユーザー。
+  - **External users** group-組織用に構成した管理対象ドメインのメンバーではないすべてのユーザー。
 
 - 包含ルールを設定すると、包含されるグループのうちに入らないすべてのグループが自動的に除外されます。 たとえば、米国オフィス グループのすべてのメンバーを含めるルールを設定すると、そのグループの一部でないグループは監視されません。
 
 - 除外されるユーザー グループは、含まれるユーザー グループをオーバーライドします。 つまり、"英国従業員" というユーザー グループを包含して、"マーケティング" を除外した場合、英国のマーケティング メンバーは、**英国従業員**グループのメンバーであっても監視されません。
 
-1. メニュー バーで設定歯車をクリックし、 **[スコープ付きの展開]** を選択します。  
+1. メニュー バーで設定歯車をクリックし、 **[スコープ付きの展開]** を選択します。
 
-    ![設定アイコン](./media/settings-icon.png "設定アイコン")
+    ![設定アイコン](media/settings-icon.png "設定アイコン")
 
 2. デプロイのスコープを指定して特定のグループを包含または除外するためには、最初に Microsoft Cloud App Security に[ユーザー グループをインポートする](user-groups.md)必要があります。
 
 3. Microsoft Cloud App Security で特定のグループを監視するように設定するには、 **[含める]** タブでプラス アイコンをクリックします。
-    ![アイコン](./media/plus-icon.png)
+    ![アイコン](media/plus-icon.png)
 
 4. **[新しい包含ルールの作成]** ダイアログ ボックスで、次の手順を行います。
 
@@ -56,11 +56,11 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
     2. **[ユーザー グループの選択]** の下で、Cloud App Security で監視するグループをすべて選択します。
     3. このルールを、接続されたすべてのアプリに適用するのか、**特定のアプリ**にのみ適用するのか選択します。 **特定のアプリ**を選択した場合、ルールが影響を及ぼすのは、選択したアプリの監視に対してのみです。 たとえば、グループに **[UI チーム ユーザー]** と **[ボックス]** を選択した場合、Cloud App Security は UI チーム ユーザー グループのボックス アクティビティのみを監視し、その他のすべてのアプリの場合は、Cloud App Security はすべてのユーザーのすべてのアクティビティを監視します。
 
-        ![包含ルール](./media/include-rule.png)
+        ![包含ルール](media/include-rule.png)
 
 5. 特定のグループを監視から除外するよう設定するには、 **[含まない]** タブでプラス アイコンをクリックします。
 
-   ![アイコン●あいこん○](./media/plus-icon.png)
+   ![アイコン](media/plus-icon.png)
 
 6. **[新しい除外ルールの作成]** ダイアログ ボックスで、次のパラメーターを設定します。
 
@@ -68,7 +68,7 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
     **[ユーザー グループの選択]** の下で、Cloud App Security に監視させないグループをすべて選択します。
     2. このルールを、接続されたすべてのアプリに適用するのか、**特定のアプリ**にのみ適用するのか選択します。 **特定のアプリ**を選択した場合、Cloud App Security は選択したアプリに対してのみ選択したグループの監視を停止します。 つまり、グループ**ui チームユーザー**と**Active Directory**を選択した場合、Cloud App Security は、ui チームユーザーによって実行される Active Directory アクティビティを除くすべてのユーザーアクティビティを監視します。
 
-       ![除外ルール](./media/exclude-rule.png)
+       ![除外ルール](media/exclude-rule.png)
 
 ## <a name="example-results-for-include-and-exclude-rules"></a>包含ルールと除外ルールの結果例
 
@@ -83,19 +83,20 @@ Microsoft Cloud App Security を使用するとデプロイのスコープを指
 
 次のユーザー アクティビティが監視されます。
 
-|ユーザー|グループのメンバーシップ|監視されるアクティビティ|
+|User|グループのメンバーシップ|監視されるアクティビティ|
 |----|----|----|
-|Adriana|ドイツのすべてのユーザー<br>グローバル営業<br>営業部長|なし|
+|Adriana|ドイツのすべてのユーザー<br />グローバル営業<br />営業部長|None|
 |Alain|グローバル営業|Office 365 と Power BI を除くすべてのサブ アプリ|
-|Cornel|グローバル営業<br>営業部長|Office 365 とすべてのサブ アプリ|
+|Cornel|グローバル営業<br />営業部長|Office 365 とすべてのサブ アプリ|
 |Raymond|営業部長|Power BI のみ|
 
 > [!NOTE]
 > このルールで、他のアプリがグループのスコープによる影響を受けることはありません。
 > 例では、Salesforce の場合、すべてのユーザー グループのすべてのアクティビティが監視されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

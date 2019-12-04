@@ -10,16 +10,16 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f6c3408b7887ac35924ff647bbe67d8525bef9ed
-ms.sourcegitcommit: 2e8488efcc2253e0b5fa33db308e4986a9cdefd5
+ms.openlocfilehash: fe21bbb39b52981d7aeba0839367d2fd54073983
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71997398"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721101"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery では、16,000 以上のクラウド アプリを掲載した Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 これらのアプリは、80以上のリスク要因に基づいてランク付けおよびスコア付けされ、クラウドの使用状況を継続的に可視化し、シャドウ IT を組織にもたらすリスクシャドウを提供します。
 
@@ -31,10 +31,10 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 
 - **継続レポート**: Cloud App Security を使用してネットワークから転送されるすべてのログを分析します。 これらにより、すべてのデータの可視性が高まり、Machine Learning 異常検出エンジンまたは定義したカスタム ポリシーが使用され、特異な使用を自動的に検出できるようになります。 これらのレポートは、次の方法で接続することにより作成できます。
 
-     - [Microsoft DEFENDER ATP 統合](wdatp-integration.md):Cloud App Security は、Microsoft Defender Advanced Threat Protection (ATP) にネイティブに統合されており、Cloud Discovery のロールアウトを簡素化し、企業ネットワークを超えて Cloud Discovery 機能を拡張し、コンピューターベースの調査を有効にします。
-     - [ログ コレクター](discovery-docker.md):ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
-     - [Zscaler の統合](zscaler-integration.md):Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
-     - [iboss](iboss-integration.md)との統合:Cloud App Security と iboss の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 また、Cloud App Security と iboss が連携して、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、および iboss ポータルでのリスク評価を直接行うことができます。
+  - [Microsoft DEFENDER ATP 統合](wdatp-integration.md): Cloud App Security を Microsoft Defender Advanced Threat PROTECTION (ATP) にネイティブに統合することにより、Cloud Discovery のロールアウトを簡素化し、企業ネットワークを超えて Cloud Discovery 機能を拡張し、コンピューターベースの調査を可能にします。
+  - [ログ コレクター](discovery-docker.md): ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
+  - [Zscaler 統合](zscaler-integration.md): Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
+  - [iboss](iboss-integration.md)との統合: Cloud App Security と iboss の両方を使用する場合、2つの製品を統合して、セキュリティ Cloud Discovery のエクスペリエンスを向上させることができます。 また、Cloud App Security と iboss が連携して、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、および iboss ポータルでのリスク評価を直接行うことができます。
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>ログのプロセス フロー: 生データからリスク評価まで
 
@@ -93,41 +93,44 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 
 | [データ ソース] | ターゲット アプリの URL | ターゲット アプリの IP | Username | 配信元 IP | 総トラフィック | アップロードされたバイト数 |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **はい** | **はい** | **はい** | **はい** | いいえ | いいえ |
-| Blue Coat | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
-| Checkpoint | いいえ | **はい** | いいえ | **はい** | いいえ | いいえ |
-| Cisco ASA (Syslog) | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
+| Barracuda | **はい** | **はい** | **はい** | **はい** | [いいえ] | [いいえ] |
+| Blue Coat | **はい** | [いいえ] | **はい** | **はい** | **はい** | **はい** |
+| Checkpoint | [いいえ] | **はい** | [いいえ] | **はい** | [いいえ] | [いいえ] |
+| Cisco ASA (Syslog) | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | [いいえ] |
 | Cisco ASA with FirePOWER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Cisco Cloud Web Security |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Cisco FWSM | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
+| Cisco FWSM | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | [いいえ] |
 | Cisco IronPort WSA | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Cisco Meraki | **はい** | **はい** | [いいえ] | **はい** | [いいえ] | [いいえ] |
 | Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ContentKeeper | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| SonicWall (旧称 Dell) | **はい** | **はい** | いいえ | **はい** | **はい** | **はい** |
+| SonicWall (旧称 Dell) | **はい** | **はい** | [いいえ] | **はい** | **はい** | **はい** |
 | Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 | ForcePoint Web セキュリティクラウド |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Fortigate | いいえ | **はい** | いいえ | **はい** | **はい** | **はい** |
-| Fortinet Fortinet |**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
+| Fortigate | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | **はい** |
+| Fortinet Fortinet |**はい**|**はい**|[いいえ]|**はい**|**はい**|**はい**|
 | iboss |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Juniper SRX | いいえ | **はい** | いいえ | **はい** | **はい** | **はい** |
-| Juniper SSG | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
-| McAfee SWG | **はい** | いいえ | いいえ | **はい** | **はい** | **はい** |
-| MS TMG | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
-| Palo Alto Networks | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Sophos | **はい** | **はい** | **はい** | **はい** | **はい** | いいえ |
-| Squid (共通) | **はい** | いいえ | **はい** | **はい** | いいえ | **はい** |
-| Squid (ネイティブ) | **はい** | いいえ | **はい** | **はい** | いいえ | **はい** |
-| Stormshield | いいえ | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Juniper SRX | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | **はい** |
+| Juniper SSG | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
+| McAfee SWG | **はい** | [いいえ] | [いいえ] | **はい** | **はい** | **はい** |
+| MS TMG | **はい** | [いいえ] | **はい** | **はい** | **はい** | **はい** |
+| Palo Alto Networks | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Sophos | **はい** | **はい** | **はい** | **はい** | **はい** | [いいえ] |
+| Squid (共通) | **はい** | [いいえ] | **はい** | **はい** | [いいえ] | **はい** |
+| Squid (ネイティブ) | **はい** | [いいえ] | **はい** | **はい** | [いいえ] | **はい** |
+| Stormshield | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Websense: 調査の詳細レポート (CSV) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Websense: インターネットのアクティビティ ログ (CEF) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Zscaler | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 
-[継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)

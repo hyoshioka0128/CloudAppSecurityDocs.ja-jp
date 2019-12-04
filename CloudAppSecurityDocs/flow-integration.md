@@ -11,61 +11,59 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 344f92e2-6b3b-46db-bfd0-3b1016e0bc34
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: d9922f1b905e57cd43c9e4e8d25d2224e3f32c64
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 76115cb85be2f20f6d57f2e016d1a7d4548d05d1
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459188"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719992"
 ---
 # <a name="integrate-with-flow-for-custom-alert-automation"></a>カスタムアラート自動化のフローとの統合
 
 *適用対象: Microsoft Cloud App Security*
 
-Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 Microsoft Flow で使用可能な[コネクタのエコシステム](https://docs.microsoft.com/connectors/)を使用することで、Cloud App Security がアラートを生成するときに、プレイブックのトリガーを自動化することができます。 たとえば、[ServiceNow コネクタ](https://docs.microsoft.com/connectors/service-now/)を使用してチケット発行システムで問題を自動的に作成したり、Cloud App Security でアラートがトリガーされたときに、カスタム ガバナンス アクションを実行するための承認メールを送信します。  
+Cloud App Security は [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) と統合して、カスタム アラート オートメーションとオーケストレーション プレイブックを提供します。 Microsoft Flow で使用可能な[コネクタのエコシステム](https://docs.microsoft.com/connectors/)を使用することで、Cloud App Security がアラートを生成するときに、プレイブックのトリガーを自動化することができます。 たとえば、[ServiceNow コネクタ](https://docs.microsoft.com/connectors/service-now/)を使用してチケット発行システムで問題を自動的に作成したり、Cloud App Security でアラートがトリガーされたときに、カスタム ガバナンス アクションを実行するための承認メールを送信します。
 
-## <a name="prerequisites"></a>必須コンポーネント 
+## <a name="prerequisites"></a>必要条件
 
- - 有効な [Microsoft Flow プラン](https://flow.microsoft.com/pricing)が必要
+- 有効な [Microsoft Flow プラン](https://flow.microsoft.com/pricing)が必要
 
 ## <a name="how-it-works"></a>しくみ
 
-Cloud App Security 単体で、ポリシーを定義するときに、ユーザーの停止やファイルを非公開にするなどの定義済みのガバナンス オプションを提供します。 Cloud App Security コネクタを使用して Microsoft Flow でプレイブックを作成すると、ワークフローを作成してポリシー用にカスタマイズしたガバナンス オプションを有効にすることができます。 Flow でプレイブックが作成されたら、それを Cloud App Security でポリシーと関連付けて、アラートを Flow に送信するだけです。 Microsoft Flow では、組織用にカスタマイズされたワークフローを作成するために複数のコネクタと条件が用意されています。 
+Cloud App Security 単体で、ポリシーを定義するときに、ユーザーの停止やファイルを非公開にするなどの定義済みのガバナンス オプションを提供します。 Cloud App Security コネクタを使用して Microsoft Flow でプレイブックを作成すると、ワークフローを作成してポリシー用にカスタマイズしたガバナンス オプションを有効にすることができます。 Flow でプレイブックが作成されたら、それを Cloud App Security でポリシーと関連付けて、アラートを Flow に送信するだけです。 Microsoft Flow では、組織用にカスタマイズされたワークフローを作成するために複数のコネクタと条件が用意されています。
 
-Flow の [Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/)は、自動化されたトリガーとアクションをサポートします。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。 
+Flow の [Cloud App Security コネクタ](https://docs.microsoft.com/connectors/cloudappsecurity/)は、自動化されたトリガーとアクションをサポートします。 Flow は Cloud App Security がアラートを生成するときに自動的にトリガーされます。 アクションには、Cloud App Security でのアラートの状態の変更が含まれます。
 
 ## <a name="how-to-create-playbooks-with-microsoft-flow"></a>Microsoft Flow でプレイブックを作成する方法
 
-1. Cloud App Security で [API トークンを作成](api-tokens.md)します。 
+1. Cloud App Security で [API トークンを作成](api-tokens.md)します。
 
-2. [Microsoft Flow ポータル](https://flow.microsoft.com)にアクセスして、[ **[Create a new flow from scratch]\(新しいフローを最初から作成する\)** ](https://docs.microsoft.com/flow/get-started-logic-flow) を選択します。 
+2. [Microsoft Flow ポータル](https://flow.microsoft.com)にアクセスして、[ **[Create a new flow from scratch]\(新しいフローを最初から作成する\)** ](https://docs.microsoft.com/flow/get-started-logic-flow) を選択します。
 
 3. 検索コネクタとトリガーに、「**Cloud App Security**」を入力して、 **[When an alert is generated]\(アラートの生成時\)** を選択します。
 
-   ![アラート生成時のフロー](./media/flow-when-alert.png)
+    ![アラート生成時のフロー](media/flow-when-alert.png)
 
-4. **[認証設定]** の下に、手順 1 の API トークンを貼り付けます。 
+4. **[認証設定]** の下に、手順 1 の API トークンを貼り付けます。
 
-5. Cloud App Security でポリシーがアラートを生成するときにトリガーされる必要があるワークフローを定義します。 アクション、論理条件を追加し、スイッチ ケースの条件、またはループを追加して、プレイブックを保存できます。 
+5. Cloud App Security でポリシーがアラートを生成するときにトリガーされる必要があるワークフローを定義します。 アクション、論理条件を追加し、スイッチ ケースの条件、またはループを追加して、プレイブックを保存できます。
 
-   ![Flow ワークフロー](./media/flow-workflow.png)
+    ![Flow ワークフロー](media/flow-workflow.png)
 
-6. Cloud App Security ポータルで、 **[ポリシー]** に移動し、Flow に送信するポリシーのアラートの行で、3 つのドットをクリックして、 **[設定]** を選択します。 
-7. **[アラート]** の下で、 **[Flow にアラートを送信する]** を選択し、ドロップダウン メニューからプレイブックの名前を選択します。  
+6. Cloud App Security ポータルで、 **[ポリシー]** に移動し、Flow に送信するポリシーのアラートの行で、3 つのドットをクリックして、 **[設定]** を選択します。
+7. **[アラート]** の下で、 **[Flow にアラートを送信する]** を選択し、ドロップダウン メニューからプレイブックの名前を選択します。
 
-   ![Cloud App Security ポータルで Flow を有効にする](./media/flow-mcas-config.png)
+    ![Cloud App Security ポータルで Flow を有効にする](media/flow-mcas-config.png)
 
-8. 作成した、またはアクセスを許可された Cloud App Security プレイブックは、 **[セキュリティ拡張機能]** 画面に表示されます。 
+8. 作成した、またはアクセスを許可された Cloud App Security プレイブックは、 **[セキュリティ拡張機能]** 画面に表示されます。
 
-  
-   ![Cloud App Security でプレイブックを表示する](./media/flow-extensions.png)
- 
- 
+    ![Cloud App Security でプレイブックを表示する](media/flow-extensions.png)
 
-## <a name="next-steps"></a>次の手順 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)   
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

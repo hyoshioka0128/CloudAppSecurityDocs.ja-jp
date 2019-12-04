@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a6b4c745-cd5c-4458-819c-80cbe8b25f29
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 387a9a9184bb805db7659d6f67eae26239f812f3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461060"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719533"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 
@@ -177,7 +176,8 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 1. **[アプリコネクタ]** ページで、AWS コネクタの資格情報を指定するには、次のいずれかの操作を行います。
 
     **新しいコネクタの場合**
-    1. プラス記号をクリックし、次に**アマゾンウェブサービス**をクリックします。<br>
+
+    1. プラス記号をクリックし、次に**アマゾンウェブサービス**をクリックします。<br />
 
         ![AWS の接続](media/connect-aws.png "AWS を接続する")
 
@@ -190,6 +190,7 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
         ![Connect AWS app security の構成](media/aws-connect-app-config.png "Connect AWS app security の構成")
 
     **既存のコネクタの場合**
+
     1. コネクタの一覧で、AWS コネクタが表示されている行の **[セキュリティ構成の接続]** をクリックします。
 
         ![[セキュリティ構成の編集] リンクが表示されている [接続済みアプリ] ページのスクリーンショット](media/aws-connect-app-edit-config.png)
@@ -202,8 +203,9 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 
     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

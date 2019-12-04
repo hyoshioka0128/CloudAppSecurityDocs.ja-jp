@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9e41902fd34f113412b02fb7c4377b226cd18fc0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: fa4fe701de12753d754f0b5dcc9605a1ea4d0ac8
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460457"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721033"
 ---
 # <a name="security-configuration-for-aws"></a>AWS のセキュリティ構成
 
@@ -28,7 +27,7 @@ ms.locfileid: "74460457"
 
 Microsoft Cloud App Security は、アマゾンウェブサービス環境のセキュリティ構成評価を提供します。 この評価では、AWS の Internet Security (CI) のベンチマークに基づいて、基本的なセキュリティの推奨事項を提供します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - AWS Security Hub は、すべての AWS アカウントリージョンに対して設定する必要があります。 詳細については、「 [AWS Security Hub](https://go.microsoft.com/fwlink/?linkid=2100208)のセットアップ」を参照してください。
     > [!NOTE]
@@ -41,14 +40,15 @@ Microsoft Cloud App Security は、アマゾンウェブサービス環境のセ
     - Microsoft Cloud App Security が提供するのは、上位 50 個のサブスクリプションに向けた推奨事項のみです。
     - 変更が有効になるまでに、最大 15 分かかる場合があります。
 
-     ![セキュリティ構成メニュー](media/security-configuration-menu.png)
+    ![セキュリティ構成メニュー](media/security-configuration-menu.png)
 
-1. 種類、リソース、およびアカウントごとに、推奨事項をフィルター処理できます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](./media/asc-icon.png) 詳細については、「Amazon Security Hub (推奨事項)」を参照してください。
+1. 種類、リソース、およびアカウントごとに、推奨事項をフィルター処理できます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](media/asc-icon.png) 詳細については、「Amazon Security Hub (推奨事項)」を参照してください。
 
-   ![セキュリティ構成](media/security-configuration-aws.png)
+    ![セキュリティ構成](media/security-configuration-aws.png)
 
-## <a name="next-steps"></a>次の手順 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c51cbcb3d8f08fb7b1fc1fc4668905ae11eaeed0
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 78f2b04a149a2723fbbe527fedd843b1fa4d5d5b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461096"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719783"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Okta を Microsoft Cloud App Security に接続する
 
@@ -39,25 +39,25 @@ ms.locfileid: "74461096"
 
     - **[セキュリティ]** 、 **[API]** の順にクリックします。
 
-         ![Okta api](./media/okta-api.png "Okta api")
+         ![Okta api](media/okta-api.png "Okta api")
 
     - **[トークンを作成します]** をクリックします。
 
-         ![Okta のトークンの作成](./media/okta-createtoken.jpg "Okta のトークンの作成")
+         ![Okta のトークンの作成](media/okta-createtoken.jpg "Okta のトークンの作成")
 
     - **[トークンを作成します]** ポップアップで、Cloud App Security トークンに名前を付けてから **[トークンを作成します]** をクリックします。
 
-         ![Okta トークンのポップアップ](./media/okta-token-popup.png "Okta トークンのポップアップ")
+         ![Okta トークンのポップアップ](media/okta-token-popup.png "Okta トークンのポップアップ")
 
     - **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、 **[Token value (トークン値)]** をコピーします。
 
-         ![Okta トークン値](./media/okta-token-value.png "Okta トークン値")
+         ![Okta トークン値](media/okta-token-value.png "Okta トークン値")
 
 1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
 1. **[アプリ コネクター]** ページで、[+] ボタン、 **[Okta]** の順にクリックします。
 
-    ![Okta の接続](./media/connect-okta.png "Okta の接続")
+    ![Okta の接続](media/connect-okta.png "Okta の接続")
 
 1. 表示されたポップアップの **[ドメイン]** フィールドに Okta ドメインを入力し、トークンを **[トークン]** フィールドに貼り付けます。
 
@@ -69,8 +69,9 @@ ms.locfileid: "74461096"
 
 Okta を接続すると、接続までの 60 日間のイベントを受け取ります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

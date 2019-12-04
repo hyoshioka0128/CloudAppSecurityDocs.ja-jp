@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: a79bf393-0d2c-44b6-8dab-86c740fd7333
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 67d424610e93f34ddacd1db2eb8e721ad0857bdf
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 86126d40279acd433066cc76db101061f1a03a93
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458809"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720060"
 ---
 # <a name="connect-office-365-to-microsoft-cloud-app-security"></a>Office 365 を Microsoft Cloud App Security に接続する
 
@@ -58,19 +57,20 @@ Cloud App Security は、次の Office 365 アプリをサポートしていま�
 
 1. **[接続]** アプリページで、[+] ボタン、 **[Office 365]** の順にクリックします。  
 
-      ![O365 を接続する](./media/connect-0365.png) 
+      ![O365 を接続する](media/connect-0365.png) 
 
 2. Office 365 ポップアップで、 **[Office 365 に接続する]** をクリックします。
 
-      ![O365 を接続する](./media/office-connect.png) 
+      ![O365 を接続する](media/office-connect.png) 
 
 3. Office 365 が正常に接続されていることが表示されたら、 **[閉じる]** をクリックします。
 
 > [!NOTE]
 > Office 365 を接続すると、API をプルしている Office 365 に接続されたすべてのサードパーティ製アプリケーションを含む、1 週間前のデータが表示されます。 接続前に API をプルしていなかったサードパーティ製アプリについては、既定で無効になっていたすべての API が Cloud App Security によって有効になるため、Office 365 に接続した時点からイベントが表示されるようになります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

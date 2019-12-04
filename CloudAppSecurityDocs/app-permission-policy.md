@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 62d7dc1d7dd9fc36c4c974afaad09b2659be5e51
-ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
+ms.openlocfilehash: e5853882b7f95a492f4d8647af154f855d4f1d19
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74553603"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720293"
 ---
 # <a name="oauth-app-policies"></a>OAuth アプリに関するポリシー
 
@@ -39,13 +39,13 @@ OAuth アプリに関するポリシーでは、Office 365、G Suite、Salesforc
 
 1. 必要に応じてアプリをフィルター処理します。たとえば、**メールボックスの予定表を変更**するための**アクセス許可**を要求するすべてのアプリを表示することができます。
 1. **[検索に基づく新しいポリシー]** ボタンをクリックします。
-    ![検索に基づく新しいポリシー](./media/app-permissions-filter.png)
+    ![検索に基づく新しいポリシー](media/app-permissions-filter.png)
 1. **[コミュニティの利用状況]** フィルターを使用して、アプリに対するアクセス許可が一般的であるか、一般的でないか、あるいはまれであるかに関する情報を取得することができます。 このフィルターは、珍しいアプリで、重大度レベルが高いアクセス許可か、多くのユーザーからのアクセス許可を要求する場合に便利です。
 1. アプリを承認したユーザーのグループ メンバーシップに基づいてポリシーを設定できます。 たとえば、管理者は、アクセス許可を承認したユーザーが管理者グループのメンバーである場合にのみ、アプリで高いアクセス許可を求める場合に一般的ではないアプリを無効にするポリシーを設定するように決定することができます。
 
 また、 **[コントロール]** 、 **[ポリシー]** の順にクリックして、ポリシーを作成することもできます。 その後、 **[ポリシーの作成]** 、 **[OAuth app policy]\(OAuth アプリ ポリシー\)** の順にクリックします。
 
-   ![新しい OAuth アプリ ポリシー](./media/app-permissions-policy.png)
+   ![新しい OAuth アプリ ポリシー](media/app-permissions-policy.png)
 
 ## <a name="oauth-app-anomaly-detection-policies"></a>OAuth アプリの異常検出ポリシー
 

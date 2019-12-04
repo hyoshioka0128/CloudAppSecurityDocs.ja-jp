@@ -12,26 +12,22 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: f6de75de67bc81b1f12da30cc7a54a6d6b95b324
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460611"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720858"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>アプリのアプリの条件付きアクセス制御をオンボードしてデプロイする
 
 *適用対象: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« Previous: おすすめアプリ用にアプリの条件付きアクセス制御をデプロイする](proxy-deployment-aad.md)<br>
-[次へ: セッション ポリシーを作成する方法 »](session-policy-aad.md)
-
 Microsoft Cloud App Security のセッション制御は、任意の web アプリで動作するように構成できます。 この記事では、カスタムの基幹業務アプリ、非機能の SaaS アプリ、および Azure Active Directory (Azure AD) アプリケーションプロキシを使用してホストされているオンプレミスのアプリをセッションコントロールでオンボードする方法について説明します。
 
 Cloud App Security で利用できるアプリの一覧については、「 [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用](proxy-intro-aad.md#featured-apps)したアプリの保護」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - アプリの条件付きアクセス制御を使用するには、組織が次のライセンスを持っている必要があります。
 
@@ -74,7 +70,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 1. **[アクセス制御]** の **[セッション]** をクリックし、 **[アプリの条件付きアクセス制御の使用]** を選択して組み込みのポリシーを選択します (**モニターのみ**または**ダウンロードをブロック**します)。または、**カスタムポリシーを使用**して Cloud App Security で詳細ポリシーを設定し、 **[選択]** をクリックします。
 
-   ![Azure AD の条件付きアクセス](./media/azure-ad-caac-policy.png)
+    ![Azure AD 条件付きアクセス](media/azure-ad-caac-policy.png)
 
 1. 省略可能: 条件を追加し、必要に応じてコントロールを許可します。
 
@@ -82,7 +78,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 ## 手順 2: アプリを展開するユーザーを構成する<a name="conf-users"></a>
 
-1. Cloud App Security のメニューバーで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[設定]** を選択します。
+1. Cloud App Security のメニューバーで、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[設定]** を選択します。
 
 1. **アプリの条件付きアクセス制御**で、**アプリのオンボード/メンテナンス** を選択します。
 
@@ -92,16 +88,16 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 ## 手順 3: 展開するアプリを構成する<a name="conf-app"></a>
 
-デプロイするアプリにアクセスします。 表示されるページは、アプリが認識されているかどうかによって異なります。 次のいずれかの操作を行います。
+デプロイするアプリにアクセスします。 表示されるページは、アプリが認識されているかどうかによって異なります。 以下のいずれかを実行します。
 
-| アプリの状態 | 説明 | 手順 |
+| アプリの状態 | [説明] | 手順 |
 | --- | --- | --- |
-| 認識できません | アプリを構成するよう求める画面が表示されません。 | 1.[アプリの条件付きアクセス制御にアプリを追加](#add-app)します。<br> 2.[アプリのドメインを追加](#add-domains)し、アプリに戻り、ページを最新の状態に更新します。<br> 3.[アプリの証明書をインストール](#install-certs)します。 |
-| ら | アプリの構成プロセスを続行するように求めるオンボードページが表示されます。 | [アプリの証明書](#install-certs)を - インストールします。 <br><br> **注:** アプリが正常に機能するために必要なすべてのドメインを使用してアプリが構成されていることを確認します。 追加のドメインを構成するには、「[アプリのドメインを追加](#add-domains)する」に進み、アプリのページに戻ります。 |
+| 認識できません | アプリを構成するよう求める画面が表示されません。 | 1.[アプリの条件付きアクセス制御にアプリを追加](#add-app)します。<br /> 2.[アプリのドメインを追加](#add-domains)し、アプリに戻り、ページを最新の状態に更新します。<br /> 3.[アプリの証明書をインストール](#install-certs)します。 |
+| ら | アプリの構成プロセスを続行するように求めるオンボードページが表示されます。 | [アプリの証明書](#install-certs)を - インストールします。 <br /><br /> **注:** アプリが正常に機能するために必要なすべてのドメインを使用してアプリが構成されていることを確認します。 追加のドメインを構成するには、「[アプリのドメインを追加](#add-domains)する」に進み、アプリのページに戻ります。 |
 
 ### 新しいアプリを追加するには<a name="add-app"></a>
 
-1. メニューバーで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
+1. メニューバーで、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
 
 1. **[View new apps]** \(新しいアプリの表示\) をクリックします。
 
@@ -109,8 +105,8 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 1. 開いた画面に、新しいアプリの一覧が表示されます。 オンボードするアプリごとに、 **+** 記号をクリックし、 **[追加]** をクリックします。
 
-   > [!NOTE]
-   > アプリが Cloud App Security アプリ カタログに表示されない場合は、ダイアログの定義されていないアプリの下にログイン URL と共に表示されます。 これらのアプリの + 記号をクリックすると、カスタム アプリとしてアプリケーションをオンボードできます。
+    > [!NOTE]
+    > アプリが Cloud App Security アプリ カタログに表示されない場合は、ダイアログの定義されていないアプリの下にログイン URL と共に表示されます。 これらのアプリの + 記号をクリックすると、カスタム アプリとしてアプリケーションをオンボードできます。
 
     ![アプリの条件付きアクセス制御で検出された Azure AD アプリ](media/caac-discovered-aad-apps.png)
 
@@ -128,7 +124,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 1. [検出されたドメイン] パネルで、ドメイン名を書き留めます。または、一覧を .csv ファイルとしてエクスポートします。
     > [!NOTE]
     > パネルには、アプリに関連付けられていない、検出されたドメインの一覧が表示されます。 ドメイン名は完全修飾されています。
-1. Cloud App Security にアクセスし、メニューバーの [設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックして、 **[アプリの条件付きアクセス制御]** を選択します。
+1. Cloud App Security にアクセスし、メニューバーの [設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックして、 **[アプリの条件付きアクセス制御]** を選択します。
 1. アプリの一覧で、デプロイするアプリが表示されている行に、行の末尾にある3つの点を選択し、 **[アプリの詳細]** で **[編集]** を選択します。
     > [!TIP]
     > アプリで構成されているドメインの一覧を表示するには、 **[アプリドメインの表示]** をクリックします。
@@ -145,7 +141,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
     1. **[現在のユーザー]** または **[ローカルコンピューター]** を選択します。
     1. **[証明書をすべて次のストアに配置する]** を選択し、 **[参照]** をクリックします。
     1. **[信頼されたルート証明機関]** を選択し、 **[OK]** をクリックします。
-    1. **[完了]** をクリックします。
+    1. **[Finish]** をクリックします。
 
     > [!NOTE]
     > 証明書が認識されるようにするには、証明書をインストールしたら、ブラウザーを再起動して同じページにアクセスする必要があります。<!-- You'll see a check-mark by the certificates links confirmation they are installed.-->
@@ -167,7 +163,7 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 
 組織の運用環境でアプリを使用できるようにする準備ができたら、次の手順を実行します。
 
-1. Cloud App Security で、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
+1. Cloud App Security で、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
 1. アプリの一覧で、展開するアプリが表示されている行で、行の末尾にある3つの点を選択し、 **[アプリの編集]** を選択します。
 1. **[アプリの条件付きアクセス制御で使用する]** を選択し、 **[保存]** をクリックします。
 
@@ -177,12 +173,20 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 1. 前の手順で作成したポリシーを更新して、必要なユーザー、グループ、およびコントロールを追加します。
 1. [**セッション** > **使用アプリの条件付きアクセス制御**] で、[**カスタムポリシーを使用**する] を選択した場合は Cloud App Security にアクセスし、対応するセッションポリシーを作成します。 詳しくは、「[セッション ポリシー](session-policy-aad.md)」をご覧ください。
 
->[!div class="step-by-step"]
-[« Previous: おすすめアプリ用にアプリの条件付きアクセス制御をデプロイする](proxy-deployment-aad.md)<br>
-[次へ: セッション ポリシーを作成する方法 »](session-policy-aad.md)
+## <a name="next-steps"></a>次のステップ
 
-## <a name="next-steps"></a>次の手順
+> [!div class="nextstepaction"]
+> [セッションポリシーを作成する方法»](session-policy-aad.md)
 
-[Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)
+## <a name="see-also"></a>「
+
+> [!div class="nextstepaction"]
+> [アプリの条件付きアクセス制御の概要](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [おすすめアプリ用にアプリの条件付きアクセス制御をデプロイする](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

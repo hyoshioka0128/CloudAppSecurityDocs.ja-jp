@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 3a0756e8e2ffc9d351013b03e037fa996cbf341f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: b31876240187e3f95ff2a8d10632b54de37e6ed6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460994"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720764"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
 
@@ -27,15 +27,15 @@ ms.locfileid: "74460994"
 
 この記事では、App connector API を使用して、既存の Workday アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Workday の使用を可視化し、制御することができます。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 Workday 統合システムユーザーを使用することをお勧めします。 セキュリティグループには、次のドメインセキュリティポリシーに対して次のアクセス許可を選択する必要があります。
 
 | 機能領域 | ドメインセキュリティポリシー | サブドメインのセキュリティポリシー | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
-| System | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
-| System | セキュリティ管理 | | 表示、変更 | Get、Put |
-| System | システム監査 | | 表示 | 取得 |
+| System (システム) | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
+| System (システム) | セキュリティ管理 | | 表示、変更 | Get、Put |
+| System (システム) | システム監査 | | 表示 | 取得 |
 | スタッフ | Worker データ: スタッフ | Worker データ: パブリックワーカーレポート | 表示 | 取得 |
 
 > [!NOTE]
@@ -106,8 +106,9 @@ Workday 統合ユーザー、セキュリティグループ、およびアクセ
 > [!NOTE]
 > Workday に接続すると、接続する7日間のイベントが表示されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

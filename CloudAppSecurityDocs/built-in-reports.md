@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 0dcc3c35-f787-4822-84c6-d4dff897dd6c
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a9dfc6e859b28450d32fcb7ce925ad5209dd0c5f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 3d87522306932229b9defd05e760672e875a28ab
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458349"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720164"
 ---
 # <a name="generate-data-management-reports"></a>データ管理レポートを生成する
 
@@ -30,17 +29,18 @@ Microsoft Cloud App Security では、クラウド アプリ内のファイル�
 
 レポートを生成するには
 
-1. **[ファイル]** に移動します。 
+1. **[ファイル]** に移動します。
 2. 右上隅にある 3 つの点をクリックし、 **[データ管理レポート]** の下で以下のいずれかのレポートを選択します。
 
- ![レポート](./media/reports.png)
+    ![レポート](media/reports.png)
 
-## <a name="data-sharing-overview"></a>データ共有の概要 
+## <a name="data-sharing-overview"></a>データ共有の概要
 
 このレポートには、クラウド アプリに保存されているファイルの数がアクセス許可ごとに表示されます。 クラウド アプリはアクセスが容易でどこからでも利用できるため、ファイルの共有が簡単です。 **個人のファイル**は、その所有者以外とは共有されません。 ファイルが共有されている場合、Cloud App Security は 4 種類の状態に区別します。
+
 - **公開共有 (インターネット)** ファイルは、認証を受けなくても検索エンジンの結果などからアクセスできるファイルです。
- - **公開共有**ファイルは、認証を受けなくてもリンクからアクセスできるファイルです。
- - **外部共有**ファイルは、クラウド アプリの認証を受けると社外のユーザーがアクセスできるファイルです。
+- **公開共有**ファイルは、認証を受けなくてもリンクからアクセスできるファイルです。
+- **外部共有**ファイルは、クラウド アプリの認証を受けると社外のユーザーがアクセスできるファイルです。
 - **内部共有**ファイルは、社内のすべてまたは一部のユーザーがアクセスできるファイルです。
 
 ## <a name="outbound-sharing-by-domain"></a>ドメイン別の送信共有
@@ -51,11 +51,9 @@ Microsoft Cloud App Security では、クラウド アプリ内のファイル�
 
 これには、外部と企業のファイルを共有しているユーザーのリストが表示されます。 外部共有ファイルは、特定の外部の共同作業者と共有されているファイルです。 公開共有ファイルには、プライベート リンクを使用するとインターネット上の誰でもアクセスできます。 これらのファイルは、明示的にリンクを持つユーザーのみが見つけることができます。 公開共有ファイル (インターネット) はインターネット ユーザー全員に公開されていて、検索エンジンの結果からもアクセスできます。 過剰な数のファイルを共有するユーザーが見つかった場合は、その理由を調査することをお勧めします。 調査するには [ファイル] タブを使用し、外部共有の使用状況を詳しく理解するため、該当するユーザーに連絡します。
 
+## <a name="next-steps"></a>次のステップ
 
-  
-## <a name="next-steps"></a>次の手順 
-[制御](control.md)   
+> [!div class="nextstepaction"]
+> [制御](control.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

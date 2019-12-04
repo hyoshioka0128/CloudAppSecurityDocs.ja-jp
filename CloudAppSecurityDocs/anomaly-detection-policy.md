@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b9c354d752b9d960669223c4928453acf323d4bb
-ms.sourcegitcommit: 84d56e4953dd771b099261e10a59cf611dd6280a
-ms.translationtype: HT
+ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74669320"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720304"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -46,7 +46,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 **[制御]** 、 **[ポリシー]** の順にクリックすると、ポータルで異常検出ポリシーを確認できます。 ポリシーの種類については **[異常検出ポリシー]** を選択します。
 
- ![新しい異常検出ポリシー](./media/new-anomaly-detection-policies.png)
+ ![新しい異常検出ポリシー](media/new-anomaly-detection-policies.png)
 
 次の異常検出ポリシーを使用できます。
 
@@ -64,12 +64,12 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
     > [!NOTE]
-    >- Office 365 のマルウェア検出の場合は、Office 365 Advanced Threat Protection P1 の有効なライセンスが必要です。
-    >- Cloud App Security は、次のアプリのマルウェア検出をサポートしています。
-    >    - ボックス
-    >    - ドロップボックス
-    >    - G Suite
-    >    - Office 365
+    > * Office 365 のマルウェア検出の場合は、Office 365 Advanced Threat Protection P1 の有効なライセンスが必要です。
+    > * Cloud App Security は、次のアプリのマルウェア検出をサポートしています。
+    >   * ボックス
+    >   * ドロップボックス
+    >   * G Suite
+    >   * Office 365
 
 ### <a name="activity-from-anonymous-ip-addresses"></a>匿名 IP アドレスからのアクティビティ
 
@@ -164,7 +164,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 1. **[含める]** を選択して、このポリシーを適用するユーザーおよびグループを指定します。 ここで選択されなかったユーザーまたはグループはすべて、脅威とは見なされず、アラートは生成されません。
 1. **[含まない]** を選択して、このポリシーを適用しないユーザーを指定します。 ここで選択されたユーザーはすべて、 **[含める]** で選択したグループのメンバーであっても、脅威とは見なされず、アラートは生成されません。
 
-    ![異常検出のスコープ指定](./media/anomaly-detection-scoping.png)
+    ![異常検出のスコープ指定](media/anomaly-detection-scoping.png)
 
 ## <a name="triage-anomaly-detection-alerts"></a>異常検出アラートのトリアージ
 
@@ -172,16 +172,17 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 1. **[アクティビティ ログ]** で、アクティビティ ドロワーを表示するアクティビティを開くことができます。 **[ユーザー]** をクリックして、[ユーザーの洞察] タブを表示します。このタブには、アラートの数、アクティビティ、接続した場所などの情報が表示されます。これは調査において重要です。
 
-    ![異常検出アラート 1](./media/anomaly-alert-user1.png) ![異常検出アラート 1](./media/anomaly-alert-user2.png)
+    ![異常検出アラート 1](media/anomaly-alert-user1.png) ![異常検出アラート 1](media/anomaly-alert-user2.png)
 
 1. これにより、ユーザーが実行した不審なアクティビティはどれかを把握し、アカウントが侵害されたかどうかについて確信を深めることができます。 たとえば、複数回失敗したログインに関するアラートは疑わしいもので、ブルート フォース攻撃の可能性を示すこともありますが、アプリケーションの不適切な構成を示すこともあり、この場合アラートは正しい反応の真陽性となります。 ただし、さらに不審なアクティビティを伴う複数回失敗したログイン アラートがある場合には、アカウントが侵害されている確率は高くなります。 次の例では、 **[複数回失敗したログイン試行]** アラートの後、 **[TOR の IP アドレスからのアクティビティ]** と **[あり得ない移動アクティビティ]** (どちらもそれ自体が大きな侵害の痕跡 (IOC)) が続いています。 これがそれほど疑わしくなかったとしても、次に、同じユーザーが**大量ダウンロード アクティビティ**を実行していることが示されています。このアクティビティは多くの場合、攻撃者がデータの取り出しを行ったことを示すものです。
 
-    ![異常検出アラート 1](./media/anomaly-alert-user3.png)
+    ![異常検出アラート 1](media/anomaly-alert-user3.png)
 
 1. マルウェアに感染したファイルの場合、ファイルの検出後に、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
 ## <a name="next-steps"></a>次のステップ
 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

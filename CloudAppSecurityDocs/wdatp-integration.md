@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: b35ca44c-da8e-49ec-89d1-c076d123c14f
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: aeddfb56542309b0ee6b1f0d4cdec85bb36a120e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 90efa85fccd71e488f80db290b09b1636013304b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459434"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720390"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
@@ -36,10 +35,8 @@ Microsoft Cloud App Security は、Microsoft Defender ATP とのネイティブ�
 
 > [!NOTE]
 > Microsoft Defender ATP を体験する場合は、 [無料試用版にサインアップしてください](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
->
 
-
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - Microsoft Cloud App Security ライセンス
 - Microsoft Defender ATP ライセンス
@@ -65,7 +62,7 @@ Microsoft Defender ATP から Cloud App Security との統合を有効にする�
 > データの統合を有効にしてから Cloud App Security に表示されるまで、最大で 2 時間かかります。
 >
 
-   ![WD ATP の設定](./media/wdatp-settings.png)
+![WD ATP の設定](media/wdatp-settings.png)
 
 ## <a name="investigate-machines-in-cloud-app-security"></a>Cloud App Security でマシンを調査する
 
@@ -73,35 +70,40 @@ Microsoft Defender ATP を Cloud App Security に統合したら、Cloud Discove
 
 1. Cloud App Security ポータルで、 **[Cloud Discovery]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。
 2. 上部のナビゲーション バーで、 **[継続的レポート]** の **[Win10 endpoint users]\(Win10 エンドポイント ユーザー\)** を選択します。
-  ![WD ATP レポート](./media/win10-dashboard-report.png)
+  ![WD ATP レポート](media/win10-dashboard-report.png)
 3. 上部では、検出されたマシンの数が統合後に追加されていることがわかります。
 4. **[マシン]** タブをクリックします。
 5. リストの各マシンにドリルダウンし、タブを使用して、調査データを表示します。 インシデントに関係したマシン、ユーザー、IP アドレス、アプリの間の相関関係を検索します。
-   - **概要**
-      - トランザクション: 選択した期間にコンピューターで発生したトランザクションの数に関する情報。
-      - 合計トラフィック数: 選択した期間のトラフィックの総量 (MB 単位) に関する情報。
-     - アップロード: 選択した期間にマシンによってアップロードされたトラフィックの総量 (MB 単位) に関する情報。
-     - ダウンロード: 選択した期間にコンピューターによってダウンロードされたトラフィックの総量 (MB 単位) に関する情報。
-   - **検出されたアプリ**<br>
+
+    - **概要**
+        - トランザクション: 選択した期間にコンピューターで発生したトランザクションの数に関する情報。
+        - 合計トラフィック数: 選択した期間のトラフィックの総量 (MB 単位) に関する情報。
+        - アップロード: 選択した期間にマシンによってアップロードされたトラフィックの総量 (MB 単位) に関する情報。
+        - ダウンロード: 選択した期間にコンピューターによってダウンロードされたトラフィックの総量 (MB 単位) に関する情報。
+    - **検出されたアプリ**  
   マシンによってアクセスされたすべての検出されたアプリの一覧が表示されます。
-   - **ユーザーの履歴**<br>
+    - **ユーザーの履歴**  
     マシンにサインインしたすべてのユーザーの一覧が表示されます。
-   - **IP アドレスの履歴**<br>
+    - **IP アドレスの履歴**  
     マシンに割り当てられたすべての IP アドレスの一覧が表示されます。
- ![マシンの概要](./media/machines-overview.png)
- 
-他の Cloud Discovery ソースと同様、Win10 エンドポイント ユーザー レポートからデータをエクスポートして、さらに詳しく調査できます。 
+ ![マシンの概要](media/machines-overview.png)
+
+他の Cloud Discovery ソースと同様、Win10 エンドポイント ユーザー レポートからデータをエクスポートして、さらに詳しく調査できます。
 
 > [!NOTE]
+>
 > - Defender ATP は、最大 4 MB のチャンク単位で Cloud App Security にデータを転送します (約4000エンドポイントトランザクション)
 > - 1時間以内に 4 MB の制限に達していない場合、Defender ATP は過去1時間に実行されたすべてのトランザクションを報告します。
+> - エンドポイントデバイスがフォワードプロキシの背後にある場合、トラフィックの量は Microsoft Defender ATP に表示されないため、Cloud Discovery レポートには含まれません。 詳細については、「[転送プロキシの背後にあるネットワーク接続の監視](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274)」を参照してください。
+
+## <a name="next-steps"></a>次のステップ
+
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>関連ビデオ
 
-[Microsoft Defender ATP および Cloud App Security を使用した企業ネットワークを超えたシャドウ IT 検出](https://www.youtube.com/watch?v=f8hbvbY1Hnc)  
+> [!div class="nextstepaction"]
+> [企業ネットワークを超えたシャドウ IT 検出](https://www.youtube.com/watch?v=f8hbvbY1Hnc)
 
-## <a name="next-steps"></a>次の手順 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md) 
-
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]

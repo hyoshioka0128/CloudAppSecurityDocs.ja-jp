@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: bf25d1e6-e5dc-449f-b50e-1cd4a21b6d3d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c4e00f152fcb09f2133805157b85b2a930ad3aca
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: badb9427ba4a5eed267eb95f3b6d5c66ed058b98
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461347"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720668"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
@@ -36,10 +35,12 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 追加構成なしで、**Microsoft データ分類サービス**を使用するように**検査方法**を設定するためのオプションがあります。 このオプションは、Microsoft Cloud App Security のファイルに対するデータ漏えい保護のポリシーを作成するときに便利です。
 
 1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、 **[データ分類サービス]** を選択します。 また、[[セッションポリシー](session-policy-aad.md) ] ページで **[コントロールファイルのダウンロード (DLP 付き)]** を選択して、**検査方法**を設定することもできます。
-     ![データ分類サービスの設定](./media/dcs-enable.png)
+
+    ![データ分類サービスの設定](media/dcs-enable.png)
 2. ポリシーを適用するタイミングについて、条件が **1 つ以上**満たされた場合、または**すべて**満たされた場合のいずれかを選択します。
 3. **機密情報の種類**を選び、**検査の種類を選択**します。
- ![データ分類サービスの設定](./media/dcs-sensitive-information-type.png)
+
+    ![データ分類サービスの設定](media/dcs-sensitive-information-type.png)
 
 4. [既定の機密情報の種類](https://support.office.com/article/what-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)を使用して、Microsoft Cloud App Security で保護されているファイルに対する操作を定義することができます。 [Office 365 のカスタムの機密情報の種類](https://support.office.com/article/create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)のいずれかを再利用することもできます。
     > [!NOTE]
@@ -51,8 +52,9 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 
 これらのポリシーを設定すると、その他の承認されたクラウド アプリすべてに Office 365 DLP 機能の長所を簡単に拡張できます。また、Microsoft Cloud App Security によって提供されるツールセット (たとえば、[Azure Information Protection 分類ラベルを自動的に適用する](azip-integration.md)機能や、共有アクセス許可を制御する機能) をフルに使用して、アプリに格納されているデータを保護できます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

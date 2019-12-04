@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a9d504193061091352985a616893f2220c5d040
-ms.sourcegitcommit: 254d5be2b002c5658803923aa9ef97240dcdc917
+ms.openlocfilehash: a63546a3404cdf4c48a56b800f5d80d09ee5971e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71263268"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719350"
 ---
 # <a name="working-with-discovered-apps"></a>検出されたアプリの処理
 
-*適用対象:Microsoft Cloud App Security*
+*適用対象: Microsoft Cloud App Security*
 
 Cloud Discovery ダッシュボードは、組織におけるクラウド アプリの利用状況を詳細に理解できるように設計されています。 ここでは、使用されているアプリの種類、開いているアラート、組織内のアプリのリスクレベルの概要を一目で確認できます。 また、アプリを一番多く使っている人が表示され、アプリの本社が地図で示されます。 Cloud Discovery ダッシュボードには、データをフィルター処理するための多くのオプションがあります。 フィルター処理では、最も関心のある項目に基づき、特定のビューを生成できます。その際に使用するグラフィックスはわかりやすく、全体像をひとめで把握できます。
 
-![Cloud Discovery ダッシュボード](./media/cloud-discovery-dashboard.png)
+![Cloud Discovery ダッシュボード](media/cloud-discovery-dashboard.png)
 
 ## <a name="review-the-cloud-discovery-dashboard"></a>Cloud Discovery ダッシュボードのレビュー
 
@@ -58,7 +58,7 @@ Cloud Discovery によって提供されるデータを掘り下げたい場合�
 
 1. **[セキュリティ リスク要因]** については、 **[保存データの暗号化]** を **[サポートされていません]** に設定します。 次に、 **[リスク スコア]** を 6 以下に設定します。
 
-![検出されたアプリのフィルター](./media/discovered-app-filters.png)
+![検出されたアプリのフィルター](media/discovered-app-filters.png)
 
 結果をフィルター処理した後は、すべてのアプリを 1 つのアクションで非承認にする一括操作チェック ボックスを使って、アプリを[非承認にしてブロックする](governance-discovery.md)ことができます。 アプリを非承認にした後は、ブロッキング スクリプトを使って、アプリが環境内で使われないようにブロックすることができます。
 
@@ -68,7 +68,7 @@ Cloud Discovery では、組織のクラウドの使用状況をさらに詳し�
 
 これは、ターゲット URL データが含まれているファイアウォールとプロキシにおいてのみサポートされます。 詳細については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」でサポートされているアプライアンスの一覧をご覧ください。
 
-![サブドメインの情報](./media/discovery-domains.png)
+![サブドメインの情報](media/discovery-domains.png)
 
 ## <a name="discover-resources-and-custom-apps"></a>リソースとカスタム アプリを検出する
 
@@ -83,11 +83,11 @@ Cloud Discovery では、IaaS と PaaS のリソースをより詳しく調べ�
 
 1. Cloud App Security ポータルで **[探索]** 、 **[Discovered resources]\(検出されたリソース)** の順に選択します。
 
-    ![検出されたリソースのメニュー](./media/discovered-resources-menu.png)
+    ![検出されたリソースのメニュー](media/discovered-resources-menu.png)
 
 1. [Discovered resource]\(検出されたリソース\) のページで、各リソースにドリルダウンして、発生したトランザクションの種類、それにアクセスしたユーザーを確認し、そのユーザーについてさらに詳しく調査することができます。
 
-   ![検出リソース](./media/discovery-resources.png)
+   ![検出リソース](media/discovery-resources.png)
 
 1. カスタム アプリの場合、行の末尾の 3 つのボタンをクリックし、 **[Add custom app]\(カスタム アプリの追加)** を選択します。 これにより、アプリに名前を付けて Cloud Discovery ダッシュボードに追加するための **[Add custom app]\(カスタム アプリの追加)** ウィンドウが開きます。
 
@@ -115,7 +115,7 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
 
 1. ユーザーのエイリアス、IP アドレス、またはコンピューター名を追加します。 除外した理由についての情報を追加することをお勧めします。
 
-    ![ユーザーを除外する](./media/exclude-user.png "exclude user")
+    ![ユーザーを除外する](media/exclude-user.png "ユーザーを除外する")
 
 ## <a name="manage-continuous-reports"></a>継続的レポートの管理
 
@@ -139,7 +139,7 @@ Cloud Discovery エグゼクティブ レポートを生成するには:
 
 1. データに必要なフィルターを設定します。 これらのフィルターには、 **[ユーザー グループ]** 、 **[IP アドレス タグ]** 、 **[IP アドレスの範囲]** があります。 IP アドレス タグと IP アドレスの範囲の使用方法の詳細については、「[Organize the data according to your needs (必要に応じてデータを整理する)](ip-tags.md)」を参照してください。
 
-    ![カスタムの継続的レポートを作成する](./media/create-custom-continuous-report.png)
+    ![カスタムの継続的レポートを作成する](media/create-custom-continuous-report.png)
 
 > [!NOTE]
 > すべてのカスタム レポートは、圧縮されていないデータで最大 1 GB までに制限されます。 1 GB を超えるデータがある場合は、最初の 1 GB のデータがレポートにエクスポートされます。
@@ -164,15 +164,18 @@ Cloud Discovery データを削除するには:
 
 1. **[削除]** ボタンをクリックします。
 
-    ![データを削除する](./media/delete-data.png "delete data")
+    ![データの削除](media/delete-data.png "データを削除する")
 
     > [!NOTE]
     > すぐには削除されず、削除処理には数分かかります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
 
-[継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
+> [!div class="nextstepaction"]
+> [継続的なレポートのために自動ログ アップロードを構成する](configure-automatic-log-upload-for-continuous-reports.md)
 
-[Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery データでの作業](working-with-cloud-discovery-data.md)

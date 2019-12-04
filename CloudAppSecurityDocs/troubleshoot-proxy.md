@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 71126072096d9a2ba156c6c3e6b3c17dc0d619b3
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: d98721a4ca08b3e415b8b0fff40676af1b3d37e6
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460114"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720984"
 ---
 # <a name="troubleshooting-conditional-access-app-control"></a>アプリの条件付きアクセス制御のトラブルシューティング
 
@@ -28,7 +28,7 @@ ms.locfileid: "74460114"
 
 ### <a name="the-sign-in-to-the-app-is-not-working"></a>アプリへのサインインが動作していません
 
-1. Cloud App Security のメニューバーで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
+1. Cloud App Security のメニューバーで、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
 1. アプリの一覧で、構成しているアプリが表示されている行で、行の末尾にある3つの点を選択し、 **[アプリの編集]** を選択します。
 1. **[Nonce-処理]** をクリックしてセクションを展開し、 **[Nonce 処理を有効]** にする を選択します。
 
@@ -50,7 +50,7 @@ ms.locfileid: "74460114"
 1. 前の手順でコピーした URL にアクセスし、必要に応じて認証します。
 1. トラフィックログツールで、使用しているプロトコルに基づいて、ドメインとパスに一致する要求を検索します。
 
-    | プロトコル | ドメイン | パス | 状態フィールド名 |
+    | プロトコル | Domain | パス | 状態フィールド名 |
     | --- | --- | --- | --- |
     | OIDC | `https://login.microsoftonline.com` | /common/oauth2/authorize | state |
     | SAML 2.0 | `https://login.microsoftonline.com` | /*id*/saml2 | RelayState |
@@ -58,8 +58,9 @@ ms.locfileid: "74460114"
 1. 要求を選択し、 **[インスペクター]** タブで **[WebForms]** を選択します。
 1. に基づく regex 文字列を作成します。 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Cloud Discovery の展開](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery の展開](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

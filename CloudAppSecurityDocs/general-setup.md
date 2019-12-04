@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 2708e8606e1838678e7d2b66fcb4e32584d475fc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 07482404f8c3c374f8ebe8182512add5db64345b
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458755"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719251"
 ---
 # <a name="basic-setup-for-cloud-app-security"></a>Cloud App Security の基本セットアップ
 
@@ -27,7 +27,7 @@ ms.locfileid: "74458755"
 
 ここでは、Microsoft Cloud App Security ポータルをカスタマイズする手順について説明します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 ポータルにアクセスするには、次の IP アドレスをファイアウォールの許可一覧に追加して、Cloud App Security ポータルにアクセスできるようにする必要があります。
 
@@ -43,7 +43,7 @@ ms.locfileid: "74458755"
 
 ## <a name="set-up-the-portal"></a>ポータルのセットアップ
 
-1. Cloud App Security ポータルのメニューバーで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[設定]** を選択して組織の詳細を構成します。
+1. Cloud App Security ポータルのメニューバーで、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[設定]** を選択して組織の詳細を構成します。
 
 1. **[組織の詳細]** に自社の**組織の表示名**を指定することは重要です。 これは、システムから送信される電子メールや Web ページに表示されます。
 
@@ -70,8 +70,9 @@ ms.locfileid: "74458755"
 >
 > パブリック ピアリングの詳細については、「[ExpressRoute 回線とルーティング ドメイン](https://azure.microsoft.com/documentation/articles/expressroute-circuit-peerings/)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
+> [!div class="nextstepaction"]
+> [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

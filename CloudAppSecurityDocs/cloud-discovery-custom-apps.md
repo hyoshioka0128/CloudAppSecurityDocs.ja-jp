@@ -11,43 +11,42 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 98b0d841-b33d-4ae9-b48b-d9ee77785eaa
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6cc2d82fea2c5f207fccda3a5964c59a57640921
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 768248178042ecc7c3af5289ea1b6c27aa92b37e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461119"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719241"
 ---
 # <a name="add-custom-apps-to-cloud-discovery"></a>Cloud Discovery にカスタム アプリを追加する
 
 *適用対象: Microsoft Cloud App Security*
-    
+
 Cloud Discovery では、Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 クラウド アプリ カタログには、16,000 以上のクラウド アプリが掲載されています。 このカタログには、公開されているクラウド アプリのみが含まれています。それらのアプリに対して、Cloud App Security で可視性とリスク情報が提供されます。
 
 Cloud App Security では、クラウド アプリ カタログから除外されたクラウド アプリを把握するために、組織専用に開発されたか割り当てられたカスタム クラウド アプリ (LOB アプリ) の使用を検出できます。
 
-新しいカスタム クラウド アプリを追加すると、アップロードされたファイアウォールおよびプロキシ トラフィックのログ メッセージが Cloud App Security によってアプリと対応付けられ、組織全体でのこのアプリの使用状況が、Cloud Discovery ページで可視化されます (たとえば、アプリを使用しているユーザーの数、アプリを使用している一意のソース IP アドレスの数、アプリの送受信トラフィックの量など)。 
+新しいカスタム クラウド アプリを追加すると、アップロードされたファイアウォールおよびプロキシ トラフィックのログ メッセージが Cloud App Security によってアプリと対応付けられ、組織全体でのこのアプリの使用状況が、Cloud Discovery ページで可視化されます (たとえば、アプリを使用しているユーザーの数、アプリを使用している一意のソース IP アドレスの数、アプリの送受信トラフィックの量など)。
 
 ## <a name="add-a-new-custom-cloud-app"></a>新しいカスタム クラウド アプリを追加する
 
-1. Cloud App Security ポータルで、 **[検出]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。 
-  
-   ![Cloud Discovery ダッシュボード メニュー](./media/cloud-discovery-dashboard-menu.png)
+1. Cloud App Security ポータルで、 **[検出]** 、 **[Cloud Discovery dashboard]\(Cloud Discovery ダッシュボード\)** の順にクリックします。
 
-2. 右上隅にある 3 つの点をクリックし、 **[カスタム アプリの新規追加]** を選択します。 
+    ![Cloud Discovery ダッシュボード メニュー](media/cloud-discovery-dashboard-menu.png)
 
-   ![カスタム アプリの新規追加メニュー](./media/add-custom-app-menu.png)
+2. 右上隅にある 3 つの点をクリックし、 **[カスタム アプリの新規追加]** を選択します。
+
+    ![カスタム アプリの新規追加メニュー](media/add-custom-app-menu.png)
 
 3. 新しいアプリ レコードを定義するフィールドに入力します。定義したレコードは、ファイアウォール ログ内で検出された後にクラウド アプリ カタログと Cloud Discovery に一覧表示されます。
 
-   ![カスタム アプリ](./media/add-custom-app.png)
+    ![カスタム アプリ](media/add-custom-app.png)
 
 4. **[ドメイン]** には、カスタム アプリにアクセスするときに使用する一意のドメインを入力します。 入力したドメインは、トラフィック ログ メッセージをこのアプリに対応付けるために使用されます。 使用しているデータ ソースにアプリの URL 情報が含まれていない場合は、**IPv4** と **IPv6** のアドレス フィールドが入力されていることを確認します。
-5. **ホスティング プラットフォーム**と **Azure サブスクリプション ID** を追加します。 必要に応じて、アプリの**部署**を指定します。 
+5. **ホスティング プラットフォーム**と **Azure サブスクリプション ID** を追加します。 必要に応じて、アプリの**部署**を指定します。
 6. リスク **スコア**を割り当て、このレコードの変更が追跡できるように、**アプリのメモ**を追加します。
 7. **[作成]** をクリックします。
 
@@ -57,13 +56,12 @@ Cloud App Security では、クラウド アプリ カタログから除外さ�
 
 >[!NOTE]
 > 追加したカスタム アプリには、"**カスタム アプリ**" タグが自動的にタグ付けされます。 このアプリ タグを削除することはできません。
-すべてのカスタム アプリを表示するには、 **[アプリ タグ]** フィルターを "カスタム アプリ" に等しくなるように設定します。 
-<!-- -  By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
+すべてのカスタム アプリを表示するには、 **[アプリ タグ]** フィルターを "カスタム アプリ" に等しくなるように設定します。
+<!-- - By default, custom apps have a risk score of 10, but you can use the **Override app score** action to change it at any time.-->
 
-  
-## <a name="next-steps"></a>次の手順 
-[ユーザー アクティビティ ポリシー](user-activity-policies.md)   
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+> [!div class="nextstepaction"]
+> [ユーザー アクティビティ ポリシー](user-activity-policies.md)
+
+[!INCLUDE [Open support ticket](includes/support.md)]

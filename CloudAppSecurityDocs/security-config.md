@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: c6d8f8af-867b-43ab-adee-f06520577fe7
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1e53dcc94b6ca96aeefcfd511e4ae4e9557e5a21
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: e7acfac8168057b66e7c0295211ef0f29315600e
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460493"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720997"
 ---
 # <a name="security-configuration-for-azure"></a>Azure のセキュリティ構成
 
@@ -38,27 +37,30 @@ Microsoft Cloud App Security では、ご利用の Azure 環境におけるセ�
 Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効にするには、次の操作を行います。
 
 1. <a href="https://docs.microsoft.com/azure/security-center/security-center-management-groups" target="_blank">Azure Security Center に対するテナント全体の可視性を確保します</a>。 このプロセスには以下が含まれます。
-   - 自分とこのページへのアクセスを許可するその他すべての Microsoft Cloud App Security 管理者に、すべてのサブスクリプションに対する閲覧者のロールを付与します。
-   - Azure Security Center でルート管理グループのロールを割り当てます。
-   - Azure AD のグローバル管理者を管理者特権にして、Azure サブスクリプションへのアクセスを許可します。
-   - この記事では、セキュリティ管理者になるためのプロセスについて説明します。 この統合を機能させるために必要な最小のアクセス許可は、**閲覧者**です。
 
-2. 変更を有効にするには、必ず <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> を開く必要があります。
+    - 自分とこのページへのアクセスを許可するその他すべての Microsoft Cloud App Security 管理者に、すべてのサブスクリプションに対する閲覧者のロールを付与します。
+    - Azure Security Center でルート管理グループのロールを割り当てます。
+    - Azure AD のグローバル管理者を管理者特権にして、Azure サブスクリプションへのアクセスを許可します。
+    - この記事では、セキュリティ管理者になるためのプロセスについて説明します。 この統合を機能させるために必要な最小のアクセス許可は、**閲覧者**です。
 
-3. Cloud App Security で、を参照して > **セキュリティ構成**を**調査**し、 **[Azure]** タブを選択します。
+1. 変更を有効にするには、必ず <a href="https://ms.portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0" target="_blank">Azure Security Center</a> を開く必要があります。
+
+1. Cloud App Security で、を参照して > **セキュリティ構成**を**調査**し、 **[Azure]** タブを選択します。
+
     - Microsoft Cloud App Security が提供するのは、上位 50 個のサブスクリプションに向けた推奨事項のみです。
     - 変更が有効になるまでに、最大 15 分かかる場合があります。
 
-     ![セキュリティ構成メニュー](media/security-configuration-menu.png)
+    ![セキュリティ構成メニュー](media/security-configuration-menu.png)
 
-4. 種類、リソース、サブスクリプションによって推奨事項をフィルター処理することができます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](./media/asc-icon.png) をクリックし、推奨事項を開くことができます。ここでは、推奨事項の詳細な情報を調べることができます。
+1. 種類、リソース、サブスクリプションによって推奨事項をフィルター処理することができます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](media/asc-icon.png) をクリックし、推奨事項を開くことができます。ここでは、推奨事項の詳細な情報を調べることができます。
 
 セキュリティに関する推奨事項を実装する方法については、「[Azure セキュリティ センターでのセキュリティに関する推奨事項の管理](https://docs.microsoft.com/azure/security-center/security-center-recommendations)」をご覧ください。
 
-   ![セキュリティ構成](media/security-configuration-azure.png)
+![セキュリティ構成](media/security-configuration-azure.png)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

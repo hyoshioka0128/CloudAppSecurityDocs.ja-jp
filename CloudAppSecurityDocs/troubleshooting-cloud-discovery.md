@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 76dfaebb-d477-4bdb-b3d7-04cc3fe6431d
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: cd11c5a35761f21cc928a3debbc05a58ef56b6d1
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459983"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74721075"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
 
@@ -32,14 +31,13 @@ ms.locfileid: "74459983"
 
 Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が表示されない場合は、 **Win10 エンドポイントユーザー**のレポートがないため、接続先のコンピューターが Windows 10 バージョン1809以降であること、およびデータにアクセスできるようになるまでに必要な2時間を待機していることを確認してください。
 
-
 ## <a name="log-parsing-errors"></a>ログ解析エラー
 
 ガバナンス ログを使用して Cloud Discovery ログの処理を追跡できます。 この記事では、表示される可能性がある各エラーに対する解決方法について説明します。
 
 ### <a name="governance-log-errors"></a>ガバナンス ログ エラー
 
-|エラー|説明|解決策|
+|Error|[説明]|解決方法|
 |----|----|----|
 |サポートされていないファイルの種類|アップロードしたファイルが有効なログ ファイルではありません (画像ファイルなど)。|ファイアウォールまたはプロキシから直接エクスポートされた **text**、**zip、または **gzip** ファイルをアップロードします。|
 |ログ形式が予期される形式と一致しません|アップロードしたログの形式が、このデータ ソースで予期されるログの形式と一致しませんでした。|1. ログが破損していないことを確認します。 <br /> 2. [アップロード] ページに表示されるサンプル形式にログを比較して照合します。|
@@ -60,13 +58,13 @@ Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が�
 
 ## <a name="discovery-dashboard-errors"></a>Discovery ダッシュボードのエラー
 
-|問題点|解決策|
+|問題|解決方法|
 |----|----|
 |Discovery データのアップロードと解析は成功しましたが、Cloud Discovery ダッシュボードの表示が空です|ダッシュボードは、ログに含まれていないデータでフィルターされているため、表示されるデータがない場合があります。 Cloud Discovery ダッシュボードのフィルターを変更して、別の種類のデータが結果に表示されるようにします。|
 
-## <a name="next-steps"></a>次の手順
-  
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
+## <a name="next-steps"></a>次のステップ
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
+[!INCLUDE [Open support ticket](includes/support.md)]

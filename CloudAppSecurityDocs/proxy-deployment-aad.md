@@ -10,24 +10,20 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 14209e0b394571ee0d71784cb4c50683226a7a2e
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 290429e345e6b814a34a3e9214b5f69fdcbf7ddf
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460624"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720928"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>フィーチャー アプリでの条件付きアクセス アプリ制御の展開
 
 *適用対象: Microsoft Cloud App Security*
 
->[!div class="step-by-step"]
-[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>
-[次: 任意のアプリのアプリの条件付きアクセス制御をオンボードしてデプロイする»](proxy-deployment-any-app.md)
-
 Microsoft Cloud App Security のセッションコントロールは、おすすめアプリで動作します。 Cloud App Security で利用できるアプリの一覧については、「 [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用](proxy-intro-aad.md#featured-apps)したアプリの保護」を参照してください。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 Azure AD アプリに対してアプリの条件付きアクセス制御をデプロイするには、Cloud App Security ライセンスと共に有効な [Azure AD Premium P1 のライセンス](https://docs.microsoft.com/azure/active-directory/license-users-groups)が必要になります。
 
@@ -57,7 +53,7 @@ Azure AD アプリに対してアプリの条件付きアクセス制御をデ�
 
 1. 該当する **[Condition assignments]** \(条件に同意する\) または **[制御の許可]** を追加します (省略可能)。
 
-   ![Azure AD の条件付きアクセス](./media/azure-ad-caac-policy.png)
+    ![Azure AD 条件付きアクセス](media/azure-ad-caac-policy.png)
 
 1. **[有効]** をクリックして**保存**します。
 
@@ -74,12 +70,12 @@ Cloud App Security によって、サインインする新しい各アプリの�
 
 上記の手順を利用して、おすすめアプリ用の組み込みの Cloud App Security ポリシーを Azure AD 内に直接作成できました。 この手順では、これらのアプリに対してアクセス制御とセッション制御が構成されていることを確認します。
 
-1. Cloud App Security ポータルで、[設定] 歯車![設定アイコン](./media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
+1. Cloud App Security ポータルで、[設定] 歯車![設定アイコン](media/settings-icon.png "設定アイコン")をクリックし、 **[アプリの条件付きアクセス制御]** を選択します。
 
 1. アプリの条件付きアクセス制御 apps テーブルで、**使用可能なコントロール** 列を確認し、アプリに対して**アクセス制御**と**セッション制御**の両方が表示されていることを確認します。
 
-   > [!NOTE]
-   > アプリのセッション制御が表示されない場合は、その特定のアプリではまだ使用できません。 [カスタムアプリ](proxy-deployment-any-app.md)としてすぐに追加することも、要求を開いて **[セッション制御の要求]** をクリックすることでおすすめアプリとして追加することもできます。
+    > [!NOTE]
+    > アプリのセッション制御が表示されない場合は、その特定のアプリではまだ使用できません。 [カスタムアプリ](proxy-deployment-any-app.md)としてすぐに追加することも、要求を開いて **[セッション制御の要求]** をクリックすることでおすすめアプリとして追加することもできます。
     >
     >![アプリの条件付きアクセス制御の要求](media/caac-request.png)
 
@@ -91,19 +87,28 @@ Cloud App Security によって、サインインする新しい各アプリの�
 
 1. フィルター処理は、 **[詳細]** をクリックし、 **[Source equals Access control]** \(ソースがアクセス制御と等しい\) を使用してフィルター処理することで実行できます。
 
-    ![Azure AD の条件付きアクセスを使用するフィルター処理](./media/sso-logon.png)
+    ![Azure AD の条件付きアクセスを使用するフィルター処理](media/sso-logon.png)
 
-1. マネージド デバイスとアンマネージド デバイスからモバイルおよびデスクトップのアプリにサインインすることをお勧めします。 これは、アクティビティ ログで、アクティビティを正常にキャプチャするためです。<br>
+1. マネージド デバイスとアンマネージド デバイスからモバイルおよびデスクトップのアプリにサインインすることをお勧めします。 これは、アクティビティ ログで、アクティビティを正常にキャプチャするためです。<br />
 アクティビティが正常にキャプチャされたことを確認するには、アクティビティ ドロワーが開くようにシングル サインオン ログオン アクティビティをクリックします。 **[ユーザー エージェント タグ]** に、デバイスがネイティブ クライアント (モバイルまたはデスクトップ アプリのいずれかであることを意味する) であるか、またはデバイスがマネージド デバイス (準拠、ドメイン参加済み、または有効なクライアント証明書) であるかが適切に反映されていることを確認します。
 
 > [!NOTE]
 > デプロイ後は、[アプリの条件付きアクセス制御] ページからアプリを削除することはできません。 アプリにセッションやアクセス ポリシーを設定しないかぎり、アプリの条件付きアクセス制御でアプリの動作が変更されることは一切ありません。
 
->[!div class="step-by-step"]
-[« 戻る: 条件付きのアクセス アプリ制御の概要](proxy-intro-aad.md)<br>[次: 任意のアプリのアプリの条件付きアクセス制御をオンボードしてデプロイする»](proxy-deployment-any-app.md)
+## <a name="next-steps"></a>次のステップ
 
-## <a name="next-steps"></a>次の手順
+> [!div class="nextstepaction"]
+> [アクセスポリシーを作成する方法](access-policy-aad.md)
 
-[Cloud App Security アプリの条件付きアクセス制御の操作](proxy-intro-aad.md)
+## <a name="see-also"></a>「
+
+> [!div class="nextstepaction"]
+> [アプリの条件付きアクセス制御の概要](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)
+
+> [!div class="nextstepaction"]
+> [任意のアプリにアプリの条件付きアクセス制御をデプロイする»](proxy-deployment-any-app.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 6bde2a6c-60cc-4a7d-9e83-e8b81ac229b0
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0879c468f48c68214db8a4ff77e5f7ccb0eba252
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74458401"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720519"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを有効にする
 
@@ -38,42 +37,48 @@ Windows または Linux コンピューター上で Docker を実行し、Cloud 
 
 シェルで次のコマンドを使って、コンテナーが作成され、稼働していることを確認します。
 
-    bash
-    docker ps
+```bash
+docker ps
+```
 
-![docker ps](./media/docker-1.png "docker ps")
+![docker ps](media/docker-1.png)
 
 ### <a name="copy-proxy-root-ca-certificate-to-the-container"></a>プロキシのルート CA 証明書をコンテナーにコピーする
 
 ご自身の仮想マシンから、CA 証明書を Cloud App Security のコンテナーにコピーします。 次の例では、コンテナーの名前は *Ubuntu-LogCollector*、CA 証明書の名前は *Proxy-CA.crt* となっています。
 Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナー内のフォルダーに証明書がコピーされます。
 
-    bash
-    docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```bash
+docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
+```
 
 ### <a name="set-the-configuration-to-work-with-the-ca-certificate"></a>CA 証明書と連携するよう構成を設定する
 
 1. 次のコマンドを使ってコンテナー内に移動します。 ログ コレクターのコンテナー内で bash が開かれます。
 
-        bash
-        docker exec -it Ubuntu-LogCollector /bin/bash
+    ```bash
+    docker exec -it Ubuntu-LogCollector /bin/bash
+    ```
 
 2. コンテナー内の bash から、Java の jre ディレクトリに移動します。 バージョンに関するパスのエラーを回避するために、このコマンドを使います。
 
-       bash
-       cd 'find /opt/jdk/*/jre -iname bin'
+    ```bash
+    cd 'find /opt/jdk/*/jre -iname bin'
+    ```
 
 3. 先ほどコピーしたルート証明書を、*discovery* フォルダーから Java のキーストアにインポートして、パスワードを定義します。 既定のパスワードは "changeit" です。
 
-       bash
-       ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```bash
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ```
 
 4. 次のコマンドを使ってインポート中に指定した別名 (*SelfSignedCert*) を検索することで、証明書が CA キーストアに正しくインポートされたことを確認します。
 
-       bash
-       ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```bash
+    ./keytool --list --keystore ../lib/security/cacerts | grep self
+    ```
 
-![keytool](./media/docker-2.png "keytool")
+    ![keytool](media/docker-2.png "keytool")
 
 インポートしたプロキシの CA 証明書が表示されます。
 
@@ -83,25 +88,26 @@ Ubuntu ホスト上でコマンドを実行します。 稼働中のコンテナ
 
 ログ コレクターの作成中に使った API トークンを使って、**collector_config** コマンドを実行します。
 
-![API トークン](./media/docker-3.png "API トークン")
+![API トークン](media/docker-3.png "API トークン")
 
 コマンドを実行するときに、ご自身の API トークンを指定します。
 
-      bash
-      collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```bash
+collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
+```
 
-
-![構成の更新](./media/docker-4.png "構成の更新")
+![構成の更新](media/docker-4.png "構成の更新")
 
 これでログ コレクターが Cloud App Security と通信できるようになりました。 これにデータを送信すると、Cloud App Security ポータルでその状態が **[正常]** から **[接続済み]** に変わります。
 
-![状態](./media/docker-5.png "状態")
+![オンライン](media/docker-5.png "状態")
 
 >[!NOTE]
 > ログ コレクターの構成を更新する必要がある場合 (たとえば、データ ソースを追加または削除する場合) は、通常はコンテナーを**削除**して、前の手順をもう一度実行する必要があります。 これを回避するために、Cloud App Security ポータルで生成された新しい API トークンを使って *collector_config* ツールを再実行することができます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[ユーザー アクティビティ ポリシー](user-activity-policies.md)
+> [!div class="nextstepaction"]
+> [ユーザー アクティビティ ポリシー](user-activity-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

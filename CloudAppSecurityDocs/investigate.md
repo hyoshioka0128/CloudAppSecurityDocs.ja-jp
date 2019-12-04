@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 6fc5d998bc174096d7530a37407137bfbf71d50d
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: c4f914fed75e30aca3b9d87d911c729dff0b77c0
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461317"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74719930"
 ---
 # <a name="investigate"></a>調査
 
@@ -31,7 +31,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 クラウド環境内のアプリを調査するために、以下のダッシュボードを使用できます。
 
-|ダッシュボード|説明|
+|[ダッシュボード]|[説明]|
 |---------------|-----------------|
 |メイン ダッシュボード|クラウドの状態 (ユーザー、ファイル、アクティビティ) と必要なアクション (アラート、アクティビティの違反、コンテンツの違反) の概要。|
 |アプリダッシュボード: 概要|場所ごとのアプリの使用状況の概要、ユーザー数ごとの使用状況グラフ。|
@@ -55,9 +55,9 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 - Cloud App Security コンソールで、アプリ カタログまたは検出されたアプリに移動します。
 
-- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](./media/sanction-three-dots.png "承認されるドットとしてタグ付け")] (Tag as sanctioned dots) を選択し、 **[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。
+- 検出されたアプリの一覧で、承認するアプリが表示されている行の端にある 3 つのドット [![承認済みとしてタグを付けるドット](media/sanction-three-dots.png "承認されるドットとしてタグ付け")] (Tag as sanctioned dots) を選択し、 **[承認済みとしてマークを付ける]** (Mark as sanctioned) を選択します。
 
-    ![承認済みとしてタグ付け](./media/mark-as-sanctioned.png "承認済みとしてタグ付け")
+    ![承認済みとしてタグ付け](media/mark-as-sanctioned.png "承認済みとしてタグ付け")
 
 ## <a name="use-the-investigation-tools"></a>調査ツールの使用
 
@@ -113,7 +113,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
     - それらのアプリをデプロイしているユーザーの数 それらのアプリの一般的な普及率
 
-    ![アプリダッシュボード](./media/investigate-app.png "アプリの調査")
+    ![アプリダッシュボード](media/investigate-app.png "アプリの調査")
 
 5. **Cloud Discovery ダッシュボード**に移動して、次の項目を確認します。
 
@@ -143,7 +143,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
 5. **[次のすべてに一致するアクティビティ]** で、 **+** を選択してフィルターを追加します。 **[IP タグ]** までスクロール ダウンして、 **[Tor]** を選択します。
 
-    ![危険な Ip のポリシーの例](./media/example-policy-risky-ips.png "ポリシーの危険な IP の例")
+    ![危険な Ip のポリシーの例](media/example-policy-risky-ips.png "ポリシーの危険な IP の例")
 
 ポリシーを設定したところ、仮定に反してポリシー違反のアラートが表示されました。
 
@@ -159,7 +159,7 @@ Microsoft Cloud App Security をクラウド環境で実行した後は、学習
 
     許可されるイベントで、再発する可能性がある場合は、ポリシーを変更することにより、今後この種類のイベントが違反と見なされることがなくなります。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 組織のクラウド アプリを制御する方法については、「[Control](control.md)」を参照してください。
 

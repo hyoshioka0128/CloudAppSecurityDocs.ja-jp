@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1f860400ec95d0aa2584eb1fd4a8682bb5a9ac58
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459583"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720445"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 
@@ -41,7 +41,7 @@ ms.locfileid: "74459583"
 
 2. **[ポリシーの作成]** をクリックしてから **[アクティビティ ポリシー]** を選択します。
 
-     ![アクティビティ ポリシー メニュー](./media/activity-policy-menu.png)
+     ![アクティビティ ポリシー メニュー](media/activity-policy-menu.png)
 
 3. ポリシーの名前と説明を入力します。この場合、ポリシー テンプレートを使用することもできます。ポリシー テンプレートの詳細については、「[Control cloud apps with policies (ポリシーによるクラウド アプリの制御)](control-cloud-apps-with-policies.md)」を参照してください。
 
@@ -60,17 +60,17 @@ ms.locfileid: "74459583"
 
 - 複数回失敗したログイン
 
-     短い期間内に多数のログイン失敗が発生したらアラートを受け取るように、ポリシーを設定できます。 この種のポリシーを構成するには、 **[New Activity Policy]\(新しいアクティビティ ポリシー\)** ページで適切なアクティビティ フィルターを選択します。
+    短い期間内に多数のログイン失敗が発生したらアラートを受け取るように、ポリシーを設定できます。 この種のポリシーを構成するには、 **[New Activity Policy]\(新しいアクティビティ ポリシー\)** ページで適切なアクティビティ フィルターを選択します。
 
-     **[アクティビティ フィルター]** フィールドの下で、アラートがトリガーされるパラメーターを設定します。
+    **[アクティビティ フィルター]** フィールドの下で、アラートがトリガーされるパラメーターを設定します。
 
-     ![複数回失敗したサインイン試行のポリシーの例](./media/multiple-failed-log-on-attempts-policy-example.png "複数回失敗したログオン試行ポリシーの例")
+    ![複数回失敗したサインイン試行のポリシーの例](media/multiple-failed-log-on-attempts-policy-example.png "複数回失敗したログオン試行ポリシーの例")
 
 - 高いダウンロード率
 
-     ダウンロード アクティビティが予想を上回るまたは通常レベルを超える場合にアラートを受け取るようにポリシーを設定できます。 この種のポリシーを構成するには、 **[Rate]\(レート\)** パラメーターで、アラートをトリガーするパラメーターを選択します。
+    ダウンロード アクティビティが予想を上回るまたは通常レベルを超える場合にアラートを受け取るようにポリシーを設定できます。 この種のポリシーを構成するには、 **[Rate]\(レート\)** パラメーターで、アラートをトリガーするパラメーターを選択します。
 
-     ![高いダウンロード率の例](./media/high-download-rate-example.png "高いダウンロード率の例")
+    ![高いダウンロード率の例](media/high-download-rate-example.png "高いダウンロード率の例")
 
 ## <a name="activity-policy-reference"></a>アクティビティ ポリシーの参照
 
@@ -87,8 +87,9 @@ ms.locfileid: "74459583"
 
 - アクション - 違反が検出された場合に自動的に適用される一連のガバナンス アクションをポリシーに設定します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
-[データ保護ポリシー](data-protection-policies.md)
+> [!div class="nextstepaction"]
+> [データ保護ポリシー](data-protection-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: 8168319a-199f-4e6c-ad68-e0f236480803
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 562dc886443a00ef4860286699d81ca433f7a345
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 26715a7600edc6dc4602dcc977ac164e5ae3f35c
+ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74461274"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74720277"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -41,7 +40,7 @@ Azure Information Protection を Cloud App Security に統合すると、両方�
 > [!NOTE]
 > この機能を有効にするには、Cloud App Security ライセンスと Azure Information Protection の Premium P1 のライセンスの両方が必要です。 両方のライセンスが配置されるとすぐに、Cloud App Security は Azure Information Protection サービスから組織ラベルを同期します。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 - Azure Information Protection の統合を行うには、[Office 365 用アプリ コネクタ](connect-office-365-to-microsoft-cloud-app-security.md)を有効にする必要があります。
 
@@ -86,9 +85,11 @@ Azure Information Protection を Cloud App Security に統合するために必�
 Cloud App Security で、分類ラベルを対象にしたコンテンツ検査を有効にしてファイルをスキャンするには、次の手順に従います。
 
 1. Cloud App Security の設定歯車で、 **[システム]** 見出しの下の **[設定]** ページを選択します。
-    ![設定メニュー](./media/azip-system-settings.png)
+
+    ![[設定] メニュー](media/azip-system-settings.png)
 1. **Azure Information Protection** で、 **[Automatically scan files for Azure Information Protection classification labels]\(Azure Information Protection 分類ラベルについてファイルを自動的にスキャンする\)** を選択します。
-    ![Azure Information Protection を有効にする](./media/enable-azip.png)
+
+    ![Azure Information Protection を有効にする](media/enable-azip.png)
 
 Azure Information Protection を有効にすると、Cloud App Security 内で分類ラベルのあるファイルを表示し、ラベルごとにフィルターを適用できるようになります。 Cloud App Security がクラウド アプリに接続されたら、Azure Information Protection 統合機能を利用し、Azure Information Protection 分類ラベルを Cloud App Security ポータルで (保護ありまたは保護なしで) 適用できます。ファイルに直接追加するか、ガバナンス アクションとして分類ラベルを自動適用するようにファイル ポリシーを構成できます。
 
@@ -101,19 +102,20 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 
 組織の外部で設定された分類ラベルを無視するには、Cloud App Security ポータル内の **[設定]** と **[Azure Information Protection]** に移動します。 **[Only scan files for Azure Information Protection classification labels and content inspection warnings from this tenant]\(このテナントから Azure Information Protection の分類ラベルとコンテンツ検査の警告に対してのみファイルをスキャンする\)** を選択します。
 
-![ラベルを無視する](./media/azip-ignore.png)
+![ラベルを無視する](media/azip-ignore.png)
 
 ### <a name="apply-labels-directly-to-files"></a>ファイルにラベルを直接適用する
 
 1. **[調査]** の **[ファイル]** ページから、保護するファイルを選択します。 ファイルの行の末尾にある 3 つのドットをクリックし、 **[分類ラベルの適用]** を選択します。  
 
-   ![アプリの保護](./media/protect-app.png)
+    ![アプリの保護](media/protect-app.png)
   
-   >[!NOTE]
-   > Cloud App Security は、最大 50 MB のファイルに Azure Information Protection を適用できます。  
+    >[!NOTE]
+    > Cloud App Security は、最大 50 MB のファイルに Azure Information Protection を適用できます。
 
 2. ファイルに適用する組織の分類ラベルを選択し、 **[適用]** をクリックします。
-   ![保護の分類ラベル](./media/protect-template.png)
+
+    ![保護の分類ラベル](media/protect-template.png)
 
 3. 分類ラベルを選択して [適用] をクリックすると、Cloud App Security によって分類ラベルが元のファイルに適用されます。
 
@@ -134,7 +136,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 2. 検出するファイルの種類を含めるようにポリシーを設定します。 たとえば、 **[アクセス レベル]** が **[内部]** ではなく、 **[所有者 OU]** が財務チームであるすべてのファイルを選択します。
 3. 関連アプリのガバナンス アクションの下で **[分類ラベルの適用]** をクリックし、ラベルの種類を選択します。
 
-   ![ラベルを適用する](./media/aip-gov-action.png)
+    ![ラベルを適用する](media/aip-gov-action.png)
 
 > [!NOTE]
 > ファイル ポリシーを介して Azure Information Protection のラベルを自動的に適用する機能は、強力な機能です。 多数のファイルにラベルを誤って適用することを防ぐための安全対策として、各テナントでアプリごとに 1 日に実行できる**ラベルの適用**アクションに 100 回という上限があります。 1 日の上限に達すると、ラベルの適用アクションは一時的に停止し、次の日 (UTC 12:00 を過ぎた時点) になると自動的に続行します。 テナントの上限を引き上げるには、サポートチケットを開きます。
@@ -143,15 +145,15 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 
 - 例: 以下が Azure Information Protection 分類ラベルでラベル付けしたドキュメントである場合:
 
-   ![Azure Information Protection 画面サンプル](./media/azip-screen.png)
+    ![Azure Information Protection 画面サンプル](media/azip-screen.png)
 
 - **[ファイル]** ページで Azure Information Protection の分類ラベルでフィルター処理することで、Cloud App Security でこのドキュメントを表示できます。
 
-   ![Cloud App Security と Azure Information Protection の比較](./media/cas-compared-azip.png)
+    ![Cloud App Security と Azure Information Protection の比較](media/cas-compared-azip.png)
 
 - これらのファイルとその分類ラベルの詳細情報については、ファイル ドロワーで取得できます。 **[ファイル]** ページで関連ファイルをクリックし、分類ラベルが使用されているかどうかを確認します。
 
-   ![ファイル ドロワー](./media/azip-file-drawer.png)
+    ![ファイル ドロワー](media/azip-file-drawer.png)
 
 - Cloud App Security 内でファイル ポリシーを作成することで、不適切に共有されているファイルの制御、およびラベル付けされており最近変更されたファイルの検索を行うことができます。
 
@@ -167,7 +169,7 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 2. ポリシーの名前、重要度、カテゴリを設定します。
 3. Box で外部共有されている機密データをすべて検索する、以下のフィルターを追加します。
 
-![機密性ポリシー](./media/azip-confidentiality-policy.png)
+    ![機密性ポリシー](media/azip-confidentiality-policy.png)
 
 **サンプル ポリシー - SharePoint の Finance フォルダー以外にある最近変更された制限付きのデータ:**
 
@@ -175,19 +177,21 @@ Cloud App Security と Azure Information Protection の連動のしくみの詳�
 2. ポリシーの名前、重要度、カテゴリを設定します。
 3. 次のフィルターを追加して、最近変更された制限付きデータをすべて検索します。また、フォルダー選択オプションで Finance フォルダーを除外します。
 
-![制限付きデータのポリシー](./media/azip-restricted-data-policy.png)
+    ![制限付きデータのポリシー](media/azip-restricted-data-policy.png)
 
 これらのポリシーについて、アラートやユーザー通知を設定するか、すぐに対処することもできます。
 詳細については、[ガバナンス アクション](governance-actions.md)に関するページを参照してください。
 
 [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) で詳細を確認するとともに、Azure Information Protection の[クイック スタート チュートリアル](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)もご覧ください。
 
+## <a name="next-steps"></a>次のステップ
+
+> [!div class="nextstepaction"]
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+
 ## <a name="related-videos"></a>関連ビデオ
 
-[Cloud App Security と Azure Information Protection の統合](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
-
-## <a name="next-steps"></a>次の手順
-
-[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [!div class="nextstepaction"]
+> [Cloud App Security と Azure Information Protection の統合](https://channel9.msdn.com/Shows/Microsoft-Security/MCAS--AIP-Integrations)  
 
 [!INCLUDE [Open support ticket](includes/support.md)]
