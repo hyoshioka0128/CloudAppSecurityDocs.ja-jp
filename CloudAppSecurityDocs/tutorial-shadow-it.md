@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 132e4860a1f69f23d92001b2390aa46b3fed2b05
-ms.sourcegitcommit: 71ce3747f3f29dd8133457e4b9efbe0f8734309d
+ms.openlocfilehash: 783e959fdda7b8e3b66171f20034985f9f993513
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74461778"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720841"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル: ネットワーク内のシャドウ IT の検出と管理
 
@@ -40,7 +40,7 @@ ms.locfileid: "74461778"
 
 このプロセスを使用して、組織内のシャドウ IT の Cloud Discovery をロールアウトします。
 
-![シャドウ IT のライフサイクル](./media/shadow-it-lifecycle.png)
+![シャドウ IT のライフサイクル](media/shadow-it-lifecycle.png)
 
 ### <a name="phase-1-discover-and-identify-shadow-it"></a>フェーズ 1: シャドウ IT の検出と特定
 
@@ -102,6 +102,7 @@ Cloud App Security で使用できるレポート オプションに加えて、
 
 ## <a name="see-also"></a>参照
 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]  

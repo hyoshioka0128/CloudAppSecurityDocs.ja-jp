@@ -11,12 +11,12 @@ ms.service: cloud-app-security
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0f79fea252ed16a603b75ea20e5641b3be2f963f
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 0b9f026c9509153cca5c51024616662983550ef7
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74460874"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720676"
 ---
 # <a name="quickstart-get-started-with-microsoft-cloud-app-security"></a>クイック スタート:Microsoft Cloud App Security の使用を開始する
 
@@ -33,7 +33,7 @@ ms.locfileid: "74460874"
 
 - 組織で Cloud App Security を使用するためのライセンスを所有している必要があります。 価格詳細については、[Cloud App Security ライセンス データシート](https://aka.ms/mcaslicensing)を参照してください。
 
-     テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。
+    テナントのライセンス認証のサポートが必要な場合は、「[一般法人向け Office 365 のサポートへのお問い合わせ - 管理者向けヘルプ](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)」をご覧ください。
 - Cloud App Security のライセンスを入手すると、ライセンス認証情報と Cloud App Security ポータルへのリンクが記載されたメールが送信されます。
 
 - Cloud App Security をセットアップするには、Azure Active Directory または Office 365 のグローバル管理者またはセキュリティ管理者である必要があります。 管理者ロールを割り当てられたユーザーは、組織がサブスクライブしているすべてのクラウド アプリについて同じアクセス許可を持つことを理解しておくことが重要です。 これは、ロールの割り当てを、Microsoft 365 管理センター、Azure クラシック ポータル、または [Windows PowerShell](https://technet.microsoft.com/library/mt736914.aspx) 用 Azure AD モジュールのいずれで行った場合でも同じです。 詳細については、「[Office 365 で管理者ロールを割り当てる](https://support.office.com/article/Assigning-admin-roles-in-Office-365-eac4d046-1afd-4f1a-85fc-8219c79e1504)」および「[Azure Active Directory の管理者ロールの割り当て](https://azure.microsoft.com/documentation/articles/active-directory-assign-admin-roles/)」を参照してください。
@@ -87,10 +87,10 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 1. Zscaler を使用する場合は、Cloud App Security に [Zscaler を統合](zscaler-integration.md)します。
 1. 完全なカバレッジを実現するには、継続的な Cloud Discovery レポートを作成します。
 
-   1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
-   1. **[ログの自動アップロード]** を選択します。
-   1. **[データ ソース]** タブでソースを追加します。
-   1. **[ログ コレクター]** タブでログ コレクターを構成します。
+    1. 設定の歯車アイコンから **[Cloud Discovery 設定]** を選択します。
+    1. **[ログの自動アップロード]** を選択します。
+    1. **[データ ソース]** タブでソースを追加します。
+    1. **[ログ コレクター]** タブでログ コレクターを構成します。
 
 ### <a name="to-create-a-snapshot-cloud-discovery-report"></a>Cloud Discovery のスナップショット レポートを作成するには
 
@@ -143,7 +143,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 1. IP アドレス範囲の**詳細**や**場所**、**タグ**、**カテゴリ**を入力します。
 1. **[作成]** を選択します。
 
-   これでポリシーを作成するときや、継続的レポートをフィルター処理して作成するときに、IP タグを使うことができるようになります。
+    これでポリシーを作成するときや、継続的レポートをフィルター処理して作成するときに、IP タグを使うことができるようになります。
 
 ### <a name="to-create-continuous-reports"></a>継続的レポートを作成するには
 
@@ -166,6 +166,7 @@ Cloud App Security ポータルにアクセスするには、[https://portal.clo
 
 ## <a name="next-steps"></a>次の手順
 
-ポリシーの設定については、「[ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)」を参照してください。
+> [!div class="nextstepaction"]
+> [ポリシーによってクラウド アプリを制御します](control-cloud-apps-with-policies.md)。
 
 [!INCLUDE [Open support ticket](includes/support.md)]。

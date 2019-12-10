@@ -12,10 +12,10 @@ ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
 ms.openlocfilehash: 8b9c8d975176ff3d8fe4200316b8e3446e830414
-ms.sourcegitcommit: 02d63f48df393fa077bb16787c04dfae4be2f96d
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/27/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74553620"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>米国政府機関 GCC High の Microsoft Cloud App Security
