@@ -11,16 +11,15 @@ ms.collection: M365-security-compliance
 ms.prod: ''
 ms.service: cloud-app-security
 ms.technology: ''
-ms.assetid: eac0b192-98d7-4939-9a07-1d4a7f8c39c3
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 69c025162539ec43742732455a90f96cd3149cc8
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.openlocfilehash: 77face48858ae577c4eb2aa4fd85f7fc39c81377
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
-ms.locfileid: "74459674"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74720793"
 ---
 # <a name="tutorial-automatically-apply-azure-information-protection-classification-labels"></a>チュートリアル: Azure Information Protection 分類ラベルを自動的に適用する
 
@@ -31,9 +30,9 @@ ms.locfileid: "74459674"
 このチュートリアルでは、お使いのクラウド ストレージ内に保存されたドキュメントにどのパブリック アクセス許可が設定されているかを特定して、違反が発生したときにアラート通知を受け取れるようにすることが可能です。 さらに、ご利用の Azure Information Protection の **[機密]** ラベルを自動適用して、ファイルに追加の暗号化を提供できます。
 
 > [!div class="checklist"]
-> * データ保護の設定 
+>
+> * データ保護の設定
 > * ポリシーの検証
-
 
 ## <a name="enhanced-data-level-encryption-protection"></a>強化されたデータ レベルの暗号化による保護
 
@@ -51,8 +50,8 @@ Cloud App Security と Microsoft Azure Information Protection を併用して、
 
 ## <a name="prerequisites"></a>必要条件
 
-- テナントに対する [Cloud App Security と Azure Information Protection の有効化](azip-integration.md)。
-- Cloud App Security に [Box を接続します](connect-box-to-microsoft-cloud-app-security.md)。
+* テナントに対する [Cloud App Security と Azure Information Protection の有効化](azip-integration.md)。
+* Cloud App Security に [Box を接続します](connect-box-to-microsoft-cloud-app-security.md)。
 
 ## <a name="set-up-data-protection"></a>データ保護の設定
 
@@ -60,14 +59,14 @@ Box アカウントに格納されているファイルでクレジット カー
 
 1. Box に格納されているすべての機密データを暗号化するポリシーを設定して、Box に格納するデータの保護を開始します。
 
-    1. **[コントロール]** タブの [ **[ポリシー]** ](control-cloud-apps-with-policies.md) をクリックします。 
+    1. **[コントロール]** タブの [ **[ポリシー]** ](control-cloud-apps-with-policies.md) をクリックします。
 
     2. **[ポリシーの作成]** をクリックして **[ファイル ポリシー]** を選択します。
 
     3. *Box データ保護* ポリシーを呼び出します。
 
     4. **[このポリシーの対象となるファイルのためのフィルターを作成]** で、個人の機密データを対象に設定します。
-        - たとえば、 **[親フォルダー]** を Box の**顧客データ**と同じになるように選択し、 **[所有者]** を財務チームと同じになるように選択します。
+        * たとえば、 **[親フォルダー]** を Box の**顧客データ**と同じになるように選択し、 **[所有者]** を財務チームと同じになるように選択します。
 
     5. そのフォルダー内で、クレジット カード情報を含むファイルを探します。 **[コンテンツ検査方法]** で、 **[組み込み DLP]** 、 **[事前設定した式に一致するファイルを含める]** 、 **[すべての国: ファイナンス: クレジット カード番号]** の順に選択します。
 
@@ -75,9 +74,9 @@ Box アカウントに格納されているファイルでクレジット カー
 
     7. [Cloud App Security は Azure Information Protection と統合されている](azip-integration.md)ため、データの保護に使用される分類ラベルを既存の一覧から選択できます。
 
-    8. **[作成]** をクリックします。 
+    8. **[作成]** をクリックします。
 
-   ![ポリシーに分類ラベルを追加する](./media/aip-auto-policy.png)
+   ![ポリシーに分類ラベルを追加する](media/aip-auto-policy.png)
 
 2. 一致を調査する
 
@@ -88,18 +87,17 @@ Box アカウントに格納されているファイルでクレジット カー
 ## <a name="validate-your-policy"></a>ポリシーの検証
 
 1. アラートのシミュレーションを行うには、Box アカウントに移動して、**顧客データ** フォルダーのファイルへのアクセスを試みます。
-2. ポリシー レポートに移動します。 ファイル ポリシーの一致がすぐに表示されます。 
+2. ポリシー レポートに移動します。 ファイル ポリシーの一致がすぐに表示されます。
 3. この一致をクリックして、保護されたファイルを確認することができます。 一致自体は、機密データを保護するようにマスクされます。
 
 >[!NOTE]
 >
-> - Cloud App Security は、現時点で Box、GSuite、SharePoint、OneDrive for Business での Azure Information Protection ラベルの自動適用をサポートしています。
-> - Cloud App Security を使用してドキュメントがラベル付けされると、視覚的なマーキングはすぐには適用されず、ドキュメントが Office アプリで開かれ、最初に保存されたときに適用されます。 詳細については、「[Azure Information Protection 用の視覚的なマーキングのラベルを構成する方法](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)」を参照してください。
+> *- Cloud App Security は、現時点で Box、GSuite、SharePoint、OneDrive for Business での Azure Information Protection ラベルの自動適用をサポートしています。
+> *- Cloud App Security を使用してドキュメントがラベル付けされると、視覚的なマーキングはすぐには適用されず、ドキュメントが Office アプリで開かれ、最初に保存されたときに適用されます。 詳細については、「[Azure Information Protection 用の視覚的なマーキングのラベルを構成する方法](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-markings#when-visual-markings-are-applied)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
-[クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)   
+> [!div class="nextstepaction"]
+> [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
 
-[!INCLUDE [Open support ticket](includes/support.md)]  
-  
-  
+[!INCLUDE [Open support ticket](includes/support.md)]
