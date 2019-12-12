@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720519"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを有効にする
@@ -100,7 +100,7 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 
 これでログ コレクターが Cloud App Security と通信できるようになりました。 これにデータを送信すると、Cloud App Security ポータルでその状態が **[正常]** から **[接続済み]** に変わります。
 
-![オンライン](media/docker-5.png "状態")
+![状態](media/docker-5.png "状態")
 
 >[!NOTE]
 > ログ コレクターの構成を更新する必要がある場合 (たとえば、データ ソースを追加または削除する場合) は、通常はコンテナーを**削除**して、前の手順をもう一度実行する必要があります。 これを回避するために、Cloud App Security ポータルで生成された新しい API トークンを使って *collector_config* ツールを再実行することができます。

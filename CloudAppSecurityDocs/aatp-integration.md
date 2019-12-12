@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460932"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
@@ -27,7 +27,7 @@ ms.locfileid: "74460932"
 
 Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) と統合されており、ハイブリッド環境 (クラウドアプリとオンプレミスの両方) でユーザーエンティティ行動分析 (UEBA) を提供します。詳細については、「[チュートリアル: 危険なユーザーの調査](tutorial-ueba.md)」を参照してください。 Azure ATP で提供される機械学習と行動分析の詳細については、「 [Azure ATP とは](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 ハイブリッド環境全体で完全なユーザー調査を実行するためには、次が必要です。
 
@@ -70,7 +70,7 @@ Azure ATP との Cloud App Security 統合を無効にするには:
 > [!NOTE]
 > 既存の azure ATP データは Cloud App Security 保持ポリシーに従って保持されますが、Id セキュリティの状況評価は削除されます。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

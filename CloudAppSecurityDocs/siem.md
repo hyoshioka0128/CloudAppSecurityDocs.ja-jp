@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0a80b5fa980e8ece344ca39092293d5b820f604b
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721012"
 ---
 # <a name="generic-siem-integration"></a>汎用 SIEM の統合
@@ -169,7 +169,7 @@ SIEM に送信されるアクティビティ ログのサンプルを次に示�
 |    アクティビティ     |           dvc            |                                             クライアント デバイスの IP                                             |
 |    アクティビティ     | requestClientApplication |                                         クライアント デバイスのユーザー エージェント                                         |
 |      アラート       |       \<アラートの種類 >       |                                  たとえば、"ALERT_CABINET_EVENT_MATCH_AUDIT"                                  |
-|      アラート       |          \<名 >          |                                             一致するポリシー名                                             |
+|      アラート       |          \<name>          |                                             一致するポリシー名                                             |
 |      アラート       |        externalId        |                                                    アラート ID                                                     |
 
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>手順 3: SIEM エージェントが動作しているか検証する

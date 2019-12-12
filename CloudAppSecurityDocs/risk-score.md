@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 9ea1b9524fe262bc6364e5150426622d4efddfbc
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721078"
 ---
 # <a name="working-with-app-risk-scores"></a>アプリのリスク スコアの操作
@@ -116,7 +116,7 @@ Cloud Discovery は、環境全体で使用されるクラウド アプリの確
 
 3. さらに、スコアの計算では、特定の値を使用できない、または適用対象外として設定することができます。 このような値を設定すると、該当なしの値 (N/A 値) が、計算されたスコアのマイナスに寄与します。
 
-    ![学生](media/score.png "スコアメトリック")
+    ![score](media/score.png "スコアメトリック")
 
 Cloud App Security のリスク スコアがどのように計算されているかは、Cloud App Security ポータルにある情報で理解することができます。 特定のリスク カテゴリ内のあるリスク要因の重み付けについてさらに調べるには、アプリのプロファイルにある各フィールド名の右側の "i" ボタンを使用します。 すると、Cloud App Security でどのように特定のリスク要因がスコア付けされたかについて正確な情報が表示されます。 スコアは、1 ～ 10 のスケールで表したリスク要因と、リスク カテゴリにおけるその重みとを合算した値です。
 

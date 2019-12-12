@@ -12,10 +12,10 @@ ms.prod: ''
 ms.service: cloud-app-security
 ms.suite: ems
 ms.openlocfilehash: d98721a4ca08b3e415b8b0fff40676af1b3d37e6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720984"
 ---
 # <a name="troubleshooting-conditional-access-app-control"></a>アプリの条件付きアクセス制御のトラブルシューティング

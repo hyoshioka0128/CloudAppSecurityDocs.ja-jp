@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: ad21cce1ffda835dc45badccc07689ca300cf377
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74721075"
 ---
 # <a name="troubleshooting-cloud-discovery"></a>クラウド検出のトラブル シューティング
@@ -27,7 +27,7 @@ ms.locfileid: "74721075"
 
 この記事では、Cloud Discovery のエラー一覧と、各エラーの推奨される解決策について説明します。
 
-## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP 統合
+## <a name="microsoft-defender-atp-integration"></a>Microsoft Defender ATP の統合
 
 Microsoft Defender ATP を Cloud App Security と統合し、統合の結果が表示されない場合は、 **Win10 エンドポイントユーザー**のレポートがないため、接続先のコンピューターが Windows 10 バージョン1809以降であること、およびデータにアクセスできるようになるまでに必要な2時間を待機していることを確認してください。
 

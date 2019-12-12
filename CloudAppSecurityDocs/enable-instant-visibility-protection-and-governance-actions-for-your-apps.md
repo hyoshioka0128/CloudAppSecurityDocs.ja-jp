@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0aa55a99017a1768bf58fd2c2a40688c1a5c95e6
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720245"
 ---
 # <a name="connect-apps"></a>アプリを接続する
@@ -68,7 +68,7 @@ Cloud App Security はシステム管理者権限で展開されているため�
 
 > [!div class="mx-tableFixed"]
 >
-> | | AWS | ボックス | ドロップボックス | GCP | G Suite | Office 365 | Okta | 今すぐサービス | Salesforce | Webex | Workday |
+> | | AWS | ボックス | ドロップボックス | GCP | G Suite | Office 365 | Okta | Service Now | Salesforce | Webex | Workday |
 > |-|-|-|-|-|-|-|-|-|-|-|-|
 > | **アカウントの一覧表示** | ✔ | ✔ | ✔ | サブジェクト G Suite 接続 | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ | ✔ |
 > | **グループの一覧表示** | ✔ | ✔ | ✔ | サブジェクト G Suite 接続 | ✔ | ✔ | ✔ | ✔ | ✔ | | プロバイダーはサポートしていません |

@@ -14,10 +14,10 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74460392"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Azure Sentinel 統合 (プレビュー)
@@ -44,7 +44,7 @@ SIEM との統合は、次の2つの手順で行われます。
 1. Cloud App Security に設定します。
 1. Azure Sentinel で設定します。
 
-### <a name="prerequisites"></a>必須コンポーネント
+### <a name="prerequisites"></a>必要条件
 
 Azure Sentinel と統合するには:
 
@@ -78,33 +78,33 @@ Azure Sentinel と統合するには:
 
 Azure Sentinel の **[ログ]** の下にある **[Security Insights]** で、次のように Cloud App Security データ型のログを確認できます。
 
-| データ型 | テーブル |
+| ［データの種類］ | Table |
 | --- | --- |
 | 検出ログ | McasShadowItReporting |
 | アラート | SecurityAlert |
 
 次の表では、 **McasShadowItReporting**スキーマの各フィールドについて説明します。
 
-| フィールド | 型 | 説明 | 使用例 |
+| フィールド | 種類 | [説明] | 例 |
 | --- | --- | --- | --- |
-| TenantId | String | ワークスペース ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
-| SourceSystem | String | ソースシステム-静的な値 | Azure |
+| TenantId | 文字列型 | ワークスペース ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| SourceSystem | 文字列型 | ソースシステム-静的な値 | Azure |
 | TimeGenerated [UTC] | DateTime | 探索データの日付 | 2019-07-23T11:00: 35.858 Z |
-| StreamName | String | 特定のストリームの名前 | マーケティング部門 |
-| TotalEvents | Integer | セッションあたりのイベントの合計数 | 122 |
-| BlockedEvents | Integer | ブロックされたイベントの数 | 0 |
-| UploadedBytes | Integer | アップロードされたデータの量 | 1514874 |
-| TotalBytes | Integer | データの合計量 | 4067785 |
-| ダウンロードバイト数 | Integer | ダウンロードされたデータの量 | 2552911 |
-| IpAddress | String | 送信元 IP アドレス | 127.0.0.0 |
-| UserName | String | [ユーザー名] | `Raegan@contoso.com` |
-| EnrichedUserName | String | Azure AD ユーザー名を使用してユーザー名を拡充する | `Raegan@contoso.com` |
-| AppName | String | クラウドアプリの名前 | Microsoft OneDrive for Business |
-| AppId | Integer | クラウドアプリ識別子 | 15600 |
-| AppCategory | String | クラウドアプリのカテゴリ | クラウドの記憶域 |
+| StreamName | 文字列型 | 特定のストリームの名前 | マーケティング部門 |
+| TotalEvents | 整数型 | セッションあたりのイベントの合計数 | 122 |
+| BlockedEvents | 整数型 | ブロックされたイベントの数 | 0 |
+| UploadedBytes | 整数型 | アップロードされたデータの量 | 1514874 |
+| TotalBytes | 整数型 | データの総量 | 4067785 |
+| ダウンロードバイト数 | 整数型 | ダウンロードされたデータの量 | 2552911 |
+| IpAddress | 文字列型 | 送信元 IP アドレス | 127.0.0.0 |
+| UserName | 文字列型 | [ユーザー名] | `Raegan@contoso.com` |
+| EnrichedUserName | 文字列型 | Azure AD ユーザー名を使用してユーザー名を拡充する | `Raegan@contoso.com` |
+| AppName | 文字列型 | クラウドアプリの名前 | Microsoft OneDrive for Business |
+| AppId | 整数型 | クラウドアプリ識別子 | 15600 |
+| AppCategory | 文字列型 | クラウドアプリのカテゴリ | 一方、クラウド ストレージ |
 | AppTags | 文字列配列 | アプリに対して定義されている組み込みタグとカスタムタグ | [承認済みの "] |
-| AppScore | Integer | アプリケーションのリスクスコアがスケール0-10、10は危険度が低いアプリのスコアである | 10 |
-| 型 | String | ログの種類-静的な値 | McasShadowItReporting |
+| AppScore | 整数型 | アプリケーションのリスクスコアがスケール0-10、10は危険度が低いアプリのスコアである | 10 |
+| 種類 | 文字列型 | ログの種類-静的な値 | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Azure Sentinel で Cloud App Security データと共に Power BI を使用する
 

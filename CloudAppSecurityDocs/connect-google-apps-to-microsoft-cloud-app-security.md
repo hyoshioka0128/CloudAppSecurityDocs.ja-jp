@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 542f3e37a7b5446b72d0be0dca273bb115339880
-ms.sourcegitcommit: 33ac7a8f1f3efcc100db84575c3e9d8c0ba28e02
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/28/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74656686"
 ---
 # <a name="connect-g-suite-to-microsoft-cloud-app-security"></a>G Suite を Microsoft Cloud App Security に接続する
@@ -98,7 +98,7 @@ ms.locfileid: "74656686"
     1. **クライアント ID**をコピーします。後で必要になります。
     ![api クライアントアクセスの管理](media/google12-2.png "google12-2 ")
 
-    1. **[保存]** をクリックします。
+    1. **[保存]**
 
     1. [admin.google.com](https://admin.google.com/) にアクセスし、 **[セキュリティ]** を選択します。
 

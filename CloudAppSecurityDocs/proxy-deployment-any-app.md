@@ -13,10 +13,10 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.openlocfilehash: a4d58378bc8502a9022f51d3794d3175df8596de
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720858"
 ---
 # <a name="onboard-and-deploy-conditional-access-app-control-for-any-app"></a>アプリのアプリの条件付きアクセス制御をオンボードしてデプロイする
@@ -187,6 +187,6 @@ Cloud App Security で利用できるアプリの一覧については、「 [Mi
 > [Cloud App Security Conditional Access App Control の操作](proxy-intro-aad.md)
 
 > [!div class="nextstepaction"]
-> [おすすめアプリ用にアプリの条件付きアクセス制御をデプロイする](proxy-deployment-aad.md)
+> [おすすめアプリへの Conditional Access App Control の展開](proxy-deployment-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

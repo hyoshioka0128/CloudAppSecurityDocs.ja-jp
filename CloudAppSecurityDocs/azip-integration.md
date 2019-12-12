@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 26715a7600edc6dc4602dcc977ac164e5ae3f35c
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.openlocfilehash: 47a59e48e61c8976218d11e3abac41108100fa3a
+ms.sourcegitcommit: 43c2759b175ea73692980ab96b30d6d11fd5f4aa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74720277"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74944350"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -52,8 +52,8 @@ Cloud App Security では現在、次の種類のファイルに Azure Informati
 - Excel: xlam、xlsm、xlsx、xltx
 - PowerPoint: potm、potx、ppsx、ppsm、pptm、pptx
 - PDF
-    > [!NOTE]
-    > PDF の場合は、統合ラベルを使用する必要があります。
+  > [!NOTE]
+  > PDF の場合は、統合ラベルを使用する必要があります。
 
 現在、この機能は Box、G Suite、SharePoint Online、OneDrive for Business に格納されているファイルで使用できます。 今後のバージョンで、さらに多くのクラウド アプリがサポートされるようになります。
 
@@ -67,12 +67,12 @@ Cloud App Security の外部で保護付きでラベル付けされたファイ�
 
 2. 次に、Cloud App Security は、ファイルをスキャンして分類タグを探します。
 
-    - 自動スキャンを有効にした場合、すべての新しいファイルや変更されたファイルはスキャン キューに追加され、すべての既存のファイルおよびリポジトリはスキャン、分類、保護されます。
+    - 自動スキャンを有効にした場合、新規または変更されたすべてのファイルがスキャンキューに追加され、既存のすべてのファイルとリポジトリがスキャンされます。
     - 分類ラベルを検索するようにファイル ポリシーを設定すると、該当するファイルが分類ラベル用のスキャン キューに追加されます。
 
 3. 前述のように、これらのスキャンは、Cloud App Security が最初に行うスキャンで検出された分類ラベルを対象とするものであり、テナントで使用されている分類ラベルを確認することができます。 外部ラベル (テナントの部外者によって設定された分類ラベル) も分類ラベルの一覧に追加されます。 これらをスキャンしない場合は、 **[Only scan files for Azure Information Protection classification labels from this tenant \(このテナントからの Azure Information Protection 分類ラベルのファイルのみをスキャンする\)]** チェックボックスをオンにします。
 
-4. Cloud App Security 上で Azure Information Protection を有効にすると、Office 365 に追加されたすべての新しいファイルについて分類ラベルがスキャンされます。
+4. Cloud App Security で Azure Information Protection を有効にすると、接続されているクラウドアプリに追加されたすべての新しいファイルの分類ラベルがスキャンされます。
 
 5. 分類ラベルを自動的に適用する新しいポリシーを Cloud App Security 内で作成できます。
 

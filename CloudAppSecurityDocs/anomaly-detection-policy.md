@@ -15,10 +15,10 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720304"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
@@ -59,7 +59,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 * この検出では、過去にアクティビティがあった場所を考慮し、新規の場所とあまり使用されない場所が判別されます。 この異常検出エンジンでは、組織のユーザーが以前に使用した場所の情報が保持されます。 組織内の任意のユーザーによって最近使用されていない場所や使用されたことがない場所からアクティビティが発生すると、アラートがトリガーされます。
 
-### <a name="malware-detection"></a>マルウェアの検出
+### <a name="malware-detection"></a>[マルウェア検出]
 
 * この検出では、Microsoft アプリのものであるか、サード パーティ製アプリのものであるかに関係なく、クラウド ストレージの悪意のあるファイルを識別します。 Microsoft Cloud App Security では Microsoft の脅威インテリジェンスを使用して、特定のファイルが既知のマルウェア攻撃に関連付けられており、悪意のある可能性があるかどうかを認識します。 この組み込みポリシーは既定では無効になっています。 すべてのファイルがスキャンされるわけではありませんが、ヒューリスティックを使用して、潜在的に危険なファイルが検索されます。 ファイルが検出されたら、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 

@@ -8,10 +8,10 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: e434c19fbbb67cf70bbf70729d03e38b4779ce25
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74143467"
 ---
 # <a name="cloud-app-security-best-practices"></a>Cloud App Security のベストプラクティス
@@ -186,7 +186,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 **詳細**: SaaS アプリのコントロールを設定するにはアプリの条件付きアクセス制御を使用します。 セッションポリシーを作成して、危険度の高い、信頼度の低いセッションを監視できます。 同様に、管理されていないデバイスまたは危険なデバイスから機密データにアクセスしようとしているユーザーが、ダウンロードをブロックして保護するためのセッションポリシーを作成することもできます。 危険度の高いセッションを監視するためのセッションポリシーを作成しない場合、web クライアントでのダウンロードをブロックおよび保護する機能に加えて、Microsoft とサードパーティのアプリの両方で低信頼のセッションを監視する機能が失われます。  
 **詳細情報**:
 
-* [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用したアプリの保護](proxy-intro-aad.md)
+* [Microsoft Cloud App Security Conditional Access App Control でアプリを保護する](proxy-intro-aad.md)
 * [セッション ポリシー](session-policy-aad.md)
 
 ---
@@ -200,7 +200,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 **詳細**: 環境内のコラボレーションをセキュリティで保護するために、内部ユーザーと外部ユーザーの間のセッションを監視するためのセッションポリシーを作成できます。 これにより、ユーザー間のセッションを監視し、セッションのアクティビティが監視されていることを通知できるだけでなく、特定のアクティビティも制限することができます。 アクティビティを監視するためのセッションポリシーを作成する場合は、監視するアプリとユーザーを選択できます。  
 **詳細情報**:
 
-* [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用したアプリの保護](proxy-intro-aad.md)
+* [Microsoft Cloud App Security Conditional Access App Control でアプリを保護する](proxy-intro-aad.md)
 * [セッション ポリシー](session-policy-aad.md)
 
 ---

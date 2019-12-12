@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: d0a6ff77e469c25a5009ec4818c0140409896867
-ms.sourcegitcommit: 68f26369b00bd8c6df837a8c7b384e36d49bad7e
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "66225019"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft オープン ソース コード倫理規定

@@ -10,10 +10,10 @@ ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 7c93b6f93d2699d466b172590710ed01697bbdad
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74720904"
 ---
 # <a name="threat-protection-policies"></a>脅威保護に関するポリシー
@@ -224,7 +224,7 @@ Microsoft の脅威インテリジェンスエンジンと Cloud App Security �
 
 ## <a name="detect-leaked-credentials"></a>漏洩した資格情報の検出
 
-サイバー犯罪者が正当なユーザーの有効なパスワードを侵害すると、多くの場合、これらの資格情報が共有されます。 通常、これを行うには、ダーク web または貼り付けサイトに公開するか、ブラック市場で資格情報を売買または販売します。
+サイバー犯罪者が正当なユーザーの有効なパスワードを侵害すると、多くの場合、これらの資格情報が共有されます。 これは通常、闇サイトや貼り付けサイトに公開したり、資格情報を闇市場で取引したり販売したりして行われます。
 
 Cloud App Security は、Microsoft の脅威インテリジェンスを利用して、このような資格情報を組織内で使用されているものと照合します。
 

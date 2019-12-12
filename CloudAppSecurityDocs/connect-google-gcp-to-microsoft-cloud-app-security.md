@@ -10,10 +10,10 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: 65237f7be2218dad16c09f3940ca53c478d022bc
-ms.sourcegitcommit: 094bb42a198fe733cfd3aec79d74487672846dfa
+ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74461209"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Microsoft Cloud App Security への Google Cloud Platform の接続 (プレビュー)
@@ -33,7 +33,7 @@ ms.locfileid: "74461209"
 
 統合には専用のプロジェクトを使用し、安定した統合を維持し、セットアッププロセスが削除または変更されないように、プロジェクトへのアクセスを制限することをお勧めします。 また、GCP インスタンスが既に Cloud App Security に接続されている G Suite インスタンスの一部である場合は、GCP 接続の詳細を追加するときに、**接続された g suite 組織の手順に含まれる GCP インスタンス**のに従うことをお勧めします。
 
-## <a name="prerequisites"></a>必須コンポーネント
+## <a name="prerequisites"></a>必要条件
 
 統合 GCP ユーザーには、次のアクセス許可が必要です。
 
@@ -153,7 +153,7 @@ GCP 接続の詳細を指定するには、 **[アプリコネクタ]** の下�
 | 3. 組織レベルのシンクを一覧表示します。 | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud ログシンクの一覧](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
 | 4. 関連するシンクを削除します。 | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud ログシンクの削除](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
