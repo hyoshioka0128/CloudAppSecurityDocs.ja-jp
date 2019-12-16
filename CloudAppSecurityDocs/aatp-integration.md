@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5636c6a0aa51d17847560a122248e625137840cb
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2278a7a156525450c2ad4d8e75ee7a1aeb98fb0b
+ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460932"
+ms.lasthandoff: 12/15/2019
+ms.locfileid: "75033370"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
 
@@ -38,7 +38,7 @@ Microsoft Cloud App Security は Azure Advanced Threat Protection (Azure ATP) �
 >[!NOTE]
 >Microsoft Cloud App Security のサブスクリプションを持っていない場合でも、Cloud App Security ポータルを使用して Azure ATP の洞察を得ることができます。
 
-## <a name="enable-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection を有効にする
+## <a name="enable-azure-atp"></a>Azure ATP を有効にする
 
 Azure ATP との Cloud App Security 統合を有効にするには:
 
@@ -55,9 +55,9 @@ Azure ATP との Cloud App Security 統合を有効にするには:
 > [!NOTE]
 > 統合が有効になるまで、最大で12時間かかることがあります。
 
-Azure Advanced Threat Protection 統合を有効にすると、組織内のすべてのユーザーに対してオンプレミスのアクティビティを表示できるようになります。 また、クラウドとオンプレミスの環境でアラートと疑わしいアクティビティを組み合わせることにより、ユーザーに関する高度な洞察も得られます。
+Azure ATP 統合を有効にすると、組織内のすべてのユーザーに対してオンプレミスのアクティビティを表示できるようになります。 また、クラウドとオンプレミスの環境でアラートと疑わしいアクティビティを組み合わせることにより、ユーザーに関する高度な洞察も得られます。 また、[Cloud App Security ポリシー] ページに Azure ATP のポリシーが表示されます。 Azure ATP ポリシーの一覧については、「[セキュリティの警告](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide)」を参照してください。
 
-## <a name="disable-azure-advanced-threat-protection"></a>Azure Advanced Threat Protection を無効にする
+## <a name="disable-azure-atp"></a>Azure ATP を無効にする
 
 Azure ATP との Cloud App Security 統合を無効にするには:
 

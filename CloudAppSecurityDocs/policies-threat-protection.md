@@ -9,18 +9,21 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 405bdd5636bdcdf93dbfc858ecc6578d1a43c402
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8e4932b8e96638f4b645ee48ddd694b3c121a9e1
+ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720904"
+ms.lasthandoff: 12/15/2019
+ms.locfileid: "75033346"
 ---
 # <a name="threat-protection-policies"></a>脅威保護に関するポリシー
 
 *適用対象: Microsoft Cloud App Security*
 
 Cloud App Security を使用すると、リスクの高い使用とクラウドのセキュリティの問題を特定し、異常なユーザー動作を検出して、承認されたクラウドアプリでの脅威を防ぐことができます。 ユーザーと管理者のアクティビティの可視性を取得し、リスクがあると考えられる疑わしい動作または特定のアクティビティが検出されたときに自動的にアラートを作成するポリシーを定義します。 Microsoft の脅威インテリジェンスおよびセキュリティ研究に関する膨大な量のデータから、承認されたアプリに必要なすべてのセキュリティ制御を確実に提供し、管理を維持することができます。
+
+> [!NOTE]
+> Cloud App Security を Azure Advanced Threat Protection (Azure ATP) と統合する場合、Azure ATP のポリシーも [ポリシー] ページに表示されます。 Azure ATP ポリシーの一覧については、「[セキュリティの警告](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide)」を参照してください。
 
 ## <a name="detect-and-control-user-activity-from-unfamiliar-locations"></a>不明な場所からのユーザーアクティビティの検出と制御
 
