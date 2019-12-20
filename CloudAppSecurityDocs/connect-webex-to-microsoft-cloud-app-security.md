@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e3a3f99dd64526439c9c5f4967a2918c33dfdde9
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: f5a9915760822efe01c7d8c908a88e0a02e77ca3
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719755"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189810"
 ---
 # <a name="connect-cisco-webex-to-microsoft-cloud-app-security"></a>Cisco Webex を Microsoft Cloud App Security に接続する
 
 *適用対象: Microsoft Cloud App Security*
 
-この記事では、コネクタ Api を使用して、既存の Cisco Webex アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Webex のユーザー、アクティビティ、ファイルを可視化し、制御できます。
+この記事では、コネクタ Api を使用して、既存の Cisco Webex アカウントに Microsoft Cloud App Security を接続する手順について説明します。 この接続により、Webex のユーザー、アクティビティ、ファイルを可視化し、制御できます。 Cloud App Security が Cisco Webex を保護する方法については、「 [Cisco webex を保護](protect-webex.md)する」を参照してください。
 
 ## <a name="prerequisites"></a>必要条件
 
@@ -34,23 +34,23 @@ ms.locfileid: "74719755"
 
 ## <a name="how-to-connect-webex-to-cloud-app-security"></a>Webex を Cloud App Security に接続する方法
 
-1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
+1. Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。
 
-1. **[アプリコネクタ]** ページで、プラスボタンをクリックし、続いて**Cisco Webex**をクリックします。
+1. [**アプリコネクタ**] ページで、プラスボタンをクリックし、続いて**Cisco Webex**をクリックします。
 
     ![Webex に接続する](media/cisco-webex.png "Webex に接続する")
 
 1. ポップアップで、このコネクタのインスタンス名を入力します。
 
-1. **[Cisco Webex に接続]** をクリックします。 Webex サインインページが開きます。 チームの Webex インスタンスへの Cloud App Security アクセスを許可するための資格情報を入力します。
+1. [ **Cisco Webex に接続**] をクリックします。 Webex サインインページが開きます。 チームの Webex インスタンスへの Cloud App Security アクセスを許可するための資格情報を入力します。
 
-1. Webex は、チームの情報やアクティビティログへの Cloud App Security アクセスを許可し、チームメンバーとしてアクティビティを実行できるようにするかどうかをたずねます。 続行するには、 **[許可]** をクリックします。
+1. Webex は、チームの情報やアクティビティログへの Cloud App Security アクセスを許可し、チームメンバーとしてアクティビティを実行できるようにするかどうかをたずねます。 続行するには、[**許可**] をクリックします。
 
 1. Cloud App Security コンソールに戻ると、Webex が正常に接続されたことを示すメッセージが表示されます。
 
-1. **[API のテスト]** をクリックして、正常に接続されたことを確認します。
+1. [**API のテスト**] をクリックして、正常に接続されたことを確認します。
 
-    テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。
+    テストには数分かかる場合があります。 成功通知を受信したら、[**閉じる**] をクリックします。
 
 Webex に接続すると、接続する7日間のイベントを受け取ります。 Cloud App Security は過去3か月にわたってイベントをスキャンします。 これを増やすには、Cisco Webex pro ライセンスを所有し、Cloud App Security サポートでチケットを開く必要があります。
 

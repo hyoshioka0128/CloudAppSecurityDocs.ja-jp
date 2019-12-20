@@ -14,41 +14,41 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 89a14c0fa629a0affd9fde58b1faf4c3716de143
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 2bf213f483e9ba29004c57952ae36ea058a4e077
+ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74719533"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75189640"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 
 *適用対象: Microsoft Cloud App Security*
 
-この記事では、コネクタ Api を使用して、既存のアマゾンウェブサービス (AWS) アカウントを Microsoft Cloud App Security に接続する手順について説明します。
+この記事では、コネクタ Api を使用して、既存のアマゾンウェブサービス (AWS) アカウントを Microsoft Cloud App Security に接続する手順について説明します。 Cloud App Security で AWS を保護する方法の詳細については、「 [PROTECT AWS](protect-aws.md)」を参照してください。
 
 Cloud App Security 接続には、次のいずれかまたは両方の AWS を接続できます。
 
 - **セキュリティ監査**: この接続により、AWS アプリの使用を可視化し、制御することができます。
-- **[セキュリティの構成]** : この接続は、AWS の Internet SECURITY (ci) ベンチマークベンチマークに基づいて、基本的なセキュリティの推奨事項を提供します。
+- [**セキュリティの構成**]: この接続は、AWS の Internet SECURITY (ci) ベンチマークベンチマークに基づいて、基本的なセキュリティの推奨事項を提供します。
 
 接続のいずれかまたは両方を追加できるため、この記事の手順は独立した指示として記述されています。 接続のいずれかを既に追加している場合は、関連する既存の構成を編集します。
 
 ## <a name="how-to-connect-aws-security-auditing-to-cloud-app-security"></a>AWS セキュリティ監査を Cloud App Security に接続する方法
 
-1. [アマゾンウェブサービスコンソール](https://console.aws.amazon.com/)で、[**セキュリティ]、[id & コンプライアンス**] の順にクリックし、 **[IAM]** をクリックします。
+1. [アマゾンウェブサービスコンソール](https://console.aws.amazon.com/)で、[**セキュリティ]、[id & コンプライアンス**] の順にクリックし、[ **IAM**] をクリックします。
 
     ![AWS の id とアクセス](media/aws-identity-and-access.png "AWS の id とアクセス")
 
-1. **[ユーザー]** を選択し、 **[ユーザーの追加]** をクリックします。
+1. [**ユーザー** ] を選択し、[**ユーザーの追加**] をクリックします。
 
     ![AWS ユーザー](media/aws-users.png "AWS ユーザー")
 
-1. **[詳細]** 手順で、Cloud App Security の新しいユーザー名を指定します。 **[アクセスの種類]** で **[プログラムによるアクセス]** を選択し、 **[次のアクセス許可]** をクリックします。<a name="set-permissions"></a>
+1. **[詳細]** 手順で、Cloud App Security の新しいユーザー名を指定します。 [**アクセスの種類**] で [**プログラムによるアクセス**] を選択し、[**次のアクセス許可**] をクリックします。<a name="set-permissions"></a>
 
     ![AWS でのユーザーの作成](media/aws-create-user.png "AWS でのユーザーの作成")
 
-1. **[JSON]** タブをクリックします。
+1. [ **JSON** ] タブをクリックします。
 
     ![AWS JSON タブ](media/aws-json.png "AWS JSON タブ")
 
@@ -83,27 +83,27 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 
 1. **[ポリシーの確認]** をクリックします。
 
-1. **名前**を付け、 **[ポリシーの作成]** をクリックします。
+1. **名前**を付け、**[ポリシーの作成]** をクリックします。
 
     ![AWS ポリシー名を指定する](media/aws-create-policy.png "AWS ポリシー名を指定する")
 
-1. **[ユーザーの追加]** 画面に戻り、必要に応じて一覧を更新し、作成したユーザーを選択して、 **[Next Review]\(次のレビューへ\)** をクリックします。
+1. **[ユーザーの追加]** 画面に戻り、必要に応じて一覧を更新し、作成したユーザーを選択して、**[Next Review]\(次のレビューへ\)** をクリックします。
 
     ![AWS で既存のポリシーをアタッチする](media/aws-attach-policy.png "AWS で既存のポリシーをアタッチする")
 
-1. すべての詳細情報が正しい場合は、 **[ユーザーの作成]** をクリックします。
+1. すべての詳細情報が正しい場合は、**[ユーザーの作成]** をクリックします。
 
     ![AWS でのユーザーのアクセス許可](media/aws-user-permissions.png "AWS でのユーザーのアクセス許可の確認")
 
-1. 成功メッセージを受け取ったら、 **[Download .csv]\(.csv のダウンロード\)** をクリックし、新しいユーザーの資格情報のコピーを保存します。これは後で必要になります。
+1. 成功メッセージを受け取ったら、**[Download .csv]\(.csv のダウンロード\)** をクリックし、新しいユーザーの資格情報のコピーを保存します。これは後で必要になります。
 
     ![AWS で csv をダウンロードする](media/aws-download-csv.png "AWS で csv をダウンロードする")
 
-1. AWS コンソールで **[サービス]** をクリックし、 **[管理ツール]** で **[CloudTrail]** をクリックします。
+1. AWS コンソールで **[サービス]** をクリックし、**[管理ツール]** で **[CloudTrail]** をクリックします。
 
     ![AWS CloudTrail](media/aws-cloudtrail.png "AWS CloudTrail")
 
-    これまでに CloudTrail を使用したことがない場合、 **[開始する]** ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、 **[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
+    これまでに CloudTrail を使用したことがない場合、[**開始する**] ボタンをクリックし、名前を入力し、適切な S3 バケットを選択してセットアップします。それから **[オンにする]** をクリックします。 すべてのリージョンに適用するには、**[Apply to all regions (すべてのリージョンに適用する)]** を **[はい]** に設定します。
 
     ![AWS で CloudTrail を有効にする](media/aws-turnon-cloudtrail.png "AWS で CloudTrail を有効にする")
 
@@ -114,9 +114,9 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
     > [!NOTE]
     > AWS を接続すると、接続までの 7 日間のイベントを受け取ります。 CloudTrail を有効にしたばかりの場合は、CloudTrail を有効にした時点からイベントを受信します。
 
-1. Cloud App Security ポータルで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
+1. Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。
 
-1. **[アプリコネクタ]** ページで、AWS コネクタの資格情報を指定するには、次のいずれかの操作を行います。
+1. [**アプリコネクタ**] ページで、AWS コネクタの資格情報を指定するには、次のいずれかの操作を行います。
 
     **新しいコネクタの場合**
 
@@ -124,33 +124,33 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 
         ![AWS の接続](media/connect-aws.png "AWS を接続する")
 
-    1. ポップアップで、コネクタの名前を指定し、 **[アマゾンウェブサービスの接続]** をクリックします。
+    1. ポップアップで、コネクタの名前を指定し、[**アマゾンウェブサービスの接続**] をクリックします。
 
         ![AWS コネクタ名](media/aws-connect-name.png)
 
-    1. Amazon Web services の接続 ページで **セキュリティ監査** を選択し、.csv ファイルから関連するフィールドに**アクセスキー**と**秘密キー**を貼り付けて、**接続** をクリックします。
+    1. [Amazon Web services の接続] ページで [**セキュリティ監査**] を選択し、.csv ファイルから関連するフィールドに**アクセスキー**と**秘密キー**を貼り付けて、[**接続**] をクリックします。
 
         ![Connect AWS app security auditing](media/aws-connect-app-audit.png "Connect AWS app security auditing")
 
     **既存のコネクタの場合**
 
-    1. コネクタの一覧で、AWS コネクタが表示されている行の **[セキュリティ監査の接続]** をクリックします。
+    1. コネクタの一覧で、AWS コネクタが表示されている行の [**セキュリティ監査の接続**] をクリックします。
 
         ![[セキュリティ監査の編集] リンクが表示されている [接続済みアプリ] ページのスクリーンショット](media/aws-connect-app-edit-audit.png)
 
-    1. [アマゾンウェブサービスの接続] ページで、.csv ファイルの**アクセスキー**と**秘密キー**を関連フィールドに貼り付け、 **[接続]** をクリックします。
+    1. [アマゾンウェブサービスの接続] ページで、.csv ファイルの**アクセスキー**と**秘密キー**を関連フィールドに貼り付け、[**接続**] をクリックします。
 
         ![Connect AWS app security auditing](media/aws-connect-app-edit-audit-creds.png "Connect AWS app security auditing")
 
-1. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
+1. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
 
-    テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
+    テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、[**完了**] をクリックします。
 
 ## <a name="how-to-connect-aws-security-configuration-to-cloud-app-security"></a>AWS セキュリティ構成を Cloud App Security に接続する方法
 
 「 [How to CONNECT AWS Security auditing](#how-to-connect-aws-security-auditing-to-cloud-app-security) 」の手順に従って、[[アクセス許可](#set-permissions)] ページに移動します。
 
-1. アクセス許可 ページで、**既存のポリシーを直接接続**する をクリックし、 **AWSSecurityHubReadOnlyAccess**ポリシーと**securityaudit**ポリシーを適用して、**次のタグ** をクリックします。
+1. [アクセス許可] ページで、[**既存のポリシーを直接接続**する] をクリックし、 **AWSSecurityHubReadOnlyAccess**ポリシーと**securityaudit**ポリシーを適用して、[**次のタグ**] をクリックします。
 
     ![AWS で既存のポリシーをアタッチする](media/aws-attach-policy.png "AWS で既存のポリシーをアタッチする")
 
@@ -161,19 +161,19 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
     > [!NOTE]
     > ユーザーにタグを追加しても、接続には影響しません。
 
-1. **[次のレビュー]** をクリックします。
+1. [**次のレビュー**] をクリックします。
 
-1. すべての詳細情報が正しい場合は、 **[ユーザーの作成]** をクリックします。
+1. すべての詳細情報が正しい場合は、**[ユーザーの作成]** をクリックします。
 
     ![AWS でのユーザーのアクセス許可](media/aws-user-permissions.png "AWS でのユーザーのアクセス許可の確認")
 
-1. 成功メッセージが表示されたら、 **[.csv のダウンロード]** をクリックして**アクセスキー ID**と**シークレットアクセスキー**のコピーを保存します。後で必要になります。
+1. 成功メッセージが表示されたら、[ **.csv のダウンロード**] をクリックして**アクセスキー ID**と**シークレットアクセスキー**のコピーを保存します。後で必要になります。
 
     ![AWS で csv をダウンロードする](media/aws-download-csv.png "AWS で csv をダウンロードする")
 
-1. Cloud App Security ポータルで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
+1. Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。
 
-1. **[アプリコネクタ]** ページで、AWS コネクタの資格情報を指定するには、次のいずれかの操作を行います。
+1. [**アプリコネクタ**] ページで、AWS コネクタの資格情報を指定するには、次のいずれかの操作を行います。
 
     **新しいコネクタの場合**
 
@@ -181,27 +181,27 @@ Cloud App Security 接続には、次のいずれかまたは両方の AWS を�
 
         ![AWS の接続](media/connect-aws.png "AWS を接続する")
 
-    1. ポップアップで、コネクタの名前を指定し、 **[アマゾンウェブサービスの接続]** をクリックします。
+    1. ポップアップで、コネクタの名前を指定し、[**アマゾンウェブサービスの接続**] をクリックします。
 
         ![AWS コネクタ名](media/aws-connect-name.png)
 
-    1. Amazon Web services の接続 ページで、**セキュリティの構成** を選択し、.csv ファイルから関連するフィールドに**アクセスキー**と**秘密鍵**を貼り付けて、**接続** をクリックします。
+    1. [Amazon Web services の接続] ページで、[**セキュリティの構成**] を選択し、.csv ファイルから関連するフィールドに**アクセスキー**と**秘密鍵**を貼り付けて、[**接続**] をクリックします。
 
         ![Connect AWS app security の構成](media/aws-connect-app-config.png "Connect AWS app security の構成")
 
     **既存のコネクタの場合**
 
-    1. コネクタの一覧で、AWS コネクタが表示されている行の **[セキュリティ構成の接続]** をクリックします。
+    1. コネクタの一覧で、AWS コネクタが表示されている行の [**セキュリティ構成の接続**] をクリックします。
 
         ![[セキュリティ構成の編集] リンクが表示されている [接続済みアプリ] ページのスクリーンショット](media/aws-connect-app-edit-config.png)
 
-    1. [アマゾンウェブサービスの接続] ページで、.csv ファイルの**アクセスキー**と**秘密キー**を関連フィールドに貼り付け、 **[接続]** をクリックします。
+    1. [アマゾンウェブサービスの接続] ページで、.csv ファイルの**アクセスキー**と**秘密キー**を関連フィールドに貼り付け、[**接続**] をクリックします。
 
         ![Connect AWS app security の構成](media/aws-connect-app-edit-config-creds.png "Connect AWS app security の構成")
 
-1. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
+1. [**API のテスト**] をクリックして、正常に接続されたことを確認します。  
 
-    テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
+    テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、[**完了**] をクリックします。
 
 ## <a name="next-steps"></a>次のステップ
 
