@@ -49,6 +49,32 @@
       href: risk-score.md
     - name: 検出されたアプリの処理
       href: discovered-apps.md
+    - name: 接続されたアプリの操作
+      items:
+        - name: AWS を保護する
+          href: protect-aws.md
+        - name: Azure を保護する
+          href: protect-azure.md
+        - name: Box を保護する
+          href: protect-box.md
+        - name: DropBox を保護する
+          href: protect-dropbox.md
+        - name: GCP を保護する
+          href: protect-gcp.md
+        - name: G Suite を保護する
+          href: protect-gsuite.md
+        - name: Office 365 を保護する
+          href: protect-office-365.md
+        - name: Okta を保護する
+          href: protect-okta.md
+        - name: Salesforce を保護する
+          href: protect-salesforce.md
+        - name: ServiceNow を保護する
+          href: protect-servicenow.md
+        - name: Webex を保護する
+          href: protect-webex.md
+        - name: Workday を保護する
+          href: protect-workday.md
 - name: 操作方法ガイド
   items:
     - name: 基本設定
