@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 8/6/2019
+ms.date: 12/29/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0243d1a75e4f322406ef768dddc898b58d3fe294
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bda8b1e35b4a097a3ef753fb81a9293650305333
+ms.sourcegitcommit: a54a8437d6b03d457314e69b372e908976b7b1ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720514"
+ms.lasthandoff: 12/29/2019
+ms.locfileid: "75545203"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -34,6 +34,10 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 - **グローバル管理者とセキュリティ管理者:** **フル アクセス**が可能な管理者には Cloud App Security の完全なアクセス許可があります。 このようなユーザーは管理者の追加、ポリシーと設定の追加、ログのアップロード、ガバナンス アクションの実行ができます。
 
 - **コンプライアンス管理者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 ファイル ポリシーを作成し、変更できます。ファイル ガバナンス アクションを許可できます。[データ管理] で、組み込みレポートをすべて表示できます。
+
+- **コンプライアンスデータ管理者:** 読み取り専用アクセス許可を持ち、ファイルポリシーの作成と変更、ファイルガバナンスアクションの許可、およびすべての検出レポートの表示を行うことができます。
+
+- **セキュリティオペレーター:** 読み取り専用アクセス許可を持ち、アラートを管理できます。
 
 - **セキュリティ閲覧者:** 読み取り専用アクセス許可を持ち、アラートを管理できます。 セキュリティ閲覧者は、以下のアクションの実行が制限されています。
 
@@ -80,7 +84,7 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
 
 - **Cloud Discovery グローバル管理者:** すべての Cloud Discovery 設定とデータを表示および編集する権限があります。 グローバル検出管理者には、次のアクセス許可があります。
 
-  - [設定]
+  - Settings
     - システム設定 - 表示のみ
     - Cloud Discovery 設定 - すべて表示および編集可能 (匿名化のアクセス許可は、ロール割り当て時に許可されたかどうかに依存する)
   - Cloud Discovery アクティビティ - フル アクセス許可
@@ -142,7 +146,7 @@ Cloud App Security を使用すると、Cloud App Security ポータルの管理
 
 ![テナントの選択](media/choose-tenant.png "テナントの選択")
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)

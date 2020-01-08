@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/11/2019
+ms.date: 12/24/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,34 +14,39 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 90efa85fccd71e488f80db290b09b1636013304b
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: e92ac476d6c4185a2836b311b7affb5fb5d015fe
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720390"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492065"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
 *適用対象: Microsoft Cloud App Security*
 
-Microsoft Cloud App Security は、Microsoft Defender Advanced Threat Protection (ATP) とネイティブに統合されます。 統合により、Cloud Discovery のロールアウトが簡単になり、Cloud Discovery の機能が企業ネットワークの範囲を超えて拡張され、マシンベースの調査が可能になりします。 [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)は、インテリジェントな保護、検出、調査、および対応を行うためのセキュリティプラットフォームです。 Microsoft Defender ATP は、サイバー脅威からのエンドポイントを保護し、高度な攻撃とデータ侵害を検出し、セキュリティインシデントを自動化し、セキュリティ体制を強化します。
+Microsoft Cloud App Security は、Microsoft Defender Advanced Threat Protection (ATP) とネイティブに統合されます。 統合により、Cloud Discovery のロールアウトが簡単になり、Cloud Discovery の機能が企業ネットワークの範囲を超えて拡張され、マシンベースの調査が可能になりします。 [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)は、インテリジェントな保護、検出、調査、および対応を行うためのセキュリティプラットフォームです。 Microsoft Defender ATP は、サイバー脅威からのエンドポイントを保護し、高度な攻撃とデータ侵害を検出し、セキュリティインシデントを自動化し、セキュリティ体制を強化します。
 
-Microsoft Cloud App Security は、IT が管理する Windows 10 コンピューターからアクセスされるクラウドアプリとサービスについて、Microsoft Defender ATP によって収集されたトラフィック情報を使用します。 統合により、ローミングおよびリモート アクセスの間にパブリック Wi-Fi を使用して、企業ネットワーク内のマシンで Cloud Discovery を実行できます。 また、マシンベースの調査も可能になります。
+Cloud App Security は、IT が管理する Windows 10 コンピューターからアクセスされるクラウドアプリとサービスについて、Microsoft Defender ATP によって収集されたトラフィック情報を使用します。 ネイティブ統合を使用すると、企業ネットワーク内の任意のコンピューターで、パブリック Wi-fi、ローミング中、およびリモートアクセス経由で Cloud Discovery を実行できます。 また、マシンベースの調査も可能になります。
 
-リスクの高いユーザーが見つかったら、そのユーザーがアクセスしたすべてのマシンを調べて、潜在的なリスクを検出できます。 リスクの高いマシンが見つかったら、そのマシンを使用したすべてのユーザーを調べて、潜在的なリスクを検出できます。 Cloud App Security にルーティングされたエンドポイントからのログでは、トラフィック アクティビティに関するユーザー情報が提供されます。 Microsoft Defender ATP ネットワークアクティビティは、デバイスコンテキストを提供します。 デバイス コンテキストとユーザー名を組み合わせると、ネットワーク全体でどのユーザーがどのマシンからどのアクティビティを実行したかが詳細にわかります。
+統合では、標準以外の追加の展開と作業は必要ありません。 エンドポイントからトラフィックをルーティングまたはミラーリングする必要も、複雑な統合の手順を行う必要もありません。 Cloud App Security に送信されたエンドポイントからのログは、トラフィックアクティビティのユーザー情報を提供します。 Microsoft Defender ATP ネットワークアクティビティは、デバイスコンテキストを提供します。 デバイスコンテキストとユーザー名をペアリングすると、ネットワーク全体で全体像が得られるため、どのユーザーがどのコンピューターからどの操作を行ったかを特定できます。
 
-Microsoft Cloud App Security は、Microsoft Defender ATP とのネイティブ統合を使用して、管理された Windows デバイスからクラウドアプリとサービストラフィックに関するデータをタップします。 統合では、標準以外の追加の展開と作業は必要ありません。 エンドポイントからトラフィックをルーティングまたはミラーリングする必要も、複雑な統合の手順を行う必要もありません。
+さらに、危険なユーザーを特定するときに、ユーザーがアクセスしたすべてのコンピューターを確認して、潜在的なリスクを検出することができます。 危険なコンピューターを特定した場合は、それを使用しているすべてのユーザーを確認し、潜在的なリスクをさらに検出します。
+
+トラフィック情報が収集されると、組織での[クラウドアプリの使用を詳細に把握](discovered-apps.md#deep-dive-into-discovered-apps)することができます。 Cloud App Security は、Microsoft Defender ATP ネットワーク保護機能を利用して、エンドポイントデバイスからクラウドアプリへのアクセスをブロックします。 ポータルで承認され[ていないものとしてタグ付け](governance-discovery.md#BKMK_SanctionApp)することで、アプリをブロックできます。 承認されていない各アプリの包括的な使用状況とリスクの評価に基づいて、アプリのドメインを使用して、Microsoft Defender ATP ポータルで[ドメインインジケーター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview)を作成します。 エンドポイントデバイスで実行されている Windows Defender ウイルス対策は、ドメインインジケーターを使用して、これらのアプリへのアクセスをブロックします。
 
 > [!NOTE]
 > Microsoft Defender ATP を体験する場合は、 [無料試用版にサインアップしてください](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 - Microsoft Cloud App Security ライセンス
 - Microsoft Defender ATP ライセンス
 - Windows 10 バージョン 1709 (OS Build 16299.1085 with KB4493441)、Windows 10 version 1803 (OS Build 17134.704 with KB4493464)、Windows 10 version 1809 (OS Build 17763.379 with KB4489899)、またはそれ以降のバージョンの Windows 10
-- **[プレビュー機能]** をオンに切り替え、Cloud App Security でこの機能を有効にする
+- Windows Defender ウイルス対策
+  - [リアルタイム保護が有効](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-real-time-protection-windows-defender-antivirus)
+  - [クラウドで提供される保護の有効化](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/enable-cloud-protection-windows-defender-antivirus)
+  - [ネットワーク保護が有効になっており、ブロックモードに構成されています](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -51,7 +56,7 @@ Cloud App Security は自動的に、[ユーザーがアップロードしたロ
 
 ## <a name="how-to-integrate-microsoft-defender-atp-with-cloud-app-security"></a>Microsoft Defender ATP を Cloud App Security に統合する方法
 
-Microsoft Defender ATP から Cloud App Security との統合を有効にするには:
+Cloud App Security との Microsoft Defender ATP 統合を有効にするには:
 
 1. Microsoft Defender ATP ポータルのナビゲーションウィンドウで、設定 **セットアップ** の順番に選択します。
 2. **[設定]** メニューの **[全般]** の **[高度な機能]** を選択します。
@@ -92,11 +97,48 @@ Microsoft Defender ATP を Cloud App Security に統合したら、Cloud Discove
 
 > [!NOTE]
 >
-> - Defender ATP は、最大 4 MB のチャンク単位で Cloud App Security にデータを転送します (約4000エンドポイントトランザクション)
-> - 1時間以内に 4 MB の制限に達していない場合、Defender ATP は過去1時間に実行されたすべてのトランザクションを報告します。
+> - Microsoft Defender ATP は、最大 4 MB のチャンク単位で Cloud App Security にデータを転送します (約4000エンドポイントトランザクション)
+> - 1時間以内に 4 MB の制限に達していない場合、Microsoft Defender ATP は、過去1時間に実行されたすべてのトランザクションを報告します。
 > - エンドポイントデバイスがフォワードプロキシの背後にある場合、トラフィックの量は Microsoft Defender ATP に表示されないため、Cloud Discovery レポートには含まれません。 詳細については、「[転送プロキシの背後にあるネットワーク接続の監視](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274)」を参照してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="block-access-to-unsanctioned-cloud-apps"></a>承認されていないクラウドアプリへのアクセスをブロックする
+
+Cloud App Security は、組み込みの承認されてい[**ないアプリタグ**](governance-discovery.md#BKMK_SanctionApp)を使用して、クラウドアプリを使用禁止としてマークします。これは、Cloud Discovery とクラウドアプリカタログの両方のページで使用できます。 Microsoft Defender ATP との統合を有効にすることで、Cloud App Security ポータルで1回クリックするだけで、承認されていないアプリへのアクセスをシームレスにブロックできます。
+
+### <a name="how-it-works"></a>しくみ
+
+Cloud App Security で未承認**とマーク**されているアプリは、通常数分以内に MICROSOFT Defender ATP に自動的に同期されます。 具体的には、承認されていないアプリによって使用されるドメインは、ネットワーク保護の SLA 内で Windows Defender ウイルス対策によってブロックされるエンドポイントデバイスに伝達されます。
+
+### <a name="how-to-enable-cloud-app-blocking-with-microsoft-defender-atp"></a>Microsoft Defender ATP を使用してクラウドアプリのブロックを有効にする方法
+
+クラウドアプリのアクセス制御を有効にするには、次の手順に従います。
+
+1. Cloud App Security で、 **[設定]** [ **Cloud App control** > ] の順に選択し、承認されていない **[アプリをブロック]** する を選択します。
+
+    ![Microsoft Defender ATP を使用してブロックを有効にする方法を示すスクリーンショット](media/defender-atp-integration.png)
+
+1. Microsoft Defender Security Center で、 **[設定]** [ > の**詳細機能**] の順に選択し、 **[カスタムネットワークインジケーター]** を選択します。 ネットワークインジケーターの詳細については、「 [ip および url/ドメインのインジケーターを作成](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview)する」を参照してください。
+
+    これにより、Windows Defender ウイルス対策ネットワーク保護機能を利用して、特定のアプリに[アプリタグ](governance-discovery.md#BKMK_SanctionApp)を手動で割り当てるか、[アプリ検出ポリシー](cloud-discovery-policies.md#creating-an-app-discovery-policy)を自動的に使用することで、Cloud App Security を使用して事前定義された一連の url へのアクセスをブロックできます。
+
+    ![Microsoft Defender ATP でカスタムネットワークインジケーターを有効にする方法を示すスクリーンショット](media/defender-atp-custom-network-indicators.png)
+
+## <a name="investigate-unsanctioned-apps-in-microsoft-defender-security-center"></a>Microsoft Defender Security Center で未承認のアプリを調査する
+
+承認されていないアプリにアクセスしようとするたびに、Microsoft Defender Security Center のアラートがトリガーされ、セッション全体の詳細が表示されます。 これにより、承認されていないアプリへのアクセスをさらに詳細に調査したり、エンドポイントデバイスの調査に使用する追加の関連情報を提供したりできます。
+
+エンドポイントデバイスが正しく構成されていない場合、または強制ポリシーがエンドポイントにまだ反映されていない場合は、承認されていないアプリへのアクセスがブロックされないことがあります。 このインスタンスでは、Microsoft Defender ATP 管理者は、承認されていないアプリがブロックされていないことを Security Center Microsoft Defender にアラートを受け取ります。
+
+![Microsoft Defender ATP の承認されていないアプリの警告を示すスクリーンショット](media/defender-atp-unsanctioned-app-alert.png)
+
+> [!NOTE]
+>
+> - アプリをエンドポイントデバイスに伝達するためにアプリドメイン**に対して**承認されていないとして、アプリにタグを付けると、最大2時間かかります。
+> - 既定では、Cloud App Security で未承認とマークされ**ているアプリ**とドメインは、組織内のすべてのエンドポイントデバイスに対してブロックされます。
+> - 現時点では、承認されていないアプリでは完全な Url はサポートされていません。 そのため、完全な Url で構成されたアプリを却下する場合、それらは Microsoft Defender ATP に反映されず、ブロックされません。 たとえば、`google.com/drive` はサポートされていませんが、`drive.google.com` はサポートされています。
+> - ブラウザー間の通知は、ブラウザーによって異なる場合があります。
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

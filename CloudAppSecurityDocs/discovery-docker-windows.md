@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 62757b46f40127bb8d312435cd420fdb1e2f3865
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74458501"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492100"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -26,9 +26,9 @@ ms.locfileid: "74458501"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
-* OS: **windows 10** (作成者の更新プログラム) または windows Server**バージョン1709以降**
+* OS: **windows 10** (作成者の更新プログラム)、windows server**バージョン1709以降**(SAC)、または**windows server 2019 (LTSC)**
 
 * ディスク領域: 250 GB
 
@@ -139,9 +139,9 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 
 ![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば次のようになります。
 
 ```console
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -181,7 +181,7 @@ Docker のインストーラーが Microsoft によって署名されている�
 
 ![デジタル署名が無効](media/digital-signature-unsuccessful.png)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ログコレクターの FTP 構成](log-collector-ftp.md)

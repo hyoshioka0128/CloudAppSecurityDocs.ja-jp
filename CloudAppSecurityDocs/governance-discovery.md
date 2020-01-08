@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/06/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 43ab4126445f8f0ef36c88253c93d8b89bfa4eda
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: bc95cb2272d996752c60c49c7f7402550325b208
+ms.sourcegitcommit: 6fd61d5f0953a5c1fc752091203b7dd0712f0cb3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720746"
+ms.lasthandoff: 12/24/2019
+ms.locfileid: "75333267"
 ---
 # <a name="govern-discovered-apps"></a>検出されたアプリの管理
 
@@ -38,7 +38,7 @@ ms.locfileid: "74720746"
 承認されていないアプリの一覧を照会するには、[Cloud App Security API を使用してブロック スクリプトを生成](https://us.portal.cloudappsecurity.com/api-docs/#generate-block-script)します。
 
 > [!NOTE]
-> テナントで Zscaler NSS または iboss が使用されている場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Zscaler との統合](zscaler-integration.md)」と「 [Cloud App Security を iboss と統合](iboss-integration.md)する」を参照してください。
+> テナントが Microsoft Defender Advanced Threat Protection (ATP)、Zscaler NSS、または iboss を使用している場合は、承認されていないものとしてマークしたすべてのアプリが Cloud App Security によって自動的にブロックされ、ブロックしているスクリプトの作成に関する以下のセクションは不要です。 詳細については、「 [Microsoft DEFENDER ATP との統合](wdatp-integration.md)」、「 [Zscaler と](zscaler-integration.md)の統合」、および「 [iboss との](iboss-integration.md)統合」を参照してください。
 
 ## <a name="export-a-block-script-to-govern-discovered-apps"></a>ブロック スクリプトをエクスポートして検出されたアプリを管理する
 
@@ -62,7 +62,7 @@ Cloud App Security では、既存のオンプレミスのセキュリティ ア
 
 5. アプライアンスに作成されたファイルをインポートします。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)

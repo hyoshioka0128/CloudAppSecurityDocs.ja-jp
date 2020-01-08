@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: db16695ffa6cc9c20d04616553256cba95de1550
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: c5d4132dd88f8bf7364a77ee8a3e282c1af7fa02
+ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720519"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75492091"
 ---
 # <a name="enable-the-log-collector-behind-a-proxy"></a>プロキシの背後でログ コレクターを有効にする
 
@@ -60,16 +60,16 @@ docker cp Proxy-CA.crt Ubuntu-LogCollector:/var/adallom/ftp/discovery
     docker exec -it Ubuntu-LogCollector /bin/bash
     ```
 
-2. コンテナー内の bash から、Java の jre ディレクトリに移動します。 バージョンに関するパスのエラーを回避するために、このコマンドを使います。
+2. コンテナー内の bash から、Java *jre*フォルダーにアクセスします。 バージョンに関するパスのエラーを回避するために、このコマンドを使います。
 
     ```bash
     cd 'find /opt/jdk/*/jre -iname bin'
     ```
 
-3. 先ほどコピーしたルート証明書を、*discovery* フォルダーから Java のキーストアにインポートして、パスワードを定義します。 既定のパスワードは "changeit" です。
+3. 先ほどコピーしたルート証明書を、[*探索*] フォルダーから Java キーストアにインポートし、パスワードを定義します。 既定のパスワードは "changeit" です。 パスワードの変更の詳細については、「 [Java キーストアのパスワードを変更する方法](#how-to-change-the-java-keystore-password)」を参照してください。
 
     ```bash
-    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass changeit
+    ./keytool --import --noprompt --trustcacerts --alias SelfSignedCert --file /var/adallom/ftp/discovery/Proxy-CA.crt --keystore ../lib/security/cacerts --storepass <password>
     ```
 
 4. 次のコマンドを使ってインポート中に指定した別名 (*SelfSignedCert*) を検索することで、証明書が CA キーストアに正しくインポートされたことを確認します。
@@ -105,7 +105,35 @@ collector_config abcd1234abcd1234abcd1234abcd1234 ${CONSOLE} ${COLLECTOR}
 >[!NOTE]
 > ログ コレクターの構成を更新する必要がある場合 (たとえば、データ ソースを追加または削除する場合) は、通常はコンテナーを**削除**して、前の手順をもう一度実行する必要があります。 これを回避するために、Cloud App Security ポータルで生成された新しい API トークンを使って *collector_config* ツールを再実行することができます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="how-to-change-the-java-keystore-password"></a>Java キーストアのパスワードを変更する方法
+
+1. Java キーストアサーバーを停止します。
+1. コンテナー内で bash シェルを開き、 *appdata/conf*フォルダーにアクセスします。
+1. 次のコマンドを使用して、サーバーキーストアのパスワードを変更します。
+
+    ```bash
+    keytool -storepasswd -new newStorePassword -keystore server.keystore
+    -storepass changeit
+    ```
+
+    > [!NOTE]
+    > 既定のサーバーパスワードは*changeit*です。
+
+1. 次のコマンドを使用して、証明書のパスワードを変更します。
+
+    ```bash
+    keytool -keypasswd -alias server -keypass changeit -new newKeyPassword -keystore server.keystore -storepass newStorePassword
+    ```
+
+    > [!NOTE]
+    > 既定のサーバーの別名は*server*です。
+
+1. テキストエディターで*server-install\conf\server\secured-installed.properties*ファイルを開き、次のコード行を追加して、変更を保存します。
+    1. サーバーの新しい Java キーストアパスワードを指定してください: `server.keystore.password=newStorePassword`
+    1. サーバーの新しい証明書のパスワードを指定してください: `server.key.password=newKeyPassword`
+1. サーバーを起動します。
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ユーザー アクティビティ ポリシー](user-activity-policies.md)

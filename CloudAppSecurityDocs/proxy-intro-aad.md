@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 39b3721a2a19c59f7c8d1a1376aa54efee455f65
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 8ff7c303b6dfa209c3d37ed7334f3276b36371ff
+ms.sourcegitcommit: 8309406e636b1adbe4d44ecec51aef5e849310f6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720468"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75597531"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -29,8 +29,6 @@ ms.locfileid: "74720468"
 
 > [!NOTE]
 > Cloud App Security アプリの条件付きアクセス制御を使用するには、 [Azure Active Directory P1 ライセンス](https://azure.microsoft.com/pricing/details/active-directory/)、およびアクティブな Microsoft Cloud App Security サブスクリプションまたは Office 365 E5 ライセンスが必要です。 Office 365 E5 に含まれるおすすめアプリの一覧については、「 [office 365 のおすすめアプリ](#O365-apps)」を参照してください。
-
-Office 365 E5 ライセンス。 サポートされている Office 365 E5 に含まれるアプリの一覧については、「Office 365 のおすすめアプリ」を参照してください。
 
 ## <a name="how-it-works"></a>しくみ
 
@@ -167,7 +165,7 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 
 おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 関心をお持ちのオンボード ユース ケースもお送りください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [おすすめアプリへの Conditional Access App Control の展開](proxy-deployment-aad.md)
