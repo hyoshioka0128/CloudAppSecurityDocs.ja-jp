@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
-ms.openlocfilehash: 7f436f36b5ab41b8b952dca7dc2534611eb8401a
-ms.sourcegitcommit: 010725c70ff7b3fc9abdad92203eec6e72bb7473
+ms.openlocfilehash: 9122a5c5cdde5f2a1ed02946970825b75155acc2
+ms.sourcegitcommit: fb0d93ca2469a7941a098ae3b5564e7fc327e89f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/26/2019
-ms.locfileid: "75492100"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75777120"
 ---
 # <a name="docker-on-windows-on-premises"></a>オンプレミスの Windows の Docker
 
@@ -26,7 +26,7 @@ ms.locfileid: "75492100"
 
 Windows で Docker を使用して Cloud App Security の継続的レポート用に自動ログ アップロードを構成することができます。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>[前提条件]
 
 * OS: **windows 10** (作成者の更新プログラム)、windows server**バージョン1709以降**(SAC)、または**windows server 2019 (LTSC)**
 
@@ -41,7 +41,7 @@ Windows で Docker を使用して Cloud App Security の継続的レポート�
 * Hyper-V でオペレーティング システム上の仮想化を有効にすることが必要
 
 > [!IMPORTANT]
-> ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインアウトせずに、Docker ユーザーの接続を切断することを勧めることをお勧めします。
+> ログを収集するには、ユーザーが Docker 用にサインインしている必要があります。 サインインしなくても、接続を切断するように Docker ユーザーに通知することをお勧めします。
 
 > [!NOTE]
 > 既存のログコレクターがあり、それを再度配置する前に削除する場合、または単に削除する場合は、次のコマンドを実行します。
