@@ -1,10 +1,10 @@
-- name: Microsoft Cloud App Security ドキュメント
+- name: Microsoft Cloud App Security のドキュメント
   href: index.yml
 - name: 概要
   items:
     - name: Microsoft Cloud App Security とは
       href: what-is-cloud-app-security.md
-    - name: Cloud App Security のデータのセキュリティとプライバシー
+    - name: Cloud App Security のデータ セキュリティとプライバシー
       href: cas-compliance-trust.md
     - name: 新機能
       href: release-notes.md
@@ -25,13 +25,15 @@
       href: best-practices.md
 - name: チュートリアル
   items:
-    - name: シャドウ IT の検出および管理
+    - name: シャドウ IT の検出と管理
       href: tutorial-shadow-it.md
     - name: 危険性の高いユーザーを調査する
       href: tutorial-ueba.md
     - name: 危険な OAuth アプリを調査する
       href: investigate-risky-oauth.md
-    - name: 機密情報のダウンロードのブロック
+    - name: 組織内の任意のアプリをリアルタイムで保護する
+      href: tutorial-proxy.md
+    - name: 機密情報のダウンロードをブロックする
       href: use-case-proxy-block-session-aad.md
     - name: 管理者検疫によるファイルの保護
       href: use-case-admin-quarantine.md
@@ -41,7 +43,7 @@
       href: tutorial-flow.md
 - name: 概念
   items:
-    - name: アプリの条件付きアクセス制御でのアプリの保護
+    - name: アプリの条件付きアクセス制御によるアプリの保護
       href: proxy-intro-aad.md
     - name: ダッシュボードの操作
       href: daily-activities-to-protect-your-cloud-environment.md
@@ -75,7 +77,7 @@
           href: protect-webex.md
         - name: Workday を保護する
           href: protect-workday.md
-- name: 操作方法ガイド
+- name: 攻略ガイド
   items:
     - name: 基本設定
       href: general-setup.md
@@ -91,15 +93,15 @@
           href: mail-settings.md
         - name: ユーザー グループ
           href: user-groups.md
-        - name: スコープ付きデプロイ
+        - name: スコープ付きの展開
           href: scoped-deployment.md
-        - name: IP タグと範囲
+        - name: IP タグと IP 範囲
           href: ip-tags.md
     - name: Cloud Discovery
       items:
         - name: 設定
           items:
-            - name: Cloud Discovery のセットアップ
+            - name: Cloud Discovery の設定
               href: set-up-cloud-discovery.md
             - name: Microsoft Defender ATP との統合
               href: wdatp-integration.md
@@ -113,17 +115,17 @@
               href: discovery-docker.md
             - name: Windows 上の Docker
               href: discovery-docker-windows.md
-            - name: Ubuntu および RHEL オンプレミス上の Docker
+            - name: オンプレミスの Ubuntu および RHEL 上の Docker
               href: discovery-docker-ubuntu.md
-            - name: Azure での Ubuntu 上の Docker
+            - name: Azure の Ubuntu 上の Docker
               href: discovery-docker-ubuntu-azure.md
             - name: ログ コレクターの FTP 構成
               href: log-collector-ftp.md
-            - name: プロキシの背後にあるログ コレクター
+            - name: プロキシの内側にあるログ コレクター
               href: log-collector-proxy.md
             - name: カスタム ログ パーサーの使用
               href: custom-log-parser.md
-        - name: Cloud Discovery を強化する
+        - name: Cloud Discovery の強化
           href: cloud-discovery-aad-enrichment.md
         - name: Cloud Discovery データの匿名化
           href: cloud-discovery-anonymizer.md
@@ -176,13 +178,13 @@
         - name: ファイル
           href: file-filters.md
           items:
-            - name: データ管理レポートを生成する
+            - name: データ管理レポートの生成
               href: built-in-reports.md
         - name: '[アカウント]'
           href: accounts.md
         - name: OAuth アプリの管理
           href: manage-app-permissions.md
-        - name: セキュリティ構成
+        - name: セキュリティの構成
           items:
             - name: Azure のセキュリティ構成
               href: security-config.md
@@ -196,7 +198,7 @@
     - name: Control
       href: control.md
       items:
-        - name: ポリシーにるクラウド アプリの制御
+        - name: ポリシーによるクラウド アプリの制御
           href: control-cloud-apps-with-policies.md
           items:
             - name: Cloud Discovery ポリシー
@@ -208,7 +210,7 @@
               href: user-activity-policies.md
             - name: 異常検出ポリシー
               href: anomaly-detection-policy.md
-            - name: OAuth のポリシー
+            - name: OAuth ポリシー
               href: app-permission-policy.md
             - name: ファイル ポリシー
               href: data-protection-policies.md
@@ -222,7 +224,7 @@
                       href: dcs-inspection.md
                     - name: RegEx エンジンの操作
                       href: working-with-the-regex-engine.md
-            - name: 条件付きアクセス アプリ制御ポリシー
+            - name: アプリの条件付きアクセス制御のポリシー
               items:
                 - name: アクセス ポリシー
                   href: access-policy-aad.md
@@ -246,15 +248,15 @@
               href: siem-sentinel.md
             - name: 外部 DLP 統合
               href: icap-stunnel.md
-        - name: プロセスとワークフローを自動化する
+        - name: プロセスとワークフローの自動化
           items:
-            - name: REST API を使う
+            - name: REST API を使用する
               href: api-tokens.md
-            - name: API を使ってアクティビティを調査する
+            - name: API を使用したアクティビティの調査
               href: investigate-activities-api.md
-            - name: Microsoft Flow を使う
+            - name: Microsoft Flow を使用する
               href: flow-integration.md
-- name: リファレンス
+- name: 参照先
   items:
     - name: アプリを証明する
       href: attest-your-app.md
@@ -268,7 +270,7 @@
           href: policies-information-protection.md
     - name: トラブルシューティング
       items:
-        - name: クラウド検出のトラブル シューティング
+        - name: Cloud Discovery のトラブルシューティング
           href: troubleshooting-cloud-discovery.md
         - name: エラー メッセージを使用した API コネクタのトラブルシューティング
           href: troubleshooting-api-connectors-using-error-messages.md
@@ -286,7 +288,7 @@
       href: e-books.md
     - name: リリース ノートのアーカイブ
       href: release-note-archive.md
-    - name: ライセンスのデータシート
+    - name: ライセンス データシート
       href: 'https://aka.ms/mcaslicensing'
     - name: サポートとトラブルシューティング
       href: support-and-ts.md

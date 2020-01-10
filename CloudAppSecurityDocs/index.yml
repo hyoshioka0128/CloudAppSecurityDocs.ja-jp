@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: 05dd9156cddd6c94f4523d100b275c1ced42ba17
-  ms.sourcegitcommit: f3a6e9c4367d0ddfe4a23f417eb14de246fccd03
+  ms.openlocfilehash: 36f40dda4b6c169dae50100ccf457fc0f5c99801
+  ms.sourcegitcommit: 446041f0e7adf6688bf63d402838844baa3342bb
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 11/24/2019
-  ms.locfileid: "74457861"
+  ms.lasthandoff: 01/06/2020
+  ms.locfileid: "75667217"
 landingContent:
 - title: Cloud App Security について
   linkLists:
@@ -49,7 +49,9 @@ landingContent:
       url: tutorial-ueba.md
     - text: 危険な OAuth アプリを調査する
       url: investigate-risky-oauth.md
-    - text: 機密情報のダウンロードのブロック
+    - text: 組織内の任意のアプリをリアルタイムで保護する
+      url: tutorial-proxy.md
+    - text: 機密情報のダウンロードをブロックする
       url: use-case-proxy-block-session-aad.md
     - text: 管理者検疫によるファイルの保護
       url: use-case-admin-quarantine.md
@@ -61,7 +63,7 @@ landingContent:
   linkLists:
   - linkListType: concept
     links:
-    - text: アプリの条件付きアクセス制御でのアプリの保護
+    - text: アプリの条件付きアクセス制御によるアプリの保護
       url: proxy-intro-aad.md
     - text: ダッシュボードの操作
       url: daily-activities-to-protect-your-cloud-environment.md
@@ -97,11 +99,11 @@ landingContent:
   linkLists:
   - linkListType: tutorial
     links:
-    - text: シャドウ IT の検出と特定
+    - text: シャドウ IT の検出と識別
       url: tutorial-shadow-it.md#phase-1-discover-and-identify-shadow-it
     - text: 評価と分析
       url: tutorial-shadow-it.md#phase-2-evaluate-and-analyze
-    - text: アプリの管理
+    - text: アプリを管理する
       url: tutorial-shadow-it.md#phase-3-manage-your-apps
   - linkListType: concept
     links:
@@ -119,7 +121,7 @@ landingContent:
     links:
     - text: Microsoft Defender Advanced Threat Protection との統合
       url: wdatp-integration.md
-    - text: Cloud Discovery を強化する
+    - text: Cloud Discovery の強化
       url: cloud-discovery-aad-enrichment.md
   - linkListType: reference
     links:
@@ -135,7 +137,7 @@ landingContent:
     links:
     - text: 電子書籍を読む
       url: e-books.md
-    - text: Cloud App Security を含む完全なソリューションである Microsoft 365 について理解する
+    - text: Cloud App Security を含む完全なソリューションである Microsoft 365 の詳細を確認する
       url: https://docs.microsoft.com/microsoft-365/
   - linkListType: video
     links:
