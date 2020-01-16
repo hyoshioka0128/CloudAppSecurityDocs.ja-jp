@@ -9,12 +9,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 8e4932b8e96638f4b645ee48ddd694b3c121a9e1
-ms.sourcegitcommit: 362ec5187cb13f152d240b75ed1ecebb5236b0ee
+ms.openlocfilehash: 4d945a13f2cab9b11c74dae5aa6ff93eae5f3ba5
+ms.sourcegitcommit: dabfa885ebb82db25a92127d87e8d1283340e834
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2019
-ms.locfileid: "75033346"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76020755"
 ---
 # <a name="threat-protection-policies"></a>脅威保護に関するポリシー
 
@@ -29,7 +29,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 組織内の他のユーザーによって閲覧されていない不明な場所からのユーザーアクセスまたはアクティビティの自動検出。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -41,7 +41,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 2つの場所の間の移動にかかる時間よりも短い、2つの異なる場所からのユーザーアクセスまたはアクティビティの自動検出。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 ### <a name="steps"></a>手順
@@ -61,7 +61,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 退職したユーザーが組織のリソースでアクティブにならないと、組織のクラウドリソースのいずれかにアクセスしていることを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 - [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -83,7 +83,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 組織に対してコンプライアンスやセキュリティ上のリスクをもたらす可能性がある、期限切れのクライアントバージョンのブラウザーをユーザーが使用していることを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -101,7 +101,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 リスクの高い IP アドレスと見なされる、から実行された管理者のアクティビティを検出し、詳細な調査を行うか、管理者のアカウントにガバナンスアクションを設定します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 - [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -125,7 +125,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 内部 IP アドレス以外から発生したサービスアカウントアクティビティを検出します。 これは、疑わしい動作または侵害されたアカウントを示している可能性があります。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 - [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 - 設定の歯車から **ip アドレスの範囲** を選択し、+ をクリックして、内部サブネットとその送信パブリック ip アドレスの ip アドレスの範囲を追加します。 カテゴリを [**内部** **]** に設定します。
@@ -148,7 +148,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 特定のユーザーが短時間に大量のファイルにアクセスしたりダウンロードしたりするタイミングを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -167,13 +167,13 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 ランサムウェアアクティビティの可能性を自動検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
 ### <a name="steps"></a>手順
 
-1. この検出は、自動で設定された機能によって自動的に構成され、発生する可能性のあるマルウェアのリスクが検出された場合にアラートを送信します。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
+1. この検出は、ランサムウェアのリスクが検出された場合にアラートを送信するように自動的に構成されます。 このポリシーを構成するために何らかの操作を行う必要はありません。 詳細については、[異常検出ポリシー](anomaly-detection-policy.md)に関する記事を参照してください。
 
 2. 検出の**範囲**を構成し、アラートがトリガーされたときに実行されるガバナンスアクションをカスタマイズすることができます。 ランサムウェアを識別 Cloud App Security 方法の詳細については、「[ランサムウェアから組織を保護](use-case-ransomware.md)する」を参照してください。
 
@@ -184,7 +184,7 @@ Cloud App Security を使用すると、リスクの高い使用とクラウド�
 
 Microsoft の脅威インテリジェンスエンジンと Cloud App Security の統合を利用して、クラウド環境内のマルウェアを含むファイルを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -196,7 +196,7 @@ Microsoft の脅威インテリジェンスエンジンと Cloud App Security �
 
 悪意のある意図を示す可能性がある、繰り返される管理アクティビティを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -217,7 +217,7 @@ Microsoft の脅威インテリジェンスエンジンと Cloud App Security �
 
 疑わしい受信トレイの規則がユーザーの受信トレイに設定されている場合は、ユーザーアカウントが侵害されていること、およびメールボックスが組織内のスパムおよびマルウェアの配布に使用されていることを示している可能性があります。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 - 電子メールに Microsoft Exchange を使用します。
 
@@ -231,7 +231,7 @@ Microsoft の脅威インテリジェンスエンジンと Cloud App Security �
 
 Cloud App Security は、Microsoft の脅威インテリジェンスを利用して、このような資格情報を組織内で使用されているものと照合します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -243,7 +243,7 @@ Cloud App Security は、Microsoft の脅威インテリジェンスを利用し
 
 学習したベースラインを基準として、ユーザーが1つのセッションで複数のファイルダウンロードアクティビティを実行したことを検出します。 これは、侵害の試行を示している可能性があります。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -257,7 +257,7 @@ Cloud App Security は、Microsoft の脅威インテリジェンスを利用し
 
 学習したベースラインに関して、ユーザーが1つのセッションで複数のファイル共有アクティビティを実行したことを検出します。これは、侵害の試行を示している可能性があります。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -271,7 +271,7 @@ Cloud App Security は、Microsoft の脅威インテリジェンスを利用し
 
 ユーザーまたは組織内のユーザーによって最近使用されていない、またはユーザーによって閲覧されていない場所からのアクティビティを検出します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 アプリ[コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)またはオンボードを使用して接続されているアプリが、[セッションコントロールで条件付きアクセスアプリコントロール](proxy-deployment-aad.md)を使用している必要があります。
 
@@ -288,7 +288,7 @@ Cloud App Security は、Microsoft の脅威インテリジェンスを利用し
 
 組織の従業員ではなくなったユーザーが承認されたアプリでアクティビティを実行したことを検出します。 これは、退職した従業員が会社のリソースに引き続きアクセスできることを示している可能性があります。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>[前提条件]
 
 [アプリコネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を使用して、少なくとも1つのアプリが接続されている必要があります。
 
@@ -298,7 +298,7 @@ Cloud App Security は、Microsoft の脅威インテリジェンスを利用し
 
 2. 検出の範囲を構成し、アラートがトリガーされたときに実行されるアクションをカスタマイズすることができます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
