@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 01/12/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5272eec53b28fd55886586d06a035f36f70e6e8f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 3ed582468edbfae7b180fdccc0ba110a1eb694df
+ms.sourcegitcommit: 38cca5e4f0e69bb33f89d1c4347a14c994d16b65
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720445"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76123088"
 ---
 # <a name="activity-policies"></a>アクティビティ ポリシー
 
@@ -24,6 +24,9 @@ ms.locfileid: "74720445"
 アクティビティ ポリシーでは、アプリ プロバイダーの API を使用してさまざまな自動プロセスを適用できます。 これらのポリシーでは、さまざまなユーザーが実行する特定のアクティビティを監視したり、予想外に実行率の高い特定種類のアクティビティを追跡したりできます。
 
 アクティビティ検出ポリシーを設定すると、アラートの生成が開始されます。アラートは、ポリシーの作成後に発生するアクティビティに対してのみ生成されます。
+
+> [!NOTE]
+> 過去7日間に5万件を超える一致をトリガーするポリシーは、自動的に無効になります。 追加のフィルターを追加することによってポリシーの調整を試すことができます。また、レポートのためにポリシーを使用している場合は、代わりに[クエリとして保存](activity-filters-queries.md#activity-queries)することを検討してください。
 
 ## <a name="custom-alerts"></a>カスタム アラート
 
@@ -87,7 +90,7 @@ ms.locfileid: "74720445"
 
 - アクション - 違反が検出された場合に自動的に適用される一連のガバナンス アクションをポリシーに設定します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [データ保護ポリシー](data-protection-policies.md)
