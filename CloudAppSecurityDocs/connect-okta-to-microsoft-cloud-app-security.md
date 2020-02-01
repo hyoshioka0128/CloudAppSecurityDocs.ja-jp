@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c72aa0edf8a2a70b501f79c97e8dd85b466602c7
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: df64be6f8e3d8739934ae575ee90f3813dabaae6
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189657"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912315"
 ---
 # <a name="connect-okta-to-microsoft-cloud-app-security"></a>Okta を Microsoft Cloud App Security に接続する
 
@@ -35,13 +35,13 @@ ms.locfileid: "75189657"
 
     Okta アカウントが検証済みであることを確認します。
 
-1. Okta コンソールで [**管理者**] をクリックします。
+1. Okta コンソールで **[管理者]** をクリックします。
 
-    - [**セキュリティ**]、[**API**] の順にクリックします。
+    - **[セキュリティ]** 、 **[API]** の順にクリックします。
 
          ![Okta api](media/okta-api.png "Okta api")
 
-    - [**トークンを作成します**] をクリックします。
+    - **[トークンを作成します]** をクリックします。
 
          ![Okta のトークンの作成](media/okta-createtoken.jpg "Okta のトークンの作成")
 
@@ -49,13 +49,13 @@ ms.locfileid: "75189657"
 
          ![Okta トークンのポップアップ](media/okta-token-popup.png "Okta トークンのポップアップ")
 
-    - [**Token created successfully (トークンは正常に作成されました)**] ポップアップで、[**Token value (トークン値)**] をコピーします。
+    - **[Token created successfully (トークンは正常に作成されました)]** ポップアップで、 **[Token value (トークン値)]** をコピーします。
 
          ![Okta トークン値](media/okta-token-value.png "Okta トークン値")
 
-1. Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。
+1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
-1. **[アプリ コネクター]** ページで、[+] ボタン、**[Okta]** の順にクリックします。
+1. **[アプリ コネクター]** ページで、[+] ボタン、 **[Okta]** の順にクリックします。
 
     ![Okta の接続](media/connect-okta.png "Okta の接続")
 
@@ -63,13 +63,15 @@ ms.locfileid: "75189657"
 
 1. **[接続]** をクリックして、Okta のトークンを Cloud App Security で作成します。
 
-1. [**API のテスト**] をクリックして、正常に接続されたことを確認します。
+1. **[API のテスト]** をクリックして、正常に接続されたことを確認します。
 
-    テストには数分かかる場合があります。 成功通知を受信したら、 [**閉じる**] をクリックします。
+    テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。
 
 Okta を接続すると、接続までの 60 日間のイベントを受け取ります。
 
-## <a name="next-steps"></a>次のステップ
+アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

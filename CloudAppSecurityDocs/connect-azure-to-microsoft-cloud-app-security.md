@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 20f8c2194631f09fc54eab997596d97e10c338c9
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 28a2885be1bd98f9ef5b3905d6ed1dc50f64238f
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189708"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912048"
 ---
 # <a name="connect-azure-to-microsoft-cloud-app-security"></a>Azure を Microsoft Cloud App Security に接続する
 
@@ -35,18 +35,20 @@ ms.locfileid: "75189708"
 > - Cloud App Security には**すべての**サブスクリプションのアクティビティが表示されます。
 > - 現時点では、Cloud App Security は ARM アクティビティのみを監視します。
 
-1. **[接続アプリ]** ページで、[+] ボタン、**[Microsoft Azure]** の順にクリックします。
+1. **[接続アプリ]** ページで、[+] ボタン、 **[Microsoft Azure]** の順にクリックします。
 
     ![Azure の接続](media/connect-azure-menu.png)
 
-2. Azure のポップアップで、**[Connect Microsoft Azure]\(Microsoft Azure に接続\)** をクリックします。
+2. Azure のポップアップで、 **[Connect Microsoft Azure]\(Microsoft Azure に接続\)** をクリックします。
 
     ![Azure の接続](media/connect-azure.png)
 
 > [!NOTE]
 > Azure を接続すると、データがプルされます。 以降のデータが表示されます。
 
-## <a name="next-steps"></a>次のステップ
+アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

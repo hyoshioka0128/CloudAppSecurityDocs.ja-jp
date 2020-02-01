@@ -9,12 +9,12 @@ ms.date: 10/16/2019
 ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e03f24023968d9e3169aef8636061b8adf05d646
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189742"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912264"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Microsoft Cloud App Security への Google Cloud Platform の接続 (プレビュー)
 
@@ -33,7 +33,7 @@ ms.locfileid: "75189742"
 
 統合には専用のプロジェクトを使用し、安定した統合を維持し、セットアッププロセスが削除または変更されないように、プロジェクトへのアクセスを制限することをお勧めします。 また、GCP インスタンスが既に Cloud App Security に接続されている G Suite インスタンスの一部である場合は、GCP 接続の詳細を追加するときに、**接続された g suite 組織の手順に含まれる GCP インスタンス**のに従うことをお勧めします。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>Prerequisites
 
 統合 GCP ユーザーには、次のアクセス許可が必要です。
 
@@ -48,8 +48,8 @@ ms.locfileid: "75189742"
 
 組織で GCP に専用のプロジェクトを作成して、統合の分離と安定性を実現する
 
-1. [**プロジェクトの作成**] をクリックして、新しいを開始します。
-1. [**新しいプロジェクト**] 画面で、プロジェクトに名前を指定し、[**作成**] をクリックします。
+1. **[プロジェクトの作成]** をクリックして、新しいを開始します。
+1. **[新しいプロジェクト]** 画面で、プロジェクトに名前を指定し、 **[作成]** をクリックします。
 
     ![GCP のプロジェクトの作成ダイアログを示すスクリーンショット](media/connect-gcp-create-project.png)
 
@@ -60,10 +60,10 @@ ms.locfileid: "75189742"
 
 ### <a name="create-a-dedicated-service-account-for-the-integration"></a>統合用の専用サービスアカウントを作成する
 
-1. [ **IAM & admin**] で、[**サービスアカウント**] をクリックします。
-1. [**サービスアカウントの作成**] をクリックして、専用のサービスアカウントを作成します。
-1. アカウント名を入力し、[**作成**] をクリックします。
-1. **ロール**として「 **Pub/Sub Admin** 」と指定し、[**保存**] をクリックします。
+1. **[IAM & admin]** で、 **[サービスアカウント]** をクリックします。
+1. **[サービスアカウントの作成]** をクリックして、専用のサービスアカウントを作成します。
+1. アカウント名を入力し、 **[作成]** をクリックします。
+1. **ロール**として「 **Pub/Sub Admin** 」と指定し、 **[保存]** をクリックします。
 
     ![GCP add IAM ロールを示すスクリーンショット](media/connect-gcp-iam-role.PNG)
 
@@ -71,22 +71,22 @@ ms.locfileid: "75189742"
 
     ![GCP サービスアカウントダイアログを示すスクリーンショット](media/connect-gcp-create-service-account.png)
 
-1. [ **Iam & admin**] で、[ **iam**] をクリックします。
+1. **[Iam & admin]** で、 **[iam]** をクリックします。
 
     1. 組織レベルに切り替えます。
-    1. [**追加**] をクリックします。
-    1. [**新しいメンバー** ] ボックスに、前の手順でコピーした**電子メール**の値を貼り付けます。
-    1. [**ロール**] として「 **Logs Configuration Writer** 」と指定し、[**保存**] をクリックします。
+    1. **[追加]** をクリックします。
+    1. **[新しいメンバー]** ボックスに、前の手順でコピーした**電子メール**の値を貼り付けます。
+    1. **[ロール]** として「 **Logs Configuration Writer** 」と指定し、 **[保存]** をクリックします。
 
         ![[メンバーの追加] ダイアログを示すスクリーンショット](media/connect-gcp-add-member.png)
 
 ### <a name="create-a-private-key-for-the-dedicated-service-account"></a>専用サービスアカウントの秘密キーを作成する
 
 1. プロジェクトレベルに切り替えます。
-1. [ **IAM & admin**] で、[**サービスアカウント**] をクリックします。
-1. 専用サービスアカウントを開き、[**編集**] をクリックします。
-1. [**キーの作成**] をクリックします。
-1. [**秘密キーの作成**] 画面で、[ **JSON**] を選択し、[**作成**] をクリックします。
+1. **[IAM & admin]** で、 **[サービスアカウント]** をクリックします。
+1. 専用サービスアカウントを開き、 **[編集]** をクリックします。
+1. **[キーの作成]** をクリックします。
+1. **[秘密キーの作成]** 画面で、 **[JSON]** を選択し、 **[作成]** をクリックします。
 
     ![秘密キーの作成ダイアログを示すスクリーンショット](media/connect-gcp-create-private-key.png)
 
@@ -96,15 +96,15 @@ ms.locfileid: "75189742"
 ### <a name="retrieve-your-organization-id"></a>組織 ID を取得する
 
 **組織 ID**をメモしておきます。後で必要になります。 詳細については、「[組織 ID を取得する](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id)」を参照してください。
-    ![組織 ID] ダイアログ](media/connect-gcp-org-id.png) を示すスクリーンショット
+    ![組織 ID ダイアログ](media/connect-gcp-org-id.png) を示すスクリーンショット
 
 ## <a name="configure-cloud-app-security"></a>Cloud App Security の設定
 
-* Cloud App Security ポータルで、**[調査]**、**[接続アプリ]** の順にクリックします。
+* Cloud App Security ポータルで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
 ### <a name="add-the-gcp-connection-details"></a>GCP 接続の詳細を追加する
 
-GCP 接続の詳細を指定するには、[**アプリコネクタ**] の下で、次のいずれかの操作を行います。
+GCP 接続の詳細を指定するには、 **[アプリコネクタ]** の下で、次のいずれかの操作を行います。
 
 **接続された G Suite 組織の一部ではない GCP インスタンスの場合**
 
@@ -112,33 +112,35 @@ GCP 接続の詳細を指定するには、[**アプリコネクタ**] の下で
 
     ![[Add GCP] メニューを示すスクリーンショット](media/connect-gcp-add.png)
 
-1. ポップアップで、コネクタの名前を指定し、[ **Google Cloud Platform の接続**] をクリックします。
+1. ポップアップで、コネクタの名前を指定し、 **[Google Cloud Platform の接続]** をクリックします。
 
 1. [Google Cloud Platform] ページで、次の操作を行います。
-    1. [**組織 ID** ] ボックスに、事前にメモしておいた組織を入力します。
-    1. [**秘密キーファイル**] ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
-    1. [**接続 Google Cloud Platform**] をクリックします。
+    1. **[組織 ID]** ボックスに、事前にメモしておいた組織を入力します。
+    1. **[秘密キーファイル]** ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
+    1. **[接続 Google Cloud Platform]** をクリックします。
 
     > [!NOTE]
     > ユーザー管理とガバナンスを統合するには、G Suite インスタンスを接続することをお勧めします。 これは、G Suite 製品を使用せず、GCP ユーザーが G Suite ユーザー管理システムを介して管理されている場合でも推奨されます。
 
 **接続された G Suite 組織の一部である GCP インスタンスの場合**
 
-1. 接続されたインスタンスの一覧で、G Suite コネクタが表示されている行の末尾にある3つのドットをクリックし、[ **Google Cloud Platform の追加**] をクリックします。
+1. 接続されたインスタンスの一覧で、G Suite コネクタが表示されている行の末尾にある3つのドットをクリックし、 **[Google Cloud Platform の追加]** をクリックします。
 
 1. [Google Cloud Platform] ページで、次の操作を行います。
-    1. [**組織 ID** ] ボックスに、事前にメモしておいた組織を入力します。
-    1. [**秘密キーファイル**] ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
-    1. [**接続 Google Cloud Platform**] をクリックします。
+    1. **[組織 ID]** ボックスに、事前にメモしておいた組織を入力します。
+    1. **[秘密キーファイル]** ボックスで、前の手順でダウンロードした JSON ファイルを参照します。
+    1. **[接続 Google Cloud Platform]** をクリックします。
 
     > [!NOTE]
     > これにより、G Suite ユーザー id 領域を使用して、統合されたユーザー管理とガバナンスを実現できます。
 
 ### <a name="test-the-connection"></a>接続をテストする
 
-[**API のテスト**] をクリックして、正常に接続されたことを確認します。
+**[API のテスト]** をクリックして、正常に接続されたことを確認します。
 
-テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、[**完了**] をクリックします。
+テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
+
+アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
 
 ## <a name="aggregated-export-sink"></a>集計されたエクスポートシンク
 
@@ -153,7 +155,7 @@ GCP 接続の詳細を指定するには、[**アプリコネクタ**] の下で
 | 3. 組織レベルのシンクを一覧表示します。 | `gcloud logging sinks list --organization={ORGANIZATION_ID}` | [gcloud ログシンクの一覧](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/list) |
 | 4. 関連するシンクを削除します。 | `gcloud logging sinks delete {SINK_NAME} --organization={ORGANIZATION_ID}` | [gcloud ログシンクの削除](https://cloud.google.com/sdk/gcloud/reference/logging/sinks/delete) |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

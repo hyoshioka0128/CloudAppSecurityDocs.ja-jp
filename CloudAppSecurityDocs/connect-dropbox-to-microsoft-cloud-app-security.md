@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: c28c9a1c754b086f5cb0c9c8ec889f44fc6697a2
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: cc1d0b563d7d155fdd9f0aab55b4fe117ddfd6bc
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75189674"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912091"
 ---
 # <a name="connect-dropbox-to-microsoft-cloud-app-security"></a>Dropbox を Microsoft Cloud App Security に接続する
 
@@ -31,34 +31,36 @@ Dropbox ではサインインしなくても共有リンクからファイルに
 
 ## <a name="how-to-connect-dropbox-to-cloud-app-security"></a>Dropbox を Cloud App Security に接続する方法
 
-1. Cloud App Security コンソールで、**[調査]**、**[接続アプリ]** の順にクリックします。
+1. Cloud App Security コンソールで、 **[調査]** 、 **[接続アプリ]** の順にクリックします。
 
-2. **[アプリ コネクタ]** ページで、[+] ボタン、**[Dropbox]** の順にクリックします。
+2. **[アプリ コネクタ]** ページで、[+] ボタン、 **[Dropbox]** の順にクリックします。
 
     ![dropbox の接続](media/connect-dropbox.png "Dropbox を接続する")
 
 3. ポップアップで、管理者アカウントの電子メール アドレスを入力します。
 
-4. [**リンクを生成**] をクリックします。
+4. **[リンクを生成]** をクリックします。
 
-5. [**リンクに移動**] をクリックします。
+5. **[リンクに移動]** をクリックします。
 
     Dropbox のサインイン ページが開きます。 Cloud App Security がチームの Dropbox インスタンスにアクセスできるように、資格情報を入力します。
 
-6. Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、[**許可**] をクリックします。
+6. Cloud App Security がチームの情報やアクティビティ ログにアクセスし、チーム メンバーと同様にアクティビティを実行することを許可するかどうか確認するメッセージが Dropbox で表示されます。 続行するには、 **[許可]** をクリックします。
 
 7. Cloud App Security コンソールに戻ると、Dropbox が正常に接続されたことを通知するメッセージが届いています。
 
-8. [**API のテスト**] をクリックして、正常に接続されたことを確認します。
+8. **[API のテスト]** をクリックして、正常に接続されたことを確認します。
 
-    テストには数分かかる場合があります。 成功通知を受信したら、[**閉じる**] をクリックします。
+    テストには数分かかる場合があります。 成功通知を受信したら、 **[閉じる]** をクリックします。
 
 Dropbox を接続すると、接続までの 60 日間のイベントを受け取ります。
 
 > [!NOTE]
 > ファイルを追加する Dropbox のすべてのイベントは、アップロード ファイルとして Cloud App Security に表示され、Cloud App Security に接続された他のすべてのアプリと並べられます。
 
-## <a name="next-steps"></a>次のステップ
+アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
