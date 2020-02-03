@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 9763793948bb8c7109c9fb627e337189402d2f67
-ms.sourcegitcommit: f81dd93841d7e5d01a1edaaf464c8656c4e7efda
+ms.openlocfilehash: 3441f2b78c015ba38185ca2c584a347985b9a71f
+ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76814252"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912255"
 ---
 # <a name="connect-aws-to-microsoft-cloud-app-security"></a>AWS を Microsoft Cloud App Security に接続する
 
@@ -232,6 +232,8 @@ AWS セキュリティ構成に接続する前に、セキュリティとコン�
 1. **[API のテスト]** をクリックして、正常に接続されたことを確認します。  
 
     テストには数分かかる場合があります。 完了したら、成功または失敗の通知を受け取ります。 成功の通知を受信したら、 **[完了]** をクリックします。
+
+アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
