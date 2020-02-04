@@ -9,12 +9,12 @@ ms.date: 11/01/2019
 ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
-ms.openlocfilehash: 949a1b8f5409362256574f999c644dfaee2f0f09
-ms.sourcegitcommit: c96e73599036d62a4cef53fab0b8f060f5f0387f
+ms.openlocfilehash: 65a274b03492d0252e4ed617237159c685b1c131
+ms.sourcegitcommit: 69db12e3dc6ec25b8fb6a184beac34ca000841f1
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75600714"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977512"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータ セキュリティとプライバシー
 
@@ -181,7 +181,7 @@ Microsoft Cloud App Security を使うと、展開の範囲を限定できます
 
 ## <a name="security-and-privacy-for-cloud-app-security-us-government-gcc-high-customers"></a>Cloud App Security 米国政府機関 GCC High のお客様に対するセキュリティとプライバシー
 
-米国政府機関 GCC High のお客様に対する Cloud App Security のコンプライアンス基準とデータの場所について詳しくは、「[米国政府機関サービス向け Enterprise Mobility + Security の説明](/enterprise-mobility-security/solution/ems-cloud-app-security-govt-service-description)」をご覧ください。
+米国政府機関 GCC High のお客様に対する Cloud App Security のコンプライアンス基準とデータの場所について詳しくは、「[米国政府機関サービス向け Enterprise Mobility + Security の説明](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description)」をご覧ください。
 
 ## <a name="next-steps"></a>次のステップ
 
