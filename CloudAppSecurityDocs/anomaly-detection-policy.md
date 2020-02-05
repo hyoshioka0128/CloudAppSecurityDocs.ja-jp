@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/1/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0fc036ab2a785157d0f37347ae691b1455eaa9a1
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: aa1da4946f115a5cf53279d95d3c81c59bc63aef
+ms.sourcegitcommit: 63007af53dafe14ef335e761a723fcbcb1581476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720304"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76992451"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>行動分析と異常検出を瞬時に取得する
 
@@ -41,6 +41,13 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 * アクティビティ率
 
 ポリシーの結果に基づいて、セキュリティ アラートがトリガーされます。 Cloud App Security によってクラウド上のすべてのユーザー セッションが監視され、組織のベースラインやユーザーの通常アクティビティとは異なる状況が発生した場合にアラート通知されます。
+
+ネイティブ Cloud App Security アラートに加えて、Azure Active Directory (AD) Identity Protection から受信した情報に基づいて、次の検出アラートも取得します。
+
+* 漏洩した資格情報: ユーザーの有効な資格情報が漏洩したときにトリガーされます。 詳細については、「 [Azure AD の漏洩した資格情報の検出](/azure/active-directory/identity-protection/concept-identity-protection-risks#user-risk)」を参照してください。
+* リスクの高いサインイン: 複数の Azure AD Identity Protection サインイン検出を1つの検出に結合します (既定では無効)。 詳細については、「 [Azure AD のサインインリスクの検出](/azure/active-directory/identity-protection/concept-identity-protection-risks#sign-in-risk)」を参照してください。
+
+これらのポリシーは [Cloud App Security ポリシー] ページに表示され、有効または無効にすることができますが、編集することはできません。
 
 ## <a name="anomaly-detection-policies"></a>異常検出ポリシー
 
@@ -144,7 +151,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 異常検出エンジンを調整するには、次の方法でユーザー設定に応じてアラートを抑制または表示します。
 
-* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に、必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
+* [あり得ない移動] のポリシーでは、機密度スライダーを設定して、アラートがトリガーされる前に必要な異常時の動作のレベルを決定できます。 たとえば、低に設定すると、ユーザーの共通の場所から [ありえない移動] のアラートが抑制され、高に設定すると、このようなアラートが表示されます。
 
 * また、アクセス頻度の低い国、異常な IP アドレス、不審な IP アドレス、あり得ない移動によるアラートでは、失敗および成功した両方のログインを分析するか、または成功したログインのみを分析するかを構成できます。
 
@@ -180,7 +187,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使え
 
 1. マルウェアに感染したファイルの場合、ファイルの検出後に、 **[感染したファイル]** のリストを表示することができます。 ファイル ドロワーのマルウェア ファイルの名前をクリックして、マルウェア レポートを開きます。このレポートには、ファイルが感染しているそのマルウェアの種類に関する情報が示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
