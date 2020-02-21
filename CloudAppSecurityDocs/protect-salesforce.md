@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7cd509909b49d8c00acd6cebc8c1d8d48e580c66
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 3f3aef39e134e34c46bc97a559bc3c19d4434f84
+ms.sourcegitcommit: 6e266262b9b54e991acb8230a04e865628820557
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190162"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77495705"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-salesforce-environment"></a>Cloud App Security による Salesforce 環境の保護
 
@@ -29,7 +29,6 @@ Salesforce を Cloud App Security に接続すると、ユーザーのアクテ�
 - 昇格された特権
 - セキュリティ意識の不足
 - 悪意のあるサードパーティ製アプリと Google アドオン
-- マルウェア
 - 攻撃
 - 管理されていない独自のデバイスの持ち込む (BYOD)
 
@@ -46,10 +45,10 @@ Salesforce を Cloud App Security に接続すると、ユーザーのアクテ�
 
 次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
 
-| 種類 | 名前 |
+| 種類 | Name |
 | ---- | ---- |
-| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[複数回失敗したログイン試行](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常な偽装アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
-| アクティビティポリシーテンプレート | Logon from a risky IP address (危険な IP アドレスからのログオン)<br />Mass download by a single user (1 人のユーザーによる大量ダウンロード)<br />ランサムウェア アクティビティの可能性 |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[疑わしい IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[不可能な移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[ログイン試行が複数回失敗しました](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[異常な偽装アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
+| アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン<br />1人のユーザーによる大量ダウンロード<br />可能性のあるランサムウェアアクティビティ |
 | ファイルポリシーテンプレート | 承認されていないドメインで共有されているファイルを検出する<br />個人用電子メールアドレスで共有されるファイルを検出する<br />PII/PCI/PHI を使用したファイルの検出 |
 
 ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
@@ -60,7 +59,7 @@ Salesforce を Cloud App Security に接続すると、ユーザーのアクテ�
 
 | 種類 | 操作 |
 | ---- | ---- |
-| ユーザーガバナンス | -保留中のアラートをユーザーに通知する<br />-DLP 違反ダイジェストをファイル所有者に送信する<br />-ユーザーの中断<br />-警告をユーザーに通知する (Azure AD 経由)<br />-ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br />-ユーザーの中断 (Azure AD 経由) |
+| ユーザー ガバナンス | -保留中のアラートをユーザーに通知する<br />-DLP 違反ダイジェストをファイル所有者に送信する<br />-ユーザーの中断<br />-警告をユーザーに通知する (Azure AD 経由)<br />-ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br />-ユーザーの中断 (Azure AD 経由) |
 | OAuth アプリガバナンス | -ユーザーの OAuth アプリを取り消します |
 
 アプリからの修復脅威の詳細については、「[接続されているアプリの管理](governance-actions.md)」を参照してください。
@@ -69,7 +68,7 @@ Salesforce を Cloud App Security に接続すると、ユーザーのアクテ�
 
 [外部ユーザーとのセキュリティ保護とコラボレーション](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)に関するベストプラクティスを確認し、[機密データのダウンロードをアンマネージまたは危険なデバイスにブロックして保護](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [Salesforce を Microsoft Cloud App Security に接続する方法](connect-salesforce-to-microsoft-cloud-app-security.md)
