@@ -53,6 +53,8 @@
       href: discovered-apps.md
     - name: 接続されたアプリの操作
       items:
+        - name: 接続されたアプリの保護
+          href: protect-connected-apps.md
         - name: AWS を保護する
           href: protect-aws.md
         - name: Azure を保護する
