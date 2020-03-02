@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e0fb859ee6036340c75d6062f1c62a9ad4a76840
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.openlocfilehash: c685f973f597cedd653704964a8dace06331f313
+ms.sourcegitcommit: 7581611b4231fddbb3926a8dd1b0b16e6ea90ea5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566894"
+ms.lasthandoff: 03/01/2020
+ms.locfileid: "78204079"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Cloud App Security が Office 365 環境の保護にどのように役立つか
 
@@ -56,12 +56,12 @@ Office 365 コネクタを使用すると、次の製品が保護されます。
 
 次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
 
-| 種類 | Name |
+| Type | 名前 |
 | ---- | ---- |
 | 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[疑わしい IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[不可能な移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[マルウェアの検出](anomaly-detection-policy.md#malware-detection)<br />[ログイン試行が複数回失敗しました](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[疑わしいメール削除アクティビティ (プレビュー)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[疑わしい受信トレイ転送](anomaly-detection-policy.md#suspicious-inbox-forwarding)の[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
 | アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン<br />1人のユーザーによる大量ダウンロード<br />可能性のあるランサムウェアアクティビティ |
 | ファイルポリシーテンプレート | 承認されていないドメインで共有されているファイルを検出する<br />個人用電子メールアドレスで共有されるファイルを検出する<br />PII/PCI/PHI を使用したファイルの検出 |
-| OAuth アプリの異常検出ポリシー | [紛らわしい OAuth アプリ名](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[OAuth アプリの発行者名の誤用](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[悪意のある OAuth アプリの同意](anomaly-detection-policy.md#unusual-activities-by-user) |
+| OAuth アプリの異常検出ポリシー | [紛らわしい OAuth アプリ名](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[OAuth アプリの発行者名の誤用](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[悪意のある OAuth アプリの同意](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
 
 ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
 
@@ -69,7 +69,7 @@ Office 365 コネクタを使用すると、次の製品が保護されます。
 
 潜在的な脅威を監視するだけでなく、次の Office 365 ガバナンスアクションを適用して自動化し、検出された脅威を修復することができます。
 
-| 種類 | 操作 |
+| Type | 操作 |
 | ---- | ---- |
 | データガバナンス | **保存**<br /> -親フォルダーのアクセス許可を継承する<br /> -ファイル/フォルダーをプライベートにする<br /> -ファイル/フォルダーを管理者検疫に配置します<br /> -ファイル/フォルダーをユーザー検疫に配置します<br /> -ファイル/フォルダーをごみ箱に入れます。<br /> -特定のコラボレーターを削除します<br /> -ファイル/フォルダーの外部コラボレーターを削除します<br /> -分類ラベルを適用 Azure Information Protection<br /> -Azure Information Protection 分類ラベルを削除します<br /> **SharePoint**<br /> -親フォルダーのアクセス許可を継承する<br /> -ファイル/フォルダーをプライベートにする<br /> -ファイル/フォルダーを管理者検疫に配置します<br /> -ファイル/フォルダーをユーザー検疫に配置します<br /> -ファイル/フォルダーをユーザー検疫に配置し、所有者のアクセス許可を追加します。<br /> -ファイル/フォルダーをごみ箱に入れます。<br /> -ファイル/フォルダーの外部コラボレーターを削除します<br /> -特定のコラボレーターを削除します<br /> -分類ラベルを適用 Azure Information Protection<br /> -Azure Information Protection 分類ラベルを削除します |
 | ユーザー ガバナンス | -警告をユーザーに通知する (Azure AD 経由)<br /> -ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br /> -ユーザーの中断 (Azure AD 経由) |
@@ -81,7 +81,7 @@ Office 365 コネクタを使用すると、次の製品が保護されます。
 
 [外部ユーザーとのセキュリティ保護とコラボレーション](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)に関するベストプラクティスを確認し、[機密データのダウンロードをアンマネージまたは危険なデバイスにブロックして保護](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)します。
 
-## <a name="next-steps"></a>次のステップ:
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
 > [Office 365 を Microsoft Cloud App Security に接続する方法](connect-office-365-to-microsoft-cloud-app-security.md)
