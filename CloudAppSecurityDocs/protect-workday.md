@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9a08b00cabaa7829663d391073a9a4935efdee58
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 9ee405188d0f338bfe43ca9a08730baa6054a844
+ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190032"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78274637"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-workday-environment"></a>Cloud App Security が Workday 環境の保護にどのように役立つか
 
@@ -38,9 +38,10 @@ Workday を Cloud App Security に接続すると、ユーザーのアクティ�
 
 次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
 
-| 種類 | 名前 |
+| 種類 | Name |
 | ---- | ---- |
-| アクティビティポリシーテンプレート | Logon from a risky IP address (危険な IP アドレスからのログオン) |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[疑わしい IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[不可能な移動](anomaly-detection-policy.md#impossible-travel) |
+| アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン |
 
 ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
 
@@ -54,7 +55,7 @@ Workday を Cloud App Security に接続すると、ユーザーのアクティ�
 
 [外部ユーザーとのセキュリティ保護とコラボレーション](best-practices.md#secure-collaboration-with-external-users-by-enforcing-real-time-session-controls)に関するベストプラクティスを確認し、[機密データのダウンロードをアンマネージまたは危険なデバイスにブロックして保護](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [Workday を Microsoft Cloud App Security に接続する方法](connect-workday-to-microsoft-cloud-app-security.md)
