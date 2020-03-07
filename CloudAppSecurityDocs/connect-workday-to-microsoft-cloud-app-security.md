@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 032ed68260e178c176c631b41eb7dc64e869cbd3
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912199"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342730"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
 
@@ -35,15 +35,15 @@ ms.locfileid: "76912199"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4n1ZO]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>前提条件
 
 Cloud App Security への接続に使用する Workday アカウントは、セキュリティグループ (新規または既存) のメンバーである必要があります。 Workday 統合システムユーザーを使用することをお勧めします。 セキュリティグループには、次のドメインセキュリティポリシーに対して次のアクセス許可を選択する必要があります。
 
 | 機能領域 | ドメインセキュリティポリシー | サブドメインのセキュリティポリシー | レポート/タスクの権限 | 統合権限 |
 | --- | --- | --- | --- | --- |
-| System (システム) | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
-| System (システム) | セキュリティ管理 | | 表示、変更 | Get、Put |
-| System (システム) | システム監査 | | 表示 | 取得 |
+| System | 設定: テナントのセットアップ-全般 | 設定: テナントのセットアップ–セキュリティ | 表示、変更 | Get、Put |
+| System | セキュリティ管理 | | 表示、変更 | Get、Put |
+| System | システム監査 | | 表示 | 取得 |
 | スタッフ | Worker データ: スタッフ | Worker データ: パブリックワーカーレポート | 表示 | 取得 |
 
 > [!NOTE]
@@ -82,7 +82,7 @@ Workday 統合ユーザー、セキュリティグループ、およびアクセ
 1. 登録したら、次のパラメーターをメモして、 **[完了]** をクリックします。
 
     * クライアント ID
-    * クライアントシークレット
+    * クライアント シークレット
     * Workday REST API エンドポイント
     * トークンエンドポイント
     * 承認エンドポイント
@@ -116,7 +116,7 @@ Workday 統合ユーザー、セキュリティグループ、およびアクセ
 
 アプリの接続で問題が発生した場合は、「[アプリコネクタのトラブルシューティング](troubleshooting-api-connectors-using-error-messages.md)」を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
