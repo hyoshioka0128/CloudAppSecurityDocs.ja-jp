@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 54db3f2b49150e37108fa7d376797df72f23a3d0
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: e9a2a4ecc10506a992ba4e01ad4fac09eef37275
+ms.sourcegitcommit: c303acdcb251c9b15930ab9ed701ab32dcaa6053
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304864"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927943"
 ---
 # <a name="connect-box-to-microsoft-cloud-app-security"></a>Box を Microsoft Cloud App Security に接続
 
@@ -34,19 +34,16 @@ ms.locfileid: "78304864"
 
 1. アプリケーションのアクセス許可のアクセスを制限する場合は、次の手順に従います。 それ以外の場合は、手順 2. に進みます。
 
-    - Box 管理コンソールで、設定アイコンをクリックし、 **[ビジネス設定]** または **[エンタープライズ設定]** をクリックします。
-
-         ![box のビジネス設定](media/box-business-settings.png "box のビジネス設定")
-
-    - **[アプリ]** タブをクリックします。
+    1. Box アカウントに管理者アカウントでサインインします。
+    1. [**アプリ** > **カスタムアプリ** > **設定**] をクリックします。
 
          ![box アプリ](media/box-apps.png "box アプリ")
 
-    - **[パブリッシュ]** されていないアプリケーション が選択されている場合は、 **[除く]** テキストボックスに Cloud App Security アプリのシリアル番号を追加します。
+    1. [発行されていない**アプリを既定で無効にする**] が選択されている場合は、[次**を除く**] テキストボックスに Cloud App Security API キーを追加します。
 
-         |データセンター|Microsoft Cloud App Security シリアル番号|
+         |データセンター|Cloud App Security API キー|
          |----|----|
-         |US1| `nduj1o3yavu30dii7e03c3n7p49cj2qh`|
+         |US1|`nduj1o3yavu30dii7e03c3n7p49cj2qh`|
          |米国|`w0ouf1apiii9z8o0r6kpr4nu1pvyec75`|
          |US3|`dmcyvu1s9284i2u6gw9r2kb0hhve4a0r`|
          |EU1|`me9cm6n7kr4mfz135yt0ab9f5k4ze8qp`|
@@ -54,10 +51,10 @@ ms.locfileid: "78304864"
 
         次に、 **[保存]** をクリックします。 接続している Cloud App Security データセンターを確認する方法については、「[データセンターを表示](network-requirements.md#view-your-data-center)する」を参照してください。
 
-    ![box の設定 (を除く)](media/box-settings-except-for.png)
+        ![box の設定 (を除く)](media/box-settings-except-for.png)
 
-    > [!NOTE]
-    > 既存の Ad合金 m のお客様で、コンソールの URL が Adbwahmilhdlpbqy2ongkl119o3lrkoshc m 用であり、Cloud App Security ていない場合は、このアプリのシリアル番号: を使用します。
+        > [!NOTE]
+        > 既存の Ad合金 m のお客様で、コンソールの URL が Ad合金 m 用であり、Cloud App Security ていない場合は、このアプリのシリアル番号: `bwahmilhdlpbqy2ongkl119o3lrkoshc`を使用します。
 
 2. Cloud App Security ポータルで、 **[調査]** 、 **[接続さ]** れたアプリ の順にクリックします。
 

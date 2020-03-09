@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4f0fc4fa4bef878f6b248357f8c9bae97e52bbce
-ms.sourcegitcommit: 11ae264d365e403f7761e880e82aad80afc31228
+ms.openlocfilehash: 5ab52bf417a6a0a6fea583fac9f64f70ea78e4a3
+ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "77674597"
+ms.lasthandoff: 03/08/2020
+ms.locfileid: "78927746"
 ---
 # <a name="access-policies"></a>アクセス ポリシー
 
@@ -80,14 +80,14 @@ Microsoft Cloud App Security アクセスポリシーを使用すると、ユー
 ## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
-> [セッション制御を使用したアンマネージドデバイスでのダウンロードのブロック](use-case-proxy-block-session-aad.md)
+> [« PREVIOUS: セッションポリシーを作成する方法](session-policy-aad.md)
+
+> [!div class="nextstepaction"]
+> [次: 人気のあるユースケースを調べる»](use-case-proxy-block-session-aad.md)
 
 ## <a name="see-also"></a>参照
 
 > [!div class="nextstepaction"]
-> [セッションポリシーを作成する方法](session-policy-aad.md)
-
-> [!div class="nextstepaction"]
-> [人気のあるユースケースを調べる»](use-case-proxy-block-session-aad.md)
+> [セッション制御を使用したアンマネージドデバイスでのダウンロードのブロック](use-case-proxy-block-session-aad.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
