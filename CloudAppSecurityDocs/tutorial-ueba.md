@@ -11,15 +11,15 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74733696"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78342899"
 ---
-# <a name="tutorial-investigate-risky-users"></a>チュートリアル: 危険性の高いユーザーを調査する
+# <a name="tutorial-investigate-risky-users"></a>チュートリアル:危険性の高いユーザーを調査する
 
-*適用対象:Microsoft Cloud App Security*
+「オブジェクトの*適用対象: Microsoft Cloud App Security*
 
 セキュリティ運用チームは、ID 攻撃の対象となるあらゆる次元において、疑いのあるなしに関わらずユーザーの利用状況を監視することが求められています。その際、互いに接続されていないことの多い複数のセキュリティ ソリューションが使われます。 現在、多くの企業では、各自の環境内の脅威を積極的に特定するための捜索チームが設けられていますが、膨大な量のデータの中から何を探せばよいのか、把握するのが困難になる場合があります。 Microsoft Cloud App Security では、複雑な相関関係のルールの作成を不要にすることで、これが簡略化されます。また、お客様のクラウドおよびオンプレミス ネットワーク全体にわたる攻撃を検索することができます。
 
@@ -99,7 +99,7 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
 
 * このアクティビティに高いスコアが付けられ、他のものには付けられていない理由を理解するために、 **[アクティビティ ログ]** に移動します。 **[調査の優先順位]** を **[Is set]\(設定済み\)** に設定すると、どれが不審なアクティビティであるか把握できます。 たとえば、ウクライナで発生したすべてのアクティビティに対して、調査の優先順位に基づくフィルター処理を行えます。 次に、他にもリスクの高いアクティビティがあったかどうかや、そのユーザーの接続元を確認できます。また、簡単に他のドリルダウン (最近の異常ではないクラウドおよびオンプレミス アクティビティなど) に目を転じ、調査を続行することができます。
 
-## フェーズ 4: 組織を保護する<a name="protect"></a>
+## フェーズ 4:組織を保護する<a name="protect"></a>
 
 調査の結果、あるユーザーが被害に遭っているという結論に達した場合、次の手順でリスクを軽減します。
 
@@ -111,7 +111,7 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
 * アラートをドリルダウンした結果、そのアクティビティによってアラートがトリガーされるべきではなかったことがわかった場合は、[アクティビティ ドロワー](activity-filters.md)で **[フィードバックの送信]** リンクをクリックしてください。お客様の組織のことを考慮に入れながら、アラート システムの微調整を確実に実施いたします。
 * 問題を修復した後は、アラートを閉じます。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 > [!div class="nextstepaction"]
 > [クラウド環境を保護するための日常的な作業](daily-activities-to-protect-your-cloud-environment.md)
