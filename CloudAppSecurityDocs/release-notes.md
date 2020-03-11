@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 7a2a4cffd2d69c606e5f00743b9bd544638e9bd9
-ms.sourcegitcommit: 9fe879ce7f07933866191724de5f108f43e3f923
+ms.openlocfilehash: 23e8b6ef8045334555cedd38ef54e5866bc8b974
+ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77566916"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78274667"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,26 @@ ms.locfileid: "77566916"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-169"></a>Cloud App Security リリース 169
+
+リリース日: 2020 年 3 月 1 日
+
+- **Workday の新しい検出**  
+Workday の異常な動作に関するアラートを拡張しました。 新しいアラートには、次のユーザーの地理的な場所の検出が含まれます。
+  - [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)
+  - [頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)
+  - [不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)
+  - [あり得ない移動](anomaly-detection-policy.md#impossible-travel)
+
+- **拡張された Salesforce ログ コレクション**  
+Cloud App Security は、Salesforce の時間単位のイベント ログをサポートするようになりました。 時間単位のイベント ログを使用すると、ユーザー アクティビティをほぼリアルタイムでいち早く監視することができます。 詳細については、[Salesforce の接続](connect-salesforce-to-microsoft-cloud-app-security.md)に関する記事を参照してください。
+
+- **マスター アカウントを使用した AWS セキュリティ構成のサポート**  
+Cloud App Security で、マスター アカウントの使用をサポートするようになりました。 マスター アカウントを接続すると、すべてのリージョンのすべてのメンバー アカウントのセキュリティに関する推奨事項を受け取ることができます。 マスター アカウントとの接続の詳細については、「[AWS セキュリティ監査を Cloud App Security に接続する方法](connect-aws-to-microsoft-cloud-app-security.md#how-to-connect-aws-security-configuration-to-cloud-app-security)」を参照してください。
+
+- **最新のブラウザーでのセッション制御のサポート**  
+Cloud App Security セッション制御に、Chromium に基づく新しい Microsoft Edge ブラウザーのサポートが追加されました。 最新バージョンの Internet Explorer と以前のバージョンの Microsoft Edge は引き続きサポートされますが、サポートは制限されるため、新しい Microsoft Edge ブラウザーを使用することをお勧めします。
 
 ## <a name="cloud-app-security-release-165-166-167-and-168"></a>Cloud App Security リリース 165、166、167、168
 
