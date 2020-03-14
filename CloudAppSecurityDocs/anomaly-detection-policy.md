@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342121"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285316"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>瞬間的な行動分析と異常検出を取得する
 

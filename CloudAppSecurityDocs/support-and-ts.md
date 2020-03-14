@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 770439dea68e73679ebf2fae7ed1eaf1af3f8005
-ms.sourcegitcommit: 7581611b4231fddbb3926a8dd1b0b16e6ea90ea5
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204113"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285676"
 ---
 # <a name="support-and-troubleshooting-microsoft-cloud-app-security"></a>Microsoft Cloud App Security のサポートとトラブルシューティング
 
@@ -98,6 +98,6 @@ Cloud App Security チームは常に、製品についてのご意見をお待�
 
 * **ドキュメント**に関するフィードバック: 新しいフィードバックシステムは、GitHub の問題に基づいて構築されています。 ドキュメントに関するフィードバックを提供するには、まず GitHub アカウントを作成する必要があります。 この変更については[、こちらのブログ記事](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs)をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 基本については、「 [Cloud App Security の](getting-started-with-cloud-app-security.md)概要」を参照してください。

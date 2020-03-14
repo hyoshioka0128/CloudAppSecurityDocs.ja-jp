@@ -1,6 +1,6 @@
 ---
-title: Cloud Discovery をデプロイする - Cloud App Security | Microsoft Docs
-description: この記事では、Cloud Discovery を稼働させるためのセットアップ手順について説明します。
+title: Cloud Discovery のデプロイ-Cloud App Security |Microsoft Docs
+description: この記事では、Cloud Discovery 機能を取得するためのセットアップ手順について説明します。
 author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
@@ -11,120 +11,120 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: fe21bbb39b52981d7aeba0839367d2fd54073983
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74721101"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285686"
 ---
-# <a name="set-up-cloud-discovery"></a>Cloud Discovery のセットアップ
+# <a name="set-up-cloud-discovery"></a>Cloud Discovery の設定
 
 *適用対象: Microsoft Cloud App Security*
 
-Cloud Discovery では、16,000 以上のクラウド アプリを掲載した Microsoft Cloud App Security のクラウド アプリ カタログに照らしてトラフィック ログが分析されます。 これらのアプリは、80以上のリスク要因に基づいてランク付けおよびスコア付けされ、クラウドの使用状況を継続的に可視化し、シャドウ IT を組織にもたらすリスクシャドウを提供します。
+Cloud Discovery は、16000を超えるクラウドアプリの Microsoft Cloud App Security のクラウドアプリカタログに対するトラフィックログを分析します。 これらのアプリは、80以上のリスク要因に基づいてランク付けおよびスコア付けされ、クラウドの使用状況を継続的に可視化し、シャドウ IT を組織にもたらすリスクシャドウを提供します。
 
-## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットと継続的なリスク評価レポート
+## <a name="snapshot-and-continuous-risk-assessment-reports"></a>スナップショットおよび継続的なリスク評価レポート
 
-次の 2 種類のレポートを生成できます。
+生成できるレポートには、次の2種類があります。
 
-- **スナップショット レポート**: ファイアウォールやプロキシから手動でアップロードするトラフィック ログのセットに対するアドホックな可視性を提供します。
+- **[スナップショットレポート]** -ファイアウォールとプロキシから手動でアップロードするトラフィックログのセットに対するアドホックな可視性を提供します。
 
-- **継続レポート**: Cloud App Security を使用してネットワークから転送されるすべてのログを分析します。 これらにより、すべてのデータの可視性が高まり、Machine Learning 異常検出エンジンまたは定義したカスタム ポリシーが使用され、特異な使用を自動的に検出できるようになります。 これらのレポートは、次の方法で接続することにより作成できます。
+- **継続的なレポート**-Cloud App Security を使用してネットワークから転送されるすべてのログを分析します。 これらの機能により、すべてのデータの可視性が向上し、異常検出エンジンを使用して Machine Learning、または定義したカスタムポリシーを使用して、異常な使用を自動的に識別できます。 これらのレポートは、次の方法で接続することによって作成できます。
 
   - [Microsoft DEFENDER ATP 統合](wdatp-integration.md): Cloud App Security を Microsoft Defender Advanced Threat PROTECTION (ATP) にネイティブに統合することにより、Cloud Discovery のロールアウトを簡素化し、企業ネットワークを超えて Cloud Discovery 機能を拡張し、コンピューターベースの調査を可能にします。
-  - [ログ コレクター](discovery-docker.md): ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
-  - [Zscaler 統合](zscaler-integration.md): Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
+  - [ログコレクター](discovery-docker.md): ログコレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化できます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
+  - [Zscaler 統合](zscaler-integration.md): Cloud App Security と Zscaler の両方を使用する場合は、2つの製品を統合して、セキュリティ Cloud Discovery のエクスペリエンスを向上させることができます。 Cloud App Security と Zscaler を一緒に使用すると、Zscaler ポータルで直接、承認されていないアプリの自動的なブロック、およびリスク評価をシームレスに Cloud Discovery 展開できます。
   - [iboss](iboss-integration.md)との統合: Cloud App Security と iboss の両方を使用する場合、2つの製品を統合して、セキュリティ Cloud Discovery のエクスペリエンスを向上させることができます。 また、Cloud App Security と iboss が連携して、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、および iboss ポータルでのリスク評価を直接行うことができます。
 
-## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>ログのプロセス フロー: 生データからリスク評価まで
+## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>ログプロセスフロー: 生データからリスク評価まで
 
-リスク評価を生成するプロセスは、次の手順で構成されています。 この処理には、処理されるデータの量に応じて数分から数時間かかります。
+リスク評価を生成するプロセスは、次の手順で構成されています。 処理されるデータの量によっては、処理に数分から数時間かかります。
 
-- **アップロード** – ネットワークの Web トラフィック ログがポータルにアップロードされます。
+- **アップロード**–ネットワークからの Web トラフィックログがポータルにアップロードされます。
 
-- **解析** – Cloud App Security で、トラフィック ログからトラフィック データが抽出され、データ ソースごとに専用のパーサーを使用して解析されます。
+- **Parse** – Cloud App Security は、データソースごとに専用のパーサーを使用して、トラフィックログからトラフィックデータを解析し、抽出します。
 
-- **分析** – トラフィック データをクラウド アプリ カタログと比較して分析することで、16,000 以上のクラウド アプリを識別できるほか、アプリのリスク スコアの評価もできます。 アクティブ ユーザーと IP アドレスも、分析の一環として識別されます。
+- **分析**–トラフィックデータは、クラウドアプリカタログに対して分析され、16000を超えるクラウドアプリを識別し、そのリスクスコアを評価します。 アクティブなユーザーと IP アドレスも分析の一部として識別されます。
 
-- **レポートの生成** – ログ ファイルから抽出されたデータのリスク評価レポートが生成されます。
+- **レポートの生成**-ログファイルから抽出されたデータのリスク評価レポートが生成されます。
 
 >[!NOTE]
-> 継続的なレポート データは 1 日に 2 回分析されます。
+> 継続的なレポートデータは1日に2回分析されます。
 
-## サポートされているファイアウォールとプロキシ <a name="supported-firewalls-and-proxies"></a>
+## サポートされているファイアウォールとプロキシ<a name="supported-firewalls-and-proxies"></a>
 
-- Barracuda - Web App Firewall (W3C)
-- Blue Coat Proxy SG - Access ログ (W3C)
+- Barracuda-Web アプリファイアウォール (W3C)
+- Blue コートプロキシ SG-アクセスログ (W3C)
 - Check Point
-- Cisco ASA with FirePOWER
-- Cisco ASA Firewall (Cisco ASA Firewall では、情報レベルを 6 に設定する必要があります)
+- FirePOWER を使用した Cisco ASA
+- Cisco ASA Firewall (Cisco ASA ファイアウォールの場合は、情報レベルを6に設定する必要があります)
 - Cisco Cloud Web Security
 - Cisco FWSM
 - Cisco IronPort WSA
-- Cisco Meraki - URL ログ
-- Clavister NGFW (Syslog)
+- Cisco のはがき– Url ログ
+- Clavister (Syslog)
 - ContentKeeper
-- Digital Arts i-FILTER
+- デジタルアート i-フィルター
 - Forcepoint
-- Fortinet Fortigate
-- iboss Secure Cloud Gateway
+- Fortinet Fortinet
+- iboss のセキュリティで保護されたクラウドゲートウェイ
 - Juniper SRX
 - Juniper SSG
-- McAfee Secure Web Gateway
+- McAfee Secure Web ゲートウェイ
 - Microsoft Forefront Threat Management Gateway (W3C)
-- Palo Alto Firewall シリーズ
-- Sonicwall (旧称 Dell)
+- Palo Alto シリーズファイアウォール
+- Sonicwall (旧 Dell)
 - Sophos SG
 - Sophos XG
 - Sophos Cyberoam
 - Squid (共通)
 - Squid (ネイティブ)
 - Stormshield
-- Websense - Web Security Solutions - 調査の詳細レポート (CSV)
-- Websense - Web Security Solutions - インターネットのアクティビティ ログ (CEF)
+- Websense-Web Security Solutions-調査の詳細レポート (CSV)
+- Websense-Web Security Solutions-インターネットアクティビティログ (CEF)
 - Zscaler
 
 > [!NOTE]
-> Cloud Discovery では、IPv4 と IPv6 の両方のアドレスをサポートします。
+> Cloud Discovery では、IPv4 と IPv6 の両方のアドレスがサポートされます。
 
-ログがサポートされていない場合は、**データ ソース**として **[その他]** を選択し、アップロードしようとしているアプライアンスおよびログを指定します。 ログは Cloud App Security クラウド アナリスト チームによって確認され、要求したログの種類のサポートが追加されるかどうかが通知されます。 また、書式に合うカスタム パーサーを定義することもできます。 詳細については、「[カスタム ログ パーサーの使用](custom-log-parser.md)」を参照してください。
+ログがサポートされていない場合は、**データソース**として **[その他]** を選択し、アップロードしようとしているアプライアンスとログを指定します。 ログは Cloud App Security クラウドアナリストチームによって確認されます。ログの種類のサポートが追加されると、通知が表示されます。 または、書式に一致するカスタムパーサーを定義することもできます。 詳細については、「[カスタムログパーサーの使用](custom-log-parser.md)」を参照してください。
 
-データ属性 (ベンダーのドキュメントに従う)
+データ属性 (ベンダーのドキュメントによる):
 
-| [データ ソース] | ターゲット アプリの URL | ターゲット アプリの IP | Username | 配信元 IP | 総トラフィック | アップロードされたバイト数 |
+| データ ソース | ターゲットアプリの URL | ターゲットアプリの IP | Username | 配信元 IP | 合計トラフィック | アップロードされたバイト数 |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **はい** | **はい** | **はい** | **はい** | [いいえ] | [いいえ] |
-| Blue Coat | **はい** | [いいえ] | **はい** | **はい** | **はい** | **はい** |
-| Checkpoint | [いいえ] | **はい** | [いいえ] | **はい** | [いいえ] | [いいえ] |
-| Cisco ASA (Syslog) | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | [いいえ] |
-| Cisco ASA with FirePOWER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Cisco Cloud Web Security |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Cisco FWSM | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | [いいえ] |
-| Cisco IronPort WSA | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Cisco Meraki | **はい** | **はい** | [いいえ] | **はい** | [いいえ] | [いいえ] |
-| Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| ContentKeeper | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| SonicWall (旧称 Dell) | **はい** | **はい** | [いいえ] | **はい** | **はい** | **はい** |
-| Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| ForcePoint Web セキュリティクラウド |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Fortigate | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | **はい** |
-| Fortinet Fortinet |**はい**|**はい**|[いいえ]|**はい**|**はい**|**はい**|
-| iboss |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| Juniper SRX | [いいえ] | **はい** | [いいえ] | **はい** | **はい** | **はい** |
-| Juniper SSG | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
-| McAfee SWG | **はい** | [いいえ] | [いいえ] | **はい** | **はい** | **はい** |
-| MS TMG | **はい** | [いいえ] | **はい** | **はい** | **はい** | **はい** |
-| Palo Alto Networks | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Sophos | **はい** | **はい** | **はい** | **はい** | **はい** | [いいえ] |
-| Squid (共通) | **はい** | [いいえ] | **はい** | **はい** | [いいえ] | **はい** |
-| Squid (ネイティブ) | **はい** | [いいえ] | **はい** | **はい** | [いいえ] | **はい** |
-| Stormshield | [いいえ] | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Websense: 調査の詳細レポート (CSV) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Websense: インターネットのアクティビティ ログ (CEF) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Zscaler | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Barracuda | **○** | **○** | **○** | **○** | いいえ | いいえ |
+| 青コート | **○** | いいえ | **○** | **○** | **○** | **○** |
+| チェックポイント | いいえ | **○** | いいえ | **○** | いいえ | いいえ |
+| Cisco ASA (Syslog) | いいえ | **○** | いいえ | **○** | **○** | いいえ |
+| FirePOWER を使用した Cisco ASA | **○** | **○** | **○** | **○** | **○** | **○** |
+| Cisco Cloud Web Security |**○**|**○**|**○**|**○**|**○**|**○**|
+| Cisco FWSM | いいえ | **○** | いいえ | **○** | **○** | いいえ |
+| Cisco Ironport WSA | **○** | **○** | **○** | **○** | **○** | **○** |
+| Cisco のおアキ | **○** | **○** | いいえ | **○** | いいえ | いいえ |
+| Clavister (Syslog) | **○** | **○** | **○** | **○** | **○** | **○** |
+| ContentKeeper | **○** | **○** | **○** | **○** | **○** | **○** |
+| SonicWall (旧 Dell) | **○** | **○** | いいえ | **○** | **○** | **○** |
+| デジタルアート i-フィルター | **○** | **○** | **○** | **○** | **○** | **○** |
+| ForcePoint LEEF |**○**|**○**|**○**|**○**|**○**|**○**|
+| ForcePoint Web セキュリティクラウド |**○**|**○**|**○**|**○**|**○**|**○**|
+| Fortigate | いいえ | **○** | いいえ | **○** | **○** | **○** |
+| Fortinet Fortinet |**○**|**○**|いいえ|**○**|**○**|**○**|
+| iboss |**○**|**○**|**○**|**○**|**○**|**○**|
+| Juniper SRX | いいえ | **○** | いいえ | **○** | **○** | **○** |
+| Juniper SSG | いいえ | **○** | **○** | **○** | **○** | **○** |
+| McAfee SWG | **○** | いいえ | いいえ | **○** | **○** | **○** |
+| MS TMG | **○** | いいえ | **○** | **○** | **○** | **○** |
+| Palo Alto Networks | いいえ | **○** | **○** | **○** | **○** | **○** |
+| Sophos | **○** | **○** | **○** | **○** | **○** | いいえ |
+| Squid (共通) | **○** | いいえ | **○** | **○** | いいえ | **○** |
+| Squid (ネイティブ) | **○** | いいえ | **○** | **○** | いいえ | **○** |
+| Stormshield | いいえ | **○** | **○** | **○** | **○** | **○** |
+| Websense-調査の詳細レポート (CSV) | **○** | **○** | **○** | **○** | **○** | **○** |
+| Websense-インターネットアクティビティログ (CEF) | **○** | **○** | **○** | **○** | **○** | **○** |
+| Zscaler | **○** | **○** | **○** | **○** | **○** | **○** |
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)

@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.openlocfilehash: bf9260d0fc4c68ac27638fbefbfdd738a89ccd22
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342729"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285536"
 ---
 # <a name="connect-google-cloud-platform-to-microsoft-cloud-app-security-preview"></a>Microsoft Cloud App Security への Google Cloud Platform の接続 (プレビュー)
 

@@ -8,11 +8,11 @@ ms.topic: best-practice
 ms.date: 10/24/2019
 ms.collection: M365-security-compliance
 ms.openlocfilehash: e90a340c206c0bfb1c01542dd184664d1fe87dfe
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74143467"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285326"
 ---
 # <a name="cloud-app-security-best-practices"></a>Cloud App Security のベストプラクティス
 
@@ -43,8 +43,8 @@ Cloud App Security と Microsoft Defender Advanced Threat Protection (Microsoft 
 **詳細情報**:
 
 * [Cloud App Security との Microsoft Defender ATP 統合](wdatp-integration.md)
-* [Cloud Discovery のセットアップ](set-up-cloud-discovery.md)
-* [ネットワーク内のシャドウ IT の検出と管理](tutorial-shadow-it.md)
+* [Cloud Discovery の設定](set-up-cloud-discovery.md)
+* [ネットワーク内のシャドウ IT を検出して管理する](tutorial-shadow-it.md)
 
 ---
 
@@ -112,7 +112,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 * **共有ファイルの所有者**: 外部と企業のファイルを共有しているユーザーの一覧を表示します。  
 **詳細情報**:
 
-* [データ管理レポートを生成する](built-in-reports.md)
+* [データ管理レポートの生成](built-in-reports.md)
 
 ---
 
@@ -159,7 +159,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 **詳細情報**:
 
 * [アプリの接続](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)
-* [ファイル フィルター](file-filters.md)
+* [ファイルフィルター](file-filters.md)
 * [コンテンツ検査](content-inspection.md)
 
 ---
@@ -186,8 +186,8 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 **詳細**: SaaS アプリのコントロールを設定するにはアプリの条件付きアクセス制御を使用します。 セッションポリシーを作成して、危険度の高い、信頼度の低いセッションを監視できます。 同様に、管理されていないデバイスまたは危険なデバイスから機密データにアクセスしようとしているユーザーが、ダウンロードをブロックして保護するためのセッションポリシーを作成することもできます。 危険度の高いセッションを監視するためのセッションポリシーを作成しない場合、web クライアントでのダウンロードをブロックおよび保護する機能に加えて、Microsoft とサードパーティのアプリの両方で低信頼のセッションを監視する機能が失われます。  
 **詳細情報**:
 
-* [Microsoft Cloud App Security Conditional Access App Control でアプリを保護する](proxy-intro-aad.md)
-* [セッション ポリシー](session-policy-aad.md)
+* [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用したアプリの保護](proxy-intro-aad.md)
+* [セッションポリシー](session-policy-aad.md)
 
 ---
 ---
@@ -200,8 +200,8 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 **詳細**: 環境内のコラボレーションをセキュリティで保護するために、内部ユーザーと外部ユーザーの間のセッションを監視するためのセッションポリシーを作成できます。 これにより、ユーザー間のセッションを監視し、セッションのアクティビティが監視されていることを通知できるだけでなく、特定のアクティビティも制限することができます。 アクティビティを監視するためのセッションポリシーを作成する場合は、監視するアプリとユーザーを選択できます。  
 **詳細情報**:
 
-* [Microsoft Cloud App Security Conditional Access App Control でアプリを保護する](proxy-intro-aad.md)
-* [セッション ポリシー](session-policy-aad.md)
+* [Microsoft Cloud App Security アプリの条件付きアクセス制御を使用したアプリの保護](proxy-intro-aad.md)
+* [セッションポリシー](session-policy-aad.md)
 
 ---
 ---
@@ -260,7 +260,7 @@ Cloud App Security には、ユーザーが付与したアプリのアクセス�
 アラートを消去するときは、アラートが重要ではない理由を調査して理解することが重要です。 このようなアクティビティが大量にある場合は、アラートをトリガーするポリシーを確認して調整することもできます。  
 **詳細情報**:
 
-* [アクティビティ](activity-filters.md)
+* [活動](activity-filters.md)
 
 ---
 ---
@@ -295,5 +295,5 @@ AWS を使用すると、セキュリティ構成に関する推奨事項を把�
 また、カスタムアプリをアプリの条件付きアクセス制御アプリとしてオンボードして、信頼度の低いセッションを監視することもできます。  
 **詳細情報**:
 
-* [Cloud Discovery にカスタム アプリを追加する](cloud-discovery-custom-apps.md)
+* [Cloud Discovery にカスタムアプリを追加する](cloud-discovery-custom-apps.md)
 * [アプリのアプリの条件付きアクセス制御をオンボードしてデプロイする](proxy-deployment-any-app.md)

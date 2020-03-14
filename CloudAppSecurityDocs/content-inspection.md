@@ -15,11 +15,11 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 83969121e83bfa2efae352fc66de00766c23e5d9
-ms.sourcegitcommit: 445a7c208455e6ce2c4e13b028c811f4c3486290
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78342084"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285506"
 ---
 # <a name="content-inspection"></a>コンテンツ検査
 

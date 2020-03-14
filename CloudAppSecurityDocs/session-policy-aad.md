@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: ca5fdade4d00e93d8adf6a79f3534be9e6ac7481
-ms.sourcegitcommit: 35749af5294c45a3d5ba8667f7a764fe4719575d
+ms.openlocfilehash: 06a9b0fc0a732f745d370fe28541b0a753bfe0cc
+ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77567159"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "79285726"
 ---
 # <a name="session-policies"></a>セッション ポリシー
 
@@ -168,11 +168,15 @@ Cloud App Security セッションポリシーで **[コントロールファイ
 
 たとえば、ユーザーが Azure Information Protection ラベルなしでファイルをアップロードした場合、適切なラベルを必要とする機密コンテンツがファイルに含まれていることを示すメッセージが表示されることがあります。 同様に、ユーザーが管理されていないデバイスからドキュメントをアップロードしようとした場合、そのデバイスを登録する方法についての指示が記載されたメッセージ、またはデバイスを登録する必要がある理由についての詳細情報を示すメッセージが表示されます。
 
->[!div class="step-by-step"]
-> [« PREVIOUS: 任意のアプリに対するオンボードとデプロイアプリの条件付きアクセス制御»](proxy-deployment-any-app.md)
-> [次: アクセスポリシーを作成する方法»](access-policy-aad.md)
-
 ## <a name="next-steps"></a>次のステップ:
+
+>[!div class="nextstepaction"]
+> [« PREVIOUS: 任意のアプリのオンボードとデプロイアプリの条件付きアクセス制御»](proxy-deployment-any-app.md)
+
+>[!div class="nextstepaction"]
+> [次の手順: アクセスポリシーを作成する方法»](access-policy-aad.md)
+
+## <a name="see-also"></a>参照
 
 > [!div class="nextstepaction"]
 > [Azure AD アプリの条件付きアクセス制御を使用して、管理されていないデバイスでのダウンロードをブロックする](use-case-proxy-block-session-aad.md)
