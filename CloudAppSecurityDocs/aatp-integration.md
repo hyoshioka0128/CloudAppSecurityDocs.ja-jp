@@ -14,18 +14,18 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0605d54b8af24b2b060e96788349e2cfe45abaac
-ms.sourcegitcommit: 661228206512c6c8dcb30fdce59b2c038cf2fe69
+ms.openlocfilehash: 44ede581e5f646695110975aa7a842e60e418bd4
+ms.sourcegitcommit: f396474ead281430c7a63d1172ab7288c9878f13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/01/2020
-ms.locfileid: "78204279"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "80152004"
 ---
 # <a name="azure-advanced-threat-protection-integration"></a>Azure Advanced Threat Protection の統合
 
 *適用対象 Microsoft Cloud App Security:* git Microsoft Cloud App Security を Azure Advanced Threat Protection (Azure ATP) と統合することにより、クラウドアプリとオンプレミスの両方でハイブリッド環境全体にユーザーエンティティ行動分析 (UEBA) を提供します。詳細については、「[チュートリアル: 危険なユーザーの調査](tutorial-ueba.md)」を参照してください。 Azure ATP によって提供される機械学習と行動分析の詳細については、「 [Azure ATP とは](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)」を参照してください。
 
-## <a name="prerequisites"></a>[前提条件]
+## <a name="prerequisites"></a>前提条件
 
 ハイブリッド環境全体で完全なユーザー調査を実行するためには、次が必要です。
 
@@ -76,7 +76,17 @@ Azure ATP との Cloud App Security 統合を無効にするには:
 > [!NOTE]
 > 統合が無効になっている場合、既存の azure ATP データは Cloud App Security 保持ポリシーに従って保持されますが、[Id セキュリティの評価] セクションは削除されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="known-issues"></a>既知の問題
+
+### <a name="missing-siem-alert-updates"></a>不足している SIEM アラートの更新
+
+この問題は、複数回トリガーされるアラートに影響します。 アラートの最初のインスタンスは SIEM に送信されますが、同じ警告の後続のトリガーは送信されません。
+
+#### <a name="resolution"></a>解決方法
+
+既知の解決策はありません。
+
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
