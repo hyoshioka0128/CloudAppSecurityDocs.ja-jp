@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 151e698fe196946c41e945857b69a1e41135d433
-ms.sourcegitcommit: db5ec79d219dd6674939c872ace7cd2ca80860a4
+ms.openlocfilehash: 112f85ef89670f6e7fb6a256597bce72101c01ba
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75190012"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291160"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-amazon-web-services-aws-environment"></a>Cloud App Security によってアマゾンウェブサービス (AWS) 環境を保護する方法
 
@@ -40,10 +40,10 @@ AWS を Cloud App Security に接続することで、資産を保護し、潜�
 
 次の組み込みポリシーテンプレートを使用して、潜在的な脅威についての検出と通知を行うことができます。
 
-| 種類 | 名前 |
+| 種類 | Name |
 | ---- | ---- |
-| アクティビティポリシーテンプレート | 管理コンソールのサインインエラー<br />CloudTrail の構成の変更<br />EC2 インスタンスの構成の変更<br />IAM ポリシーの変更<br />Logon from a risky IP address (危険な IP アドレスからのログオン)<br />ネットワークアクセス制御リスト (ACL) の変更<br />ネットワークゲートウェイの変更<br />S3 構成の変更<br />セキュリティグループの構成の変更<br />仮想プライベートネットワークの変更 |
-| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[複数回失敗したログイン試行](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数のストレージ削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)(プレビュー)<br />[複数の VM 削除アクティビティ](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[通常とは異なる複数の VM 作成アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)(プレビュー) |
+| アクティビティポリシーテンプレート | 管理コンソールのサインインエラー<br />CloudTrail の構成の変更<br />EC2 インスタンスの構成の変更<br />IAM ポリシーの変更<br />危険な IP アドレスからのログオン<br />ネットワークアクセス制御リスト (ACL) の変更<br />ネットワークゲートウェイの変更<br />S3 構成の変更<br />セキュリティグループの構成の変更<br />仮想プライベートネットワークの変更 |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[ログイン試行が複数回失敗しました](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[通常とは異なる管理アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数のストレージ削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)(プレビュー)<br />[複数の VM の削除活動](anomaly-detection-policy.md#multiple-delete-vm-activities)<br />[通常とは異なる複数の VM 作成アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)(プレビュー)<br />[クラウドリソースの通常とは異なるリージョン](anomaly-detection-policy.md#unusual-activities-by-user)(プレビュー) |
 | ファイルポリシーテンプレート | S3 バケットにパブリックにアクセスできる |
 
 ポリシーの作成の詳細については、「[ポリシーを作成する](control-cloud-apps-with-policies.md#create-a-policy)」を参照してください。
@@ -54,7 +54,7 @@ AWS を Cloud App Security に接続することで、資産を保護し、潜�
 
 | 種類 | 操作 |
 | ---- | ---- |
-| ユーザーガバナンス | -警告をユーザーに通知する (Azure AD 経由)<br />-ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br />-ユーザーの中断 (Azure AD 経由) |
+| ユーザー ガバナンス | -警告をユーザーに通知する (Azure AD 経由)<br />-ユーザーにもう一度サインインするように要求します (Azure AD 経由)<br />-ユーザーの中断 (Azure AD 経由) |
 | データガバナンス | -S3 バケットをプライベートにする<br />-S3 バケットのコラボレーターを削除します |
 
 アプリからの修復脅威の詳細については、「[接続されているアプリの管理](governance-actions.md)」を参照してください。
@@ -63,7 +63,7 @@ AWS を Cloud App Security に接続することで、資産を保護し、潜�
 
 管理されていない[デバイスまたは危険なデバイスへの機密データのダウンロードをブロックし、保護する](best-practices.md#block-and-protect-download-of-sensitive-data-to-unmanaged-or-risky-devices)ためのベストプラクティスを確認します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次のステップ:
 
 > [!div class="nextstepaction"]
 > [AWS を Microsoft Cloud App Security に接続する方法](connect-aws-to-microsoft-cloud-app-security.md)

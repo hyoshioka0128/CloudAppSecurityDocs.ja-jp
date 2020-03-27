@@ -7,12 +7,12 @@ ms.service: cloud-app-security
 ms.topic: article
 ms.date: 12/04/2019
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eaf8218f45da787e361fe4e1627bb2cdfc4afeb1
-ms.sourcegitcommit: 27c45aa35c11c4ce54edbe10a9d22cf6b452fbe6
+ms.openlocfilehash: e4fd133978a4e10826b4b6d95ae7341c682d72dc
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304800"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291192"
 ---
 # <a name="how-cloud-app-security-helps-protect-your-office-365-environment"></a>Cloud App Security が Office 365 環境の保護にどのように役立つか
 
@@ -64,8 +64,8 @@ Office 365 コネクタを使用すると、次の製品が保護されます。
 
 | 種類 | Name |
 | ---- | ---- |
-| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[疑わしい IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[不可能な移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[マルウェアの検出](anomaly-detection-policy.md#malware-detection)<br />[ログイン試行が複数回失敗しました](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[疑わしいメール削除アクティビティ (プレビュー)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[疑わしい受信トレイ転送](anomaly-detection-policy.md#suspicious-inbox-forwarding)の[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
-| アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン<br />1人のユーザーによる大量ダウンロード<br />可能性のあるランサムウェアアクティビティ |
+| 組み込みの異常検出ポリシー | [匿名 IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-anonymous-ip-addresses)<br />[頻度の低い国からのアクティビティ](anomaly-detection-policy.md#activity-from-infrequent-country)<br />[不審な IP アドレスからのアクティビティ](anomaly-detection-policy.md#activity-from-suspicious-ip-addresses)<br />[あり得ない移動](anomaly-detection-policy.md#impossible-travel)<br />[終了したユーザーによって実行されるアクティビティ](anomaly-detection-policy.md#activity-performed-by-terminated-user)(AAD は IdP として必要)<br />[マルウェアの検出](anomaly-detection-policy.md#malware-detection)<br />[ログイン試行が複数回失敗しました](anomaly-detection-policy.md#multiple-failed-login-attempts)<br />[ランサムウェアの検出](anomaly-detection-policy.md#ransomware-activity)<br />[疑わしいメール削除アクティビティ (プレビュー)](anomaly-detection-policy.md#suspicious-email-deletion-activity-preview)<br />[疑わしい受信トレイ転送](anomaly-detection-policy.md#suspicious-inbox-forwarding)の[異常なファイル削除アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なるファイル共有アクティビティ](anomaly-detection-policy.md#unusual-activities-by-user)<br />[通常とは異なる複数ファイルのダウンロードアクティビティ](anomaly-detection-policy.md#unusual-activities-by-user) |
+| アクティビティポリシーテンプレート | 危険な IP アドレスからのログオン<br />1人のユーザーによる大量ダウンロード<br />可能性のあるランサムウェアアクティビティ<br />アクセスレベルの変更 (チーム)<br />追加された外部ユーザー (チーム)<br />一括削除 (チーム) |
 | ファイルポリシーテンプレート | 承認されていないドメインで共有されているファイルを検出する<br />個人用電子メールアドレスで共有されるファイルを検出する<br />PII/PCI/PHI を使用したファイルの検出 |
 | OAuth アプリの異常検出ポリシー | [紛らわしい OAuth アプリ名](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[OAuth アプリの発行者名の誤用](app-permission-policy.md#oauth-app-anomaly-detection-policies)<br />[悪意のある OAuth アプリの同意](app-permission-policy.md#oauth-app-anomaly-detection-policies) |
 

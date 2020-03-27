@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 02/04/2020
+ms.date: 03/24/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d2dce554b959c14ba32c92f27579d5525069b1f3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.openlocfilehash: dd637bc49d65452cedc13841686ea267134ef15e
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "79285316"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291237"
 ---
 # <a name="get-instantaneous-behavioral-analytics-and-anomaly-detection"></a>瞬間的な行動分析と異常検出を取得する
 
@@ -108,7 +108,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使用
 
 ### <a name="suspicious-inbox-manipulation-rules"></a>疑わしい受信トレイの操作規則
 
-* この検出は、ユーザーの受信トレイにメッセージやフォルダーを削除または移動する疑わしい規則が設定されている場合に、環境をプロファイルし、警告をトリガーします。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に隠ぺいされていること、組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを、示す可能性があります。
+* この検出は、ユーザーの受信トレイにメッセージやフォルダーを削除または移動する疑わしい規則が設定されている場合に、環境をプロファイルし、警告をトリガーします。 これは、ユーザーのアカウントが侵害されたこと、メッセージが意図的に非表示になっていること、およびメールボックスが組織内のスパムやマルウェアの配布に使用されていることを示している可能性があります。
 
 ### <a name="suspicious-email-deletion-activity-preview"></a>疑わしい電子メール削除アクティビティ (プレビュー)
 
@@ -126,6 +126,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使用
 * 通常とは異なる Power BI レポート共有アクティビティ (プレビュー)
 * 通常とは異なる複数の VM 作成アクティビティ (プレビュー)
 * 通常とは異なる複数のストレージ削除アクティビティ (プレビュー)
+* クラウドリソースの通常とは異なるリージョン (プレビュー)
 
 これらのポリシーは、学習したベースラインに対して1つのセッション内のアクティビティを検索します。これは、侵害の試行を示している可能性があります。 これらの検出は、ユーザーのログオンパターンをプロファイルし、誤検知を減らす機械学習アルゴリズムを利用します。 これらの検出は、環境のプロファイルを作成し、組織のアクティビティで学習したベースラインに対してアラートをトリガーするヒューリスティック異常検出エンジンの一部です。
 
@@ -141,7 +142,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使用
 
 * このポリシーは、ユーザーが組織内のベースラインを基準として1つのセッションで複数の Vm を削除した場合に、環境をプロファイルし、アラートをトリガーします。 これは、侵害の試行を示している可能性があります。
 
-## 自動ガバナンスを有効にする<a name="adp-automated-gov"></a>
+## <a name="enable-automated-governance"></a>自動ガバナンスを有効にする<a name="adp-automated-gov"></a>
 
 異常検出ポリシーによって生成されたアラートに対して自動修復アクションを有効にすることができます。
 
@@ -159,7 +160,7 @@ Microsoft Cloud App Security の異常検出ポリシーでは、すぐに使用
   * **中**: システムとユーザーの抑制
   * **High**: システム抑制のみ
 
-    この場合、
+    各要素の説明は次のとおりです。
 
     | 抑制の種類 | 説明 |
     | --- | --- |
