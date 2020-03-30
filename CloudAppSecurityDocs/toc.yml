@@ -240,6 +240,8 @@
           href: governance-discovery.md
         - name: Azure ATP の統合
           href: aatp-integration.md
+        - name: Azure AD Identity Protection の統合
+          href: aadip-integration.md
         - name: Azure Information Protection の統合
           href: azip-integration.md
         - name: 外部ソリューションと統合する
