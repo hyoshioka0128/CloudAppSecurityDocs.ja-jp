@@ -4,27 +4,43 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/08/2019
+ms.date: 03/24/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 23e8b6ef8045334555cedd38ef54e5866bc8b974
-ms.sourcegitcommit: 582779b75be41e57fb1d773d1cf01f6b8598521e
+ms.openlocfilehash: 619bce7e6f3931a53a5891c6c5ff0db223c384cf
+ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/04/2020
-ms.locfileid: "78274667"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80291246"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-170-and-171"></a>Cloud App Security リリース 170 と 171
+
+リリース日: 2020 年 3 月 22 日
+
+- **新しい異常検出:クラウド リソースの通常とは異なるリージョン (プレビュー)**  
+現在の機能が拡張されて、AWS に関する異常な動作が検出されるようになりました。 すぐに使用できるこの新しい検出は、自動的に有効になり、通常はリソースが作成されない AWS リージョンでそのアクティビティが実行された場合にアラートが生成されます。 多くの場合、攻撃者は組織の AWS クレジットを利用して、暗号化マイニングなどの悪意のあるアクティビティを実行します。 このような異常な動作を検出することは、攻撃を軽減するのに役立ちます。
+
+- **Microsoft Teams 用の新しいアクティビティ ポリシー テンプレート**  
+Cloud App Security では、Microsoft Teams での不審なアクティビティの検出を可能にする、次の新しいアクティビティ ポリシー テンプレートを使用できるようになりました。
+  - **アクセス レベルの変更 (Teams):** チームのアクセス レベルがプライベートからパブリックに変更されたときにアラートを生成します。
+  - **追加された外部ユーザー (Teams):** 外部ユーザーがチームに追加されたときにアラートを生成します。
+  - **大量の削除 (Teams):** ユーザーが多数のチームを削除したときにアラートを生成します。
+
+- **Azure Active Directory (Azure AD) Identity Protection の統合**  
+Cloud App Security に取り込まれた Azure AD Identity Protection アラートの重要度を制御できるようになりました。 また、**Azure AD の危険なサインイン**の検出をまだ有効にしていない場合は、重要度の高いアラートを取り込むためにこの検出が自動的に有効になります。 詳細については、「[Azure Active Directory Identity Protection の統合](aadip-integration.md)」を参照してください。
 
 ## <a name="cloud-app-security-release-169"></a>Cloud App Security リリース 169
 
@@ -73,7 +89,7 @@ Docker ベースのログ コレクターは、次の重要な更新で強化さ
 Cloud App Security では、ServiceNow の最新バージョン (New York) がサポートされるようになりました。 ServiceNow のセキュリティ保護については、「[ServiceNow を Microsoft Cloud App Security に接続する](connect-servicenow-to-microsoft-cloud-app-security.md)」をご覧ください。
 
 - **強化された検出ロジック: あり得ない移動**  
-あり得ない移動に関する検出ロジックが更新されて、カバレッジと精度が向上しました。 この更新の一環として、[会社のネットワークからのあり得ない移動](anomaly-detection-policy.md#impossible-travel)の検出ロジックも更新されました。
+あり得ない移動に関する検出ロジックが更新されて、対象範囲と精度が向上しました。 この更新の一環として、[会社のネットワークからのあり得ない移動](anomaly-detection-policy.md#impossible-travel)の検出ロジックも更新されました。
 
 - **アクティビティ ポリシーの新しいしきい値**  
 アラートの量を管理するのに役立つ[アクティビティ ポリシー](user-activity-policies.md)のしきい値が追加されました。 数日間にわたって大量の一致がトリガーされるポリシーは、自動的に無効になります。 これに関するシステム アラートを受け取った場合は、さらにフィルターを追加してポリシーを絞り込むか、またはレポートのためにポリシーを使用している場合は、代わりにクエリとして保存することを検討してください。
@@ -177,7 +193,7 @@ Cloud App Security で、Okta によってリリースされた新しいシス�
 - **Workday コネクタ (プレビュー)**  
 Workday 用の新しいアプリ コネクタが利用できるようになりました。 Cloud App Security を Workday に接続して、アクティビティを監視したり、そのユーザーとアクティビティを保護できます。 詳細については、[Workday の接続](connect-workday-to-microsoft-cloud-app-security.md)に関するページをご覧ください。
 
-- **「パスワード ポリシー」のリスク要因の評価の強化**  
+- **"パスワード ポリシー" のリスク要因の評価の強化**  
 クラウド アプリ カタログで、**パスワード ポリシー**のリスク要因をより詳細に評価できるようになりました。 これの情報アイコン上をポイントすると、アプリによって適用される特定のポリシーの詳細を表示できます。
 
 ## <a name="cloud-app-security-release-156"></a>Cloud App Security リリース 156
@@ -310,7 +326,7 @@ Cloud App Security の Cloud Discovery に、Palo Alto LEEF ログ形式をサ�
 
 - **セッション ポリシーの更新**  
   - **セッション ポリシーの追加のコンテンツ検査方法**:セッション ポリシーを設定するときに、ファイルのコンテンツ検査方法として、データ分類サービスを選択できるようになりました。 データ分類サービスでは、広範囲の機密の種類が組み込みでユーザーに提供され、機密情報を識別するために使用できます。
-  - **セッション ポリシーでのファイルのアクセス許可の制御の強化**:Cloud App Security を使ってダウンロードを制御するセッション コントロールを作成する場合、自分のクラウド アプリからのダウンロードに関して、ユーザーごとにアクセス許可 (読み取り専用など) を自動的に適用できるようになりました。 これにより、柔軟性のレベルが大きく上がり、事前に構成された企業のラベルを超えて情報を保護できるようになります。
+  - **セッション ポリシーでのファイルのアクセス許可の制御の強化**:Cloud App Security を使ってダウンロードを制御するセッション ポリシーを作成する場合、自分のクラウド アプリからのダウンロードに関して、ドキュメントに対してユーザーごとにアクセス許可 (読み取り専用など) を自動的に適用できるようになりました。 これにより、柔軟性のレベルが大きく上がり、事前に構成された企業のラベルを超えて情報を保護できるようになります。
   - **大きなファイルのダウンロードの制御**:セッション ポリシーでコンテンツ検査が有効になっている場合、ユーザーが非常に大きなファイルをダウンロードしようとしたときの動作を制御できるようになりました。 ダウンロード時にスキャンするにはファイルが大きすぎる場合は、それをブロックするか、許可するかを選択できます。
 
 ## <a name="cloud-app-security-release-146"></a>Cloud App Security リリース 146
@@ -394,7 +410,7 @@ Cloud App Security では、Box に対する 2 つの新しいガバナンス �
 Cloud App Security は、OneDrive のファイルが複数の地理的な場所に分散している場合でも、それらを完全に表示できるようになりました。 メインの場所だけでなく追加の場所にあるファイルでも、保護を利用できます。
 
 - **ポータル ナビゲーションの強化**  
-Cloud App Security ポータルが強化されて、ナビゲーションおよび Microsoft の他のセキュリティ サービスとの整合性が向上し、より使いやすくなりました。
+Cloud App Security ポータルが強化されて、ナビゲーションが改善され、Microsoft の他のセキュリティ サービスとの Cloud App Security の整合性が向上し、使用が合理化されて簡単になりました。
 
 ## <a name="cloud-app-security-release-141"></a>Cloud App Security リリース 141
 
@@ -468,7 +484,7 @@ Cloud App Security では、Azure Information Protection の保護ラベルに�
 カスタム ログ パーサーが拡張され、新しい、いっそう複雑な Web トラフィック ログ形式がサポートされるようになりました。 これらの強化の一環として、ユーザーは、ヘッダーレス CSV ログ ファイルに対するカスタム ヘッダーの入力、キーと値のファイルに対する特殊な区切り記号の使用、Syslog ファイル形式の処理などができるようになりました。
 
 - **新しい異常検出ポリシー**  
-受信トレイに対する疑わしい操作ルール: このポリシーでは、ユーザーの受信トレイでメッセージまたはフォルダーを削除または移動する疑わしいルールが設定されている場合に、環境がプロファイリングされて、アラートがトリガーされます。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に隠ぺいされていること、組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを、示す可能性があります。
+受信トレイに対する疑わしい操作ルール: このポリシーでは、ユーザーの受信トレイでメッセージまたはフォルダーを削除または移動する疑わしいルールが設定されている場合に、環境がプロファイリングされて、アラートがトリガーされます。 これは、ユーザーのアカウントが侵害されていること、メッセージが意図的に隠ぺいされていること、および組織内でスパムやマルウェアを配信するためにメールボックスが使用されていることを示している可能性があります。
 
 - **アプリのアクセス許可ポリシーでのグループのサポート**  
 Cloud App Security では、アプリを承認したユーザーのグループ メンバーシップに基づいて、アプリのアクセス許可ポリシーをより詳細に定義できるようになりました。 たとえば、管理者は、アクセス許可を承認したユーザーが Administrators グループのメンバーである場合にのみ、一般的ではないアプリが高いアクセス許可を要求した場合にそれらを失効させるポリシーを設定することができます。
@@ -510,7 +526,7 @@ Cloud App Security では、アプリを承認したユーザーのグループ 
 リリース日: 2018 年 9 月 2 日
 
 - **危険な OAuth アプリに対するアクセス許可の自動取り消し**  
-Office、Google、または Salesforce で OAuth アプリに対するアプリのアクセス許可を取り消すことによって、ユーザーがアクセスできる OAuth アプリを制御できるようになりました。 **アプリのアクセス許可ポリシー**を作成するときに、アプリのアクセス許可を取り消すようにポリシーを設定できます。
+Office、Google、または Salesforce で OAuth アプリに対するアプリのアクセス許可を取り消すことによって、ユーザーがアクセスできる OAuth アプリを制御できるようになりました。 **アプリのアクセス許可ポリシー**を作成するときに、アプリのアクセス許可を取り消すようにポリシーを設定できるようになりました。
 
 - **Cloud Discovery でサポートされる組み込みパーサーの追加**  
 Cloud Discovery で、Forcepoint Web Security Cloud のログ形式がサポートされるようになりました。
@@ -648,7 +664,7 @@ Microsoft Cloud App Security を使用することで、企業では、グルー
  テナントの検出されたアプリのいずれかが侵害されたときに通知する組み込みのアラートが作成されました。 このアラートでは、侵害の日時とアプリを使用したユーザーに関する情報、および侵害に関する情報がわかる公開ソースへのリンクが提供されます。
 
 - **新しいメール サーバー**  
- Cloud App Security のメール サーバーが変更され、異なる IP アドレス範囲を使用するようになりました。 通知を確実に受け取れるよう、新しい IP アドレスをスパム対策のホワイトリストに追加してください。 通知をカスタマイズするユーザーは、Microsoft Cloud App Security では、サードパーティの電子メール サービスである MailChimp® を使用して行うことができます。 メール サーバーの IP アドレスの一覧、および MailChimp での作業を有効にする手順については、「[ネットワークの要件](network-requirements.md#mail-server)」と「[メールの設定](mail-settings.md)」をご覧ください。
+ Cloud App Security のメール サーバーが変更され、異なる IP アドレス範囲が使用されるようになりました。 通知を確実に受け取れるよう、新しい IP アドレスをスパム対策のホワイトリストに追加してください。 通知をカスタマイズするユーザーは、Microsoft Cloud App Security では、サードパーティの電子メール サービスである MailChimp&reg; を使用してこれを行うことができます。 メール サーバーの IP アドレスの一覧、および MailChimp での作業を有効にする手順については、「[ネットワークの要件](network-requirements.md#mail-server)」と「[メールの設定](mail-settings.md)」をご覧ください。
 
 ## <a name="cloud-app-security-release-123"></a>Cloud App Security リリース 123
 
