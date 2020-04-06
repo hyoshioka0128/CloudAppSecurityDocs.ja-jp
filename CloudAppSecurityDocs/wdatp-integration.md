@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: d45711d5dfd5f0a7a3ae30df1e5e90425ff631ff
-ms.sourcegitcommit: be2c558eee71de02ec29632fc58256d49de0f86f
+ms.openlocfilehash: f596bd5161a5c7e0603ff934848ab6fa110647bf
+ms.sourcegitcommit: 288c279a0d2dd62a8ad8d7425c3e9e98857bf5f4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78304882"
+ms.lasthandoff: 04/05/2020
+ms.locfileid: "80666508"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-integration-with-microsoft-cloud-app-security"></a>Microsoft Defender Advanced Threat Protection と Microsoft Cloud App Security の統合
 
@@ -33,7 +33,7 @@ Cloud App Security は、IT が管理する Windows 10 コンピューターか�
 
 さらに、危険なユーザーを特定するときに、ユーザーがアクセスしたすべてのコンピューターを確認して、潜在的なリスクを検出することができます。 危険なコンピューターを特定した場合は、それを使用しているすべてのユーザーを確認し、潜在的なリスクをさらに検出します。
 
-トラフィック情報が収集されると、組織での[クラウドアプリの使用を詳細に把握](discovered-apps.md#deep-dive-into-discovered-apps)することができます。 Cloud App Security は、Microsoft Defender ATP ネットワーク保護機能を利用して、エンドポイントデバイスからクラウドアプリへのアクセスをブロックします。 ポータルで承認され[ていないものとしてタグ付け](governance-discovery.md#BKMK_SanctionApp)することで、アプリをブロックできます。 承認されていない各アプリの包括的な使用状況とリスクの評価に基づいて、アプリのドメインを使用して、Microsoft Defender ATP ポータルで[ドメインインジケーター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview)を作成します。 エンドポイントデバイスで実行されている Windows Defender ウイルス対策は、ドメインインジケーターを使用して、これらのアプリへのアクセスをブロックします。
+トラフィック情報が収集されると、組織での[クラウドアプリの使用を詳細に把握](discovered-apps.md#deep-dive-into-discovered-apps)することができます。 Cloud App Security は、Microsoft Defender ATP ネットワーク保護機能を利用して、エンドポイントデバイスからクラウドアプリへのアクセスをブロックします。 ポータルで承認され[ていない**Unsanctioned**ものとしてタグ付け](governance-discovery.md#BKMK_SanctionApp)することで、アプリをブロックできます。 承認されていない各アプリの包括的な使用状況とリスクの評価に基づいて、アプリのドメインを使用して、Microsoft Defender ATP ポータルで[ドメインインジケーター](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators#create-indicators-for-ips-and-urlsdomains-preview)を作成します。 エンドポイントデバイスで実行されている Windows Defender ウイルス対策は、ドメインインジケーターを使用して、これらのアプリへのアクセスをブロックします。
 
 > [!NOTE]
 > Microsoft Defender ATP を体験する場合は、 [無料試用版にサインアップして](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)ください。
@@ -99,7 +99,7 @@ Microsoft Defender ATP を Cloud App Security に統合したら、Cloud Discove
 >
 > - Microsoft Defender ATP は、最大 4 MB のチャンク単位で Cloud App Security にデータを転送します (約4000エンドポイントトランザクション)
 > - 1時間以内に 4 MB の制限に達していない場合、Microsoft Defender ATP は、過去1時間に実行されたすべてのトランザクションを報告します。
-> - エンドポイントデバイスがフォワードプロキシの背後にある場合、トラフィックの量は Microsoft Defender ATP に表示されないため、Cloud Discovery レポートには含まれません。 詳細については、「[転送プロキシの背後にあるネットワーク接続の監視](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274)」を参照してください。
+> - エンドポイントデバイスがフォワードプロキシの背後にある場合、トラフィックデータは Microsoft Defender ATP に表示されないため、Cloud Discovery レポートには含まれません。 詳細については、「[転送プロキシの背後にあるネットワーク接続の監視](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Monitoring-network-connection-behind-forward-proxy-Public/ba-p/758274)」を参照してください。
 
 ## <a name="block-access-to-unsanctioned-cloud-apps"></a>承認されていないクラウドアプリへのアクセスをブロックする
 
