@@ -49,7 +49,7 @@ NRT スキャンと連続スキャンの両方のファイルが、検査のた�
 
 - 電子メールアドレス
 - クレジットカード番号
-  - すべてのクレジットカード会社 (Visa、MasterCard、アメリカ Express、Diners クラブ、Discover、JCB、Dankort、UnionPay)
+  - すべてのクレジットカード会社 (Visa、MasterCard、American Express、Diners Club、Discover、JCB、Dankort、UnionPay)
   - 区切り記号-スペース、ドット、またはダッシュ
   - このスキャンには、Luhn 検証も含まれます。
 - SWIFT コード
