@@ -1,6 +1,6 @@
 ---
-title: ファイルを含める
-description: ファイルを含める
+title: インクルード ファイル
+description: インクルード ファイル
 services: active-directory
 author: eross-msft
 ms.service: active-directory
@@ -9,11 +9,11 @@ ms.date: 04/24/2018
 ms.author: lizross
 ms.custom: include file
 ms.openlocfilehash: b049b3651f12b1a73a3511d030bbdbbfaceb2480
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "68912410"
 ---
 >[!Note] 
-> この記事では、個人データをデバイスやサービスから削除するための手順を示します。この記事は、GDPR 下でのユーザーの義務をサポートするために使用できます。 GDPR に関する一般的な情報については、[Service Trust Portal の GDPR セクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)をご覧ください。
+> この記事は、デバイスまたはサービスから個人用データを削除する手順について説明しており、GDPR での義務を果たすために使用できます。 GDPR に関する一般的な情報をお探しの場合は、[Service Trust portal の GDPR に関するセクション](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)を参照してください。
