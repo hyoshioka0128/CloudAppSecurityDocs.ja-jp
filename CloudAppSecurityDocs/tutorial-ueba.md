@@ -11,15 +11,15 @@ ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: cafb971ae16b0c5bd48e041d36c16521b6e7e5d3
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79241811"
 ---
 # <a name="tutorial-investigate-risky-users"></a>チュートリアル:危険性の高いユーザーを調査する
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 セキュリティ運用チームは、ID 攻撃の対象となるあらゆる次元において、疑いのあるなしに関わらずユーザーの利用状況を監視することが求められています。その際、互いに接続されていないことの多い複数のセキュリティ ソリューションが使われます。 現在、多くの企業では、各自の環境内の脅威を積極的に特定するための捜索チームが設けられていますが、膨大な量のデータの中から何を探せばよいのか、把握するのが困難になる場合があります。 Microsoft Cloud App Security では、複雑な相関関係のルールの作成を不要にすることで、これが簡略化されます。また、お客様のクラウドおよびオンプレミス ネットワーク全体にわたる攻撃を検索することができます。
 
@@ -36,7 +36,7 @@ ms.locfileid: "79241811"
 > * 3:[ユーザーをさらに調査する](#investigate)
 > * 4:[組織を保護する](#protect)
 
-## 調査の優先順位のスコアを理解する<a name="risk-score"></a>
+## <a name="understand-the-investigation-priority-score"></a>調査の優先順位のスコアを理解する<a name="risk-score"></a>
 
 調査の優先順位のスコアとは、Cloud App Security によって各ユーザーに付けられるスコアのことです。これにより、組織内の他のユーザーに対する、あるユーザーの相対的な危険度がわかります。
 
@@ -58,13 +58,13 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
 * **アクティビティのスコア付け**  
 アクティビティのスコアでは、特定のユーザーが特定のアクティビティを実行する確率が、そのユーザーとその同僚の行動に関する学習に基づいて判定されます。 最も異常であるとみなされたアクティビティには、最も高いスコアが付けられます。
 
-## フェーズ 1:保護するアプリに接続する<a name="connect-apps-protect"></a>
+## <a name="phase-1-connect-to-the-apps-you-want-to-protect"></a>フェーズ 1:保護するアプリに接続する<a name="connect-apps-protect"></a>
 
 1. [API コネクタ](enable-instant-visibility-protection-and-governance-actions-for-your-apps.md)を利用し、Microsoft Cloud App Security にアプリを 1 つ以上接続します。 [Office 365](connect-office-365-to-microsoft-cloud-app-security.md) の接続から始めることをお勧めします。
 1. [条件付きアクセスでアプリを制御する目的でプロキシ](proxy-deployment-aad.md)を利用し、追加のアプリを接続します。
 1. オンプレミス環境全体で分析情報を有効にするには、[Azure ATP 環境と統合する](aatp-integration.md)ように Cloud App Security を構成します。
 
-## フェーズ 2:最も危険性の高いユーザーの特定<a name="identify"></a>
+## <a name="phase-2-identify-top-risky-users"></a>フェーズ 2:最も危険性の高いユーザーの特定<a name="identify"></a>
 
 最も危険性の高いユーザーが誰であるかを Cloud App Security で特定するには、次の操作を行います。
 
@@ -89,7 +89,7 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
   >[!NOTE]
   >[ユーザー] ページにはすべてのアクティビティ全体にわたるデバイス、リソース、アカウントの情報が表示されますが、調査の優先順位のスコアは過去 7 日間におけるすべてのリスクの高いアクティビティとアラートの合計であることを覚えておくことが重要です。
 
-## フェーズ 3:ユーザーをさらに調査する<a name="investigate"></a>
+## <a name="phase-3-further-investigate-users"></a>フェーズ 3:ユーザーをさらに調査する<a name="investigate"></a>
 
 アラートに基づいてユーザーを調査する場合や、外部システムのアラートを確認した場合に、単独ではアラームの原因にならないアクティビティが存在している可能性があります。しかし、Cloud App Security によってそれらが他のアクティビティと共に集計された場合、そのアラートは不審なイベントの兆候である可能性があります。
 
@@ -99,7 +99,7 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
 
 * このアクティビティに高いスコアが付けられ、他のものには付けられていない理由を理解するために、 **[アクティビティ ログ]** に移動します。 **[調査の優先順位]** を **[Is set]\(設定済み\)** に設定すると、どれが不審なアクティビティであるか把握できます。 たとえば、ウクライナで発生したすべてのアクティビティに対して、調査の優先順位に基づくフィルター処理を行えます。 次に、他にもリスクの高いアクティビティがあったかどうかや、そのユーザーの接続元を確認できます。また、簡単に他のドリルダウン (最近の異常ではないクラウドおよびオンプレミス アクティビティなど) に目を転じ、調査を続行することができます。
 
-## フェーズ 4:組織を保護する<a name="protect"></a>
+## <a name="phase-4-protect-your-organization"></a>フェーズ 4:組織を保護する<a name="protect"></a>
 
 調査の結果、あるユーザーが被害に遭っているという結論に達した場合、次の手順でリスクを軽減します。
 

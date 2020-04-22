@@ -12,15 +12,15 @@ ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.suite: ems
 ms.openlocfilehash: 08271db964102cda85e424f5ef79bca025afaef7
-ms.sourcegitcommit: 00599ac6c64a4c62ed9ebdda3edb58f90f92c24d
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "76912240"
 ---
 # <a name="microsoft-cloud-app-security-for-us-government-gcc-high"></a>米国政府機関 GCC High の Microsoft Cloud App Security
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security GCC High オファリングは、Microsoft Azure Government クラウドに基づいて構築され、Office 365 GCC High と相互運用できるように設計されています。 GCC High オファリングでは、Microsoft Cloud App Security の商用インスタンスと同じテクノロジと機能が基盤として利用されています。 そのため、商用オファリングのパブリック ドキュメントを、サービスのデプロイと運用を行うための出発点として使用することができます。
 

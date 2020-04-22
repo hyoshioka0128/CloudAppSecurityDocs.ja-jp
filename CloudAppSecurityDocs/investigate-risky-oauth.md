@@ -15,15 +15,15 @@ ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
 ms.openlocfilehash: 889f36e89a55072df97c0668832f4aad0a942721
-ms.sourcegitcommit: 5572b16308283d95205031c5185a042fe2e5cada
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/17/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "77374203"
 ---
 # <a name="tutorial-investigate-risky-oauth-apps"></a>チュートリアル:危険な OAuth アプリを調査する
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 OAuth は、トークン ベースの認証と承認を行うためのオープン標準です。 OAuth を使用すると、ユーザーのパスワードを公開せずに、サード パーティのサービスでそのユーザーのアカウント情報を使用できるようになります。 OAuth はユーザーの代わりに仲介役として機能し、特定のアカウント情報の共有を承認するアクセス トークンをサービスに提供します。
 

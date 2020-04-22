@@ -14,15 +14,15 @@ ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
 ms.openlocfilehash: 4c85117dfd4080946fa5e1a205ec9fc890dea199
-ms.sourcegitcommit: 4f3883a9e85d0aaf2802b10433b221c3f1838d88
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/13/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "79241821"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル:ネットワーク内のシャドウ IT の検出と管理
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 IT 管理者に、従業員が使用していると考えられるクラウド アプリの数をたずねた場合、平均で 30 から 40 と答えます。しかし実際には、組織内の従業員によって使用されている個別のアプリの平均数は 1000 を超えています。 Shadow IT は、使用されているアプリとそのリスク レベルを把握し、特定するのに役立ちます。 従業員の 80% は、誰もレビューしていない未承認のアプリを使用しており、セキュリティとコンプライアンスのポリシーに準拠していない可能性があります。 また、従業員は企業ネットワークの外部からリソースやアプリにアクセスできるので、ファイアウォールに関するルールやポリシーだけでは不十分になっています。
 
