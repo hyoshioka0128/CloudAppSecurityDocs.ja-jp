@@ -10,15 +10,15 @@ ms.collection: M365-security-compliance
 ms.custom: seodec18
 ms.suite: ems
 ms.openlocfilehash: 65a274b03492d0252e4ed617237159c685b1c131
-ms.sourcegitcommit: 69db12e3dc6ec25b8fb6a184beac34ca000841f1
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/04/2020
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "76977512"
 ---
 # <a name="microsoft-cloud-app-security-data-security-and-privacy"></a>Microsoft Cloud App Security のデータ セキュリティとプライバシー
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 [!INCLUDE [Handle personal data](../includes/gdpr-intro-sentence.md)]
 
