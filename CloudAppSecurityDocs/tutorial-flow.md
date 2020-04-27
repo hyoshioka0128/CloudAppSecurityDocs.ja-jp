@@ -7,13 +7,13 @@ ms.service: cloud-app-security
 ms.topic: tutorial
 ms.date: 9/8/2019
 ms.openlocfilehash: 06fe00d3a289aa32846be71509707aa384b2177f
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
+ms.lasthandoff: 04/21/2020
 ms.locfileid: "74720540"
 ---
-# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>チュートリアル: エンドポイントの修復までガバナンスを拡張する
+# <a name="tutorial-extend-governance-to-endpoint-remediation"></a>チュートリアル:エンドポイントの修復までガバナンスを拡張する
 
 Cloud App Security には、ユーザーを停止したり、ファイルを非公開にするなどの定義済みのポリシーのガバナンス オプションがあります。 ネイティブに統合されている Microsoft Flow を使用すると、サービスとしてのソフトウェア (SaaS) コネクタの大規模なエコシステムを使用して、修復などのプロセスを自動化するワークフローを構築できます。
 
@@ -33,13 +33,13 @@ Cloud App Security には、ユーザーを停止したり、ファイルを非�
 
 Microsoft Flow プランがない場合は、[無料試用版アカウントにサインアップ](https://flow.microsoft.com/pricing)します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>[前提条件]
 
-* 有効な [Microsoft Flow プラン](https://flow.microsoft.com/pricing)が必要
+* 有効な [Microsoft Flow プランが必要](https://flow.microsoft.com/pricing)
 * 有効な Microsoft Defender ATP プランが必要
 * Microsoft Flow 環境が Azure AD と同期され、Defender ATP の監視対象で、ドメイン参加済みである
 
-## フェーズ 1:Cloud App Security の API トークンを生成する<a name="generate-token"></a>
+## <a name="phase-1-generate-a-cloud-app-security-api-token"></a>フェーズ 1:Cloud App Security の API トークンを生成する<a name="generate-token"></a>
 
 > [!NOTE]
 > Cloud App Security コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
@@ -54,7 +54,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![トークンとコピーの手順を示すトークン ウィンドウのスクリーンショット。](media/tutorial-flow-token-copy.png)
 
-## フェーズ 2:ウイルス対策スキャンを実行するフローを作成する<a name="create-flow"></a>
+## <a name="phase-2-create-a-flow-to-run-an-antivirus-scan"></a>フェーズ 2:ウイルス対策スキャンを実行するフローを作成する<a name="create-flow"></a>
 
 > [!NOTE]
 > Defender ATP コネクタを使用してフローを作成したことがある場合は、Flow によってコネクタが自動的に再利用されるため、**サインイン**の手順を省略できます。
@@ -71,7 +71,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![サインイン手順を示す Microsoft Flow のテンプレート ページのスクリーンショット。](media/tutorial-flow-templates-signin.png)
 
-## フェーズ 3:フローを構成する<a name="configure-flow"></a>
+## <a name="phase-3-configure-the-flow"></a>フェーズ 3:フローを構成する<a name="configure-flow"></a>
 
 > [!NOTE]
 > Azure AD コネクタを使用してフローを作成済みである場合は、Microsoft Flow がトークンを自動的に再利用するため、この手順を省略できます。
@@ -98,7 +98,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
     ![スキャンの設定セクションがある Flow ページのスクリーンショット。](media/tutorial-flow-templates-scan.png)
 
-## フェーズ 4: フローを実行するポリシーを設定する<a name="configure-policy"></a>
+## <a name="phase-4-configure-a-policy-to-run-the-flow"></a>フェーズ 4:フローを実行するポリシーを設定する<a name="configure-policy"></a>
 
 1. Cloud App Security で **[制御]** 、 **[ポリシー]** の順にクリックします。
 
@@ -112,7 +112,7 @@ Microsoft Flow プランがない場合は、[無料試用版アカウントに�
 
 このチュートリアルの手順を使用すると、Cloud App Security の修復機能を拡張するさまざまなワークフローを使用したアクションを作成できます。これには、その他の Defender ATP アクションも含まれます。 Microsoft Flow に定義済みの Cloud App Security ワークフローの一覧を表示するには、[「Cloud App Security」を検索](https://go.microsoft.com/fwlink/?linkid=2102574)してください。
 
-## <a name="see-also"></a>参照
+## <a name="see-also"></a>関連項目
 
 > [!div class="nextstepaction"]
 > [カスタム アラート オートメーションのための Microsoft Flow との統合](flow-integration.md)

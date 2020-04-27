@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 1/24/2019
+ms.date: 03/31/2020
 ms.topic: tutorial
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 097f1dcdf7cb360dc38ce138ee373d6d506bdda8
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
+ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927772"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "81228479"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>チュートリアル:機密情報のダウンロードをブロックする
 
-「オブジェクトの*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 今日の IT 管理者は、ジレンマを感じています。 従業員の生産性を高めたい。 これは、任意のデバイスからいつでも作業できるように、従業員にアプリへのアクセスを許可することを意味します。 それでいて、会社独自の機密情報を含めた資産を保護したいと考えています。 データを保護しながら、従業員がクラウド アプリにアクセスできるようにするにはどうすればよいでしょうか。 **このチュートリアルでは、アンマネージド デバイスまたは社外のネットワークの場所からエンタープライズ クラウド アプリの機密データにアクセスできるユーザーによるダウンロードをブロックできるようになります。**
 
@@ -38,22 +38,29 @@ ms.locfileid: "78927772"
 
 ## <a name="the-solution"></a>解決策
 
-Azure AD 条件付きアクセスと Microsoft Cloud App Security アプリの条件付きアクセス制御を使用して、クラウド アプリの使用を監視および制御することにより、組織を保護します。
+IdP ソリューションと Cloud App Security のアプリの条件付きアクセス制御を使用し、クラウド アプリの使用を監視し、制御することにより組織を保護します。
 
 ## <a name="prerequisites"></a>[前提条件]
 
-* Azure AD Premium P1 の有効なライセンス
-* Azure AD で SSO 用にクラウド アプリを構成する
+* Azure AD Premium P1 の有効なライセンスまたは ID プロバイダー (IdP) ソリューションから要求されるライセンス
+* 次のいずれかの認証プロトコルを使用し、SSO のクラウド アプリを構成します。
+
+    |IdP|プロトコル|
+    |---|---|
+    |Azure AD|SAML 2.0 または OpenID Connect|
+    |その他|SAML 2.0|
 * [アプリが Cloud App Security にデプロイされている](proxy-deployment-aad.md)ことを確認する
 
 ## <a name="create-a-block-download-policy-for-unmanaged-devices"></a>アンマネージド デバイスのブロック ダウンロード ポリシーを作成する
 
 Cloud App Security セッション ポリシーを使用すると、デバイスの状態に基づいてセッションを制限できます。 デバイスを条件として使用してセッションの制御を実現するには、条件付きアクセスポリシーとセッション ポリシーの両方を作成します。
 
-### <a name="step-1-create-an-azure-ad-conditional-access-policy"></a>手順 1:Azure AD 条件付きアクセス ポリシーを作成する
+### <a name="step-1-configure-your-idp-to-work-with-cloud-app-security"></a>手順 1:Cloud App Security と連動するように IdP を構成する
 
-1. 割り当てられたユーザーとアプリを使用して Azure AD 条件付きアクセス ポリシーを作成します。
-2. 条件付きアクセス ポリシー内のセッション制御で **[Use Conditional Access App Control enforced restrictions]\(アプリの条件付きアクセス制御による制限を使用\)** を選択します。
+次のように、Cloud App Security と連動するように IdP ソリューションを構成します。
+
+* [Azure AD 条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)については、[Azure AD との統合を構成する](proxy-deployment-aad.md#configure-integration-with-azure-ad)方法に関するページを参照してください
+* その他の IdP ソリューションについては、[その他の IdP ソリューションとの統合を構成する](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)方法に関するページを参照してください。
 
 このタスクを完了したら、Cloud App Security ポータルにアクセスし、セッションのファイルのダウンロードを監視および制御するためのセッション ポリシーを作成します。
 
