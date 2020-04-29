@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 7/30/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,27 +14,27 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: badb9427ba4a5eed267eb95f3b6d5c66ed058b98
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 75ee564e0001b76ea38f345cec24c02d567ed200
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720668"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477482"
 ---
 # <a name="microsoft-data-classification-services-integration"></a>Microsoft データ分類サービスの統合
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security では、Microsoft データ分類サービスをネイティブに使用して、クラウド アプリのファイルを分類できます。 Microsoft データ分類サービスには、Office 365、Azure Information Protection、および Microsoft Cloud App Security の間での、統合された情報保護エクスペリエンスが用意されています。 分類サービスでは、Microsoft Cloud App Security によって保護されているサード パーティのクラウド アプリにデータ分類を拡張できます。これにより、さらに多くのアプリ間で既存の決定事項を使用できます。
 
 >[!NOTE]
-> この機能は現在、米国、ヨーロッパ (フランスを除く)、オーストラリア、インド、カナダ、日本、および APAC でご利用いただけます。
+> この機能は現在、米国、ヨーロッパ、オーストラリア、インド、カナダ、日本、および APAC でご利用いただけます。
 
 ## <a name="enable-content-inspection-with-data-classification-services"></a>データ分類サービスを使用するコンテンツ検査を有効にする
 
 追加構成なしで、**Microsoft データ分類サービス**を使用するように**検査方法**を設定するためのオプションがあります。 このオプションは、Microsoft Cloud App Security のファイルに対するデータ漏えい保護のポリシーを作成するときに便利です。
 
-1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、 **[データ分類サービス]** を選択します。 また、[[セッションポリシー](session-policy-aad.md) ] ページで **[コントロールファイルのダウンロード (DLP 付き)]** を選択して、**検査方法**を設定することもできます。
+1. [ファイル ポリシー](data-protection-policies.md) ページの **[検査方法]** で、**[データ分類サービス]** を選択します。 また、[[セッションポリシー](session-policy-aad.md) ] ページで [**コントロールファイルのダウンロード (DLP 付き)** ] を選択して、**検査方法**を設定することもできます。
 
     ![データ分類サービスの設定](media/dcs-enable.png)
 2. ポリシーを適用するタイミングについて、条件が **1 つ以上**満たされた場合、または**すべて**満たされた場合のいずれかを選択します。
@@ -55,6 +55,6 @@ Microsoft Cloud App Security では、Microsoft データ分類サービスを�
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
+> [ポリシーを使用してクラウドアプリを制御する](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

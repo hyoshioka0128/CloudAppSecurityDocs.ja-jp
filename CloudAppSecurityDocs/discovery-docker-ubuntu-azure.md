@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 04/16/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,20 +14,20 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1c058f817e4fffa4f40060ad0bc865bb6798e771
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
+ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460812"
+ms.lasthandoff: 04/16/2020
+ms.locfileid: "81477560"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。
 
-## <a name="prerequisites"></a>必要条件
+## <a name="prerequisites"></a>前提条件
 
 * OS: Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
 
@@ -49,11 +49,14 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ## <a name="log-collector-performance"></a>ログ コレクターのパフォーマンス
 
-ログ コレクターは、1 時間あたり最大 50 GB の容量のログを処理できます。 ログ収集プロセスの主なボトルネックは次のとおりです。
+Log collector は、最大 10 GB のデータソースで構成される1時間あたり最大 50 GB のログ容量を正常に処理できます。 ログ収集プロセスの主なボトルネックは次のとおりです。
 
 * ネットワーク帯域幅 - ネットワーク帯域幅によって、ログのアップロード速度が決まります。
 
-* 仮想マシンの I/O パフォーマンス - ログ コレクターのディスクにログが書き込まれる速度が決まります。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 1 時間あたり 50 GB を超えるのが普通である場合は、複数のログ コレクターにトラフィックを分割することをお勧めします。
+* 仮想マシンの i/o パフォーマンス-ログコレクターのディスクにログが書き込まれる速度を決定します。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 通常、セットアップが1時間あたり 50 GB を超える場合は、複数のログコレクター間でトラフィックを分割することをお勧めします。
+
+> [!NOTE]
+> 10個を超えるデータソースが必要な場合は、複数のログコレクター間でデータソースを分割することをお勧めします。
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
 
@@ -61,19 +64,19 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 1. **[自動ログ アップロード]** 設定ページに移動します。
 
-    1. Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
+    1. Cloud App Security ポータルで、設定アイコンをクリックした後、**[ログ コレクター]** をクリックします。
 
     ![設定アイコン](media/settings-icon.png)
 
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    1. **[データ ソースの追加]** をクリックします。  
-    データソース](media/add-data-source.png) を追加 ![には
-    1. プロキシまたはファイアウォールの **[名前]** を付けます。  
+    1. [**データソースの追加**] をクリックします。  
+    ![データソースの追加](media/add-data-source.png)
+    1. プロキシまたはファイアウォールの [**名前**] を付けます。  
       ![ubuntu1](media/ubuntu1.png)
-    1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
-    1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
-    1. **[レシーバーの種類]** を、 **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、または **[Syslog – TLS]** に設定します。
+    1. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+    1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
+    1. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
 
     >[!NOTE]
     >多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
@@ -83,12 +86,12 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
     * 調査目的で、各デバイスの状態を個別に監視する。
     * 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
-1. 画面上部の **[ログ コレクター]** タブに移動します。
+1. 画面上部の [**ログ コレクター**] タブに移動します。
 
-    1. **[ログ コレクターを追加]** をクリックします。
-    1. ログ コレクターに **[名前]** を付けます。
+    1. [**ログ コレクターを追加**] をクリックします。
+    1. ログコレクターに**名前**を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. コレクターに接続するすべての**データソース**を選択し、 **[更新]** をクリックして構成を保存します。  
+    1. コレクターに接続するすべての**データソース**を選択し、[**更新**] をクリックして構成を保存します。  
     ![ubuntu2](media/ubuntu2.png)
 
 1. 展開の詳細が表示されます。 ダイアログから実行コマンドを**コピー**します。 [クリップボードにコピー] アイコンを使用できます。 ![クリップボードにコピー アイコン](media/copy-icon.png)
@@ -111,12 +114,12 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 1. Azure 環境内で新しい Ubuntu マシンを作成します。
 1. マシンが起動したら、次の手順でポートを開きます。
 
-    1. マシン ビューで、 **[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
+    1. マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
     1. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
-    1. **[受信セキュリティ規則]** にアクセスし、 **[追加]** をクリックして、![Ubuntu Azure](media/ubuntu-azure.png)
+    1. [**受信セキュリティ規則**] にアクセスし、 ![[**追加**]、[Ubuntu Azure] の順にクリックします。](media/ubuntu-azure.png)
     1. 次の規則を追加します (**詳細設定**モード)。
 
-    |名前|宛先ポートの範囲|プロトコル|ソース|Destination|
+    |名前|宛先ポート範囲|Protocol|source|宛先|
     |----|----|----|----|----|
     |caslogcollector_ftp|21|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
     |caslogcollector_ftp_passive|20000-20099|TCP|<ご使用のアプライアンスの IP アドレスのサブネット>|Any|
@@ -125,7 +128,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     ![Ubuntu Azure の規則](media/inbound-rule.png)
 
-1. マシンに戻って、 **[接続]** をクリックし、マシン上のターミナルを開きます。
+1. マシンに戻って、**[接続]** をクリックし、マシン上のターミナルを開きます。
 
 1. `sudo -i` を使ってルート権限に変更します。
 
@@ -149,13 +152,13 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
     ![Ubuntu プロキシ](media/ubuntu-proxy.png)
 
-1. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!** ” という結果を受け取ります。
+1. コマンド `Docker logs <collector_name>` を実行して、ログ コレクターが正しく動作していることを確認します。 ”**Finished successfully!**” という結果を受け取ります。
 
     ![ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 次に例を示します。
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -175,7 +178,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。 
+1. Cloud App Security ポータルの設定歯車で、[Cloud Discovery の設定] を選択し、[**継続的なレポート**] を選択します。 
 1. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 1. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。 
 
@@ -184,6 +187,6 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ログコレクターの FTP 構成](log-collector-ftp.md)
+> [ログ コレクターの FTP 構成](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

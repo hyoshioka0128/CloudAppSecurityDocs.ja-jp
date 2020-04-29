@@ -1,11 +1,11 @@
 ---
-title: アクセスを許可またはブロックするための Cloud App Security アクセスポリシーを作成する
-description: この記事では、リバースプロキシ機能を使用して Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする Cloud App Security アプリの条件付きアクセス制御アクセスポリシーを設定する手順について説明します。
+title: Cloud App Security アクセス ポリシーを作成し、アクセスを許可またはブロックする
+description: この記事では、Cloud App Security のアプリの条件付きアクセス制御のアクセス ポリシーを設定し、リバース プロキシ機能を使用して Azure AD 経由で接続されているアプリへのアクセスを許可またはブロックする手順について説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 03/31/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,78 +14,66 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5ab52bf417a6a0a6fea583fac9f64f70ea78e4a3
-ms.sourcegitcommit: 3f6ef6b97a0953470135d115323a00cf11441ab7
+ms.openlocfilehash: 23763911724e802d31e848ee1f8d6c42e346ffa4
+ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2020
-ms.locfileid: "78927746"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "81232474"
 ---
 # <a name="access-policies"></a>アクセス ポリシー
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-Microsoft Cloud App Security アクセスポリシーを使用すると、ユーザー、場所、デバイス、アプリに基づいて、クラウドアプリへのアクセスをリアルタイムで監視および制御することができます。 管理対象デバイスにクライアント証明書を展開したり、サードパーティの MDM 証明書などの既存の証明書を使用したりすることによって、ドメインに参加していないデバイスや、Windows Intune で管理されていないデバイスなど、任意のデバイスのアクセスポリシーを作成できます。 たとえば、管理対象デバイスにクライアント証明書を展開し、証明書のないデバイスからのアクセスをブロックすることができます。
-
-> [!NOTE]
-> [セッションポリシー](session-policy-aad.md)を使用してアクセスを完全に許可またはブロックするのではなく、セッションを監視しながらアクセスを許可したり、特定のセッションアクティビティを制限したりすることができます。
-
-## <a name="prerequisites-to-using-access-policies"></a>アクセスポリシーを使用するための前提条件
-
-- Azure AD Premium P1 ライセンス
-- 関連するアプリは、[アプリの条件付きアクセス制御で展開](proxy-deployment-aad.md)する必要があります。
-- 次に説明するように、 [Azure AD 条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を使用して、ユーザーを Microsoft Cloud App Security にリダイレクトする必要があります。
+Microsoft Cloud App Security アクセス ポリシーでは、ユーザー、場所、デバイス、アプリを基準に、クラウド アプリへのアクセスをリアルタイムで監視し、制御できます。 管理対象デバイスにクライアント証明書を展開したり、サードパーティの MDM 証明書などの既存の証明書を使用したりすることによって、Microsoft Intune によって管理されていないデバイス (Hybrid Azure AD Join ていないデバイスを含む) のアクセスポリシーを作成できます。 たとえば、マネージド デバイスにクライアント証明書を展開し、その後、証明書のないデバイスからのアクセスをブロックできます。
 
 > [!NOTE]
-> - アクセスポリシーでは、Azure AD 以外の id プロバイダーで構成されたアプリもサポートされます。 詳細については、mcaspreview@microsoft.comに電子メールを送信してください。
+> [セッション ポリシー](session-policy-aad.md)では、アクセスを完全に許可またはブロックするのではなく、セッションを監視しながらアクセスを許可したり、特定のセッション アクティビティを制限したりできます。
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Azure AD 条件付きアクセスポリシーを作成する
+## <a name="prerequisites-to-using-access-policies"></a>アクセス ポリシーを使うための前提条件
 
-条件付きアクセスポリシーと Cloud App Security セッションポリシーを連携させる Azure Active Directory、各ユーザーセッションを確認し、各アプリのポリシーの決定を行います。 Azure AD で条件付きアクセスポリシーを設定するには、次の手順に従います。
+- Azure AD Premium P1 ライセンス、または id プロバイダー (IdP) ソリューションに必要なライセンス
+- 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
+- 次のように、Cloud App Security を使用するように IdP ソリューションを構成していることを確認します。
+  - [Azure AD 条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)については、「 [Azure AD との統合の構成](proxy-deployment-aad.md#configure-integration-with-azure-ad)」を参照してください。
+  - その他の IdP ソリューションについては、「[他の IdP ソリューションとの統合の構成](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)」を参照してください。
 
-1. ユーザーまたはユーザーグループの割り当てと、アプリの条件付きアクセス制御で制御するアプリを使用して、 [Azure AD 条件付きアクセスポリシー](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)を構成します。
+## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security アクセス ポリシーを作成する
 
-    > [!NOTE]
-    > このポリシーの影響を受けるのは、[アプリの条件付きアクセス制御で展開](proxy-deployment-aad.md)されたアプリのみです。
+新しいアクセス ポリシーを作成するには、次の手順を実行します。
 
-2. **[セッション]** で **[使用アプリの条件付きアクセス制御強制]** された制限を使用する を選択して Microsoft Cloud App Security にユーザーをルーティングします。
+1. ポータルで、**[制御]**、**[ポリシー]** の順に選びます。
+2. **[ポリシー]** ページで、**[ポリシーの作成]** をクリックし、**[アクセス ポリシー]** を選択します。
 
-## <a name="create-a-cloud-app-security-access-policy"></a>Cloud App Security アクセスポリシーを作成する
+3. **[アクセス ポリシー]** ウィンドウで、*Block access from unmanaged devices* のような名前をポリシーに付けます。
 
-新しいアクセスポリシーを作成するには、次の手順を実行します。
+4. **[次のすべてに一致するアクティビティ]** セクションの **[アクティビティ ソース]** で、ポリシーに適用する追加のアクティビティ フィルターを選択します。 フィルターには次のオプションがあります。
 
-1. ポータルで、 **[制御]** 、 **[ポリシー]** の順に選択します。
-2. **[ポリシー]** ページで、 **[ポリシーの作成]** をクリックし、 **[アクセスポリシー]** を選択します。
+    - **[デバイス タグ]**: 管理されていないデバイスを識別するには、このフィルターを使います。
 
-3. **[アクセスポリシー]** ウィンドウで、管理されていない*デバイスからのアクセスをブロック*するなど、ポリシーの名前を割り当てます。
+    - **[場所]**: 不明な (したがって危険な) 場所を識別するには、このフィルターを使います。
 
-4. **次のすべての**セクションに一致するアクティビティの **[アクティビティソース]** で、ポリシーに適用する追加のアクティビティフィルターを選択します。 フィルターには、次のオプションがあります。
+    - **[IP アドレス]**: IP アドレスでフィルター処理するか、前に割り当てた IP アドレス タグを使うには、このフィルターを使います。
 
-    - **デバイスタグ**: 管理されていないデバイスを識別するには、このフィルターを使用します。
-
-    - **[場所]** : このフィルターを使用して、不明な (またはリスクのある) 場所を特定します。
-
-    - **Ip アドレス**: ip アドレスごとにフィルター処理する場合、または以前に割り当てた ip アドレスタグを使用する場合は、このフィルターを使用します。
-
-    - **ユーザーエージェントタグ**: このフィルターを使用して、モバイルアプリとデスクトップアプリを特定するヒューリスティックを有効にします。 このフィルターは、equals に設定することも、等しくないように設定することもできます。 これらの値は、各クラウドアプリのモバイルアプリとデスクトップアプリに対してテストする必要があります。
+    - **[ユーザー エージェント タグ]**: モバイル アプリまたはデスクトップ アプリを識別するためにヒューリスティックを有効にするには、このフィルターを使います。 このフィルターは、"等しい" または "等しくない" に設定できます。 値は、各クラウド アプリのモバイル アプリとデスクトップ アプリに対してテストする必要があります。
 
 5. **[アクション]** で、次のいずれかのオプションを選択します。
 
     - **テスト**: 設定したポリシーフィルターに従って明示的にアクセスを許可するには、このアクションを設定します。
 
-    - **ブロック**: 設定したポリシーフィルターに従ってアクセスを明示的にブロックするには、このアクションを設定します。
+    - **[ブロック]**: 設定したポリシー フィルターに従ってアクセスを明示的にブロックするには、このアクションを設定します。
 
-6. 一致する**イベントごとに、ポリシーの重要度でアラートを作成**し、アラート制限を設定して、アラートを電子メール、テキストメッセージ、またはその両方として使用するかどうかを選択できます。
+6. **一致するイベントごとにポリシー重要度に応じたアラートを作成**し、アラート制限を設定して、アラートをメールとテキスト メッセージのどちらか一方または両方にするかどうかを選ぶことができます。
 
-## <a name="next-steps"></a>次のステップ:
-
-> [!div class="nextstepaction"]
-> [« PREVIOUS: セッションポリシーを作成する方法](session-policy-aad.md)
+## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [次: 人気のあるユースケースを調べる»](use-case-proxy-block-session-aad.md)
+> [« 戻る: セッション ポリシーを作成する方法](session-policy-aad.md)
 
-## <a name="see-also"></a>参照
+> [!div class="nextstepaction"]
+> [次へ: 人気のあるユース ケースを参照する »](use-case-proxy-block-session-aad.md)
+
+## <a name="see-also"></a>関連項目
 
 > [!div class="nextstepaction"]
 > [セッション制御を使用したアンマネージドデバイスでのダウンロードのブロック](use-case-proxy-block-session-aad.md)
