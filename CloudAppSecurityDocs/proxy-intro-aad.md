@@ -48,7 +48,7 @@ ms.locfileid: "78927802"
 
 - **アクセスをブロック**する: いくつかのリスク要因に応じて、特定のアプリとユーザーのアクセスを細かくブロックできます。 たとえば、デバイス管理の形式としてクライアント証明書を使用している場合は、ブロックできます。
 
-- **カスタムアクティビティをブロック**する: アプリによっては、Microsoft Teams や余裕期間などのアプリで機密性の高いコンテンツを含むメッセージを送信するなど、リスクを伴う固有のシナリオがあります。 このようなシナリオでは、機密性の高いコンテンツのメッセージをスキャンし、リアルタイムでブロックできます。
+- **カスタムアクティビティをブロック**する: アプリによっては、Microsoft Teams や Slack などのアプリで機密性の高いコンテンツを含むメッセージを送信するなど、リスクを伴う固有のシナリオがあります。 このようなシナリオでは、機密性の高いコンテンツのメッセージをスキャンし、リアルタイムでブロックできます。
 
 ### <a name="how-session-control-works"></a>セッション制御のしくみ
 
@@ -137,9 +137,9 @@ Cloud App Security は、クラウドアプリカタログで利用可能な情�
 - Azure portal (プレビュー)
 - Box
 - Concur
-- 必要に応じた基礎
+- CornerStone on Demand
 - DocuSign
-- ドロップボックス
+- Dropbox
 - Dynamics 365 CRM (プレビュー)
 - Egnyte
 - Exchange Online
@@ -153,11 +153,11 @@ Cloud App Security は、クラウドアプリカタログで利用可能な情�
 - Salesforce
 - ServiceNow
 - SharePoint Online
-- 余裕
+- Slack
 - Tableau
 - Microsoft Teams (プレビュー)
 - Workday
-- ワークスペース
+- Workiva
 - Workplace by Facebook
 - Yammer (プレビュー)
 
