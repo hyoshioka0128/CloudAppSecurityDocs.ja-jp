@@ -4,19 +4,19 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 03/24/2020
+ms.date: 04/26/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 619bce7e6f3931a53a5891c6c5ff0db223c384cf
-ms.sourcegitcommit: 2cf3c78a1b45a5b6ca534fdd12fd97afc51726e3
+ms.openlocfilehash: 563710ad526f3030d4ef9db30dd855957d1db2a0
+ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "80291246"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "82161794"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,29 @@ ms.locfileid: "80291246"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security リリース 173 と 174
+
+リリース日: 2020 年 4 月 26 日
+
+- **アラートの新しい SEIM エージェント CEF 形式**  
+汎用 SIEM サーバーで使用される CEF ファイルで提供されるアラート情報を強化する取り組みの一環として、形式を拡張し、次のクライアント フィールドを含めました。
+  - IPv4 アドレス
+  - IPv6 アドレス
+  - IP アドレスの場所
+
+    詳細については、「[CEF ファイル形式](siem.md#sample-cloud-app-security-alerts-in-cef-format)」を参照してください。
+- **強化された検出ロジック: あり得ない移動**  
+あり得ない移動に関する検出ロジックが更新されて、精度が上がり、アラート量が減りました。 この異常検出の詳細については、「[あり得ない移動](anomaly-detection-policy.md#impossible-travel)」を参照してください。
+
+## <a name="cloud-app-security-release-172"></a>Cloud App Security リリース 172
+
+リリース日: 2020 年 4 月 5 日
+
+- **あらゆる IdP でアクセス制御とセッション制御を強化 (プレビュー)**  
+アクセス制御とセッション制御では、任意の ID プロバイダーが設定されている SAML アプリがサポートされるようになりました。 この新機能のパブリック プレビューが段階的にロールアウトされています。制御を構成するには、「[デプロイ ガイド](proxy-deployment-aad.md)」を参照してください。
+- **ユーザーとコンピューターの新しい匿名化一括解除**  
+調査中の 1 つまたは複数のユーザーとコンピューターの匿名化を解除するプロセスを拡張し、簡単にしました。 匿名化の一括解除に関する詳細については、「[データの匿名化のしくみ](cloud-discovery-anonymizer.md#how-data-anonymization-works)」を参照してください。
 
 ## <a name="cloud-app-security-release-170-and-171"></a>Cloud App Security リリース 170 と 171
 
