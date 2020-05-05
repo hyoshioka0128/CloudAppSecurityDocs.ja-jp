@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/16/2020
+ms.date: 05/04/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 09880e0702133fbca8ae0001d40aff098b2fa4d6
-ms.sourcegitcommit: f4845a6bbf39aea0504956bf23878f7e0adb8bcc
+ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
+ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81477560"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "82739019"
 ---
 # <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
 
@@ -29,7 +29,7 @@ Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を�
 
 ## <a name="prerequisites"></a>前提条件
 
-* OS: Ubuntu 14.04 および 16.04 (新しいバージョンの場合は、サポートにお問い合わせください)、RHEL 7.2 以上、または CentOS 7.2 以上
+* OS: Ubuntu 16.04 および18.04、RHEL 7.2 以降、または CentOS 7.2 以降
 
 * ディスク領域: 250 GB
 
