@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 12/10/2018
+ms.date: 05/06/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,16 +14,16 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 70f6e5441b870b52599da150355859275851c1df
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: 367778c25f0a56dd0db8f6457b884b02d382da6c
+ms.sourcegitcommit: e0c2a8fbdce9cc0fd0d6b85c92e112fd306ad950
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74720190"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "83203011"
 ---
 # <a name="working-with-the-dashboard"></a>ダッシュボードの操作
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 この記事では、Cloud App Security を使用して毎日行う必要がある作業について説明します。  Microsoft Cloud App Security を稼働させたら、次のことを行う必要があります。
 
@@ -34,6 +34,8 @@ ms.locfileid: "74720190"
 これで、Cloud App Security を使用して、クラウドを保護し、リスクを管理することができます。
 
 ## <a name="check-the-dashboard"></a>ダッシュボードの確認
+
+![Cloud App Security ダッシュボード](media/dashboard.png "dashboard")
 
 Cloud App Security ダッシュ ボードは、次のようなアクティビティや機能の概要を提供します。
 
@@ -46,7 +48,39 @@ Cloud App Security ダッシュ ボードは、次のようなアクティビテ
 
 トリガーされた新しいアラートを確認するため、毎日ダッシュボードを確認することをお勧めします。 これは、クラウド環境の正常性を監視するのに適しています。 ダッシュボードは、何が起こっているかを把握するのに役立ちます。
 
-![Cloud App Security ダッシュボード](media/dashboard.png "ダッシュボード")
+## <a name="gradual-deployment-of-our-enhanced-dashboard"></a>強化されたダッシュボードの段階的なデプロイ
+
+ポータルの設計に対する継続的な改善の一環として、Cloud App Security ダッシュボードはフィードバックに基づいて改善されています。 ダッシュボードでは、更新されたコンテンツとデータを使用したユーザーエクスペリエンスが向上しています。
+
+ダッシュボードに表示される情報は、組織に関するすべての重要な情報の概要です。 各情報カードには、表示された情報をより詳細に調査するためのリンクが用意されています。 また、指定されたフィルターを使用して、特定のアプリのダッシュボード情報を表示するように選択することもできます。
+
+![Cloud App Security ダッシュボード](media/dashboard-enhanced.png)
+
+### <a name="what-can-you-expect-to-see-in-the-dashboard"></a>ダッシュボードに表示されることが予想されること
+
+- **オープン アラート**  
+開いているアラートの数、アラートの状態の分布を示すグラフ、および最近のアラートを表示します。
+
+- **検出されたアプリ**  
+検出されたアプリの数、アプリのリスク分布のグラフ、およびトラフィックごとの上位のアプリカテゴリが表示されます。
+- **調査する上位ユーザー**  
+調査するユーザーの数、および調査の優先順位が最も高いユーザーを表示します。
+- **アプリの条件付きアクセス制御**  
+アプリの条件付きアクセス制御によって保護されているアプリの数、および過去30日間の保護されたセッションとアクションの数を表示します。
+- **アプリコネクタの状態**  
+API 接続アプリインスタンスの数とその状態を示します。
+- **マルウェアに感染したファイル**  
+マルウェアに感染したファイルの数を表示します。
+- **Privileged Office 365 OAuth アプリ**  
+非常に高い特権のアクセス許可を付与された、使用頻度の低い OAuth アプリの数を示します。
+- **Azure のセキュリティ構成**  
+Azure のセキュリティ構成に関する推奨事項の数と重要度を示します。
+- **AWS のセキュリティ構成**  
+AWS セキュリティ構成の推奨事項の数と重大度を示します。
+- **DLP アラート**  
+過去30日間の DLP アラートのグラフを表示します。
+<!-- - **Activity map**  
+Shows the global spread of activities performed by users over the last 30 days. -->
 
 ## <a name="next-steps"></a>次のステップ
 
