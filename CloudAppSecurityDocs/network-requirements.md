@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 162a3e6705ed772cc43c141afd135cfbda3bdad5
-ms.sourcegitcommit: 30077ab7e3dd25249924e178581cf5eb1e7085bd
+ms.openlocfilehash: 8b6e6746951616f1a6b4241d818e75dc7755f121
+ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "82093590"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "83369344"
 ---
 # <a name="network-requirements"></a>ネットワークの要件
 
@@ -83,6 +83,7 @@ Cloud App Security ポータルにアクセスするには、次の IP アドレ
 リバースプロキシ Cloud App Security 有効にするには、次の IP アドレスと DNS 名の**送信ポート 443**をファイアウォールの許可一覧に追加します。
 
     *.cas.ms
+    mcasproxy.azureedge.net
 
 さらに、使用するデータ センターに応じて、次の項目をホワイトリストに追加する必要があります。
 
@@ -112,7 +113,7 @@ Cloud App Security が SIEM に接続できるようにするには、次の IP 
 > |政府 US1|13.72.19.4<br />52.227.143.223|
 
 > [!NOTE]
-> Cloud App Security SIEM エージェントを設定するときにプロキシを指定しなかった場合は、ポート80でと ocsp.digicert.com http://ocsp.msocsp.com/に対する http 接続を許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
+> Cloud App Security SIEM エージェントを設定するときにプロキシを指定しなかった場合は、 http://ocsp.msocsp.com/ ポート80でと ocsp.digicert.com に対する http 接続を許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 ## <a name="app-connector"></a>アプリ コネクタ
 
@@ -187,18 +188,18 @@ Cloud Discovery 機能がログ コレクターを使って組織内のシャド
 
   | データ センター |                        URL                                 |
   |-------------|------------------------------------------------------------|
-  |     US1     | https:\//adaprodconsole.blob.core.windows.net/             |
-  |     US2     | https:\//prod03use2console1.blob.core.windows.net/         |
-  |     US3     | https:\//prod5usw2console1.blob.core.windows.net/          |
-  |     EU1     | https:\//prod02euwconsole1.blob.core.windows.net/          |
-  |     EU2     | https:\//prod4uksconsole1.blob.core.windows.net/           |
-  |   政府 US1   | https:\//gprd1usgvconsole1.blob.core.usgovcloudapi.net/    |
+  |     US1     | https: \/ /adaprodconsole.blob.core.windows.net/             |
+  |     US2     | https: \/ /prod03use2console1.blob.core.windows.net/         |
+  |     US3     | https: \/ /prod5usw2console1.blob.core.windows.net/          |
+  |     EU1     | https: \/ /prod02euwconsole1.blob.core.windows.net/          |
+  |     EU2     | https: \/ /prod4uksconsole1.blob.core.windows.net/           |
+  |   政府 US1   | https: \/ /gprd1usgvconsole1.blob.core.usgovcloudapi.net/    |
 
 > [!NOTE]
 >
 > - ファイアウォールが静的 IP アドレスのアクセス リストを必要としていて、URL に基づくホワイト リストをサポートしていない場合は、ログ コレクターで [Microsoft Azure データセンターのポート 443 上の IP 範囲](https://www.microsoft.com/download/details.aspx?id=41653)への送信トラフィックを開始できるようにします。
 >- ログ コレクターが Cloud App Security ポータルへの送信トラフィックを開始できるようにします。
->- Log collector を設定するときにプロキシを指定しなかった場合は、ポート80でのおよびhttp://ocsp.msocsp.com/ ocsp.digicert.com への http 接続を許可する必要があります。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
+>- Log collector を設定するときにプロキシを指定しなかった場合は、ポート80でのおよび ocsp.digicert.com への http 接続を許可する必要があり http://ocsp.msocsp.com/ ます。 これは、Cloud App Security ポータルに接続するときに証明書失効ステータスを確認するために使用されます。
 
 ## <a name="next-steps"></a>次のステップ
 
