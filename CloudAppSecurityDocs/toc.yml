@@ -113,6 +113,8 @@
               href: zscaler-integration.md
             - name: iboss との統合
               href: iboss-integration.md
+            - name: Corrata との統合
+              href: corrata-integration.md
             - name: Cloud Discovery のスナップショット レポートを作成する
               href: create-snapshot-cloud-discovery-reports.md
             - name: 継続的なレポートのために自動ログ アップロードを構成する
