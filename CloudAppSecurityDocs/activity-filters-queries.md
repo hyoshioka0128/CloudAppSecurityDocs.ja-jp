@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4ca67a5018aac268c5fefc96fe5d026c5f684125
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 9a363ebb0c94735f4df8d2617f9d20c6bf7c8365
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228581"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551308"
 ---
 # <a name="activity-filters-and-queries"></a>アクティビティ フィルターとクエリ
 
@@ -53,7 +53,7 @@ ms.locfileid: "81228581"
 
 <!--- Description – Specific keyword in the activity description, for example, all activities that include the string **user** in their description.  -->
 
-- デバイス タグ - 準拠、管理、検証済みのどのデバイスであるかによって検索します。
+- デバイスタグ-Intune に**準拠**している、 **Hybrid Azure AD 参加**している、または**有効なクライアント証明書**を検索します。
 
 - デバイスの種類 - 特定の種類のデバイスを使用して行われたアクティビティのみを検索します。 たとえば、モバイル デバイス、PC、またはタブレットからのすべてのアクティビティを検索します。
 
@@ -89,10 +89,10 @@ ms.locfileid: "81228581"
 - 登録された ISP - アクティビティの実行元の ISP。
 
 - ソース - アクティビティが検出されたソースで検索します。 ソースは次のいずれかとなります。
-  - アプリ コネクタ - アプリの API コネクタから直接届くログ。
+  - アプリコネクタ-アプリの API コネクタから直接送信されるログ。
   - アプリ コネクタ分析 - API コネクタによる情報スキャンに基づく Cloud App Security 拡張。
 
-- ユーザー - アクティビティを実行したユーザー。ドメイン、グループ、名前、または組織でフィルターできます。 [が設定されていない] 演算子を使用すると、特定のユーザーが存在しないアクティビティをフィルタリングできます。
+- ユーザー - アクティビティを実行したユーザー。ドメイン、グループ、名前、または組織でフィルターできます。 特定のユーザーがいないアクティビティをフィルター処理するには、' is not set ' 演算子を使用します。
   - ユーザー ドメイン - 特定のユーザー ドメインを検索します。
   - ユーザー組織 - EMEA マーケティング ユーザーが実行したすべてのアクティビティなどの、アクティビティを実行したユーザーの組織単位。 これは、組織単位を使用して接続された G Suite インスタンスにのみ関連します。
   - ユーザー グループ - Office 365 管理者など、接続されているアプリからインポートできる特定のユーザー グループ。

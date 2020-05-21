@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: b34e201e45989ac8e13b92d39fb10b49f6be45ac
-ms.sourcegitcommit: 8e3657c47357bd30f3802fcf91e3060621a0c15b
+ms.openlocfilehash: a69ad97d1876bf881957ab2d7c79c8aa390d5e87
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "82198320"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551325"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -53,7 +53,7 @@ ms.locfileid: "82198320"
 
 Conditional Access App Control でセッション ポリシーを作成することで、直接アプリにではなく、リバース プロキシ経由でユーザーをリダイレクトして、ユーザー セッションを制御できます。 その後、ユーザーの要求と応答は、アプリに直接ではなく Cloud App Security 経由で実行されます。
 
-セッションがプロキシによって保護されている場合、関連するすべての Url と cookie が Cloud App Security に置き換えられます。 たとえば、次のように、アプリから、ドメインがで`myapp.com`終わるリンクを含むページが返される場合、リンクの`*.cas.ms`ドメインのサフィックスは次のようになります。
+セッションがプロキシによって保護されている場合、関連するすべての Url と cookie が Cloud App Security に置き換えられます。 たとえば、次のように、アプリから、ドメインがで終わるリンクを含むページが返される場合、 `myapp.com` リンクのドメインのサフィックスは次のようになり `*.cas.ms` ます。
 
 |アプリケーションの URL|置換された URL|
 |---|---|
@@ -70,7 +70,7 @@ Conditional Access App Control でセッション ポリシーを作成するこ
 
 Conditional Access App Control を使うと、デバイスが管理されているかどうかを考慮するポリシーを作成できます。 デバイスの状態を識別するために、アクセスポリシーとセッションポリシーを構成して次のことを確認できます。
 
-- Microsoft Intune (Intune) 準拠デバイス [Azure AD でのみ利用可能]
+- Microsoft Intune 準拠デバイス [Azure AD でのみ利用可能]
 - Hybrid Azure AD 参加済みデバイス [Azure AD でのみ利用可能]
 - 信頼されたチェーンにクライアント証明書が存在する
 
@@ -179,7 +179,7 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [おすすめアプリへの Conditional Access App Control の展開](proxy-deployment-aad.md)
+> [フィーチャー アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [アプリの条件付きアクセス制御がすべてのアプリに展開](proxy-deployment-any-app.md)

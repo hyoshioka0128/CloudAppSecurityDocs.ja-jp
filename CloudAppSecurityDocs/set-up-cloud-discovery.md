@@ -5,17 +5,17 @@ author: shsagir
 ms.author: shsagir
 ms.service: cloud-app-security
 ms.topic: conceptual
-ms.date: 8/15/2019
+ms.date: 05/17/2020
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a4ee042c3f24fe2fa5f15fa5ce3eb2ca0f7f2be1
-ms.sourcegitcommit: a693d0bc9102a8320f9933d80ab9357f449d5316
+ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "83369327"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579768"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery の設定
 
@@ -35,6 +35,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
   - [ログ コレクター](discovery-docker.md): ログ コレクターを使用すると、ネットワークからのログのアップロードを簡単に自動化することができます。 ログ コレクターをネットワーク上で実行すると、Syslog または FTP でログを受け取ります。
   - [Zscaler 統合](zscaler-integration.md): Cloud App Security と Zscaler の両方を使用する場合、2 つの製品を統合することでセキュリティの Cloud Discovery エクスペリエンスを強化することができます。 さらに Cloud App Security と Zscaler には、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、Zscaler ポータルでの直接のリスク評価が備わっています。
   - [iboss](iboss-integration.md)との統合: Cloud App Security と iboss の両方を使用する場合、2つの製品を統合して、セキュリティ Cloud Discovery のエクスペリエンスを向上させることができます。 また、Cloud App Security と iboss が連携して、Cloud Discovery のシームレスなデプロイ、承認されていないアプリの自動ブロック、および iboss ポータルでのリスク評価を直接行うことができます。
+  - [Corrata 統合](corrata-integration.md): Cloud App Security と Corrata の両方を使用する場合は、2つの製品を統合して、セキュリティ Cloud Discovery のエクスペリエンスを向上させることができます。 Cloud App Security と Corrata を一緒に使用すると、Corrata ポータルで直接、承認されていないアプリの自動的なブロック、およびリスク評価をシームレスに Cloud Discovery 展開できます。
 
 ## <a name="log-process-flow-from-raw-data-to-risk-assessment"></a>ログのプロセス フロー: 生データからリスク評価まで
 
@@ -64,6 +65,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 - Cisco Meraki - URL ログ
 - Clavister NGFW (Syslog)
 - ContentKeeper
+- Corrata
 - Digital Arts i-FILTER
 - Forcepoint
 - Fortinet FortiGate
@@ -95,7 +97,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
 | Barracuda | **はい** | **はい** | **はい** | **はい** | いいえ | いいえ |
 | Blue Coat | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
-| Checkpoint | いいえ | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Check Point | いいえ | **はい** | いいえ | **はい** | いいえ | いいえ |
 | Cisco ASA (Syslog) | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
 | Cisco ASA with FirePOWER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Cisco Cloud Web Security |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
@@ -104,6 +106,7 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 | Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | いいえ |
 | Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ContentKeeper | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
+| Corrata | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | SonicWall (旧称 Dell) | **はい** | **はい** | いいえ | **はい** | **はい** | **はい** |
 | Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
