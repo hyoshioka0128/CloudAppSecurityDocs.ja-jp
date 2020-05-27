@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 556e47a29c33fa898082a8148e3f3b431b30ac2a
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 652ab059cef9c911af4dc58a7cb4b79c679aed30
+ms.sourcegitcommit: 7b6124e5ecb3fa8fc1176d89e06b052f2a53a310
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241280"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "83854280"
 ---
 # <a name="connect-workday-to-microsoft-cloud-app-security-preview"></a>Workday を Microsoft Cloud App Security に接続する (プレビュー)
 
@@ -74,6 +74,7 @@ Workday 統合ユーザー、セキュリティグループ、およびアクセ
     | クライアント許可の種類 | 認証コード付与 |
     | アクセストークンの種類 | Bearer |
     | リダイレクト URI | `https://portal.cloudappsecurity.com/api/oauth/connect` |
+    | 期限切れでない更新トークン | はい |
     | OAuth2 スコープ | **スタッフ**と**システム** |
     | スコープ (機能領域) | **スタッフ**と**システム** |
 
@@ -119,6 +120,6 @@ Workday 統合ユーザー、セキュリティグループ、およびアクセ
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ポリシーを使用してクラウドアプリを制御する](control-cloud-apps-with-policies.md)
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]
