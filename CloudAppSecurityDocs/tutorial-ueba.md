@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 7316a1b24e45219b55912e75b48b0c2e590bd34f
-ms.sourcegitcommit: 1288ef3b69b2fefc3015e61cb9f485c0c8e6c682
+ms.openlocfilehash: 89da56403cbd6239094e58bebdd2a78ef3558edc
+ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82888301"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83579785"
 ---
 # <a name="tutorial-investigate-risky-users"></a>チュートリアル:危険性の高いユーザーを調査する
 
@@ -48,7 +48,7 @@ ms.locfileid: "82888301"
 
 アラートまたはアクティビティのスコアの値をクリックすると、そのアクティビティに対する Cloud App Security のスコア付け方法について説明した証拠を表示できます。
 
-すべての Azure AD ユーザーには、動的な [調査の優先順位のスコア] が表示されます。これは、直近の行動と影響に基づいて絶えず更新され、Azure ATP、Microsoft Cloud App Security、Azure AD Identity Protection から評価されたデータを使って作成されます。 **[調査の優先順位のスコア]** に基づいて絞り込むことで本当に危険度の高いユーザーをすぐに把握し、事業に与える影響を直接検証し、侵害であれ、データの流出であれ、インサイダーの脅威であれ、関連するあらゆる行為を調査できるようになりました。
+すべての Azure AD ユーザーには、動的な [調査の優先順位のスコア] が表示されます。これは、直近の行動と影響に基づいて絶えず更新され、Azure ATP と Cloud App Security から評価されたデータを使って作成されます。 **[調査の優先順位のスコア]** に基づいて絞り込むことで本当に危険度の高いユーザーをすぐに把握し、事業に与える影響を直接検証し、侵害であれ、データの流出であれ、インサイダーの脅威であれ、関連するあらゆる行為を調査できるようになりました。
 
 Cloud App Security では、リスクを測定するために以下が使用されます。
 
@@ -101,7 +101,7 @@ Cloud App Security では、リスクを測定するために以下が使用さ�
 
 * このアクティビティに高いスコアが付けられ、他のものには付けられていない理由を理解するために、 **[アクティビティ ログ]** に移動します。 **[調査の優先順位]** を **[Is set]\(設定済み\)** に設定すると、どれが不審なアクティビティであるか把握できます。 たとえば、ウクライナで発生したすべてのアクティビティに対して、調査の優先順位に基づくフィルター処理を行えます。 次に、他にもリスクの高いアクティビティがあったかどうかや、そのユーザーの接続元を確認できます。また、簡単に他のドリルダウン (最近の異常ではないクラウドおよびオンプレミス アクティビティなど) に目を転じ、調査を続行することができます。
 
-## <a name="phase-4-protect-your-organizationj"></a>フェーズ 4:組織を保護する<a name="protect"></a>
+## <a name="phase-4-protect-your-organization"></a>フェーズ 4:組織を保護する<a name="protect"></a>
 
 調査の結果、あるユーザーが被害に遭っているという結論に達した場合、次の手順でリスクを軽減します。
 

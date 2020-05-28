@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e4dea21cdd9566781176a0d482bd2c45a6131ac5
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: 57fac7776efbb617a382a30f6bf68ac2578ad0a6
+ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81228479"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "83551291"
 ---
 # <a name="tutorial-block-download-of-sensitive-information"></a>チュートリアル:機密情報のダウンロードをブロックする
 
@@ -78,7 +78,7 @@ Cloud App Security セッション ポリシーを使用すると、デバイス
 
 6. **[Activities matching all of the following]\(次のすべてに一致するアクティビティ\)** セクションの **[アクティビティ ソース]** で、次のフィルターを選択します。
 
-   * **[デバイス タグ]** : **[次の値と等しくない]** を選択します。 次に、 **[準拠]** 、 **[ドメイン参加済み]** 、または **[有効なクライアント証明書]** を選択します。 選択内容は、組織がマネージド デバイスの識別で使用する方法によって異なります。
+   * **[デバイス タグ]** : **[次の値と等しくない]** を選択します。 次に、 **[Intune 準拠]** 、 **[ハイブリッド Azure AD 参加]** 、または **[有効なクライアント証明書]** を選択します。 選択内容は、組織がマネージド デバイスの識別で使用する方法によって異なります。
 
    * **[アプリ]** :制御するアプリを選びます。
 

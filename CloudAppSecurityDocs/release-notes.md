@@ -4,19 +4,19 @@ description: この記事は、Cloud App Security の最新リリースの新機
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/26/2020
+ms.date: 05/17/2020
 ms.topic: overview
 ms.service: cloud-app-security
 ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 563710ad526f3030d4ef9db30dd855957d1db2a0
-ms.sourcegitcommit: f58ca0afb30e2db7e4e868f5df05651b42aede5e
+ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
+ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "82161794"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "83748021"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -26,11 +26,26 @@ ms.locfileid: "82161794"
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
 
+## <a name="cloud-app-security-release-175"></a>Cloud App Security リリース 175
+
+リリース日: 2020 年 5 月 17 日
+
+- **新しい Shadow IT Discovery と Corrata の統合 (プレビュー)**  
+Corrata とのネイティブ統合を追加しました。これにより、アプリの利用状況やアプリ アクセスの制御状況を Shadow IT で確認することができます。 詳細については、「[Cloud App Security と Corrata の統合](corrata-integration.md)」を参照してください。
+
+- **新しい Cloud Discovery ログ パーサー**  
+Cloud App Security の Cloud Discovery では、さまざまなトラフィック ログを分析して、アプリの順位付けとスコア付けを行います。 今回、Corrata と Cisco ASA で FirePOWER 6.4 ログ形式がサポートされる組み込みのログ パーサーが Cloud Discovery に追加されました。 サポートされているログ パーサーの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」をご覧ください。
+
+- **強化されたダッシュボード (段階的ロールアウト)** ポータル デザインを継続的に改善する取り組みの一環として、機能が強化された Cloud App Security ダッシュボードを段階的にロールアウトしています。 このダッシュボードには皆様からのフィードバックを基づいて最新技術を取り入れています。コンテンツやデータを一新しており、使いやすさが向上しています。 詳細については、[強化ダッシュボードの段階的デプロイ](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard)に関するページをご覧ください。
+
+- **強化されたガバナンス:ユーザーに対するセキュリティ侵害を確認 (異常検出)**  
+異常に関するポリシーの現行のガバナンス アクションを拡張し、**ユーザーに対するセキュリティ侵害を確認**を追加しました。疑わしいユーザー活動からご自分の環境を積極的に保護することができます。 詳細については、「[アクティビティ ガバナンス アクション](governance-actions.md#activity-governance-actions)」を参照してください。
+
 ## <a name="cloud-app-security-release-173-and-174"></a>Cloud App Security リリース 173 と 174
 
 リリース日: 2020 年 4 月 26 日
 
-- **アラートの新しい SEIM エージェント CEF 形式**  
+- **アラートの新しい SIEM エージェント CEF 形式**  
 汎用 SIEM サーバーで使用される CEF ファイルで提供されるアラート情報を強化する取り組みの一環として、形式を拡張し、次のクライアント フィールドを含めました。
   - IPv4 アドレス
   - IPv6 アドレス
