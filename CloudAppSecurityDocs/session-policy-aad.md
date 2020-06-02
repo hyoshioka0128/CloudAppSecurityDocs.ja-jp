@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 1b6bd39d420b113a85d9d171ab076769240b9d00
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: 47aa53855f83a2898616d17e6d4b12786bc7d893
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81228496"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250674"
 ---
 # <a name="session-policies"></a>セッション ポリシー
 
@@ -40,9 +40,9 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 
 * Azure AD Premium P1 ライセンス、または id プロバイダー (IdP) ソリューションに必要なライセンス
 * 関連するアプリを [Conditional Access App Control と共にデプロイ](proxy-deployment-aad.md)する必要があります。
-* 次のように、Cloud App Security を使用するように IdP ソリューションを構成していることを確認します。
-  * [Azure AD 条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)については、「 [Azure AD との統合の構成](proxy-deployment-aad.md#configure-integration-with-azure-ad)」を参照してください。
-  * その他の IdP ソリューションについては、「[他の IdP ソリューションとの統合の構成](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)」を参照してください。
+* 次のように、Cloud App Security と連動するように IdP ソリューションを構成します。
+  * [Azure AD 条件付きアクセス](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)については、[Azure AD との統合を構成する](proxy-deployment-aad.md#configure-integration-with-azure-ad)方法に関するページを参照してください
+  * その他の IdP ソリューションについては、[その他の IdP ソリューションとの統合を構成する](proxy-deployment-aad.md#configure-integration-with-other-idp-solutions)方法に関するページを参照してください。
 
 ## <a name="create-a-cloud-app-security-session-policy"></a>Cloud App Security セッション ポリシーを作成する
 
@@ -100,7 +100,7 @@ Microsoft Cloud App Security のセッション ポリシーを使うと、セ�
 
 2. 次に、**[アプリの条件付きアクセス制御]** の下で、**[ユーザーの監視]** チェック ボックスをオンにし、**[ユーザーへの通知]** チェック ボックスをオフにします。
 
-セッション内でユーザーを保持するために、Conditional Access App Control は、アプリ セッション内の関連するすべての URL、Java スクリプト、Cookie を、Microsoft Cloud App Security の URL に置き換えます。 たとえば、myapp.com で終わるドメインのリンクを含むページがアプリから返された場合、はアプリの条件付きアクセス制御、末尾が myapp.com.us.cas.ms のドメインにリンクを置きます。 これにより、セッション全体が Microsoft Cloud App Security によって監視されます。
+セッション内でユーザーを保持するために、Conditional Access App Control は、アプリ セッション内の関連するすべての URL、Java スクリプト、Cookie を、Microsoft Cloud App Security の URL に置き換えます。 たとえば、ドメインが myapp.com で終わるリンクを含むページがアプリから返された場合、アプリの条件付きアクセス制御は、最後のドメインのリンクをのように置き換え `myapp.com.mcas.ms` ます。 これにより、セッション全体が Microsoft Cloud App Security によって監視されます。
 
 Conditional Access App Control は、ルーティングされてきたすべてのユーザー セッションのトラフィック ログを記録します。 トラフィック ログには、時刻、IP、ユーザー エージェント、アクセスした URL、アップロードおよびダウンロードされたバイト数が含まれます。 これらのログが分析されて、**Cloud App Security のアプリの条件付きアクセス制御**という継続的なレポートが、Cloud Discovery ダッシュボードの Cloud Discovery レポート一覧に追加されます。
 
@@ -110,7 +110,7 @@ Conditional Access App Control は、ルーティングされてきたすべて�
 2. テーブルの右側にあるエクスポート ボタンをクリックします。
 
     ![[エクスポート] ボタン](./media/export-button.png)
-3. レポートの範囲を選び、**[エクスポート]** をクリックします。 このプロセスにはしばらく時間がかかることがあります。
+3. レポートの範囲を選び、**[エクスポート]** をクリックします。 この処理には時間がかかる場合があります。
 
 エクスポートされたログをダウンロードするには:
 
@@ -156,7 +156,7 @@ Cloud App Security セッションポリシーで [**コントロールファイ
 
 たとえば、ユーザーが Azure Information Protection ラベルなしでファイルをアップロードした場合、適切なラベルを必要とする機密コンテンツがファイルに含まれていることを示すメッセージが表示されることがあります。 同様に、ユーザーが管理されていないデバイスからドキュメントをアップロードしようとした場合、そのデバイスを登録する方法についての指示が記載されたメッセージ、またはデバイスを登録する必要がある理由についての詳細情報を示すメッセージが表示されます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 >[!div class="nextstepaction"]
 > [« PREVIOUS: 任意のアプリのオンボードとデプロイアプリの条件付きアクセス制御»](proxy-deployment-any-app.md)

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a69ad97d1876bf881957ab2d7c79c8aa390d5e87
-ms.sourcegitcommit: e1a0d6a7d639a6d268b0104eb3e5532d2692288b
+ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551325"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250742"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -53,11 +53,11 @@ ms.locfileid: "83551325"
 
 Conditional Access App Control でセッション ポリシーを作成することで、直接アプリにではなく、リバース プロキシ経由でユーザーをリダイレクトして、ユーザー セッションを制御できます。 その後、ユーザーの要求と応答は、アプリに直接ではなく Cloud App Security 経由で実行されます。
 
-セッションがプロキシによって保護されている場合、関連するすべての Url と cookie が Cloud App Security に置き換えられます。 たとえば、次のように、アプリから、ドメインがで終わるリンクを含むページが返される場合、 `myapp.com` リンクのドメインのサフィックスは次のようになり `*.cas.ms` ます。
+セッションがプロキシによって保護されている場合、関連するすべての Url と cookie が Cloud App Security に置き換えられます。 たとえば、次のように、アプリから、ドメインがで終わるリンクを含むページが返される場合、 `myapp.com` リンクのドメインのサフィックスは次のようになり `*.mcas.ms` ます。
 
 |アプリケーションの URL|置換された URL|
 |---|---|
-|`myapp.com`|`myapp.com.us.cas.ms`|
+|`myapp.com`|`myapp.com.mcas.ms`|
 
 この方法では、デバイスに何もインストールする必要はありません。管理されていないデバイスやパートナーユーザーからのセッションを監視または制御する場合に最適です。
 
@@ -176,7 +176,7 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 
 おすすめのアプリに関心がある場合は、[アプリに関する詳細情報をお送り](mailto:casfeedback@microsoft.com)ください。 オンボードに興味のあるユースケースを必ず送信してください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [フィーチャー アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
