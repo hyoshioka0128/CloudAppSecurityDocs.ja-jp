@@ -123,11 +123,11 @@
               href: create-snapshot-cloud-discovery-reports.md
             - name: 継続的なレポートのために自動ログ アップロードを構成する
               href: discovery-docker.md
-            - name: Windows 上の Docker
+            - name: オンプレミスの Windows 上の Docker
               href: discovery-docker-windows.md
-            - name: オンプレミスの Ubuntu および RHEL 上の Docker
+            - name: オンプレミスの Linux 上の Docker
               href: discovery-docker-ubuntu.md
-            - name: Azure の Ubuntu 上の Docker
+            - name: Azure の Linux 上の Docker
               href: discovery-docker-ubuntu-azure.md
             - name: ログ コレクターの FTP 構成
               href: log-collector-ftp.md
