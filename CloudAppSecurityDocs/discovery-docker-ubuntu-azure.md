@@ -1,11 +1,11 @@
 ---
 title: Azure での Docker を使用した自動ログ アップロードを構成する
-description: この記事では、Azure での Ubuntu または RHEL 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成するプロセスについて説明します。
+description: この記事では、Azure の Linux 上の Docker を使用して Cloud App Security で継続的なレポートの自動ログアップロードを構成するプロセスについて説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 05/04/2020
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 5b952a924b7b26e4d45ffb981698f660e53a0558
-ms.sourcegitcommit: baa9cb55d9d82808602a58ee24eeba7d83e92742
+ms.openlocfilehash: b481ff78df6c563512f867d53e906df9a7cfd0fb
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82739019"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274599"
 ---
-# <a name="set-up-and-configuration-on-ubuntu-or-rhel-in-azure"></a>Azure での Ubuntu または RHEL 上での設定および構成
+# <a name="docker-on-linux-in-azure"></a>Azure の Linux 上の Docker
 
 *適用対象:Microsoft Cloud App Security*
 
-Azure での Ubuntu または Red Hat Enterprise Linux (RHEL) 上で Docker を使用して、Cloud App Security の継続的レポート用にログの自動アップロードを構成することができます。 この記事では、自動ログ アップロードを設定する方法について説明します。
+Azure で Ubuntu、Red Hat Enterprise Linux (RHEL)、または CentOS の Docker を使用して Cloud App Security で継続的なレポートの自動ログアップロードを構成することができます。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
-* OS: Ubuntu 16.04 および18.04、RHEL 7.2 以降、または CentOS 7.2 以降
+* OS:
+    * Ubuntu 14.04、16.04、および18.04
+    * RHEL 7.2 以降
+    * CentOS 7.2 以降
 
 * ディスク領域: 250 GB
 
@@ -116,7 +119,7 @@ Log collector は、最大 10 GB のデータソースで構成される1時間�
 
     1. マシン ビューで、**[ネットワーク]** に移動して、関連するインターフェイスをダブルクリックして選択します。
     1. **[ネットワーク セキュリティ グループ]** に移動して、関連するネットワーク セキュリティ グループを選択します。
-    1. [**受信セキュリティ規則**] にアクセスし、 ![[**追加**]、[Ubuntu Azure] の順にクリックします。](media/ubuntu-azure.png)
+    1. [**受信セキュリティ規則**] にアクセスし、[**追加**]、[Ubuntu Azure] の順にクリックします。 ![](media/ubuntu-azure.png)
     1. 次の規則を追加します (**詳細設定**モード)。
 
     |名前|宛先ポート範囲|Protocol|source|宛先|

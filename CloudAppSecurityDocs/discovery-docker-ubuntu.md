@@ -1,11 +1,11 @@
 ---
-title: オンプレミス Docker を使用して自動ログ アップロードを構成する
-description: この記事では、オンプレミス サーバーの Ubuntu または RHEL で Docker を使用して、Cloud App Security で継続的なレポートの自動ログ アップロードを構成するプロセスについて説明します。
+title: オンプレミスの Docker を使用して自動ログアップロードを構成する
+description: この記事では、オンプレミスサーバーの Linux 上の Docker を使用して Cloud App Security で継続的なレポートの自動ログアップロードを構成するプロセスについて説明します。
 keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 11/19/2019
+ms.date: 06/02/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,22 +14,25 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: baa86eb5a0d21a69fd747e0d7ef1c4d5863deddf
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: cbd419984f5b3cca55727b7795210edd9b4d5afe
+ms.sourcegitcommit: d159dbd8e1a35268468156eb9c5a5f218cdace4c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460776"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84274616"
 ---
-# <a name="docker-on-ubuntu-and-rhel-on-premises"></a>Ubuntu および RHEL オンプレミス上の Docker
+# <a name="docker-on-linux-on-premises"></a>オンプレミスの Linux 上の Docker
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
-オンプレミスの Ubuntu または RHEL サーバーで Docker を使用して、Cloud App Security の継続的なレポートに自動ログ アップロードを構成できます。
+オンプレミスの Ubuntu、Red Hat Enterprise Linux (RHEL)、または CentOS サーバーで Docker を使用して、Cloud App Security で継続的なレポートの自動ログアップロードを構成することができます。
 
-## <a name="technical-requirements"></a>技術要件
+## <a name="prerequisites"></a>必須コンポーネント
 
-* OS: Ubuntu 14.04、16.04、18.04RHEL 7.2 以上、または CentOS 7.2 以降 
+* OS:
+    * Ubuntu 14.04、16.04、および18.04
+    * RHEL 7.2 以降
+    * CentOS 7.2 以降
 
 * ディスク領域: 250 GB
 
@@ -53,7 +56,7 @@ ms.locfileid: "74460776"
 
 * ネットワーク帯域幅 - ネットワーク帯域幅によって、ログのアップロード速度が決まります。
 
-* 仮想マシンの I/O パフォーマンス - ログ コレクターのディスクにログが書き込まれる速度が決まります。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 1 時間あたり 50 GB を超えるのが普通である場合は、複数のログ コレクターにトラフィックを分割することをお勧めします。
+* 仮想マシンの i/o パフォーマンス-ログコレクターのディスクにログが書き込まれる速度を決定します。 ログ コレクターには、ログの収集速度を監視して、アップロード速度と比較する安全メカニズムが組み込まれています。 輻輳の場合、ログ コレクターは、ログ ファイルの削除を開始します。 1 時間あたり 50 GB を超えるのが普通である場合は、複数のログ コレクターにトラフィックを分割することをお勧めします。
 
 ## <a name="set-up-and-configuration"></a>セットアップと構成  
 
@@ -61,19 +64,19 @@ ms.locfileid: "74460776"
 
 1. **[自動ログ アップロード]** 設定ページに移動します。
 
-    1. Cloud App Security ポータルで、設定アイコンをクリックした後、 **[ログ コレクター]** をクリックします。
+    1. Cloud App Security ポータルで、設定アイコンをクリックした後、**[ログ コレクター]** をクリックします。
 
     ![設定アイコン](media/settings-icon.png)
 
 1. ログをアップロードするファイアウォールまたはプロキシそれぞれに対応するデータ ソースを作成します。
 
-    1. **[データ ソースの追加]** をクリックします。  
-    データソース](media/add-data-source.png) を追加 ![には
-    1. プロキシまたはファイアウォールの **[名前]** を付けます。  
+    1. [**データソースの追加**] をクリックします。  
+    ![データソースの追加](media/add-data-source.png)
+    1. プロキシまたはファイアウォールの [**名前**] を付けます。  
     ![ubuntu1](media/ubuntu1.png)
-    1. **[ソース]** リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために **[カスタム ログ形式]** を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
-    1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを **[その他]** として追加する必要があります。
-    1. **[レシーバーの種類]** を、 **[FTP]** 、 **[FTPS]** 、 **[Syslog – UDP]** 、 **[Syslog – TCP]** 、または **[Syslog – TLS]** に設定します。
+    1. [**ソース**] リストからアプライアンスを選択します。 一覧に表示されていないネットワーク アプライアンスを使用するために [**カスタム ログ形式**] を選ぶ場合、構成方法の詳細については[カスタム ログ パーサーの使用](custom-log-parser.md)に関するページをご覧ください。
+    1. 予想されるログ形式のサンプルとログを比較します。 ログ ファイルの形式がこのサンプルと一致しない場合は、データ ソースを [**その他**] として追加する必要があります。
+    1. **[レシーバーの種類]** を、**[FTP]**、**[FTPS]**、**[Syslog – UDP]**、**[Syslog – TCP]**、または **[Syslog – TLS]** に設定します。
 
     > [!NOTE]
     > 多くの場合、セキュリティで保護された転送プロトコル (FTPS、Syslog – TLS) と統合するには、ファイアウォール/プロキシの追加設定が必要です。
@@ -83,12 +86,12 @@ ms.locfileid: "74460776"
     * 調査目的で、各デバイスの状態を個別に監視する。
     * 各デバイスが異なるユーザー セグメントで使用されている場合、デバイスごとに Shadow IT Discovery を調べる。
 
-1. 画面上部の **[ログ コレクター]** タブに移動します。
+1. 画面上部の [**ログ コレクター**] タブに移動します。
 
-    1. **[ログ コレクターを追加]** をクリックします。
-    1. ログ コレクターに **[名前]** を付けます。
+    1. [**ログ コレクターを追加**] をクリックします。
+    1. ログコレクターに**名前**を付けます。
     1. Docker の展開に使用するコンピューターの **[ホスト IP アドレス]** を入力します。 ホスト名を解決する DNS サーバー (または同等の機能) がある場合、ホスト IP アドレスをコンピューター名で置換できます。
-    1. コレクターに接続するすべての**データソース**を選択し、 **[更新]** をクリックして構成を保存します。
+    1. コレクターに接続するすべての**データソース**を選択し、[**更新**] をクリックして構成を保存します。
 
     ![ubuntu2](media/ubuntu2.png)
 
@@ -140,12 +143,12 @@ ms.locfileid: "74460776"
 
 1. 次のコマンドで、コレクターが正しく動作していることを確認します: `docker logs <collector_name>`
 
-「**正常に完了**しました!
-![ubuntu8」というメッセージが表示され](media/ubuntu8.png)
+"**正常に** 
+ ![ 完了しました" というメッセージが表示されます。ubuntu8](media/ubuntu8.png)
 
-### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3: ネットワーク機器のオンプレミス構成
+### <a name="step-3---on-premises-configuration-of-your-network-appliances"></a>ステップ 3 - ネットワーク機器のオンプレミス構成
 
-ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 たとえば、次のようになります。
+ネットワーク ファイアウォールとプロキシを、ダイアログの指示に従って FTP ディレクトリの専用 Syslog ポートにログが定期的にエクスポートされるように構成します。 次に例を示します。
 
 ```bash
 BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
@@ -165,7 +168,7 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 
 ログが Cloud App Security にアップロードされていること、およびレポートが生成されることを確認します。 検証の後、カスタム レポートを作成します。 Azure Active Directory ユーザー グループに基づいて、カスタム検出レポートを作成できます。 たとえば、マーケティング部門のクラウドの使用状況を確認する場合、ユーザー グループのインポート機能を使用してマーケティング グループをインポートします。 次に、このグループに対するカスタム レポートを作成します。 また、IP アドレス タグや IP アドレスの範囲に基づいてレポートをカスタマイズすることもできます。
 
-1. Cloud App Security ポータルの設定歯車アイコンで、Cloud Discovery の設定を選択して、 **[継続的レポート]** を選択します。
+1. Cloud App Security ポータルの設定歯車で、[Cloud Discovery の設定] を選択し、[**継続的なレポート**] を選択します。
 1. **[レポートの作成]** ボタンをクリックし、フィールドに入力します。
 1. **[フィルター]** では、データ ソース、[インポートされたユーザー グループ](user-groups.md)、または [IP アドレスのタグと範囲](ip-tags.md)を指定してフィルターすることができます。
 
@@ -174,6 +177,6 @@ BlueCoat_HQ - Destination path: \<<machine_name>>\BlueCoat_HQ\
 ## <a name="next-steps"></a>次のステップ
 
 > [!div class="nextstepaction"]
-> [ログコレクターの FTP 構成](log-collector-ftp.md)
+> [ログ コレクターの FTP 構成](log-collector-ftp.md)
 
 [!INCLUDE [Open support ticket](includes/support.md)]

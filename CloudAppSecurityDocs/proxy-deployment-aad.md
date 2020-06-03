@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: b2cc376ee93d4f052227cbc3a0e8e8f04e564ae3
-ms.sourcegitcommit: ecb1835d1cd880de38f32ce7a7031b0015f3cae5
+ms.openlocfilehash: bfa910c78201a63a6e18c6e30f345c1e4361b23c
+ms.sourcegitcommit: 5822fcdb1433a6a26195692b05aed160bc339656
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "81241364"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "84275814"
 ---
 # <a name="deploy-conditional-access-app-control-for-featured-apps"></a>フィーチャー アプリでの条件付きアクセス アプリ制御の展開
 
@@ -23,7 +23,7 @@ ms.locfileid: "81241364"
 
 Microsoft Cloud App Security のセッションコントロールは、おすすめアプリで動作します。 Cloud App Security で利用できるアプリの一覧については、「 [Cloud App Security アプリの条件付きアクセス制御を使用](proxy-intro-aad.md#featured-apps)したアプリの保護」を参照してください。
 
-## <a name="prerequisites"></a>前提条件
+## <a name="prerequisites"></a>必須コンポーネント
 
 - アプリの条件付きアクセス制御を使用するには、組織が次のライセンスを持っている必要があります。
 
@@ -56,7 +56,7 @@ Microsoft Cloud App Security のセッションコントロールは、おすす
 
 アプリセッションを Cloud App Security にルーティングする条件付きアクセスポリシーを Azure AD 作成するには、次の手順に従います。 その他の IdP ソリューションについては、「[他の IdP ソリューションとの統合の構成](#configure-integration-with-other-idp-solutions)」を参照してください。
 
-1. Azure AD で、[**セキュリティ** > **条件付きアクセス**] を参照します。
+1. Azure AD で、[**セキュリティ**  >  **条件付きアクセス**] を参照します。
 
 1. [**条件付きアクセス**] ウィンドウの上部にあるツールバーで、[**新しいポリシー**] をクリックします。
 
@@ -78,7 +78,7 @@ Microsoft Cloud App Security のセッションコントロールは、おすす
 
 他の IdP ソリューションから Cloud App Security にアプリセッションをルーティングするには、次の手順に従います。 Azure AD については、「 [Azure AD との統合の構成](#configure-integration-with-azure-ad)」を参照してください。
 
-1. Cloud App Security で、[参照] を参照し**て、接続されているアプリ** > **アプリの条件付きアクセス制御アプリ**を**調査** > します。
+1. Cloud App Security で、[参照**Investigate**] を参照し  >  **て、接続されているアプリ**  >  **アプリの条件付きアクセス制御アプリ**を調査します。
 
 1. プラス記号をクリックし、ポップアップで展開するアプリを選択し、[**ウィザードの開始**] をクリックします。
 1. [**アプリ情報**] ページで、アプリの [シングルサインオンの構成] ページの情報を使用してフォームに入力し、[**次へ**] をクリックします。
@@ -91,7 +91,7 @@ Microsoft Cloud App Security のセッションコントロールは、おすす
 
 1. [ **ID プロバイダー** ] ページで、提供されている手順を使用して IdP のポータルに新しいアプリケーションを設定し、[**次へ**] をクリックします。
     1. IdP のポータルにアクセスし、新しいカスタム SAML アプリを作成します。
-    1. 既存`<app_name>`のアプリのシングルサインオン構成を新しいカスタムアプリにコピーします。
+    1. 既存のアプリのシングルサインオン構成 `<app_name>` を新しいカスタムアプリにコピーします。
     1. 新しいカスタムアプリにユーザーを割り当てます。
     1. アプリのシングルサインオン構成をコピーします。次の手順で必要になります。
 
@@ -127,7 +127,9 @@ Microsoft Cloud App Security のセッションコントロールは、おすす
         > 一部のプロバイダーでは、*応答 url*としてシングルサインオン url を参照できます。
     1. 前にメモしておいた属性と値をアプリのプロパティに追加します。
         > [!NOTE]
-        > プロバイダーによっては、*ユーザー属性*または*要求*として参照される場合があります。
+        >
+        > - プロバイダーによっては、*ユーザー属性*または*要求*として参照される場合があります。
+        > - 新しい SAML アプリを作成する場合、Okta Id プロバイダーは属性を1024文字に制限します。 この制限を緩和するには、まず、関連する属性を指定せずにアプリを作成します。 アプリを作成したら、それを編集して、関連する属性を追加します。
     1. 名前識別子が電子メールアドレスの形式であることを確認します。
     1. 設定を保存します。
 1. [**アプリの変更**] ページで、次の操作を行ってから、[**次へ**] をクリックします。 次の手順で情報が必要になります。

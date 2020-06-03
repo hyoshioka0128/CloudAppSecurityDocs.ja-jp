@@ -101,6 +101,8 @@
           href: user-groups.md
         - name: スコープ付きの展開
           href: scoped-deployment.md
+        - name: アクティビティのプライバシー
+          href: activity-privacy.md
         - name: IP タグと IP 範囲
           href: ip-tags.md
     - name: Cloud Discovery
