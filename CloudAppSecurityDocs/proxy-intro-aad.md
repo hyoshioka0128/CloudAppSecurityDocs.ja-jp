@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 65919019460b71907b33ec841b6d7c7b9d4b7143
-ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
+ms.openlocfilehash: 75a9c50b91b0aca0183af548bee6d6265be59e96
+ms.sourcegitcommit: b00cf17cc91d7a08cae5a602a6db05269643aa95
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84250742"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84415697"
 ---
 # <a name="protect-apps-with-microsoft-cloud-app-security-conditional-access-app-control"></a>Microsoft Cloud App Security Conditional Access App Control でアプリを保護する
 
@@ -127,7 +127,7 @@ Cloud App Security は、クラウドアプリカタログで利用可能な情�
 
 ### <a name="session-controls"></a>セッション コントロール
 
-セッション制御は、任意のオペレーティングシステム上の任意の主要なプラットフォーム上の任意のブラウザーで動作するように構築されていますが、Microsoft Edge (最新)、Google Chrome (最新)、Mozilla Firefox (最新)、または Apple Safari (最新) をサポートしています。 モバイルアプリとデスクトップアプリへのアクセスをブロックまたは許可することもできます。
+セッション制御は、任意のオペレーティングシステム上の任意の主要なプラットフォーム上の任意のブラウザーで動作するように構築されていますが、 [Microsoft Edge](https://www.microsoft.com/edge) (最新)、Google Chrome (最新)、Mozilla Firefox (最新)、または Apple Safari (最新) をサポートしています。 モバイルアプリとデスクトップアプリへのアクセスをブロックまたは許可することもできます。
 
 > [!NOTE]
 > Cloud App Security では、クラス最高レベルの暗号化を提供するために、トランスポート層セキュリティ (TLS) プロトコル 1.2 以降が活用されます。 TLS 1.2 以降をサポートしていないネイティブクライアントアプリとブラウザーは、セッション制御を使用して構成した場合にアクセスできません。 ただし、TLS 1.1 以下を使用している SaaS アプリは、Cloud App Security を使用して構成されている場合、TLS 1.2 以降を使用しているようにブラウザーに表示されます。
@@ -163,7 +163,7 @@ Cloud App Security は、クラウドアプリカタログで利用可能な情�
 - Workplace by Facebook
 - Yammer (プレビュー)
 
-### <a name="office-365-featured-apps"></a><a id="O365-apps" />Office 365 のおすすめアプリ
+### <a name="office-365-featured-apps"></a><a name="O365-apps"></a>Office 365 のおすすめアプリ
 
 Office 365 Cloud App Security でサポートされているおすすめアプリの一覧を次に示します。 これらのアプリを Cloud App Security で使用するには、Office 365 E5 ライセンスが必要です。
 
@@ -179,7 +179,7 @@ Office 365 Cloud App Security でサポートされているおすすめアプ�
 ## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [フィーチャー アプリでの条件付きアクセス アプリ制御の展開](proxy-deployment-aad.md)
+> [おすすめアプリへの Conditional Access App Control の展開](proxy-deployment-aad.md)
 
 > [!div class="nextstepaction"]
 > [アプリの条件付きアクセス制御がすべてのアプリに展開](proxy-deployment-any-app.md)
