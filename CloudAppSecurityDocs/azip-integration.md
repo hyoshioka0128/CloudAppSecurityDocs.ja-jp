@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 06a85abdda78f4f3b160b63198871dfb7f68db84
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 6369646c8b4cd10e1b2c236369693f4e8c92d878
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662396"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486297"
 ---
 # <a name="azure-information-protection-integration"></a>Azure Information Protection の統合
 
@@ -86,7 +86,7 @@ Cloud App Security で、分類ラベルを対象にしたコンテンツ検査�
 
 1. Cloud App Security の設定歯車で、**[システム]** 見出しの下の **[設定]** ページを選択します。
 
-    ![設定メニュー](media/azip-system-settings.png)
+    ![[設定] メニュー](media/azip-system-settings.png)
 1. [ **Azure Information Protection**で、[ **Azure Information Protection の分類ラベルの新しいファイルを自動的にスキャンする**] を選択します。
 
     ![Azure Information Protection を有効にする](media/enable-azip.png)
@@ -124,7 +124,7 @@ Azure Information Protection を有効にすると、Cloud App Security 内で�
 > [!NOTE]
 > ラベルを削除できるのは、それが保護を含まず、かつ Cloud App Security 内から適用された場合のみです。Information Protection で直接適用されたラベルは削除できません。
 
-Cloud App Security と Azure Information Protection を連携させる方法の詳細については、「[ユーザーのミスからデータを保護](https://docs.microsoft.com/enterprise-mobility-security/solutions/protect-data-user-mistake)する」を参照してください。
+Cloud App Security と Azure Information Protection を連携させる方法の詳細については、「 [Azure Information Protection 分類ラベルを自動的に適用](use-case-information-protection.md)する」を参照してください。
 
 ### <a name="automatically-label-files"></a>ラベル ファイルを自動的に適用する
 
@@ -184,10 +184,10 @@ Cloud App Security と Azure Information Protection を連携させる方法の�
 
 [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) で詳細を確認するとともに、Azure Information Protection の[クイック スタート チュートリアル](https://docs.microsoft.com/information-protection/get-started/infoprotect-quick-start-tutorial)もご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
-> [ポリシーを使用してクラウドアプリを制御する](control-cloud-apps-with-policies.md)
+> [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)
 
 ## <a name="related-videos"></a>関連ビデオ
 

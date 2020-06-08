@@ -5,7 +5,7 @@ keywords: ''
 author: shsagir
 ms.author: shsagir
 manager: shsagir
-ms.date: 04/19/2020
+ms.date: 06/07/2020
 ms.topic: conceptual
 ms.collection: M365-security-compliance
 ms.prod: ''
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: e828181c52b10c80e2e94d5e871c13ef444d45c3
-ms.sourcegitcommit: a166b85d5c91c48032cf133655471aec1ed88a0f
+ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
+ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "81662233"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84486302"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -54,6 +54,9 @@ Microsoft Cloud App Security はロール ベースのアクセス制御に対�
   - SIEM エージェントへのアクセスと編集
 
 - **グローバルリーダー:** Microsoft Cloud App Security のすべての側面に対する完全な読み取り専用アクセス権を持ちます。 設定を変更したり、アクションを実行したりすることはできません。
+
+> [!NOTE]
+> Office 365 および Azure AD のロールは、[**管理者アクセスの管理**] ページには表示されません。
 
 また、Cloud App Security ポータルでは、次の Cloud App Security 特定の管理者ロールを構成できます。
 
@@ -129,7 +132,7 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
 
 ## <a name="admin-activity-auditing"></a>管理アクティビティの監査
 
-Cloud App Security を使用すると、特定のユーザーを調査したり特定のアラートを表示したりする管理者の監査を含む、すべての管理者アクティビティのログをエクスポートできます。
+Cloud App Security を使用すると、管理者のサインインアクティビティのログと、調査の一部として実行された特定のユーザーまたはアラートのビューの監査をエクスポートできます。
 
 ログをエクスポートするには、次の手順を実行します。
 
@@ -147,7 +150,7 @@ Cloud App Security を使用すると、Cloud App Security ポータルの管理
 
 ![テナントの選択](media/choose-tenant.png "テナントの選択")
 
-## <a name="next-steps"></a>次のステップ  
+## <a name="next-steps"></a>次の手順  
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery の設定](set-up-cloud-discovery.md)

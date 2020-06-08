@@ -13,16 +13,16 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: f7664685204a2d2f1965800119c946c85f2cbe49
-ms.sourcegitcommit: 6eff466c7a6817b14a60d8c3b2c201c7ae4c2e2c
+ms.openlocfilehash: efdfcab2e736abfc300dfdd673a078f340a647dd
+ms.sourcegitcommit: 96981740994aee3661dea8b64b72741099ca6fb9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74460392"
+ms.lasthandoff: 06/07/2020
+ms.locfileid: "84485972"
 ---
 # <a name="azure-sentinel-integration-preview"></a>Azure Sentinel 統合 (プレビュー)
 
-*適用対象: Microsoft Cloud App Security*
+*適用対象:Microsoft Cloud App Security*
 
 Microsoft Cloud App Security を Azure Sentinel (スケーラブルでクラウドネイティブの SIEM と非常) と統合することにより、アラートと検出データを一元的に監視できます。 Azure Sentinel との統合により、通常のセキュリティワークフローを維持しながら、セキュリティ手順を自動化し、クラウドベースのイベントとオンプレミスのイベントを相互に関連付けることができ、クラウドアプリケーションをより効果的に保護できます。
 
@@ -44,7 +44,7 @@ SIEM との統合は、次の2つの手順で行われます。
 1. Cloud App Security に設定します。
 1. Azure Sentinel で設定します。
 
-### <a name="prerequisites"></a>必要条件
+### <a name="prerequisites"></a>前提条件
 
 Azure Sentinel と統合するには:
 
@@ -53,58 +53,58 @@ Azure Sentinel と統合するには:
 
 ### <a name="integrating-with-azure-sentinel"></a>Azure Sentinel との統合
 
-1. Cloud App Security ポータルの**設定**歯車で、 **[セキュリティ拡張機能]** をクリックします。
+1. Cloud App Security ポータルの**設定**歯車で、[**セキュリティ拡張機能**] をクリックします。
 
-1. **[SIEM エージェント]** タブで、[追加 ( **+** )] をクリックし、 **[Azure Sentinel]** を選択します。
+1. [ **SIEM エージェント**] タブで、[追加] () をクリックし、[ **+** **Azure Sentinel**] を選択します。
 
     ![SIEM 統合の追加メニューを示すスクリーンショット](media/siem0.png)
 
 1. ウィザードで、Azure Sentinel に転送するデータの種類を選択します。 統合を構成するには、次の手順を実行します。
     1. **アラート**: Azure Sentinel が有効になると、アラートは自動的に有効になります。 <!--Use the **Apply to** drop-down to filter which alerts are sent to Azure Sentinel.-->
-    1. **検出ログ**: スライダーを使用して有効または無効にします。既定ではすべて選択されています。次に、 **[適用先]** ドロップダウンを使用して、Azure Sentinel に送信する探索ログをフィルター処理します。
+    1. **検出ログ**: スライダーを使用して有効または無効にします。既定ではすべて選択されています。次に、[**適用先**] ドロップダウンを使用して、Azure Sentinel に送信する探索ログをフィルター処理します。
 
     ![Azure Sentinel 統合の構成の開始ページを示すスクリーンショット](media/siem-sentinel-configuration.png)
 
-1. **[次へ]** をクリックし、Azure Sentinel に進み、統合を完了します。 Azure Sentinel の構成の詳細については、「 [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security)」を参照してください。
+1. [**次へ**] をクリックし、Azure Sentinel に進み、統合を完了します。 Azure Sentinel の構成の詳細については、「」を参照してください [https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security](https://docs.microsoft.com/azure/sentinel/connect-cloud-app-security) 。
 
     ![Azure Sentinel 統合の構成の完了ページを示すスクリーンショット](media/siem-sentinel-configuration-complete.png)
 
 > [!NOTE]
-> 検出ログは、Cloud app Security ポータルでの構成後、15分以内に Azure Sentinel への転送を開始します。
+> 新しい検出ログは、Cloud App Security ポータルでの構成の15分以内に Azure Sentinel への転送を開始します。
 
 ## <a name="alerts-and-discovery-logs-in-azure-sentinel"></a>Azure Sentinel のアラートと検出ログ
 
 統合が完了すると、Azure Sentinel で Cloud App Security アラートと検出ログを表示できます。
 
-Azure Sentinel の **[ログ]** の下にある **[Security Insights]** で、次のように Cloud App Security データ型のログを確認できます。
+Azure Sentinel の [**ログ**] の下にある [ **Security Insights**] で、次のように Cloud App Security データ型のログを確認できます。
 
-| ［データの種類］ | Table |
+| データ型 | テーブル |
 | --- | --- |
 | 検出ログ | McasShadowItReporting |
-| アラート | SecurityAlert |
+| 警告 | SecurityAlert |
 
 次の表では、 **McasShadowItReporting**スキーマの各フィールドについて説明します。
 
-| フィールド | 種類 | [説明] | 例 |
+| フィールド | 型 | 説明 | 例 |
 | --- | --- | --- | --- |
-| TenantId | 文字列型 | ワークスペース ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
-| SourceSystem | 文字列型 | ソースシステム-静的な値 | Azure |
+| TenantId | String | ワークスペース ID | b459b4u5-912x-46d5-9cb1-p43069212nb4 |
+| SourceSystem | String | ソースシステム-静的な値 | Azure |
 | TimeGenerated [UTC] | DateTime | 探索データの日付 | 2019-07-23T11:00: 35.858 Z |
-| StreamName | 文字列型 | 特定のストリームの名前 | マーケティング部門 |
-| TotalEvents | 整数型 | セッションあたりのイベントの合計数 | 122 |
-| BlockedEvents | 整数型 | ブロックされたイベントの数 | 0 |
-| UploadedBytes | 整数型 | アップロードされたデータの量 | 1514874 |
-| TotalBytes | 整数型 | データの総量 | 4067785 |
-| ダウンロードバイト数 | 整数型 | ダウンロードされたデータの量 | 2552911 |
-| IpAddress | 文字列型 | 送信元 IP アドレス | 127.0.0.0 |
-| UserName | 文字列型 | [ユーザー名] | `Raegan@contoso.com` |
-| EnrichedUserName | 文字列型 | Azure AD ユーザー名を使用してユーザー名を拡充する | `Raegan@contoso.com` |
-| AppName | 文字列型 | クラウドアプリの名前 | Microsoft OneDrive for Business |
-| AppId | 整数型 | クラウドアプリ識別子 | 15600 |
-| AppCategory | 文字列型 | クラウドアプリのカテゴリ | 一方、クラウド ストレージ |
+| StreamName | String | 特定のストリームの名前 | マーケティング部門 |
+| TotalEvents | Integer | セッションあたりのイベントの合計数 | 122 |
+| BlockedEvents | Integer | ブロックされたイベントの数 | 0 |
+| UploadedBytes | Integer | アップロードされたデータの量 | 1514874 |
+| TotalBytes | Integer | データの総量 | 4067785 |
+| ダウンロードバイト数 | Integer | ダウンロードされたデータの量 | 2552911 |
+| IpAddress | String | 送信元 IP アドレス | 127.0.0.0 |
+| UserName | String | ユーザー名 | `Raegan@contoso.com` |
+| EnrichedUserName | String | Azure AD ユーザー名を使用してユーザー名を拡充する | `Raegan@contoso.com` |
+| AppName | String | クラウドアプリの名前 | Microsoft OneDrive for Business |
+| AppId | Integer | クラウドアプリ識別子 | 15600 |
+| AppCategory | String | クラウドアプリのカテゴリ | クラウド ストレージ |
 | AppTags | 文字列配列 | アプリに対して定義されている組み込みタグとカスタムタグ | [承認済みの "] |
-| AppScore | 整数型 | アプリケーションのリスクスコアがスケール0-10、10は危険度が低いアプリのスコアである | 10 |
-| 種類 | 文字列型 | ログの種類-静的な値 | McasShadowItReporting |
+| AppScore | Integer | アプリケーションのリスクスコアがスケール0-10、10は危険度が低いアプリのスコアである | 10 |
+| 種類 | String | ログの種類-静的な値 | McasShadowItReporting |
 
 ## <a name="use-power-bi-with-cloud-app-security-data-in-azure-sentinel"></a>Azure Sentinel で Cloud App Security データと共に Power BI を使用する
 
@@ -126,20 +126,20 @@ Azure Sentinel の **[ログ]** の下にある **[Security Insights]** で、�
 
 ### <a name="connect-the-cloud-app-security-app"></a>Cloud App Security アプリを接続する
 
-1. Power BI で、 **[アプリ]** をクリックし、 **Shadow IT Discovery**アプリをクリックします。
+1. Power BI で、[**アプリ**] をクリックし、 **Shadow IT Discovery**アプリをクリックします。
 
-1. **[新しいアプリの使用を開始]** します ページで、 **[接続]** をクリックします。
+1. [**新しいアプリの使用を開始**します] ページで、[**接続**] をクリックします。
 
     ![[アプリデータの接続] ページを示すスクリーンショット](media/siem-sentinel-powerbi-connect.png)
 
-1. ワークスペース ID ページで、log analytics の 概要 ページに表示される Azure Sentinel ワークスペース ID を入力し、**次へ** をクリックします。
+1. [ワークスペース ID] ページで、log analytics の [概要] ページに表示される Azure Sentinel ワークスペース ID を入力し、[**次へ**] をクリックします。
 
     ![ワークスペース ID の要求を示すスクリーンショット](media/siem-sentinel-powerbi-workspace-id.png)
 
-1. 認証 ページで、認証方法とプライバシーレベルを指定し、**サインイン** をクリックします。
+1. [認証] ページで、認証方法とプライバシーレベルを指定し、[**サインイン**] をクリックします。
 
     ![認証ページを示すスクリーンショット](media/siem-sentinel-powerbi-authentication.png)
 
-1. データを接続したら、ワークスペースの **[データセット]** タブにアクセスし、最新の情報に **[更新]** をクリックします。 これにより、レポートが独自のデータで更新されます。
+1. データを接続したら、ワークスペースの [**データセット**] タブにアクセスし、[最新の情報に**更新**] をクリックします。 これにより、レポートが独自のデータで更新されます。
 
 [!INCLUDE [Open support ticket](includes/support.md)]
