@@ -11,12 +11,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0ab614ab612fc628b42780d11beba4e0f57f0ad4
-ms.sourcegitcommit: bea164d19469c0a7ef9bc47b128f3ba0b1b14591
+ms.openlocfilehash: 09c2f8ca89a53372f9d40190c430fd4be1615612
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "83748021"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250708"
 ---
 # <a name="whats-new-with-microsoft-cloud-app-security"></a>Microsoft Cloud App Security の新機能
 
@@ -25,6 +25,31 @@ ms.locfileid: "83748021"
 この記事は、Cloud App Security の最新リリースの新機能がわかるように頻繁に更新されます。
 
 RSS フィード:ご自身のフィード リーダーに次の URL をコピーして貼り付けることで、このページの更新時に通知を受け取ることができます。`https://docs.microsoft.com/api/search/rss?search=%22This+article+is+updated+frequently+to+let+you+know+what%27s+new+in+the+latest+release+of+Cloud+App+Security%22&locale=en-us`
+
+## <a name="cloud-app-security-release-176"></a>Cloud App Security リリース 176
+
+リリース日: 2020 年 5 月 31 日
+
+- **新しいアクティビティのプライバシー機能**  
+アクティビティをプライベートにする機能を使用して監視するユーザーを細かく決定する機能が強化されました。 この新機能を使用すると、アクティビティが既定で非表示になるグループ メンバーシップに基づいてユーザーを指定できます。 承認された管理者のみがこれらのプライベート アクティビティを表示することを選択できます。各インスタンスはガバナンス ログで監査されます。 詳細については、「[アクティビティのプライバシー](activity-privacy.md)」をご覧ください。
+
+- **Azure Active Directory (Azure AD) ギャラリーとの新しい統合**  
+Azure AD とのネイティブ統合を活用することで、クラウド アプリ カタログ内のアプリから対応する Azure AD ギャラリーのアプリに直接移動し、それをギャラリー内で管理できるようになりました。 詳細については、[Azure AD ギャラリーを使用したアプリの管理](tutorial-shadow-it.md#gallery-apps)に関する記事をご覧ください。
+
+- **選択したポリシーで新しいフィードバック オプションが利用可能に**  
+私たちは、皆様からフィードバックをお寄せいただき、どのように皆様を支援できるか把握したいと考えています。 そこで、ファイル、異常検出、またはセッション ポリシーを作成、変更、または削除するときに、新しいフィードバック ダイアログを利用して Cloud App Security の改善にご協力いただけるようになりました。
+
+- **セッション制御の拡張サフィックス プロキシ (段階的なロールアウト)**  
+2020 年 6 月 7 日から、名前付きリージョンを含まない 1 つの統合サフィックスを使用する、拡張プロキシ セッション制御が段階的にロールアウトされます。 たとえば、ユーザーには `<AppName>.<Region>.cas.ms` の代わりに `<AppName>.mcas.ms` サフィックスが表示されます。 ネットワーク アプライアンスまたはゲートウェイのドメインを定期的にブラックリストに登録する場合は、「[アクセス制御とセッション制御](network-requirements.md#access-and-session-controls)」に一覧表示されているすべてのドメインをホワイトリストに登録してください。
+
+- **セッション制御のパフォーマンスの向上 (段階的なロールアウト)**  
+プロキシ サービスのネットワーク パフォーマンスが大幅に改善されました。 改善されたサービスはさらに合理化され、セッション制御を使用する際の応答性が向上します。
+
+- **新しい危険なアクティビティの検出:失敗した異常なログオン**  
+危険な動作を検出する現在の機能が拡張されました。 新しい検出をすぐに使用できるようになりました。これは自動的に有効になり、失敗した異常なログイン試行が特定されるとアラートが送信されます。 失敗した異常なログイン試行は、"*パスワード スプレー*" ブルート フォース攻撃 (*low and slow* 方法とも呼ばれます) を示している可能性があります。 この検出は、ユーザーの[調査の優先順位のスコア](tutorial-ueba.md)全体に影響を与えます。
+
+- **強化されたテーブル エクスペリエンス**  
+テーブル列の幅のサイズを変更する機能が追加されました。これにより、列の幅を拡大または縮小して、テーブルの表示方法をカスタマイズおよび改善できるようになりました。 また、元のレイアウトを復元することもできるようになりました。それには、テーブルの設定メニューを選択し、 **[既定の幅]** を選択します。
 
 ## <a name="cloud-app-security-release-175"></a>Cloud App Security リリース 175
 
@@ -36,7 +61,7 @@ Corrata とのネイティブ統合を追加しました。これにより、ア
 - **新しい Cloud Discovery ログ パーサー**  
 Cloud App Security の Cloud Discovery では、さまざまなトラフィック ログを分析して、アプリの順位付けとスコア付けを行います。 今回、Corrata と Cisco ASA で FirePOWER 6.4 ログ形式がサポートされる組み込みのログ パーサーが Cloud Discovery に追加されました。 サポートされているログ パーサーの一覧については、「[サポートされているファイアウォールとプロキシ](set-up-cloud-discovery.md#supported-firewalls-and-proxies)」をご覧ください。
 
-- **強化されたダッシュボード (段階的ロールアウト)** ポータル デザインを継続的に改善する取り組みの一環として、機能が強化された Cloud App Security ダッシュボードを段階的にロールアウトしています。 このダッシュボードには皆様からのフィードバックを基づいて最新技術を取り入れています。コンテンツやデータを一新しており、使いやすさが向上しています。 詳細については、[強化ダッシュボードの段階的デプロイ](daily-activities-to-protect-your-cloud-environment.md#gradual-deployment-of-our-enhanced-dashboard)に関するページをご覧ください。
+- **強化されたダッシュボード (段階的ロールアウト)** ポータル デザインを継続的に改善する取り組みの一環として、機能が強化された Cloud App Security ダッシュボードを段階的にロールアウトしています。 このダッシュボードには皆様からのフィードバックを基づいて最新技術を取り入れています。コンテンツやデータを一新しており、使いやすさが向上しています。 詳細については、[強化ダッシュボードの段階的デプロイ](daily-activities-to-protect-your-cloud-environment.md)に関するページをご覧ください。
 
 - **強化されたガバナンス:ユーザーに対するセキュリティ侵害を確認 (異常検出)**  
 異常に関するポリシーの現行のガバナンス アクションを拡張し、**ユーザーに対するセキュリティ侵害を確認**を追加しました。疑わしいユーザー活動からご自分の環境を積極的に保護することができます。 詳細については、「[アクティビティ ガバナンス アクション](governance-actions.md#activity-governance-actions)」を参照してください。

@@ -13,12 +13,12 @@ ms.service: cloud-app-security
 ms.technology: ''
 ms.reviewer: dannyk
 ms.suite: ems
-ms.openlocfilehash: 4c85117dfd4080946fa5e1a205ec9fc890dea199
-ms.sourcegitcommit: 0b929f7c8feed7dfb40d5294179fd5c6fc079614
+ms.openlocfilehash: dac3da3d91df0d75d57a29fa463705a1561f9ef9
+ms.sourcegitcommit: 6886d285601955f0efc7acf980c9d4740ff873fe
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "79241821"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "84250649"
 ---
 # <a name="tutorial-discover-and-manage-shadow-it-in-your-network"></a>チュートリアル:ネットワーク内のシャドウ IT の検出と管理
 
@@ -81,6 +81,10 @@ IT 管理者に、従業員が使用していると考えられるクラウド �
 ### <a name="phase-3-manage-your-apps"></a>フェーズ 3:アプリを管理する
 
 * **クラウド アプリの管理**:Cloud App Security は、組織内でのアプリの使用を管理するプロセスに役立ちます。 組織で使用されているさまざまなパターンと動作を特定したら、ビジネスの状態や理由に基づいて各アプリを分類するために、新しいカスタム アプリ タグを作成できます。 これらのタグは、特定の監視目的に使用できます。たとえば、危険なクラウド ストレージ アプリとしてタグ付けされたアプリに送信される大量のトラフィックを特定します。 アプリ タグは、 **[Cloud Discovery の設定]**  >  **[アプリ タグ]** で管理できます。 これらのタグは、Cloud Discovery のページでのフィルター処理や、ポリシーの作成に使用できます。
+
+* **Azure Active Directory (Azure AD) ギャラリーを使用して検出されたアプリを管理する**<a name ="gallery-apps"></a>:Cloud App Security では、Azure AD ギャラリーで検出されたアプリを管理できるようにするために、Azure AD とのネイティブ統合も活用されます。 Azure AD ギャラリーに既に表示されているアプリの場合は、シングル サインオンを適用し、Azure AD でアプリを管理できます。 これを行うには、関連するアプリが表示されている行の行末の 3 つの点を選択し、 **[Manage app with Azure AD]\(Azure AD でアプリを管理する\)** を選択します。
+
+    ![シャドウ IT ライフサイクル](media/manage-app-in-azure-ad-gallery.png)
 
 * **継続的監視**:これで、アプリを十分に調査したので、アプリを監視し、必要に応じて制御するためのポリシーを設定することができます。
 
