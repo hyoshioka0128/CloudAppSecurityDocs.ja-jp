@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 4a1a7efae52509f32e171ad40d0f3dc163cd0064
-ms.sourcegitcommit: 27f5fecfb32c28c150d22546bfd3c7f7b9d254e5
+ms.openlocfilehash: f4f7b05caa3c516294f08864b0a711b71be047f3
+ms.sourcegitcommit: 3f0693bf32fef5b4819c51ca7eeaee751eb03df6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83546107"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84611173"
 ---
 # <a name="integrate-cloud-app-security-with-zscaler"></a>Cloud App Security を Zscaler と統合する
 
@@ -33,11 +33,11 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 
 ## <a name="prerequisites"></a>前提条件
 
-- Microsoft Cloud App Security の有効なライセンス
+- Microsoft Cloud App Security の有効なライセンス、または Azure Active Directory Premium P1 の有効なライセンス
 - Zscaler Cloud 5.6 の有効なライセンス
 - Zscaler NSS のアクティブなサブスクリプション
 
-## <a name="deployment"></a>展開
+## <a name="deployment"></a>配置
 
 1. Zscaler のポータルで、[Zscaler パートナーの Microsoft Cloud App Security との統合](https://help.zscaler.com/zia/configuring-mcas-integration)を完了するための手順を実行します。
 2. Cloud App Security ポータルで、次の統合の手順を行います。
@@ -60,7 +60,7 @@ Cloud App Security と Zscaler の両方を使用する場合、2 つの製品�
 
 4. Cloud App Security で "承認されていない" として設定したすべてのアプリは、2 時間ごとに Zscaler によって ping され、Zscaler によって自動的にブロックされます。 承認されていないアプリについて詳しくは、「[アプリの承認/非承認](governance-discovery.md#BKMK_SanctionApp)」をご覧ください。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [ポリシーによるクラウド アプリの制御](control-cloud-apps-with-policies.md)

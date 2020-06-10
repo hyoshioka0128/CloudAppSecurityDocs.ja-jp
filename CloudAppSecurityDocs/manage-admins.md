@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: 0965c492c7f837810bc68b2b97645e89bdd03e75
-ms.sourcegitcommit: ffc8f6053418d20f2394dc6645e043c9db582e6b
+ms.openlocfilehash: face06e83dc57a3722298bf2e22846334ca811b2
+ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2020
-ms.locfileid: "84486302"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84566826"
 ---
 # <a name="manage-admin-access"></a>管理者アクセスの管理
 
@@ -121,12 +121,15 @@ Azure Active Directory 管理者ロールにユーザーを追加せずに、Clo
 
 2. プラス記号をクリックして、Cloud App Security へのアクセス権を付与する管理者を追加します。 内部または外部のメール アドレスを入力して、組織内部、または外部の Managed Security Service Provider (MSSP) の管理者がセキュリティ アラートを管理できるようにします。
 
+    > [!NOTE]
+    > ポータルへのアクセスを MSSPs に付与するには、ゲストユーザーとして Azure AD に MSSP ユーザーを追加する必要があります。 詳細については、「[Azure portal で Azure Active Directory B2B コラボレーション ユーザーを追加する](/azure/active-directory/b2b/add-users-administrator)」を参照してください。
+
     ![管理者の追加](media/add-admin.png)
 
 3. 次に、ドロップダウンリストをクリックして、管理者が持つロールの種類、**グローバル管理者**、**セキュリティ閲覧**者、**コンプライアンス管理者**、または**アプリ/インスタンス管理者**を設定します。[**アプリ/インスタンス管理者**] を選択した場合は、管理者がアクセス許可を持つアプリとインスタンスを選択します。
 
     >[!NOTE]
-    >アクセスが制限されている管理者が制限されているページにアクセスしたり、制限されている操作を実行しようとしたりすると、そのページへのアクセスまたは操作の実行のアクセス許可がないというエラーが表示されます。
+    > アクセスが制限されている管理者が制限されているページにアクセスしたり、制限されている操作を実行しようとしたりすると、そのページへのアクセスまたは操作の実行のアクセス許可がないというエラーが表示されます。
 
 4. **[管理者の追加]** をクリックします。
 

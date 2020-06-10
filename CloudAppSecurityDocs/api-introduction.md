@@ -10,12 +10,12 @@ ms.topic: reference
 ms.collection: M365-security-compliance
 ms.service: cloud-app-security
 ms.suite: ems
-ms.openlocfilehash: 8ef1a89651105b3bb324ec8571b52dde94cb0cc4
-ms.sourcegitcommit: 286f8d5d940d1bb9a09daa3070ac4fc3768208f8
+ms.openlocfilehash: df70a9408b88692b9faf789a00b5f307c0af24ee
+ms.sourcegitcommit: 3172d6bd5e9d7a08f5cd2aa2e36980ef21bf0235
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84505231"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84563901"
 ---
 # <a name="cloud-app-security-rest-api"></a>Cloud App Security REST API
 
@@ -70,12 +70,12 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 |リソース|HTTP 動詞|URI ルート|
 |---|---|---|
-|探索|GET、POST、PUT|/api/v1/discovery|
-|データ強化|POST|/cas/サブネット|
-|Activities|GET または POST|/api/v1/activities|
-|警告|GET または POST|/api/v1/alerts|
-|エンティティ|GET または POST|/api/v1/entities|
-|Files|GET または POST|/api/v1/files|
+|探索|GET、POST、PUT|/api/v1/discovery/|
+|データ強化|POST|/サブネット/|
+|Activities|GET または POST|/api/v1/activities/|
+|警告|GET または POST|/api/v1/alerts/|
+|エンティティ|GET または POST|/api/v1/entities/|
+|Files|GET または POST|/api/v1/files/|
 
 ここで、**リソース**は関連エンティティのグループを表します。
 
@@ -140,7 +140,7 @@ curl -XGET -H "Authorization:<your_token_key>" "https://<tenant_id>.<tenant_regi
 
 次の表では、サポートされている演算子について説明します。
 
-| 演算子 | 応答の種類 | Description |
+| 演算子 | 応答の種類 | 説明 |
 | --- | --- | --- |
 | contains | 文字列の一覧 | 指定された文字列の1つを含むすべての関連レコードを返します。 |
 | deq | 値の一覧 | 指定された値と等しくない1つの値を含むすべてのレコードを返します |
