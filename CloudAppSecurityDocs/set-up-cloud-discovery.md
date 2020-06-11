@@ -10,12 +10,12 @@ ms.collection: M365-security-compliance
 ms.reviewer: reutam
 ms.suite: ems
 ms.custom: seodec18
-ms.openlocfilehash: a88c3d90b96d173428ccd22c94731ca82f4f920b
-ms.sourcegitcommit: a6d6ab856bc06591d8ccdb5bf9dfd506dcd90e20
+ms.openlocfilehash: 7e7635cf2fd7400376ec5a57919d2804ab8ab6b1
+ms.sourcegitcommit: 211dcc2850a7b1513f93ccc83e8e152bc941f253
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83579768"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "84654414"
 ---
 # <a name="set-up-cloud-discovery"></a>Cloud Discovery の設定
 
@@ -95,22 +95,22 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 
 | データ ソース | ターゲット アプリの URL | ターゲット アプリの IP | ユーザー名 | 配信元 IP | 合計トラフィック | アップロードされたバイト数 |
 |----------------------------------------------|----------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
-| Barracuda | **はい** | **はい** | **はい** | **はい** | いいえ | いいえ |
+| Barracuda | **はい** | **はい** | **はい** | **はい** | いいえ | No |
 | Blue Coat | **はい** | いいえ | **はい** | **はい** | **はい** | **はい** |
-| Check Point | いいえ | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Check Point | いいえ | **はい** | いいえ | **はい** | いいえ | No |
 | Cisco ASA (Syslog) | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
 | Cisco ASA with FirePOWER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Cisco Cloud Web Security |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 | Cisco FWSM | いいえ | **はい** | いいえ | **はい** | **はい** | いいえ |
 | Cisco IronPort WSA | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
-| Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | いいえ |
+| Cisco Meraki | **はい** | **はい** | いいえ | **はい** | いいえ | No |
 | Clavister NGFW (Syslog) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ContentKeeper | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Corrata | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | SonicWall (旧称 Dell) | **はい** | **はい** | いいえ | **はい** | **はい** | **はい** |
 | Digital Arts i-FILTER | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | ForcePoint LEEF |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
-| ForcePoint Web セキュリティクラウド |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
+| ForcePoint Web セキュリティクラウド\* |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
 | FortiGate | いいえ | **はい** | いいえ | **はい** | **はい** | **はい** |
 | Fortinet Fortinet |**はい**|**はい**|いいえ|**はい**|**はい**|**はい**|
 | iboss |**はい**|**はい**|**はい**|**はい**|**はい**|**はい**|
@@ -127,7 +127,9 @@ Cloud Discovery では、16,000 以上のクラウド アプリを掲載した M
 | Websense - インターネットのアクティビティ ログ (CEF) | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 | Zscaler | **はい** | **はい** | **はい** | **はい** | **はい** | **はい** |
 
-## <a name="next-steps"></a>次のステップ
+\*Forcepoint Web Security Cloud のバージョン8.5 以降はサポートされていません
+
+## <a name="next-steps"></a>次の手順
 
 > [!div class="nextstepaction"]
 > [Cloud Discovery のスナップショット レポートを作成する](create-snapshot-cloud-discovery-reports.md)
