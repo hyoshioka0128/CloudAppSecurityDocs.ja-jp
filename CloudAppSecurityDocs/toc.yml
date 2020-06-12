@@ -205,6 +205,8 @@
           items:
             - name: アラートの管理
               href: managing-alerts.md
+        - name: 異常検出アラートの調査
+          href: investigate-anomaly-alerts.md
     - name: Control
       href: control.md
       items:
@@ -280,6 +282,74 @@
           href: policies-threat-protection.md
         - name: 情報保護に関するポリシー
           href: policies-information-protection.md
+    - name: REST API
+      items:
+        - name: 概要
+          href: api-introduction.md
+        - name: 認証
+          href: api-authentication.md
+        - name: Cloud Discovery
+          items:
+            - name: 概要
+              href: api-discovery.md
+            - name: ファイルのアップロードの開始
+              href: api-discovery-initiate.md
+            - name: ファイルのアップロードの実行
+              href: api-discovery-perform.md
+            - name: ファイルのアップロードの最終処理
+              href: api-discovery-finalize.md
+            - name: ブロック スクリプトの生成
+              href: api-discovery-script.md
+        - name: データの拡張
+          items:
+            - name: IP アドレス範囲の作成
+              href: api-data-enrichment.md
+        - name: アクティビティ
+          items:
+            - name: 概要
+              href: api-activities.md
+            - name: アクティビティの一覧表示
+              href: api-activities-list.md
+            - name: Fetch アクティビティ
+              href: api-activities-fetch.md
+            - name: アクティビティに関するフィードバック
+              href: api-activities-feedback.md
+        - name: アラート
+          items:
+            - name: 概要
+              href: api-alerts.md
+            - name: アラートの一覧表示
+              href: api-alerts-list.md
+            - name: 一括破棄
+              href: api-alerts-bulk-dismiss.md
+            - name: 一括解決
+              href: api-alerts-bulk-resolve.md
+            - name: フェッチ アラート
+              href: api-alerts-fetch.md
+            - name: アラートを無視する
+              href: api-alerts-dismiss.md
+            - name: アラートを開封済みとしてマーク
+              href: api-alerts-mark-read.md
+            - name: 警告を未読としてマーク
+              href: api-alerts-mark-unread.md
+        - name: エンティティ
+          items:
+            - name: 概要
+              href: api-entities.md
+            - name: エンティティの一覧表示
+              href: api-entities-list.md
+            - name: Fetch エンティティ
+              href: api-entities-fetch.md
+            - name: Fetch エンティティのツリー
+              href: api-entities-fetch-tree.md
+        - name: ファイル
+          items:
+            - name: 概要
+              href: api-files.md
+            - name: ファイルの一覧表示
+              href: api-files-list.md
+            - name: Fetch ファイル
+              href: api-files-fetch.md
     - name: トラブルシューティング
       items:
         - name: Cloud Discovery のトラブルシューティング

@@ -12,12 +12,12 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.date: 09/24/2019
-  ms.openlocfilehash: d5933b0fccf234ae45705e211d8422dde719a8d1
-  ms.sourcegitcommit: 5e8dd22b6c9a5c18dbb704ccc8d8b12b33b66955
+  ms.openlocfilehash: 4de230790f7b059e257068bfbde9a5e23fe4485a
+  ms.sourcegitcommit: 33e4b39d56256e54bc6e74ca45a03055484916d9
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/10/2020
-  ms.locfileid: "83004307"
+  ms.lasthandoff: 06/09/2020
+  ms.locfileid: "84566896"
 landingContent:
 - title: Cloud App Security について
   linkLists:
@@ -41,6 +41,12 @@ landingContent:
     links:
     - text: Cloud App Security の使用を開始する
       url: getting-started-with-cloud-app-security.md
+  - linkListType: reference
+    links:
+    - text: Cloud App Security の REST API を使用する
+      url: api-introduction.md
+    - text: 異常検出アラートの調査
+      url: investigate-anomaly-alerts.md
 - title: 上位のユース ケースを調べる
   linkLists:
   - linkListType: tutorial
