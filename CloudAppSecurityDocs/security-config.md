@@ -54,7 +54,7 @@ Microsoft Cloud App Security でセキュリティ構成の推奨事項を有効
 
 1. 種類、リソース、サブスクリプションによって推奨事項をフィルター処理することができます。 さらに、Azure Security Center でセキュリティ構成のアイコン ![ASC アイコン](media/asc-icon.png) をクリックし、推奨事項を開くことができます。ここでは、推奨事項の詳細な情報を調べることができます。
 
-セキュリティに関する推奨事項を実装する方法については、「[Azure セキュリティ センターでのセキュリティに関する推奨事項の管理](https://docs.microsoft.com/azure/security-center/security-center-recommendations)」をご覧ください。
+セキュリティに関する推奨事項を実装する方法については、「[Azure Security Center でのセキュリティに関する推奨事項の管理](https://docs.microsoft.com/azure/security-center/security-center-recommendations)」をご覧ください。
 
 ![セキュリティ構成](media/security-configuration-azure.png)
 
